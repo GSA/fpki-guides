@@ -1,0 +1,113 @@
+# Site settings
+
+title: Federal Public Key Infrastructure Guides
+name: Federal Public Key Infrastructure Guides
+# title: FICAM FPKI Guides
+# name: Federal Public Key Infrastructure [FPKI] Guides
+email: icam@gsa.gov
+author:
+    name: FICAM
+    url: https://github.com/GSA/
+description: Information on the US federal public key infrastructure (FPKI)
+
+baseurl: '/fpki-guides'
+#url: "http://yourdomain.com" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+github_username:  lachellel
+highlighter: pygments
+
+# Point the logo URL at a file in your repo or hosted elsewhere by your organization
+logourl: /fpki-guides/img/logo.png
+logoalt: Federal Identity Credential and Access Management
+
+# Custom URLs
+ficam_playbooks_url: /ficam-guides/
+
+ficam_architecture_url: http://gsa.github.io/ficam-arch/
+ficam_architecture_gh_url: https://github.com/GSA/ficam-arch
+
+# Repo list
+# List repos that you would like to appear on the homepage here
+repos:
+- name: fpki-guides
+  description: FICAM Playbook - PKI Guidance
+  url: https://github.com/gsa/fpki-guides
+
+# Build settings
+markdown: kramdown
+
+exclude:
+- bin
+- config.rb
+- Gemfile
+- Gemfile.lock
+- gems
+- Procfile
+- Rakefile
+- README.md
+- script
+- vendor
+
+navigation:
+- text: Introduction
+  url: index.html
+  internal: true
+  coll: false
+#- text: Overview
+#  url: overview
+#  internal: true
+#  coll: false
+- text: Architecture
+  url: architecture
+  internal: true
+  coll: false
+- text: Certificate Policies
+  url: policies
+  internal: true
+  coll: false
+- text: Certificate Authorities
+  url: cas
+  internal: true
+  coll: false
+- text: CRLs and Certificates
+  url: crls
+  internal: true
+  coll: false
+- text: Useful Tools
+  url: tools
+  internal: true
+  coll: false
+#https://github.com/jekyll/jekyll/issues/2346
+- text: Developer Guides
+  url: devconfig/index/
+  internal: true
+  coll: true
+  collname: devconfig
+- text: User Guides
+  url: userconfig/index/
+  internal: true
+  coll: true
+  collname: userconfig
+
+
+#https://github.com/jekyll/jekyll/issues/2346
+collections:
+  userconfig:
+    label: "User Guides"
+    permalink: /userconfig/:path/
+    output: true
+  devconfig:
+    label: "Developer Guides"
+    permalink: /devconfig/:path/
+    output: true
+
+
+
+include:
+- _stylesheets
+- _javascript
+
+
+
+# Custom site configuration
+lang: en
