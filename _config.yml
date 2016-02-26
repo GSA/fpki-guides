@@ -88,6 +88,11 @@ navigation:
   internal: true
   coll: true
   collname: userconfig
+- text: Contribute
+  url: contribute
+  internal: true
+  coll: false
+
 
 
 #https://github.com/jekyll/jekyll/issues/2346
