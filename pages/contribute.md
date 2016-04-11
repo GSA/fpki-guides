@@ -8,7 +8,7 @@ This site is for the collaborative development of the Federal Identity, Credenti
 #### How to Contribute
 
 Thank you for considering contributing to the development of open and transparent 
-FICAM guidance documents. To contribute to this site, please leverage the information provided below, and visit the GitHub repository which houses the source files for the site and exists [here]({{site.github.repository_url}}/{{site.branch}}/). If you have any questions, feel free to open an issue under the 'Issues' tab of the repository. Please note that opening issues or adding content to the repository will require the creation of a GitHub account.
+FICAM guidance documents. To contribute to this site, please leverage the information provided below, and visit the GitHub repository which houses the source files for the site and exists [here]({{site.github.repository_url}}/tree/{{site.branch}}/). If you have any questions, feel free to open an issue under the 'Issues' tab of the repository. Please note that opening issues or adding content to the repository will require the creation of a GitHub account.
 
 GitHub issues are the primary way of sharing information and discussing this site with the broader community. For example, they should be used for:
 
@@ -41,7 +41,7 @@ If you have identified an open issue suggesting a new topic for the site and wou
 
 If at any point you have a question during the contribution process, do not hesitate to open an issue requesting clarification.
 
-We encourage you to read our [LICENSE]({{site.baseurl}}/license) and our [README]({{site.github.repository_url}}/tree/{{site.branch}}/README.md), which exist within this repository.  
+We encourage you to read our [LICENSE]({{site.baseurl}}/license/) and our [README]({{site.github.repository_url}}/tree/{{site.branch}}/README.md), which exist within this repository.  
 
 ####  General Practices
 

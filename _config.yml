@@ -23,18 +23,22 @@ logoalt: Federal Identity Credential and Access Management
 # Custom URLs
 ficam_playbooks_url: /ficam-guides/
 
-ficam_architecture_url: http://gsa.github.io/ficam-arch/
+ficam_architecture_url: https://gsa.github.io/ficam-arch/
 ficam_architecture_gh_url: https://github.com/GSA/ficam-arch
 
 # Repo list
 # List repos that you would like to appear on the homepage here
 repos:
 - name: fpki-guides
-  description: FICAM Playbook - PKI Guidance
+  description: FICAM Playbook - FPKI Guidance
   url: https://github.com/gsa/fpki-guides
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 exclude:
 - bin
@@ -73,21 +77,25 @@ navigation:
   url: crls
   internal: true
   coll: false
+- text: Trust Stores
+  url: truststores
+  internal: true
+  coll: false
 - text: Useful Tools
   url: tools
   internal: true
   coll: false
 #https://github.com/jekyll/jekyll/issues/2346
-- text: Developer Guides
-  url: devconfig/index/
-  internal: true
-  coll: true
-  collname: devconfig
-- text: User Guides
-  url: userconfig/index/
-  internal: true
-  coll: true
-  collname: userconfig
+#- text: Developer Guides
+#  url: devconfig/index/
+#  internal: true
+#  coll: true
+#  collname: devconfig
+#- text: User Guides
+#  url: userconfig/index/
+#  internal: true
+#  coll: true
+#  collname: userconfig
 - text: Contribute
   url: contribute
   internal: true

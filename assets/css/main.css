@@ -2,6 +2,34 @@
 ---
 
 /*
+==================================
+Custom Styles
+*/
+blockquote.info {
+    border-left: 12px solid #080;
+    background-color: #bfb;
+    padding: 12px 12px 12px 0;
+    margin-left: -40px;
+    padding-left: 40px;
+}
+
+blockquote.warning {
+    border-left: 12px solid #dc0;
+    background-color: #ffa;
+    padding: 12px 12px 12px 0;
+    margin-left: -40px;
+    padding-left: 40px;
+}
+
+blockquote.alert {
+    border-left: 12px solid #aa3838;
+    background-color: #fea8a8;
+    padding: 12px 12px 12px 0;
+    margin-left: -40px;
+    padding-left: 40px;
+}
+
+/*
 Main.css
 ==================================
 Begin with generic 'mobile first' styles
@@ -417,7 +445,7 @@ li h4 {
 pre {
     max-width: 100%;
     font-size: 0.875em;
-    overflow-y: scroll;
+    overflow-y: hidden;
     background-color: #f1f2f2;
     padding: 10px;
 }
@@ -597,4 +625,60 @@ Mobile Styles
         margin-top: 1.5em;
     }
 
+}
+
+.code {
+    font-family: monospace;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 1em 0;
+    background-color: #E6E6E6;
+    color: black;
+    padding: 10px;
+}
+
+/*
+Table Style
+==========================
+*/
+
+table
+{
+  font-size: 14px;
+	border-collapse:collapse;
+	margin:20px 0 0;
+	padding:0;
+}
+
+table tr
+{
+	border-top:1px solid #ccc;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+
+table tr th
+{
+	border-top:1px solid #ccc;
+	background-color:#666666;
+  color: #fff;
+	margin:0;
+	padding:0;
+}
+
+table tr:nth-child(2n)
+{
+	background-color:#f8f8f8;
+}
+table tr th[align="center"], table tr td[align="center"] {
+	text-align:center;
+}
+table tr th, table tr td
+{
+	border:1px solid #ccc;
+	text-align:left;
+	margin:0;
+	padding:6px 13px;
 }
