@@ -66,9 +66,9 @@ All entities must complete the full cross certification process for FBCA cross c
 
 ###**Checklist**
 
-- Fully Understand what each PIV-I certification step entails 
-- Resources needed for PIV-I Cross-certification process ready and available
-- Approval of senior management to offer PIV-I services
+- [ ] Fully Understand what each PIV-I certification step entails 
+- [ ] Resources needed for PIV-I Cross-certification process ready and available
+- [ ] Approval of senior management to offer PIV-I services
 
 ###**Key Questions**
 
@@ -86,11 +86,11 @@ Organizations whose applications are rejected by the FPKIPA may request a writte
 
 ###**Checklist**
 
-- Obtain the latest application template
-- Application fully and correctly completed
-- Application indicates FBCA Medium Hardware cross certification is sought in addition to PIV-I cross certification
-- Application submitted to correct FPKIPA email address
-- Receipt of application by FPKIPA confirmed
+- [ ] Obtain the latest application template
+- [ ] Application fully and correctly completed
+- [ ] Application indicates FBCA Medium Hardware cross certification is sought in addition to PIV-I cross certification
+- [ ] Application submitted to correct FPKIPA email address
+- [ ] Receipt of application by FPKIPA confirmed
 
 
 ###**Key Questions**
