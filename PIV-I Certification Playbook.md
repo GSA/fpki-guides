@@ -186,7 +186,7 @@ The PIV-I Provider and their third party auditor should consult the  [Auditor Le
 
 ###**Key Questions**
 
-	  o Is this an initial audit review, in which case a Day Zero Compliance Audit can be performed instead of full audit?
+o Is this an initial audit review, in which case a Day Zero Compliance Audit can be performed instead of full audit?
 
 #***Play 8: Execute a Memorandum of Agreement*** 
 
