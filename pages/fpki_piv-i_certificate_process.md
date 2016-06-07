@@ -9,7 +9,7 @@ This playbook provides information and activities related to the cross-certifica
 
 The following diagram illustrates the high-level PIV-I Certification process.
 
-![enter image description here](https://raw.githubusercontent.com/dasgituser/fpki-guides/staging/img/fpki_piv-i_certification_playbook_diagram-v0.0.2.jpg)"High Level Playbook Flow"
+![enter image description here](https://raw.githubusercontent.com/dasgituser/fpki-guides/staging/img/fpki_piv-i_certification_playbook_diagram-v0.0.2.jpg) 
 
 Questions related to this playbook should be directed to  [idmanagement@gsa.gov](mailto:idmanagement@gsa.gov).
 
