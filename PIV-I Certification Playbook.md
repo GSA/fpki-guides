@@ -109,7 +109,7 @@ The FBCA Certificate Policy includes specific requirements pertaining to PIV-I. 
 - [X.509 CP for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS) 
 - [PIV Interoperability for Non-Federal Issuers](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwZ) 
 - [Cross-certification Framework for Cross-certification with the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwQ) 
-- [X.509 Certificate and CRL Extensions Profile for PIV-I Cards](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000Sfx1) 
+- [X.509 Certificate and CRL Extensions Profile for PIV-I Cards](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008ObiCAE) 
 
 Each PIV-I Provider must submit the following in order to initiate the mapping process:
 
@@ -322,7 +322,8 @@ http://www.ietf.org/rfc/rfc4122.txt
 Technical Implementation Guidance: Smart Card Enabled Physical Access Control Systems, Version 2.3  
 https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t00000008OgCAAU&field=File__Body__s
 
-X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards  http://idmanagement.gov/documents/certificate-and-crl-extensions-profile-piv-i-cards
+X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards  
+https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008ObiCAE
 
 X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)  
 https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS
