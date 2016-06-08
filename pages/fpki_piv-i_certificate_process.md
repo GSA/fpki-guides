@@ -1,3 +1,9 @@
+---
+layout: page
+title: PIV-I Certification Process
+permalink: /pivi-certification-process/
+---
+
 **PIV-I Certification Playbook**
 ======================
 
@@ -12,6 +18,8 @@ The following diagram illustrates the high-level PIV-I Certification process.
 ![enter image description here](https://raw.githubusercontent.com/dasgituser/fpki-guides/staging/img/fpki_piv-i_certification_playbook_diagram-v0.0.2.jpg) 
 
 Questions related to this playbook should be directed to  [idmanagement@gsa.gov](mailto:idmanagement@gsa.gov).
+
+1. [Play 1: Understand Roles and Responsibilities?](#understand-roles-and-responsibilities)
 
 #***Play 1: Understand Roles and Responsibilities***
 
