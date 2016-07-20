@@ -17,19 +17,19 @@ The following diagram illustrates the high-level PIV-I Certification process.
 
 ![enter image description here](https://raw.githubusercontent.com/dasgituser/fpki-guides/staging/img/fpki_piv-i_certification_playbook_diagram-v0.0.2.jpg) 
 
-1. [Play 1 Understand Roles and Responsibilities](#play-1\:-understand-roles-and-responsibilities)
-2. [Play 2: Know The PIV-I Components](#Know-The-PIV-I-Components)
-3. [Play 3: Prepare for PIV-I Cross-certification](#Prepare-for-PIV-I-Cross-certification)
-4. [Play 4: Submit Application for PIV-I Cross-certification](#Submit-Application-for-PIV-I-Cross-certification)
-5. [Play 5: Perform a Policy Mapping](#Perform-a-Policy-Mapping)
-6. [Play 6: Complete Technical Testing](#Complete-Technical-Testing)
-7. [Play 7: Complete an Audit Review](#Complete-an-Audit-Review)
-8. [Play 8: Execute a Memorandum of Agreement](#Execute-a-Memorandum-of-Agreement)
-9. [Play 9: Coordinate Cross-certificate Issuance](#Coordinate-Cross-certificate-Issuance)
+1. [Play 1 Understand Roles and Responsibilities](#play-1-understand-roles-and-responsibilities)
+2. [Play 2 Know The PIV-I Components](#play-2-know-the-piv-i-components)
+3. [Play 3 Prepare for PIV-I Cross-certification](#play-3-prepare-for-piv-i-cross-certification)
+4. [Play 4 Submit Application for PIV-I Cross-certification](#Submit-Application-for-PIV-I-Cross-certification)
+5. [Play 5 Perform a Policy Mapping](#Perform-a-Policy-Mapping)
+6. [Play 6 Complete Technical Testing](#Complete-Technical-Testing)
+7. [Play 7 Complete an Audit Review](#Complete-an-Audit-Review)
+8. [Play 8 Execute a Memorandum of Agreement](#Execute-a-Memorandum-of-Agreement)
+9. [Play 9 Coordinate Cross-certificate Issuance](#Coordinate-Cross-certificate-Issuance)
 
 Questions related to this playbook should be directed to  [idmanagement@gsa.gov](mailto:idmanagement@gsa.gov).
 
-#### Play 1: Understand Roles and Responsibilities
+#*** Play 1 Understand Roles and Responsibilities***
 
 The Federal Public Key Infrastructure Policy Authority (FPKIPA) is the inter-agency body set up under the CIO Council to enforce digital certificate standards for trusted identity authentication across the federal agencies and between federal agencies and outside bodies, such as universities, state and local governments and commercial entities.
 
@@ -38,7 +38,7 @@ The FPKI Certificate Policy Working Group (CPWG) reviews a prospective PIV-I Pro
 
 The FIPS 201 Evaluation Program performs PIV-I card interoperability testing. A favorable recommendation from the CPWG (after successful card interoperability testing) will be presented to the FPKIPA members for a vote to approve the applicant as a PIV-I Provider at their earliest convenience.
 
-#***Play 2: Know The PIV-I Components***
+#***Play 2 Know The PIV-I Components***
 The PIV-I Provider must implement six distinct components: 
 
 - Certification Authority (CA); 
@@ -72,7 +72,7 @@ The FPKIPA does not limit outsourcing of specific PKI services by the PIV-I Prov
 2. Will you be outsourcing any of your PIV-I components?
 3. If outsourcing, do you understand your ongoing responsibilities in that context?
 
-#***Play 3: Prepare for PIV-I Cross-certification***
+#***Play 3 Prepare for PIV-I Cross-certification***
 
 PIV-I cross certification with the FBCA encompasses six primary activities:
 
