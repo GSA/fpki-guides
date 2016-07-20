@@ -26,6 +26,7 @@ The following diagram illustrates the high-level PIV-I Certification process.
 7. [Play 7 Complete an Audit Review](#play-7-complete-an-audit-review)
 8. [Play 8 Execute a Memorandum of Agreement](#play-8-execute-a-memorandum-of-agreement)
 9. [Play 9 Coordinate Cross-certificate Issuance](#play-9-coordinate-cross-certificate-issuance)
+10. [Play 10: Perform Annual Compliance Audit](#play-10-perform-annual-compliance-audit)
 
 Questions related to this playbook should be directed to  [idmanagement@gsa.gov](mailto:idmanagement@gsa.gov).
 
@@ -238,7 +239,7 @@ The entity will then be added to the [FPKI Approved Providers List](https://www.
 1. Have you reviewed all forms associated with exchanging cross-certificates to ensure you have obtained all the latest information you need to provide the FPKIMA.
 2. Is the information you will be providing correct and up-to-date?
 
-#***Play 10: Perform Annual Compliance Audit*** 
+#***Play 10 Perform Annual Compliance Audit*** 
 The [Compliance Audit Requirements](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008OcsCAE) document mandates yearly compliance audits performed by a competent, independent third party. The PIV-I Provider has ongoing audit and analysis responsibilities to ensure that the PKI continues to operate at the appropriate level of trustworthiness.
 
 The PIV-I Provider shall submit a compliance audit letter each year covering PIV-I operated components for as long as they continue. If it is determined that a PIV-I Provider is out of compliance, the PIV-I Provider shall submit a remediation plan to the CPWG for consideration. Failure to submit an annual compliance audit letter, or findings that indicate the PIV-I Provider is out of alignment with the FBCA CP will result in removal from the  [FPKI Approved Providers List](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000XRrC) and/or revocation of the cross certificates.
