@@ -29,7 +29,7 @@ The following diagram illustrates the high-level PIV-I Certification process.
 
 Questions related to this playbook should be directed to  [idmanagement@gsa.gov](mailto:idmanagement@gsa.gov).
 
-#***Play 1: Understand Roles and Responsibilities***
+#### Play 1: Understand Roles and Responsibilities
 
 The Federal Public Key Infrastructure Policy Authority (FPKIPA) is the inter-agency body set up under the CIO Council to enforce digital certificate standards for trusted identity authentication across the federal agencies and between federal agencies and outside bodies, such as universities, state and local governments and commercial entities.
 
