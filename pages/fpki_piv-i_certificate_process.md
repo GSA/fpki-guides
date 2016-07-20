@@ -26,7 +26,7 @@ The following diagram illustrates the high-level PIV-I Certification process.
 7. [Play 7 Complete an Audit Review](#play-7-complete-an-audit-review)
 8. [Play 8 Execute a Memorandum of Agreement](#play-8-execute-a-memorandum-of-agreement)
 9. [Play 9 Coordinate Cross-certificate Issuance](#play-9-coordinate-cross-certificate-issuance)
-10. [Play 10: Perform Annual Compliance Audit](#play-10-perform-annual-compliance-audit)
+10. [Play 10 Perform Annual Compliance Audit](#play-10-perform-annual-compliance-audit)
 
 Questions related to this playbook should be directed to  [idmanagement@gsa.gov](mailto:idmanagement@gsa.gov).
 
