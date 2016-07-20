@@ -17,7 +17,7 @@ The following diagram illustrates the high-level PIV-I Certification process.
 
 ![enter image description here](https://raw.githubusercontent.com/dasgituser/fpki-guides/staging/img/fpki_piv-i_certification_playbook_diagram-v0.0.2.jpg) 
 
-1. [Play 1: Understand Roles and Responsibilities](#Play-1:-Understand-Roles-and-Responsibilities)
+1. [Play 1 Understand Roles and Responsibilities](#Play-1-Understand-Roles-and-Responsibilities)
 2. [Play 2: Know The PIV-I Components](#Know-The-PIV-I-Components)
 3. [Play 3: Prepare for PIV-I Cross-certification](#Prepare-for-PIV-I-Cross-certification)
 4. [Play 4: Submit Application for PIV-I Cross-certification](#Submit-Application-for-PIV-I-Cross-certification)
@@ -29,7 +29,7 @@ The following diagram illustrates the high-level PIV-I Certification process.
 
 Questions related to this playbook should be directed to  [idmanagement@gsa.gov](mailto:idmanagement@gsa.gov).
 
-#### Play 1: Understand Roles and Responsibilities
+#### Play 1 Understand Roles and Responsibilities
 
 The Federal Public Key Infrastructure Policy Authority (FPKIPA) is the inter-agency body set up under the CIO Council to enforce digital certificate standards for trusted identity authentication across the federal agencies and between federal agencies and outside bodies, such as universities, state and local governments and commercial entities.
 
