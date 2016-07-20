@@ -17,7 +17,7 @@ The following diagram illustrates the high-level PIV-I Certification process.
 
 ![enter image description here](https://raw.githubusercontent.com/dasgituser/fpki-guides/staging/img/fpki_piv-i_certification_playbook_diagram-v0.0.2.jpg) 
 
-1. [Play 1: Understand Roles and Responsibilities](#play-1:-understand-roles-and-responsibilities)
+1. [Play 1: Understand Roles and Responsibilities](#Understand-Roles-and-Responsibilities)
 2. [Play 2: Know The PIV-I Components](#Know-The-PIV-I-Components)
 3. [Play 3: Prepare for PIV-I Cross-certification](#Prepare-for-PIV-I-Cross-certification)
 4. [Play 4: Submit Application for PIV-I Cross-certification](#Submit-Application-for-PIV-I-Cross-certification)
