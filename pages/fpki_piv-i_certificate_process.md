@@ -6,7 +6,7 @@ permalink: /pivi-certification-process/
 
 **PIV-I Certification Playbook**
 ======================
-
+test
 Personal Identity Verification Interoperability (PIV-I) guidance has been issued to facilitate the issuance of identity credentials by organizations that are interoperable with Federal PIV-conformant systems and can be trusted by Federal organizations. In order to achieve this level of trust, PIV-I credentials must include digital credentials from a certification authority cross-certified with the Federal Bridge Certification Authority (FBCA) at the Medium Hardware Level of Assurance or above whose cross-certificate relationship includes PIV-I policy object identifiers (OIDs).
 
 The Federal government has established a  [FPKI Approved Providers List](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000XRrC) for entities that have demonstrated the ability to provide digital credentials that meet the expectations of the PIV-I guidance by demonstrating comparability with the appropriate FBCA policies.
