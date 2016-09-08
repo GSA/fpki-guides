@@ -22,14 +22,14 @@ This Playbook is a collection of frequently asked questions and common issues re
 #### Before you get started
 Abbreviation | Term | Description
 -------------|------|---------------
-* PIV-I | Personal Identity Verification - Interoperable card
-* FASC-N | Federal Agency Smart Card Number
-* GUID | Global Unique Identification Number
-* NFI | Non-Federal Issuer
-* PACS | Physical Access Control System
-* CHUID | Card Holder Unique Identifier
-* UUID | Universally Unique Identifier
-* relying party
+PIV-I | Personal Identity Verification - Interoperable card
+FASC-N | Federal Agency Smart Card Number
+GUID | Global Unique Identification Number
+NFI | Non-Federal Issuer
+PACS | Physical Access Control System
+CHUID | Card Holder Unique Identifier
+UUID | Universally Unique Identifier
+relying party||
 
 >The unique identifier for Federal cards is the FASC-N. 
 >NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.{: class="info"}
