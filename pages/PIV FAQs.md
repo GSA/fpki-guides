@@ -9,14 +9,6 @@ This Playbook is a collection of frequently asked questions and common issues re
 
 ##### Assumptions
 *  This text will be a bullet explaining a precondition or assumption before the user begins to follow the steps outlined in this document
-*  The asterisk symbol denotes a bulleted item, and an indented asterisk denotes a second level bullet
-* test 1st lvl
-  * test 2nd lvl
-    * **test 3rd lvl bold**
-    * test 3rd lvl
-  * test 2nd lvl
-    *  This is a third level bullet
-      *  4th level
 
 
 #### Before you get started
