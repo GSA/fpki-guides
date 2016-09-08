@@ -28,8 +28,8 @@ Abbreviation | Term | Description
 * NFI | Non-Federal Issuer
 * PACS | Physical Access Control System
 * CHUID | Card Holder Unique Identifier
-* relying party
 * UUID | Universally Unique Identifier
+* relying party
 
 >The unique identifier for Federal cards is the FASC-N. 
 >NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.{: class="info"}
