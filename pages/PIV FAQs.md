@@ -25,8 +25,7 @@ What level of detail should be covered here?
 
 
 >The unique identifier for Federal cards is the FASC-N. 
->NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.
-{:class="info"}
+>NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.{: class="info"}
 
 ### 1. How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
 
