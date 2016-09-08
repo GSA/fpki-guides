@@ -15,16 +15,21 @@ This Playbook is a collection of frequently asked questions and common issues re
     * **test 3rd lvl bold**
     * test 3rd lvl
   * test 2nd lvl
-    *  This is a second level bullet
-      *  more test
+    *  This is a third level bullet
+      *  4th level
 
 
 #### Before you get started
-What level of detail should be covered here?
-
-* Overview of PIV / Smart cards?
-* Glossary / Term Definitions?
-
+Abbreviation | Term | Description
+-------------|------|---------------
+* PIV-I | Personal Identity Verification - Interoperable card
+* FASC-N | Federal Agency Smart Card Number
+* GUID | Global Unique Identification Number
+* NFI | Non-Federal Issuer
+* PACS | Physical Access Control System
+* CHUID | Card Holder Unique Identifier
+* relying party
+* UUID | Universally Unique Identifier
 
 >The unique identifier for Federal cards is the FASC-N. 
 >NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.{: class="info"}
