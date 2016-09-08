@@ -16,7 +16,6 @@ This Playbook is a collection of frequently asked questions and common issues re
    * test 3rd lvl
   * test 2nd lvl
     *  This is a second level bullet
-     *  more test
       *  more test
 
 
