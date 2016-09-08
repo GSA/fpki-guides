@@ -12,9 +12,9 @@ This Playbook is a collection of frequently asked questions and common issues re
 *  The asterisk symbol denotes a bulleted item, and an indented asterisk denotes a second level bullet
 * test 1st lvl
   * test 2nd lvl
-    *test 3rd lvl
-      *test 4th lvl
-    *  This is a second level bullet
+   *test 3rd lvl
+    *test 4th lvl
+     *  This is a second level bullet
 
 
 #### Before you get started
