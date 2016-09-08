@@ -34,6 +34,7 @@ When a Federal PACS system is reading the CHUID it will have both the FASC-N and
 
 
 
+
 ### 2. As a relying party, when do I use the FASC-N versus the GUID?
 
 **For CHUID-based authentication**
@@ -43,6 +44,8 @@ If the FASC-N is populated with 14 nines (9), you can reasonably conclude it is 
 **For certificate-based authentication**
 
 If the subjectAltName does not contain a FASC-N, you can reasonably conclude it is a PIV-I card. Use the UUID from the subjectAltName.
+
+
 
 
 
