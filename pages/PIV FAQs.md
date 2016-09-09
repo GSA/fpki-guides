@@ -16,7 +16,7 @@ PIV | Personal Identity Verification card | A card containing printed and stored
 PIV-I | Personal Identity Verification - Interoperable card | An identitiy card that can work within the Federal PIV system, but does not meet all of the requirements to be a PIV card.
 FASC-N | Federal Agency Smart Card Number | A unique number assigned to one PIV card and individual only.  This number is the main identifier on a PIV card used by a PACS.
 GUID | Global Unique Identification Number | Unique number within the CHUID that must be present.
-NFI | Non-Federal Issuer | An issuer of identitiy cards which is not part of a federal agency
+NFI | Non-Federal Issuer | An issuer of identitiy cards which is not part of a federal agency.
 PACS | Physical Access Control System | An automated system that manages physical passage through a secured area based on a set of rules.
 CHUID | Card Holder Unique Identifier | Standardized set of data required for Federal PACS which must be included on PIV and PIV-I cards.
 UUID | Universally Unique Identifier | Alternate identifier for PIV-I cards since FASC-N are only available to Federal card issuers. 
@@ -24,6 +24,12 @@ UUID | Universally Unique Identifier | Alternate identifier for PIV-I cards sinc
 
 >The unique identifier for Federal cards is the FASC-N. 
 >NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.{: class="info"}
+
+<div style="float:right; padding:10px; margin-right:20px; border-radius:10px; width:180px; height:40px; box-shadow:3px 3px 5px 0px; text-align:center; background-color:#CCC; color:#666666">
+<div style="color:#000000">
+<em>Advanced</em>
+</div>
+</div>
 
 ### 1. How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
 
