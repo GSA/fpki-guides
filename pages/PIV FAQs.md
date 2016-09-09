@@ -22,11 +22,11 @@ CHUID | Card Holder Unique Identifier | Standardized set of data required for Fe
 UUID | Universally Unique Identifier | Alternate identifier for PIV-I cards since FASC-N are only available to Federal card issuers. 
 -- | relying party | Someone who requests and relies upon information provided from an external source to authenticate an identity.
 
-<div class="alert tip">The unique identifier for Federal cards is the FASC-N. 
+<div style="color:#666666">The unique identifier for Federal cards is the FASC-N. 
 NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.{: class="info"}
 </div>
 <div style="float:right; padding:10px; margin-right:20px; border-radius:10px; width:180px; height:40px; box-shadow:3px 3px 5px 0px; text-align:center; background-color:#CCC; color:#666666">
-<em>Advanced</em>
+<p>Advanced</p>
 </div>
 <div style="color:#000000">
 </div>
