@@ -28,14 +28,14 @@ UUID | Universally Unique Identifier | Alternate identifier for PIV-I cards sinc
 
 
 
-### 1. How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
+#### 1. How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
 
 When a Federal PACS system is reading the CHUID it will have both the FASC-N and the GUID available to it.  When the FASC-N contains 14 nines (9), and if technically feasible, the Federal PACS should look for and use the GUID value to identify the cardholder.
 
 
 
 
-### 2. As a relying party, when do I use the FASC-N versus the GUID?
+#### 2. As a relying party, when do I use the FASC-N versus the GUID?
 
   * **For CHUID-based authentication**
 
