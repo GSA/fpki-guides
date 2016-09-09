@@ -48,5 +48,5 @@ If the subjectAltName does not contain a FASC-N, you can reasonably conclude it 
 
 
 #### References
-
-[FICAM PIV-I FAQ](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s)
+Personal Identity Verification Interoperable (PIV-I) Frequently Asked Questions (FAQ)
+<https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s>
