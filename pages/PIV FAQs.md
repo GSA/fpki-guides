@@ -13,7 +13,7 @@ This Playbook is a collection of frequently asked questions and common issues re
 
 #### Before you get started
 Acronym | Term | Description
--------------|------
+--------|-----|------
 PIV-I | Personal Identity Verification - Interoperable card 
 FASC-N | Federal Agency Smart Card Number
 GUID | Global Unique Identification Number
