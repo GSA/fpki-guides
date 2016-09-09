@@ -26,9 +26,9 @@ UUID | Universally Unique Identifier | Alternate identifier for PIV-I cards sinc
 >NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.{: class="info"}
 
 <div style="float:right; padding:10px; margin-right:20px; border-radius:10px; width:180px; height:40px; box-shadow:3px 3px 5px 0px; text-align:center; background-color:#CCC; color:#666666">
-<div style="color:#000000">
 <em>Advanced</em>
 </div>
+<div style="color:#000000">
 </div>
 
 ### 1. How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
