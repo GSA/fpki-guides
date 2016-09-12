@@ -4,12 +4,12 @@ title: PIV FAQs
 permalink: /PIV FAQs/
 ---
 
-#### Overview
+## 1.0 Overview
 This Playbook is a collection of frequently asked questions and common issues regarding Personal Identity Verification (PIV) cards.  It is targeted towards agencies and relying parties implementing or currently using PIV cards for logical and/or physical security controls.
 
 
 
-#### Before you get started
+## 2.0 Before you get started
 Acronym | Term | Description
 --------|-----|------
 PIV | Personal Identity Verification card | A card containing printed and stored identity credentials that can be verified by another person or by an automated process.
@@ -26,16 +26,16 @@ UUID | Universally Unique Identifier | Alternate identifier for PIV-I cards sinc
 >NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.
 
 
-### Frequently Asked Questions
+## 3.0 Frequently Asked Questions
 
-#### 1. How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
+### 3.1 How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
 
   When a Federal PACS system is reading the CHUID it will have both the FASC-N and the GUID available to it.  When the FASC-N contains 14 nines (9), and if technically feasible, the Federal PACS should look for and use the GUID value to identify the cardholder.
 
 
 
 
-#### 2. As a relying party, when do I use the FASC-N versus the GUID?
+### 3.2 As a relying party, when do I use the FASC-N versus the GUID?
 
   * **For CHUID-based authentication**
 
