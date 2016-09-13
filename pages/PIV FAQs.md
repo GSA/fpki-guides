@@ -28,21 +28,27 @@ UUID | Universally Unique Identifier | Alternate identifier for PIV-I cards sinc
 
 ##  3.0 Frequently Asked Questions
 
-### 3.1 How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
-:   When a Federal PACS system is reading the CHUID it will have both the FASC-N and the GUID available to it.  When the FASC-N contains 14 nines (9), and if technically feasible, the Federal PACS should look for and use the GUID value to identify the cardholder.
+### 3.1  What is a PIV-I Card? 
+
+A Personal Identity Verification Interoperable (PIV-I) card is an identity credential card which meets the technical specifications to  work with Federal PIV-conformant systems and can be trusted by Federal organizations.  The PIV-I card is suitable for Level of Assurance (LOA) 4 as defined by OMB Memorandum [M-04-04](https://www.whitehouse.gov/sites/default/files/omb/memoranda/fy04/m04-04.pdf) and [NIST SP 800-63](https://pages.nist.gov/800-63-3/) as well as multi-factor authentication as defined in [NIST SP 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf)
+See [ICAM PIV-I FAQ Section 2.1](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s) for additional information on PIV-I guidance.
+
+### 3.2  How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
+
+When a Federal PACS system is reading the CHUID it will have both the FASC-N and the GUID available to it.  When the FASC-N contains 14 nines (9), and if technically feasible, the Federal PACS should look for and use the GUID value to identify the cardholder.
 
 
 
 
-###   3.2 As a relying party, when do I use the FASC-N versus the GUID?
+###  3.3 As a relying party, when do I use the FASC-N versus the GUID?
 
 * **For CHUID-based authentication**
 
-:     If the FASC-N is populated with 14 nines (9), you can reasonably conclude it is a PIV-I card. Use the UUID from the GUID.
+If the FASC-N is populated with 14 nines (9), you can reasonably conclude it is a PIV-I card. Use the UUID from the GUID.
 
 * **For certificate-based authentication**
 
-:     If the subjectAltName does not contain a FASC-N, you can reasonably conclude it is a PIV-I card. Use the UUID from the subjectAltName.
+If the subjectAltName does not contain a FASC-N, you can reasonably conclude it is a PIV-I card. Use the UUID from the subjectAltName.
 
 
 
