@@ -40,6 +40,7 @@ A PIV-I Card meets the PIV technical specifications of [NIST SP 800-73](http://n
 The table below compares the PIV and PIV-I cards in the areas of Suitability, Trust, and Card Edge.
 <br />
 ![PIV to PIV-I comparison table](/../../img/PIV_PIVI_table.JPG)
+<img src="/../../img/PIV_PIVI_table.JPG" alt="test image">
 
 
 
