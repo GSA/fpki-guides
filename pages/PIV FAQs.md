@@ -39,7 +39,7 @@ A Personal Identity Verification Interoperable (PIV-I) card is an identity crede
 **A PIV-I** card meets the PIV technical specifications of [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf)and is issued in a manner that may be trusted by Federal Government Relying Parties, but does not meet all of the requirements of [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf). <br /><br />
 The table below compares the PIV and PIV-I cards in the areas of Suitability, Trust, and Card Edge.
 <br /><br />
-![PIV to PIV-I comparison table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIV_PIVI_table.JPG)
+![PIV to PIV-I comparison table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIV_PIVI_table.JPG) <br />
 (See [ICAM PIV-I FAQ Section 2.2](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s) for details on the PIV/PIV-I comparison table.)
 <br /><br />
 
