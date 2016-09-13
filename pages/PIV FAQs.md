@@ -43,6 +43,24 @@ The table below compares the PIV and PIV-I cards in the areas of Suitability, Tr
 (See [ICAM PIV-I FAQ Section 2.2](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s) for details on the PIV/PIV-I comparison table.)
 <br /><br />
 
+### 3.3 What Object Identifiers (OIDs) Are Specified For PIV-I? 
+
+There is no Card Authentication extended key usage (EKU) OID defined specifically for PIV-I.  PIV-I Card Authentication certificates must assert the PIV Card Authentication EKU OID (id-PIV-cardAuth) in the EKU extension to specify that the public key is used to authenticate the PIV-I card rather than the PIV-I cardholder. <br /><br />
+![PIV-I OID table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIV_OID.JPG)
+<br /><br />
+
+
+
+
+
+### 3.? Can my agency accept PIV-I Cards issued by our contractors’ company in lieu of issuing PIV Cards to these individuals?
+
+**No.** Individuals who fall within the applicability of [HSPD-12](https://www.dhs.gov/homeland-security-presidential-directive-12) (see [OMB M-05-24](https://www.whitehouse.gov/sites/default/files/omb/memoranda/fy2005/m05-24.pdf) for details on HSPD-12 implementation), including Federal contractors requiring routine access to Federally-controlled facilities or Federally-controlled information systems for a period of time greater than 6 months, must continue to be issued PIV Cards by
+the Federal Government in accordance with relevant policies. 
+
+
+### 3.4 
+
 
 ### 3.? How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
 
