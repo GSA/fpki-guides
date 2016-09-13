@@ -36,7 +36,7 @@ A Personal Identity Verification Interoperable (PIV-I) card is an identity crede
 ### 3.2  What is the Difference Between A PIV-I Card And A PIV Card
 
 **A PIV** card is an identity card that is fully conformant with Federal PIV standards as defined by [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) and may only be issued by a Federal entity.  <br /><br />
-**A PIV-I** card meets the PIV technical specifications of [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf)and is issued in a manner that may be trusted by Federal Government Relying Parties, but does not meet all of the requirements of [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf). <br /><br />
+**A PIV-I** card meets the PIV technical specifications of [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) and is issued in a manner that may be trusted by Federal Government Relying Parties, but does not meet all of the requirements of [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf). <br /><br />
 The table below compares the PIV and PIV-I cards in the areas of Suitability, Trust, and Card Edge.
 <br /><br />
 ![PIV to PIV-I comparison table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIV_PIVI_table.JPG) <br />
@@ -45,21 +45,22 @@ The table below compares the PIV and PIV-I cards in the areas of Suitability, Tr
 
 ### 3.3 What Object Identifiers (OIDs) Are Specified For PIV-I? 
 
-There is no Card Authentication extended key usage (EKU) OID defined specifically for PIV-I.  PIV-I Card Authentication certificates must assert the PIV Card Authentication EKU OID (id-PIV-cardAuth) in the EKU extension to specify that the public key is used to authenticate the PIV-I card rather than the PIV-I cardholder. <br /><br />
-![PIV-I OID table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIV_OID.JPG)
+There is no Card Authentication extended key usage (EKU) OID defined specifically for PIV-I.  PIV-I Card Authentication certificates must assert the PIV Card Authentication EKU OID 'id-PIV-cardAuth' in the EKU extension to specify that the public key is used to authenticate the PIV-I card rather than the PIV-I cardholder. <br /><br />
+The table below shows the OIDs defined specifically for PIV-I:
 <br /><br />
+![PIV-I OID table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIV_OID.JPG)
 
-
-
-
-
-### 3.? Can my agency accept PIV-I Cards issued by our contractors’ company in lieu of issuing PIV Cards to these individuals?
+### 3.4 Can my agency accept PIV-I Cards issued by our contractors’ company in lieu of issuing PIV Cards to these individuals?
 
 **No.** Individuals who fall within the applicability of [HSPD-12](https://www.dhs.gov/homeland-security-presidential-directive-12) (see [OMB M-05-24](https://www.whitehouse.gov/sites/default/files/omb/memoranda/fy2005/m05-24.pdf) for details on HSPD-12 implementation), including Federal contractors requiring routine access to Federally-controlled facilities or Federally-controlled information systems for a period of time greater than 6 months, must continue to be issued PIV Cards by
 the Federal Government in accordance with relevant policies. 
 
 
-### 3.4 
+### 3.5 Can Non-PIV Cards Issued By The Federal Government Be Considered PIV-I?
+
+**Yes.** The Federal Government may issue non-PIV identity and access cards to individuals who are
+outside the applicability of[HSPD-12](https://www.dhs.gov/homeland-security-presidential-directive-12). Federal Government PIV Card Issuers may issue non-PIV identity cards that meet the PIV-I requirements specified in the [X.509 Certificate Policy for the FBCA (FBCA CP)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) . The FBCA CP specifies the minimum requirements for the Federal Government to rely on PIV-I Non-Federal Issuer (NFI) identity cards. Example scenarios where this might apply include facility access cards issued to short term employees (e.g., summer interns) and identity credentials issued by the Legislative and Judicial Branches of the Federal Government. 
+
 
 
 ### 3.? How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
