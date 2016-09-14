@@ -90,6 +90,9 @@ The PIV-I Card logical data model is the same as the PIV Card logical data model
 
 Except for the Card Authentication certificate/key pair, PIV-I has the same certificate and key configuration as a PIV Card, as defined in  FIPS 201 Section 4.3. The PIV-I Card has two mandatory certificate/key pairs, and three optional certificate/key pairs:
 
+![PIV-I Cert Keys](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIVI_CertKeys.JPG)
+7  PIV allows either a symmetric (secret) key or an asymmetric key, but  NIST SP 800-116 “strongly recommends that agencies use the asymmetric CAK protocol.
+
 ### 3.? How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
 
 When a Federal PACS system is reading the CHUID it will have both the FASC-N and the GUID available to it.  When the FASC-N contains 14 nines (9), and if technically feasible, the Federal PACS should look for and use the GUID value to identify the cardholder.
