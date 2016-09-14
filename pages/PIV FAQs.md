@@ -126,8 +126,17 @@ The validity period of PIV-I certificates is the same as for PIV certificates.  
 <br /><br /><br />
 
 ### 3.14   What Algorithms Must Be Used In Piv-I Card Certificates?
+
 The PIV-I Card must use the same algorithms as the PIV Card for their respective certificates, as specified in [NIST SP 800-78](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-78-4.pdf).  Tables 3.1 and 5.1 specify the algorithms and key sizes that must be supported per key type:
 ![PIV-I Card Algorithm Table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIVI_CertAlgorithms.JPG)
+<br /><br /><br />
+
+### 3.15   What is the status of the PIV-I Certificate Policy and PIV-I Profile?
+
+A revised X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) that comprehensively addresses PIV-I has been published.  PIV-I policies have been added to all applicable sections, and a new PIV-I appendix has been added for requirements that do not fit into any existing Certificate Policy section. See FAQ 2.3 for an overview of PIV-I in the FBCA Certificate Policy.  Also published is a wholly new X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards.  The document is based on the X.509
+Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers
+(SSP) Program.
+
 ### 3.? How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
 
 When a Federal PACS system is reading the CHUID it will have both the FASC-N and the GUID available to it.  When the FASC-N contains 14 nines (9), and if technically feasible, the Federal PACS should look for and use the GUID value to identify the cardholder.
