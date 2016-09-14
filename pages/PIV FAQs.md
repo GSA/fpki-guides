@@ -53,7 +53,7 @@ The table below shows the OIDs defined specifically for PIV-I:
 ![PIV-I OID table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIV_OID.JPG)
 <br /><br /><br />
 
-### 3.4 Can my agency accept PIV-I Cards issued by our contractors’ company in lieu of issuing PIV Cards to these individuals?
+### 3.4 Can My Agency Accept PIV-I Cards Issued By Our Contractors’ Company In Lieu Of Issuing PIV Cards To These Individuals?
 
 * **NO -** Individuals who fall within the applicability of [HSPD-12](https://www.dhs.gov/homeland-security-presidential-directive-12), including Federal contractors requiring routine access to Federally-controlled facilities or Federally-controlled information systems for a period of time greater than 6 months, must continue to be issued PIV Cards by
 the Federal Government in accordance with relevant policies. <br />
@@ -86,7 +86,7 @@ The PIV-I Card logical data model is the same as the PIV Card logical data model
 * **Yes -** The PIV-I Card logical data model can be extended in the same way as the PIV Card logical data model, as defined in [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) Section 4.1.5.1. The PIV-I Card logical data model may be extended using the optional data defined within  [NIST SP 800-73 Part 1] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
 <br /><br /><br />
 
-### 3.10 What Certificates And Keys May Be Present On A PIV-I Card?
+### 3.10  What Certificates And Keys May Be Present On A PIV-I Card?
 
 Except for the Card Authentication certificate/key pair, PIV-I has the same certificate and key configuration as a PIV Card, as defined in  FIPS 201 Section 4.3. The PIV-I Card has two mandatory certificate/key pairs, and three optional certificate/key pairs:
 
@@ -125,30 +125,62 @@ The PIV Card logical data model defines several optional elements.  The PIV-I Ca
 The validity period of PIV-I certificates is the same as for PIV certificates.  For example, the maximum validity of PIV-I certificates is three (3) years, which is also the validity period for human subscriber certificates issued in accordance with FBCA certificate policies. See [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i) for an overview of PIV-I in the FBCA Certificate Policy.
 <br /><br /><br />
 
-### 3.14   What Algorithms Must Be Used In Piv-I Card Certificates?
+### 3.14  What Algorithms Must Be Used In Piv-I Card Certificates?
 
 The PIV-I Card must use the same algorithms as the PIV Card for their respective certificates, as specified in [NIST SP 800-78](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-78-4.pdf).  Tables 3.1 and 5.1 specify the algorithms and key sizes that must be supported per key type:
 ![PIV-I Card Algorithm Table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIVI_CertAlgorithms.JPG)
 <br /><br /><br />
 
-### 3.15   What is the status of the PIV-I Certificate Policy and PIV-I Profile?
-
-A revised [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) that comprehensively addresses PIV-I has been published.  PIV-I policies have been added to all applicable sections, and a new PIV-I appendix has been added for requirements that do not fit into any existing Certificate Policy section. See [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i) for an overview of PIV-I in the FBCA Certificate Policy.  Also published is a wholly new X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards.  The document is based on the [X.509
-Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers
-(SSP) Program](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000Gmi3AAC&field=File__Body__s).
-<br /><br /><br />
-
-### 3.16   What must PIV-I Card Authentication certificate policies map to?
+### 3.15  What must PIV-I Card Authentication certificate policies map to?
 
 The certificate policies for the PIV-I Card Authentication certificate must map to the FBCA’s `id-fpki- certpcy-pivi-cardAuth` policy (see [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i) for an overview of the PIV-I card authentication certificate policy).  This is done by cross-certifying the issuing CA with the FBCA.  Note that a revised  [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) that comprehensively addresses PIV-I has been published (See [FAQ 3.15](#315-what-is-the-status-of-the-piv-i-certificate-policy-and-piv-i-profile)).
 <br /><br /><br />
 
-### 3.17    What Key Usage Bits Must Be Asserted In The Keyusage Exensions Of PIV-I Certificates?
+### 3.16  What Key Usage Bits Must Be Asserted In The Key Usage Exensions Of PIV-I Certificates?
 
 The certificates on PIV-I Cards assert the same bits in the certificate key usage extension as the respective certificates on PIV Cards, as follows:
 
 ![PIV-I Certificate Key Usage Bits Table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIVI_Cert_KeyUsageBits.JPG)<br />
 (See  [X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers(SSP) Program](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000Gmi3AAC&field=File__Body__s) for information on use of the extended key usage extension in certificates on PIV Cards.)
+<br /><br /><br />
+
+### 3.17  Do PIV-I Cards Need To Be FIPS-140-2 Validated?
+
+Yes.  the [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) requires [FIPS
+140-2](http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf) validation of PIV-I Cards. In addition, PIV-I Cards must be on the  [Approved Products List](https://www.idmanagement.gov/IDM/IDMFicamProductSearchPage).
+
+<br /><br /><br />
+
+### 3.18  What Assurance Requirements Must PIV-I Card Issuers Meet?
+
+Relying parties can be assured, with a high level of confidence, that PIV-I NFIs are following sound security practices, because:
+
+* Cross Certification with the FBCA includes extensive requirements related to Facility, Management, and Operational Controls (FBCA Section 5) and Technical Controls (FBCA Section 6)
+* PIV-I NFIs must cross-certify with the FBCA, which requires a rigorous process of evaluating a PIV-I NFI’s policies and procedures against the requirements defined in the  [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s)
+* PIV-I NFI’s will be issued a cross-certificate from the FBCA that will map the NFI’s policy OIDs
+to the relevant PIV-I OIDs (See FAQ 2.3 for more information)
+* Cross-certification with the FBCA requires annual compliance audits to demonstrate ongoing compliance with certificate policies and procedures
+* NFI cross certification with the FBCA is a requirement for identity cards to be considered PIV-I
+<br /><br /><br />
+
+### 3.19    What Are The Valid Methods To Generate/Construct A Universally Unique Identifier (UUID) Number? 
+
+The following table summarizes the three methods of generating/constructing UUID numbers specified in
+[NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).<br />
+![Generating the UUID](https://github.com/Protiviti-JSargent/fpki-guides/commit/87a3ccecbdc059409d4e016e62a6af621281476c)<br /><br />
+
+There is a slight chance of UUID collision across issuers. Therefore, Relying Parties should check for collisions when new UUIDs are enrolled in a local Physical Access Control System (PACS).
+<br /><br /><br />
+
+### 3.20   How does PIV-I handle Global Unique Identification Number (GUID) during issuance?
+
+The GUID is a field that must be in the Cardholder Unique Identifier (CHUID).  The value of the GUID must be an [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) UUID, as specified in the [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s).  The UUID value in the GUID is also used in certificates and signed objects on the card.
+<br /><br /><br />
+
+### 3.21    How Are PIV-I Cards And Components Tested?
+
+PIV-I Cards have to be on the  [FIPS 201 Approved Products List](https://www.idmanagement.gov/IDM/IDMFicamProductSearchPage), which requires [NIST SP 800-85A](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-85A-4.pdf) and security testing according to [FIPS 140-2](http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf).  It is recommended that issuers apply the [GSA FIPS 201
+Evaluation Program Test Tools](https://www.idmanagement.gov/IDM/s/) to a sampling of their issued cards on an ongoing basis to ensure interoperability.
 <br /><br /><br />
 
 ### 3.? How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
