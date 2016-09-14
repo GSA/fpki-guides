@@ -133,9 +133,23 @@ The PIV-I Card must use the same algorithms as the PIV Card for their respective
 
 ### 3.15   What is the status of the PIV-I Certificate Policy and PIV-I Profile?
 
-A revised X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA) that comprehensively addresses PIV-I has been published.  PIV-I policies have been added to all applicable sections, and a new PIV-I appendix has been added for requirements that do not fit into any existing Certificate Policy section. See FAQ 2.3 for an overview of PIV-I in the FBCA Certificate Policy.  Also published is a wholly new X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards.  The document is based on the X.509
+A revised [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) that comprehensively addresses PIV-I has been published.  PIV-I policies have been added to all applicable sections, and a new PIV-I appendix has been added for requirements that do not fit into any existing Certificate Policy section. See [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i) for an overview of PIV-I in the FBCA Certificate Policy.  Also published is a wholly new X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards.  The document is based on the [X.509
 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers
-(SSP) Program.
+(SSP) Program](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000Gmi3AAC&field=File__Body__s).
+<br /><br /><br />
+
+### 3.16   What must PIV-I Card Authentication certificate policies map to?
+
+The certificate policies for the PIV-I Card Authentication certificate must map to the FBCA’s `id-fpki- certpcy-pivi-cardAuth` policy (see [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i) for an overview of the PIV-I card authentication certificate policy).  This is done by cross-certifying the issuing CA with the FBCA.  Note that a revised  [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) that comprehensively addresses PIV-I has been published (See [FAQ 3.15](#315-what-is-the-status-of-the-piv-i-certificate-policy-and-piv-i-profile)).
+<br /><br /><br />
+
+### 3.17    What Key Usage Bits Must Be Asserted In The Keyusage Exensions Of PIV-I Certificates?
+
+The certificates on PIV-I Cards assert the same bits in the certificate key usage extension as the respective certificates on PIV Cards, as follows:
+
+![PIV-I Certificate Key Usage Bits Table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIVI_Cert_KeyUsageBits.JPG)<br />
+(See  [X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers(SSP) Program](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000Gmi3AAC&field=File__Body__s) for information on use of the extended key usage extension in certificates on PIV Cards.)
+<br /><br /><br />
 
 ### 3.? How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
 
