@@ -118,6 +118,12 @@ The PIV Card logical data model defines several optional elements.  The PIV-I Ca
 * Digital Signature Key
 * Key Management Key
 * Symmetric key associated with the card management system.
+<br /><br /><br />
+
+### 3.13  What Is The Validity Period For Piv-I Certificates?
+
+The validity period of PIV-I certificates is the same as for PIV certificates.  For example, the maximum validity of PIV-I certificates is three (3) years, which is also the validity period for human subscriber certificates issued in accordance with FBCA certificate policies. See [FAQ 3.3](3.3 What Object Identifiers (OIDs) Are Specified For PIV-I?) for an overview of PIV-I in the FBCA Certificate Policy.
+
 ### 3.? How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
 
 When a Federal PACS system is reading the CHUID it will have both the FASC-N and the GUID available to it.  When the FASC-N contains 14 nines (9), and if technically feasible, the Federal PACS should look for and use the GUID value to identify the cardholder.
