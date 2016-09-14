@@ -36,8 +36,9 @@ A Personal Identity Verification Interoperable (PIV-I) card is an identity crede
 
 ### 3.2  What is the Difference Between A PIV-I Card And A PIV Card
 
-**A PIV** card is an identity card that is fully conformant with Federal PIV standards as defined by [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) and may only be issued by a Federal entity.  <br /><br />
-**A PIV-I** card meets the PIV technical specifications of [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) and is issued in a manner that may be trusted by Federal Government Relying Parties, but does not meet all of the requirements of [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf). <br /><br />
+**PIV** is the official standard, detailed in Federal Information Processing Standards (FIPS) Publication 201, for issuing and managing Federal ID credentials in support of Homeland Security Presidential Directive (HSPD)-12.  A PIV card is an identity card that is fully conformant with Federal PIV standards as defined by [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) and may only be issued by a Federal entity.  <br /><br />
+
+**A PIV-I** card meets the PIV technical specifications of [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) and is issued in a manner that may be trusted by Federal Government Relying Parties.   PIV-I card issuers are cross-certified with the Federal Bridge Certification Authority (FBCA), however, a PIV-I card is not a Federal credential and does not meet all of the requirements of [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf).<br /><br />
 The table below compares the PIV and PIV-I cards in the areas of Suitability, Trust, and Card Edge.
 <br /><br />
 ![PIV to PIV-I comparison table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIV_PIVI_table.JPG) <br />
@@ -73,6 +74,16 @@ outside the applicability of[HSPD-12](https://www.dhs.gov/homeland-security-pres
 ### 3.7 Can An Identity Card Issued By A Program That Has Modified The PIV Technical Specifications Be Considered A PIV-I Card?
 
 * **NO -** In order to be considered PIV-I, an identity card must conform to the minimum PIV technical requirements defined in [X.509 Certificate Policy for the FBCA] (https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s), and be issued by an issuer who has been assessed by the Federal PKI Policy Authority as meeting those requirements.
+<br /><br /><br />
+
+### 3.8 What Is The Piv-I Card Logical Data Model?
+
+The PIV-I Card logical data model is the same as the PIV Card logical data model, as defined in [FIPS 201 Section 4.1.5.1](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) and further detailed in  [NIST SP 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
+<br /><br /><br />
+
+### 3.9 Can the PIV-I Card Logical Data Model be extended?
+
+* **Yes -** The PIV-I Card logical data model can be extended in the same way as the PIV Card logical data model, as defined in [FIPS 201 Section 4.1.5.1](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf). The PIV-I Card logical data model may be extended using the optional data defined within  [NIST SP 800-73 Part 1] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
 <br /><br /><br />
 
 ### 3.? How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
