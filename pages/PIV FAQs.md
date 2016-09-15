@@ -189,8 +189,8 @@ While [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) allo
 ----
 **\*NOTE***  [NIST SP 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf)
  strongly recommends that agencies use the asymmetric CAK protocol, rather than a symmetric CAK protocol, whenever the CAK authentication mechanism is used with PACS.
-----
 
+----
 <br /><br /><br />
 
 ###   3.23   What Biometrics Must Be In A PIV-I Card? 
