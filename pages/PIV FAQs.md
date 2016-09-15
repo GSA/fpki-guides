@@ -22,8 +22,6 @@ CHUID | Card Holder Unique Identifier | Standardized set of data required for Fe
 UUID | Universally Unique Identifier | Alternate identifier for PIV-I cards since FASC-N are only available to Federal card issuers. 
 -- | relying party | Someone who requests and relies upon information provided from an external source to authenticate an identity.
 
->The unique identifier for Federal cards is the FASC-N. 
->NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.
 
 
 ##  3.0 Frequently Asked Questions
@@ -133,7 +131,7 @@ The PIV-I Card must use the same algorithms as the PIV Card for their respective
 
 ### 3.15  What must PIV-I Card Authentication certificate policies map to?
 
-The certificate policies for the PIV-I Card Authentication certificate must map to the FBCA’s `id-fpki- certpcy-pivi-cardAuth` policy (See [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i) for an overview of the PIV-I card authentication certificate policy).  This is done by cross-certifying the issuing CA with the FBCA.  Note that a revised [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) that comprehensively addresses PIV-I has been published (See [ICAM PIV-I FAQ Section 2.15](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s)).
+The certificate policies for the PIV-I Card Authentication certificate must map to the FBCA’s **`id-fpki- certpcy-pivi-cardAuth`** policy (See [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i) for an overview of the PIV-I card authentication certificate policy).  This is done by cross-certifying the issuing CA with the FBCA.  Note that a revised [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) that comprehensively addresses PIV-I has been published (See [ICAM PIV-I FAQ Section 2.15](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s)).
 <br /><br /><br />
 
 ### 3.16  What Key Usage Bits Must Be Asserted In The Key Usage Exensions Of PIV-I Certificates?
@@ -187,8 +185,10 @@ Evaluation Program Test Tools](https://www.idmanagement.gov/IDM/s/) to a samplin
 
 * **NO -** However, [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) requires PIV-I Cards to contain an asymmetric CAK. Therefore, the card must be capable of supporting multiple CAKs in order to use a symmetric CAK.<br /><br />
 While [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) allows a PIV Card’s Card Authentication Key (CAK) to be either a symmetric (secret) key or an asymmetric private key for physical access, this has resulted in issues associated with Physical Access Control Systems (PACS) interoperability. <br />
+---
 **\*NOTE***  [NIST SP 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf)
  strongly recommends that agencies use the asymmetric CAK protocol, rather than a symmetric CAK protocol, whenever the CAK authentication mechanism is used with PACS.
+---
 <br /><br /><br />
 
 ###   3.23   What Biometrics Must Be In A PIV-I Card? 
@@ -206,7 +206,9 @@ populations. [PIV-I NFI](https://cio.gov/wp-content/uploads/downloads/2012/09/PI
  describes the challenges with the FASC- N as follows: <br />
 >The PIV Card includes a Federal Agency Smart Credential - Number (FASC-N) to uniquely identify it, and thus avoid identifier >namespace collisions. When managed and distributed within a closed system (the U.S. Government), uniqueness is ensured. However, the >FASC-N structure does not support its use beyond the U.S. Government as it cannot be easily extended to allow sufficient identifier >namespace to support a large NFI population.
 
-
+---
+>The unique identifier for Federal cards is the FASC-N. 
+>NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.
 
 ### 3.? How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
 
