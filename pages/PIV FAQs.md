@@ -216,7 +216,7 @@ The Global Unique Identifier (GUID) is a mandatory data field defined within the
 
 ###   3.26     What Is The Relationship Between GUID And UUID? 
 
-* **The Global Unique Identifier (GUID)** is a Tagged Length Value (i.e., a structured data field)
+* **The Global Unique Identifier (GUID)** is a Tagged-Length-Value (TLV) (i.e., a structured data field)
 within the Cardholder Unique ID (CHUID) object of a PIV Card. The GUID is defined in [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
 
 * **The Universally Unique IDentifier (UUID)** is a unique identifier that can be placed in multiple data fields to uniquely identify the card.  For example, the UUID is found in the GUID field of the CHUID, the subjectAltName extension of PIV-I Authentication and PIV-I Card Authentication certificates, and within signed objects on the card (in place of the Federal Agency Smart Credential Number(FASC-N) used in PIV Cards). The UUID is defined in  [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt).
@@ -243,29 +243,92 @@ The American Registry for Internet Numbers (ARIN) guidance indicates that IPv6 a
 
 ###   3.30      Where Does The GUID Appear?
 
-The Global Unique Identifier (GUID) is a Tag-Length-Value (TLV) (i.e., structured data field) of the CHUID.  As such, it only appears in the CHUID.  The UUID value that is contained in the GUID is used in other data fields throughout the PIV-I credential.
+The Global Unique Identifier (GUID) is a Tag-Length-Value (TLV) (i.e., structured data field) of the Cardholder Unique ID (CHUID).  As such, it only appears in the CHUID.  The Universally Unique Identifier (UUID) value that is contained in the GUID is used in other data fields throughout the PIV-I credential.
+
+###   3.31      Where Does The FASC-N Appear On The PIV-I Card? 
+
+The Federal Agency Smart Credential Number (FASC-N) is a unique number for Federal issuers that links all digitally-signed objects into a single credential set in a PIV Card - but not a PIV-I Card.  For Non-Federal Issuer (NFI) Cards, the FASC-N is only contained in a Tag-Length-Value (TLV) (i.e., structured data field) of the Cardholder Unique ID (CHUID) and it must contain 14 nines (9).  For PIV-I cards, the Universally Unique Identifier (UUID) links all digitally-signed objects into a single credential set. <br /> (See [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) for more information.)
+<br /><br /><br />
+
+###   3.32      Where Are The Detailed Specifications For UUID Formatting? 
+
+[NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) `\? Section 3.3 \?`  provides the requirements for formatting the Universally Unique Identifier (UUID) in objects that must contain a UUID.
+<br /><br /><br />
+
+###   3.33      Where Are The Detailed Specifications For The Value Of The FASC-N? 
+
+The detailed specifications for the data value of the Federal Agency Smart Credential Number (FASC-N) are provided in  [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
+<br /><br /><br />
+
+###   3.34      What Are The Values Of The Agency Code Of The FASC-N?
+
+The Agency Code for Federal issuers is assigned to each Department or Agency by [NIST SP 800-87](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-87r1.pdf).  The
+Agency Code for Non Federal Issuers (NFI) is 9999.<br /> ( See [FAQ 2.40](#337) for contents of the FASC-N in NFI cards.)
+<br /><br /><br />
+
+###   3.35      Where Are The Detailed Specifications For FASC-N Formatting? 
+
+[FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) provides the requirements for encoding the Federal Agency Smart Credential Number (FASC-N) in certificates and the signed attributes field of Cryptographic Message Syntax (CMS)-signed objects.   [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) provides the requirements for formatting the FASC-N in objects that must contain a FASC-N.  [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) refers to the [Technical Implementation Guidance: Smart Card Enabled Physical Access Control Systems](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000KyuCAAS&field=File__Body__s). Note that content of the
+FASC-N is different for Non Federal Issuer (NFI) Cards than for Federal agencies.
+<br /><br /><br />
+
+###   3.36       How Does A PACS Interpret A Federal PIV Card If The Card Contains A GUID That Is All Zeros?
+
+The Physical Access Control System (PACS) should use the Federal Agency Smart Credential Number (FASC-N) values for the Federal PIV card to identify the cardholder.
+<br /><br /><br />
+
+###   3.37      How does a Federal PACS interpret an NFI PIV-I Card that does not have a FASC-N?
+
+Non Federal Issuer (NFI) cards have a Federal Agency Smart Credential Number (FASC-N) that contains 14 nines (9). However, the FASC-N is not a unique identifier for NFIs.  The Global Unique Identifier (GUID) is the unique identifier for NFI Cards. When a Federal Physical Access Control System (PACS) is reading the Cardholder Unique ID (CHUID) it will have both the FASC-N and the GUID available to it.  When the FASC-N contains 14 nines (9), and if technically feasible, the Federal PACS should look for and use the GUID value to identify the cardholder.
+<br /><br /><br />
+
+###   3.38      What Are The Implications Of The Possible Values Of A FASC-N And What Are The Implications To My PACS?
+
+The following table shows the two types of Federal Agency Smart Credential Number (FASC-N) values, What can be determined about the credential based on that value, and any associated impacts or issues:
+
+![FASC-N Values and Impact Table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/FASCN_ValueTable.JPG0)
+<br /><br /><br />
+
+###   3.39      As An Issuer, When Do I Use The FASC-N Versus GUID?
+
+When issuing PIV-I credentials, Non Federal Issuers (NFI) are required to populate the Universally Unique Identifier (UUID) and Global Unique Identifier (GUID) according to  [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf), in addition to placing 14 nines (9) in the Federal Agency Smart Credential Number (FASC-N).<br />  (See FAQs 3.24 through 3.41 for related information.)
+<br /><br /><br />
+
+###   3.40      As a As A Relying Party, When Do I Use The FASC-N Versus GUID
+
 ---
 
-***NOTE***  The unique identifier for Federal cards is the FASC-N. 
-NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.
+***NOTE***  
+* The unique identifier for Federal cards is the Federal Agency Smart Credential Number (FASC-N).  It is found in the subjectAltName extension of the authentication certificates, and in the Global Unique Identifier (GUID) within the Cardholder Unique ID (CHUID).
+
+* Non Federal Issuer (NFI) cards have a FASC-N that contains 14 nines (9) and use the  as the unique identifier.
 
 ---
-
-### 3.? How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
-
-When a Federal PACS system is reading the CHUID it will have both the FASC-N and the GUID available to it.  When the FASC-N contains 14 nines (9), and if technically feasible, the Federal PACS should look for and use the GUID value to identify the cardholder.
-
-###  3.? As a relying party, when do I use the FASC-N versus the GUID?
 
 * **For CHUID-based authentication**
 
-If the FASC-N is populated with 14 nines (9), you can reasonably conclude it is a PIV-I card. Use the UUID from the GUID.
+If the FASC-N is populated with 14 nines (9), you can reasonably conclude it is a PIV-I card. Use the Universally Unique Identifier (UUID) from the GUID.
 
 * **For certificate-based authentication**
 
 If the subjectAltName does not contain a FASC-N, you can reasonably conclude it is a PIV-I card. Use the UUID from the subjectAltName.
+<br /><br /><br />
 
+###   3.41      How Does A PACS Determine Whether A Card Is PIV Or PIV-I? 
 
+The method depends upon the object on the card that is being used to authenticate the cardholder.  The table below shows the card object, Object ID (OID) Name, & OID value used to validate PIV and PIV-I cards.
+
+Authentication Method | Card Type | Validated Against OID Name | Validated Against OID Value
+---
+Authentication Certificate | PIV | id-fpki-common-authentication | 2.16.840.1.101.3.2.1.3.13
+Authentication Certificate | PIV-I | id-fpki-certpcy-pivi-hardware |2.16.840.1.101.3.2.1.3.18
+Card Authentication Certificate | PIV | id-fpki-common-cardAuth | 2.16.840.1.101.3.2.1.3.17
+Card Authentication Certificate | PIV-I | id-fpki-certpcy-pivi-cardAuth | 2.16.840.1.101.3.2.1.3.19
+Content Signing Certificate | PIV | id-fpki-common-devices | 2.16.840.1.101.3.2.1.3.8
+Content Signing Certificate | PIV-I | id-fpki-certpcy-pivi-contentSigning | 2.16.840.1.101.3.2.1.3.20
+CHUID | PIV | FASC-N | [Valid Federal Agency Code]
+CHUID | PIV-I | FASC-N | 14 nines (9) 
+<br /><br /><br />
 
 #### References
 Personal Identity Verification Interoperable (PIV-I) Frequently Asked Questions (FAQ)
