@@ -207,10 +207,49 @@ Both the Global Unique Identifier (GUID) and the Federal Agency Smart Credential
 populations. [PIV-I NFI](https://cio.gov/wp-content/uploads/downloads/2012/09/PIV_Interoperabillity_Non-Federal_Issuers_May-2009.pdf)
  describes the challenges with the FASC- N as follows: <br />
 >The PIV Card includes a Federal Agency Smart Credential - Number (FASC-N) to uniquely identify it, and thus avoid identifier >namespace collisions. When managed and distributed within a closed system (the U.S. Government), uniqueness is ensured. However, the >FASC-N structure does not support its use beyond the U.S. Government as it cannot be easily extended to allow sufficient identifier >namespace to support a large NFI population.
+<br /><br /><br />
+
+###   3.25     What Is The GUID? 
+
+The Global Unique Identifier (GUID) is a mandatory data field defined within the Cardholder Unique ID (CHUID) as specified in [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).  PIV and PIV-I Card must conform to  [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).  For PIV-I Cards, the GUID field must contain an [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt)-conformant Universally Unique Identifier (UUID) value to support large NFI populations.
+<br /><br /><br />
+
+###   3.26     What Is The Relationship Between GUID And UUID? 
+
+* **The Global Unique Identifier (GUID)** is a Tagged Length Value (i.e., a structured data field)
+within the Cardholder Unique ID (CHUID) object of a PIV Card. The GUID is defined in [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
+
+* **The Universally Unique IDentifier (UUID)** is a unique identifier that can be placed in multiple data fields to uniquely identify the card.  For example, the UUID is found in the GUID field of the CHUID, the subjectAltName extension of PIV-I Authentication and PIV-I Card Authentication certificates, and within signed objects on the card (in place of the Federal Agency Smart Credential Number(FASC-N) used in PIV Cards). The UUID is defined in  [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt).
+
+On PIV Cards, the GUID may contain a UUID, an IPv6 address, or be populated with all zeros.  On PIV-I Cards, the GUID must contain a UUID. Both the UUID and IPv6 addresses provide a unique numbering scheme.  However, the UUID does not require a central organization to manage the namespace.
+<br /><br /><br />
+
+###   3.27      Where Else Does The GUID's UUID Value Appear? 
+
+For Non Federal Issuers (NFI), the Universally Unique IDentifier (UUID) value that is present in the The Global Unique Identifier (GUID) is present in other data objects as well.  For example, the UUID must be present in all objects on a PIV-I credential that would otherwise contain the Federal Agency Smart Credential Number(FASC-N) if the card were issued by a Federal issuer.  In addition, the UUID must appear in the subjectAltName extension of the PIV-I Authentication and PIV-I Card Authentication certificates as a Uniform Resource Identifier (URI).  The UUID also appears in a serialNumber attribute in the subject field of PIV-I Card Authentication certificates where it is encoded using the string representation from [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt).
+<br /><br /><br />
+
+###   3.28      What Is The Format Of The UUID In Certificates? 
+
+The Uniform Resource Name (URN)-formatted value of the UUID is included in the subjectAltName extension of the PIV-I Authentication and PIV-I Card Authentication certificates. One of the defined types of subjectAltName extension is uniformResourceIdentifier. The uniformResourceIdentifier type is used to house the URN-formatted Universally Unique Identifier (UUID).  [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) defines a method for representing the UUID as a URN.
+
+The UUID also appears in a serialNumber attribute in the subject field of PIV-I Card Authentication certificates where it is encoded using the string representation from RFC 4122.
+<br /><br /><br />
+
+###   3.29      Why Has The Ipv6 Guid Value Been Deprecated In Favor Of UUID? 
+
+The American Registry for Internet Numbers (ARIN) guidance indicates that IPv6 addresses should only be used for internet addressable end points. The  [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) provides a unique numbering scheme that does not require any central organization managing the namespace.
+<br /><br /><br />
+
+###   3.30      Where Does The GUID Appear?
+
+The Global Unique Identifier (GUID) is a Tag-Length-Value (TLV) (i.e., structured data field) of the CHUID.  As such, it only appears in the CHUID.  The UUID value that is contained in the GUID is used in other data fields throughout the PIV-I credential.
+---
+
+***NOTE***  The unique identifier for Federal cards is the FASC-N. 
+NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.
 
 ---
->The unique identifier for Federal cards is the FASC-N. 
->NFI cards have a FASC-N that contains 14 nines (9) and use the GUID as the unique identifier.
 
 ### 3.? How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
 
