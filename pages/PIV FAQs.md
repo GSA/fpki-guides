@@ -55,7 +55,7 @@ The table below shows the OIDs defined specifically for PIV-I:
 
 ### 3.4 Can My Agency Accept PIV-I Cards Issued By Our Contractors’ Company In Lieu Of Issuing PIV Cards To These Individuals?
 
-* **NO -** Individuals who fall within the applicability of [HSPD-12](https://www.dhs.gov/homeland-security-presidential-directive-12), including Federal contractors requiring routine access to Federally-controlled facilities or Federally-controlled information systems for a period of time greater than 6 months, must continue to be issued PIV Cards by
+* **NO -** Individuals who fall within the applicability of [Homeland Security Presidential Directive (HSPD)-12](https://www.dhs.gov/homeland-security-presidential-directive-12), including Federal contractors requiring routine access to Federally-controlled facilities or Federally-controlled information systems for a period of time greater than 6 months, must continue to be issued PIV Cards by
 the Federal Government in accordance with relevant policies. <br />
 (see [OMB M-05-24](https://www.whitehouse.gov/sites/default/files/omb/memoranda/fy2005/m05-24.pdf) for details on HSPD-12 implementation.)
 <br /><br /><br />
@@ -78,12 +78,12 @@ outside the applicability of[HSPD-12](https://www.dhs.gov/homeland-security-pres
 
 ### 3.8 What Is The Piv-I Card Logical Data Model?
 
-The PIV-I Card logical data model is the same as the PIV Card logical data model, as defined in [FIPS 201 Section 4.1.5.1](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) and further detailed in  [NIST SP 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
+The PIV-I Card logical data model is the same as the PIV Card logical data model, as defined in [FIPS 201 Section 4.1.5.1](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) and further detailed in  [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
 <br /><br /><br />
 
 ### 3.9 Can the PIV-I Card Logical Data Model be extended?
 
-* **Yes -** The PIV-I Card logical data model can be extended in the same way as the PIV Card logical data model, as defined in [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) Section 4.1.5.1. The PIV-I Card logical data model may be extended using the optional data defined within  [NIST SP 800-73 Part 1] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
+* **Yes -** The PIV-I Card logical data model can be extended in the same way as the PIV Card logical data model, as defined in [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) Section 4.1.5.1. The PIV-I Card logical data model may be extended using the optional data defined within  [NIST SP 800-73] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
 <br /><br /><br />
 
 ### 3.10  What Certificates And Keys May Be Present On A PIV-I Card?
@@ -133,7 +133,7 @@ The PIV-I Card must use the same algorithms as the PIV Card for their respective
 
 ### 3.15  What must PIV-I Card Authentication certificate policies map to?
 
-The certificate policies for the PIV-I Card Authentication certificate must map to the FBCA’s `id-fpki- certpcy-pivi-cardAuth` policy (See [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i) for an overview of the PIV-I card authentication certificate policy).  This is done by cross-certifying the issuing CA with the FBCA.  Note that a revised [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) that comprehensively addresses PIV-I has been published (See [ICAM PIV-I FAQ Section 2.15](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s))).
+The certificate policies for the PIV-I Card Authentication certificate must map to the FBCA’s `id-fpki- certpcy-pivi-cardAuth` policy (See [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i) for an overview of the PIV-I card authentication certificate policy).  This is done by cross-certifying the issuing CA with the FBCA.  Note that a revised [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) that comprehensively addresses PIV-I has been published (See [ICAM PIV-I FAQ Section 2.15](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s)).
 <br /><br /><br />
 
 ### 3.16  What Key Usage Bits Must Be Asserted In The Key Usage Exensions Of PIV-I Certificates?
@@ -182,6 +182,31 @@ The GUID is a field that must be in the Cardholder Unique Identifier (CHUID).  T
 PIV-I Cards have to be on the  [FIPS 201 Approved Products List](https://www.idmanagement.gov/IDM/IDMFicamProductSearchPage), which requires [NIST SP 800-85A](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-85A-4.pdf) and security testing according to [FIPS 140-2](http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf).  It is recommended that issuers apply the [GSA FIPS 201
 Evaluation Program Test Tools](https://www.idmanagement.gov/IDM/s/) to a sampling of their issued cards on an ongoing basis to ensure interoperability.
 <br /><br /><br />
+
+###   3.22  Is Symmetric Card Authentication Key (CAK) Prohibited? 
+
+* **NO -** However, [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) requires PIV-I Cards to contain an asymmetric CAK. Therefore, the card must be capable of supporting multiple CAKs in order to use a symmetric CAK.<br /><br />
+While [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) allows a PIV Card’s Card Authentication Key (CAK) to be either a symmetric (secret) key or an asymmetric private key for physical access, this has resulted in issues associated with Physical Access Control Systems (PACS) interoperability. <br />
+**\*NOTE\***  [NIST SP 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf)
+ strongly recommends that agencies use the asymmetric CAK protocol, rather than a symmetric CAK protocol, whenever the CAK authentication mechanism is used with PACS.
+<br /><br /><br />
+
+###   3.23   What Biometrics Must Be In A PIV-I Card? 
+
+PIV-I Card biometric requirements match those of the PIV Card.   [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf)
+ requires the biometrics data object to be on the card.   [NIST SP 800-76](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-76-2.pdf)
+ defines the biometrics data object.  Specifically, two fingerprint templates, and a digitized photo template are required for PIV-I.  A printed photo is also required to be on the card.
+<br /><br /><br />
+
+###   3.24    What Is The Relationship Between FASC-N And GUID?
+
+Both the Global Unique Identifier (GUID) and the Federal Agency Smart Credential Number(FASC-N) are data fields within the Cardholder Unique ID (CHUID) per  [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf). The GUID is included in the CHUID.  The GUID field is defined to contain an  [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt)
+-conformant Universally Unique Identifier (UUID) value to support large Non-Federal Issuer (NFI)
+populations. [PIV-I NFI](https://cio.gov/wp-content/uploads/downloads/2012/09/PIV_Interoperabillity_Non-Federal_Issuers_May-2009.pdf)
+ describes the challenges with the FASC- N as follows: <br />
+>The PIV Card includes a Federal Agency Smart Credential - Number (FASC-N) to uniquely identify it, and thus avoid identifier >namespace collisions. When managed and distributed within a closed system (the U.S. Government), uniqueness is ensured. However, the >FASC-N structure does not support its use beyond the U.S. Government as it cannot be easily extended to allow sufficient identifier >namespace to support a large NFI population.
+
+
 
 ### 3.? How does a Federal Physical Access Control System (PACS) interpret a PIV-I card that does not have a FASC-N?
 
