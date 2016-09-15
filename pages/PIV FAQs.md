@@ -133,7 +133,7 @@ The PIV-I Card must use the same algorithms as the PIV Card for their respective
 
 ### 3.15  What must PIV-I Card Authentication certificate policies map to?
 
-The certificate policies for the PIV-I Card Authentication certificate must map to the FBCA’s `id-fpki- certpcy-pivi-cardAuth` policy (See [ICAM PIV-I FAQ Section 2.15](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s)) for an overview of the PIV-I card authentication certificate policy).  This is done by cross-certifying the issuing CA with the FBCA.  Note that a revised  [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) that comprehensively addresses PIV-I has been published (See [FAQ 3.15](#315-what-is-the-status-of-the-piv-i-certificate-policy-and-piv-i-profile)).
+The certificate policies for the PIV-I Card Authentication certificate must map to the FBCA’s `id-fpki- certpcy-pivi-cardAuth` policy (See [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i) for an overview of the PIV-I card authentication certificate policy).  This is done by cross-certifying the issuing CA with the FBCA.  Note that a revised [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) that comprehensively addresses PIV-I has been published (See [ICAM PIV-I FAQ Section 2.15](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s))).
 <br /><br /><br />
 
 ### 3.16  What Key Usage Bits Must Be Asserted In The Key Usage Exensions Of PIV-I Certificates?
@@ -158,7 +158,7 @@ Relying parties can be assured, with a high level of confidence, that PIV-I NFIs
 * Cross Certification with the FBCA includes extensive requirements related to Facility, Management, and Operational Controls (FBCA Section 5) and Technical Controls (FBCA Section 6)
 * PIV-I NFIs must cross-certify with the FBCA, which requires a rigorous process of evaluating a PIV-I NFI’s policies and procedures against the requirements defined in the  [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s)
 * PIV-I NFI’s will be issued a cross-certificate from the FBCA that will map the NFI’s policy OIDs
-to the relevant PIV-I OIDs (See [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i)
+to the relevant PIV-I OIDs (See [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i))
 * Cross-certification with the FBCA requires annual compliance audits to demonstrate ongoing compliance with certificate policies and procedures
 * NFI cross certification with the FBCA is a requirement for identity cards to be considered PIV-I
 <br /><br /><br />
