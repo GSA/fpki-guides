@@ -8,7 +8,7 @@ permalink: /PIV FAQs/
 This Playbook is a collection of frequently asked questions and common issues regarding Personal Identity Verification Interoperable (PIV-I) cards.  It is targeted towards agencies and relying parties implementing or currently using PIV-I cards for logical and/or physical security controls.
 <br /><br /><br />
 
-##  2.0 Before you get started
+##  2.0 Key Terms
 Acronym | Term | Description
 --------|-----|------
 PIV | Personal Identity Verification card | A card containing printed and stored identity credentials that can be verified by another person or by an automated process within the Federal PIV system.  PIV cards can only be produced by Federal Issuers.
@@ -24,13 +24,13 @@ UUID | Universally Unique Identifier | Alternate identifier for PIV-I cards sinc
 
 ##  3.0 Frequently Asked Questions
 
-### 3.1  What is a PIV-I Card? 
+### 3.1  What Is A PIV-I Card? 
 
 A Personal Identity Verification Interoperable (PIV-I) card is an identity credential card which meets the technical specifications to  work with Federal PIV-conformant systems and can be trusted by Federal organizations.  The PIV-I card is suitable for Level of Assurance (LOA) 4 as defined by OMB Memorandum [M-04-04](https://www.whitehouse.gov/sites/default/files/omb/memoranda/fy04/m04-04.pdf) and [NIST SP 800-63](https://pages.nist.gov/800-63-3/) as well as multi-factor authentication as defined in [NIST SP 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf).<br />
 (See [ICAM PIV-I FAQ Section 2.1](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s) for additional information on PIV-I guidance.)
 <br /><br /><br />
 
-### 3.2  What is the Difference Between A PIV Card And A PIV-I Card
+### 3.2  What Is The Difference Between A PIV Card And A PIV-I Card
 
 **PIV** is the official standard, detailed in [Federal Information Processing Standards (FIPS) Publication 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf), for issuing and managing Federal ID credentials in support of [Homeland Security Presidential Directive (HSPD)-12](https://www.dhs.gov/homeland-security-presidential-directive-12).  A PIV card is an identity card that is fully conformant with Federal PIV standards as defined by FIPS 201 and may only be issued by a Federal entity.  <br /><br />
 
