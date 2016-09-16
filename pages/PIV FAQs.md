@@ -319,18 +319,17 @@ If the subjectAltName does not contain a FASC-N, you can reasonably conclude it 
 The method depends upon the object on the card that is being used to authenticate the cardholder.  The tables below shows the card authentication method and the Object ID (OID) Name & OID value PIV and PIV-I cards are validated against.
 
 PIV Credential Validation <br />
+
 Authentication | OID Name | OID Value
----|---|---|---
-Authentication Certificate | PIV | id-fpki-common-authentication | 2.16.840.1.101.3.2.1.3.13
-
-Card Authentication Certificate | PIV | id-fpki-common-cardAuth | 2.16.840.1.101.3.2.1.3.17
-
-Content Signing Certificate | PIV | id-fpki-common-devices | 2.16.840.1.101.3.2.1.3.8
-
-CHUID | PIV | FASC-N | [Valid Federal Agency Code]
-
+---|---|---
+Authentication Certificate | id-fpki-common-authentication | 2.16.840.1.101.3.2.1.3.13
+Card Authentication Certificate | id-fpki-common-cardAuth | 2.16.840.1.101.3.2.1.3.17
+Content Signing Certificate | id-fpki-common-devices | 2.16.840.1.101.3.2.1.3.8
+CHUID | FASC-N | [Valid Federal Agency Code]
+<br />
 
 PIV-I Credential Validation <br />
+
 Authentication | OID Name | OID Value
 ---|---|---
 Authentication Certificate | id-fpki-certpcy-pivi-hardware |2.16.840.1.101.3.2.1.3.18
