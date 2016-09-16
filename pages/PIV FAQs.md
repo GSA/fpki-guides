@@ -164,7 +164,7 @@ to the relevant PIV-I OIDs (See [FAQ 3.3](#33-what-object-identifiers-oids-are-s
 
 The following table summarizes the three methods of generating/constructing UUID numbers specified in
 [NIST SP 800-73-4](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).<br /><br />
-![Generating the UUID](https://github.com/Protiviti-JSargent/fpki-guides/blob/87a3ccecbdc059409d4e016e62a6af621281476c/img/Generating_UUID.JPG)<br /><br />
+![Generating the UUID](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/Generating_UUID.JPG)<br /><br />
 
 There is a slight chance of UUID collision across issuers. Therefore, Relying Parties should check for collisions when new UUIDs are enrolled in a local Physical Access Control System (PACS).
 <br /><br /><br />
