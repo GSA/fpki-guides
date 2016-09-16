@@ -316,18 +316,27 @@ If the subjectAltName does not contain a FASC-N, you can reasonably conclude it 
 
 ###   3.41      How Does A PACS Determine Whether A Card Is PIV Or PIV-I? 
 
-The method depends upon the object on the card that is being used to authenticate the cardholder.  The table below shows the card object, Object ID (OID) Name, & OID value used to validate PIV and PIV-I cards.
+The method depends upon the object on the card that is being used to authenticate the cardholder.  The tables below shows the card authentication method and the Object ID (OID) Name & OID value PIV and PIV-I cards are validated against.
 
-Authentication Method | Card Type | Validated Against OID Name | Validated Against OID Value
+PIV Credential Validation <br />
+Authentication | OID Name | OID Value
 ---|---|---|---
 Authentication Certificate | PIV | id-fpki-common-authentication | 2.16.840.1.101.3.2.1.3.13
-Authentication Certificate | PIV-I | id-fpki-certpcy-pivi-hardware |2.16.840.1.101.3.2.1.3.18
+
 Card Authentication Certificate | PIV | id-fpki-common-cardAuth | 2.16.840.1.101.3.2.1.3.17
-Card Authentication Certificate | PIV-I | id-fpki-certpcy-pivi-cardAuth | 2.16.840.1.101.3.2.1.3.19
+
 Content Signing Certificate | PIV | id-fpki-common-devices | 2.16.840.1.101.3.2.1.3.8
-Content Signing Certificate | PIV-I | id-fpki-certpcy-pivi-contentSigning | 2.16.840.1.101.3.2.1.3.20
+
 CHUID | PIV | FASC-N | [Valid Federal Agency Code]
-CHUID | PIV-I | FASC-N | 14 nines (9) 
+
+
+PIV-I Credential Validation <br />
+Authentication | OID Name | OID Value
+---|---|---
+Authentication Certificate | id-fpki-certpcy-pivi-hardware |2.16.840.1.101.3.2.1.3.18
+Card Authentication Certificate | id-fpki-certpcy-pivi-cardAuth | 2.16.840.1.101.3.2.1.3.19
+Content Signing Certificate | id-fpki-certpcy-pivi-contentSigning | 2.16.840.1.101.3.2.1.3.20
+CHUID | FASC-N | 14 nines (9) 
 
 <br /><br /><br />
 
