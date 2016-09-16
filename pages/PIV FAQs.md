@@ -6,8 +6,7 @@ permalink: /PIV FAQs/
 
 ## 1.0  Overview
 This Playbook is a collection of frequently asked questions and common issues regarding Personal Identity Verification Interoperable (PIV-I) cards.  It is targeted towards agencies and relying parties implementing or currently using PIV-I cards for logical and/or physical security controls.
-
-
+<br /><br /><br />
 
 ##  2.0 Before you get started
 Acronym | Term | Description
@@ -21,7 +20,7 @@ FASC-N | Federal Agency Smart Card Number | A unique number assigned to one PIV 
 NFI | Non-Federal Issuer | A non-federal agency certified to produce and issue PIV-I credentials
 UUID | Universally Unique Identifier | Alternate identifier for PIV-I cards since FASC-N are only available to Federal card issuers. 
 -- | relying party | Someone who requests and relies upon information provided from an external source to authenticate an identity.
-
+<br /><br /><br />
 
 ##  3.0 Frequently Asked Questions
 
