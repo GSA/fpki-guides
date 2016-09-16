@@ -327,7 +327,7 @@ Authentication Certificate | id-fpki-common-authentication | 2.16.840.1.101.3.2.
 Card Authentication Certificate | id-fpki-common-cardAuth | 2.16.840.1.101.3.2.1.3.17
 Content Signing Certificate | id-fpki-common-devices | 2.16.840.1.101.3.2.1.3.8
 CHUID | FASC-N | [Valid Federal Agency Code]
-
+<br />
 
 PIV-I Credential Validation <br />
 
@@ -337,6 +337,16 @@ Authentication Certificate | id-fpki-certpcy-pivi-hardware |2.16.840.1.101.3.2.1
 Card Authentication Certificate | id-fpki-certpcy-pivi-cardAuth | 2.16.840.1.101.3.2.1.3.19
 Content Signing Certificate | id-fpki-certpcy-pivi-contentSigning | 2.16.840.1.101.3.2.1.3.20
 CHUID | FASC-N | 14 nines (9) 
+<br /><br /><br />
+
+###   3.42        How Do I Generate A Guid?
+
+For PIV-I Cards, a Global Unique Identifier (GUID) is generated using the Universally Unique Identifier (UUID) specification defined in  [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt).  [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) recommends using algorithm versions 1, 4, and 5 to generate the UUID.
+<br /><br /><br />
+
+###   3.43        Are Other Fields In The FASC-N, Such As Person Identifier, Defined For NFI Cards? 
+
+Neither policy nor specifications provide guidance in this area. Issuers can do anything they like with Person Identifier or the remaining fields of the FASC-N.  Therefore, Relying Parties should not make any assumptions regarding format or content of the Person Identifier or the remaining fields of the FASC-N.
 <br /><br /><br />
 
 #### References
