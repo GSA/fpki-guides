@@ -36,7 +36,7 @@ permalink: /PIV FAQs/
 ###[3.27 Where Else Does The GUIDs UUID Value Appear](#327-where-else-does-the-guids-uuid-value-appear-1)
 ###[3.28 What Is The Format Of The UUID In Certificates](#328-what-is-the-format-of-the-uuid-in-certificates-1)
 ###[3.29 Why Has The Ipv6 GUID Value Been Deprecated In Favor Of UUID](#329-why-has-the-ipv6-guid-value-been-deprecated-in-favor-of-uuid-1)
-###[3.30 Where Does The Global Unique IDentifier GUID Appear](#330-where-does-the-the-global-unique-identifier-guid-appear-1)
+###[3.30 Where Does The Global Unique IDentifier (GUID) Appear](#330-where-does-the-global-unique-identifier-guid-appear-1)
 ###[3.31 Where Does The FASC-N Appear On The PIV-I Card](#331-where-does-the-fasc-n-appear-on-the-piv-i-card-1)
 ###[3.32 Where Are The Detailed Specifications For UUID Formatting](#332-where-are-the-detailed-specifications-for-uuid-formatting-1)
 ###[3.33 Where Are The Detailed Specifications For The Value Of The FASC-N](#333-where-are-the-detailed-specifications-for-the-value-of-the-fasc-n-1)
@@ -46,7 +46,7 @@ permalink: /PIV FAQs/
 ###[3.37 How Does A Federal PACS Interpret An NFI PIV-I Card That Does Not Have A FASC-N](#337-how-does-a-federal-pacs-interpret-an-nfi-piv-i-card-that-does-not-have-a-fasc-n-1)
 ###[3.38 What Are The Implications Of The Possible Values Of A FASC-N And What Are The Implications To My PACS](#338-what-are-the-implications-of-the-possible-values-of-a-fasc-n-and-what-are-the-implications-to-my-pacs-1)
 ###[3.39 As An Issuer When Do I Use The FASC-N Versus GUID](#339-as-an-issuer-when-do-i-use-the-fasc-n-versus-guid-1)
-###[3.40 As A Relying Party When Do I Use The FASC-N Versus GUID](#340-as-a-as-a-relying-party-when-do-i-use-the-fasc-n-versus-guid-1)
+###[3.40 As A Relying Party When Do I Use The FASC-N Versus GUID](#340-as-a-relying-party-when-do-i-use-the-fasc-n-versus-guid-1)
 ###[3.41 How Does A PACS Determine Whether A Card Is PIV Or PIV-I](#341-how-does-a-pacs-determine-whether-a-card-is-piv-or-piv-i-1)
 ###[3.42 How Do I Generate A GUID](#342-how-do-i-generate-a-guid-1)
 ###[3.43 Are Other Fields In The FASC-N Such As Person Identifier Defined For NFI Cards](#343-are-other-fields-in-the-fasc-n-such-as-person-identifier-defined-for-nfi-cards-1)
@@ -289,7 +289,7 @@ The UUID also appears in a serialNumber attribute in the subject field of PIV-I 
 The American Registry for Internet Numbers (ARIN) guidance indicates that IPv6 addresses should only be used for internet addressable end points. The  [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) provides a unique numbering scheme that does not require any central organization managing the namespace.
 <br /><br /><br />
 
-### 3.30 Where Does The The Global Unique Identifier (GUID) Appear?
+### 3.30 Where Does The Global Unique Identifier (GUID) Appear?
 
 GUID is a Tag-Length-Value (TLV) (i.e., structured data field) of the CardHolder Unique IDentifier (CHUID).  As such, it only appears in the CHUID.  The Universally Unique Identifier (UUID) value that is contained in the GUID is used in other data fields throughout the PIV-I credential.
 <br /><br /><br />
