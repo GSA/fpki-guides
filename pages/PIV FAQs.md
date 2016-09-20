@@ -25,7 +25,7 @@ permalink: /PIV FAQs/
 ####[3.16 What Key Usage Bits Must Be Asserted In The Key Usage Exensions Of PIV-I Certificates](#316-what-key-usage-bits-must-be-asserted-in-the-key-usage-exensions-of-piv-i-certificates-1)
 ####[3.17 Do PIV-I Cards Need To Be FIPS 140-2 Validated](#317-do-piv-i-cards-need-to-be-fips-140-2-validated-1)
 ####[3.18 What Assurance Requirements Must PIV-I Card Issuers Meet](#318-what-assurance-requirements-must-piv-i-card-issuers-meet-1)
-###[3.19 What Are The Valid Methods To Generate / Construct A Universally Unique IDentifier (UUID) Number](#319-what-are-the-valid-methods-to-generate--construct-a-universally-unique-identifier-uuid-number-1)
+####[3.19 What Are The Valid Methods To Generate / Construct A Universally Unique IDentifier (UUID) Number](#319-what-are-the-valid-methods-to-generate--construct-a-universally-unique-identifier-uuid-number-1)
 ####[3.20 How Does PIV-I Handle Global Unique IDentification Number (GUID) during issuance](#320-how-does-piv-i-handle-global-unique-identification-number-guid-during-issuance-1)
 ####[3.21 How Are PIV-I Cards And Components Tested](#321-how-are-piv-i-cards-and-components-tested-1)
 ####[3.22 Is Symmetric Card Authentication Key (CAK) Prohibited](#322-is-symmetric-card-authentication-key-cak-prohibited-1)
@@ -84,7 +84,7 @@ A Personal Identity Verification Interoperable (PIV-I) card is an identity crede
 **PIV-I** cards meet the PIV technical specifications of [NIST SP 800-73-4] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) and are issued in a manner that may be trusted by Federal Government Relying Parties.   PIV-I card issuers are cross-certified with the Federal Bridge Certification Authority (FBCA), however, a PIV-I card is not a Federal credential and does not meet all of the requirements of FIPS 201-2.<br /><br />
 The table below compares the PIV and PIV-I cards in the areas of Suitability, Trust, and Card Edge.
 <br /><br />
-![PIV to PIV-I comparison table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIV_PIVI_table.JPG) <br />
+<img src="/img/PIV_PIVI_table.JPG" alt="PIV to PIV-I Comparison Table"><br />
 (See [ICAM PIV-I FAQ](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s)  Section 2.2 for details on the PIV/PIV-I comparison table.)
 <br /><br /><br />
 
@@ -93,7 +93,8 @@ The table below compares the PIV and PIV-I cards in the areas of Suitability, Tr
 There is no Card Authentication extended key usage (EKU) OID defined specifically for PIV-I.  PIV-I Card Authentication certificates must assert the PIV Card Authentication EKU OID **`id-PIV-cardAuth`** in the EKU extension to specify that the public key is used to authenticate the PIV-I card rather than the PIV-I cardholder. <br /><br />
 The table below shows the OIDs defined specifically for PIV-I:
 <br /><br />
-![PIV-I OID table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIV_OID.JPG)
+<!---![PIV-I OID table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIV_OID.JPG)-->
+<img src="/img/PIV_OID.JPG" alt="PIV-I OID Table">
 <br /><br /><br />
 
 ### 3.4 Can My Agency Accept PIV-I Cards Issued By Our Contractors’ Company In Lieu Of Issuing PIV Cards To These Individuals?
@@ -133,7 +134,8 @@ The PIV-I Card logical data model is the same as the PIV Card logical data model
 
 Except for the Card Authentication certificate/key pair, PIV-I has the same certificate and key configuration as a PIV Card, as defined in  [FIPS 201-2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) Section 4.3. The PIV-I Card has two mandatory certificate/key pairs, and three optional certificate/key pairs:
 
-![PIV-I Cert Keys](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIVI_CertKeys.JPG) <br />
+<!---![PIV-I Cert Keys](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIVI_CertKeys.JPG)-->
+<img src="/img/PIVI_CertKeys.JPG" alt="PIV-I Cert Key Table"> <br />
 (Reference links: [NIST 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf),  [NIST 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf))<br />
 <br /><br /><br />
 
@@ -172,7 +174,8 @@ The validity period of PIV-I certificates is the same as for PIV certificates.  
 ### 3.14 What Algorithms Must Be Used In PIV-I Card Certificates?
 
 The PIV-I Card must use the same algorithms as the PIV Card for their respective certificates, as specified in [NIST SP 800-78-4](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-78-4.pdf).  Tables 3.1 and 5.1 specify the algorithms and key sizes that must be supported per key type:
-![PIV-I Card Algorithm Table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIVI_CertAlgorithms.JPG)
+<!--![PIV-I Card Algorithm Table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIVI_CertAlgorithms.JPG)-->
+<img src="/img/PIVI_CertAlgorithms.JPG" alt="PIV-I Cert Algorithms Table">
 <br /><br /><br />
 
 ### 3.15 What Must PIV-I Card Authentication Certificate Policies Map To?
@@ -183,8 +186,9 @@ The certificate policies for the PIV-I Card Authentication certificate must map 
 ### 3.16 What Key Usage Bits Must Be Asserted In The Key Usage Exensions Of PIV-I Certificates?
 
 The certificates on PIV-I Cards assert the same bits in the certificate key usage extension as the respective certificates on PIV Cards, as follows:
+<!--![PIV-I Certificate Key Usage Bits Table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIVI_Cert_KeyUsageBits.JPG)-->
 
-![PIV-I Certificate Key Usage Bits Table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/PIVI_Cert_KeyUsageBits.JPG)<br />
+<img src="/img/PIVI_Cert_KeyUsageBits.JPG" alt="PIV-I Key Usage Bits"><br />
 (See [X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers(SSP) Program](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000Gmi3AAC&field=File__Body__s) for information on use of the extended key usage extension in certificates on PIV Cards.)
 <br /><br /><br />
 
@@ -210,7 +214,12 @@ to the relevant PIV-I OIDs (See [FAQ 3.3](#33-what-object-identifiers-oids-are-s
 
 The following table summarizes the three methods of generating/constructing UUID numbers specified in
 [NIST SP 800-73-4](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).<br /><br />
-![Generating the UUID](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/Generating_UUID.JPG)<br /><br />
+
+<!--
+![Generating the UUID](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/Generating_UUID.JPG)
+-->
+<img src="/img/Generating_UUID.JPG" alt="Genating a UUID">
+<br /><br />
 
 There is a slight chance of UUID collision across issuers. Therefore, Relying Parties should check for collisions when new UUIDs are enrolled in a local Physical Access Control System (PACS).
 <br /><br /><br />
