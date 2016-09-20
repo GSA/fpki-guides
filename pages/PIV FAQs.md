@@ -52,7 +52,7 @@ permalink: /PIV FAQs/
 ####[3.43 Are Other Fields In The FASC-N Such As Person Identifier Defined For NFI Cards](#343-are-other-fields-in-the-fasc-n-such-as-person-identifier-defined-for-nfi-cards-1)
 
 ## 1.0  Overview
-This Playbook is a collection of frequently asked questions and common issues regarding Personal Identity Verification Interoperable (PIV-I) cards.  It is targeted towards agencies and relying parties implementing or currently using PIV-I cards for logical and/or physical security controls.
+	This Playbook is a collection of frequently asked questions and common issues regarding Personal Identity Verification-Interoperable (PIV-I) cards.  It is targeted towards agencies and relying parties implementing or currently using PIV and PIV-I cards for logical and/or physical security controls.  Some of the FAQs here may seem to apply to issuers, but these questions are important for relying parties to understand when presented with a PIV-I card for verification and authentication.
 <br /><br /><br />
 
 ## 2.0 Common Terms
