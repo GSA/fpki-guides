@@ -344,7 +344,8 @@ Non-Federal Issuer (NFI) cards have a Federal Agency Smart Credential Number (FA
 
 The following table shows the two types of Federal Agency Smart Credential Number (FASC-N) values, What can be determined about the credential based on that value, and any associated impacts or issues:
 
-![FASC-N Values and Impact Table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/FASCN_ValueTable.JPG0)
+<!--![FASC-N Values and Impact Table](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/img/FASCN_ValueTable.JPG)-->
+<img src="/img/FASCN_ValueTable.JPG" alt="FASC-N Values Table">
 <br /><br /><br />
 
 ### 3.39 As An Issuer, When Do I Use The FASC-N Versus GUID?
