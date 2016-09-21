@@ -89,14 +89,18 @@ Visual Distinction | <br />The PIV-I Card physical topography shall include, at 
 
 ### 3.2 What Is The Difference Between A PIV Card And A PIV-I Card?
 
-**PIV** is the official standard, detailed in [Federal Information Processing Standards (FIPS) Publication 201-2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf), for issuing and managing Federal ID credentials in support of [Homeland Security Presidential Directive (HSPD)-12](https://www.dhs.gov/homeland-security-presidential-directive-12).  A PIV card is an identity card that is fully conformant with Federal PIV standards as defined by FIPS 201-2 and may only be issued by a Federal entity.  <br /><br />
+**PIV** is the official standard, detailed in [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf), for issuing and managing Federal ID credentials in support of [Homeland Security Presidential Directive (HSPD)-12](https://www.dhs.gov/homeland-security-presidential-directive-12).  A PIV card is an identity card that is fully conformant with Federal PIV standards as defined by FIPS 201 and may only be issued by a Federal entity.  <br /><br />
 
-**PIV-I** cards meet the PIV technical specifications of [NIST SP 800-73-4] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) and are issued in a manner that may be trusted by Federal Government Relying Parties.   PIV-I card issuers are cross-certified with the Federal Bridge Certification Authority (FBCA), however, a PIV-I card is not a Federal credential and does not meet all of the requirements of FIPS 201-2.<br /><br />
+**PIV-I** cards meet the PIV technical specifications of [NIST SP 800-73] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) and are issued in a manner that may be trusted by Federal Government Relying Parties.   PIV-I card issuers are cross-certified with the Federal Bridge Certification Authority (FBCA), however, a PIV-I card is not a Federal credential and does not meet all of the requirements of FIPS 201.<br /><br />
 The table below compares the PIV and PIV-I cards in the areas of Suitability, Trust, and Card Edge.
 <br /><br />
-<img src="/img/PIV_PIVI_table.JPG" alt="PIV to PIV-I Comparison Table"><br />
-(See [ICAM PIV-I FAQ](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s)  Section 2.2 for details on the PIV/PIV-I comparison table.)
-
+<img src="/img/PIVI_FAQ_DiffTable.JPG" alt="PIV to PIV-I Comparison Table"><br />
+>*  **Note 1:** Certificate equivalence for Non-Federal Issuers (NFIs) is established by the Federal Bridge Certification Authority (FBCA).  See [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i-1) for an overview of FBCA PIV-I
+policies.<br />
+*  **Note 2:** Conformant form factor<br />
+*  **Note 3:** Contact and contactless command edge conformant defined in  [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) Part 2 requires support for specific ISO/IEC 7816 commands.  Card edge and data model verified through [NIST SP 800-85B](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-85b.pdf) tool (further efforts are expected to address exceptions for NFIs). Card edge specifications verified through the  [NIST Personal Identity Verification Program (NPIVP)](http://csrc.nist.gov/groups/SNS/piv/npivp/index.html).<br />
+*  **Note 4:** [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) does not require the use of [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) in the generation of a valid Global Unique Identifier (GUID) for PIV cards, but it is required for NFI PIV-I cards.<br />
+*  **Note 5:** The value of the UUID will be in the subjectAltName extension of the PIV Authentication Certificate and the Card Authentication Certificate
 <br />[[Return to Table of Contents]](#00-table-of-contents)<br /><br /><br />
 
 ### 3.3 What Object IDentifiers (OIDs) Are Specified For PIV-I?
@@ -119,7 +123,7 @@ the Federal Government in accordance with relevant policies. <br />
 ### 3.5 Can Non-PIV Cards Issued By The Federal Government Be Considered PIV-I?
 
 * **YES -** The Federal Government may issue non-PIV identity and access cards to individuals who are
-outside the applicability of [HSPD-12](https://www.dhs.gov/homeland-security-presidential-directive-12). Federal Government PIV Card Issuers may issue non-PIV identity cards that meet the PIV-I requirements specified in the [X.509 Certificate Policy for the Federal Bridge Certification Authority](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) (FBCA CP). The FBCA CP specifies the minimum requirements for the Federal Government to rely on PIV-I Non-Federal Issuer (NFI) identity cards. Example scenarios where this might apply include facility access cards issued to short term employees (e.g., summer interns) and identity credentials issued by the Legislative and Judicial Branches of the Federal Government. 
+outside the applicability of [Homeland Security Presidential Directive (HSPD)-12](https://www.dhs.gov/homeland-security-presidential-directive-12). Federal Government PIV Card Issuers may issue non-PIV identity cards that meet the PIV-I requirements specified in the [X.509 Certificate Policy for the Federal Bridge Certification Authority](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN7cAAG&field=File__Body__s) (FBCA CP). The FBCA CP specifies the minimum requirements for the Federal Government to rely on PIV-I Non-Federal Issuer (NFI) identity cards. Example scenarios where this might apply include facility access cards issued to short term employees (e.g., summer interns) and identity credentials issued by the Legislative and Judicial Branches of the Federal Government. 
 
 <br />[[Return to Table of Contents]](#00-table-of-contents)<br /><br /><br />
 
@@ -137,13 +141,13 @@ outside the applicability of [HSPD-12](https://www.dhs.gov/homeland-security-pre
 
 ### 3.8 What Is The PIV-I Card Logical Data Model?
 
-The PIV-I Card logical data model is the same as the PIV Card logical data model, as defined in [FIPS 201-2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) Section 4.1.5.1 and further detailed in  [NIST SP 800-73-4](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
+The PIV-I Card logical data model is the same as the PIV Card logical data model, as defined in Section 4.2 of [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) and further detailed in  [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
 
 <br />[[Return to Table of Contents]](#00-table-of-contents)<br /><br /><br />
 
 ### 3.9 Can The PIV-I Card Logical Data Model Be Extended?
 
-* **Yes -** The PIV-I Card logical data model can be extended in the same way as the PIV Card logical data model, as defined in [FIPS 201-2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) Section 4.1.5.1. The PIV-I Card logical data model may be extended using the optional data defined within  [NIST SP 800-73-4] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
+* **Yes -** The PIV-I Card logical data model can be extended in the same way as the PIV Card logical data model, as defined in Section 4.2 of [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf). The PIV-I Card logical data model may be extended using the optional data defined within  [NIST SP 800-73] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
 
 <br />[[Return to Table of Contents]](#00-table-of-contents)<br /><br /><br />
 
