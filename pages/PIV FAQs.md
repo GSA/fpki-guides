@@ -260,7 +260,7 @@ The GUID is a field that must be in the CardHolder Unique IDentifier (CHUID).  T
 
 ### 3.21 How Are PIV-I Cards And Components Tested?
 
-PIV-I Cards have to be on the  [Approved Products List](https://www.idmanagement.gov/IDM/IDMFicamProductSearchPage), which requires [NIST SP 800-85A](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-85A-4.pdf) and security testing according to [FIPS 140-2](http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf).  It is recommended that issuers apply the GSA FIPS 201 Evaluation Program Test Tools.
+PIV-I Cards have to be on the  [Approved Products List](https://www.idmanagement.gov/IDM/IDMFicamProductSearchPage), which requires [NIST SP 800-85A](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-85A-4.pdf) and security testing according to [FIPS 140-2](http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf).  It is recommended that issuers apply the *GSA FIPS 201 Evaluation Program Test Tools*.
 
 to a sampling of their issued cards on an ongoing basis to ensure interoperability.
 
