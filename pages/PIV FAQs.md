@@ -22,7 +22,7 @@ permalink: /PIV FAQs/
 ####[3.13 What Is The Validity Period For PIV-I Certificates](#313-what-is-the-validity-period-for-piv-i-certificates-1)
 ####[3.14 What Algorithms Must Be Used In PIV-I Card Certificates](#314-what-algorithms-must-be-used-in-piv-i-card-certificates-1)
 ####[3.15 What Must PIV-I Card Authentication Certificate Policies Map To](#315-what-must-piv-i-card-authentication-certificate-policies-map-to-1)
-####[3.16 What Key Usage Bits Must Be Asserted In The `keyUsage` Exensions Of PIV-I Certificates](#316-what-key-usage-bits-must-be-asserted-in-the-keyusage-exensions-of-piv-i-certificates-1)
+####[3.16 What Key Usage Bits Must Be Asserted In The keyUsage Exensions Of PIV-I Certificates](#316-what-key-usage-bits-must-be-asserted-in-the-keyusage-exensions-of-piv-i-certificates-1)
 ####[3.17 Do PIV-I Cards Need To Be FIPS 140-2 Validated](#317-do-piv-i-cards-need-to-be-fips-140-2-validated-1)
 ####[3.18 What Assurance Requirements Must PIV-I Card Issuers Meet](#318-what-assurance-requirements-must-piv-i-card-issuers-meet-1)
 ####[3.19 What Are The Valid Methods To Generate / Construct A Universally Unique IDentifier (UUID) Number](#319-what-are-the-valid-methods-to-generate--construct-a-universally-unique-identifier-uuid-number-1)
