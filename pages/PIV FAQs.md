@@ -211,7 +211,7 @@ The certificate policies for the PIV-I Card Authentication certificate must map 
 
 <br />[[Return to Table of Contents]](#00-table-of-contents)<br /><br /><br />
 
-### 3.16 What Key Usage Bits Must Be Asserted In The `keyUsage` Exensions Of PIV-I Certificates?
+### 3.16 What Key Usage Bits Must Be Asserted In The keyUsage Exensions Of PIV-I Certificates?
 
 The certificates on PIV-I Cards assert the same bits in the certificate key usage extension as the respective certificates on PIV Cards, as follows:
 
