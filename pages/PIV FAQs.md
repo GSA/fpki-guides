@@ -153,7 +153,7 @@ The PIV-I Card logical data model is the same as the PIV Card logical data model
 
 ### 3.10 What Certificates And Keys May Be Present On A PIV-I Card?
 
-Except for the Card Authentication certificate/key pair, PIV-I has the same certificate and key configuration as a PIV Card, as defined in  [FIPS 201 Section 4.3](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf). The PIV-I Card has two mandatory certificate/key pairs, and three optional certificate/key pairs:
+Except for the Card Authentication certificate/key pair, PIV-I has the same certificate and key configuration as a PIV Card, as defined in  [FIPS 201 Section 4.2.2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf). The PIV-I Card has two mandatory certificate/key pairs, and three optional certificate/key pairs:
 
 <img src="/img/PIVI_FAQ_CertKeys.JPG" alt="PIV-I Cert Key Table"> <br />
 
