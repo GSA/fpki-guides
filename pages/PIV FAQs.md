@@ -260,9 +260,7 @@ The GUID is a field that must be in the CardHolder Unique IDentifier (CHUID).  T
 
 ### 3.21 How Are PIV-I Cards And Components Tested?
 
-PIV-I Cards have to be on the  [Approved Products List](https://www.idmanagement.gov/IDM/IDMFicamProductSearchPage), which requires [NIST SP 800-85A](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-85A-4.pdf) and security testing according to [FIPS 140-2](http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf).  It is recommended that issuers apply the *GSA FIPS 201 Evaluation Program Test Tools*.
-
-to a sampling of their issued cards on an ongoing basis to ensure interoperability.
+PIV-I Cards have to be on the  [Approved Products List](https://www.idmanagement.gov/IDM/IDMFicamProductSearchPage), which requires [NIST SP 800-85A](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-85A-4.pdf) and security testing according to [FIPS 140-2](http://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf).  It is recommended that issuers apply the *GSA FIPS 201 Evaluation Program Test Tools* to a sampling of their issued cards on an ongoing basis to ensure interoperability.
 
 <br />[[Return to Table of Contents]](#00-table-of-contents)<br /><br /><br />
 
@@ -348,7 +346,7 @@ The Federal Agency Smart Credential Number (FASC-N) is a unique number for Feder
 
 ### 3.32 Where Are The Detailed Specifications For UUID Formatting?
 
-[NIST SP 800-73 Part 1 Section 3.4](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) Section 3.3 provides the requirements for formatting the Universally Unique Identifier (UUID) in objects that must contain a UUID.
+[NIST SP 800-73 Part 1 Section 3.4](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) provides the requirements for formatting the Universally Unique Identifier (UUID) in objects that must contain a UUID.
 
 <br />[[Return to Table of Contents]](#00-table-of-contents)<br /><br /><br />
 
@@ -361,7 +359,7 @@ The detailed specifications for the data value of the Federal Agency Smart Crede
 ### 3.34 What Are The Values Of The Agency Code Of The FASC-N?
 
 The Agency Code for Federal issuers is assigned to each Department or Agency by [NIST SP 800-87](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-87r1.pdf).  The
-Agency Code for Non Federal Issuers (NFI) is 9999.<br /> ( See [FAQ 3.38](#338-what-can-i-tell-from-the-possible-values-of-a-fasc-n-and-how-do-they-impact-my-pacs-1) for contents of the FASC-N in NFI cards.)
+Agency Code for Non Federal Issuers (NFI) is 9999.<br /> ( See [FAQ 3.38](#338-what-can-i-determine-from-fasc-n-values-and-how-do-they-impact-my-pacs-1) for contents of the FASC-N in NFI cards.)
 
 <br />[[Return to Table of Contents]](#00-table-of-contents)<br /><br /><br />
 
@@ -394,7 +392,7 @@ The following table shows the two types of Federal Agency Smart Credential Numbe
 ### 3.39 As A Relying Party, When Do I Use The FASC-N Versus GUID?
 
 ---
-**NOTE:**  The unique identifier is different for Federal and Non-Federal Issuer (NFI) Cards.  **Federal cards use the Federal Agency Smart Credential Number (FASC-N) as the unique identifier**.  It is found in the `subjectAltName` extension of the authentication certificates, and in the Global Unique Identifier (GUID) within the CardHolder Unique IDentifier (CHUID).<br />  **Non Federal Issuer (NFI) cards use the Universally Unique Identifier (UUID) as the unique identifier.**  The FASC-N for NFI cards will contains 14 nines (9).
+**NOTE:**  The unique identifier is different for Federal and Non-Federal Issuer (NFI) Cards.<br /><br />  **Federal cards use the Federal Agency Smart Credential Number (FASC-N) as the unique identifier**.  It is found in the `subjectAltName` extension of the authentication certificates, and in the Global Unique Identifier (GUID) within the CardHolder Unique IDentifier (CHUID).<br /><br />  **Non Federal Issuer (NFI) cards use the Universally Unique Identifier (UUID) as the unique identifier.**  The FASC-N for NFI cards will contains 14 nines (9).
 
 ---
 * **For CHUID-based authentication**
