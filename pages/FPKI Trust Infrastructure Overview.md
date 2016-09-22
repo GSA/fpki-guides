@@ -40,7 +40,10 @@ Three essential artifacts within a PKI are:
 
 In addition to the basic PKI Architecture components and artifacts noted above, there are elements that interact with / leverage a PKI including but not limited to:
 
-- **Relying Party** - a person or non-person entity (e.g., device, process, software application) that has received information that includes a certificate and a digital signature verifiable with reference to a public key listed in the certificate, and will rely on that information. By "rely" we mean use that information to make important decisions such as physical or logical access decisions.
+- **Relying Party (RP)** - an entity (e.g., person, device, process, software application, web application) that has received a PKI certificate and a digital signature verifiable with reference to a public key listed in the certificate, and will rely on that information to make decisions (e.g., whether to grant the physical or logical access request) or perform other security/confidentiality/reliability actions (e.g., verify the integrity of a digitally-signed message’s content; identify the creator of a message; establish confidential communications with the end user).
+> The Relying Party is responsible for deciding whether and how to check the validity of the certificate by checking the appropriate certificate status information. Not checking the status means the Relying Party accepts a risk that the certificate, and therefore the binding, may no longer be valid. A Relying Party may use information in the certificate (such as certificate policy identifiers) to determine the suitability of the certificate for a particular use.
+> Relying Parties are not required to have an established relationship with any Certification Authorities within the Federal PKI. Certification Authorities merely provide Relying Parties the tools (i.e., certificates and CRLs) needed to perform tasks such as trust path creation, certificate validation, and certificate policy mapping that the Relying Party may wish to employ in its determination.
+
 - **Public Key Enabled (PK-enabled) Applications** - applications that can use PKI, which simply means applications capable of understanding and making use of PKI digital certificates.
 
 ##2.1 Why Use PKI?
@@ -86,7 +89,7 @@ The simple illustration below ties together the core concepts of PKI private/pub
 
 The Federal PKI is comprised of Federal government, industry, state and local government, community-of-interest, and other representatives who work collaboratively to leverage the Federal PKI, and to provide trust services for the benefit of the federal government. 
 
-The Federal PKI Policy Authority (sometimes referred to as Policy Authority or by the acronym FPKIPA) was created at the direction of the Federal Chief Information Officers (CIO) Council in 2000 to serve as the Federal PKI governing body. The FPKIPA is an interagency body with voting membership limited to federal agencies who are Shared Service Provider (SSP) customers or who operate federal legacy PKIs.  Other agencies, industry, and state representatives participate in the FPKIPA as observers. The FPKIPA is supported by several policy and technical working groups such as teh Certificate Policy Working Group (CPWG).
+The Federal PKI Policy Authority (sometimes referred to as Policy Authority or by the acronym FPKIPA) was created at the direction of the Federal Chief Information Officers (CIO) Council in 2000 to serve as the Federal PKI governing body. The FPKIPA is an interagency body with voting membership limited to federal agencies who are Shared Service Provider (SSP) customers or who operate federal legacy PKIs.  Other agencies, industry, and state representatives participate in the FPKIPA as observers. The FPKIPA is supported by several policy and technical working groups such as the Certificate Policy Working Group (CPWG).
 > Among other things, the FPKIPA establishes Federal PKI processes and policies, reviews and approves applications for participation in the Federal PKI, ensures ongoing conformance of existing particpants, and executes Memoranda of Agreement or Contracts (as applicable) with participants.
 
 The Federal PKI Management Authority (sometimes referred to as Management Authority or by the acronym FPKIMA) is the organization that operates and maintains the Federal PKI Trust Infrastructure CAs on behalf of the U.S. Federal Government, subject to the direction of the Federal PKI Policy Authority. 
@@ -233,7 +236,7 @@ Table 1. List of FPKI Certificate Policies
 | FBCA-mediumDevice         | 2.16.840.1.101.3.2.1.3.37  | Medium risk - authentication or encryption of device                                                                                                                |
 | FBCA-mediumDevice-HW      | 2.16.840.1.101.3.2.1.3.38  | Medium risk - authentication or encryption of device where private key protected on hardware token.                                                                 |
 | FBCA-High                 | 2.16.840.1.101.3.2.1.3.4   | High risk – authentication, signature or encryption of USG individual person, group, role, or device where private key protected on hardware token.                 |
-| FBCA-PIVI-HW              | 2.16.840.1.101.3.2.1.3.18  | Medium risk – authentication, signature or encryption of individual person where private key is protected on APL approved smartcard and requires biometric on card. |
+| FBCA-PIVI-HW              | 2.16.840.1.101.3.2.1.3.18  | Medium risk – authentication, signature or encryption of individual person where private key is protected on Approved Product List (APL)-approved smartcard and requires biometric on card. |
 | FBCA-PIVI-cardAuth        | 2.16.840.1.101.3.2.1.3.19  | Shows possession of PIV-I card w/o PIN use.                                                                                                                         |
 | FBCA-PIVI-contentSigning  | 2.16.840.1.101.3.2.1.3.20  | Signs security objects on PIV-I card.                                                                                                                               |
 | common-policy             | 2.16.840.1.101.3.2.1.3.6   | Medium risk – authentication, signature or encryption of USG individual person, group, device, or role.                                                             |
@@ -252,6 +255,8 @@ Table 1. List of FPKI Certificate Policies
 | SHA1-hardware             | 2.16.840.1.101.3.2.1.3.24  | Medium risk – authentication, signature or encryption of individual person, group, or role where private key is protected on hardware token. (SHA1)                 |
 | SHA1-devices              | 2.16.840.1.101.3.2.1.3.25  | Medium risk - authentication or encryption of device .(SHA1)                                                                                                        |
 
+> As part of the FIPS 201 Evaluation Program, GSA manages the [Approved Product List (APL)](www.idmanagement.gov/approved-products-list). This list provides federal agencies with the products and services related to FICAM implementation that have been approved based on testing done by the FIPS 201 Evaluation Program. Agencies can use GSA Schedules to purchase a resource that is included on the APL. The [Removed Product List (RPL)]( https://www.idmanagement.gov/IDM/s/article_detail?link=removed_products_list) lists products and services that were on the APL, but have been removed.
+
 ###3.3.2 Certificate Levels of Assurance
 
 The Federal PKI certificate policies have been grouped into a small set of Assurance levels that help differentiate level of confidence in the certificates as well as use.  The table below summarizes the Assurance Level groupings:
@@ -261,7 +266,7 @@ The Federal PKI certificate policies have been grouped into a small set of Assur
 |Rudimentary Assurance|This Assurance Level provides the lowest degree of assurance concerning identity of the individual, and is relevant to environments where the risk of malicious activity is considered low A primary function of this Assurance Level is to provide data integrity to the information being signed. It is not suitable for transactions requiring authentication, and is generally insufficient for transactions requiring confidentiality, but may be used for the latter where certificates having higher levels of assurance are unavailable.|Bridge Rudimentary|
 |Basic Assurance|This Assurance Level provides a basic level of assurance and is relevant to environments where there are risks and consequences of data compromise, but they are not considered to be of major significance. This may include access to private information where the likelihood of malicious access is not high. It is assumed at this security level that users are not likely to be malicious.|Bridge Basic|
 |Medium Assurance|This Assurance Level is relevant to environments where risks and consequences of data compromise are moderate. This may include transactions having substantial monetary value or risk of fraud, or involving access to private information where the likelihood of malicious access is substantial.|Bridge Medium, Bridge Medium Device, Bridge Medium CBP, Common Policy, Common Derived PIV Authentication, Common Device|
-|Card Authentication Assurance|This Assurance Level is relevant to environments where the risks and consequences of data compromise are moderate.  This may include contactless smart card readers where use of an activation PIN is not practical (e.g., PACS where possession of the card is sufficient).|Bridge PIV-I Card Authentication, Common Card Authentication, 
+|Card Authentication Assurance|This Assurance Level is relevant to environments where the risks and consequences of data compromise are moderate.  This may include contactless smart card readers where use of an activation PIN is not practical (e.g., Physical Access Control System where possession of the card is sufficient).|Bridge PIV-I Card Authentication, Common Card Authentication, 
 |Medium Hardware Assurance|This Assurance Level is relevant to environments where threats to data are high or the consequences of the failure of security services are high. This may include very high value transactions or high levels of fraud risk.|Bridge Medium Hardware, Bridge Medium Hardware CBP, Bridge PIV-I Hardware, Bridge Medium Device Hardware, Common Hardware, Common Device Hardware, Common Authentication, Common Derived PIV Authentication Hardware|
 |High Assurance|This Assurance Level is reserved for U.S. federal government CAs only and is appropriate for those environments where the threats to data are high, or the consequences of the failure of security services are high. This may include very high value transactions or high levels of fraud risk.|Bridge High, Common High|
 |Content Assurance|This Assurance Level is reserved for signing content in credentials such as PIV or PIV-I Cards, or the container for a Derived PIV certificate on a mobile device.|Bridge PIV-I Content Signing, Common PIV Content Signing|
@@ -335,7 +340,7 @@ Certificate path validation is the process of validating a certificate's trust p
 
 <span id="_Toc430632729" class="anchor"></span>Figure 10. Certificate Path Characteristics
 
-The three most common path validation tools in Windows are Microsoft Crypto API (CAPI), Online Certificate Service Protocol (OCSP) Service, and Server-Based Certificate Validation Protocol (SCVP) Service. Approved OCSP and SCVP software can be found on the FICAM Approved Product List [FICAM Approved Product List](www.idmanagement.gov/approved-products-list).
+The three most common path validation tools in Windows are Microsoft Crypto API (CAPI), Online Certificate Service Protocol (OCSP) Service, and Server-Based Certificate Validation Protocol (SCVP) Service. Approved OCSP and SCVP software can be found on the [FICAM Approved Product List](www.idmanagement.gov/approved-products-list).
 
 1.  **Microsoft CAPI** is the standard tool used when opening a certificate on a Windows OS and is proprietary to Microsoft. It takes the certificate path that has the most information as the most secure path to a Trust Anchor and uses the trusted root certificates in the Microsoft Trust Store. CAPI verifies certificate validation through the Certificate Revocation List (CRL) published by the CA. The CRL publishing is set in the Certificate Policy and can be anything from hours to an end entity issuing CA to a month for trust anchors.
 
@@ -386,48 +391,43 @@ The Federal PKI Management Authority has taken many steps to ensure the resilien
 
 Appendix A - Acronyms
 =====================
-
 **APL** – Approved Products List
 
-**ATO** – Authority to Operate
-
 **CA** – Certification Authority
-
-**CAC** – Common Access Card
 
 **CAPI** – Microsoft Crypto Application Programming Interface
 
 **CBP** – Commercial Best Practice
 
-**CP** – Certificate Policy
-
-**CPS** – Certification Practice Statement
+**CIO** – Chief Information Officer
 
 **CRL** – Certificate Revocation List
 
 **CPWG** – Certificate Policy Working Group
 
-**EGCA** – E-Governance Certification Authority
+**DPD** – Delegated Path Discovery
+
+**DPV** – Delegated Path Validation
 
 **FBCA** – Federal Bridge Certification Authority
 
 **FCPCA** – Federal Common Policy Certification Authority
 
-**FICAM** – Federal Identity, Credential, and Access Management
-
-**FPKI** – Federal Public Key Infrastructure
-
 **FPKIMA** – Federal PKI Management Authority
 
 **FPKIPA** – Federal PKI Policy Authority
 
-**GPO** – Group Policy Object
-
 **GSA**- General Services Administration
 
-**HW** – Hardware
+**HSPD-12** – Homeland Security Presidential Directive 12
 
 **ICAM** – Identity, Credential, and Access Management
+
+**IETF** – Internet Engineering Task Force
+
+**LOA** – Level of Assurance
+
+**NIST** – National Institute of Standards and Technology
 
 **NPE** – Non-Person Entity
 
@@ -435,26 +435,19 @@ Appendix A - Acronyms
 
 **OID** – Object Identifier
 
+**OMB** – Office of Management and Budget
+
+**PIN** – Personal Identification Number
+
 **PIV** – Personal Identity Verification
 
-**SAN** – Subject Alternate Name
+**PKI** – Public Key Infrastructure
 
 **SCVP** – Server-Based Certificate Validation Protocol
 
 **SHA1 FRCA** – SHA-1 Federal Root Certification Authority
 
-**SME** – Subject Matter Expert
-
 **SSP** – Shared Service Provider
-
-**TFS** – Trust Framework Solutions
-
-**UPN** – User Principal Name
 
 **USG** – U.S. Government
 
-[1] A trust anchor will be explained in more detail later in the guide.
-
-[2] Cross-certification will be explained later in this guide, but is a method to show comparable security between organizational PKI policies.
-
-[3] A more thorough description will be provided later in this guide.
