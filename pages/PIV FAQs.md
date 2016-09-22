@@ -448,3 +448,6 @@ Neither policy nor specifications provide guidance in this area. Issuers can do 
 #### References
 Personal Identity Verification Interoperable (PIV-I) Frequently Asked Questions (FAQ)
 <https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s>
+
+#### National Institute of Science and Technology (NIST) Special Publications (SP) Library
+http://csrc.nist.gov/publications/PubsSPs.html
