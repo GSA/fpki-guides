@@ -8,6 +8,12 @@ permalink: /Federal-PKI-Trust-Infrastructure/
 
 The Federal Public Key Infrastructure (Federal PKI) provides the government with a common infrastructure to administer digital certificates and public-private key pairs, including the ability to issue, maintain, and revoke public key certificates.  Key pairs and public key certificates are important underlying elements within the Federal PKI and will be discussed later in this playbook.
 
+The essential idea of the Federal PKI is to facilitate end users getting digital certificates that strongly represent their online identity so they can conduct business at web sites (e.g., at Federal public-facing web sites) that trust those certificates as well as perform other tasks such as digitally signing things. 
+
+The Federal PKI has become so essential to the Federal Government it is explictely cited in various authoritative documents issued by the Office of Management and Budget (OMB) and the National Institute of Standards and Technology (NIST).  For example, 2016 OMB Circular A-130 includes, the following statment:
+
+ > *"Ensure that all public key infrastructure (PKI) certificates used by an agency and issued in accordance with Federal PKI policy validate to the Federal PKI trust anchor when being used for user signing, encrypting purposes, authentication and authorization."*
+
 The Federal PKI was created out of the E-Government Act of 2002 which directed the General Services Administration to establish and operate the Federal Bridge Certification Authority (sometimes called Federal Bridge or by its acronym FBCA). From this pilot program, the Federal PKI has grown into a diverse PKI ecosystem of hundreds of certification authorities (CAs) for federal and state government agencies as well as foreign and US commercial PKIs. 
 
 The Federal CIO Council comprises the Chief Information Officers of all cabinet level departments and other independent agencies. It has established the framework for the interoperable Federal PKI and oversees the operation of the organizations responsible for governing and promoting its use. In addition, the certificate processes and policies that underly the Federal PKI were established under the authority of and with the approval of the Federal CIO Council.
@@ -108,7 +114,7 @@ The following highlights four of the many benefits the Federal PKI provides
 
 - **Compliance** - with laws, regulations, and standards as well as resolution of security issues identified in GAO reports. Using the Federal PKI means almost automatic compliance with several executive orders, initiatives, and laws and can be used in contracts to ensure vendor compliance with all government requirements. The Federal PKI compliance team verifies PKI participating CAs are audited and operate in a secure manner.
 
-<img src="/img/FPKITI-fpki_compliance.png"/>
+<img src="/img/FPKITI-fpki_compliance.jpg"/>
 
 <span id="_Toc430632724" class="anchor"></span>Figure 3. Federal PKI Compliance
 
