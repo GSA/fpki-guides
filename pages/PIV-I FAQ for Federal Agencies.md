@@ -93,7 +93,102 @@ Visual Distinction | <br />The PIV-I Card physical topography shall include, at 
 **PIV-I** cards meet the PIV technical specifications of [NIST SP 800-73] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) and are issued in a manner that may be trusted by Federal Government Relying Parties.   PIV-I card issuers are cross-certified with the Federal Bridge Certification Authority (FBCA), however, a PIV-I card is not a Federal credential and does not meet all of the requirements of [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf).<br /><br />
 The table below compares the PIV and PIV-I cards in the areas of Suitability, Trust, and Card Edge.
 <br /><br />
-<img src="/img/PIVI_FAQ_DiffTable.JPG" alt="PIV to PIV-I Comparison Table"><br />
+<!--- Table in GitHub Flavored Markdown format
+Category | Feature | PIV Card | PIV-I Card
+  ---|---|:---:|:---:
+  Identity Verification | NIST SP 800-63, Assurance Level 4 | **X** | **X**
+  Identity Verification | NACI | **X** |  
+  Trust | FIPS 201 Conformant | **X** |
+  Trust | PIV OID on PIV Authentication Certificate (trust model)| **X** |
+  Trust | PIV-I Hardware equivalent Authentication Certificate (*Note 1*) |**X** | **X**
+  Trust | PIV-I Content Signing equivalent object signing certificiate | **X** | **X**
+  Card Edge | Card Stock on GSA Approved Product List (APL) **Note 2** | **X** | **X**
+  Card Edge | PIV Application Identifier (AID) | **X** | **X**
+  Card Edge | Command edge and NIST SP 800-85 conformant **Note 3** | **X** | **X**
+  Card Edge | NIST SP 800-73 conformant GUID present in the CHUID | **X** | **X**
+  Card Edge | RFC 4122 conformant UUID required in the GUID data element of the CHUID **Note 4** |  | **X**
+  Card Edge | RFC 4122 conformant UUID present in the Authentication Certificates <nl />**Note 5**|  | **X**
+  Card Edge | Visually distinguishable from PIV Card |  | **X**
+  -->
+  
+  <table>
+  <tr>
+    <th>CATEGORY</th>
+    <th>FEATURE</th>
+    <th>PIV</th>
+    <th>PIV-I</th>
+   </tr>
+  <tr>
+  <td rowspan="2"><b>Identity Verification</b></td>
+    <td><a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-2.pdf">NIST SP 800-63</a>, Assurance Level 4</td>
+    <td><b>X</b></td>
+    <td><b>X</b></td>
+  </tr>
+  <tr>
+    <td>National Agency Check with Inquiries (NACI)</td>
+    <td><b>X</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="4"><b>Trust</b></td>
+    <td><a href ="http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf">FIPS 201</a> conformant</td>
+    <td><b>X</b></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>PIV Object IDentifier (OID) on PIV Authentication Certificate (trust model)</td>
+    <td><b>X</b></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>PIV-I Hardware equivalent Authentication Certificate<sup>1</sup></td>
+    <td><b>X</b></td>
+    <td><b>X</b></td>
+  </tr>
+    <tr>
+    <td>PIV-I Content Signing equivalent object signing certificiate</td>
+    <td><b>X</b></td>
+    <td><b>X</b></td>
+  </tr>
+      <tr>
+      <td rowspan="7"><b>Card Edge</b></td>
+      <td>Card Stock on GSA Approved Product List (APL)<sup>2</sup></td>
+    <td><b>X</b></td>
+    <td><b>X</b></td>
+  </tr>
+      <tr>
+    <td>PIV Application Identifier (AID)</td>
+    <td><b>X</b></td>
+    <td><b>X</b></td>
+  </tr>
+      <tr>
+      <td>Command edge and NIST SP 800-85 conformant<sup>3</sup></td>
+    <td><b>X</b></td>
+    <td><b>X</b></td>
+  </tr>
+      <tr>
+    <td><a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf">NIST SP 800-73</a> conformant GUID present in the CHUID</td>
+    <td><b>X</b></td>
+    <td><b>X</b></td>
+  </tr>
+      <tr>
+      <td><a href="http://www.ietf.org/rfc/rfc4122.txt">RFC 4122</a> conformant UUID required in the GUID data element of the CHUID<sup>4</sup></td>
+    <td></td>
+    <td><b>X</b></td>
+  </tr>
+      <tr>
+      <td><a href="http://www.ietf.org/rfc/rfc4122.txt">RFC 4122</a> conformant UUID present in the Authentication Certificates<sup>5</sup></td>
+    <td></td>
+    <td><b>X</b></td>
+  </tr>
+      <tr>
+    <td>Visually distinguishable from PIV Card</td>
+    <td></td>
+    <td><b>X</b></td>
+  </tr>
+</table>
+
+
 >*  **Note 1:** Certificate equivalence for Non-Federal Issuers (NFIs) is established by the Federal Bridge Certification Authority (FBCA).  See [FAQ 3.3](#33-what-object-identifiers-oids-are-specified-for-piv-i-1) for an overview of FBCA PIV-I
 policies.<br />
 *  **Note 2:** Conformant form factor<br />
@@ -109,7 +204,13 @@ There is no Card Authentication extended key usage (EKU) OID defined specificall
 The table below shows the OIDs defined specifically for PIV-I:
 <br />
 
-<img src="/img/PIV_OID.JPG" alt="PIV-I OID Table">
+NAME | TYPE | PURPOSE | STATUS | VALUE
+---|---|---|---|---
+`id-fpki-certpcy-pivi-hardware` | Policy OID | Conveys certificate policy compliance in certificates whose keys require activation by the PIV-I Cardholder (e.g., PIV-I Authentication, PIV-I Digital Signature, and PIV-I Key Management keys). | Defined | 2.16.840.1.101.3.2.1.3.18
+`id-fpki-certpcy-pivi-cardAuth` | Policy OID | Conveys certificate policy compliance in certificates whose keys do not require PIV-I Cardholder activation (i.e., PIV-I Card Authentication key) | Defined | 2.16.840.1.101.3.2.1.3.19
+`id-fpki-certpcy-pivi-contentSigning` | Policy OID | Conveys use by a Card Management System that complies with the certificate policy. | Defined | 2.16.840.1.101.3.2.1.3.20
+`id-fpki-pivi-content-signing` | EKU OID | Conveys that the key is intended to be used to sign PIV-I Cards | Defined | 2.16.840.1.101.3.8.7
+
 <br />[[Return to Table of Contents]](#00-table-of-contents)<br /><br /><br />
 
 ### 3.4 Can My Agency Accept PIV-I Cards Issued By Our Contractors’ Company In Lieu Of Issuing PIV Cards To These Individuals?
@@ -155,7 +256,14 @@ The PIV-I Card logical data model is the same as the PIV Card logical data model
 
 Except for the Card Authentication certificate/key pair, PIV-I has the same certificate and key configuration as a PIV Card, as defined in  [FIPS 201 Section 4.2.2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf). The PIV-I Card has two mandatory certificate/key pairs, and three optional certificate/key pairs:
 
-<img src="/img/PIVI_FAQ_CertKeys.JPG" alt="PIV-I Cert Key Table"> <br />
+CERTIFICATE/KEY | MANDATORY or OPTIONAL | DESCRIPTION
+---|---|---
+Authentication Certificate/Key | Mandatory | Shall be an asymmetric private key supporting user authentication for an interoperable environment, and it is mandatory for each PIV-I Card.  In addition, the Authentication Key is available only on the contact interface and requires the user to present its PIN to the card.
+Card Authentication Certificate/Key | Mandatory | Shall contain an asymmetric X.509 Certificate for Card Authentication that conforms to the X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards; conforms to NIST SP 800-73; and is issued under the PIV-I Card Authentication policy. (*See Note 6*)
+Digital Signature Certificate/Key | Optional | Asymmetric private key supporting document signing.
+Key Management Certificate/Key | Optional | Asymmetric private key supporting key establishment and transport.  This can also be used as an encryption key.
+Card Management Key | Optional | Symmetric key used for card personalization and post-issuance activitites.
+
 
 >* **NOTE 6:** PIV allows either a symmetric (secret) key or an asymmetric key, but [NIST SP 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf) strongly recommends that agencies use the asymmetric CAK protocol.<br />***Reference links:***<br />[X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000GmhKAAS&field=File__Body__s)<br /> 
 [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf)<br />  [NIST SP 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf)<br />
@@ -202,7 +310,14 @@ The validity period of PIV-I certificates is the same as for PIV certificates.  
 
 The PIV-I Card must use the same algorithms as the PIV Card for their respective certificates, as specified in [NIST SP 800-78.  Tables 3.1 and 5.1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-78-4.pdf) specify the algorithms and key sizes that must be supported per key type:
 
-<img src="/img/PIVI_CertAlgorithms.JPG" alt="PIV-I Cert Algorithms Table">
+PIV KEY TYPE | TIME PERIOD for USE | ALGORITHMS and KEY SIZES
+---|---|---
+PIV-I Authentication key | After 12/31/2013 | RSA (1024 or 2048 bits) <br /> ECDSA (Curve P-256)
+Card Authentication key | After 12/31/2013 | 3TDEA <br /> AES-128, AES-192, or AES-256<br /> RSA (1024 or 2048 bits) <br /> ECDSA (Curve P-256)
+Digital Signature key | After 12/31/2008 | RSA (1024 or 2048 bits)<br />ECDSA (Curve P-256 or P-384)
+Key Management key | after 12/31/2008 | RSA (1024 or 2048 bits)<br />ECDSA (Curve P-256 or P-384)
+Card Management Key | After 12/31/2010 | 3TDEA<br />AES-128, AES-192, or AES-256
+
 <br />[[Return to Table of Contents]](#00-table-of-contents)<br /><br /><br />
 
 ### 3.15 What Must PIV-I Card Authentication Certificate Policies Map To?
@@ -215,7 +330,14 @@ The certificate policies for the PIV-I Card Authentication certificate must map 
 
 The certificates on PIV-I Cards assert the same bits in the certificate key usage extension as the respective certificates on PIV Cards, as follows:
 
-<img src="/img/PIVI_Cert_KeyUsageBits.JPG" alt="PIV-I Key Usage Bits"><br />
+PIV-I CERTIFICATE | KEY USAGE BITS
+---|---
+PIV-I Authentication Certificate | Only `digitalSignature` shall be set.
+PIV-I Digital Signature Certificate | Both `digitalSignature` and `nonRepudiation` shall be set.
+PIV-I Card Authentication Certificate | Only `digitalSignature` shall be set.
+PIV-I Key Management Certificate | `keyEncipherment` asserted when public key is RSA.<br />`keyAgreement` asserted when public key is elliptic curve.
+PIV-I Content Signing Certificate | Only `digitalSignature` shall be set.
+
 (See [X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers(SSP) Program](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000Gmi3AAC&field=File__Body__s) for information on use of the extended key usage extension in certificates on PIV Cards.)
 
 <br />[[Return to Table of Contents]](#00-table-of-contents)<br /><br /><br />
@@ -245,7 +367,22 @@ to the relevant PIV-I OIDs (See [FAQ 3.3](#33-what-object-identifiers-oids-are-s
 The following table summarizes the three methods of generating/constructing UUID numbers specified in
 [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).<br /><br />
 
-<img src="/img/Generating_UUID.JPG" alt="Genating a UUID">
+##Generating the UUID
+**UUID format (128 bits):**
+
+Time_Stamp<br />(60 bits) | Version<br /> (4 bits) | Clock Sequence<br />(14 bits) | Res.<br /> (2 bits) | Node<br />(48 bits)
+---|---|---|---|---
+
+
+**UUID may be constructed by one of the following options:**
+
+[RFC-4122](http://www.ietf.org/rfc/rfc4122.txt) | Time_Stamp | Clock Sequence | Node
+---|---|---|---
+Version 1 | UTC Time Stamp | Random, pseudo-random, or incremental value | Random or pseudo-random
+Version 4 | Random or pseudo-random | Randm or pseudo-random value | Random or pseudo-random value
+Version 5 | From some "name space" | From some "name space" | From some "name space"
+
+**UUID is then stored in the GUID**
 <br /><br />
 
 There is a slight chance of UUID collision across issuers. Therefore, Relying Parties should check for collisions when new UUIDs are enrolled in a local Physical Access Control System (PACS).
