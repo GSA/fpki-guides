@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: default
 title: Trust Stores
 permalink: /truststores/
 ---
 
-### Information on trust stores
+## Trust Stores
 <!-- TODO: Add information on trust store management suggestions.  Include all: microsoft, nss, java, etc -->
