@@ -1,8 +1,15 @@
 ---
 layout: page
 title: Certificate Policies
-permalink: /policies/
+permalink: /policyobjects/
 ---
+
+1. [What is a Certificate Policy?](#what-is-a-certificate-policy)
+1. [Why do we use Certificate Policies?](#why-do-we-use-certificate-policies)
+1. [What is a Certificate Policy Object Identifier?](#what-is-a-certificate-policy-object-identifier)
+1. [What are the Certificate Policies Object Identifiers in use?](#what-are-the-certificate-policy-object-identifiers)
+1. [How do I view the Certificate Policy Object Identifier?](#how-do-i-view-the-certificate-policy-object-identifiers)
+1. [How do I use the Certificate Policy Object Identifier?](#how-do-i-use-the-certificate-policy-object-identifiers)
 
 ### What is a Certificate Policy?
 
@@ -16,12 +23,17 @@ When a Certification Authority (CA) issues a certificate, it is providing a stat
 
 The Certificate Policy provides the information that can be used by a certificate user to decide whether or not to trust a certificate.
 
-
 ### Why do we use Certificate Policies?
 Certificate policies are used to establish trust relationships between Certificate Authorities.  This is called _cross-certification_. When CAs issue cross certificates, one CA assesses and recognizes one or more certificate polices of the other CA.
 
 
-### What are the Certificate Policies?
+
+### What is a Certificate Policy Object Identifier?
+
+
+
+
+### What are the Certificate Policy Object Identifiers?
 The Federal PKI has twenty-five (25) certificate policies for people and non-person entity (NPE) certificates.   
 
 * Twelve (12) of the certificate policies are used only within the Federal Bridge Certificate Authority to map organizational policies across the issuing CAs and Bridges.
@@ -32,7 +44,6 @@ The Commercial Best Practices (CBP) identifier on certificate policies indicate 
 A hardware (HW) identifier indicate the private key is generated and protected on a hardware based token.  
 The risk level referenced refers to the level of risk associated with transactions accepting certificates
 issued under the specified certificate policy.
-
 
 
 | Certificate Policy | Policy Object Identifier (OID) | Risk |
@@ -57,4 +68,7 @@ issued under the specified certificate policy.
 |FBCA-rudimentary|
 
 
-### How do I view the Certificate Policy?
+### How do I view the Certificate Policy Object Identifier?
+
+
+### How do I use the Certificate Policy Object Identifier?
