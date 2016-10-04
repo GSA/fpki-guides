@@ -52,7 +52,7 @@ permalink: /PIV-I FAQ for Federal Agencies/
 <br /><br />
 
 ## Overview  
- This Playbook is a collection of frequently asked questions and common issues regarding Personal IdentityVerification-Interoperable (PIV-I) cards.  It is targeted towards agencies and relying parties implementing or currently using PIV and PIV-I cards for logical and/or physical security controls.  Some of the FAQs here may seem to apply to issuers, but these questions are important for relying parties to understand when presented with a PIV-I card for verification and authentication.
+ This Playbook is a collection of frequently asked questions and common issues regarding Personal Identity Verification-Interoperable (PIV-I) cards.  It has been written for agencies and relying parties using PIV and PIV-I cards for logical and/or physical security controls.  Some of the FAQs here may seem to apply to issuers, but these questions are also important for relying parties to understand when verifying and authenticating PIV-I cards.
  <br /><br /><br />
  
 ## Common Terms
