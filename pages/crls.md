@@ -22,7 +22,7 @@ The Federal PKI helps Relying Parties make well-informed decisions (like what PK
 
 The degree to which a Relying Party can rely on (trust) a certificate for any purpose depends upon the policies associated with that certificate. Then,   as long as a certificate is valid (not expired, not revoked, legitimate CA signature), the certificate can be relied upon and used for its intended purpose(s). 
 
-> The more strict the certificate policy, the more a Relying Party can trust the certificate. This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
+> The more strict the certificate policy associated with the certificate, the more a Relying Party can trust the certificate.  
 
 ### **Public Key Certificates**
 
