@@ -14,6 +14,7 @@ This section will help you quickly understand the concept of and relationship be
 6. [Federal PKI Certificate Polices and Profiles](#federal-pki-certificate-polices-and-profiles)
 
 ###**Certificate Policy**
+
 The Federal PKI helps Relying Parties make well-informed decisions (like what PKI credentials to accept for what purposes) via best-practice technical, operating, and policy requirements.  Much of that material directly addresses two essential PKI elements: 
 
 - **Certificates**; and 
