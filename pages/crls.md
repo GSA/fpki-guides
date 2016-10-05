@@ -24,13 +24,13 @@ The degree to which a Relying Party can rely on (trust) a certificate for any pu
 
 > The more strict the policy, the more trust a Relying Party has in the certificate.
 
-###**Public Key Certificates**
+### **Public Key Certificates**
 
 Public key certificates are signed data structures that bind attributes of an entity (e.g., person or device) with its corresponding public key. Certificates are signed by a recognized and trustworthy CA, thus providing a guarantee that a specific public key belongs to a specific entity, and that the entity possesses the corresponding private key as well.
 
 Certificates can be used to perform various tasks such as authentication, digital signing, and encryption as specified in the certificate.
 
-###**Certificate Revocation Lists**
+### **Certificate Revocation Lists**
 Various events can occur that require a certificate (or a set of certificates) to no longer be trusted.  When those events occur, the certificate needs to be revoked and Relying Parties notified,  Examples of such events include:
 
 - Lost, stolen, damaged, or misused certificate.  
@@ -47,7 +47,7 @@ To notify Relying Parties of revoked certificates, CAs publish Certificate Revoc
 
 > To help Relying Parties find CRLs, CAs make public both a description of how to obtain revocation information for the certificates they publish and an explanation of the consequences of using out of date revocation information.  
 
-###***Illustration of a Certificate and CRL***
+### ***Illustration of a Certificate and CRL***
 
 <img src="/img/crls_diagram1.jpg"/>
 
@@ -88,7 +88,7 @@ To notify Relying Parties of revoked certificates, CAs publish Certificate Revoc
 
        o [Legacy FCPCA CRL](http://fpkia.gsa.gov/CommonPolicy/CommonPolicy%281%29.crl)
 
-###***Federal PKI Certificate Polices and Profiles***
+### ***Federal PKI Certificate Polices and Profiles***
 
 - ***Federal PKI Certificate Policies***
 
