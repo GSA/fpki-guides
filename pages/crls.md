@@ -54,21 +54,21 @@ To notify Relying Parties of revoked certificates, CAs publish Certificate Revoc
 ### ***Federal PKI CRLs and Certificates***
 - ***Federal Common Policy Certification Authority (Common or FCPCA)***
 
-       *[Common CA Root Certificate](http://http.fpki.gov/fcpca/fcpca.crt)
+     o [Common CA Root Certificate](http://http.fpki.gov/fcpca/fcpca.crt)
 
-       *[CRL](http://http.fpki.gov/fcpca/fcpca.cr) 
+     o [CRL](http://http.fpki.gov/fcpca/fcpca.cr) 
 
-       *FCPCA DN:  **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US** 
+     o FCPCA DN:  **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US** 
 
-       *sha1 Thumbprint: **90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1**
+     o sha1 Thumbprint: **90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1**
 
-       *[P7Cs (Issued By)](http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c)
+     o [P7Cs (Issued By)](http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c)
 
        *[P7Cs (Issued To):](http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c)
 
 - ***Federal Bridge Certification Authority (Bridge or FCPCA)***
 
- o [FBCA CRL](http://http.fpki.gov/bridge/fbca.crl)
+     o [FBCA CRL](http://http.fpki.gov/bridge/fbca.crl)
 
      o [FBCA2013 CRL](http://http.fpki.gov/bridge/fbca2013.crl)    
 
@@ -78,29 +78,29 @@ To notify Relying Parties of revoked certificates, CAs publish Certificate Revoc
 
 - ***SHA-1 Federal Root Certification Authority (SHA1 FRCA)***
 
-      o [SHA1 FRCA CRL](http://http.fpki.gov/sha1frca/sha1frca.cr)
+     o [SHA1 FRCA CRL](http://http.fpki.gov/sha1frca/sha1frca.cr)
 
-       o [P7Cs (Issued By)](http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c)
+     o [P7Cs (Issued By)](http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c)
 
-       o [P7Cs (Issued To)](http://http.fpki.gov/sha1frca/caCertsIssuedTosha1frca.p7c)
+     o [P7Cs (Issued To)](http://http.fpki.gov/sha1frca/caCertsIssuedTosha1frca.p7c)
 
 - ***Legacy Federal Common Policy Certification Authority (Legacy FCPCA)***
 
-       o [Legacy FCPCA CRL](http://fpkia.gsa.gov/CommonPolicy/CommonPolicy%281%29.crl)
+     o [Legacy FCPCA CRL](http://fpkia.gsa.gov/CommonPolicy/CommonPolicy%281%29.crl)
 
 ### ***Federal PKI Certificate Polices and Profiles***
 
 - ***Federal PKI Certificate Policies***
 
-       o [Current Common CA and Bridge CA Certificate Policies](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS) 
+     o [Current Common CA and Bridge CA Certificate Policies](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS) 
 
 - ***Federal PKI Certificate Profiles***
 
-       o [FPKI X.509 Certificate and CRL Extensions Profile](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008Od8CAE)
+     o [FPKI X.509 Certificate and CRL Extensions Profile](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008Od8CAE)
 
-       o [X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for PIV-I Cards](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008ObiCAE)
+     o [X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for PIV-I Cards](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008ObiCAE)
 
-       o [X.509 Certificate and CRL Extensions Profile for the Shared Service Provider (SSP) Program](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t0000000GmdcCAC)
+     o [X.509 Certificate and CRL Extensions Profile for the Shared Service Provider (SSP) Program](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t0000000GmdcCAC)
 
 
 
