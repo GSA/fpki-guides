@@ -51,7 +51,7 @@ To notify Relying Parties of revoked certificates, CAs publish Certificate Revoc
 
 <img src="/img/crls_diagram1.jpg"/>
 
-###***Federal PKI CRLs and Certificates***
+### ***Federal PKI CRLs and Certificates***
 - ***Federal Common Policy Certification Authority (Common or FCPCA)***
 
        o [Common CA Root Certificate](http://http.fpki.gov/fcpca/fcpca.crt)
