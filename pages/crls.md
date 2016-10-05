@@ -54,17 +54,17 @@ To notify Relying Parties of revoked certificates, CAs publish Certificate Revoc
 ### ***Federal PKI CRLs and Certificates***
 - ***Federal Common Policy Certification Authority (Common or FCPCA)***
 
-       o [Common CA Root Certificate](http://http.fpki.gov/fcpca/fcpca.crt)
+       *[Common CA Root Certificate](http://http.fpki.gov/fcpca/fcpca.crt)
 
-       o [CRL](http://http.fpki.gov/fcpca/fcpca.cr) 
+       *[CRL](http://http.fpki.gov/fcpca/fcpca.cr) 
 
-       o FCPCA DN:  **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US** 
+       *FCPCA DN:  **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US** 
 
-      o sha1 Thumbprint: **90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1**
+       *sha1 Thumbprint: **90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1**
 
-       o [P7Cs (Issued By)](http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c)
+       *[P7Cs (Issued By)](http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c)
 
-       o [P7Cs (Issued To):](http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c)
+       *[P7Cs (Issued To):](http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c)
 
 - ***Federal Bridge Certification Authority (Bridge or FCPCA)***
 
