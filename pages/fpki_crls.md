@@ -4,7 +4,7 @@ title: CRLs And Certificates
 permalink: /crls/
 ---
 
-XThis section will help you quickly understand the concept of and relationship between public key certificates (also known as digital certificates), certificate policy, and certificate revocation lists. The section will also provide you with important links and information pertaining to the  Federal PKI Trust Infrastructure Certification Authorities (CAs) that are commonly requested by Federal agencies.
+XXXThis section will help you quickly understand the concept of and relationship between public key certificates (also known as digital certificates), certificate policy, and certificate revocation lists. The section will also provide you with important links and information pertaining to the  Federal PKI Trust Infrastructure Certification Authorities (CAs) that are commonly requested by Federal agencies.
 
 1. [Certificate Policy](#certificate-policy)
 2. [Public Key Certificates](#public-key-certificates)
