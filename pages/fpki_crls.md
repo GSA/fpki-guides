@@ -64,7 +64,7 @@ To notify Relying Parties of revoked certificates, CAs publish Certificate Revoc
 
      * [P7Cs (Issued By)](http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c)
 
-       *[P7Cs (Issued To):](http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c)
+     * [P7Cs (Issued To):](http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c)
 
 * ***Federal Bridge Certification Authority (Bridge or FCPCA)***
 
