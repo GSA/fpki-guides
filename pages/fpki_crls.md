@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: CRLs And Certificates
 permalink: /crls/
 ---
