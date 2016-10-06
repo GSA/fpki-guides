@@ -14,7 +14,7 @@ baseurl: '/fpki-guides'
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  lachellel
-highlighter: pygments
+highlighter: rouge
 
 # Point the logo URL at a file in your repo or hosted elsewhere by your organization
 logourl: /fpki-guides/img/logo.png
