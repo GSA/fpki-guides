@@ -1,14 +1,8 @@
 ---
-layout: page
+layout: default
 title: Certificate Revocation Lists, Certificates, and URLs
 permalink: /crls/
 ---
-## Overview
-Include all CRLs
-OCSPs
-Certificates
-Hashes
-CNs
 
 #### Sample
 
@@ -18,6 +12,4 @@ CNs
   * Certificate Revocation List:
   * Online Certificate Status Protocol (OCSP):
 
-#### Note
-Can we tie this to the path builder and a nice output file?
-Include in _data for display?
+

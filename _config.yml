@@ -54,29 +54,25 @@ exclude:
 
 navigation:
 - text: Introduction
-  url: index.html
+  url: intro
   internal: true
   coll: false
-#- text: Overview
-#  url: overview
-#  internal: true
-#  coll: false
-- text: Architecture
-  url: architecture
-  internal: true
-  coll: false
-- text: Certificate Policies
-  url: policies
+- text: Overview
+  url: overview
   internal: true
   coll: false
 - text: Certificate Authorities
-  url: cas
+  url: ca
   internal: true
   coll: false
 - text: CRLs and Certificates
   url: crls
   internal: true
   coll: false
+# - text: Certificate Policies
+  # url: policyobjects
+  # internal: true
+  # coll: false
 - text: Trust Stores
   url: truststores
   internal: true
@@ -86,16 +82,24 @@ navigation:
   internal: true
   coll: false
 #https://github.com/jekyll/jekyll/issues/2346
-#- text: Developer Guides
-#  url: devconfig/index/
-#  internal: true
-#  coll: true
-#  collname: devconfig
-#- text: User Guides
-#  url: userconfig/index/
-#  internal: true
-#  coll: true
-#  collname: userconfig
+- text: Engineer Guides
+  url: engineer/
+  internal: true
+  coll: true
+  collname: engineer
+- text: FAQ
+  url: faq
+  internal: true
+  coll: false
+- text: Public Key Infrastructure
+  url: pki/
+  internal: true
+  coll: true
+  collname: pkifundamentals
+- text: Glossary
+  url: glossary
+  internal: true
+  coll: false
 - text: Contribute
   url: contribute
   internal: true
@@ -105,13 +109,13 @@ navigation:
 
 #https://github.com/jekyll/jekyll/issues/2346
 collections:
-  userconfig:
-    label: "User Guides"
-    permalink: /userconfig/:path/
+  engineer:
+    label: "Engineer Guides"
+    permalink: /engineer/:path/
     output: true
-  devconfig:
-    label: "Developer Guides"
-    permalink: /devconfig/:path/
+  pkifundamentals:
+    label: "Public Key Infrastructure"
+    permalink: /pki/:path/
     output: true
 
 
