@@ -3,8 +3,15 @@ layout: page
 title: PIV-I FAQ for Federal Agencies
 permalink: /fpki_piv-i_faq/
 ---
+## Introduction  
+Welcome to the PIV-I FAQ!  This playbook was written to provide agencies and relying parties a simple, easy to understand explaination of frequently asked questions and common issues regarding Personal Identity Verification-Interoperable (PIV-I) cards.  Some of the FAQs here may seem to apply to issuers, but these may also be important questions for relying parties to understand when verifying and authenticating PIV-I cards.
+
+You can click on a topic in the table of contents below to jump to a specific section or scroll through the page to view all of the FAQs listed.
+
+If you are really interested in the specifics and technical details of PIV-I, references to any standards are linked in each FAQ or you can check out the Reference section at the end of the document for the full list.  However, for most users and engineers, the Standards may seem overwhelming and will be too detailed for your needs.
+
+
 ## Table of Contents
-####[Overview](https://github.com/Protiviti-JSargent/fpki-guides/blob/Protiviti-JSargent-draft-1/pages/PIV%20FAQs.md#overview)
 ####[Common Terms](#common-terms-1)
 ####[Frequently Asked Questions](#frequently-asked-questions-1)
 ####[What Is A PIV-I Card](#what-is-a-piv-i-card-1)
@@ -25,7 +32,7 @@ permalink: /fpki_piv-i_faq/
 ####[What Key Usage Bits Must Be Asserted In The keyUsage Exensions Of PIV-I Certificates](#what-key-usage-bits-must-be-asserted-in-the-keyusage-exensions-of-piv-i-certificates-1)
 ####[Do PIV-I Cards Need To Be FIPS 140-2 Validated](#do-piv-i-cards-need-to-be-fips-140-2-validated-1)
 ####[What Assurance Requirements Must PIV-I Card Issuers Meet](#what-assurance-requirements-must-piv-i-card-issuers-meet-1)
-####[What Are The Valid Methods To Generate / Construct A Universally Unique IDentifier (UUID) Number](#what-are-the-valid-methods-to-generate--construct-a-universally-unique-identifier-uuid-number-1)
+####[What Are The Valid Methods To Generate / Construct A Universally Unique Identifier (UUID) Number](#what-are-the-valid-methods-to-generate--construct-a-universally-unique-identifier-uuid-number-1)
 ####[How Does PIV-I Handle Global Unique IDentification Number (GUID) during issuance](#how-does-piv-i-handle-global-unique-identification-number-guid-during-issuance-1)
 ####[How Are PIV-I Cards And Components Tested](#how-are-piv-i-cards-and-components-tested-1)
 ####[Is Symmetric Card Authentication Key (CAK) Prohibited](#is-symmetric-card-authentication-key-cak-prohibited-1)
@@ -36,7 +43,7 @@ permalink: /fpki_piv-i_faq/
 ####[Where Else Does The GUIDs UUID Value Appear](#where-else-does-the-guids-uuid-value-appear-1)
 ####[What Is The Format Of The UUID In Certificates](#what-is-the-format-of-the-uuid-in-certificates-1)
 ####[Why Has The Ipv6 GUID Value Been Deprecated In Favor Of UUID](#why-has-the-ipv6-guid-value-been-deprecated-in-favor-of-uuid-1)
-####[Where Does The Global Unique IDentifier (GUID) Appear](#where-does-the-global-unique-identifier-guid-appear-1)
+####[Where Does The Global Unique Identifier (GUID) Appear](#where-does-the-global-unique-identifier-guid-appear-1)
 ####[Where Does The FASC-N Appear On The PIV-I Card](#where-does-the-fasc-n-appear-on-the-piv-i-card-1)
 ####[Where Are The Detailed Specifications For UUID Formatting](#where-are-the-detailed-specifications-for-uuid-formatting-1)
 ####[Where Are The Detailed Specifications For The Value Of The FASC-N](#where-are-the-detailed-specifications-for-the-value-of-the-fasc-n-1)
@@ -49,61 +56,66 @@ permalink: /fpki_piv-i_faq/
 ####[How Does A PACS Determine Whether A Card Is PIV Or PIV-I](#how-does-a-pacs-determine-whether-a-card-is-piv-or-piv-i-1)
 ####[How Do I Generate A GUID](#how-do-i-generate-a-guid-1)
 ####[Are Other Fields In The FASC-N Such As Person Identifier Defined For NFI Cards](#are-other-fields-in-the-fasc-n-such-as-person-identifier-defined-for-nfi-cards-1)
-<br /><br />
 
-## Overview  
- This Playbook is a collection of frequently asked questions and common issues regarding Personal Identity Verification-Interoperable (PIV-I) cards.  It has been written for agencies and relying parties using PIV and PIV-I cards for logical and/or physical security controls.  Some of the FAQs here may seem to apply to issuers, but these questions are also important for relying parties to understand when verifying and authenticating PIV-I cards.
- <br /><br /><br />
+
  
 ## Common Terms
+
+Here you will find a table of commonly used terms and acronyms and a brief description of each.
+
 Acronym | Term | Description
 --------|-----|------
-PIV | Personal Identity Verification card | A card containing printed and stored identity credentials that can be verified by another person or by an automated process within the Federal PIV system.  PIV cards can only be produced by Federal Issuers.
+PIV | Personal Identity Verification card | A card containing printed and stored identity credentials that can be verified by another person or by an automated process within the Federal PIV system.  PIV cards can only be produced by Federal issuers.
 PIV-I | Personal Identity Verification - Interoperable card | An identitiy card that can work within the Federal PIV system and be trusted and relied upon, but does not meet all of the requirements for a PIV card.
 PACS | Physical Access Control System | An automated system that manages physical passage through a secured area based on a set of rules.
 CHUID | Card Holder Unique Identifier | Standardized set of data required for Federal PACS which must be included on PIV and PIV-I cards.
 GUID | Global Unique Identification Number | Unique number within the CHUID that must be present.
-FASC-N | Federal Agency Smart Card Number | A unique number assigned to one PIV card and individual only.  This number is the main identifier on a PIV card used by a PACS.
-NFI | Non-Federal Issuer | A non-federal entity certified to produce and issue PIV-I credentials
-UUID | Universally Unique Identifier | Alternate identifier for PIV-I cards since FASC-N are only available to Federal card issuers.
-FIPS 201 | Federal Information Processing Standard, Publication 201 | Standard specifying requirements for a common identification standard for Federal employees and contractors
+FASC-N | Federal Agency Smart Card Number | A unique number assigned to one PIV card and individual only.  This number is the main identifier used by a PACS for verifying PIV cards.
+NFI | Non-Federal Issuer | A non-federal entity certified to produce and issue PIV-I credentials.
+UUID | Universally Unique Identifier | Alternate identifier for PIV-I cards since FASC-N are only available to Federal issuers.  This number is the main identifier used by a PACS for verifying PIV-I cards.
+FIPS 201 | Federal Information Processing Standard, Publication 201 | Publication specifying requirements for a common identification standard for Federal employees and contractors.
 -- | relying party | Someone who requests and relies upon information provided from an external source to authenticate an identity.
-<br /><br /><br />
+
+
 
 ## Frequently Asked Questions
 
 ### What Is A PIV-I Card?
 
-A Personal Identity Verification Interoperable (PIV-I) card is an ID card similar to a Federal PIV.  PIV-I cards are intended for individuals, such as short term contractors and employees and non-federal partners, who do not qualify for a PIV card but still require access to agency resouces.   
+A Personal Identity Verification Interoperable (PIV-I) card is an ID card similar to a Federal PIV.  PIV-I cards are intended for individuals such as short-term contractors and employees of Federal agencies as well as non-federal partners such as state agencies and commercial partners, who do not qualify for a PIV card but still require access to Federal agency resouces.   
 
 *PIV-I card summary:*
 
-*  Work with Federal PIV-conformant systems
+*  Work with Federal PIV systems
 *  Can be trusted by Federal organizations
-*  Suitable for Level of Assurance (LOA) 4 as defined by OMB Memorandum [M-04-04](https://www.whitehouse.gov/sites/default/files/omb/memoranda/fy04/m04-04.pdf) and [NIST SP 800-63](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-2.pdf) 
-*  Suitable for multi-factor authentication as defined in [NIST SP 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf).
+*  Suitable for Level of Assurance (LOA) 4
+*  Suitable for multi-factor authentication
 *  May be issued by Federal agencies or qualified Non-Federal Issuers (NFIs)
-*  Does not meet requirements to be considered PIV credential
+*  Does not meet all requirements for PIV credentials
 
-The table below identifies the areas Non Federal Issuers (NFIs) cannot meet the full PIV standard as specified by [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf), and provides alternatives. There are four core areas identified:<br /><br />
+The table below identifies the areas Non Federal Issuers (NFIs) cannot meet the full PIV standard as specified by [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf), and provides alternatives.  There are four core areas identified:
+
 
 Core Area | Description
 ---|---
-**Credential Numbering** | <br />[FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) defines the use of the Federal Agency Smart Credential Number (FASC-N).  This credential numbering schema cannot be used by Non-Federal Issuers (NFIs).  [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000ClrhAAC&field=File__Body__s) provides the solution using an [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) conformant Universally Unique Identifier (UUID).  The UUID is found in the certificates, signed objects, and the Global Unique Identifier (GUID) Tag-Length-Value (TLV) of the CardHolder Unique IDentifier (CHUID).<br /><br />
-**PKI Technology Mapping** | <br />[X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN9iAAG&field=File__Body__s) defines an Object IDentifier (OID) that is specific to Federal issuers.  Non-Federal Issuers (NFIs) must map their policies to the PIV-I Hardware policy OID and be cross-certified with the FBCA to meet the requirements of PIV-I.  See [What Object Identifiers are Specified for PIV-I](#what-object-identifiers-oids-are-specified-for-piv-i-1) for an overview of the PIV-I Hardware OID.<br /><br />
-**Background Investigation** | <br />[FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf)  defines the use of a National Agency Check with Written Inquiries (NAC-I) for PIV.  The NAC-I is only available to Federal agencies through the Office of Personnel Management.  [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000ClrhAAC&field=File__Body__s) specifies the PIV-I Hardware policy as the identity verification model that separates identity verification from the NAC-I suitability and fitness adjudications. See [What Object Identifiers are Specified for PIV-I](#what-object-identifiers-oids-are-specified-for-piv-i-1) for an overview of the PIV-I Hardware policy <br />(**NOTE** PIV-I Hardware requirements are consistent with  [NIST SP 800-63](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-2.pdf)).
-**Visual Distinction** | <br />The PIV-I Card physical topography shall include, at a minimum, the following items on the front of the card:<br />*  Cardholder facial image<br />*  Cardholder full name<br />*  Organizational affiliation, if it exists, otherwise the issuer of the card<br />*  Card expiration date<br />However, visual distinction of a PIV-I Card from that of a Federal PIV Card is required to ensure no suggestion of attempting to create a fraudulent Federal PIV Card.
+**Credential Numbering** | [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) defines the use of the Federal Agency Smart Credential Number (FASC-N).  This credential numbering schema cannot be used by Non-Federal Issuers (NFIs).  [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000ClrhAAC&field=File__Body__s) provides the solution using an [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) conformant Universally Unique Identifier (UUID).  The UUID is found in the certificates, signed objects, and the Global Unique Identifier (GUID) Tag-Length-Value (TLV) of the CardHolder Unique Identifier (CHUID).
+**PKI Technology Mapping** | [X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN9iAAG&field=File__Body__s) defines an Object Identifier (OID) that is specific to Federal issuers.  Non-Federal Issuers (NFIs) must map their policies to the PIV-I Hardware policy OID and be cross-certified with the FBCA to meet the requirements of PIV-I.  See [What Object Identifiers are Specified for PIV-I](#what-object-identifiers-oids-are-specified-for-piv-i-1) for an overview of the PIV-I Hardware OID.
+**Background Investigation** | [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf)  defines the use of a National Agency Check with Written Inquiries (NAC-I) for PIV.  The NAC-I is only available to Federal agencies through the Office of Personnel Management.  [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000ClrhAAC&field=File__Body__s) specifies the PIV-I Hardware policy as the identity verification model that separates identity verification from the NAC-I suitability and fitness adjudications. See [What Object Identifiers are Specified for PIV-I](#what-object-identifiers-oids-are-specified-for-piv-i-1) for an overview of the PIV-I Hardware policy (**NOTE** PIV-I Hardware requirements are consistent with  [NIST SP 800-63](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-2.pdf)).
+**Visual Distinction** | The PIV-I Card physical topography shall include, at a minimum, the following items on the front of the card:<br />*  Cardholder facial image<br />*  Cardholder full name<br />*  Organizational affiliation, if it exists, otherwise the issuer of the card<br />*  Card expiration date<br />However, visual distinction of a PIV-I Card from that of a Federal PIV Card is required to ensure no suggestion of attempting to create a fraudulent Federal PIV Card.
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+[[Return to Table of Contents]](#table-of-contents)
+
+
 
 ### What Is The Difference Between A PIV Card And A PIV-I Card?
 
-<ul><li>**PIV** is the official standard, detailed in [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf), for issuing and managing Federal ID credentials in support of [Homeland Security Presidential Directive (HSPD)-12](https://www.dhs.gov/homeland-security-presidential-directive-12).  A PIV card is fully conformant with Federal PIV standard and may only be issued by a Federal entity.</li> <br />
+* **PIV** is the official standard for issuing and managing Federal ID credentials.  A PIV card is fully conformant with the Federal PIV standard and may only be issued by a Federal entity.
 
-<li>**PIV-I** cards meet the PIV technical specifications of [NIST SP 800-73] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) and may be trusted by Federal Government Relying Parties.   PIV-I card issuers are cross-certified with the Federal Bridge Certification Authority (FBCA), however, PIV-I cards are not Federal credentials and do not meet all of the requirements of [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf).</li></ul> <br /><br />
+* **PIV-I** cards meet the technical specifications to work with PIV systems and may be trusted by Federal Government relying parties.   PIV-I card issuers are cross-certified with the Federal Bridge Certification Authority (FBCA), however, PIV-I cards are not Federal credentials and do not meet all of the requirements of [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf). 
+
 
 The table below compares the PIV and PIV-I cards in three areas:
-<br /><br />
+
 <!--- Table in GitHub Flavored Markdown format
 Category | Feature | PIV Card | PIV-I Card
   ---|---|:---:|:---:
@@ -123,120 +135,127 @@ Category | Feature | PIV Card | PIV-I Card
   -->
   
   <table>
-  <tr>
-    <th>CATEGORY</th>
-    <th>FEATURE</th>
-    <th>PIV</th>
-    <th>PIV-I</th>
-   </tr>
-  <tr>
-  <td rowspan="2"><b>Identity Verification</b></td>
-    <td><a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-2.pdf">NIST SP 800-63</a>, Assurance Level 4</td>
-    <td><b>X</b></td>
-    <td><b>X</b></td>
-  </tr>
-  <tr>
-    <td>National Agency Check with Inquiries (NACI)</td>
-    <td><b>X</b></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td rowspan="4"><b>Trust</b></td>
-    <td><a href ="http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf">FIPS 201</a> conformant</td>
-    <td><b>X</b></td>
-    <td></td>
-  </tr>
     <tr>
-    <td>PIV Object IDentifier (OID) on PIV Authentication Certificate (trust model)</td>
-    <td><b>X</b></td>
-    <td></td>
-  </tr>
+      <th>CATEGORY</th>
+      <th>FEATURE</th>
+      <th>PIV</th>
+      <th>PIV-I</th>
+    </tr>
     <tr>
-    <td>PIV-I Hardware equivalent Authentication Certificate<sup>1</sup></td>
-    <td><b>X</b></td>
-    <td><b>X</b></td>
-  </tr>
+      <td rowspan="2"><b>Identity Verification</b></td>
+      <td><a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63-2.pdf">NIST SP 800-63</a>, Assurance Level 4</td>
+      <td><b>X</b></td>
+      <td><b>X</b></td>
+    </tr>
     <tr>
-    <td>PIV-I Content Signing equivalent object signing certificiate</td>
-    <td><b>X</b></td>
-    <td><b>X</b></td>
-  </tr>
-      <tr>
+      <td>National Agency Check with Inquiries (NACI)</td>
+      <td><b>X</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4"><b>Trust</b></td>
+      <td><a href ="http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf">FIPS 201</a> conformant</td>
+      <td><b>X</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PIV Object Identifier (OID) on PIV Authentication Certificate (trust model)</td>
+      <td><b>X</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PIV-I Hardware equivalent Authentication Certificate<sup>1</sup></td>
+      <td><b>X</b></td>
+      <td><b>X</b></td>
+    </tr>
+    <tr>
+      <td>PIV-I Content Signing equivalent object signing certificiate</td>
+      <td><b>X</b></td>
+      <td><b>X</b></td>
+    </tr>
+    <tr>
       <td rowspan="7"><b>Card Edge</b></td>
       <td>Card Stock on GSA Approved Product List (APL)<sup>2</sup></td>
-    <td><b>X</b></td>
-    <td><b>X</b></td>
-  </tr>
-      <tr>
-    <td>PIV Application Identifier (AID)</td>
-    <td><b>X</b></td>
-    <td><b>X</b></td>
-  </tr>
-      <tr>
+      <td><b>X</b></td>
+      <td><b>X</b></td>
+    </tr>
+    <tr>
+      <td>PIV Application Identifier (AID)</td>
+      <td><b>X</b></td>
+      <td><b>X</b></td>
+    </tr>
+    <tr>
       <td>Command edge and NIST SP 800-85 conformant<sup>3</sup></td>
-    <td><b>X</b></td>
-    <td><b>X</b></td>
-  </tr>
-      <tr>
-    <td><a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf">NIST SP 800-73</a> conformant GUID present in the CHUID</td>
-    <td><b>X</b></td>
-    <td><b>X</b></td>
-  </tr>
-      <tr>
+      <td><b>X</b></td>
+      <td><b>X</b></td>
+    </tr>
+    <tr>
+      <td><a href="http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf">NIST SP 800-73</a> conformant GUID present in the CHUID</td>
+      <td><b>X</b></td>
+      <td><b>X</b></td>
+    </tr>
+    <tr>
       <td><a href="http://www.ietf.org/rfc/rfc4122.txt">RFC 4122</a> conformant UUID required in the GUID data element of the CHUID<sup>4</sup></td>
-    <td></td>
-    <td><b>X</b></td>
-  </tr>
-      <tr>
+      <td></td>
+      <td><b>X</b></td>
+    </tr>
+    <tr>
       <td><a href="http://www.ietf.org/rfc/rfc4122.txt">RFC 4122</a> conformant UUID present in the Authentication Certificates<sup>5</sup></td>
-    <td></td>
-    <td><b>X</b></td>
-  </tr>
-      <tr>
-    <td>Visually distinguishable from PIV Card</td>
-    <td></td>
-    <td><b>X</b></td>
-  </tr>
-</table>
+      <td></td>
+      <td><b>X</b></td>
+    </tr>
+    <tr>
+      <td>Visually distinguishable from PIV Card</td>
+      <td></td>
+      <td><b>X</b></td>
+    </tr>
+  </table>
 
 >*  **Note 1:** Certificate equivalence for Non-Federal Issuers (NFIs) is established by the Federal Bridge Certification Authority (FBCA).  See [What Object Identifiers are Specified for PIV-I](#what-object-identifiers-oids-are-specified-for-piv-i-1) for an overview of FBCA PIV-I
-policies.<br />
-*  **Note 2:** Conformant form factor<br />
+policies.
+*  **Note 2:** Conformant form factor
 *  **Note 3:** Contact and contactless command edge conformant defined in  [NIST SP 800-73 Part 2](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) requires support for specific ISO/IEC 7816 commands.  Card edge and data model verified through [NIST SP 800-85B](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-85b.pdf) tool (further efforts are expected to address exceptions for NFIs). Card edge specifications verified through the  [NIST Personal Identity Verification Program (NPIVP)](http://csrc.nist.gov/groups/SNS/piv/npivp/index.html).<br />
-*  **Note 4:** [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) does not require the use of [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) in the generation of a valid Global Unique Identifier (GUID) for PIV cards, but it is required for NFI PIV-I cards.<br />
+*  **Note 4:** [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) does not require the use of [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) in the generation of a valid Global Unique Identifier (GUID) for PIV cards, but it is required for NFI PIV-I cards.
 *  **Note 5:** The value of the UUID will be in the subjectAltName extension of the PIV Authentication Certificate and the Card Authentication Certificate
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+[[Return to Table of Contents]](#table-of-contents)
 
-### What Object IDentifiers (OIDs) Are Specified For PIV-I?
 
-No Card Authentication extended key usage (EKU) OID is defined specifically for PIV-I.  PIV-I Card Authentication certificates must assert the PIV Card Authentication EKU OID **`id-PIV-cardAuth`** in the EKU extension to specify that the public key is used to authenticate the PIV-I card rather than the PIV-I cardholder. <br /><br />
+
+### What Object Identifiers (OIDs) Are Specified For PIV-I?
+
+PIV-I does not have a Card Authentication Extended Key Usage (EKU) OID specifically defined.  PIV-I Card Authentication certificates must assert the PIV Card Authentication EKU OID **`id-PIV-cardAuth`** in the EKU extension to specify that the public key is used to authenticate the PIV-I card rather than the PIV-I cardholder.
+
 The table below shows the OIDs defined specifically for PIV-I:
-<br />
 
-NAME | TYPE | PURPOSE | STATUS | VALUE
----|---|---|---|---
-`id-fpki-certpcy-pivi-hardware` | Policy OID | Conveys certificate policy compliance in certificates whose keys require activation by the PIV-I Cardholder (e.g., PIV-I Authentication, PIV-I Digital Signature, and PIV-I Key Management keys). | Defined | 2.16.840.1.101.3.2.1.3.18
-`id-fpki-certpcy-pivi-cardAuth` | Policy OID | Conveys certificate policy compliance in certificates whose keys do not require PIV-I Cardholder activation (i.e., PIV-I Card Authentication key) | Defined | 2.16.840.1.101.3.2.1.3.19
-`id-fpki-certpcy-pivi-contentSigning` | Policy OID | Conveys use by a Card Management System that complies with the certificate policy. | Defined | 2.16.840.1.101.3.2.1.3.20
-`id-fpki-pivi-content-signing` | EKU OID | Conveys that the key is intended to be used to sign PIV-I Cards | Defined | 2.16.840.1.101.3.8.7
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+NAME | TYPE | PURPOSE | VALUE
+---|---|---|---
+`id-fpki-certpcy-pivi-hardware` | Policy OID | Conveys certificate policy compliance in certificates whose keys require activation by the PIV-I Cardholder (e.g., PIV-I Authentication, PIV-I Digital Signature, and PIV-I Key Management keys). | 2.16.840.1.101.3.2.1.3.18
+`id-fpki-certpcy-pivi-cardAuth` | Policy OID | Conveys certificate policy compliance in certificates whose keys do not require PIV-I Cardholder activation (i.e., PIV-I Card Authentication key) | 2.16.840.1.101.3.2.1.3.19
+`id-fpki-certpcy-pivi-contentSigning` | Policy OID | Conveys use by a Card Management System that complies with the certificate policy. | 2.16.840.1.101.3.2.1.3.20
+`id-fpki-pivi-content-signing` | EKU OID | Conveys that the key is intended to be used to sign PIV-I Cards | 2.16.840.1.101.3.8.7
+
+[[Return to Table of Contents]](#table-of-contents)
+
+
 
 ### Can My Agency Accept PIV-I Cards Issued By Our Contractors’ Company In Lieu Of Issuing PIV Cards To These Individuals?
 
-* **NO -** Individuals who fall within the applicability of [Homeland Security Presidential Directive (HSPD)-12](https://www.dhs.gov/homeland-security-presidential-directive-12), including Federal contractors requiring routine access to Federally-controlled facilities or Federally-controlled information systems for a period of time greater than 6 months, must continue to be issued PIV Cards by
-the Federal Government in accordance with relevant policies. <br />
-(See [M-05-24](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNLFAA4&field=File__Body__s) for details on HSPD-12 implementation.)
+* **NO**  Individuals including Federal contractors requiring routine access to Federally-controlled facilities or Federally-controlled information systems for a period of time greater than 6 months, must continue to be issued PIV Cards by the Federal Government in accordance with relevant policies.
+([M-05-24](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNLFAA4&field=File__Body__s) has further details on PIV/PIV-I credential requirements in line with HSPD-12 implementation.)
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+[[Return to Table of Contents]](#table-of-contents)
+
+
 
 ### Can Non-PIV Cards Issued By The Federal Government Be Considered PIV-I?
 
-* **YES -** The Federal Government may issue non-PIV identity and access cards to individuals who are
-outside the applicability of [Homeland Security Presidential Directive (HSPD)-12](https://www.dhs.gov/homeland-security-presidential-directive-12). Federal Government PIV Card Issuers may issue non-PIV identity cards that meet the PIV-I requirements specified in the [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000ClrhAAC&field=File__Body__s). The FBCA CP specifies the minimum requirements for the Federal Government to rely on PIV-I Non-Federal Issuer (NFI) identity cards. Example scenarios where this might apply include facility access cards issued to short term employees (e.g., summer interns) and identity credentials issued by the Legislative and Judicial Branches of the Federal Government. 
+* **YES** The Federal Government may issue non-PIV identity and access cards to individuals who are outside the applicability of [Homeland Security Presidential Directive (HSPD)-12](https://www.dhs.gov/homeland-security-presidential-directive-12). Federal Government PIV Card Issuers may issue non-PIV identity cards that meet the PIV-I requirements specified in the [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000ClrhAAC&field=File__Body__s) (FBCA CP). The FBCA CP specifies the minimum requirements for the Federal Government to rely on PIV-I Non-Federal Issuer (NFI) identity cards. Example scenarios where this might apply include facility access cards issued to short term employees (e.g., summer interns) and identity credentials issued by the Legislative and Judicial Branches of the Federal Government. 
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+[[Return to Table of Contents]](#table-of-contents)
+
+
 
 ### Can A PIV-I Card Be Accepted For Both Physical And Logical Access?
 
@@ -285,7 +304,7 @@ Card Management Key | Optional | Symmetric key used for card personalization and
 The PIV-I Card logical data model is the same model as the PIV Card logical data model, as defined in [FIPS 201 Section 4.2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf).  [NIST 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) provides the technical guidance for these required elements. To support a variety of authentication mechanisms, PIV-I Card logical credentials shall contain multiple data elements for the purpose of verifying the cardholder's identity at graduated assurance levels. These mandatory data elements collectively comprise the data model for logical credentials, and include the following:
 
 * A Card Capability Container
-* A CardHolder Unique IDentifier (CHUID)
+* A CardHolder Unique Identifier (CHUID)
 * An authentication key (one asymmetric key pair and corresponding certificate)
 * A card authentication key (one asymmetric key pair and corresponding certificate)
 * Two biometric fingerprints
@@ -372,7 +391,7 @@ to the relevant PIV-I OIDs (See [What Object Identifiers are Specified for PIV-I
 
 <br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
 
-### What Are The Valid Methods To Generate / Construct A Universally Unique IDentifier (UUID) Number?
+### What Are The Valid Methods To Generate / Construct A Universally Unique Identifier (UUID) Number?
 
 The following table summarizes the three methods of generating/constructing UUID numbers specified in
 [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).<br /><br />
@@ -401,7 +420,7 @@ There is a slight chance of UUID collision across issuers. Therefore, Relying Pa
 
 ### How does PIV-I handle Global Unique IDentification Number (GUID) during issuance?
 
-The GUID is a field that must be in the CardHolder Unique IDentifier (CHUID).  The value of the GUID must be an [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) Universally Unique IDentifier (UUID), as specified in the [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000ClrhAAC&field=File__Body__s).  The UUID value in the GUID is also used in certificates and signed objects on the card.
+The GUID is a field that must be in the CardHolder Unique Identifier (CHUID).  The value of the GUID must be an [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) Universally Unique Identifier (UUID), as specified in the [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000ClrhAAC&field=File__Body__s).  The UUID value in the GUID is also used in certificates and signed objects on the card.
 
 <br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
 
@@ -434,26 +453,26 @@ PIV-I Card biometric requirements match those of the PIV Card.   [NIST SP 800-73
 
 ### What Is The Relationship Between FASC-N And GUID?
 
-Both the Global Unique IDentifier (GUID) and the Federal Agency Smart Credential Number(FASC-N) are data fields within the CardHolder Unique IDentifier (CHUID) per  [NIST SP 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf). The GUID is included in the CHUID.  [PIV-I NFI](https://cio.gov/wp-content/uploads/downloads/2012/09/PIV_Interoperabillity_Non-Federal_Issuers_May-2009.pdf)
+Both the Global Unique Identifier (GUID) and the Federal Agency Smart Credential Number(FASC-N) are data fields within the CardHolder Unique Identifier (CHUID) per  [NIST SP 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf). The GUID is included in the CHUID.  [PIV-I NFI](https://cio.gov/wp-content/uploads/downloads/2012/09/PIV_Interoperabillity_Non-Federal_Issuers_May-2009.pdf)
  describes the challenges with the FASC-N as follows: <br />
 >The PIV Card includes a Federal Agency Smart Credential Number (FASC-N) to uniquely identify it, and thus avoid identifier namespace collisions. When managed and distributed within a closed system (the U.S. Government), uniqueness is ensured. However, the FASC-N structure does not support its use beyond the U.S. Government as it cannot be easily extended to allow sufficient identifier namespace to support a large NFI population.
 
-The GUID field is defined to contain an  [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt)-conformant Universally Unique IDentifier (UUID) value to support large Non-Federal Issuer (NFI) populations.
+The GUID field is defined to contain an  [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt)-conformant Universally Unique Identifier (UUID) value to support large Non-Federal Issuer (NFI) populations.
 
 <br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
 
 ### What Is The GUID?
 
-The Global Unique IDentifier (GUID) is a mandatory data field defined within the CardHolder Unique IDentifier (CHUID) as specified in [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) which PIV and PIV-I Cards must conform to.  For PIV-I Cards, the GUID field must contain an [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt)-conformant Universally Unique IDentifier (UUID) value to support large NFI populations.
+The Global Unique Identifier (GUID) is a mandatory data field defined within the CardHolder Unique Identifier (CHUID) as specified in [NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) which PIV and PIV-I Cards must conform to.  For PIV-I Cards, the GUID field must contain an [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt)-conformant Universally Unique Identifier (UUID) value to support large NFI populations.
 
 <br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
 
 ### What Is The Relationship Between GUID And UUID?
 
-* **The Global Unique IDentifier (GUID)** is a Tag-Length-Value (TLV) (i.e., a structured data field)
-within the CardHolder Unique IDentifier (CHUID) object of a PIV Card. The GUID is defined in [NIST SP 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
+* **The Global Unique Identifier (GUID)** is a Tag-Length-Value (TLV) (i.e., a structured data field)
+within the CardHolder Unique Identifier (CHUID) object of a PIV Card. The GUID is defined in [NIST SP 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
 
-* **The Universally Unique IDentifier (UUID)** is a unique identifier that can be placed in multiple data fields to uniquely identify the card.  For example, the UUID is found in the GUID field of the CHUID, the `subjectAltName` extension of PIV-I Authentication and PIV-I Card Authentication certificates, and within signed objects on the card (in place of the Federal Agency Smart Credential Number(FASC-N) used in PIV Cards). The UUID is defined in [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt).
+* **The Universally Unique Identifier (UUID)** is a unique identifier that can be placed in multiple data fields to uniquely identify the card.  For example, the UUID is found in the GUID field of the CHUID, the `subjectAltName` extension of PIV-I Authentication and PIV-I Card Authentication certificates, and within signed objects on the card (in place of the Federal Agency Smart Credential Number(FASC-N) used in PIV Cards). The UUID is defined in [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt).
 
 On PIV Cards, the GUID may contain a UUID, an IPv6 address, or be populated with all zeros.  On PIV-I Cards, the GUID must contain a UUID. Both the UUID and IPv6 addresses provide a unique numbering scheme.  However, the UUID does not require a central organization to manage the namespace.
 
@@ -461,7 +480,7 @@ On PIV Cards, the GUID may contain a UUID, an IPv6 address, or be populated with
 
 ### Where Else Does The GUID's UUID Value Appear?
 
-For Non Federal Issuers (NFI), the Universally Unique IDentifier (UUID) value that is present in the The Global Unique Identifier (GUID) is present in other data objects as well.  For example, the UUID must be present in all objects on a PIV-I credential that would otherwise contain the Federal Agency Smart Credential Number(FASC-N) if the card were issued by a Federal issuer.  In addition, the UUID must appear in the `subjectAltName` extension of the PIV-I Authentication and PIV-I Card Authentication certificates as a Uniform Resource Identifier (URI).  The UUID also appears in a `serialNumber` attribute in the subject field of PIV-I Card Authentication certificates where it is encoded using the string representation from [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt).
+For Non Federal Issuers (NFI), the Universally Unique Identifier (UUID) value that is present in the The Global Unique Identifier (GUID) is present in other data objects as well.  For example, the UUID must be present in all objects on a PIV-I credential that would otherwise contain the Federal Agency Smart Credential Number(FASC-N) if the card were issued by a Federal issuer.  In addition, the UUID must appear in the `subjectAltName` extension of the PIV-I Authentication and PIV-I Card Authentication certificates as a Uniform Resource Identifier (URI).  The UUID also appears in a `serialNumber` attribute in the subject field of PIV-I Card Authentication certificates where it is encoded using the string representation from [RFC 4122](http://www.ietf.org/rfc/rfc4122.txt).
 
 <br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
 
@@ -481,13 +500,13 @@ The American Registry for Internet Numbers (ARIN) guidance indicates that IPv6 a
 
 ### Where Does The Global Unique Identifier (GUID) Appear?
 
-GUID is a Tag-Length-Value (TLV) (i.e., structured data field) of the CardHolder Unique IDentifier (CHUID).  As such, it only appears in the CHUID.  The Universally Unique Identifier (UUID) value that is contained in the GUID is used in other data fields throughout the PIV-I credential.
+GUID is a Tag-Length-Value (TLV) (i.e., structured data field) of the CardHolder Unique Identifier (CHUID).  As such, it only appears in the CHUID.  The Universally Unique Identifier (UUID) value that is contained in the GUID is used in other data fields throughout the PIV-I credential.
 
 <br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
 
 ### Where Does The FASC-N Appear On The PIV-I Card?
 
-The Federal Agency Smart Credential Number (FASC-N) is a unique number for Federal issuers that links all digitally-signed objects into a single credential set in a PIV Card - but not a PIV-I Card.  For Non-Federal Issuer (NFI) Cards, the FASC-N is only contained in a Tag-Length-Value (TLV) (i.e., structured data field) of the CardHolder Unique IDentifier (CHUID) and it must contain 14 nines (9).  For PIV-I cards, the Universally Unique Identifier (UUID) links all digitally-signed objects into a single credential set. <br /> (See [NIST SP 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) for more information.)
+The Federal Agency Smart Credential Number (FASC-N) is a unique number for Federal issuers that links all digitally-signed objects into a single credential set in a PIV Card - but not a PIV-I Card.  For Non-Federal Issuer (NFI) Cards, the FASC-N is only contained in a Tag-Length-Value (TLV) (i.e., structured data field) of the CardHolder Unique Identifier (CHUID) and it must contain 14 nines (9).  For PIV-I cards, the Universally Unique Identifier (UUID) links all digitally-signed objects into a single credential set. <br /> (See [NIST SP 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) for more information.)
 
 <br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
 
@@ -525,7 +544,7 @@ The Physical Access Control System (PACS) should use the Federal Agency Smart Cr
 
 ### How Does A Federal PACS Interpret An NFI PIV-I Card That Does Not Have A FASC-N?
 
-Non-Federal Issuer (NFI) cards have a Federal Agency Smart Credential Number (FASC-N) that contains 14 nines (9). However, **the FASC-N is not a unique identifier for NFIs.  The Global Unique Identifier (GUID) is the unique identifier for NFI Cards.** When a Federal Physical Access Control System (PACS) is reading the CardHolder Unique IDentifier (CHUID) it will have both the FASC-N and the GUID available to it.  When the FASC-N contains 14 nines (9), and if technically feasible, the Federal PACS should look for and use the GUID value to identify the cardholder.
+Non-Federal Issuer (NFI) cards have a Federal Agency Smart Credential Number (FASC-N) that contains 14 nines (9). However, **the FASC-N is not a unique identifier for NFIs.  The Global Unique Identifier (GUID) is the unique identifier for NFI Cards.** When a Federal Physical Access Control System (PACS) is reading the CardHolder Unique Identifier (CHUID) it will have both the FASC-N and the GUID available to it.  When the FASC-N contains 14 nines (9), and if technically feasible, the Federal PACS should look for and use the GUID value to identify the cardholder.
 
 <br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
 
@@ -543,7 +562,7 @@ Valid Agency/Code<br /> System Code<br /> Credential Number (CRED#) | *  Federal
 ### As A Relying Party, When Do I Use The FASC-N Versus GUID?
 
 ---
-**NOTE:**  The unique identifier is different for Federal and Non-Federal Issuer (NFI) Cards.<br /><br />  **Federal cards use the Federal Agency Smart Credential Number (FASC-N) as the unique identifier**.  It is found in the `subjectAltName` extension of the authentication certificates, and in the Global Unique Identifier (GUID) within the CardHolder Unique IDentifier (CHUID).<br /><br />  **Non Federal Issuer (NFI) cards use the Universally Unique Identifier (UUID) as the unique identifier.**  The FASC-N for NFI cards will contains 14 nines (9).
+**NOTE:**  The unique identifier is different for Federal and Non-Federal Issuer (NFI) Cards.<br /><br />  **Federal cards use the Federal Agency Smart Credential Number (FASC-N) as the unique identifier**.  It is found in the `subjectAltName` extension of the authentication certificates, and in the Global Unique Identifier (GUID) within the CardHolder Unique Identifier (CHUID).<br /><br />  **Non Federal Issuer (NFI) cards use the Universally Unique Identifier (UUID) as the unique identifier.**  The FASC-N for NFI cards will contains 14 nines (9).
 
 ---
 * **For CHUID-based authentication**
@@ -570,7 +589,7 @@ Authentication | OID Name | OID Value
 Authentication Certificate | id-fpki-common-authentication | 2.16.840.1.101.3.2.1.3.13
 Card Authentication Certificate | id-fpki-common-cardAuth | 2.16.840.1.101.3.2.1.3.17
 Content Signing Certificate | id-fpki-common-devices | 2.16.840.1.101.3.2.1.3.8
-CardHolder Unique IDentifier (CHUID) | FASC-N | [Valid Federal Agency Code]
+CardHolder Unique Identifier (CHUID) | FASC-N | [Valid Federal Agency Code]
 <br />
 
 PIV-I Credential Validation <br />
@@ -580,7 +599,7 @@ Authentication | OID Name | OID Value
 Authentication Certificate | id-fpki-certpcy-pivi-hardware |2.16.840.1.101.3.2.1.3.18
 Card Authentication Certificate | id-fpki-certpcy-pivi-cardAuth | 2.16.840.1.101.3.2.1.3.19
 Content Signing Certificate | id-fpki-certpcy-pivi-contentSigning | 2.16.840.1.101.3.2.1.3.20
-CardHolder Unique IDentifier (CHUID) | FASC-N | 14 nines (9) 
+CardHolder Unique Identifier (CHUID) | FASC-N | 14 nines (9) 
 
 <br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
 
