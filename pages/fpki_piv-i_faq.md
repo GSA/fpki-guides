@@ -93,7 +93,8 @@ A Personal Identity Verification Interoperable (PIV-I) card is an ID card simila
 *  May be issued by Federal agencies or qualified Non-Federal Issuers (NFIs)
 *  Does not meet all requirements for PIV credentials
 
-The table below identifies the areas Non Federal Issuers (NFIs) cannot meet the full PIV standard as specified by [FIPS 201](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf), and provides alternatives.  There are four core areas identified:
+The table below identifies the areas Non Federal Issuers (NFIs) cannot meet the full PIV standard, and provides alternatives.
+There are four core areas identified:
 
 
 Core Area | Description
@@ -222,11 +223,11 @@ policies.
 
 
 
-### What Object Identifiers (OIDs) Are Specified For PIV-I?
+### Does PIV-I Have Specific Object Identifiers (OIDs)?
 
-PIV-I does not have a Card Authentication Extended Key Usage (EKU) OID specifically defined.  PIV-I Card Authentication certificates must assert the PIV Card Authentication EKU OID **`id-PIV-cardAuth`** in the EKU extension to specify that the public key is used to authenticate the PIV-I card rather than the PIV-I cardholder.
+PIV-I does *not* have an OID specifically defined for the Card Authentication Extended Key Usage (EKU).  PIV-I Card Authentication certificates must assert the PIV Card Authentication EKU OID **`id-PIV-cardAuth`** in the EKU extension to specify that the public key is used to authenticate the PIV-I *card* rather than the PIV-I *cardholder*.
 
-The table below shows the OIDs defined specifically for PIV-I:
+The table below shows the OIDs specific to PIV-I:
 
 
 NAME | TYPE | PURPOSE | VALUE
@@ -240,18 +241,19 @@ NAME | TYPE | PURPOSE | VALUE
 
 
 
-### Can My Agency Accept PIV-I Cards Issued By Our Contractors’ Company In Lieu Of Issuing PIV Cards To These Individuals?
+### Can I Accept My Contractors' Company Issued PIV-I Cards Instead Of Issuing Them Federal PIV Cards?
 
-* **NO**  Individuals including Federal contractors requiring routine access to Federally-controlled facilities or Federally-controlled information systems for a period of time greater than 6 months, must continue to be issued PIV Cards by the Federal Government in accordance with relevant policies.
+* **NO**  Individuals, including Federal contractors, requiring routine access to Federally-controlled facilities or Federally-controlled information systems for a period of time greater than 6 months, must continue to be issued PIV Cards by the Federal Government in accordance with relevant policies.
 ([M-05-24](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNLFAA4&field=File__Body__s) has further details on PIV/PIV-I credential requirements in line with HSPD-12 implementation.)
 
 [[Return to Table of Contents]](#table-of-contents)
 
 
 
-### Can Non-PIV Cards Issued By The Federal Government Be Considered PIV-I?
+### Can My Agency Issue PIV-I Cards?
 
-* **YES** The Federal Government may issue non-PIV identity and access cards to individuals who are outside the applicability of [Homeland Security Presidential Directive (HSPD)-12](https://www.dhs.gov/homeland-security-presidential-directive-12). Federal Government PIV Card Issuers may issue non-PIV identity cards that meet the PIV-I requirements specified in the [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000ClrhAAC&field=File__Body__s) (FBCA CP). The FBCA CP specifies the minimum requirements for the Federal Government to rely on PIV-I Non-Federal Issuer (NFI) identity cards. Example scenarios where this might apply include facility access cards issued to short term employees (e.g., summer interns) and identity credentials issued by the Legislative and Judicial Branches of the Federal Government. 
+* **YES** The Federal Government may issue non-PIV identity and access cards.  Federal Government PIV Card Issuers may issue non-PIV identity cards that meet the PIV-I requirements.  Example scenarios where this might apply include facility access cards issued to short term employees (e.g., summer interns) and identity credentials issued by the Legislative and Judicial Branches of the Federal Government. 
+(For specifics and details, check out [M-05-24](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNLFAA4&field=File__Body__s) for PIV/PIV-I credential requirements in line with HSPD-12 implementation and [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000ClrhAAC&field=File__Body__s) specifies the minimum requirements for the Federal Government to rely on PIV-I Non-Federal Issuer (NFI) identity cards.)
 
 [[Return to Table of Contents]](#table-of-contents)
 
@@ -259,31 +261,35 @@ NAME | TYPE | PURPOSE | VALUE
 
 ### Can A PIV-I Card Be Accepted For Both Physical And Logical Access?
 
-* **YES -** A PIV-I Card may be used to access both physical and logical resources. However, each Federal Government Relying Party will determine the extent to which it will trust PIV-I Cards to access resources.
+* **YES -** A PIV-I Card may be used to access both physical and logical resources. However, each federal government relying party will determine the extent to which it will trust PIV-I Cards to access resources.
 
 <br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
 
-### Can An Identity Card Issued By A Program That Has Modified The PIV Technical Specifications Be Considered A PIV-I Card?
+### Can A Program Modify The PIV Technical Specifications Of An ID Card It Issues To Make It A PIV-I Card?
 
-* **NO -** In order to be considered PIV-I, an identity card must conform to the minimum PIV technical requirements defined in [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000ClrhAAC&field=File__Body__s), and be issued by an issuer who has been assessed by the Federal PKI Policy Authority as meeting those requirements.
+* **NO -** In order to be considered PIV-I, an identity card must conform to the minimum PIV technical requirements defined in [X.509 Certificate Policy for the Federal Bridge Certification Authority (FBCA)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000ClrhAAC&field=File__Body__s), *and* be issued by an issuer who has been assessed by the Federal PKI Policy Authority as meeting those requirements.
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+[[Return to Table of Contents]](#table-of-contents)
+
 
 ### What Is The PIV-I Card Logical Data Model?
 
-The PIV-I Card logical data model is the same as the PIV Card logical data model, as defined in [FIPS 201 Section 4.2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) and further detailed in  [NIST SP 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).  PIV-I Card logical credentials support a variety of authentication mechanisms and contain multiple data objects for the purpose of verifying the cardholder's identity at graduated assurance levels.  Some of the data objects that are optional for PIV have been made mandatory for PIV-I.  See [What are the Mandatory Data Model Elements for a PIV-I Card](#what-are-the-mandatory-data-model-elements-for-a-piv-i-card-1) for the list of mandatory PIV-I data objects.
+The PIV-I Card logical data model is the same as the PIV Card logical data model.  PIV-I Card logical credentials support a variety of authentication mechanisms and contain multiple data objects for the purpose of verifying the cardholder's identity at graduated assurance levels.  Some of the data objects that are optional for PIV have been made mandatory for PIV-I.  See [What are the Mandatory Data Model Elements for a PIV-I Card](#what-are-the-mandatory-data-model-elements-for-a-piv-i-card-1) for the list of mandatory PIV-I data objects.
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+[[Return to Table of Contents]](#table-of-contents)
+
 
 ### Can The PIV-I Card Logical Data Model Be Extended?
 
-* **Yes -** The PIV-I Card logical data model can be extended in the same way as the PIV Card logical data model, as defined in [FIPS 201 Section 4.2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf). The PIV-I Card logical data model may be extended using the optional data defined within  [NIST SP 800-73 Part 1] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
+* **Yes -** The PIV-I Card logical data model can be extended in the same way as the PIV Card logical data model. The PIV-I Card logical data model may be extended using the optional data defined within  [NIST SP 800-73 Part 1] (http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+[[Return to Table of Contents]](#table-of-contents)
+
 
 ### What Certificates And Keys May Be Present On A PIV-I Card?
 
-Except for the Card Authentication certificate/key pair, PIV-I has the same certificate and key configuration as a PIV Card, as defined in  [FIPS 201 Section 4.2.2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf). The PIV-I Card has two mandatory certificate/key pairs, and three optional certificate/key pairs:
+Except for the Card Authentication certificate/key pair, PIV-I has the same certificate and key configuration as a PIV Card.
+The PIV-I Card has two mandatory certificate/key pairs, and three optional certificate/key pairs:
 
 CERTIFICATE/KEY | MANDATORY or OPTIONAL | DESCRIPTION
 ---|---|---
@@ -294,14 +300,18 @@ Key Management Certificate/Key | Optional | Asymmetric private key supporting ke
 Card Management Key | Optional | Symmetric key used for card personalization and post-issuance activitites.
 
 
->* **NOTE 6:** PIV allows either a symmetric (secret) key or an asymmetric key, but [NIST SP 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf) strongly recommends that agencies use the asymmetric CAK protocol.<br />***Reference links:***<br />[X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000GmhKAAS&field=File__Body__s)<br /> 
-[NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf)<br />  [NIST SP 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf)<br />
+>* **NOTE 6:** PIV allows either a symmetric (secret) key or an asymmetric key, but [NIST SP 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf) strongly recommends that agencies use the asymmetric CAK protocol.
+> ***Reference links:***
+>[X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000GmhKAAS&field=File__Body__s)
+>[NIST SP 800-73](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf)
+>[NIST SP 800-116](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-116.pdf)
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+[[Return to Table of Contents]](#table-of-contents)
+
 
 ### What Are The Mandatory Data Model Elements For A PIV-I Card?
 
-The PIV-I Card logical data model is the same model as the PIV Card logical data model, as defined in [FIPS 201 Section 4.2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf).  [NIST 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) provides the technical guidance for these required elements. To support a variety of authentication mechanisms, PIV-I Card logical credentials shall contain multiple data elements for the purpose of verifying the cardholder's identity at graduated assurance levels. These mandatory data elements collectively comprise the data model for logical credentials, and include the following:
+The PIV-I Card logical data model is the same model as the PIV Card logical data model. To support a variety of authentication mechanisms, PIV-I Card logical credentials shall contain multiple data elements for the purpose of verifying the cardholder's identity at graduated assurance levels. These mandatory data elements collectively comprise the data model for logical credentials, and include the following:
 
 * A Card Capability Container
 * A CardHolder Unique Identifier (CHUID)
@@ -311,7 +321,10 @@ The PIV-I Card logical data model is the same model as the PIV Card logical data
 * Facial Image Buffer
 * Security Object
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+(For technical details on the PIV logical data model see [FIPS 201 Section 4.2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf).  The technical guidance for these required elements is found here [NIST 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf).)  
+
+[[Return to Table of Contents]](#table-of-contents)
+
 
 ### What Are The Optional Data Model Elements For A PIV-I Card?
 
@@ -325,19 +338,24 @@ The PIV Card logical data model defines several optional elements.  The PIV-I Ca
 *  Key Management Key
 *  Symmetric key associated with the card management system
 
-[NIST SP 800-78](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-78-4.pdf) specifies additional cryptographic algorithms and key sizes, and [NIST SP 800-76](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-76-2.pdf) provides additional biometric requirements.
+>If you're interested in the technical details, you may want to check out these:
+>[FIPS 201 Section 4.2](http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.201-2.pdf) has technical details on the PIV logical data model. >[NIST 800-73 Part 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-73-4.pdf) offers technical guidance for the optional elements.
+>[NIST SP 800-78](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-78-4.pdf) specifies additional cryptographic algorithms and key sizes.
+>[NIST SP 800-76](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-76-2.pdf) provides additional biometric requirements.
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+[[Return to Table of Contents]](#table-of-contents)
 
-### What Is The Validity Period For PIV-I Certificates?
 
-The validity period of PIV-I certificates is the same as for PIV certificates.  For example, the maximum validity of PIV-I certificates is three (3) years, which is also the validity period for human subscriber certificates issued in accordance with Federal Bridge Certification Authority (FBCA) certificate policies. See [What Object Identifiers are Specified for PIV-I](#what-object-identifiers-oids-are-specified-for-piv-i-1) for an overview of PIV-I in the FBCA Certificate Policy.
+### How Long Are PIV-I Certificates Valid?
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+PIV-I certificates are valid for the same ammount of time as PIV certificates.  For example, the longest a PIV-I certificate can be valid is three (3) years, which is also the length of time human subscriber certificates are valid.
+
+[[Return to Table of Contents]](#table-of-contents)
+
 
 ### What Algorithms Must Be Used In PIV-I Card Certificates?
 
-The PIV-I Card must use the same algorithms as the PIV Card for their respective certificates, as specified in [NIST SP 800-78.  Tables 3.1 and 5.1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-78-4.pdf) specify the algorithms and key sizes that must be supported per key type:
+The PIV-I Card must use the same algorithms as the PIV Card for their respective certificates.
 
 PIV KEY TYPE | TIME PERIOD for USE | ALGORITHMS and KEY SIZES
 ---|---|---
@@ -347,7 +365,10 @@ Digital Signature key | After 12/31/2008 | RSA (1024 or 2048 bits)<br />ECDSA (C
 Key Management key | after 12/31/2008 | RSA (1024 or 2048 bits)<br />ECDSA (Curve P-256 or P-384)
 Card Management Key | After 12/31/2010 | 3TDEA<br />AES-128, AES-192, or AES-256
 
-<br />[[Return to Table of Contents]](#table-of-contents)<br /><br /><br />
+(If you're interested in the specifics of key algorithms, Tables 3.1 and 5.1 of [NIST SP 800-78](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-78-4.pdf) specify the algorithms and key sizes that must be supported per key type.)
+
+[[Return to Table of Contents]](#table-of-contents)
+
 
 ### What Must PIV-I Card Authentication Certificate Policies Map To?
 
