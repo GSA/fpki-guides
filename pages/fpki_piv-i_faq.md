@@ -38,7 +38,7 @@ If you are really interested in the specifics and technical details of PIV-I, re
 ####[Is Symmetric Card Authentication Key (CAK) Prohibited](#is-symmetric-card-authentication-key-cak-prohibited-1)
 ####[What Biometrics Must Be In A PIV-I Card](#what-biometrics-must-be-in-a-piv-i-card-1)
 ####[What Is The Relationship Between FASC-N And GUID](#what-is-the-relationship-between-fasc-n-and-guid-1)
-####[What Is The GUID](#what-is-the-guid-1)
+####[What Is The Global Unique Identifier (GUID)](#what-is-the-global-unique-identifier-guid-1)
 ####[What Is The Relationship Between GUID And UUID](#what-is-the-relationship-between-guid-and-uuid-1)
 ####[Where Else Does The GUIDs UUID Value Appear](#where-else-does-the-guids-uuid-value-appear-1)
 ####[What Is The Format Of The UUID In Certificates](#what-is-the-format-of-the-uuid-in-certificates-1)
@@ -524,7 +524,7 @@ PIV-I Card biometric requirements match those of the PIV Card.  Specifically, tw
 [[Return to Table of Contents]](#table-of-contents)
 
 
-### What Is The GUID?
+### What Is The Global Unique Identifier (GUID)?
 
 The Global Unique Identifier (GUID) is a mandatory data field defined within the CardHolder Unique Identifier (CHUID).  For PIV-I Cards, the GUID field must contain a Universally Unique Identifier (UUID) value which allows the Federal PKI system to support large NFI populations.
 
@@ -731,8 +731,6 @@ Neither policy nor specifications provide guidance in this area. Issuers can do 
 
 
 #### Additional Resources
-Personal Identity Verification Interoperable (PIV-I) Frequently Asked Questions (FAQ)
-<https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s>
+[Personal Identity Verification Interoperable (PIV-I) Frequently Asked Questions (FAQ)](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPlAAO&field=File__Body__s)
 
-National Institute of Science and Technology (NIST) Special Publications (SP) Library
-http://csrc.nist.gov/publications/PubsSPs.html
+[National Institute of Science and Technology (NIST) Special Publications (SP) Library](http://csrc.nist.gov/publications/PubsSPs.html)
