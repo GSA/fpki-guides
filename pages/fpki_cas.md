@@ -40,7 +40,7 @@ The Federal Common Policy CA is public facing and its root certificate is distri
 ![FPKI Federal Bridge Logo](../img/fbca-logo.png){:style="float:left;width:15%;"}
 The Federal Bridge Certification Authority (FBCA) is the PKI Bridge or link between the Federal Common Policy CA and the other CAs that comprise the FPKI, including Federal and external PKIs, commercial organizations, state, local, and foreign governments. The FBCA provides a means to map participating PKIs so they validate to the Federal Common Policy Certification Authority trust anchor.
 
-![Example of the FBCA Certification Path](../img/fbca_chainV2.png){:style="width:40%;float:right;"}
+![Example of the FBCA Certification Path](../img/fbca-chainV2.png){:style="width:40%;float:right;"}
 *Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}The FBCA enables peer-to-peer transactions between its member organizations, both Federal and Non-Federal. Members of the FBCA are cross-certified, meaning they've established a trust relationship, with the FBCA. These relationships include FPKI Trusted Infrastructure CAs, Shared Service Provider CAs, and participating individual Federal agency or other organizational CAs. These partners have extended the reach of the FPKI well beyond the boundaries of the Federal Government. 
 
 Current CAs that are cross-certified are found on the [FPKI Approved Providers page](https://www.idmanagement.gov/IDM/s/article_detail?link=fpki-approved-providers), under the *Federal Bridge Affiliate* category.
