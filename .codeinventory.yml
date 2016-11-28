@@ -1,0 +1,17 @@
+name: 'Federal Public Key Infrastructure (FPKI) Guides'
+description: 'Guides providing information about the Federal Public Key Infrastructure (FPKI), as well as commonly used links, tools, tips, and user guides for leveraging the FPKI.'
+openSourceProject: 1
+governmentWideReuseProject: 1
+tags:
+    - pki
+    - fpki
+    - ficam
+    - certificate
+    - X.509
+    - common-policy
+    - federal-bridge
+    - trust
+    - crl
+    - certificate-authority
+contact:
+    email: icam@gsa.gov
