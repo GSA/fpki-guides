@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Public Key Infrastructure 
-permalink: /pki/
-collection: pkifundamentals
+permalink: /fundamentals/
 ---
 ## Public Key Infrastructure
 

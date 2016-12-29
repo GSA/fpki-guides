@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: PIV-I Certification Process
 permalink: /pivi-certification-process/
 ---

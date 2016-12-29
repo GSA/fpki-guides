@@ -4,8 +4,6 @@ title: Federal PKI Overview
 permalink: /overview/
 ---
 
-## Overview
-
 The Federal Public Key Infrastructure encompasses the Certificate Authorities which issue:
 
 1. PIV credentials and person identity certificates 
