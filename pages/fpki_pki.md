@@ -1,16 +1,10 @@
 ---
 layout: default
-title: Public Key Infrastructure 
+title: About Public Key Infrastructure 
 permalink: /pki/
-collection: pkifundamentals
 ---
-## Public Key Infrastructure
 
 Public Key Infrastructure topics are to help program managers and engineers understand what a Public Key Infrastructure is, and what the Federal Public Key Infrastructure contains. 
-
-We are migrating topics and content developed by the US Government and engineers, from sources that currently exists in word, pdf and other formats.  
-
-Examples of topics we're working on:
 
 * [What is Public Key Infrastructure?](#what-is-public-key-infrastructure?)
 * [Why Use PKI?](#why-use-pki?)
@@ -19,11 +13,8 @@ Examples of topics we're working on:
 * [What is Encryption?](#what-is-encryption?)
 * [What are the Different Types of Certificates and their Purpose?](#What-are-the-different-types-of-certificates-and-their-purpose?)
 
-We invite you to contribute or send in links to US Government sites or pages with information we can share! 
- 
-[Contribute]({{ site.baseurl }}/contribute/) to this effort or open an [Issue]({{site.github.repository_url}}/issues) to make a suggestion.
 
-### What is Public Key Infrastructure? ###
+## What is Public Key Infrastructure? 
 Public Key Infrastructure (PKI) is a comprehensive system that provides public-key encryption and digital signature services. It is implemented as a set of policies, processes, server platforms, software and workstations used for administering public key certificates and public-private key pairs, including the ability to issue, maintain, and revoke public key certificates.
 
 PKI leverages public key (PK) cryptography, which is a branch of mathematics that uses public and private key pairs to encrypt and decrypt data. Public keys may be disseminated widely. The corresponding private key is known only to the owner.
@@ -31,9 +22,10 @@ PKI leverages public key (PK) cryptography, which is a branch of mathematics tha
 A sender uses a private key to transform unprotected information (plaintext) into coded text  (ciphertext). The receiver uses a corresponding private key to either (a) transform the ciphertext back into 
 plaintext, (b) verify the sender’s identity, (c) verify the data’s integrity, or some combination. 
 
-<img src="/img/PKI-image1.jpg"/>
+![Example of Public Key Infrastructure](../img/PKI-image1.jpg){:style="float:center"}
 
-### Why Use PKI? ###
+
+## Why Use PKI?
 PKI is high assurance - relying parties have a high degree of confidence in its use and results.  For example, PKI provides a much stronger authentication method than mechanisms such as userID/password.  The high confidence is because of PKI's mathematical underpinning, which compromise extremely unlikely. 
 
 Thus, PKI is very useful in helping organizations meet their security, business, and compliance objectives.
@@ -44,7 +36,7 @@ Thus, PKI is very useful in helping organizations meet their security, business,
 |Increased Compliance|Helps meet laws and mandates such as FISMA, E-Gov Act, Government Paperwork Elimination Act (GPEA), and Health Insurance Portability and Accountability Act (HIPAA).|
 |Improved Business Capabilities|Helps reduce costs/burdens and increase efficiencies by facilitating transition to electronic processes and capabilities.|
 
-### What are the Components of a PKI? ###
+## What are the Components of a PKI? ###
 Functional elements of a public key infrastructure include certification authorities, registration authorities, repositories, and archives. The users of the PKI come in two flavors: certificate holders and relying parties. An attribute authority is an optional component.
 
 |PKI Component| Description|
@@ -57,24 +49,22 @@ Functional elements of a public key infrastructure include certification authori
 |Certificate Revocation List| List of certificates that have been revoked, and should no longer be relied upon.|
 |PKI Users|Organizations or individuals that use the PKI, but do not issue certificates. This includes the relying party who relies on the certificate to know, with certainty, the public key of another entity; and the certificate holder that is issued a certificate and can sign digital documents.|
 
-> in the Federal PKI, the Federal Government operates three CAs: Common Policy CA, Federal Bridge CA, and the SHA1 Federal toot CA.
-
-### What is a Digital Signature? ###
+## What is a Digital Signature?
 A digital signature is the electronic equivalent of a written signature. A digital signature can be used to provide assurance that the claimed signatory signed the information. In addition, a digital signature may be used to detect whether the information was modified after it was signed (i.e., to detect the integrity of the signed data). These assurances may be obtained whether the data was received in a transmission or retrieved from storage.
 
 The digital signature algorithm includes a signature generation process and a signature verification process. A signatory uses his/her private key to generate a digital signature on data. A recipient uses the corresponding public key to verify the authenticity of the signature. Each signatory has a public and private key and is the owner of that key pair.
 
-> Digital signatures uses cryptographic transformation of data that, when properly implemented, provides a mechanism for verifying origin authentication, data integrity and signatory non-repudiation. 
+Digital signatures uses cryptographic transformation of data that, when properly implemented, provides a mechanism for verifying origin authentication, data integrity and signatory non-repudiation. 
 
-<img src="/img/PKI-image2.jpg"/>
+![Example of digital signature process](../img/PKI-image2.jpg){:style="float:center"}
 
-### What is Encryption? ###
+## What is Encryption?
 Encryption allows a user to hide information from others. It uses a complex mathematical algorithm to convert readable information (plaintext) into a seemingly random set of characters (ciphertext) that is unreadable by those without a special key in which to decrypt it. Those that possess the key can decrypt the ciphertext to view the plaintext again.
 PKI-based encryption is a very strong way to meet information confidentiality and privacy objectives.
 
-<img src="/img/PKI-image3.jpg"/>
+![Example of encryption process](../img/PKI-image3.jpg){:style="float:center"}
 
-### What are the Different Types of Certificates and their Purpose? ###
+## What are the Different Types of Certificates and their Purpose?
 In PKI, digital certificates are assigned specific uses. Some of the different certificate types are:
 
 |Certificate Type|Purpose|

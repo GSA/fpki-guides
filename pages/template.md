@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Guidance Document Template
 permalink: /template/
 ---
@@ -11,13 +11,6 @@ In this template, you will see text that explains how to use this template and c
 
 <!--- For example, this code denotes a comment, and information written inside of it will not appear on the website but can be used as a reference for others viewing the file. -->
 
-
-<!--- The code below creates a difficulty identifier on the page, which can either be Beginner, Moderate, or Advanced depending on the technical knowledge required to complete the procedure. The example below includes text that mark the page as 'Advanced', this string can be changed as needed.-->
-<div style="float:right; padding:10px; margin-right:20px; border-radius:10px; width:180px; height:40px; box-shadow:3px 3px 5px 0px; text-align:center; background-color:#CCC; color:#666666">
-<div style="color:#000000">
-<em>Advanced</em>
-</div>
-</div>
 
 <!--- The '#' symbol is used to denote headers, with different amounts aligning with different header styles. -->
 
@@ -39,15 +32,6 @@ This text will provide any reference information that may be needed to complete 
 ![Alt text for an image goes here]({{site.baseurl}}/folder that image is in/imagename.png){:align="right"}
 
 ### 1. Title of Procedure 1
-
-> This text will appear as a 'warning flag' on the website, which is a yellow banner. (The ">" symbol and the line directly underneath this body of text create the formatting for this flag.) Warning flags can be used for notifications such as notifying a user that they should skip a certain procedure.
-{:class="warning"}
-
-> This text will appear as a red banner, for an 'alert' message. Alert flags can be used for notifications such as common problems that may occur.
-{:class="alert"}
-
-> This text will appear as a green banner, for an 'informational' message. These flags can be used for notifications such as useful links or helpful tips.
-{:class="info"}
 
 This is the main body text that explains the purpose of the procedure and any context that you might need before diving into the individual steps. The text within each step should walk the user directly through exactly what they need to do to complete the procedure.  
 
