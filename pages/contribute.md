@@ -1,43 +1,61 @@
 ---
 layout: default
-title: Contribute
+title: How to Contribute
 permalink: /contribute/
 ---
-This site is for the collaborative development of the Federal Public Key Infrastructure guides.  
 
-#### How to Contribute
+Thank you for considering contributing to our development of open and transparent Federal PKI guides.  Everyone has tricks, tips and scripts and we want to share these with our colleagues.
 
-Thank you for considering contributing to the development of open and transparent 
-Federal Identity, Credentialing and Access Management guidance and playbooks. 
+To contribute to this site, you can:
 
-The GitHub repository which houses the source files for the site exists [here]({{site.github.repository_url}}/tree/{{site.branch}}/). If you have any questions, open an issue under the 'Issues' tab of the repository. Opening issues or adding content to the repository will require the creation of a GitHub account.
+- [Open an Issue](#open-an-issue)
+- [Edit an existing page](#edit-an-existing-page)
 
-GitHub Issues are the primary way of sharing information and discussing this site with the broader community. For example, they should be used for:
+
+Information is provided below and you can visit the GitHub repository [here]({{site.repo_url}}){:target="_blank"}.
+
+### Open an Issue
+
+Issues are the primary way of sharing information and discussing this site with the broader community. For example, Issues can be used for:
 
 * _Suggestions:_ You would like to suggest an edit or addition to any existing pages or information on this site
 * _Corrections:_ You have identified a problem with existing information on the site and would like to discuss a correction
-* _Pages:_ You have identified a topic for a new guidance document that is not yet on the site that would be beneficial to the playbook
 
-Each issue that you open should be named to align with its primary topic, and tracked so that you can discuss the issue with other contributors and follow any updates. 
+Issues may be submitted by clicking **Submit Issues Here** in the bottom of left side navigation.
 
-We request that all suggestions and corrections should be stated clearly with limited use of acronyms, and include any links or other information.
+For a quick guide on opening Issues, read [how to open issues here.]({{site.baseurl}}/openissue/){:target="_blank"}
 
-Direct changes and line edits to the content may be submitted by clicking 'Edit this page'. You do not need to install any software to submit content. You can use GitHub's in-browser editor to edit files and submit a pull request for your changes to be merged.
+### Edit an existing page
 
-If you have identified an open issue suggesting a new topic for the site and would like to drive the creation of that guidance document, whether through leveraging existing content from your agency or starting from scratch, follow the steps below:
+Direct changes and line edits to the content may be submitted by clicking **Edit this page** in the top right hand corner of each page.
 
-If you have a question during the contribution process, do not hesitate to open an Issue requesting clarification.
+For a quick guide on editing a page, read [how to edit a page here.]({{site.baseurl}}/editpage/){:target="_blank"}
 
-We encourage you to read our [LICENSE]({{site.baseurl}}/license/) and our [README]({{site.github.repository_url}}/tree/{{site.branch}}/README.md), which exist within this repository.  
+You do not need to install any software to submit content. You can use GitHub's in-browser editor to edit files and submit the changes for discussion.
 
-####  General Practices
+## Notes on using this repository
 
-This content is Vendor neutral. Marketing materials for Commercial Products should not be submitted. If you would like to contribute a page or content which includes Commercial Products and specific references for engineering, please review the Commercial Product trademark or copyright guides from the Product Vendor and reference those guides in your Pull Request.  
+In the GitHub repository [here]({{site.repo_url}}){:target="_blank"} under the 'Code' tab:
 
-#### Plain Language
+![Code tabl]({{site.baseurl}}/assets/img/code_tab.png)
+
+There are folders containing the content and diagrams.
+
+*  _pages_: includes the pages for Introduction, Background, Conceptual, Goals & Objectives, Applications, and Standards & Policies
+* _usecases_: includes the pages for each of the Use Cases
+* _services_: includes the pages for each of the Services Framework
+* _img_: includes all diagrams and images and are available for download and reuse anywhere
+
+We encourage you to read our [LICENSE]({{ site.repo_url }}/blob/{{ site.branch }}/LICENSE.md){:target="_blank"} and our [README]({{ site.repo_url }}/blob/{{ site.branch }}/README.md){:target="_blank"}, which exist within this repository.  
+
+##  General Practices
+
+This content is Vendor neutral. Marketing materials for Commercial Products should not be submitted. If you would like to contribute a page or content which includes Commercial Products and specific references for development and engineering, please review the Commercial Product trademark or copyright guides from the Product Vendor and reference those guides in your Pull Request.  
+
+## Plain Language
 
 Contributors should consider the audience when submitting content. Plain language benefits a broad audience. Review your proposed content for use of acronyms and specialized jargon before submitting.
 
-####  Thanks
+##  Thanks
 
-Thank you for any and all contributions!  You're helping us improve so we can serve you better!
+The idea for providing this content as open source, the contributing framework, and the licensing framework are based on work from [18F](https://18f.gsa.gov){:target="_blank"}

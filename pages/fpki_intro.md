@@ -6,7 +6,7 @@ permalink: /
 
 Welcome to the **Federal Public Key Infrastructure** (FPKI) guides!  In these guides, you will find information about the Federal Public Key Infrastructure including commonly used links, tools, tips, and information for leveraging the FPKI.  
 
-These guides are [open source](https://github.com/gsa/fpki-guides) and a _work in progress_ and we [welcome contributions]({{ site.baseurl }}/contribute/) from our colleagues.  All these guides need your contributions. 
+These guides are [open source](https://github.com/gsa/fpki-guides){:target="_blank"} and a _work in progress_ and we [welcome contributions]({{ site.baseurl }}/contribute/) from our colleagues.  All these guides need your contributions.
 We want you to contribute and share lessons learned, and any information you think is helpful for your colleagues.
 
 The information on this page provides introductory information to answer the following questions:
@@ -14,7 +14,7 @@ The information on this page provides introductory information to answer the fol
 1. [What is the FPKI?](#what-is-the-fpki)
 2. [What is an example?](#example)
 2. [Why should agencies use the FPKI?](#why-should-agencies-use-the-fpki)
-3. [Why is the FPKI Important?](#why-is-the-fpki-important) 
+3. [Why is the FPKI Important?](#why-is-the-fpki-important)
 4. [What is in the FPKI Guides?](#what-is-in-the-fpki-guides)
 5. [Where can I find the policies and standards?](#where-can-i-find-the-policies-and-standards)
 
@@ -34,24 +34,24 @@ The participating Certification Authorities and the Policies, Processes, and Aud
 The FPKI includes US federal, State, Local, Tribal, Territorial, international governments, and commercial organizations who work together to provide services for the benefit of the federal government.
 
 ### Example
-To give a simple example, we'll explain the PIV certificates.  Although we have many other types of identity certificates, it's easiest to explain with **PIV** since you might have one: 
+To give a simple example, we'll explain the PIV certificates.  Although we have many other types of identity certificates, it's easiest to explain with **PIV** since you might have one:
 
 * Identity certificates are issued and digitally signed by a _Certificate Authority_.  
 * The _Certificate Authority_ that issued and digitally signed your PIV certificates is called an _Intermediate Certificate Authority_ because it was issued a certificate by another _Certificate Authority_.  
 * This process of issuing and signing continues until there is one  _Certificate Authority_ that is called the _Root Certificate Authority_.
 
-![Example of an identity certificate with intermediate and root](img/pivcertificatechain_small.png){:style="float:center"}
+![Example of an identity certificate with intermediate and root]({{site.baseurl}}/img/pivcertificatechain_small.png){:style="float:center"}
 
-The full process of proving identity when issuing the certificates, auditing the certificate authorities, and the cryptographic protections of the digital signatures establish the basis of Trust. 
+The full process of proving identity when issuing the certificates, auditing the certificate authorities, and the cryptographic protections of the digital signatures establish the basis of Trust.
 
 For the US Federal Government Executive branch agencies, there is one Root Certificate Authority named _Federal Common Policy Certificate Authority (COMMON)_, and dozens of Intermediate Certificate Authorities, and Bridged Certificate Authorities.  
 
-*  [A graph of the federal public key infrastructure, including the business communities](https://fpki-graph.fpki-lab.gov/)
+*  [A graph of the federal public key infrastructure, including the business communities](https://fpki-graph.fpki-lab.gov/){:target="_blank"}
 
 
-### Why should Agencies use certificates from the FPKI? 
+### Why should Agencies use certificates from the FPKI?
 
-All Agencies should use the FPKI to enhance their security and trust for: 
+All Agencies should use the FPKI to enhance their security and trust for:
 
 * Physical and logical access
 * Document sharing
@@ -70,7 +70,7 @@ These four core capabilities are made possible by leveraging digital certificate
 
 ### Why is the FPKI Important?
 
-The FPKI is important to Federal agencies as well as citizens, businesses, and organizations that need access to federal agency services and facilities.  It contains the Federal Government's Trust Infrastructure, and facilitates trust of PIV, PIV-I, and other government and non-government credentials. 
+The FPKI is important to Federal agencies as well as citizens, businesses, and organizations that need access to federal agency services and facilities.  It contains the Federal Government's Trust Infrastructure, and facilitates trust of PIV, PIV-I, and other government and non-government credentials.
 
 |**Benefit**|**Description**|
 |-----------|---------------|
@@ -78,21 +78,18 @@ The FPKI is important to Federal agencies as well as citizens, businesses, and o
 |**Greater Compliance**|Using the Federal PKI means almost automatic compliance with several Executive Orders, laws, initiatives, and standards (e.g. FISMA, E-Gov Act). Agencies can specify FPKI in contracts to ensure vendor compliance with all government requirements. The FPKI Policy Authority verifies participating CAs are audited and operate in a secure manner.|
 |**Improved Interoperability**|Greater interoperability with other federal agencies and non-federal organizations that trust FPKI certificates. The FPKI helps reduce the need for issuing multiple credentials to users.|
 |**Elimination of Redundancy and Complexity**|The FPKI helps reduce the need for multiple trust agreements and duplicating associated trust agreement tasks. It also allows users to use a single credential rather than different credentials across Federal agency networks.|
-|**Increased Return on Investment**|The FPKI improves business processes and efficiencies.  For example, leveraging digital signing, encryption, and non-repudiation allows Federal agencies to migrate from manual processing to automated processing, especially around document processing/sharing, and communications across Federal agencies, and between Federal agencies and outside bodies.  In addition, Federal agencies can reduce operational costs and burdens (e.g., eliminate cost/burden of managing agency-issued credentials, reduce password service desk costs). 
-|**The FPKI Approved Providers List**|By leveraging the [FPKI Approved Provider List](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000XRrC), Federal agencies can be sure they are using Providers that meet all necessary Federal government standards, and can be sure of the level of assurance when relying on approved Providers' certificates.  This saves Federal agencies an enormous amount of time and effort, as well as reducing risk.|
+|**Increased Return on Investment**|The FPKI improves business processes and efficiencies.  For example, leveraging digital signing, encryption, and non-repudiation allows Federal agencies to migrate from manual processing to automated processing, especially around document processing/sharing, and communications across Federal agencies, and between Federal agencies and outside bodies.  In addition, Federal agencies can reduce operational costs and burdens (e.g., eliminate cost/burden of managing agency-issued credentials, reduce password service desk costs).
+|**The FPKI Approved Providers List**|By leveraging the [FPKI Approved Provider List](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000XRrC){:target="_blank"}, Federal agencies can be sure they are using Providers that meet all necessary Federal government standards, and can be sure of the level of assurance when relying on approved Providers' certificates.  This saves Federal agencies an enormous amount of time and effort, as well as reducing risk.|
 
 
 ### Where Can I Find the Policies and Standards?
 
 |**Policy or Standard**|**Description**|
 |-----------|---------------|
-|[Federal Common Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS)| Certificate Policy |
-|[Federal Bridge Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS)| Certificate Policy |
-|[X.509 Certificate and CRL Extensions Profile](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008Od8CAE)| |
-|[X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for PIV-I Cards](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008ObiCAE)||
-|[X.509 Certificate and CRL Extensions Profile for the Shared Service Provider (SSP) Program](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t0000000GmdcCAC)|| 
-|[OMB 2016 Circular A-130](https://www.whitehouse.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf)||
-|[OMB Memorandum M-05-05](https://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2005/m05-05.pdf)||
-
-
-
+|[Federal Common Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS){:target="_blank"}| Certificate Policy |
+|[Federal Bridge Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS){:target="_blank"}| Certificate Policy |
+|[X.509 Certificate and CRL Extensions Profile](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008Od8CAE){:target="_blank"}| |
+|[X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for PIV-I Cards](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008ObiCAE){:target="_blank"}||
+|[X.509 Certificate and CRL Extensions Profile for the Shared Service Provider (SSP) Program](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t0000000GmdcCAC){:target="_blank"}||
+|[OMB 2016 Circular A-130](https://www.whitehouse.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf){:target="_blank"}||
+|[OMB Memorandum M-05-05](https://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2005/m05-05.pdf){:target="_blank"}||
