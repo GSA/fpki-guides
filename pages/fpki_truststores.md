@@ -34,6 +34,19 @@ Google|No|Google Admin Console|Chrome Browser, Android, and ChromiumOS|https://w
 
 TODO:  Add the info from the trust store guide from FPKI
 
+## How do I check which FPKI certificate policies are trusted by Adobe?
+
+You can read it in Acrobat by opening the Preferences > Signatures > Identities & Trusted Certificates > Trusted Certificates.
+Then in the list of certificates you choose the one from Federal Common Policy CA and select “Certificate details”.
+In the Policies tab you can find “Policy Restrictions” with the comma separated list of OIDs in Certificate Policies.
+ 
+This is the current list for Federal **COMMON** Policy CA:
+2.16.840.1.101.3.2.1.3.7
+2.16.840.1.101.3.2.1.3.15
+2.16.840.1.101.3.2.1.3.16
+2.16.840.1.101.3.2.1.3.18
+2.16.840.1.101.3.2.1.3.24
+
 ## How do I set dynamic path validation in Windows operating systems?
 
 Dynamic path validation differs from static in that the certificate validation software will build the
