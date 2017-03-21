@@ -19,14 +19,14 @@ Operating systems, browsers, and some commercial software use trust stores to ve
 There are four trust stores you will most often interact with.
 
 Application Trust Store|Includes COMMON?|Trust Store Manager|Platforms serviced|Program Information Location
----|---|---|---
+---|---|---|---|---
 Microsoft Root Certificate Program|Yes|Microsoft Management Console|Windows OS, Internet Explorer Browser, Outlook|http://aka.ms/RootCert
 Apple Root Certificate Program|Yes|Keychain Access utility|iOS, WatchOS, OS X, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
-Mozilla Network Security Services(NSS)|No (application in progress)|Browser Specific|Firefox, Thunderbird, Linux Operating Systems|https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/
-Adobe Approved Trust List|Yes|Trust Store Manager|Adobe Acrobat|https://www.apple.com/certificateauthority/ca_program.html
+Mozilla Network Security Services (NSS)|No (application in progress)|Browser Trust Store|Firefox, Thunderbird, Linux Operating Systems|https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/
+Adobe Approved Trust List|Yes|Application Trust Store|Adobe Acrobat|https://www.apple.com/certificateauthority/ca_program.html
 Java Root Certificate Program|No (pending application)|Java Applet|Java Distributions|http://www.oracle.com/technetwork/java/javase/javasecarootcertsprogram-1876540.html
-Opera|No longer operates its own program and relies upon Mozilla.
 Google|No|Google Admin Console|Chrome Browser, Android, and ChromiumOS|https://www.chromium.org/Home/chromium-security/root-ca-policy
+Opera|No longer operates its own program and relies upon Mozilla.
 
 >**Note:** Google Chrome uses the underlying trust library of the operating system on Windows or Apple OS X systems.  Linux-based systems distribute the Mozilla NSS Library which may be modified by each version of Linux. Google is working on developing its own program similar to Mozilla.
 
