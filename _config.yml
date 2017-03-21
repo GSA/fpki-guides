@@ -9,7 +9,11 @@ description: Information on the US Federal Public Key Infrastructure (FPKI)
 highlighter: rouge
 repo_url: https://github.com/GSA/fpki-guides
 baseurl: '/fpki-guides'
-branch: staging
+branch: federalist-pages
+# Federalist overwrites the site.branch value when deploying
+# the site.branch was used in dynamic link generation for objects like Edit Page
+# we want the dynamic links to send users to the staging branch.  Adding new site variable to ensure federalist doesn't overwrite.
+editbranch: staging
 
 
 # Links
@@ -20,14 +24,14 @@ navbar:
   url: https://www.idmanagement.gov
 - title: Federal ICAM Architecture
   description: Federal ICAM Architecture
-  url: https://gsa.github.io/ficam-arch/
+  url: https://arch.idmanagement.gov
 - title: PIV Guides
   description: PIV Guides
-  url: https://gsa.github.io/piv-guides/
+  url: https://piv.idmanagement.gov
 #- title: Federal PKI Guides
 #  description: Federal PKI Guides
 #  url: https://github.com/gsa/fpki-guides
-  
+
 # Build settings
 markdown: kramdown
 

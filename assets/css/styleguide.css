@@ -360,7 +360,7 @@ th {
   padding: 0;
 }
 
-/* Apply a natural box layout model to all elements, but allowing components to 
+/* Apply a natural box layout model to all elements, but allowing components to
 change */
 html {
   box-sizing: border-box; }
@@ -1001,7 +1001,7 @@ button,
 	{
 		background-color: #47a463;
 	}
-	
+
 	button.usa-button-green:hover,
 	.usa-button.usa-button-green:hover{
 		background-color:#2e8541;
@@ -1012,7 +1012,7 @@ button,
 	{
 		background-color: #00a6d2;
 	}
-	
+
 	button.usa-button-blue:hover,
 	.usa-button.usa-button-blue:hover{
 		background-color:#0090b2;
@@ -1022,7 +1022,7 @@ button,
 		display: block;
 		width: 100%;
 	}
-	
+
 
 	.btn {
 	  position: relative;
@@ -1038,8 +1038,8 @@ button,
 		font-size:1.25rem;
 		text-align:left;
 	}
-	
-	
+
+
 	@media screen and (min-width: 1050px) {
 		.btn {
 			font-size:1.75rem;
@@ -1107,7 +1107,7 @@ button,
 	  opacity: 0;
 	  transition: opacity 300ms ease;
 	}
-	
+
 
 [type="submit"]:disabled,
 .usa-button-disabled {
@@ -1492,7 +1492,9 @@ h1 + ul, h1 + ol, h2 + ul, h2 + ol, h3 + ul, h3 + ol, h4 + ul, h4 + ol, h5 + ul,
 
 ul, ol {
   list-style: none;
-  padding-left: 0;
+  /* padding-left: 0; JP/LL 3-06-2017 */
+  margin: 0;
+  margin-bottom: 1em;
   display: table; }
   ul li:after, ol li:after {
     content: "";
@@ -1590,7 +1592,8 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  font-weight: 700; }
+  font-weight: 700;
+  margin: 0; }
 
 h3 {
   font-size: 2rem;
@@ -1631,7 +1634,7 @@ p a,
   font-family: "Calibri", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
 .usa-serif p, .usa-serif a, .usa-serif li, .usa-serif span {
-  font-family: "Cambria", "Georgia", "Times New Roman", "Times", serif; 
+  font-family: "Cambria", "Georgia", "Times New Roman", "Times", serif;
   font-weight:300;
 }
 
@@ -2243,7 +2246,7 @@ fieldset {
 .usa-sidenav-list li:first-child {
    border-top: none;
 }
-  
+
 .usa-sidenav-list a {
    border: none;
    color: #212121;
@@ -2258,7 +2261,7 @@ fieldset {
    background-color: #f1f1f1;
    color: #0071bc;
    text-decoration: none;
-} 
+}
 
 .usa-sidenav-list a:focus {
    position: relative;
@@ -2309,7 +2312,7 @@ fieldset {
 
 .usa-sidenav-expand_subnav {
    background: none;
-   border: none; 
+   border: none;
    border-radius: 30px;
    color: #323a45;
    cursor: pointer;
@@ -2358,7 +2361,7 @@ fieldset {
    -o-transition: max-height .2s, opacity .2s;
    transition: max-height .2s, opacity .2s;
 }
-	
+
 .nav-children li {
    border:none;
 }
@@ -2387,7 +2390,7 @@ fieldset {
     left: 0;
     outline: 0;
     position: absolute;
-    top: 0; 
+    top: 0;
 }
 
 .group:before,
@@ -2525,9 +2528,9 @@ fieldset {
 			font-size: 3.0rem;
 		}
 	}
-	
-	
-	
+
+
+
 /**-- END H1 - HEADER TEXT *******************************************************/
 
 
@@ -2698,7 +2701,7 @@ fieldset {
   background-color: #0071bc;
   font-size: 1.5rem;
   width: 15%;
-  text-align: center; 
+  text-align: center;
 }
 
 @media (max-width: 524px) {
@@ -2770,14 +2773,14 @@ fieldset {
    background: #000;
    opacity: 0;
    visibility: hidden;
-   z-index: 9999; 
+   z-index: 9999;
 }
 .overlay.is-visible {
-   visibility: visible; 
+   visibility: visible;
 }
 
 .sidenav {
-  position: fixed; 
+  position: fixed;
   top: 11rem;
   bottom: 0;
   left: 0;
@@ -2786,13 +2789,13 @@ fieldset {
   padding: 5rem 0rem 3rem 0rem;
   overflow: auto;
   display: none;
-  z-index: -1; 
+  z-index: -1;
 }
 
   .lt-ie9 .sidenav {
     width: 25%; }
   .sidenav .usa-sidenav-sub_list {
-    /*display: none; 
+    /*display: none;
     padding-left: 2rem; */
   }
   @media screen and (min-width: 850px) {
@@ -2820,13 +2823,13 @@ fieldset {
   padding-top: .5em;
   padding-bottom: 0;
   width: 100%;
-  top: 3.5rem; 
+  top: 3.5rem;
 }
   @media screen and (min-width: 600px) {
     .main-content {
 			position: absolute;
-			top: 14.5rem; 
-		} 
+			top: 14.5rem;
+		}
 	}
   .lt-ie9 .main-content {
     width: 75%; }
@@ -2841,13 +2844,13 @@ fieldset {
   max-width: 1040px;
   padding-right: 2em;
   padding-left: 2em;
-  position: relative; 
-  
+  position: relative;
+
   min-height: 70%;
   min-height: -webkit-calc(100% - 186px);
   min-height: -moz-calc(100% - 186px);
   min-height: calc(100% - 186px);
-  
+
 }
   .styleguide-content > h1 {
     margin-top: 3.4rem; }
