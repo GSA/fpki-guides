@@ -41,15 +41,16 @@ Then in the list of certificates you choose the one from Federal Common Policy C
 In the Policies tab you can find “Policy Restrictions” with the comma separated list of OIDs in Certificate Policies.
  
 This is the current list for Federal **COMMON** Policy CA:
-| Common Policy                                 | Common OID                | Certificate Use                                                                   |
+
+Common Policy                                 | Common OID                | Certificate Use                                                                   |
 |-----------------------------------------------|---------------------------|-----------------------------------------------------------------------------------|
 | Common Hardware                               | 2.16.840.1.101.3.2.1.3.7  | PIV and Federal Bridge Medium Hardware Token                                      |
-| FBCA Medium Hardware Commercial Best Practice* | 2.16.840.1.101.3.2.1.3.15 | Federal Bridge Medium Hardware Token (PKI Trusted Roles may not be U.S. Citizens) |
+| Federal Bridge Medium Hardware Commercial Best Practice* | 2.16.840.1.101.3.2.1.3.15 | Federal Bridge Medium Hardware Token (PKI Trusted Roles may not be U.S. Citizens) |
 | Common High                                   | 2.16.840.1.101.3.2.1.3.16 | High Assurance Policy                                                             |
 | PIV-I Hardware                                | 2.16.840.1.101.3.2.1.3.18 | PIV-I                                                                             |
 | SHA-1 Hardware                                | 2.16.840.1.101.3.2.1.3.24 | CAC and SHA-1 Medium Hardware Tokens through SHA-1 Federal Root CA                |
 
-*Note: Commercial Best Practice (CBP) are issued against the same policy requirements as Federal Bridge Medium Hardware except the trusted roles who issue the certificates may not be U.S. Citizens.
+>**Note:** Commercial Best Practice (CBP) are issued against the same policy requirements as Federal Bridge Medium Hardware except the trusted roles who issue the certificates may not be U.S. Citizens.
 
 ## How do I set dynamic path validation in Windows operating systems?
 
