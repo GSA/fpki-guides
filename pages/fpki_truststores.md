@@ -4,40 +4,38 @@ title: Trust Stores
 permalink: /truststores/
 ---
 
-This guide provides a high-level overview of what **application trust stores** are, a list of commonly used application trust stores, and where to find them.
+This guide provides a high-level overview of what **Trust Stores** are, a list of commonly used application trust stores, and where to find them.
 
-## What is an Application Trust Store?
-There are millions of identity (certificates issued to people) and device certificates issued in the world currently, and the list constantly changes as some certificates are revoked and others are issued--far too many for your computer to maintain an up-to-date list.  
+## What is a Trust Store?
+There are millions of identity (certificates issued to people) and device certificates issued in the world today, and the list constantly changes as some certificates are revoked and others are issued--far too many for your computer to maintain an up-to-date list.  
 
-Instead, applications keep a list of **root** certificates that they trust.  From this list, applications issue certificates.  <!-- correct interpretation?  To what do the applications issue certificates?  Things like Apps? --> When you are presented with an identity or device certificate from a PIV credential, website, email, or some other digital item, your system or application will check to see if the certificate chains to one of the trusted **roots** in the application trust store. The trust store may maintain an indepenet list of trusted root certificates which comply with the individual trust store requirements. 
+Instead, applications and operating systems (OSs) keep a list of **root** certificates that they trust.  From this list, the applications and operating systems issue certificates. (This list of trusted root certificates is contained within a **Trust Store** in either the application or the operating system.) When your computer is presented with an identity or device certificate from a PIV credential, website, e-mail, or other digital item, one of your applications or your operating system or will check to see whether the certificate relates ("chains") to one of the trusted root certificates in the Trust Store. Not only do applications and operating systems keep lists of root certificates, but the Trust Store itself may keep its own list of trusted root certificates that comply with the Trust Store's requirements.  <!-- "that comply with the trust store's requirements" = unclear meaning. -->   
 
-This list of trusted root certificates are contained within what is known as a **Trust Store** in either an application or operating system. 
+## What are commonly used Trust Stores?
+The most commonly used Trust Stores are kept by operating systems, browsers, and applications.  They use their Trust Stores to verify whether a certificate should be trusted.  
 
-## What are commonly used Application Trust Stores?
-Operating systems, browsers, and some commercial software use trust stores to verify whether the certificate you are being presented should be trusted.  
+The most common Trust Stores are:  <!-- COMMON? below -->
 
-There are four trust stores you will most often interact with.
-
-Application Trust Store|Includes COMMON?|Trust Store Manager|Platforms serviced|Program Information Location
+Trust Store|Includes COMMON?|Trust Store Manager|Platforms Serviced|Program Information Location
 ---|---|---|---|---
-Microsoft Root Certificate Program|Yes|Microsoft Management Console|Windows OS, Internet Explorer Browser, Outlook|http://aka.ms/RootCert
-Apple Root Certificate Program|Yes|Keychain Access utility|iOS, WatchOS, OS X, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
-Mozilla Network Security Services (NSS)|No (application in progress)|Browser Trust Store|Firefox, Thunderbird, Linux Operating Systems|https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/
+Microsoft Root Certificate Program|Yes|Microsoft Management Console|Windows OS, Internet Explorer, Outlook|http://aka.ms/RootCert
+Apple Root Certificate Program|Yes|Keychain Access Utility|iOS, WatchOS, OS X, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
+Mozilla Network Security Services (NSS)|No (application in progress)|Browser Trust Store|Firefox, Thunderbird, Linux OSs|https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/
 Adobe Approved Trust List|Yes|Application Trust Store|Adobe Acrobat|https://www.apple.com/certificateauthority/ca_program.html
 Java Root Certificate Program|No (pending application)|Java Applet|Java Distributions|http://www.oracle.com/technetwork/java/javase/javasecarootcertsprogram-1876540.html
 Google|No|Google Admin Console|Chrome Browser, Android, and ChromiumOS|https://www.chromium.org/Home/chromium-security/root-ca-policy
 Opera|No longer operates its own program and relies upon Mozilla.
 
->**Note:** Google Chrome uses the underlying trust library of the operating system on Windows or Apple OS X systems.  Linux-based systems distribute the Mozilla NSS Library which may be modified by each version of Linux. Google is working on developing its own program similar to Mozilla.
+>**Note:** Google Chrome uses the underlying Trust Store for the Windows operating system or Apple OS X.  Linux-based systems distribute the Mozilla NSS Library, which each Linux version may modify. Google is currently developing its own program similar to Mozilla's NSS Library.
 
 ## How do I manage a Trust Store?
 
-TODO:  Add the info from the trust store guide from FPKI
+**TODO:  Add the info from the trust store guide from FPKI** 
 
 ## How do I check which FPKI certificate policies are trusted by Adobe?
 
 You can read it in Acrobat by opening the Preferences > Signatures > Identities & Trusted Certificates > Trusted Certificates.
-Then in the list of certificates you choose the one from Federal Common Policy CA and select “Certificate details”.
+Then in the list of certificates, you choose the one from Federal Common Policy CA and select “Certificate details”.
 In the Policies tab you can find “Policy Restrictions” with the comma separated list of OIDs in Certificate Policies.
  
 This is the current list for Federal **COMMON** Policy CA:
