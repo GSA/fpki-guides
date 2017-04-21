@@ -4,12 +4,12 @@ title: Trust Stores
 permalink: /truststores/
 ---
 
-This guide provides a high-level overview of what application trust stores are, a list of commonly used application trust stores, and where to find them.
+This guide provides a high-level overview of what **application trust stores** are, a list of commonly used application trust stores, and where to find them.
 
 ## What is an Application Trust Store?
-There are millions of identity (certificates issued to People) and device certificates in the world currently, and the list constantly changes as some certificates are revoked and others are issued - far too many for your computer to maintain an up to date list.  
+There are millions of identity (certificates issued to people) and device certificates issued in the world currently, and the list constantly changes as some certificates are revoked and others are issued--far too many for your computer to maintain an up-to-date list.  
 
-Instead, applications keeps a list of **root** certificates which it trusts to issue certificates.  When you are presented with an identity or device certificate from a PIV credential, website, email, or some other digital item, your system or application will check to see if the certificate chains to one of the trusted **roots** in the application trust store. The trust store may maintain an indepenet list of trusted root certificates which comply with the individual trust store requirements. 
+Instead, applications keep a list of **root** certificates that they trust.  From this list, applications issue certificates.  <!-- correct interpretation?  To what do the applications issue certificates?  Things like Apps? --> When you are presented with an identity or device certificate from a PIV credential, website, email, or some other digital item, your system or application will check to see if the certificate chains to one of the trusted **roots** in the application trust store. The trust store may maintain an indepenet list of trusted root certificates which comply with the individual trust store requirements. 
 
 This list of trusted root certificates are contained within what is known as a **Trust Store** in either an application or operating system. 
 
