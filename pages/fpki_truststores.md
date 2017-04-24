@@ -68,10 +68,10 @@ To set dynamic path validation, there is a required registry setting. (**Note:**
 
 ## How do I download and install the FCPCA Trust Anchor?
 
-  1. Download the FCPCA Trust Anchor from http://http.fpki.gov/fcpca/fcpca.crt
+  1. Download the **FCPCA Trust Anchor** from http://http.fpki.gov/fcpca/fcpca.crt
   2. Click on the downloaded **fcpca.crt** file, and click on the **Details** tab. 
-  3. Scroll to the bottom of the page and verify the thumbprint matches: 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1.
-  4. Then, verify the subject matches: cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US.
+  3. Scroll to the bottom of the page and verify the thumbprint matches: **90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1**.
+  4. Then, verify the subject matches: **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US**.
   4. Click on the **General** tab, and then click the **install certificate** button.
   5. Select the **user** or **local machine**, depending on your need.  (If you are unsure, select **user**.)
   6. To ensure that the FCPCA Trust Anchor is installed in the Trusted Root Store, select **place in the following store** and select **trust root certification authorities**.
@@ -79,45 +79,54 @@ To set dynamic path validation, there is a required registry setting. (**Note:**
   
 ## How do I download and install the FPKI Intermediate and Issuing CA Certificates?
 
-  1. Download the following P7 files: 
+  1. Download the following **P7** files: 
      * http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c
      * http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c
      * http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c
-  2. Then, do a Windows search for “mmc.exe” (Microsoft Management Console). 
-  3. Once the mmc.exe opens, click CTRL + M to open the snap-in menu.
-  4. Click on “Certificates” and Add.  Then, click on “OK.”  (A tree hierarchy appears with the different certificate folders.)
-  5. Click on the “Intermediate Certificate Authorities” folder, and then click on the “Certificates” subfolder.
-  6. Click on the “Action” tab from the the top navigation bar and then Import. 
-  7. Follow the prompts to import the downloaded FPKI P7 files that from Step 1.
+  2. Then, do a Windows search for **mmc.exe** (Microsoft Management Console). 
+  3. Once the **mmc.exe** opens, click on **CTRL + M** to open the snap-in menu.
+  4. Click on **Certificates** and **Add**.  Then, click on **OK**.  (A tree hierarchy appears with the different certificate folders.)
+  5. Click on the **Intermediate Certificate Authorities** folder, and then click on the **Certificates** subfolder.
+  6. Click on the **Action** tab from the the top navigation bar and then **Import**. 
+  7. Follow the prompts to import the downloaded FPKI P7 files from Step 1.
 
-To view a list of more FPKI CA certificates, click here.
+To view a list of more FPKI CA certificates, click **here**. <!-- broken link; question out to Chunde -->
 
 ## How do I manage a Trust Store on a Domain Controller?
 
-First, you will need to add a Root CA certificate to the Domain Controller Trust Store.  Do this:
+First, you will need to add a **Root CA certificate** to the **Domain Controller Trust Store**.  Do this:
 
-  1. Follow the steps in the previous section to download and install an FCPCA Trust Anchor.
+  1. Follow the steps in the previous section to download and install an **FCPCA Trust Anchor**.
   2. Open a command-line prompt as an Administrator on the Forest Domain Controller. 
   3. Type: **certutil –f –dspublish .crt2 RootCA** 
   4. View the **Enterprise Trusted Root.**  Then, type: **certutil –viewstore –enterprise root**
 
-Once the FCPCA Trust Anchor has been installed in the Active Directory (AD) Forest’s Trusted Root CA Store, the Issuing CAs will be published in the Network Authentication (NTAuth) Store.  This will prevent the ability of a fraudulent user’s smartcard with a valid userPrincipalName (UPN) within the Subject Alternative Name (SAN) field from being issued by a non-trusted Issuing CA.
+Once the FCPCA Trust Anchor has been installed in the Active Directory (AD) Forest’s Trusted Root CA Store, the Issuing CAs will be published in the **Network Authentication (NTAuth) Store**.  This will prevent the ability of a fraudulent user’s smartcard with a valid userPrincipalName (UPN) within the Subject Alternative Name (SAN) field from being issued by a non-trusted Issuing CA.
 
-  1. Open a command-line prompt as an Administrator on the Forest Domain Controller. 
+  1. Open a command-line prompt as an Administrator on the **Forest Domain Controller**. 
   2. Type:  **certutil –dspublish –f .cer NTAuthCA** 
   3. Repeat Step 2 for all Issuing CAs.
-  4. View the **NTAuth Trusted Root**, and type: **certutil –viewstore –enterprise NTAuth** 
+  4. View the **NTAuth Trusted Root**, and then type: **certutil –viewstore –enterprise NTAuth** 
 
-While not required, you can improve the speed of certificate validation by publishing the Intermediate CAs in the domain’s Intermediate Certificate Store.  Do this:
+While not required, you can improve the speed of certificate validation by publishing the **Intermediate CAs** to the domain’s **Intermediate Certificate Store**.  Do this:
 
-  1. Open a command prompt as an Administrator on the Forest Domain Controller. 
+  1. Open a command prompt as an Administrator on the **Forest Domain Controller**. 
   2. Type: **certutil –dspublish –f .cer subCA** 
   3. Repeat Step 2 for all Intermediate CAs 
   4. View the **NTAuth Trusted Root**, and type: **certutil –viewstore –enterprise**
   5. Then, type: **gpupdate /force** 
   6. Finally, type: **propagate the domain controller change**
 
+## How do I fix certificate validation looping in the Windows operating systems?
 
+**Certificate validation looping** occurs when a certificate validates past the FCPCA Trust Anchor.  This issue can be caused by a misconfigured Trust Store and may be OS-specific (e.g., Microsoft CAPI uses the certificate path with the most information against which certificates are validated in the Microsoft Trust Store). Because the FCPCA is cross-certified with the Federal Bridge Certificate Authority, it is possible that a Federal Government certificate could validate to a commercial Trust Store.  
 
+To fix certificate validation looping, do this:
 
-
+  1. Do a Windows search for **mmc.exe** (Microsoft Management Console). 
+  2. Once the **mmc.exe** opens, click on **CRTL + M** to open the snap-in menu.
+  3. Click on **Certificates** and **Add**.  Then, click on **OK**.  (A tree hierarchy appears with the different certificate folders.) 
+  4. Click on the **Intermediate Certificate Authorities** folder, and then click on the **Certificates** subfolder.
+  5. Sort on the **Issued To** field. 
+  6. Delete all certificates **issued to** the Federal Bridge (i.e., Federal Bridge CA and Federal Bridge CA 2013).  **Do NOT delete the ones issued “by” the Federal Common Policy CA**.
+  7. Delete all certificates **issued to** the Federal Common Policy CA.
