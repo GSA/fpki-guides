@@ -30,7 +30,7 @@ Opera|No longer operates its own program; relies on Mozilla
 
 ## How do I manage a Trust Store?
 
-**TODO:  Add the info from the trust store guide from FPKI** 
+Managing a Trust Store must be done via the command line or Graphical User Interface (GUI) software tools.  With the GUI tools, you can  view, add, and delete CA certificates. **It is vital to carefully manage the CA certificates in a Trust Store**. To ensure careful management of CA certificates, you should keep only needed CA certificates and delete unwanted CA certificates. A needed, but missing, CA certificate could result in a Denial of Service (DoS), and the presence of unwanted CA certificates could result in an attacker successfully gaining authorized access. 
 
 ## How do I find out which FPKI certificate policies are trusted by Adobe? <!--Why is Adobe being highlighted first?  It is listed as the fourth vendor on the table above.  Is Adobe the most common vendor related to FPKI certificates?  If so, we should state that.-->
 
@@ -65,4 +65,38 @@ To set dynamic path validation, there is a required registry setting. (**Note:**
   2. Add **_MaxAIAUrlRetrievalCertCount_** as the **name.**
   3. Set the value to **30.**
   4. Do a system reboot (required). 
+
+## How do I download and install the FCPCA Trust Anchor?
+
+  1. Download the FCPCA Trust Anchor from http://http.fpki.gov/fcpca/fcpca.crt
+  2. Click on the downloaded **fcpca.crt** file, and click on the **Details** tab. 
+  3. Scroll to the bottom of the page and verify the thumbprint matches: 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1.
+  4. Then, verify the subject matches: cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US.
+  4. Click on the **General** tab, and then click the **install certificate** button.
+  5. Select the **user** or **local machine**, depending on your need.  (If you are unsure, select **user**.)
+  6. To ensure that the FCPCA Trust Anchor is installed in the Trusted Root Store, select **place in the following store** and select **trust root certification authorities**.
+  7. Review the details to ensure that everything is correct. Then, click **Finish**.
+  
+## How do I download and install the FPKI Intermediate and Issuing CA Certificates?
+
+  1. Download the following P7 files: 
+  a. http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c
+  b. http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c
+  c. http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c
+  2. Then, do a Windows search for “mmc.exe” (Microsoft Management Console). 
+  3. Once the mmc.exe opens, click CTRL + M to open the snap-in menu.
+  4. Click on “Certificates” and Add.  Then, click on “OK.”  (A tree hierarchy appears with the different certificate folders.)
+  5. Click on the “Intermediate Certificate Authorities” folder, and then click on the “Certificates” subfolder.
+  6. Click on the “Action” tab from the the top navigation bar and then Import. 
+  7. Follow the prompts to import the downloaded FPKI P7 files that from Step 1.
+
+To view a list of more FPKI CA certificates, click here.
+
+## How do I manage a Trust Store on a Domain Controller?
+
+
+
+
+
+
 
