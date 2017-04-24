@@ -61,7 +61,7 @@ With dynamic path validation (as opposed to static path validation), the certifi
 
 To set dynamic path validation, there is a required registry setting. (**Note:** All registry settings for managed Federal Government computers should use group policy objects or the automated configuration management tools available in your agency.) To change the registry setting, do this: <!-- What is a group policy object?  -->
 
-  1. Under the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\CertDllCreateCertificateChainEngine\Config** folder, create a new DWORD entry.
+  1. Under the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\ CertDllCreateCertificateChainEngine\Config** folder, create a new DWORD entry.
   2. Add **_MaxAIAUrlRetrievalCertCount_** as the **name.**
   3. Set the value to **30.**
   4. Do a system reboot (required). 
@@ -80,9 +80,9 @@ To set dynamic path validation, there is a required registry setting. (**Note:**
 ## How do I download and install the FPKI Intermediate and Issuing CA Certificates?
 
   1. Download the following P7 files: 
-  a. http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c
-  b. http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c
-  c. http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c
+     * http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c
+     * http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c
+     * http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c
   2. Then, do a Windows search for “mmc.exe” (Microsoft Management Console). 
   3. Once the mmc.exe opens, click CTRL + M to open the snap-in menu.
   4. Click on “Certificates” and Add.  Then, click on “OK.”  (A tree hierarchy appears with the different certificate folders.)
@@ -94,7 +94,28 @@ To view a list of more FPKI CA certificates, click here.
 
 ## How do I manage a Trust Store on a Domain Controller?
 
+First, you will need to add a Root CA certificate to the Domain Controller Trust Store.  Do this:
 
+  1. Follow the steps in the previous section to download and install an FCPCA Trust Anchor.
+  2. Open a command-line prompt as an Administrator on the Forest Domain Controller. 
+  3. Type: **certutil –f –dspublish .crt2 RootCA** 
+  4. View the **Enterprise Trusted Root.**  Then, type: **certutil –viewstore –enterprise root**
+
+Once the FCPCA Trust Anchor has been installed in the Active Directory (AD) Forest’s Trusted Root CA Store, the Issuing CAs will be published in the Network Authentication (NTAuth) Store.  This will prevent the ability of a fraudulent user’s smartcard with a valid userPrincipalName (UPN) within the Subject Alternative Name (SAN) field from being issued by a non-trusted Issuing CA.
+
+  1. Open a command-line prompt as an Administrator on the Forest Domain Controller. 
+  2. Type:  **certutil –dspublish –f .cer NTAuthCA** 
+  3. Repeat Step 2 for all Issuing CAs.
+  4. View the **NTAuth Trusted Root**, and type: **certutil –viewstore –enterprise NTAuth** 
+
+While not required, you can improve the speed of certificate validation by publishing the Intermediate CAs in the domain’s Intermediate Certificate Store.  Do this:
+
+  1. Open a command prompt as an Administrator on the Forest Domain Controller. 
+  2. Type: **certutil –dspublish –f .cer subCA** 
+  3. Repeat Step 2 for all Intermediate CAs 
+  4. View the **NTAuth Trusted Root**, and type: **certutil –viewstore –enterprise**
+  5. Then, type: **gpupdate /force** 
+  6. Finally, type: **propagate the domain controller change**
 
 
 
