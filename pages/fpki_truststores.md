@@ -9,7 +9,7 @@ This guide provides a high-level overview of what **Trust Stores** are, a list o
 ## What is a Trust Store?
 There are millions of identity (certificates issued to people) and device certificates issued in the world today, and the list constantly changes as some certificates are revoked and others are issued--far too many for your computer to maintain an up-to-date list.  
 
-Instead, each application and the operating system (OS) on your computer keep a list of trusted **root** certificates in a **Trust Store** within the specific application or the OS. From their list of trusted root certificates, the application or the OS issues certificates to people (i.e., identities) and devices. When your computer is presented with an identity or device certificate from a PIV credential, website, e-mail, or other digital item, either an application or the OS will verify whether or not the certificate relates ("chains") to one of the trusted root certificates in the Trust Store. (**Note:** Not only do applications and OSs keep lists of trusted root certificates, but Trust Stores themselves sometimes keep a list of trusted root certificates that comply with the Trust Store's requirements.)  <!-- "that comply with the trust store's requirements" = unclear meaning--re: the term "compliance" has not been used before.  Compliance explanation needed(?) and requirements for what?  This is not as clear as the other previous statements. -->   
+Instead, each application and the operating system (OS) on your computer keep a list of trusted **root** certificates in a **Trust Store** within the specific application or the OS. From their list of trusted root certificates, the application or the OS issues certificates to people (i.e., identities) and devices. When your computer is presented with an identity or device certificate from a PIV credential, website, e-mail, or other digital item, either an application or the OS will verify whether or not the certificate relates ("chains") to one of the trusted root certificates in the Trust Store. (**Note:** Not only do applications and OSs keep lists of trusted root certificates--Trust Stores themselves sometimes keep a list of trusted root certificates that comply with the Trust Store's requirements.) 
 
 ## What are the most commonly used Trust Stores?
 The most commonly used Trust Stores are kept by applications, OSs, and browsers. <!-- Best to refer to these in same order as before to reduce confusion.  Browsers are not mentioned or discussed in the previous section --> <!-- Second sentence here (deleted) was essentially a repeat of 3rd sentence above. -->  
@@ -21,7 +21,7 @@ Trust Store|Includes COMMON?|Trust Store Manager|Platforms Serviced|Program Info
 Microsoft Root Certificate Program|Yes|Microsoft Management Console|Windows OS, Internet Explorer, Outlook|http://aka.ms/RootCert
 Apple Root Certificate Program|Yes|Keychain Access Utility|iOS, WatchOS, OS X, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
 Mozilla Network Security Services (NSS)|No (application in progress)|Browser Trust Store|Firefox, Thunderbird, Linux OSs|https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/
-Adobe Approved Trust List|Yes|Application Trust Store|Adobe Acrobat|https://www.apple.com/certificateauthority/ca_program.html
+Adobe Approved Trust List|Yes|Application Trust Store|Adobe Acrobat|https://www.apple.com/certificateauthority/ca_program.html <!--Chunde attempting to find the correct URL for Adobe.  Apple.com is obviously a mistake.-->
 Java Root Certificate Program|No (pending application)|Java Applet|Java Distributions|http://www.oracle.com/technetwork/java/javase/javasecarootcertsprogram-1876540.html
 Google|No|Google Admin Console|Chrome Browser, Android, and ChromiumOS|https://www.chromium.org/Home/chromium-security/root-ca-policy
 Opera|No longer operates its own program; relies on Mozilla
@@ -32,13 +32,15 @@ Opera|No longer operates its own program; relies on Mozilla
 
 **TODO:  Add the info from the trust store guide from FPKI** 
 
-## How do I find out which FPKI certificate policies are trusted by Adobe?
+## How do I find out which FPKI certificate policies are trusted by Adobe? <!--Why is Adobe being highlighted first?  It is listed as the fourth vendor on the table above.  Is Adobe the most common vendor related to FPKI certificates?  If so, we should state that.-->
 
-You can read it in Acrobat by opening the Preferences > Signatures > Identities & Trusted Certificates > Trusted Certificates.
-Then in the list of certificates, you choose the one from Federal Common Policy CA and select “Certificate details”.
-In the Policies tab you can find “Policy Restrictions” with the comma separated list of OIDs in Certificate Policies.
+  1. Go to Adobe Acrobat.  Go to **Edit > Preferences > Signatures > Identities & Trusted Certificates > Trusted Certificates**.
+  2. Click on **Trusted Certificates** from the left-hand sidebar.  
+  3. Then, click on **Federal Common Policy CA**, and click on the **Certificate Details** tab.
+  3. In the **Certificate Viewer** window, click on the **Policies** tab, and you will see a **Policy Restrictions** area. 
+  4. In the **Certificate Policies** box, you will see a comma-separated list of Object Identifiers (OIDs). <!-- Is an OID = a "FPKI certificate policy," as mentioned in Heading above? -->
  
-This is the current list for Federal **COMMON** Policy CA:
+This is the current list for the Federal **COMMON** Policy CA:
 
 Common Policy                                 | Common OID                | Certificate Use                                                                   |
 |-----------------------------------------------|---------------------------|-----------------------------------------------------------------------------------|
@@ -48,21 +50,19 @@ Common Policy                                 | Common OID    
 | PIV-I Hardware                                | 2.16.840.1.101.3.2.1.3.18 | PIV-I                                                                             |
 | SHA-1 Hardware                                | 2.16.840.1.101.3.2.1.3.24 | CAC and SHA-1 Medium Hardware Tokens through SHA-1 Federal Root CA                |
 
->**Note:** Commercial Best Practice (CBP) are issued against the same policy requirements as Federal Bridge Medium Hardware except the trusted roles who issue the certificates may not be U.S. Citizens.
+>**Note:** Commercial Best Practices (CBPs) are issued against the same policy requirements as **Federal Bridge Medium Hardware**, except the trusted roles who issue the certificates may not be U.S. citizens.
 
-## How do I set dynamic path validation in Windows operating systems?
+## How do I set dynamic path validation in Windows operating systems? <!-- We should explain what dynamic path validation is. -->
 
-Dynamic path validation differs from static in that the certificate validation software will build the
-path based on the AIA entry in the certificate. If the FCPCA Trust Anchor is installed, rather than
-importing all intermediate CA certificates, enable dynamic path validation in Microsoft Windows
-and let CAPI discover and validate intermediate certificates that are required to validate a
-certificate.
+With dynamic path validation (as opposed to static path validation), the certificate validation software will build the path based on the Authority Information Access (AIA) entry in the certificate.  For Microsoft Windows OSs, do this: 
 
-To set dynamic path validation, there is a registry setting.  All registry settings for managed government computers should use group policy objects or automated configuration management tools available in your agency.
+  1. If the **FCPCA Trust Anchor** is installed (rather than importing all intermediate CA certificates), enable **Dynamic Path Validation**.  
+  2. Let CAPI discover and validate intermediate certificates that are required to validate a certificate. <!-- Define CAPI.  This sentence sounds redundant. -->
 
-* Under the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\CertDllCreateCertificateChainEngine\Config folder, create a new
-DWORD entry.
-* Add _MaxAIAUrlRetrievalCertCount_ as the name
-* Set the value to “30”
-* A reboot is required 
+To set dynamic path validation, there is a required registry setting. (**Note:** All registry settings for managed Federal Government computers should use group policy objects or the automated configuration management tools available in your agency.) To change the registry setting, do this: <!-- What is a group policy object?  -->
+
+  1. Under the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\CertDllCreateCertificateChainEngine\Config** folder, create a new DWORD entry.
+  2. Add **_MaxAIAUrlRetrievalCertCount_** as the **name.**
+  3. Set the value to **30.**
+  4. Do a system reboot (required). 
 
