@@ -108,7 +108,7 @@ To view a list of more FPKI CA certificates, click **here**. <!-- broken link; q
 First, you will need to add a **Root CA certificate** to the **Domain Controller Trust Store**.  Do this:
 
   1. Follow the steps in the previous section to download and install an **FCPCA Trust Anchor**.
-  2. Open a command-line prompt as an Administrator on the Forest Domain Controller. 
+  2. Open a command-line prompt as an Administrator on the **Forest Domain Controller**. 
   3. Type: **certutil –f –dspublish .crt2 RootCA** 
   4. View the **Enterprise Trusted Root.**  Then, type: **certutil –viewstore –enterprise root**
 
