@@ -100,7 +100,7 @@ To set dynamic path validation, you must instate a required registry setting. (*
   6. Click on the **Action** tab from the the top navigation bar and then **Import**. 
   7. Follow the prompts to import the downloaded FPKI P7 files from Step 1.
 
-To view a list of more FPKI CA certificates, click [**here**](/blob/staging/pages/fpki_crls.md). <!-- broken link; question out to Chunde -->
+To view a list of more FPKI CA certificates, click **here**. <!-- broken link; question out to Chunde -->
 
 
 ## How do I manage a Trust Store on a Domain Controller?
@@ -112,7 +112,7 @@ First, you will need to add a **Root CA certificate** to the **Domain Controller
   3. Type: **certutil –f –dspublish .crt2 RootCA** 
   4. View the **Enterprise Trusted Root.**  Then, type: **certutil –viewstore –enterprise root**
 
-Once the FCPCA Trust Anchor has been installed in the Active Directory (AD) Forest’s Trusted Root CA Store, the Issuing CAs will be published in the **Network Authentication (NTAuth) Store**.  This will prevent the ability of a fraudulent user’s smartcard with a valid userPrincipalName (UPN) within the Subject Alternative Name (SAN) field from being issued by a non-trusted Issuing CA.
+Once the FCPCA Trust Anchor has been installed in the Active Directory (AD) Forest’s Trusted Root CA Store, the Issuing CAs will be published in the **Network Authentication (NTAuth) Store**.  This will prevent the ability of a fraudulent user’s smartcard that may contain a valid userPrincipalName (UPN) within the Subject Alternative Name (SAN) field from gaining access to the system.
 
   5. Open a command-line prompt as an Administrator on the **Forest Domain Controller**. 
   2. Type:  **certutil –dspublish –f .cer NTAuthCA** 
@@ -130,7 +130,7 @@ While not required, you can improve the speed of certificate validation by publi
 
 ## How do I fix certificate validation looping in the Windows operating systems?
 
-**Certificate validation looping** occurs when a certificate validates past the FCPCA Trust Anchor.  This issue can be caused by a misconfigured Trust Store and may be OS-specific (e.g., Microsoft CAPI uses the certificate path with the most information against which certificates are validated in the Microsoft Trust Store). Because the FCPCA is cross-certified with the Federal Bridge Certificate Authority, it is possible that a Federal Government certificate could validate to a commercial Trust Store.  
+**Certificate validation looping** occurs when a certificate validates past the FCPCA Trust Anchor.  This issue can be caused by a misconfigured Trust Store, or it may be OS-specific (e.g., Microsoft CAPI uses the certificate path with the most information against which certificates are validated in the Microsoft Trust Store). Because the FCPCA is cross-certified with the Federal Bridge Certificate Authority, it is possible that a Federal Government certificate could validate to a commercial Trust Store.  
 
 To fix certificate validation looping, do this:
 
