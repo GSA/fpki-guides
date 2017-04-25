@@ -32,9 +32,9 @@ Opera|No longer operates its own program; relies on Mozilla
 >**Note:** Google Chrome uses the underlying Trust Store for the Windows OS or Apple OS X.  Linux-based systems distribute the Mozilla NSS Library, which each Linux version may modify. Google is currently developing its own program similar to Mozilla's NSS Library.
 
 
-## How do I manage a Trust Store?
+<!-- ## How do I manage a Trust Store?  *Need to clarify audience*
 
-This section will be added in a future update to the FPKI Guides. <!-- Clarify audience and add instructions based on audience.-->
+Managing a Trust Store must be done via the command line or the Graphical User Interface (GUI) software tools.  With the GUI tools, you can  view, add, and delete CA certificates. **It is vital to carefully manage the CA certificates in a Trust Store**. To ensure careful management of CA certificates, you should keep only *needed* CA certificates and delete *unwanted* CA certificates. A *needed*, but missing, CA certificate could result in a Denial of Service (DoS), and the presence of an *unwanted* CA certificate could result in an attacker successfully gaining authorized access. -->
 
 
 ## How do I find out which FPKI certificate policies are trusted by Adobe? <!-- Adobe is highlighted because Adobe is the most common vendor related to FPKI certificates?  If so, we should state that.  I captured the extra steps using Adobe Reader DC. -->
@@ -82,7 +82,7 @@ To set dynamic path validation, you must instate a required registry setting. (*
   3. Scroll to the bottom of the page and verify the thumbprint matches: **90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1**.
   4. Then, verify the subject matches: **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US**.
   4. Click on the **General** tab, and then click the **install certificate** button.
-  5. Select the **user** or **local machine**, depending on your need.  (If you are unsure, select **user**.)
+  5. Select **user** or **local machine**, depending on your need.  (If you are unsure, select **user**.)
   6. To ensure that the FCPCA Trust Anchor is installed in the Trusted Root Store, select **place in the following store** and select **trust root certification authorities**.
   7. Review the details to ensure that everything is correct. Then, click **Finish**.
   
@@ -100,7 +100,7 @@ To set dynamic path validation, you must instate a required registry setting. (*
   6. Click on the **Action** tab from the the top navigation bar and then **Import**. 
   7. Follow the prompts to import the downloaded FPKI P7 files from Step 1.
 
-To view a list of more FPKI CA certificates, click **here**. <!-- broken link; question out to Chunde -->
+To view a list of more FPKI CA certificates, click [**here**](https://github.com/GSA/fpki-guides/blob/staging/pages/fpki_crls.md). <!-- broken link; question out to Chunde -->
 
 
 ## How do I manage a Trust Store on a Domain Controller?
@@ -112,19 +112,19 @@ First, you will need to add a **Root CA certificate** to the **Domain Controller
   3. Type: **certutil –f –dspublish .crt2 RootCA** 
   4. View the **Enterprise Trusted Root.**  Then, type: **certutil –viewstore –enterprise root**
 
-  Once the FCPCA Trust Anchor has been installed in the Active Directory (AD) Forest’s Trusted Root CA Store, the Issuing CAs will be published in the **Network Authentication (NTAuth) Store**.  This will prevent the ability of a fraudulent user’s smartcard with a valid userPrincipalName (UPN) within the Subject Alternative Name (SAN) field from being issued by a non-trusted Issuing CA.
+Once the FCPCA Trust Anchor has been installed in the Active Directory (AD) Forest’s Trusted Root CA Store, the Issuing CAs will be published in the **Network Authentication (NTAuth) Store**.  This will prevent the ability of a fraudulent user’s smartcard with a valid userPrincipalName (UPN) within the Subject Alternative Name (SAN) field from being issued by a non-trusted Issuing CA.
 
   5. Open a command-line prompt as an Administrator on the **Forest Domain Controller**. 
   2. Type:  **certutil –dspublish –f .cer NTAuthCA** 
   3. Repeat Step 2 for all Issuing CAs.
-  4. View the **NTAuth Trusted Root**, and then type: **certutil –viewstore –enterprise NTAuth** 
+  4. View the **NTAuth Trusted Root** by typing: **certutil –viewstore –enterprise NTAuth** 
 
 While not required, you can improve the speed of certificate validation by publishing the **Intermediate CAs** to the domain’s **Intermediate Certificate Store**.  Do this:
 
   1. Open a command prompt as an Administrator on the **Forest Domain Controller**. 
   2. Type: **certutil –dspublish –f .cer subCA** 
   3. Repeat Step 2 for all Intermediate CAs 
-  4. View the **NTAuth Trusted Root**, and type: **certutil –viewstore –enterprise**
+  4. View the **NTAuth Trusted Root** by typing: **certutil –viewstore –enterprise**
   5. Finally, to propagate the domain controller change, type: **gpupdate /force** 
   
 
