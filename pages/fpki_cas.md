@@ -23,7 +23,7 @@ The following sections describe the three FPKI Trust Infrastructure CAs in detai
 
 {% include alert-info.html content="A new effort is underway to establish a Federal root and issuing certificate authorities dedicated to Public Trust TLS/SSL device certificates. Follow or contribute to the development of the new Federal certificate policy for this Public Trust effort: https://github.com/uspki/policies" %}
 
-### Federal Common Policy Certification Authority (_COMMON_) ####
+### Federal Common Policy Certification Authority (Referred to as _**COMMON**_) ####
 
 ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
 *Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
@@ -55,14 +55,14 @@ The SHA-1 Federal Root CA (SHA-1 FRCA) is a Certificate Authority supporting Fed
 
 A Certification Authority that is part of the FPKI is called a *Participating Certificate Authority*. Participating Certification Authorities include US Federal agencies, State, Local, Tribal, Territorial, international and commercial partners. The following sections describe the various FPKI Participating Certification Authorities.
 
-There are over 150 Participating Certificate Authorities that form the Federal PKI network.    We might _label_ or identify the individual certificate authority systems by a category that shows when the system was established, what types of communities it is used for, or
+Over 150 Participating Certificate Authorities form the FPKI network. The following table _labels_ or identifies individual CA categories that show when the CA was established, what types of communities it serves, or <!-- Or...?? -->
 
 
 |**Certification Authority Category**|**Description**|
 |-----------|---------------|
-| PKI Shared Service Provider | A Shared Service Provider (SSP) CA is *subordinate* to the Federal Common Policy CA (FCPCA) which means its Root Certificate has been signed and issued by another Certification Authority, in this case the FCPCA. Any certificate the SSP CA creates, signs and issues to people or devices are in the trust chain of the FCPCA. An SSP CA implementation must go through a certification process and must adhere to strict IT security and Federal policy standards and requirements.  Once they meet these specifications, the SSP organization receives an Authority to Operate (ATO) and is contracted by the Federal government to issue certificates to Federal employees, contractors and Federal devices that are deployed in Federal agency networks. |
-| Private Sector Certification Authorities | A Private Sector Certification Authority that is cross-certified has shown a valid need to either conduct business or provide PKI services to the Federal government. |
-| Access Certificates for Electronic Services (ACES) Certification Authorities | In a similar service model to the PKI SSP program, the ACES Certificate Authorities issues certificates to U.S. persons and authorized business representatives who have demonstrated need to access Federal network systems.  ACES was established in the late 1990's and was the predecessor for the development of the COMMON root and today's Federal Public Key Infrastructure. |
+| **PKI Shared Service Provider (SSP) CA** | An SSP CA is **subordinate** to the Federal Common Policy CA (FCPCA). This means that its Root Certificate has been signed and issued by another CA--in this case by the FCPCA. Any certificate that the SSP CA creates, signs, and issues to people or devices is in the **trust chain** of the FCPCA. An SSP CA implementation must go through a certification process and adhere to strict Information Technology (IT) security and federal policy standards and requirements.  Once the CA meets these specifications, the SSP organization receives an **Authority to Operate (ATO)** and is contracted by the Federal Government to issue certificates to federal employees, contractors, and federal devices that are deployed in agency networks. |
+| **Private Sector Certification Authorities** | A Private Sector Certification Authority that is cross-certified has shown a valid need to either conduct business or provide PKI services to the Federal government. |
+| **Access Certificates for Electronic Services (ACES) Certification Authorities** | In a service model similar to the PKI SSP program, the ACES Certificate Authorities issues certificates to U.S. persons and authorized business representatives who have demonstrated need to access Federal network systems.  ACES was established in the late 1990s and was the predecessor for the development of the COMMON root and today's Federal Public Key Infrastructure. |
 | Other Government Certification Authorities | These are CAs managed and operated by State, Local, Tribal, Territorial, or international government organizations. |
 | Bridge Certification Authorities | Bridge CAs connect member PKIs and are designed to enable interoperability between different PKIs operating under their own Certificate Policy. A Bridge CA is not a Root. |
 | Federal Agency Legacy | Prior to 2004, there were a number of agencies that had already deployed and invested significant funding into their own PKI and Certificate Authorities. Some of these agencies opted out of migrating to the PKI SSP program and continue to manage the existing infrastructures. These Federal Agency Legacy PKIs operate an internal PKI that is cross-certified with one or more FPKI Trust Infrastructure CAs.|
