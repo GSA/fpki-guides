@@ -4,20 +4,18 @@ title: Certificate Authorities
 permalink: /ca/
 ---
 
-A **Certificate Authority (CA)** is an entity (i.e., system) that issues digital certificates. These digital certificates are based on **cryptography** and follow the X.509 standards defined for information security.
+A **Certificate Authority (CA)** is an entity (i.e., system) that issues digital certificates. These digital certificates are based on **cryptography** and follow the X.509 standard format for public key certificates required for information security.  <!-- Term is "X.509 standard"... Definition correct? -->
 
-The FPKI <!-- acronym defined in Introduction --> has three CAs, which are operated by the FPKI Management Authority (FPKIMA). They serve as the **Root** and **Anchors** <!-- Is Anchor the same as Trust Anchor? --> for the **Intermediate** and **Issuing CAs**, which are operated by U.S. Federal Government agencies; State, Local, Tribal, Territorial, international governments; and commercial partners.  These CAs, which are collectively referred to as the **FPKI Trust Infrastructure CAs**, include:  
+The FPKI <!-- acronym defined in Introduction --> has three CAs, which are operated by the **FPKI Management Authority (FPKIMA)**. The FPKIMA is a program office established by the Federal Government to manage, operate, and maintain the three CAs that serve as the **Root** and **Anchors** <!-- Is Anchor the same as Trust Anchor? --> for the **Intermediate** and **Issuing CAs**, which are operated by Federal Government agencies; State, Local, Tribal, Territorial, international governments; and commercial partners.  These CAs are collectively referred to as the **FPKI Trust Infrastructure CAs** and include:  
 ![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
 
 * [Federal Common Policy Certification Authority (COMMON)](#federal-common-policy-certification-authority-common)
 * [Federal Bridge Certification Authority (FBCA)](#federal-bridge-certification-authority-fbca)
 * [SHA-1 Federal Root Certification Authority (SHA1 FRCA)](#sha-1-federal-root-certification-authority-sha1-frca)
 
-These three main CAs .The FPKI Management Authority is a program office established by the Federal government to manage, operate and maintain the three certificate authorities that serve as the root and anchors for other intermediate and issuing certification authorities.
+Any CA in the FPKI can be referred to as a **FPKI CA**, but only these three operated by the FPKIMA are **FPKI Trust Infrastructure CAs** and they are the highest level CAs in the hierarchy.
 
-Any CA in the FPKI can be referred to as a _FPKI CA_, but only these three operated by the FPKIMA are FPKI Trust Infrastructure CAs and they are the highest level CAs in the hierarchy.
-
-These next sections describe the three Trusted Infrastructure CAs.
+These next sections describe the three FPKI Trusted Infrastructure CAs. <!-- Trust or Trusted? Used both ways. -->
 
 {% include alert-info.html content="A new effort is underway to establish a Federal root and issuing certificate authorities dedicated to Public Trust TLS/SSL device certificates. Follow or contribute to the development of the new Federal certificate policy for this Public Trust effort: https://github.com/uspki/policies" %}
 
