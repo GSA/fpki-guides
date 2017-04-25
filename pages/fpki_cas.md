@@ -12,16 +12,14 @@ Any CA in the FPKI may be referred to as a **FPKI CA**; however, the three highe
   * State, Local, Tribal, Territorial, International Governments
   * Commercial Partners  
   
-They include:  
+They **FPKI Trust Infrastructure CAs** include:  
 ![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
 
 * [Federal Common Policy Certification Authority (COMMON)](#federal-common-policy-certification-authority-common)
 * [Federal Bridge Certification Authority (FBCA)](#federal-bridge-certification-authority-fbca)
 * [SHA-1 Federal Root Certification Authority (SHA1 FRCA)](#sha-1-federal-root-certification-authority-sha1-frca)
 
-
-
-These next sections describe the three FPKI Trust Infrastructure CAs.
+The following sections describe the three FPKI Trust Infrastructure CAs in detail.
 
 {% include alert-info.html content="A new effort is underway to establish a Federal root and issuing certificate authorities dedicated to Public Trust TLS/SSL device certificates. Follow or contribute to the development of the new Federal certificate policy for this Public Trust effort: https://github.com/uspki/policies" %}
 
