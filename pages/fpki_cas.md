@@ -4,16 +4,22 @@ title: Certificate Authorities
 permalink: /ca/
 ---
 
-A **Certificate Authority (CA)** is an entity (i.e., system) that issues digital certificates. These digital certificates are based on **cryptography** and follow the X.509 standard format for public key certificates required for information security.  <!-- Term is "X.509 standard"... Definition correct? -->
+A **Certificate Authority (CA)** is an entity (i.e., system) that issues digital certificates. These digital certificates are based on **cryptography** and follow the X.509 standard format for public key certificates required for information security. <!-- Term is "X.509 standard"... Definition correct? -->Any CA in the FPKI may be referred to as a **FPKI CA**.
 
-The three highest level CAs in the Federal Government's FPKI are collectively referred to as **FPKI Trust Infrastructure CAs**. The **FPKI Management Authority (FPKIMA)** program office was established to operate, manage, operate, and maintain the FPKI Trust Infrastructure CAs, which serve as the **Root** and **Anchors** <!-- Is Anchor the same as Trust Anchor? --> for the **Intermediate** and **Issuing CAs**, which are operated by Federal Government agencies; State, Local, Tribal, Territorial, international governments; and commercial partners.  These CAs are collectively referred to as the and are  <!-- Federal Government correct? --> CAs hierarchy.  They include:  
+The three highest level CAs in the Federal Government's FPKI are collectively referred to as **FPKI Trust Infrastructure CAs**. The **FPKI Management Authority (FPKIMA)** program office operates, manages, and maintains the FPKI Trust Infrastructure CAs, which serve as the **Root** and **Anchors** <!-- Is Anchor the same as Trust Anchor? --> for the **Intermediate** and **Issuing CAs** operated by:
+
+  * Federal Government agencies
+  * State, Local, Tribal, Territorial, international governments
+  * Commercial partners  
+  
+They include:  
 ![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
 
 * [Federal Common Policy Certification Authority (COMMON)](#federal-common-policy-certification-authority-common)
 * [Federal Bridge Certification Authority (FBCA)](#federal-bridge-certification-authority-fbca)
 * [SHA-1 Federal Root Certification Authority (SHA1 FRCA)](#sha-1-federal-root-certification-authority-sha1-frca)
 
-Any CA in the FPKI can be referred to as a **FPKI CA**.
+
 
 These next sections describe the three FPKI Trust Infrastructure CAs.
 
