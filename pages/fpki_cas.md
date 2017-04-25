@@ -4,13 +4,13 @@ title: Certificate Authorities
 permalink: /ca/
 ---
 
-A **Certificate Authority (CA)** is an entity (i.e., system) that issues digital certificates. These digital certificates are based on **cryptography** and follow the X.509 standard format for public key certificates required for information security. <!-- Term is "X.509 standard"... Definition correct? -->Any CA in the FPKI may be referred to as a **FPKI CA**.
+A **Certificate Authority (CA)** is an entity (i.e., system) that issues digital certificates. These digital certificates are based on **cryptography** and follow the X.509 standard format for public key certificates required for information security. <!-- Term is "X.509 standard"... Definition correct? -->
 
-The three highest level CAs in the Federal Government's FPKI are collectively referred to as **FPKI Trust Infrastructure CAs**. The **FPKI Management Authority (FPKIMA)** program office operates, manages, and maintains the FPKI Trust Infrastructure CAs, which serve as the **Root** and **Anchors** <!-- Is Anchor the same as Trust Anchor? --> for the **Intermediate** and **Issuing CAs** operated by:
+Any CA in the FPKI may be referred to as a **FPKI CA**; however, the three highest level CAs in the Federal Government's FPKI are the **FPKI Trust Infrastructure CAs**. The FPKI Trust Infrastructure CAs are operated, managed, and maintained by the **FPKI Management Authority (FPKIMA)** program office.  The FPKI Trust Infrastructure CAs serve as the **Root** and **Anchors** <!-- Is Anchor the same as Trust Anchor? --> for the **Intermediate** and **Issuing CAs** operated by:
 
-  * Federal Government agencies
-  * State, Local, Tribal, Territorial, international governments
-  * Commercial partners  
+  * Federal Government Agencies
+  * State, Local, Tribal, Territorial, International Governments
+  * Commercial Partners  
   
 They include:  
 ![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
