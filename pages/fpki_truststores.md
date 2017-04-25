@@ -100,7 +100,7 @@ To set dynamic path validation, you must instate a required registry setting. (*
   6. Click on the **Action** tab from the the top navigation bar and then **Import**. 
   7. Follow the prompts to import the downloaded FPKI P7 files from Step 1.
 
-To view a list of more FPKI CA certificates, click [**here**]({{ site.baseurl }}/blob/staging/pages/fpki_crls.md). <!-- broken link; question out to Chunde -->
+To view a list of more FPKI CA certificates, click [**here**]({{site.baseurl}}/blob/staging/pages/fpki_crls.md). <!-- broken link; question out to Chunde -->
 
 
 ## How do I manage a Trust Store on a Domain Controller?
