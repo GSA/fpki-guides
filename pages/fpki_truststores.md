@@ -65,7 +65,7 @@ Common Policy                                 | Common OID    
 With dynamic path validation (as opposed to static path validation), the certificate validation software will build the path based on the Authority Information Access (AIA) entry in the certificate.  For Microsoft Windows OSs, do this: 
 
   1. If the **FCPCA Trust Anchor** is installed (rather than importing all Intermediate CA Certificates), enable **Dynamic Path Validation**.  
-  2. Let CAPI discover and validate Intermediate Certificates that are required to validate a certificate. <!-- Microsoft CAPI?  This sentence sounds redundant. -->
+  2. Let Microsoft Cryptographic Application Programming Interface (CAPI) discover and validate Intermediate Certificates that are required to validate a certificate. <!-- This sentence sounds redundant. -->
 
 To set dynamic path validation, you must instate a required registry setting. (**Note:** All registry settings for managed Federal Government computers should use group policy objects or the automated configuration management tools available in your agency.) To change the registry setting, do this: <!-- What is a group policy object?  -->
 
