@@ -10,7 +10,7 @@ This **Trust Stores** guide provides a high-level overview of what **Trust Store
 ## What is a Trust Store?
 There are millions of identity (certificates issued to people) and device certificates issued in the world today, and the list constantly changes as some certificates are revoked and others are issued--far too many for your computer to maintain an up-to-date list.  
 
-Instead, each application and the operating system (OS) on your computer keep a list of **trusted root certificates** in a **Trust Store** within the specific application or the OS. From their list of trusted root certificates, the application or the OS issues certificates to people (i.e., identities) and devices. When your computer is presented with an identity or device certificate from a PIV credential, website, e-mail, or other digital item, either an application or the OS will verify whether or not the certificate relates ("chains") to one of the trusted root certificates in the Trust Store. (**Note:** Not only do applications and OSs keep lists of trusted root certificates--Trust Stores themselves sometimes keep a list of trusted root certificates that comply with the Trust Store's requirements.) 
+Instead, each application and the operating system (OS) on your computer keep a list of **trusted root certificates** in a **Trust Store** within the specific application or the OS. When your computer is presented with an identity or device certificate from a PIV credential, website, e-mail, or other digital item, either an application or the OS will verify whether or not the certificate relates ("chains") to one of the trusted root certificates in the Trust Store.  
 
 
 ## What are the most commonly used Trust Stores?
@@ -34,7 +34,7 @@ Opera|No longer operates its own program; relies on Mozilla
 
 ## How do I manage a Trust Store?
 
-Managing a Trust Store must be done via the command line or the Graphical User Interface (GUI) software tools.  With the GUI tools, you can  view, add, and delete CA certificates. **It is vital to carefully manage the CA certificates in a Trust Store**. To ensure careful management of CA certificates, you should keep only *needed* CA certificates and delete *unwanted* CA certificates. A *needed*, but missing, CA certificate could result in a Denial of Service (DoS), and the presence of an *unwanted* CA certificate could result in an attacker successfully gaining authorized access. 
+This section will be added in a future update to the FPKI Guides.
 
 
 ## How do I find out which FPKI certificate policies are trusted by Adobe? <!-- Adobe is highlighted because Adobe is the most common vendor related to FPKI certificates?  If so, we should state that.  I captured the extra steps using Adobe Reader DC. -->
@@ -112,9 +112,9 @@ First, you will need to add a **Root CA certificate** to the **Domain Controller
   3. Type: **certutil –f –dspublish .crt2 RootCA** 
   4. View the **Enterprise Trusted Root.**  Then, type: **certutil –viewstore –enterprise root**
 
-Once the FCPCA Trust Anchor has been installed in the Active Directory (AD) Forest’s Trusted Root CA Store, the Issuing CAs will be published in the **Network Authentication (NTAuth) Store**.  This will prevent the ability of a fraudulent user’s smartcard with a valid userPrincipalName (UPN) within the Subject Alternative Name (SAN) field from being issued by a non-trusted Issuing CA.
+  Once the FCPCA Trust Anchor has been installed in the Active Directory (AD) Forest’s Trusted Root CA Store, the Issuing CAs will be published in the **Network Authentication (NTAuth) Store**.  This will prevent the ability of a fraudulent user’s smartcard with a valid userPrincipalName (UPN) within the Subject Alternative Name (SAN) field from being issued by a non-trusted Issuing CA.
 
-  1. Open a command-line prompt as an Administrator on the **Forest Domain Controller**. 
+  5. Open a command-line prompt as an Administrator on the **Forest Domain Controller**. 
   2. Type:  **certutil –dspublish –f .cer NTAuthCA** 
   3. Repeat Step 2 for all Issuing CAs.
   4. View the **NTAuth Trusted Root**, and then type: **certutil –viewstore –enterprise NTAuth** 
@@ -125,8 +125,7 @@ While not required, you can improve the speed of certificate validation by publi
   2. Type: **certutil –dspublish –f .cer subCA** 
   3. Repeat Step 2 for all Intermediate CAs 
   4. View the **NTAuth Trusted Root**, and type: **certutil –viewstore –enterprise**
-  5. Then, type: **gpupdate /force** 
-  6. Finally, type: **propagate the domain controller change**
+  5. Finally, to propagate the domain controller change, type: **gpupdate /force** 
   
 
 ## How do I fix certificate validation looping in the Windows operating systems?
