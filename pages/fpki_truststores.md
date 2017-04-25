@@ -34,12 +34,12 @@ Opera|No longer operates its own program; relies on Mozilla
 
 ## How do I manage a Trust Store?
 
-This section will be added in a future update to the FPKI Guides.
+This section will be added in a future update to the FPKI Guides. <!-- Clarify audience and add instructions based on audience.-->
 
 
 ## How do I find out which FPKI certificate policies are trusted by Adobe? <!-- Adobe is highlighted because Adobe is the most common vendor related to FPKI certificates?  If so, we should state that.  I captured the extra steps using Adobe Reader DC. -->
 
-  1. Go to Adobe Acrobat.  Go to **Edit > Preferences > Signatures > Identities & Trusted Certificates > Trusted Certificates**.
+  1. Go to Adobe Acrobat.  Go to **Edit > Preferences > Signatures > Identities & Trusted Certificates**.
   2. Click on **Trusted Certificates** from the left-hand sidebar.  
   3. Then, click on **Federal Common Policy CA**, and click on the **Certificate Details** tab.
   3. In the **Certificate Viewer** window, click on the **Policies** tab, and you will see a **Policy Restrictions** area. 
