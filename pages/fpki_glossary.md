@@ -62,7 +62,7 @@ Below is a list of terms that are frequently used in the FPKI community. Please 
 : Security measure designed to establish the validity of a transmission, message, or originator, or a means of verifying an individual's authorization to receive specific categories of information. 
 
 ## B
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Backup**
 
@@ -77,7 +77,7 @@ Below is a list of terms that are frequently used in the FPKI community. Please 
 : A physical or behavioral characteristic of a human being.
 
 ## C
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Certificate**
 
@@ -158,7 +158,7 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 : Custodial Subscriber Key Stores hold keys for a number of Subscriber certificates in one location.
 
 ## D
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Data Integrity**
 
@@ -177,7 +177,7 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 : A field within a certificate which is composed of two subfields; “date of issue” and “date of next issue”. 
 
 ## E
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **E-commerce**
 
@@ -204,7 +204,7 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 : A CA that acts on behalf of an Entity, and is under the operational control of an Entity.  The Entity may be an organization, corporation, or community of interest.  For the Federal Government, an Entity may be any department, subordinate element of a department, or independent organizational entity that is statutorily or constitutionally recognized as being part of the Federal Government.
 
 ## F
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **FBCA Management Authority (FPKIMA)**
 
@@ -219,14 +219,14 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 : Gateway that limits access between networks in accordance with local security policy. 
 
 ## H
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **High Assurance Guard (HAG)**
 
 : An enclave boundary protection device that controls access between a local area network that an enterprise system has a requirement to protect, and an external network that is outside the control of the enterprise system, with a high degree of assurance.
 
 ## I
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Information System Security Officer (ISSO)**
 
@@ -249,7 +249,7 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 : A CA that is subordinate to another CA, and has a CA subordinate to itself.
 
 ## K
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Key Escrow**
 
@@ -268,14 +268,14 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 : Two mathematically related keys having the properties that (1) one key can be used to encrypt a message that can only be decrypted using the other key, and (ii) even knowing one key, it is computationally infeasible to discover the other key.
 
 ## L
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Local Registration Authority (LRA)**
 
 : A Registration Authority with responsibility for a local community.
 
 ## M
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Memorandum of Agreement (MOA)**
 
@@ -290,7 +290,7 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 : Occurs when parties at both ends of a communication activity authenticate each other (see authentication).
 
 ## N
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Naming Authority** 
 
@@ -305,7 +305,7 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 : Assurance that the sender is provided with proof of delivery and that the recipient is provided with proof of the sender's identity so that neither can later deny having processed the data.  Technical non-repudiation refers to the assurance a Relying Party has that if a public key is used to validate a digital signature, that signature had to have been made by the corresponding private signature key.  Legal non-repudiation refers to how well possession or control of the private signature key can be established.
 
 ## O
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Object Identifier (OID)**
 
@@ -320,7 +320,7 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 : An unauthorized entity from outside the domain perimeter that has the potential to harm an Information System through destruction, disclosure, modification of data, and/or denial of service.
 
 ## P
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Physically Isolated Network**
 
@@ -353,7 +353,7 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 **Public Key Infrastructure (PKI)**
 
 ## R
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 : A set of policies, processes, server platforms, software and workstations used for the purpose of administering certificates and public-private key pairs, including the ability to issue, maintain, and revoke public key certificates.
 
@@ -398,7 +398,7 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 : In a hierarchical PKI, the CA whose public key serves as the most trusted datum (i.e., the beginning of trust paths) for a security domain.
 
 ## S
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Server**
 
@@ -429,7 +429,7 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 : The highest security level supported by an information system. 
 
 ## T
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Technical non-repudiation**
 
@@ -464,14 +464,14 @@ Common Criteria|A set of internationally accepted semantic tools and constructs 
 : Continuous surveillance and control of positive control material at all times by a minimum of two authorized individuals, each capable of detecting incorrect and/or unauthorized procedures with respect to the task being performed and each familiar with established security and safety requirements. 
 
 ## U
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Update (a certificate)**
 
 : The act or process by which data items bound in an existing public key certificate, especially authorizations granted to the subject, are changed by issuing a new certificate.
 
 ## Z
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Zeroize**
 
