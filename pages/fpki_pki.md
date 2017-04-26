@@ -6,12 +6,12 @@ permalink: /pki/
 
 Public Key Infrastructure topics are to help program managers and engineers understand what a Public Key Infrastructure is, and what the Federal Public Key Infrastructure contains.
 
-* [What is Public Key Infrastructure?](#what-is-public-key-infrastructure?)
-* [Why Use PKI?](#why-use-pki?)
-* [What are the Components of a PKI?](#what-are-the-components-of-a-pki?)
-* [What is a Digital Signature?](#what-is-a-digital-signature?)
-* [What is Encryption?](#what-is-encryption?)
-* [What are the Different Types of Certificates and their Purpose?](#What-are-the-different-types-of-certificates-and-their-purpose?)
+* [What is Public Key Infrastructure?](#what-is-public-key-infrastructure)
+* [Why Use PKI?](#why-use-pki)
+* [What are the Components of a PKI?](#what-are-the-components-of-a-pki)
+* [What is a Digital Signature?](#what-is-a-digital-signature)
+* [What is Encryption?](#what-is-encryption)
+* [What are the Different Types of Certificates and their Purpose?](#what-are-the-different-types-of-certificates-and-their-purpose)
 
 
 ## What is Public Key Infrastructure?
