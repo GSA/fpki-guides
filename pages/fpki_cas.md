@@ -24,16 +24,16 @@ The FPKI Trust Infrastructure CAs serve as the **Root** and **Trust Anchors** fo
 
 The three FPKI Trust Infrastructure CAs' detailed functions are as follows:
 
-## Federal Common Policy Certification Authority (_COMMON_) <!-- In table below, the acronym "FCPCA" is used instead of "COMMON,"  which is inconsistent referencing.  Is COMMON or FCPCA is preferred? Is it context-dependent? -->
+## Federal Common Policy Certificate Authority (_COMMON_) <!-- In table below, the acronym "FCPCA" is used instead of "COMMON,"  which is inconsistent referencing.  Is COMMON or FCPCA is preferred? Is it context-dependent? -->
 
 For the Federal Government agencies, there is only one Root Certificate Authority--**COMMON**. 
 
-COMMON serves as the FPKI Trust Anchor for the Federal Government and supports [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. COMMON's design enables any certificate issued by any FPKI CA to validate its certificate path to a single Root CA. <!-- The uninitiated may not understand what the previous sentence means. Translation for lay audience? -->(See the following example where a person certificate, issued by a FPKI CA, can validate its certificate path back to COMMON, an FPKI Trust Anchor.)
+COMMON serves as the FPKI Trust Anchor (i.e., Root certificate) for the Federal Government and supports [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. COMMON's design enables any certificate issued by any FPKI CA to validate its certificate path to a single Root CA. <!-- The uninitiated may not understand what the previous sentence means. Translation for lay audience? -->(See the following example where a person certificate, issued by a FPKI CA, can validate its certificate path back to COMMON, an FPKI Trust Anchor.)
 
 ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/pivcertificatechain_small.png){:style="width:40%;float:right;"}
 *Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
-Many commercial vendors include the COMMON Trust Anchor (i.e., root certificate) in their commercial-off-the-shelf (COTS) products' [Trust Stores](../truststores/). This enables Federal Government systems to trust FPKI person and device certificates issued by FPKI CAs. Commercial vendors may also manually add the COMMON Trust Anchor to <!-- Correct? -->their products' Trust Stores, if it isn't available in their product by default. <!-- By default = meaning? -->
+Many commercial vendors include the COMMON Trust Anchor in their commercial-off-the-shelf (COTS) products' [Trust Stores](../truststores/). This enables Federal Government systems to trust FPKI person and device certificates issued by FPKI CAs. Commercial vendors may also manually add the COMMON Trust Anchor to <!-- Correct? -->their products' Trust Stores, if it isn't available in their product by default. <!-- By default = meaning? -->
 
 {% include alert-warning.html content="The COMMON Trust Anchor is included in the Trust Stores for some products, such as Chrome and Internet Explorer. Other browsers, such as Mozilla, do not include the COMMON Trust Anchor by default. " %}
 
