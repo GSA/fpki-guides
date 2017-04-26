@@ -24,7 +24,7 @@ The FPKI Trust Infrastructure CAs serve as the **Root** and **Trust Anchors** fo
 
 The three FPKI Trust Infrastructure CAs' detailed functions are as follows:
 
-### Federal Common Policy Certification Authority (_COMMON_) #### <!-- What do the 4 hash marks do re: formatting? --> 
+### Federal Common Policy Certification Authority (_COMMON_) 
 
 For the Federal Government agencies, there is only one Root Certificate Authority--**COMMON**. 
 
