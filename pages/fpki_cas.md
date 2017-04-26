@@ -11,8 +11,8 @@ Any CA in the FPKI may be referred to as an **FPKI CA**; however, the three high
 ![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
 <!-- Changed "Certification" to "Certificate" in 3 names as decided during discussions with LaChelle and Jordan. -->
 * [Federal Common Policy Certificate Authority (referred to as _COMMON_)](#federal-common-policy-certification-authority-common)
-* [Federal Bridge Certificate Authority (FBCA)](#federal-bridge-certification-authority-fbca)
-* [SHA-1 Federal Root Certificate Authority (SHA1 FRCA)](#sha-1-federal-root-certification-authority-sha1-frca)
+* [Federal Bridge Certificate Authority (_FBCA_)](#federal-bridge-certification-authority-fbca)
+* [SHA-1 Federal Root Certificate Authority (_SHA1 FRCA_)](#sha-1-federal-root-certification-authority-sha1-frca)
 
 The FPKI Trust Infrastructure CAs serve as the **Root** and **Trust Anchors** for the **Intermediate** and **Issuing CAs** operated by:
 
@@ -55,9 +55,9 @@ The SHA-1 Federal Root CA (SHA-1 FRCA) supports Federal Government agencies that
 
 ![FPKI Participating CAs]({{site.baseurl}}/img/participatingCAsV3.png){:style="width:35%;float:right;"}
 
-Any CA that is part of the FPKI is called a **Participating Certificate Authority (CA)**. Over 150 Participating Certificate Authorities form the FPKI network. Participating CAs include Federal Government agencies; State, Local, Tribal, Territorial, and International; and commercial partners. The following sections describe the various FPKI Participating CAs.
+Any CA that is part of the FPKI is called a **Participating Certificate Authority (CA)**. Over 150 Participating CAs form the FPKI network. Participating CAs include Federal Government agencies; State, Local, Tribal, Territorial, and International governments; and commercial partners. 
 
-The following table _labels_ or identifies individual CA categories that show when a CA was established and what types of communities it serves.
+The following table _labels_ or identifies individual, Participating CA categories and presents what types of communities it serves. <!-- Information doesn't include when these were established except in one case. Deleted related phrase. -->
 
 |**Certificate Authority Category**|**Description**|
 |-----------|---------------|
