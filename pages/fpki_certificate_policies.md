@@ -8,8 +8,8 @@ permalink: /policyobjects/
 1. [Why do we use Certificate Policies?](#why-do-we-use-certificate-policies)
 1. [What is a Certificate Policy Object Identifier?](#what-is-a-certificate-policy-object-identifier)
 1. [What are the Certificate Policies Object Identifiers in use?](#what-are-the-certificate-policy-object-identifiers)
-1. [How do I view the Certificate Policy Object Identifier?](#how-do-i-view-the-certificate-policy-object-identifiers)
-1. [How do I use the Certificate Policy Object Identifier?](#how-do-i-use-the-certificate-policy-object-identifiers)
+1. [How do I view the Certificate Policy Object Identifier?](#how-do-i-view-the-certificate-policy-object-identifier)
+1. [How do I use the Certificate Policy Object Identifier?](#how-do-i-use-the-certificate-policy-object-identifier)
 
 ### What is a Certificate Policy?
 
