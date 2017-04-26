@@ -30,7 +30,7 @@ For the Federal Government agencies, there is only one Root Certificate Authorit
 
 COMMON serves as the FPKI Trust Anchor for the Federal Government and supports [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. COMMON's design enables any certificate issued by any FPKI CA to validate its certificate path to a single Root CA. <!-- The uninitiated may not understand what the previous sentence means. Translation for lay audience? -->(See the following example where a person certificate, issued by a FPKI CA, can validate its certificate path back to COMMON, an FPKI Trust Anchor.)
 
-![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
+![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/pivcertificatechain_small.png){:style="width:40%;float:right;"}
 *Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
 Many commercial vendors include the COMMON Trust Anchor (i.e., root certificate) in their commercial-off-the-shelf (COTS) products' [Trust Stores](../truststores/). This enables Federal Government systems to trust FPKI person and device certificates issued by FPKI CAs. Commercial vendors may also manually add the COMMON Trust Anchor to <!-- Correct? -->their products' Trust Stores, if it isn't available in their product by default. <!-- By default = meaning? -->
@@ -42,8 +42,8 @@ Many commercial vendors include the COMMON Trust Anchor (i.e., root certificate)
 ![FPKI Federal Bridge Logo]({{site.baseurl}}/img/fbca-logo.png){:style="float:left;width:15%;"}
 The FBCA is the PKI Bridge, or link, between COMMON and the other CAs that comprise the FPKI, including the Issuing CAs operated by Federal Government agencies; state, local, tribal, territorial, and international governments; and commercial partners<!-- Used same gov't and commercial terms as used above. -->. The FBCA provides a way <!-- Does FBCA provide the way or is IT the way? -->to map participating, Issuing CAs so that their certificates validate to the COMMON Root Anchor.
 
-![Example of the FBCA Certification Path]({{site.baseurl}}/img/fbca-chainV2.png){:style="width:40%;float:right;"}
-*Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}The Issuing CAs related to the FBCA are cross-certified. <!-- Explain "cross-certified." -->These Issuing CAs have established a trust relationship with the FBCA and are audited <!-- Who audits (active voice)? -->for conformance to the approved certificate policies <!-- Approved?  Who originated these policies? Suggest adding references or links to them? -->. Commercial partners have extended the reach of the FPKI well beyond the boundaries of the Federal Government<!-- Because of the FBCA?  What is the point of this statement? -->.
+<!--![Example of the FBCA Certification Path]({{site.baseurl}}/img/fbca-chainV2.png){:style="width:40%;float:right;"}
+*Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}-->The Issuing CAs related to the FBCA are cross-certified. <!-- Explain "cross-certified." -->These Issuing CAs have established a trust relationship with the FBCA and are audited <!-- Who audits (active voice)? -->for conformance to the approved certificate policies <!-- Approved?  Who originated these policies? Suggest adding references or links to them? -->. Commercial partners have extended the reach of the FPKI well beyond the boundaries of the Federal Government<!-- Because of the FBCA?  What is the point of this statement? -->.
 
 ## SHA-1 Federal Root Certificate Authority (_SHA1 FRCA_)
 
