@@ -6,22 +6,21 @@ permalink: /ca/
 
 A **Certificate Authority (CA)** is an entity (i.e., system) that issues digital certificates. These digital certificates are based on **cryptography** and follow the X.509 standard format for public key certificates required for information security. <!-- Term is "X.509 standard"... Definition correct? -->
 
-Any CA in the FPKI may be referred to as an **FPKI CA**; however, the three highest level CAs in the Federal Government's FPKI are the **FPKI Trust Infrastructure CAs**. They are operated, managed, and maintained by the **FPKI Management Authority (FPKIMA)** program office.
+Any CA in the FPKI may be referred to as an **FPKI CA**; however, the three highest level CAs in the Federal Government's FPKI are the **FPKI Trust Infrastructure CAs**. These CAs are operated, managed, and maintained by the **FPKI Management Authority (FPKIMA)** program office. They are:
 
-The FPKI Trust Infrastructure CAs serve as the **Root** and **Anchors** <!-- Is Anchor the same as Trust Anchor? --> for the **Intermediate** and **Issuing CAs** operated by:
-
-  * Federal Government Agencies
-  * State, Local, Tribal, Territorial, International Governments
-  * Commercial Partners  
-  
-  The three **FPKI Trust Infrastructure CAs** are:  
 ![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
 
 * [Federal Common Policy Certification Authority (referred to as _COMMON_)](#federal-common-policy-certification-authority-common)
 * [Federal Bridge Certification Authority (FBCA)](#federal-bridge-certification-authority-fbca)
 * [SHA-1 Federal Root Certification Authority (SHA1 FRCA)](#sha-1-federal-root-certification-authority-sha1-frca)
 
-The following sections describe the three FPKI Trust Infrastructure CAs in detail.
+The FPKI Trust Infrastructure CAs serve as the **Root** and **Anchors** <!-- Is Anchor the same as Trust Anchor? --> for the **Intermediate** and **Issuing CAs** operated by:
+
+  * Federal Government Agencies
+  * State, Local, Tribal, Territorial, International Governments
+  * Commercial Partners  
+
+The three FPKI Trust Infrastructure CAs and their roles are described in detail below.
 
 {% include alert-info.html content="A new effort is underway to establish a Federal root and issuing certificate authorities dedicated to Public Trust TLS/SSL device certificates. Follow or contribute to the development of the new Federal certificate policy for this Public Trust effort: https://github.com/uspki/policies" %}
 
