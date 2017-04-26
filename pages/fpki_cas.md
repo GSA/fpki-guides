@@ -14,13 +14,13 @@ Any CA in the FPKI may be referred to as an **FPKI CA**; however, the three high
 * [Federal Bridge Certification Authority (FBCA)](#federal-bridge-certification-authority-fbca)
 * [SHA-1 Federal Root Certification Authority (SHA1 FRCA)](#sha-1-federal-root-certification-authority-sha1-frca)
 
-The FPKI Trust Infrastructure CAs serve as the **Root** and **Anchors** <!-- Is Anchor the same as Trust Anchor? --> for the **Intermediate** and **Issuing CAs** operated by:
+The FPKI Trust Infrastructure CAs serve as the **Root** and **Trust Anchors** for the **Intermediate** and **Issuing CAs** operated by:
 
   * Federal Government Agencies
   * State, Local, Tribal, Territorial, International Governments
   * Commercial Partners  
 
-{% include alert-info.html content="A new effort is underway to establish a Federal root and issuing certificate authorities dedicated to Public Trust TLS/SSL device certificates. Follow or contribute to the development of the new Federal certificate policy for this Public Trust effort: https://github.com/uspki/policies" %}
+{% include alert-info.html content="A new effort is underway to establish Federal Government Root and Issuing CAs <!-- In this case, Root is not referring back to the idea that the FPKI Trust Infrastructure CAs are the "Root" as stated above?-->dedicated to Public Trust Transport Layer Security (TLS)/Secure Socket Layer (SSL) device certificates. <!--Suggest adding a lay-person's explanation of how Root and Issuing CAs in this case relate to P.T. TLS/SSL device certicates, what these devices are, and why this is important. -->Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort: https://github.com/uspki/policies" %}
 
 The three FPKI Trust Infrastructure CAs' detailed functions are as follows:
 
@@ -28,14 +28,14 @@ The three FPKI Trust Infrastructure CAs' detailed functions are as follows:
 
 For the Federal Government agencies, there is only one Root Certificate Authority--**COMMON**. 
 
-COMMON serves as the FPKI Trust Anchor for the Federal Government and supports [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. COMMON's design enables any certificate issued by any FPKI CA to validate a certificate path to a single Root CA. <!-- The uninitiated may not understand what the previous sentence means. Translation for lay audience? -->(See the following example where a person certificate, issued by a FPKI CA, can validate its certificate path back to COMMON, the FPKI Trust Anchor.)
+COMMON serves as the FPKI Trust Anchor for the Federal Government and supports [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. COMMON's design enables any certificate issued by any FPKI CA to validate its certificate path to a single Root CA. <!-- The uninitiated may not understand what the previous sentence means. Translation for lay audience? -->(See the following example where a person certificate, issued by a FPKI CA, can validate its certificate path back to COMMON, the FPKI Trust Anchor.)
 
 ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
 *Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
-The COMMON root certificate is distributed by commercial vendors who include it in their commercial off the shelf product [trust stores](../truststores/).  This enables Federal Government systems to be able to trust FPKI person and device certificates issued by FPKI CAs. It is also possible to manually add the Federal Common Policy CA root certificate into trust stores, if it is not available by default.
+Commercial vendors include the COMMON root certificate in their commercial-off-the-shelf (COTS) products <!--product(s)? for what?  Give example. --> [trust stores](../truststores/). This enables Federal Government systems to trust FPKI person and device certificates issued by FPKI CAs. It is also possible for commercial vendors to manually add the COMMON root certificate to <!-- Correct? -->their products' Trust Stores, if the COMMON root certificate isn't available in a product by default. <!-- By default = meaning? -->
 
-{% include alert-warning.html content="Currently, the Federal Common Policy Certificate Authority is included in some Trust Stores by default (i.e. Chrome and Internet Explorer browsers include the COMMON trust anchor). Other browsers, such as Mozilla, do not include the Federal Common Policy Certification Authority by default. " %}
+{% include alert-warning.html content="Currently, COMMON is included in some Trust Stores by default (i.e., Chrome and Internet Explorer browsers include the COMMON Trust Anchor). Other browsers, such as Mozilla, do not include the Federal Common Policy Certification Authority by default. " %}
 
 ### Federal Bridge Certification Authority (_FBCA_)
 
