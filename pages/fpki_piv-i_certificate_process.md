@@ -30,7 +30,7 @@ The following diagram illustrates the high-level PIV-I Certification process.
 
 Questions related to this playbook should be directed to  [idmanagement@gsa.gov](mailto:idmanagement@gsa.gov).
 
-#***Play 1 Understand Roles and Responsibilities***
+# ***Play 1 Understand Roles and Responsibilities***
 
 The Federal Public Key Infrastructure Policy Authority (FPKIPA) is the inter-agency body set up under the CIO Council to enforce digital certificate standards for trusted identity authentication across the federal agencies and between federal agencies and outside bodies, such as universities, state and local governments and commercial entities.
 
@@ -39,7 +39,7 @@ The FPKI Certificate Policy Working Group (CPWG) reviews a prospective PIV-I Pro
 
 The FIPS 201 Evaluation Program performs PIV-I card interoperability testing. A favorable recommendation from the CPWG (after successful card interoperability testing) will be presented to the FPKIPA members for a vote to approve the applicant as a PIV-I Provider at their earliest convenience.
 
-#***Play 2 Know The PIV-I Components***
+# ***Play 2 Know The PIV-I Components***
 The PIV-I Provider must implement six distinct components: 
 
 - Certification Authority (CA); 
@@ -61,19 +61,19 @@ While there are many ways to architect, deploy and manage these components, the 
 
 The FPKIPA does not limit outsourcing of specific PKI services by the PIV-I Provider. For example, RA responsibilities may be outsourced to an external organization. However, the responsibility for the continuing conformance of the RA remains between the organization and the PIV-I Provider.
 
-###**Checklist**
+### **Checklist**
 
  - [ ] Implement OCSP servers
  - [ ] Determine your PIV-I architecture 
  - [ ] Fully understand all PIV-I requirements
 
-###**Key Questions**
+### **Key Questions**
 
 1. Do you fully understand what each PIV-I component does and how it fits into the overall PIV-I solution you are providing?
 2. Will you be outsourcing any of your PIV-I components?
 3. If outsourcing, do you understand your ongoing responsibilities in that context?
 
-#***Play 3 Prepare for PIV-I Cross-certification***
+# ***Play 3 Prepare for PIV-I Cross-certification***
 
 PIV-I cross certification with the FBCA encompasses six primary activities:
 
@@ -86,17 +86,17 @@ PIV-I cross certification with the FBCA encompasses six primary activities:
 
 All entities must complete the full cross certification process for FBCA cross certification at PIV-I, which is discussed in detail in the following section.
 
-###**Checklist**
+### **Checklist**
 
 - [ ] Fully Understand what each PIV-I certification step entails 
 - [ ] Resources needed for PIV-I Cross-certification process ready and available
 - [ ] Approval of senior management to offer PIV-I services
 
-###**Key Questions**
+### **Key Questions**
 
 1. Does your PIV-I solution support smart cards that conform to the latest [NIST Special Publication 800-73](http://csrc.nist.gov/publications/PubsSPs.html) and listed on the  [FIPS 201  Evaluation Program Approved Products List (APL)](https://www.idmanagement.gov/IDM/IDMFicamProductSearchPage).
 
-#***Play 4 Submit Application for PIV-I Cross-certification*** 
+# ***Play 4 Submit Application for PIV-I Cross-certification*** 
 
 The first step in achieving PIV-I cross certification with the FBCA is to submit a [PIV-I Application](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNPRAA4&field=File__Body__s) to the FPKIPA. 
 
@@ -106,7 +106,7 @@ Upon receipt, the FPKIPA will review the application and determine whether cross
 
 Organizations whose applications are rejected by the FPKIPA may request a written decision and an interview with the FPKIPA for reconsideration.
 
-###**Checklist**
+### **Checklist**
 
 - [ ] Obtain the latest application template
 - [ ] Application fully and correctly completed
@@ -115,11 +115,11 @@ Organizations whose applications are rejected by the FPKIPA may request a writte
 - [ ] Receipt of application by FPKIPA confirmed
 
 
-###**Key Questions**
+### **Key Questions**
 
 1. Does your application include a complete and compelling discussion of why your PIV-I application is in the best interest of the U.S. Federal Government?
 
-#***Play 5 Perform a Policy Mapping***
+# ***Play 5 Perform a Policy Mapping***
 
 The FBCA Certificate Policy includes specific requirements pertaining to PIV-I. Entities should familiarize themselves with the following documents prior to beginning the mapping process:
 
@@ -139,7 +139,7 @@ The CPWG will review the PIV-I mapping matrices to determine their overall satis
 
 The PIV-I Provider shall operate their PKIs in a manner that ensures continuing alignment with the FBCA CP. Each PIV-I Provider shall develop and operate their systems according to a CPS governing operation of its PKI. The PIV-I Provider’s CPS must be in compliance with their Certificate Policy.
 
-###**Checklist**
+### **Checklist**
 
 - [ ] Completely familiar with pertinent documents before mapping begins
 - [ ] Meet with CPWG mapping support team before mapping begins to fully understand how best to complete mapping tables
@@ -151,10 +151,10 @@ The PIV-I Provider shall operate their PKIs in a manner that ensures continuing 
 - [ ] Mapping material submitted to [fpki-compliance@gsa.gov](fpki-compliance@gsa.gov)
 - [ ] Receipt of mapping material by the CPWG confirmed
 
-###**Key Questions**
+### **Key Questions**
 1. Does my CP or CPS reference any documents that I need to include in the mapping package?
 
-#***Play 6 Complete Technical Testing***
+# ***Play 6 Complete Technical Testing***
 
 The PIV-I applicant must successfully complete technical testing in accordance with the  [PIV-I Test Plan](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwZ). The purpose of technical testing is to validate the ability of a PIV-I candidate to issue PIV-I cards that meet the test requirements. Testing can be done any time after the application has been accepted.  To expedite the certification process, testing can be done in parallel with the mapping step.  However, testing must always be done with a "production card" issued by a production Issuing CA.
 
@@ -169,18 +169,18 @@ Successful PIV-I implementation is dependent on the CMS. As a result, the CMS mu
 
 Upon successful completion of the  [PIV-I Test Plan](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwZ), the results  are reported to the FPKIPA.
 
-###**Checklist**
+### **Checklist**
 
 - [ ] Technical resources are identified and available if requested to support technical testing or to fix identified issues
 - [ ] All CMS(s) identified and communicated to the ICAM Lab
 - [ ] At least one test card per identified CMS submitted to the ICAM Lab
 
-###**Key Questions**
+### **Key Questions**
 
    1. Does your PIV-I solution use more than one CMS?
    2. Know when testing is scheduled and who the ICAM Lab contacts are?
 
-#***Play 7 Complete an Audit Review***
+# ***Play 7 Complete an Audit Review***
 
 To provide assurance of that their CP and CPS reflect their operations, PIV-I Providers must submit a compliance audit from a qualified, independent, third party auditor, in accordance with Section 8 of the FBCA CP, that establishes:
 
@@ -191,7 +191,7 @@ For an initial audit review, operational compliance may be determined by a Day Z
 
 The PIV-I Provider and their third party auditor should consult [FPKI Compliance Audit Requirements](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008OcsCAE) for guidance on preparing the audit letter to the FPKIPA.
 
-###**Checklist**
+### **Checklist**
 
 - [ ] Obtain qualified, independent, third party auditor to perform PIV-I audit
 - [ ] Appropriate audit performed (full audit vs day zero audit)
@@ -201,15 +201,15 @@ The PIV-I Provider and their third party auditor should consult [FPKI Compliance
 - [ ] Audit Compliance Letter submitted to  [fpki-compliance@gsa.gov](fpki-compliance@gsa.gov)
 - [ ] Receipt of Audit Compliance Letter by the FPKIPA confirmed
 
-###**Key Questions**
+### **Key Questions**
 
 1. Is this an initial audit review, in which case a Day Zero Compliance Audit can be performed instead of full audit?
 
-#***Play 8 Execute a Memorandum of Agreement*** 
+# ***Play 8 Execute a Memorandum of Agreement*** 
 
 Once all of the above criteria have been successfully completed, the CPWG will submit a recommendation to the FPKIPA to cross certify with the applicant at the identified levels of assurance, including PIV-I. Upon a favorable vote, the applicant and the Chairs of the FPKIPA shall complete a Memorandum of Agreement (MOA) citing each organization’s rights and responsibilities associated with the cross certification.
 
-###**Checklist**
+### **Checklist**
 
 - [ ] Obtain a copy of the final proposed MOA
 - [ ] Proposed MOA reviewed by appropriate personnel
@@ -217,34 +217,34 @@ Once all of the above criteria have been successfully completed, the CPWG will s
 - [ ] Fully understand the rights and responsibilities of all parties to the proposed MOA
 - [ ] Receive copy of fully-executed MOA
 
-###**Key Questions**
+### **Key Questions**
 
 1. Are any changes to the proposed MOA needed that should be communicated to the FPKIPA?   
 2. Who is the appropriate person to sign the MOA on behalf of the PIV-I Provider?
 
-#***Play 9 Coordinate Cross-certificate Issuance*** 
+# ***Play 9 Coordinate Cross-certificate Issuance*** 
 
 Once the MOA is complete, the Federal PKI Management Authority (FPKIMA) and the Applicant coordinate the steps necessary to issue cross-certificates.
 
 The entity will then be added to the [FPKI Approved Providers List](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000XRrC).
 
-###**Checklist**
+### **Checklist**
 
 - [ ] Establish contact with the FPKIMA to initiate exchange of cross-certificates
 - [ ] Fully understand process to exchange cross-certificates
 - [ ] Confirm listing on the [FPKI Approved Providers List](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000XRrC)
 
-###**Key Questions**
+### **Key Questions**
 
 1. Have you reviewed all forms associated with exchanging cross-certificates to ensure you have obtained all the latest information you need to provide the FPKIMA.
 2. Is the information you will be providing correct and up-to-date?
 
-#***Play 10 Perform Annual Compliance Audit*** 
+# ***Play 10 Perform Annual Compliance Audit*** 
 The [Compliance Audit Requirements](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008OcsCAE) document mandates yearly compliance audits performed by a competent, independent third party. The PIV-I Provider has ongoing audit and analysis responsibilities to ensure that the PKI continues to operate at the appropriate level of trustworthiness.
 
 The PIV-I Provider shall submit a compliance audit letter each year covering PIV-I operated components for as long as they continue. If it is determined that a PIV-I Provider is out of compliance, the PIV-I Provider shall submit a remediation plan to the CPWG for consideration. Failure to submit an annual compliance audit letter, or findings that indicate the PIV-I Provider is out of alignment with the FBCA CP will result in removal from the  [FPKI Approved Providers List](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000XRrC) and/or revocation of the cross certificates.
 
-###**Checklist**
+### **Checklist**
 
 - [ ] Understand ongoing compliance audit requirements and due dates 
 - [ ] Performed annual compliance audit and submit Annual Compliance Audit Letter to the FPKIPA
@@ -253,14 +253,14 @@ The PIV-I Provider shall submit a compliance audit letter each year covering PIV
 - [ ] If notified of non-compliance, gather appropriate staff and begin remediation process
 - [ ] If requested, understand scope/content of Remediation Plan and submit Remediation Plan to the FPKIPA
 
-###**Key Questions**
+### **Key Questions**
 
 1. If notified of non-compliance, do you fully understand and agree with the list of non-compliance items?
 
 
 
 
-##**Glossary**
+## **Glossary**
 | Term| Description |
 | --- | --- |
 | Applicant| Any organization seeking to participate in the Federal Certified PKI Personal Identity Verification Interoperability (PIV-I) program.|
@@ -288,7 +288,7 @@ The PIV-I Provider shall submit a compliance audit letter each year covering PIV
 
 
 
-##**References**
+## **References**
 
 HSPD-12: Policy for a Common Identification Standard for Federal Employees and Contractors
  http://www.dhs.gov/homeland-security-presidential-directive-12
