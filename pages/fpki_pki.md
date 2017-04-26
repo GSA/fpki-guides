@@ -15,14 +15,14 @@ These Public Key Infrastructure (PKI) topics are to help program managers and en
 
 
 ## What is Public Key Infrastructure (PKI)?
-PKI provides for public-key encryption and digital signature services. <!-- This paragraph needs a more complete, concise definion of PKI.  The most important factor appears to be "encryption" since it appears first...? Will a program manager understand what "digital signature services" entail? --> It is implemented through specific policies, processes, server platforms, software, and workstations. This "system" is used to administer public key certificates and public-private "key pairs," including the ability to issue, maintain, and revoke public key certificates.
+PKI provides for public key encryption and digital signature services. <!-- This paragraph needs a more complete, concise definion of PKI.  The most important factor appears to be "encryption" since it appears first...? Will a program manager understand what "digital signature services" entail? --> It is implemented through specific policies, processes, server platforms, software, and workstations. This "system" is used to administer public key certificates and public-private "key pairs" and includes services that issue, maintain, and revoke public key certificates.
 
-PKI uses public key (PK) cryptography, which uses public and private key pairs to encrypt and decrypt data. Public keys may be disseminated widely; however, a corresponding private key is known only to the owner (senders and receivers).  The sender uses a private key to encrypt unprotected information (i.e., transform plaintext to ciphertext). The receiver uses a corresponding private key to either: (a) transform the ciphertext back into plaintext, (b) verify the sender’s identity, or (c) verify the data’s integrity, or some combination of these options. <!-- Doesn't say how the data is encrypted, decrypted, etc. -->
+PKI uses public key (PK) cryptography, which uses public and private key pairs to encrypt and decrypt data. Public keys may be disseminated widely; however, a private key is known only to the owner (senders and receivers). A sender uses a private key to encrypt unprotected information (i.e., transform plaintext to ciphertext). A receiver uses a corresponding private key to either: (a) transform the ciphertext back into plaintext, (b) verify the sender’s identity, or (c) verify the data’s integrity, or some combination of these options. <!-- Doesn't say how the data is encrypted, decrypted, etc. -->
 
 ![Example of Public Key Infrastructure]({{site.baseurl}}/img/PKI-image1.jpg){:style="float:center"}
 
 ## Why Use PKI?
-PKI is "high assurance," which means that **Relying Parties** <!-- Need to define "Relying Party." --> can have a high degree of confidence in its security and results. For example, PKI provides much stronger authentication method than a userID and password. As a result, PKI helps organizations meet their security, business, and compliance needs.<!-- "compliance" relates to what? -->
+PKI is "high assurance," which means that **Relying Parties** <!-- Need to define "Relying Party." --> can have a high degree of confidence in its ability to secure data. For example, PKI provides much stronger authentication method than a userID and password. As a result, PKI helps organizations meet their security, business, and compliance needs.<!-- "compliance" relates to what? -->
 
 |Benefit| Description|
 |-------|------------|
