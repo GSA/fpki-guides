@@ -28,7 +28,7 @@ The three FPKI Trust Infrastructure CAs' detailed functions are as follows:
 
 For the Federal Government agencies, there is only one Root Certificate Authority--**COMMON**. 
 
-COMMON serves as the Federal PKI (FPKI) Trust Anchor for the Federal Government in support of [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. COMMON was designed so any certificate issued by any FPKI CA can validate a certificate path to a single Root CA. See the example to the right where a person certificate, issued by a FPKI CA, can validate its certificate path back to COMMON.
+COMMON serves as the FPKI Trust Anchor for the Federal Government and supports [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. COMMON's design enables any certificate issued by any FPKI CA to validate a certificate path to a single Root CA. <!-- The uninitiated may not understand what the previous sentence means. Translation for lay audience? -->(See the following example where a person certificate, issued by a FPKI CA, can validate its certificate path back to COMMON, the FPKI Trust Anchor.)
 
 ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
 *Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
