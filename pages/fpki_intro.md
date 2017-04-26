@@ -18,7 +18,7 @@ The information on this page provides introductory information to answer the fol
 4. [What is in the FPKI Guides?](#what-is-in-the-fpki-guides)
 5. [Where can I find the policies and standards?](#where-can-i-find-the-policies-and-standards)
 
-### What is the Federal PKI?
+### What is the FPKI?
 ![Image of the Federal PKI Certification Authorities](img/Intro-image3.png){:style="width:40%;float:right;"}
 *High-level Illustration of the FPKI Certification Authorities*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
@@ -49,7 +49,7 @@ For the US Federal Government Executive branch agencies, there is one Root Certi
 *  [A graph of the federal public key infrastructure, including the business communities](https://fpki-graph.fpki-lab.gov/){:target="_blank"}
 
 
-### Why should Agencies use certificates from the FPKI?
+### Why should agencies use the FPKI?
 
 All Agencies should use the FPKI to enhance their security and trust for:
 
@@ -81,6 +81,8 @@ The FPKI is important to Federal agencies as well as citizens, businesses, and o
 |**Increased Return on Investment**|The FPKI improves business processes and efficiencies.  For example, leveraging digital signing, encryption, and non-repudiation allows Federal agencies to migrate from manual processing to automated processing, especially around document processing/sharing, and communications across Federal agencies, and between Federal agencies and outside bodies.  In addition, Federal agencies can reduce operational costs and burdens (e.g., eliminate cost/burden of managing agency-issued credentials, reduce password service desk costs).
 |**The FPKI Approved Providers List**|By leveraging the [FPKI Approved Provider List](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000XRrC){:target="_blank"}, Federal agencies can be sure they are using Providers that meet all necessary Federal government standards, and can be sure of the level of assurance when relying on approved Providers' certificates.  This saves Federal agencies an enormous amount of time and effort, as well as reducing risk.|
 
+### What is in the FPKI Guides?
+<!-- place holder -->
 
 ### Where Can I Find the Policies and Standards?
 
