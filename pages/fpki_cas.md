@@ -17,7 +17,7 @@ Any CA in the FPKI may be referred to as an **FPKI CA**; however, the three high
 The FPKI Trust Infrastructure CAs serve as the **Root** and **Trust Anchors** for the **Intermediate** and **Issuing CAs** operated by:
 
   * Federal Government Agencies
-  * State, Local, Tribal, Territorial, International Governments
+  * State, Local, Tribal, Territorial, and International Governments
   * Commercial Partners  
 
 {% include alert-info.html content="A new effort is underway to establish Federal Government Root and Issuing CAs <!-- In this case, Root is not referring back to the idea that the FPKI Trust Infrastructure CAs are the "Root" as stated above?-->dedicated to Public Trust Transport Layer Security (TLS)/Secure Socket Layer (SSL) device certificates. <!--Suggest adding a lay-person's explanation of how Root and Issuing CAs in this case relate to P.T. TLS/SSL device certicates, what these devices are, and why this is important. -->Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort: https://github.com/uspki/policies" %}
@@ -33,21 +33,21 @@ COMMON serves as the FPKI Trust Anchor for the Federal Government and supports [
 ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
 *Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
-Many commercial vendors include the COMMON Trust Anchor (i.e., root certificate) in their commercial-off-the-shelf (COTS) products <!--product(s)? for what?  Give example. --> [trust stores](../truststores/). This enables Federal Government systems to trust FPKI person and device certificates issued by FPKI CAs. It is also possible for commercial vendors to manually add the COMMON root certificate to <!-- Correct? -->their products' Trust Stores, if the COMMON root certificate isn't available in their product by default. <!-- By default = meaning? -->
+Many commercial vendors include the COMMON Trust Anchor (i.e., root certificate) in their commercial-off-the-shelf (COTS) products' Trust Stores<!--product(s)? for what?  Give example. --> [trust stores](../truststores/). This enables Federal Government systems to trust FPKI person and device certificates issued by FPKI CAs. It is also possible for commercial vendors to manually add the COMMON Trust Anchor to <!-- Correct? -->their products' Trust Stores, if it isn't available in their product by default. <!-- By default = meaning? -->
 
-{% include alert-warning.html content="For example, the COMMON Trust Anchor <!-- Inconsistent terms:  "COMMON root certificate" above vs. "COMMON Trust Anchor" here? -->is included in some vendors' Trust Stores, such as Chrome and Internet Explorer browsers. Other browsers, such as Mozilla, do not include COMMON Trust Anchor by default. " %}
+{% include alert-warning.html content="For example, the COMMON Trust Anchor <!-- Inconsistent terms:  "COMMON root certificate" above vs. "COMMON Trust Anchor" here? -->is included in the Trust Stores for browsers such as Chrome and Internet Explorer. Other browsers, such as Mozilla, do not include the COMMON Trust Anchor by default. " %}
 
-### Federal Bridge Certification Authority (_FBCA_)
+### Federal Bridge Certificate Authority (_FBCA_) <!-- Re: decision to change all references to "certificate authority."  Okay in these names? -->
 
 ![FPKI Federal Bridge Logo]({{site.baseurl}}/img/fbca-logo.png){:style="float:left;width:15%;"}
-The Federal Bridge Certification Authority (FBCA) is the PKI Bridge or link between the Federal Common Policy CA and the other CAs that comprise the FPKI, including Issuing CAs operated by Federal agencies, commercial organizations, state, local, and foreign governments. The FBCA provides a means to map participating Issuing CAs so the certificates validate to the Federal Common Policy Certification Authority root certificate.
+The FBCA is the PKI Bridge, or link, between COMMON and the other CAs that comprise the FPKI, including Issuing CAs operated by Federal Government agencies; state, local, tribal, territorial, and international governments; and commercial partners<!-- Used same gov't and commercial terms as used above. -->. The FBCA provides a way <!-- Does FBCA provide the way or is IT the way? -->to map participating Issuing CAs so that their certificates validate to the COMMON Root Anchor (certificate).
 
 ![Example of the FBCA Certification Path]({{site.baseurl}}/img/fbca-chainV2.png){:style="width:40%;float:right;"}
-*Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}The Issuing CAs related to the FBCA are cross-certified.  These Issuing CAs have established a trust relationship with the FBCA and are audited for conformance to the certificate policies. The partners have extended the reach of the FPKI well beyond the boundaries of the Federal Government.
+*Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}The Issuing CAs related to the FBCA are cross-certified. <!-- Explain "cross-certified." -->These Issuing CAs have established a trust relationship with the FBCA and are audited <!-- Who audits (active voice)? -->for conformance to the certificate policies <!-- Policies are standards or something else?  Reference to these? -->. Commercial partners have extended the reach of the FPKI well beyond the boundaries of the Federal Government<!-- Because of the FBCA?  What is the point of this statement? -->.
 
-### SHA-1 Federal Root Certification Authority (_SHA1 FRCA_)
+### SHA-1 Federal Root Certificate Authority (_SHA1 FRCA_)
 
-The SHA-1 Federal Root CA (SHA-1 FRCA) is a Certificate Authority supporting Federal entities that still require using certificates that have the deprecated SHA-1 signature hash algorithm. The SHA-1 hash algorithm is an older algorithm that has been deemed to be not secure enough for today’s standards.  Federal organizations should no longer be using certificates with this hash.  However, the SHA-1 FPKI CA was created and maintained to facilitate the backwards interoperability for those systems unable to fully transition to SHA-256 and to support the migrations over time.
+The SHA-1 Federal Root CA (SHA-1 FRCA) supports Federal Government agencies that still use certificates based on <!-- Based on? -->the deprecated SHA-1 signature hash algorithm. (The SHA-1 hash algorithm is an older algorithm that has been deemed as not secure enough for today’s standards.) Federal Government agencies should no longer be using this method of encryption (hash) for certificates.  However, the SHA-1 FRCA was created and maintained to facilitate the "backwards" interoperability for those systems unable to fully move to using the SHA-256 signature hash algorithm and to support system migrations to updated methods over time.
 
 {% include alert-warning.html content="Use of certificates using the SHA-1 signature hash algorithm under current policy should be limited to applications in which the risks associated with the use of the deprecated SHA-1 algorithm have been deemed acceptable and will only be asserted within the SHA-1 FPKI." %}
 
@@ -55,7 +55,7 @@ The SHA-1 Federal Root CA (SHA-1 FRCA) is a Certificate Authority supporting Fed
 
 ![FPKI Participating CAs]({{site.baseurl}}/img/participatingCAsV3.png){:style="width:35%;float:right;"}
 
-A Certification Authority that is part of the FPKI is called a *Participating Certificate Authority*. Participating Certification Authorities include US Federal agencies, State, Local, Tribal, Territorial, international and commercial partners. The following sections describe the various FPKI Participating Certification Authorities.
+A CA that is part of the FPKI is called a *Participating Certificate Authority*. Participating Certification Authorities include US Federal agencies, State, Local, Tribal, Territorial, international and commercial partners. The following sections describe the various FPKI Participating Certification Authorities.
 
 Over 150 Participating Certificate Authorities form the FPKI network. The following table _labels_ or identifies individual CA categories that show when the CA was established, what types of communities it serves, or <!-- Or...?? -->
 
