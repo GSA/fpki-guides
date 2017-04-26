@@ -24,7 +24,7 @@ The FPKI Trust Infrastructure CAs serve as the **Root** and **Trust Anchors** fo
 
 The three FPKI Trust Infrastructure CAs' detailed functions are as follows:
 
-### Federal Common Policy Certification Authority (_COMMON_) 
+## Federal Common Policy Certification Authority (_COMMON_) 
 
 For the Federal Government agencies, there is only one Root Certificate Authority--**COMMON**. 
 
@@ -33,25 +33,25 @@ COMMON serves as the FPKI Trust Anchor for the Federal Government and supports [
 ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
 *Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
-Many commercial vendors include the COMMON Trust Anchor (i.e., root certificate) in their commercial-off-the-shelf (COTS) products' [Trust Stores](../truststores/). This enables Federal Government systems to trust FPKI person and device certificates issued by FPKI CAs. It is also possible for commercial vendors to manually add the COMMON Trust Anchor to <!-- Correct? -->their products' Trust Stores, if it isn't available in their product by default. <!-- By default = meaning? -->
+Many commercial vendors include the COMMON Trust Anchor (i.e., root certificate) in their commercial-off-the-shelf (COTS) products' [Trust Stores](../truststores/). This enables Federal Government systems to trust FPKI person and device certificates issued by FPKI CAs. Commercial vendors may also manually add the COMMON Trust Anchor to <!-- Correct? -->their products' Trust Stores, if it isn't available in their product by default. <!-- By default = meaning? -->
 
-{% include alert-warning.html content="For example, the COMMON Trust Anchor <!-- Inconsistent terms:  "COMMON root certificate" above vs. "COMMON Trust Anchor" here? -->is included in the Trust Stores for browsers such as Chrome and Internet Explorer. Other browsers, such as Mozilla, do not include the COMMON Trust Anchor by default. " %}
+{% include alert-warning.html content="The COMMON Trust Anchor is included in the Trust Stores for some products, such as Chrome and Internet Explorer. Other browsers, such as Mozilla, do not include the COMMON Trust Anchor by default. " %}
 
-### Federal Bridge Certificate Authority (_FBCA_) <!-- Re: decision to change all references to "certificate authority."  Okay in these names? -->
+## Federal Bridge Certificate Authority (_FBCA_) <!-- Re: decision to change all references to "certificate authority."  Okay in these names? -->
 
 ![FPKI Federal Bridge Logo]({{site.baseurl}}/img/fbca-logo.png){:style="float:left;width:15%;"}
-The FBCA is the PKI Bridge, or link, between COMMON and the other CAs that comprise the FPKI, including Issuing CAs operated by Federal Government agencies; state, local, tribal, territorial, and international governments; and commercial partners<!-- Used same gov't and commercial terms as used above. -->. The FBCA provides a way <!-- Does FBCA provide the way or is IT the way? -->to map participating Issuing CAs so that their certificates validate to the COMMON Root Anchor.
+The FBCA is the PKI Bridge, or link, between COMMON and the other CAs that comprise the FPKI, including the Issuing CAs operated by Federal Government agencies; state, local, tribal, territorial, and international governments; and commercial partners<!-- Used same gov't and commercial terms as used above. -->. The FBCA provides a way <!-- Does FBCA provide the way or is IT the way? -->to map participating, Issuing CAs so that their certificates validate to the COMMON Root Anchor.
 
 ![Example of the FBCA Certification Path]({{site.baseurl}}/img/fbca-chainV2.png){:style="width:40%;float:right;"}
-*Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}The Issuing CAs related to the FBCA are cross-certified. <!-- Explain "cross-certified." -->These Issuing CAs have established a trust relationship with the FBCA and are audited <!-- Who audits (active voice)? -->for conformance to the certificate policies <!-- Policies are standards or something else?  Reference to these? -->. Commercial partners have extended the reach of the FPKI well beyond the boundaries of the Federal Government<!-- Because of the FBCA?  What is the point of this statement? -->.
+*Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}The Issuing CAs related to the FBCA are cross-certified. <!-- Explain "cross-certified." -->These Issuing CAs have established a trust relationship with the FBCA and are audited <!-- Who audits (active voice)? -->for conformance to the approved certificate policies <!-- Approved?  Who originated these policies? Suggest adding references or links to them? -->. Commercial partners have extended the reach of the FPKI well beyond the boundaries of the Federal Government<!-- Because of the FBCA?  What is the point of this statement? -->.
 
-### SHA-1 Federal Root Certificate Authority (_SHA1 FRCA_)
+## SHA-1 Federal Root Certificate Authority (_SHA1 FRCA_)
 
-The SHA-1 Federal Root CA (SHA-1 FRCA) supports Federal Government agencies that still use certificates based on <!-- Based on? -->the deprecated SHA-1 signature hash algorithm. (The SHA-1 hash algorithm is an older algorithm that has been deemed as not secure enough for today’s standards.) Federal Government agencies should no longer be using this method of encryption (hash) for certificates.  However, the SHA-1 FRCA was created and maintained to facilitate the "backwards" interoperability for those systems unable to fully move to using the SHA-256 signature hash algorithm and to support system migrations to updated methods over time.
+The SHA-1 Federal Root CA (SHA-1 FRCA) supports Federal Government agencies that still use certificates based on <!-- Based on? -->the deprecated SHA-1 signature hash algorithm. (The SHA-1 hash algorithm is an older algorithm that has been deemed as not secure enough for today’s standards.) Federal Government agencies should no longer be using the SHA-1 hash algorithm for certificates.  However, the SHA-1 FRCA was created and maintained to facilitate the "backwards" interoperability for those systems unable to fully move to the preferred SHA-256 signature hash algorithm.  The SHA-1 FBCA also exists to support system migrations to updated methods over time.
 
 {% include alert-warning.html content="Use of certificates using the SHA-1 signature hash algorithm under current policy should be limited to applications in which the risks associated with the use of the deprecated SHA-1 algorithm have been deemed acceptable and will only be asserted within the SHA-1 FPKI." %}
 
-### All FPKI Certificate Authorities
+## All FPKI Certificate Authorities <!-- This heading and subject is not parallel to the previous 3, which are the FPKI Trust Infrastructure CAs. Structing the format into bullet paragraphs above would resolve this formatting & logical organization issue. -->
 
 ![FPKI Participating CAs]({{site.baseurl}}/img/participatingCAsV3.png){:style="width:35%;float:right;"}
 
