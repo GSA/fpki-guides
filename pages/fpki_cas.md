@@ -6,7 +6,7 @@ permalink: /ca/
 
 A **Certificate Authority (CA)** is an entity (i.e., system) that issues digital certificates. These digital certificates are based on **cryptography** and follow the X.509 standard format for public key certificates required for information security. <!-- Term is "X.509 standard"... Definition correct? -->
 
-Any CA in the FPKI may be referred to as an **FPKI CA**; however, the three highest level CAs in the Federal Government's FPKI are the **FPKI Trust Infrastructure CAs**. These CAs are operated, managed, and maintained by the **FPKI Management Authority (FPKIMA)** program office. They are:
+Any CA in the FPKI may be referred to as an **FPKI CA**; however, the three highest level CAs in the Federal Government's FPKI are the **FPKI Trust Infrastructure CAs**. These CAs are operated, managed, and maintained by the **FPKI Management Authority (FPKIMA)** program office. The FPKI Trust Infrastructure CAs are:
 
 ![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
 
@@ -22,7 +22,7 @@ The FPKI Trust Infrastructure CAs serve as the **Root** and **Anchors** <!-- Is 
 
 {% include alert-info.html content="A new effort is underway to establish a Federal root and issuing certificate authorities dedicated to Public Trust TLS/SSL device certificates. Follow or contribute to the development of the new Federal certificate policy for this Public Trust effort: https://github.com/uspki/policies" %}
 
-Detailed descriptions of the three FPKI Trust Infrastructure CAs and their roles are given below.
+The three FPKI Trust Infrastructure CAs' functions are as follows:
 
 ### Federal Common Policy Certification Authority (_**COMMON**_) #### 
 
