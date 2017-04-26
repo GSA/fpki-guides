@@ -11,14 +11,14 @@ We want you to contribute and share lessons learned, and any information you thi
 
 The information on this page provides introductory information to answer the following questions:
 
-1. [What is the FPKI?](#what-is-the-fpki)
-2. [What is an example?](#example)
-2. [Why should agencies use the FPKI?](#why-should-agencies-use-the-fpki)
-3. [Why is the FPKI Important?](#why-is-the-fpki-important)
-4. [What is in the FPKI Guides?](#what-is-in-the-fpki-guides)
+1. [What is the Fedearl Public Key Infrastructure?](#what-is-the-federal-public-key-infrastructure)
+2. [What is an example?](#what-is-an-example)
+2. [Why should agencies use the Federal PKI?](#why-should-agencies-use-the-federal-pki)
+3. [Why is the Federal PKI Important?](#why-is-the-federal-pki-important)
+4. [What is in the Federal PKI Guides?](#what-is-in-the-federal-pki-guides)
 5. [Where can I find the policies and standards?](#where-can-i-find-the-policies-and-standards)
 
-### What is the Federal PKI?
+### What is the Federal Public Key Infrastructure?
 ![Image of the Federal PKI Certification Authorities](img/Intro-image3.png){:style="width:40%;float:right;"}
 *High-level Illustration of the FPKI Certification Authorities*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
@@ -27,13 +27,13 @@ The Federal PKI (FPKI) is a network of hundreds of certification authorities (CA
 - PIV credentials and person identity certificates
 - PIV-Interoperable credentials and person identity certificates
 - Other person identity certificates
-- Device identity certificates
+- Enterprise device identity certificates
 
-The participating Certification Authorities and the Policies, Processes, and Auditing of all the participants is referred to as the Federal Public Key Infrastructure (FPKI).
+The participating Certification Authorities and the _policies, processes, and auditing_ of all the participants is referred to as the Federal Public Key Infrastructure (FPKI).
 
-The FPKI includes US federal, State, Local, Tribal, Territorial, international governments, and commercial organizations who work together to provide services for the benefit of the federal government.
+The FPKI includes US federal, State, Local, Tribal, Territorial, international governments, and commercial organizations (industry partners) who work together to provide services for the benefit of the federal government and our citizens.
 
-### Example
+### What is an example?
 To give a simple example, we'll explain the PIV certificates.  Although we have many other types of identity certificates, it's easiest to explain with **PIV** since you might have one:
 
 * Identity certificates are issued and digitally signed by a _Certificate Authority_.  
@@ -49,40 +49,41 @@ For the US Federal Government Executive branch agencies, there is one Root Certi
 *  [A graph of the federal public key infrastructure, including the business communities](https://fpki-graph.fpki-lab.gov/){:target="_blank"}
 
 
-### Why should Agencies use certificates from the FPKI?
+### Why should agencies use certificates from the Federal PKI?
 
-All Agencies should use the FPKI to enhance their security and trust for:
+All federal agencies should leverage certificates from the Federal PKI to enhance their security and trust for:
 
-* Physical and logical access
-* Document sharing
-* Communications across federal agencies, and outside bodies such as universities, state and local governments, commercial entities, and other communities of interest.
+* Physical and logical access to government building and networks
+* Document sharing, digital signatures and encrypted person to person communications
+* Communications across federal agencies, and outside bodies such as universities, state and local governments, commercial entities, and other communities of interest that participate in the Federal PKI.
 
-The FPKI provides four core technical capabilities:
+The Federal PKI provides four core technical capabilities:
 ![Illustration of the four core FPKI capabilities](img/fpki-core.png){:style="width:40%;float:right;"}
 *The Four Core FPKI Capabilities*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
-* Trust with Federal agencies and Industry
+* Trust between federal agencies, industry partners and other government partners
 * Support for technical non-repudiation
 * Strong authentication & encryption
 * Strong digital signature
 
-These four core capabilities are made possible by leveraging digital certificates, their standards, processes, and a mission-critical Trust Infrastructure to administer the certificates. The Trust Infrastructure provides the technical functionality for issuing, maintaining, and revoking the certificates.
+These four core capabilities are made possible by leveraging digital certificates, their standards, processes, and a mission-critical trust infrastructure to administer the certificates. The trust infrastructure provides the technical functionality for issuing, maintaining, and revoking the certificates.
 
-### Why is the FPKI Important?
+### Why is the Federal PKI important?
 
-The FPKI is important to Federal agencies as well as citizens, businesses, and organizations that need access to federal agency services and facilities.  It contains the Federal Government's Trust Infrastructure, and facilitates trust of PIV, PIV-I, and other government and non-government credentials.
+The Federal PKI is important to Federal agencies as well as industry partners and other government partners that need access to federal agency information systems and buildings.  It contains the Federal Government's Trust Infrastructure, and facilitates trust of PIV, PIV-I, and other government and non-government pki-based credentials.
 
 |**Benefit**|**Description**|
 |-----------|---------------|
-|**Increased security**|Greater logical and physical security through strong authentication. PKI credentials reduce identity theft, data breaches, and trust violations inherent in weak credentials such as username/password. Specifically, PKI closes security gaps of user identification and authentication, encryption of sensitive data, and data integrity. It also addresses security issues identified in Government Accountability Office (GAO) reports.|
-|**Greater Compliance**|Using the Federal PKI means almost automatic compliance with several Executive Orders, laws, initiatives, and standards (e.g. FISMA, E-Gov Act). Agencies can specify FPKI in contracts to ensure vendor compliance with all government requirements. The FPKI Policy Authority verifies participating CAs are audited and operate in a secure manner.|
-|**Improved Interoperability**|Greater interoperability with other federal agencies and non-federal organizations that trust FPKI certificates. The FPKI helps reduce the need for issuing multiple credentials to users.|
-|**Elimination of Redundancy and Complexity**|The FPKI helps reduce the need for multiple trust agreements and duplicating associated trust agreement tasks. It also allows users to use a single credential rather than different credentials across Federal agency networks.|
-|**Increased Return on Investment**|The FPKI improves business processes and efficiencies.  For example, leveraging digital signing, encryption, and non-repudiation allows Federal agencies to migrate from manual processing to automated processing, especially around document processing/sharing, and communications across Federal agencies, and between Federal agencies and outside bodies.  In addition, Federal agencies can reduce operational costs and burdens (e.g., eliminate cost/burden of managing agency-issued credentials, reduce password service desk costs).
-|**The FPKI Approved Providers List**|By leveraging the [FPKI Approved Provider List](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000XRrC){:target="_blank"}, Federal agencies can be sure they are using Providers that meet all necessary Federal government standards, and can be sure of the level of assurance when relying on approved Providers' certificates.  This saves Federal agencies an enormous amount of time and effort, as well as reducing risk.|
+|**Increased security**|PKI credentials help reduce data breaches and trust violations inherent in weak credentials. Specifically, PKI closes security gaps of user identification and authentication, encryption of sensitive data, and data integrity. It also helps address issues identified in Government Accountability Office (GAO) reports.|
+|**Greater Compliance**|Using the Federal PKI enables compliance with several Executive Orders, laws, initiatives, and standards (e.g. eGov Act, OMB A-130). |
+|**Interoperability**|The Federal PKI helps reduce the need for issuing multiple identity and authentication credentials to government users, government partners, and government services.|
+|**Elimination of Redundancy and Complexity**|The Federal PKI helps reduce the need for multiple trust agreements and duplicating associated trust agreement tasks. It also allows users to use a single credential rather than different credentials across Federal agency networks.|
+|**Return on Investment**|The Federal PKI improves business processes and efficiencies.  For example, leveraging digital signing and encryption allows Federal agencies to migrate to automated processing of digital documents and communications across federal agencies, and between federal agencies and partners.  In addition, Federal agency systems and networks across government can reduce operational costs and burdens by eliminating the cost of performing duplicative identity proofing procedures and reduce password service desk costs.
 
+### What is in the Federal PKI guides?
+<!-- place holder -->
 
-### Where Can I Find the Policies and Standards?
+### Where can I find the Certificate Policies and Standards?
 
 |**Policy or Standard**|**Description**|
 |-----------|---------------|
