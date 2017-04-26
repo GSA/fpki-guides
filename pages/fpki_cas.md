@@ -20,7 +20,7 @@ The FPKI Trust Infrastructure CAs serve as the **Root** and **Trust Anchors** fo
   * State, Local, Tribal, Territorial, and International Governments
   * Commercial Partners  
 
-{% include alert-info.html content="A new effort is underway to establish Federal Government Root and Issuing CAs <!-- In this case, Root is not referring back to the idea that the FPKI Trust Infrastructure CAs are the "Root" as stated above?-->dedicated to Public Trust Transport Layer Security (TLS)/Secure Socket Layer (SSL) device certificates. <!--Suggest adding a lay-person's explanation of how Root and Issuing CAs in this case relate to P.T. TLS/SSL device certicates, what these devices are, and why this is important. -->Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort: https://github.com/uspki/policies" %}
+{% include alert-info.html content="A new effort is underway to establish Federal Government Root and Issuing CAs <!-- In this case, Root is not referring back to the idea that the FPKI Trust Infrastructure CAs are the "Root" as stated above?-->dedicated to Public Trust Transport Layer Security (TLS)/Secure Socket Layer (SSL) device certificates. <!--Suggest adding a lay-person's explanation of how Root and Issuing CAs in this case relate to P.T. TLS/SSL device certicates, what these devices are, and why this is important. -->Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort. https://github.com/uspki/policies" %}
 
 The three FPKI Trust Infrastructure CAs' detailed functions are as follows:
 
