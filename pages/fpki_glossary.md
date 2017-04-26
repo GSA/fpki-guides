@@ -11,7 +11,7 @@ Below is a list of terms that are frequently used in the FPKI community. Please 
 [A](#a) - [B](#b) - [C](#c) - [D](#d) - [E](#e) - [F](#f) - [H](#h) - [I](#i) - [K](#k) - [L](#l) - [M](#m) - [N](#n) - [O](#o) - [P](#p) - [R](#r) - [S](#s) - [T](#t) - [U](#u) - [Z](#z)
 
 ## A
-*[Back to top](#glossary)*
+[*Back to top*](#glossary)
 
 **Access**
 
