@@ -33,7 +33,7 @@ COMMON serves as the FPKI Trust Anchor for the Federal Government and supports [
 ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
 *Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
-Many commercial vendors include the COMMON Trust Anchor (i.e., root certificate) in their commercial-off-the-shelf (COTS) products' Trust Stores<!--product(s)? for what?  Give example. --> [trust stores](../truststores/). This enables Federal Government systems to trust FPKI person and device certificates issued by FPKI CAs. It is also possible for commercial vendors to manually add the COMMON Trust Anchor to <!-- Correct? -->their products' Trust Stores, if it isn't available in their product by default. <!-- By default = meaning? -->
+Many commercial vendors include the COMMON Trust Anchor (i.e., root certificate) in their commercial-off-the-shelf (COTS) products' [Trust Stores](../truststores/). This enables Federal Government systems to trust FPKI person and device certificates issued by FPKI CAs. It is also possible for commercial vendors to manually add the COMMON Trust Anchor to <!-- Correct? -->their products' Trust Stores, if it isn't available in their product by default. <!-- By default = meaning? -->
 
 {% include alert-warning.html content="For example, the COMMON Trust Anchor <!-- Inconsistent terms:  "COMMON root certificate" above vs. "COMMON Trust Anchor" here? -->is included in the Trust Stores for browsers such as Chrome and Internet Explorer. Other browsers, such as Mozilla, do not include the COMMON Trust Anchor by default. " %}
 
