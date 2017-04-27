@@ -24,37 +24,34 @@ PKI uses public key (PK) cryptography, which uses public and private key pairs t
 ## Why Use PKI?
 PKI is "high assurance," which means that **Relying Parties** <!-- Need to define "Relying Party." --> can have a high degree of confidence in its ability to secure data. For example, PKI provides much stronger authentication method than a userID and password. As a result, PKI helps organizations meet their security, business, and compliance needs.<!-- "compliance" relates to what? -->
 
-|Benefit| Description|
+|**Benefit**| **Description**|
 |-------|------------|
-|Enhanced Security|PKI helps to meet four core aspects of security: data integrity, confidentiality, identification and authentication, and non-repudiation.|
-|Increased Compliance|PKI helps organizations to comply with laws and mandates, such as Federal Information Security Modernization Act (FISMA), E-Gov Act, Government Paperwork Elimination Act (GPEA), and Health Insurance Portability and Accountability Act (HIPAA).|
-|Improved Business Capabilities|PKI helps to reduce costs/burdens and increase efficiency through electronic processes and capabilities.|
+|**Enhanced Security**|PKI helps to meet four core aspects of security: data integrity, confidentiality, identification and authentication, and non-repudiation.|
+|**Increased Compliance**|PKI helps organizations to comply with laws and mandates, such as Federal Information Security Modernization Act (FISMA), E-Gov Act, Government Paperwork Elimination Act (GPEA), and Health Insurance Portability and Accountability Act (HIPAA).|
+|**Improved Business Capabilities**|PKI helps to reduce costs/burdens and increase efficiency through electronic processes and capabilities.|
 
 ## What are the Components of PKI?
-The four components of PKI include **Certificate Authorities (CAs)**, **Registration Authorities**, **repositories**, and **archives**. <!-- How do components differ from the "system" described in "What is PKI" above? Only 4 components? -->There are two types of PKI users: **Certificate Holders** and **Relying Parties**. A fifth, optional component is the **Attribute Authority**. These components and related functions are described in detail in the following table.
+The four components of PKI include **Certificate Authorities (CAs)**, **Registration Authorities (RAs)**, **repositories**, and **archives**. <!-- How do components differ from the "system" described in "What is PKI" above? Only 4 components? -->There are two types of PKI users: **Certificate Holders** and **Relying Parties**. A fifth, optional component is the **Attribute Authority**. These components and related functions are described in detail in the following table.
 
-|PKI Component| Description|
+|**PKI Component/Function**| **Description**|
 |-------|------------|
-|Certificate Authority (CA)|Issues a public key certificate for each identity, confirming that the identity has the appropriate credentials.|
-|Registration Authority (RA)|Trusted by the CA to register or vouch for the identity of users to the CA.|
-|Repository|Store of active public key certificates and Certificate Revocation Lists for a CA system.|
-|Archive|Database of information to be used in settling future disputes. The business of the archive is to store and protect sufficient information to determine if a digital signature on an “old” document should be trusted.|
-|Public Key Certificate|For each identity, confirms that the identity has the appropriate credentials. A digital certificate typically includes the public key, information about the identity of the party holding the corresponding private key, the operational period for the certificate, and the CA’s own digital signature.|
-|Certificate Revocation List| List of certificates that have been revoked, and should no longer be relied upon.|
-|PKI Users|Organizations or individuals that use the PKI, but do not issue certificates. This includes the relying party who relies on the certificate to know, with certainty, the public key of another entity; and the certificate holder that is issued a certificate and can sign digital documents.|
+|**Certificate Authority (CA)**|Issues a public key certificate for each identity<!-- both person and device? -->, confirming that the identity has the appropriate credentials.|
+|**Registration Authority (RA)**|Trusted by the CA to register or verify the identity of a user <!-- senders and receivers? -->to the CA.|
+|**Repository**|Stores active public key certificates and **Certificate Revocation Lists (CRLs)** for a specific CA system.|
+|**Archive**|Stores and protects sufficient information to determine whether a digital signature on an “old” document should be trusted.|
+|**Public Key Certificate**|Confirms that an identity has the appropriate credentials. A digital certificate includes the public key, identity information about the owner of a corresponding private key, the certificate's operational period, and the CA’s own digital signature.|
+|**Certificate Revocation List (CRL)**|A list of revoked certificates that should not be relied upon.|
+|**PKI Users**|Organizations or people that use the PKI that but do not issue certificates. These users include the Relying Party, who relies on the certificate to know with certainty the public key of another entity, and the certificate holder of an issued certificate who can sign digital documents.|
 
 ## What is a Digital Signature?
-A digital signature is the electronic equivalent of a written signature. A digital signature can be used to provide assurance that the claimed signatory signed the information. In addition, a digital signature may be used to detect whether the information was modified after it was signed (i.e., to detect the integrity of the signed data). These assurances may be obtained whether the data was received in a transmission or retrieved from storage.
+A digital signature is the encrypted, electronic equivalent of a written signature. Whether data is transmitted or retrieved from storage, a digital signature provides assurance that the (claimed) signatory signed the information. In addition, a digital signature provides a way to detect whether data was modified <!-- By whom or what? -->(i.e., data integrity) after it was signed. It also provides a way to authenticate its origin and prevent its denial (i.e., non-repudiation) <!-- Check accuracy of previous statement. -->.
 
-The digital signature algorithm includes a signature generation process and a signature verification process. A signatory uses his/her private key to generate a digital signature on data. A recipient uses the corresponding public key to verify the authenticity of the signature. Each signatory has a public and private key and is the owner of that key pair.
-
-Digital signatures uses cryptographic transformation of data that, when properly implemented, provides a mechanism for verifying origin authentication, data integrity and signatory non-repudiation.
+A digital signature algorithm includes signature-generation and verification processes. A signatory uses a private key to digitally sign the data. (Each signatory owns both a public and private key pair.) A recipient uses a corresponding public key to verify that the signature is valid.
 
 ![Example of digital signature process]({{site.baseurl}}/img/PKI-image2.jpg){:style="float:center"}
 
 ## What is Encryption?
-Encryption allows a user to hide information from others. It uses a complex mathematical algorithm to convert readable information (plaintext) into a seemingly random set of characters (ciphertext) that is unreadable by those without a special key in which to decrypt it. Those that possess the key can decrypt the ciphertext to view the plaintext again.
-PKI-based encryption is a very strong way to meet information confidentiality and privacy objectives.
+Encryption allows information to be hidden from others by using complex, mathematical algorithms that convert the information (plaintext) into a seemingly random set of characters (ciphertext). Only those with a special key <!-- Special key is the private key or public-private key pair? --> will be able to decrypt it. PKI-based encryption meets information confidentiality and privacy policy objectives<!-- From where, what standards or policies>.
 
 ![Example of encryption process]({{site.baseurl}}/img/PKI-image3.jpg){:style="float:center"}
 
