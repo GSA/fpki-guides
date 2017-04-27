@@ -21,7 +21,7 @@ PKI uses public key (PK) cryptography, which uses public and private key pairs t
 
 ![Example of Public Key Infrastructure]({{site.baseurl}}/img/PKI-image1.jpg){:style="float:center"}
 
-## Why Use PKI?
+## Why use PKI?
 PKI is "high assurance," which means that **Relying Parties** <!-- Need to define "Relying Party." --> can have a high degree of confidence in its ability to secure data. For example, PKI provides much stronger authentication method than a userID and password. As a result, PKI helps organizations meet their security, business, and compliance needs.<!-- "compliance" relates to what? -->
 
 |**Benefit**| **Description**|
@@ -30,7 +30,7 @@ PKI is "high assurance," which means that **Relying Parties** <!-- Need to defin
 |**Increased Compliance**|PKI helps organizations to comply with laws and mandates, such as Federal Information Security Modernization Act (FISMA), E-Gov Act, Government Paperwork Elimination Act (GPEA), and Health Insurance Portability and Accountability Act (HIPAA).|
 |**Improved Business Capabilities**|PKI helps to reduce costs/burdens and increase efficiency through electronic processes and capabilities.|
 
-## What are the Components of PKI?
+## What are the components of PKI?
 The four components of PKI include **Certificate Authorities (CAs)**, **Registration Authorities (RAs)**, **repositories**, and **archives**. <!-- How do components differ from the "system" described in "What is PKI" above? Only 4 components? -->There are two types of PKI users: **Certificate Holders** and **Relying Parties**. A fifth, optional component is the **Attribute Authority**. These components and related functions are described in detail in the following table.
 
 |**PKI Component/Function**| **Description**|
@@ -51,18 +51,18 @@ A digital signature algorithm includes signature-generation and verification pro
 ![Example of digital signature process]({{site.baseurl}}/img/PKI-image2.jpg){:style="float:center"}
 
 ## What is Encryption?
-Encryption allows information to be hidden from others by using complex, mathematical algorithms that convert the information (plaintext) into a seemingly random set of characters (ciphertext). Only those with a special key <!-- Special key is the private key or public-private key pair? --> will be able to decrypt it. PKI-based encryption meets information confidentiality and privacy policy objectives<!-- From where, what standards or policies>.
+Encryption allows information to be hidden from others by converting it from plaintext into a seemingly random set of characters (ciphertext). Only those with a special key <!-- Special key is the private key or public-private key pair? -->are able to decrypt it. (**Note**: PKI-based encryption meets information confidentiality and privacy policy requirements.)<!-- From where, what standards or policies-->
 
 ![Example of encryption process]({{site.baseurl}}/img/PKI-image3.jpg){:style="float:center"}
 
-## What are the Different Types of Certificates and their Purpose?
-In PKI, digital certificates are assigned specific uses. Some of the different certificate types are:
+## What types of Certificates are there?
+The following table describes some digital certificate types and their purposes:
 
-|Certificate Type|Purpose|
+|**Certificate Type**|**Purpose**|
 |-------|------------|
-|Digital Signature Certificate|Used for digitally signing artifacts such as documents or messages.|
-|Digital Encryption Certificate|Used for encrypting artifacts such as documents or messages.|
-|Content Signing Certificate|Used for signing objects on cards such as PIV Cards.|
-|Authentication Certificate|Used to establish confidence of authenticity such as the validity of a person’s identity.|
-|Card Authentication Certificate|Used to authenticate a card (e.g., a PIV or PIV-I Card) for an interoperable environment.|
-|Key Management Certificate|Used to support key establishment and transport.|
+|**Digital Signature Certificate**|Used for digitally signing artifacts, such as documents or messages.|
+|**Digital Encryption Certificate**|Used for encrypting artifacts, such as documents or messages.|
+|**Content Signing Certificate**|Used for signing objects, such as PIV Cards.|
+|**Authentication Certificate**|Used to establish authenticity, such validating a person’s identity.|
+|**Card Authentication Certificate**|Used to authenticate a card (e.g., a PIV or PIV-I Card).|<!-- PIV-I is interoperable. Is PIV?-->
+|**Key Management Certificate**|Used for key establishment and transport.| <!-- to establish and transport keys? -->
