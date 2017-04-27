@@ -11,12 +11,12 @@ We want you to contribute and share lessons learned, and any information you thi
 
 The information on this page provides introductory information to answer the following questions:
 
-1. [What is the FPKI?](#what-is-the-fpki)
-2. [What is an example?](#example)
-2. [Why should agencies use the FPKI?](#why-should-agencies-use-the-fpki)
+1. [What is the FPKI?](#what-is-the-federal-pki)
+2. [What is an Example?](#what-is-an-example)
+2. [Why Should Agencies Use the FPKI?](#why-should-agencies-use-certificates-from-the-fpki)
 3. [Why is the FPKI Important?](#why-is-the-fpki-important)
-4. [What is in the FPKI Guides?](#what-is-in-the-fpki-guides)
-5. [Where can I find the policies and standards?](#where-can-i-find-the-policies-and-standards)
+5. [Where Can I Find the Policies and Standards?](#where-can-i-find-the-policies-and-standards)
+
 
 ### What is the Federal PKI?
 ![Image of the Federal PKI Certification Authorities](img/Intro-image3.png){:style="width:40%;float:right;"}
@@ -33,7 +33,8 @@ The participating Certification Authorities and the Policies, Processes, and Aud
 
 The FPKI includes US federal, State, Local, Tribal, Territorial, international governments, and commercial organizations who work together to provide services for the benefit of the federal government.
 
-### Example
+
+### What is an Example?
 To give a simple example, we'll explain the PIV certificates.  Although we have many other types of identity certificates, it's easiest to explain with **PIV** since you might have one:
 
 * Identity certificates are issued and digitally signed by a _Certificate Authority_.  
@@ -49,7 +50,7 @@ For the US Federal Government Executive branch agencies, there is one Root Certi
 *  [A graph of the federal public key infrastructure, including the business communities](https://fpki-graph.fpki-lab.gov/){:target="_blank"}
 
 
-### Why should Agencies use certificates from the FPKI?
+### Why Should Agencies Use Certificates from the FPKI?
 
 All Agencies should use the FPKI to enhance their security and trust for:
 
@@ -68,6 +69,7 @@ The FPKI provides four core technical capabilities:
 
 These four core capabilities are made possible by leveraging digital certificates, their standards, processes, and a mission-critical Trust Infrastructure to administer the certificates. The Trust Infrastructure provides the technical functionality for issuing, maintaining, and revoking the certificates.
 
+
 ### Why is the FPKI Important?
 
 The FPKI is important to Federal agencies as well as citizens, businesses, and organizations that need access to federal agency services and facilities.  It contains the Federal Government's Trust Infrastructure, and facilitates trust of PIV, PIV-I, and other government and non-government credentials.
@@ -84,12 +86,10 @@ The FPKI is important to Federal agencies as well as citizens, businesses, and o
 
 ### Where Can I Find the Policies and Standards?
 
-|**Policy or Standard**|**Description**|
-|-----------|---------------|
-|[Federal Common Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS){:target="_blank"}| Certificate Policy |
-|[Federal Bridge Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS){:target="_blank"}| Certificate Policy |
-|[X.509 Certificate and CRL Extensions Profile](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008Od8CAE){:target="_blank"}| |
-|[X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for PIV-I Cards](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008ObiCAE){:target="_blank"}||
-|[X.509 Certificate and CRL Extensions Profile for the Shared Service Provider (SSP) Program](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t0000000GmdcCAC){:target="_blank"}||
-|[OMB 2016 Circular A-130](https://www.whitehouse.gov/sites/default/files/omb/assets/OMB/circulars/a130/a130revised.pdf){:target="_blank"}||
-|[OMB Memorandum M-05-05](https://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2005/m05-05.pdf){:target="_blank"}||
+* [Federal Common Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS){:target="_blank"} is the certificate policy for the Federal Root Certificate Authority.
+* [Federal Bridge Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS){:target="_blank"} is the certificate policy for the Federal Bridge Certificate Authority.
+* [X.509 Certificate and CRL Extensions Profile](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008Od8CAE){:target="_blank"} specifies certificate and certificate revocation list (CRL) extension profiles for FPKI infrastructure systems.
+* [X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for PIV-I Cards](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008ObiCAE){:target="_blank"} specifies certificate and certificate revocation list (CRL) extension profiles for use with Personal Identity Verification Interoperable (PIV-I) cards.
+* [X.509 Certificate and CRL Extensions Profile for the Shared Service Provider (SSP) Program](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t0000000GmdcCAC){:target="_blank"} specifies certificate and certificate revocation list (CRL) extension profiles for certificates and CRLs issued under COMMON.
+* [OMB 2016 Circular A-130](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf){:target="_blank"} establishes general policy for the planning, budgeting, governance, acquisition, and management of Federal information, personnel, equipment, funds, IT resources and supporting infrastructure and services.
+* [OMB Memorandum M-05-05](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2005/m05-05.pdf){:target="_blank"}  requires the use of an SSP to mitigate the risk of commercial managed services for public key infrastructure (PKI) and electronic signatures.
