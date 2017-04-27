@@ -22,7 +22,7 @@ PKI uses public key (PK) cryptography.  PK cryptography uses public and private 
 ![Example of Public Key Infrastructure]({{site.baseurl}}/img/PKI-image1.jpg){:style="float:center"}
 
 ## Why use PKI?
-PKI is "high assurance," which means that **Relying Parties** <!-- Need to define "Relying Party." --> can have a high degree of confidence in its ability to secure data. For example, PKI provides much stronger authentication method than a userID and password. As a result, PKI helps organizations meet their security, business, and compliance needs.<!-- "compliance" relates to what? -->
+PKI is "high assurance," which means that **Relying Parties** <!-- Need to define "Relying Party." --> can have a high degree of confidence in its ability to secure data. For example, PKI provides much stronger authentication method than a userID and password. As a result, PKI helps organizations meet their security, business, and compliance needs.<!-- "compliance" relates to what? --> The following table describes some of the benefits of using PKI.
 
 |**Benefit**| **Description**|
 |-------|------------|
@@ -31,7 +31,7 @@ PKI is "high assurance," which means that **Relying Parties** <!-- Need to defin
 |**Improved Business Capabilities**|PKI helps to reduce costs/burdens and increase efficiency through electronic processes and capabilities.|
 
 ## What are the components of PKI?
-The four components of PKI include **Certificate Authorities (CAs)**, **Registration Authorities (RAs)**, **repositories**, and **archives**. <!-- How do components differ from the "system" described in "What is PKI" above? Only 4 components? -->There are two types of PKI users: **Certificate Holders** and **Relying Parties**. A fifth, optional component is the **Attribute Authority**. These components and related functions are described in detail in the following table.
+The four components of PKI include **Certificate Authorities (CAs)**, **Registration Authorities (RAs)**, **repositories**, and **archives**. <!-- How do components differ from the "system" described in "What is PKI" above? Only 4 components? -->There are two types of PKI users: **Certificate Holders** and **Relying Parties**. A fifth, optional component is the **Attribute Authority**. The following table describes these components and related functions in detail.
 
 |**PKI Component/Function**| **Description**|
 |-------|------------|
