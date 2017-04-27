@@ -6,12 +6,12 @@ permalink: /pki/
 
 The topics contained in these Federal Public Key Infrastructure (FPKI) Guides will help program managers and engineers understand both Public Key Infrastructure (PKI) and FPKI--what they are and how they work.
 
-* [What is Public Key Infrastructure?](#what-is-public-key-infrastructure?)
-* [Why Use PKI?](#why-use-pki?)
-* [What are the Components of a PKI?](#what-are-the-components-of-a-pki?)
-* [What is a Digital Signature?](#what-is-a-digital-signature?)
-* [What is Encryption?](#what-is-encryption?)
-* [What are the Different Types of Certificates and their Purpose?](#What-are-the-different-types-of-certificates-and-their-purpose?)
+* [What is Public Key Infrastructure?](#what-is-public-key-infrastructure)
+* [Why Use PKI?](#why-use-pki)
+* [What are the Components of a PKI?](#what-are-the-components-of-a-pki)
+* [What is a Digital Signature?](#what-is-a-digital-signature)
+* [What is Encryption?](#what-is-encryption)
+* [What are the Different Types of Certificates and their Purpose?](#what-are-the-different-types-of-certificates-and-their-purpose)
 
 
 ## What is Public Key Infrastructure (PKI)?
