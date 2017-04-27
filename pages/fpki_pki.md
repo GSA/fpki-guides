@@ -4,7 +4,7 @@ title: About Public Key Infrastructure
 permalink: /pki/
 ---
 
-Public Key Infrastructure topics are to help program managers and engineers understand what a Public Key Infrastructure is, and what the Federal Public Key Infrastructure contains.
+The topics contained in these Federal Public Key Infrastructure (FPKI) Guides will help program managers and engineers understand both Public Key Infrastructure (PKI) and FPKI--what they are and how they work.
 
 * [What is Public Key Infrastructure?](#what-is-public-key-infrastructure?)
 * [Why Use PKI?](#why-use-pki?)
@@ -14,64 +14,55 @@ Public Key Infrastructure topics are to help program managers and engineers unde
 * [What are the Different Types of Certificates and their Purpose?](#What-are-the-different-types-of-certificates-and-their-purpose?)
 
 
-## What is Public Key Infrastructure?
-Public Key Infrastructure (PKI) is a comprehensive system that provides public-key encryption and digital signature services. It is implemented as a set of policies, processes, server platforms, software and workstations used for administering public key certificates and public-private key pairs, including the ability to issue, maintain, and revoke public key certificates.
+## What is Public Key Infrastructure (PKI)?
+PKI provides for public key encryption of data and digital signature services. <!-- This paragraph needs a more complete, concise definion of PKI.  The most important factor appears to be "encryption" since it appears first...? Will a program manager understand what "digital signature services" entail? --> It is implemented through specific policies, processes, server platforms, software, and workstations. This "system" is used to administer public key certificates and public-private "key pairs." It also includes services that issue, maintain, and revoke public key certificates.
 
-PKI leverages public key (PK) cryptography, which is a branch of mathematics that uses public and private key pairs to encrypt and decrypt data. Public keys may be disseminated widely. The corresponding private key is known only to the owner.
-
-A sender uses a private key to transform unprotected information (plaintext) into coded text  (ciphertext). The receiver uses a corresponding private key to either (a) transform the ciphertext back into
-plaintext, (b) verify the sender’s identity, (c) verify the data’s integrity, or some combination.
+PKI uses public key (PK) cryptography.  PK cryptography uses public and private key pairs to encrypt and decrypt data. <!-- This paragraph seems to be about cryptograpy but digresses into public and private key discussion. -->Public keys may be disseminated widely; however, a private key is known only to the owner (senders and receivers). A sender uses a private key to encrypt unprotected information (i.e., transform plaintext to ciphertext). A receiver uses a corresponding private key to either: (a) transform the ciphertext back into plaintext, (b) verify the sender’s identity, or (c) verify the data’s integrity, or some combination of these options. <!-- Doesn't say how the data is encrypted, decrypted, etc. -->
 
 ![Example of Public Key Infrastructure]({{site.baseurl}}/img/PKI-image1.jpg){:style="float:center"}
 
+## Why use PKI?
+PKI is "high assurance," which means that **Relying Parties** <!-- Need to define "Relying Party." --> can have a high degree of confidence in its ability to secure data. For example, PKI provides much stronger authentication method than a userID and password. As a result, PKI helps organizations meet their security, business, and compliance needs.<!-- "compliance" relates to what? --> The following table describes some of the benefits of using PKI.
 
-## Why Use PKI?
-PKI is high assurance - relying parties have a high degree of confidence in its use and results.  For example, PKI provides a much stronger authentication method than mechanisms such as userID/password.  The high confidence is because of PKI's mathematical underpinning, which compromise extremely unlikely.
-
-Thus, PKI is very useful in helping organizations meet their security, business, and compliance objectives.
-
-|Benefit| Description|
+|**Benefit**| **Description**|
 |-------|------------|
-|Enhanced Security|Helps meet the four core elements of security: data integrity, confidentiality, identification and authentication, and non-repudiation.|
-|Increased Compliance|Helps meet laws and mandates such as FISMA, E-Gov Act, Government Paperwork Elimination Act (GPEA), and Health Insurance Portability and Accountability Act (HIPAA).|
-|Improved Business Capabilities|Helps reduce costs/burdens and increase efficiencies by facilitating transition to electronic processes and capabilities.|
+|**Enhanced Security**|PKI helps to meet four core aspects of security: data integrity, confidentiality, identification and authentication, and non-repudiation.|
+|**Increased Compliance**|PKI helps organizations to comply with laws and mandates, such as Federal Information Security Modernization Act (FISMA), E-Gov Act, Government Paperwork Elimination Act (GPEA), and Health Insurance Portability and Accountability Act (HIPAA).|
+|**Improved Business Capabilities**|PKI helps to reduce costs/burdens and increase efficiency through electronic processes and capabilities.|
 
-## What are the Components of a PKI? ###
-Functional elements of a public key infrastructure include certification authorities, registration authorities, repositories, and archives. The users of the PKI come in two flavors: certificate holders and relying parties. An attribute authority is an optional component.
+## What are the components of PKI?
+The four components of PKI include **Certificate Authorities (CAs)**, **Registration Authorities (RAs)**, **repositories**, and **archives**. <!-- How do components differ from the "system" described in "What is PKI" above? Only 4 components? -->There are two types of PKI users: **Certificate Holders** and **Relying Parties**. A fifth, optional component is the **Attribute Authority**. The following table describes these components and related functions in detail.
 
-|PKI Component| Description|
+|**PKI Component/Function**| **Description**|
 |-------|------------|
-|Certification Authority (CA)|Issues a public key certificate for each identity, confirming that the identity has the appropriate credentials.|
-|Registration Authority (RA)|Trusted by the CA to register or vouch for the identity of users to the CA.|
-|Repository|Store of active public key certificates and Certificate Revocation Lists for a CA system.|
-|Archive|Database of information to be used in settling future disputes. The business of the archive is to store and protect sufficient information to determine if a digital signature on an “old” document should be trusted.|
-|Public Key Certificate|For each identity, confirms that the identity has the appropriate credentials. A digital certificate typically includes the public key, information about the identity of the party holding the corresponding private key, the operational period for the certificate, and the CA’s own digital signature.|
-|Certificate Revocation List| List of certificates that have been revoked, and should no longer be relied upon.|
-|PKI Users|Organizations or individuals that use the PKI, but do not issue certificates. This includes the relying party who relies on the certificate to know, with certainty, the public key of another entity; and the certificate holder that is issued a certificate and can sign digital documents.|
+|**Certificate Authority (CA)**|Issues a public key certificate for each identity<!-- both person and device? -->, confirming that the identity has the appropriate credentials.|
+|**Registration Authority (RA)**|Trusted by the CA to register or verify the identity of a user <!-- senders and receivers? -->to the CA.|
+|**Repository**|Stores active public key certificates and **Certificate Revocation Lists (CRLs)** for a specific CA system.|
+|**Archive**|Stores and protects sufficient information to determine whether a digital signature on an “old” document should be trusted.|
+|**Public Key Certificate**|Confirms that an identity has the appropriate credentials. A digital certificate includes the public key, identity information about the owner of a corresponding private key, the certificate's operational period, and the CA’s own digital signature.|
+|**Certificate Revocation List (CRL)**|A list of revoked certificates that should not be relied upon.|
+|**PKI Users**|Organizations or people that use the PKI that but do not issue certificates. These users include the Relying Party, who relies on the certificate to know with certainty the public key of another entity, and the certificate holder of an issued certificate who can sign digital documents.|
 
 ## What is a Digital Signature?
-A digital signature is the electronic equivalent of a written signature. A digital signature can be used to provide assurance that the claimed signatory signed the information. In addition, a digital signature may be used to detect whether the information was modified after it was signed (i.e., to detect the integrity of the signed data). These assurances may be obtained whether the data was received in a transmission or retrieved from storage.
+A digital signature is the encrypted, electronic equivalent of a written signature. Whether data is transmitted or retrieved from storage, a digital signature provides assurance that the (claimed) signatory signed the information. In addition, a digital signature provides a way to detect whether data was modified <!-- By whom or what? -->(i.e., data integrity) after it was signed. It also provides a way to authenticate its origin and prevent its denial (i.e., non-repudiation) <!-- Check accuracy of previous statement. -->.
 
-The digital signature algorithm includes a signature generation process and a signature verification process. A signatory uses his/her private key to generate a digital signature on data. A recipient uses the corresponding public key to verify the authenticity of the signature. Each signatory has a public and private key and is the owner of that key pair.
-
-Digital signatures uses cryptographic transformation of data that, when properly implemented, provides a mechanism for verifying origin authentication, data integrity and signatory non-repudiation.
+A digital signature algorithm includes signature-generation and verification processes. A signatory uses a private key to digitally sign the data. (Each signatory owns both a public and private key pair.) A recipient uses a corresponding public key to verify that the signature is valid.
 
 ![Example of digital signature process]({{site.baseurl}}/img/PKI-image2.jpg){:style="float:center"}
 
 ## What is Encryption?
-Encryption allows a user to hide information from others. It uses a complex mathematical algorithm to convert readable information (plaintext) into a seemingly random set of characters (ciphertext) that is unreadable by those without a special key in which to decrypt it. Those that possess the key can decrypt the ciphertext to view the plaintext again.
-PKI-based encryption is a very strong way to meet information confidentiality and privacy objectives.
+Encryption allows information to be hidden from others by converting it from plaintext into a seemingly random set of characters (ciphertext). Only those with a special key <!-- Special key is the private key or public-private key pair? -->are able to decrypt it. (**Note**: PKI-based encryption meets information confidentiality and privacy policy requirements.)<!-- From where, what standards or policies-->
 
 ![Example of encryption process]({{site.baseurl}}/img/PKI-image3.jpg){:style="float:center"}
 
-## What are the Different Types of Certificates and their Purpose?
-In PKI, digital certificates are assigned specific uses. Some of the different certificate types are:
+## What types of Certificates are there?
+The following table describes some digital certificate types and their purposes:
 
-|Certificate Type|Purpose|
+|**Certificate Type**|**Purpose**|
 |-------|------------|
-|Digital Signature Certificate|Used for digitally signing artifacts such as documents or messages.|
-|Digital Encryption Certificate|Used for encrypting artifacts such as documents or messages.|
-|Content Signing Certificate|Used for signing objects on cards such as PIV Cards.|
-|Authentication Certificate|Used to establish confidence of authenticity such as the validity of a person’s identity.|
-|Card Authentication Certificate|Used to authenticate a card (e.g., a PIV or PIV-I Card) for an interoperable environment.|
-|Key Management Certificate|Used to support key establishment and transport.|
+|**Digital Signature Certificate**|Used for digitally signing artifacts, such as documents or messages.|
+|**Digital Encryption Certificate**|Used for encrypting artifacts, such as documents or messages.|
+|**Content Signing Certificate**|Used for signing objects, such as PIV Cards.|
+|**Authentication Certificate**|Used to establish authenticity, such validating a person’s identity.|
+|**Card Authentication Certificate**|Used to authenticate a card (e.g., a PIV or PIV-I Card).|<!-- PIV-I is interoperable. Is PIV?-->
+|**Key Management Certificate**|Used for key establishment and transport.| <!-- to establish and transport keys? -->
