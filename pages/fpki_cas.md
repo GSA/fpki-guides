@@ -1,37 +1,37 @@
 ---
 layout: default
-title: Certificate Authorities
+title: Certification Authorities
 permalink: /ca/
 ---
 
-A **_certificate authority_** is an entity (system) that issues digital certificates.  These digital certificates are based on _cryptography_, and follow the X.509 standards defined for information security.
+A **_certification authority_** is an entity (system) that issues digital certificates.  These digital certificates are based on _cryptography_, and follow the X.509 standards defined for information security.
 
-The Federal PKI has three certificate authorities (CAs) operated by the FPKI Management Authority (FPKIMA). These three certificate authorities serve as the root and anchors for the other _intermediate_ and _issuing_ certificate authorities operated by US Federal agencies, State, Local, Tribal, Territorial, international and commercial partners.  These three main CAs are referred to as FPKI Trust Infrastructure CAs.
+The Federal PKI has three certification authorities (CAs) operated by the FPKI Management Authority (FPKIMA). These three certificate authorities serve as the root and anchors for the other _intermediate_ and _issuing_ certificate authorities operated by US Federal agencies, State, Local, Tribal, Territorial, international and commercial partners.  These three main CAs are referred to as FPKI Trust Infrastructure CAs.
 ![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
 
 * [Federal Common Policy Certification Authority (COMMON)](#federal-common-policy-certification-authority-common)
 * [Federal Bridge Certification Authority (FBCA)](#federal-bridge-certification-authority-fbca)
 * [SHA-1 Federal Root Certification Authority (_SHA1 FRCA_)](#sha-1-federal-root-certification-authority-sha1-frca)
 
-The FPKI Management Authority is a program office established by the Federal government to manage, operate and maintain the three certificate authorities that serve as the root and anchors for other intermediate and issuing certification authorities.
+The FPKI Management Authority is a program office established by the Federal government to manage, operate and maintain the three certification authorities that serve as the root and anchors for other intermediate and issuing certification authorities.
 
 Any CA in the FPKI can be referred to as a _FPKI CA_, but only these three operated by the FPKIMA are FPKI Trust Infrastructure CAs and they are the highest level CAs in the hierarchy.
 
 These next sections describe the three Trusted Infrastructure CAs.
 
-{% include alert-info.html content="A new effort is underway to establish a Federal root and issuing certificate authorities dedicated to Public Trust TLS/SSL device certificates. Follow or contribute to the development of the new Federal certificate policy for this Public Trust effort: https://github.com/uspki/policies" %}
+{% include alert-info.html content="A new effort is underway to establish a Federal root and issuing certification authorities dedicated to Public Trust TLS/SSL device certificates. Follow or contribute to the development of the new Federal certificate policy for this Public Trust effort: https://github.com/uspki/policies" %}
 
 ### Federal Common Policy Certification Authority (_COMMON_) ####
 
 ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
 *Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
-For the US Federal Government agencies, there is one Root Certificate Authority named Federal Common Policy Certification Authority (COMMON).
+For the US Federal Government agencies, there is one Root Certification Authority named Federal Common Policy Certification Authority (COMMON).
 
 COMMON serves as the Federal PKI (FPKI) trust anchor for the Federal Government in support of [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. COMMON was designed so any certificate issued by any FPKI CA can validate a certificate path to a single Root CA. See the example to the right where a person certificate, issued by a FPKI CA, can validate its certificate path back to COMMON.
 
 The COMMON root certificate is distributed by commercial vendors who include it in their commercial off the shelf product [trust stores](../truststores/).  This enables Federal Government systems to be able to trust FPKI person and device certificates issued by FPKI CAs. It is also possible to manually add the Federal Common Policy CA root certificate into trust stores, if it is not available by default.
 
-{% include alert-warning.html content="Currently, the Federal Common Policy Certificate Authority is included in some Trust Stores by default (i.e. Chrome and Internet Explorer browsers include the COMMON trust anchor). Other browsers, such as Mozilla, do not include the Federal Common Policy Certification Authority by default. " %}
+{% include alert-warning.html content="Currently, the Federal Common Policy Certification Authority is included in some Trust Stores by default (i.e. Chrome and Internet Explorer browsers include the COMMON trust anchor). Other browsers, such as Mozilla, do not include the Federal Common Policy Certification Authority by default. " %}
 
 ### Federal Bridge Certification Authority (_FBCA_)
 
