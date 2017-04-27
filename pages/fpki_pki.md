@@ -4,7 +4,7 @@ title: About Public Key Infrastructure
 permalink: /pki/
 ---
 
-These Public Key Infrastructure (PKI) topics are to help program managers and engineers understand what is PKI and what is the Federal Public Key Infrastructure (FPKI).
+The topics contained in these Federal Public Key Infrastructure (FPKI) Guides will help program managers and engineers understand both Public Key Infrastructure (PKI) and FPKI--what they are and how they work.
 
 * [What is Public Key Infrastructure?](#what-is-public-key-infrastructure?)
 * [Why Use PKI?](#why-use-pki?)
@@ -15,7 +15,7 @@ These Public Key Infrastructure (PKI) topics are to help program managers and en
 
 
 ## What is Public Key Infrastructure (PKI)?
-PKI provides for public key encryption and digital signature services. <!-- This paragraph needs a more complete, concise definion of PKI.  The most important factor appears to be "encryption" since it appears first...? Will a program manager understand what "digital signature services" entail? --> It is implemented through specific policies, processes, server platforms, software, and workstations. This "system" is used to administer public key certificates and public-private "key pairs" and includes services that issue, maintain, and revoke public key certificates.
+PKI provides for public key encryption of data and digital signature services. <!-- This paragraph needs a more complete, concise definion of PKI.  The most important factor appears to be "encryption" since it appears first...? Will a program manager understand what "digital signature services" entail? --> It is implemented through specific policies, processes, server platforms, software, and workstations. This "system" is used to administer public key certificates and public-private "key pairs" and includes services that issue, maintain, and revoke public key certificates.
 
 PKI uses public key (PK) cryptography, which uses public and private key pairs to encrypt and decrypt data. Public keys may be disseminated widely; however, a private key is known only to the owner (senders and receivers). A sender uses a private key to encrypt unprotected information (i.e., transform plaintext to ciphertext). A receiver uses a corresponding private key to either: (a) transform the ciphertext back into plaintext, (b) verify the sender’s identity, or (c) verify the data’s integrity, or some combination of these options. <!-- Doesn't say how the data is encrypted, decrypted, etc. -->
 
@@ -26,16 +26,16 @@ PKI is "high assurance," which means that **Relying Parties** <!-- Need to defin
 
 |Benefit| Description|
 |-------|------------|
-|Enhanced Security|Helps meet the four core elements of security: data integrity, confidentiality, identification and authentication, and non-repudiation.|
-|Increased Compliance|Helps meet laws and mandates such as FISMA, E-Gov Act, Government Paperwork Elimination Act (GPEA), and Health Insurance Portability and Accountability Act (HIPAA).|
-|Improved Business Capabilities|Helps reduce costs/burdens and increase efficiencies by facilitating transition to electronic processes and capabilities.|
+|Enhanced Security|PKI helps to meet four core aspects of security: data integrity, confidentiality, identification and authentication, and non-repudiation.|
+|Increased Compliance|PKI helps organizations to comply with laws and mandates, such as Federal Information Security Modernization Act (FISMA), E-Gov Act, Government Paperwork Elimination Act (GPEA), and Health Insurance Portability and Accountability Act (HIPAA).|
+|Improved Business Capabilities|PKI helps to reduce costs/burdens and increase efficiency through electronic processes and capabilities.|
 
-## What are the Components of a PKI? ###
-Functional elements of a public key infrastructure include certification authorities, registration authorities, repositories, and archives. The users of the PKI come in two flavors: certificate holders and relying parties. An attribute authority is an optional component.
+## What are the Components of PKI?
+The four components of PKI include **Certificate Authorities (CAs)**, **Registration Authorities**, **repositories**, and **archives**. <!-- How do components differ from the "system" described in "What is PKI" above? Only 4 components? -->There are two types of PKI users: **Certificate Holders** and **Relying Parties**. A fifth, optional component is the **Attribute Authority**. These components and related functions are described in detail in the following table.
 
 |PKI Component| Description|
 |-------|------------|
-|Certification Authority (CA)|Issues a public key certificate for each identity, confirming that the identity has the appropriate credentials.|
+|Certificate Authority (CA)|Issues a public key certificate for each identity, confirming that the identity has the appropriate credentials.|
 |Registration Authority (RA)|Trusted by the CA to register or vouch for the identity of users to the CA.|
 |Repository|Store of active public key certificates and Certificate Revocation Lists for a CA system.|
 |Archive|Database of information to be used in settling future disputes. The business of the archive is to store and protect sufficient information to determine if a digital signature on an “old” document should be trusted.|
