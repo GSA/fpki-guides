@@ -17,7 +17,7 @@ These four main CAs are referred to as Federal PKI Trust Infrastructure CAs.
 * [Federal Common Policy Certification Authority](#federal-common-policy-certification-authority)
 * [Federal Bridge Certification Authority 2013](#federal-bridge-certification-authority)
 * [Federal Bridge Certification Authority 2016](#federal-bridge-certification-authority)
-* [SHA-1 Federal Root Certification Authority](#sha-1-federal-root-certification-authority)
+* [SHA-1 Federal Root Certification Authority G2](#sha-1-federal-root-certification-authority)
 
 These Federal PKI Trust Infrastructure CAs serve as the _root_ and _trust anchors_ for the _intermediate_ and _issuing_ certification authorities operated by:  
 
@@ -60,7 +60,7 @@ The CAs signed by these Federal Bridge CAs are _cross-certified_.  These CAs hav
 
 ### SHA-1 Federal Root Certification Authority
 
-The SHA-1 Federal Root CA (SHA-1 FRCA) is a Certification Authority supporting Federal entities that still have certificates that have the deprecated SHA-1 signature hash algorithm. The SHA-1 Federal Root CA was created and maintained to facilitate backwards interoperability for those legacy systems unable to fully transition to SHA-256 and to support the migrations over time.
+The SHA-1 Federal Root CA G2 (SHA-1 FRCA) is a Certification Authority supporting Federal entities that still have certificates that have the deprecated SHA-1 signature hash algorithm. The SHA-1 Federal Root CA was created and maintained to facilitate backwards interoperability for those legacy systems unable to fully transition to SHA-256 and to support the migrations over time.
 
 The SHA-1 hash algorithm has been deemed to be not secure enough for today’s standards.  Federal organizations should no longer be using certificates with this hash.  
 

@@ -60,7 +60,7 @@ navigation:
   url: ca
   internal: true
   coll: false
-- text: CRLs and Certificates
+- text: Certificates and CRLs
   url: crls
   internal: true
   coll: false
