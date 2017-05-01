@@ -4,43 +4,50 @@ title: Trust Stores
 permalink: /truststores/
 ---
 
-This guide provides a high-level overview of what application trust stores are, a list of commonly used application trust stores, and where to find them.
+This **Trust Stores** guide provides a high-level overview of what **Trust Stores** are, a list of commonly used application trust stores, and where to find them.
 
-## What is an Application Trust Store?
-There are millions of identity (certificates issued to People) and device certificates in the world currently, and the list constantly changes as some certificates are revoked and others are issued - far too many for your computer to maintain an up to date list.  
 
-Instead, applications keeps a list of **root** certificates which it trusts to issue certificates.  When you are presented with an identity or device certificate from a PIV credential, website, email, or some other digital item, your system or application will check to see if the certificate chains to one of the trusted **roots** in the application trust store. The trust store may maintain an indepenet list of trusted root certificates which comply with the individual trust store requirements. 
+## What is a Trust Store?
+There are millions of identity (certificates issued to people) and device certificates issued in the world today, and the list constantly changes as some certificates are revoked and others are issued--far too many for your computer to maintain an up-to-date list.  
 
-This list of trusted root certificates are contained within what is known as a **Trust Store** in either an application or operating system. 
+Instead, each application and the operating system (OS) on your computer keep a list of **trusted root certificates** in a **Trust Store** within the specific application or the OS. When your computer is presented with an identity or device certificate from a PIV credential, website, e-mail, or other digital item, either an application or the OS will verify whether or not the certificate relates ("chains") to one of the trusted root certificates in the Trust Store.  
 
-## What are commonly used Application Trust Stores?
-Operating systems, browsers, and some commercial software use trust stores to verify whether the certificate you are being presented should be trusted.  
 
-There are four trust stores you will most often interact with.
+## What are the most commonly used Trust Stores?
+The most commonly used Trust Stores are kept by applications, OSs, and browsers. <!-- Best to refer to these in same order as before to reduce confusion.  Browsers are not mentioned or discussed in the previous section --> <!-- Second sentence here (deleted) was essentially a repeat of 3rd sentence above. -->  
 
-Application Trust Store|Includes COMMON?|Trust Store Manager|Platforms serviced|Program Information Location
+
+## The most common Trust Stores belong to what vendors? 
+
+Trust Store|Includes COMMON?|Trust Store Manager|Platforms Serviced|Program Information Location
 ---|---|---|---|---
-Microsoft Root Certificate Program|Yes|Microsoft Management Console|Windows OS, Internet Explorer Browser, Outlook|http://aka.ms/RootCert
-Apple Root Certificate Program|Yes|Keychain Access utility|iOS, WatchOS, OS X, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
-Mozilla Network Security Services (NSS)|No (application in progress)|Browser Trust Store|Firefox, Thunderbird, Linux Operating Systems|https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/
-Adobe Approved Trust List|Yes|Application Trust Store|Adobe Acrobat|https://www.apple.com/certificateauthority/ca_program.html
+Microsoft Root Certificate Program|Yes|Microsoft Management Console|Windows OS, Internet Explorer, Outlook|http://aka.ms/RootCert
+Apple Root Certificate Program|Yes|Keychain Access Utility|iOS, WatchOS, OS X, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
+Mozilla Network Security Services (NSS)|No (application in progress)|Browser Trust Store|Firefox, Thunderbird, Linux OSs|https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/
+Adobe Approved Trust List|Yes|Application Trust Store|Adobe Acrobat|https://helpx.adobe.com/acrobat/kb/approved-trust-list2.html <!--Chunde attempting to find the correct URL for Adobe.  Apple.com is obviously a mistake.-->
 Java Root Certificate Program|No (pending application)|Java Applet|Java Distributions|http://www.oracle.com/technetwork/java/javase/javasecarootcertsprogram-1876540.html
 Google|No|Google Admin Console|Chrome Browser, Android, and ChromiumOS|https://www.chromium.org/Home/chromium-security/root-ca-policy
-Opera|No longer operates its own program and relies upon Mozilla.
+Opera|No longer operates its own program; relies on Mozilla
 
->**Note:** Google Chrome uses the underlying trust library of the operating system on Windows or Apple OS X systems.  Linux-based systems distribute the Mozilla NSS Library which may be modified by each version of Linux. Google is working on developing its own program similar to Mozilla.
+>**Note:** Google Chrome uses the underlying Trust Store for the Windows OS or Apple OS X.  Linux-based systems distribute the Mozilla NSS Library, which each Linux version may modify. Google is currently developing its own program similar to Mozilla's NSS Library.
 
-## How do I manage a Trust Store?
 
-TODO:  Add the info from the trust store guide from FPKI
+<!-- ## How do I manage a Trust Store?  *Need to clarify audience*
 
-## How do I check which FPKI certificate policies are trusted by Adobe?
+Managing a Trust Store must be done via the command line or the Graphical User Interface (GUI) software tools.  With the GUI tools, you can  view, add, and delete CA certificates. **It is vital to carefully manage the CA certificates in a Trust Store**. To ensure careful management of CA certificates, you should keep only *needed* CA certificates and delete *unwanted* CA certificates. A *needed*, but missing, CA certificate could result in a Denial of Service (DoS), and the presence of an *unwanted* CA certificate could result in an attacker successfully gaining authorized access. -->
 
-You can read it in Acrobat by opening the Preferences > Signatures > Identities & Trusted Certificates > Trusted Certificates.
-Then in the list of certificates you choose the one from Federal Common Policy CA and select “Certificate details”.
-In the Policies tab you can find “Policy Restrictions” with the comma separated list of OIDs in Certificate Policies.
+
+## How do I find out which FPKI certificate policies are trusted by Adobe? <!-- Adobe is highlighted because Adobe is the most common vendor related to FPKI certificates?  If so, we should state that.  I captured the extra steps using Adobe Reader DC. -->
+
+  1. Go to Adobe Acrobat.  Go to **Edit > Preferences > Signatures > Identities & Trusted Certificates**.
+  2. Click on **Trusted Certificates** from the left-hand sidebar.  
+  3. Then, click on **Federal Common Policy CA**, and click on the **Certificate Details** tab.
+  3. In the **Certificate Viewer** window, click on the **Policies** tab, and you will see a **Policy Restrictions** area. 
+  4. In the **Certificate Policies** box, you will see a comma-separated list of Object Identifiers (OIDs). <!-- Is an OID = a "FPKI certificate policy," as mentioned in Heading above? -->
  
-This is the current list for Federal **COMMON** Policy CA:
+
+This is the current list for the **Federal COMMON Policy CA**:
+
 
 Common Policy                                 | Common OID                | Certificate Use                                                                   |
 |-----------------------------------------------|---------------------------|-----------------------------------------------------------------------------------|
@@ -50,21 +57,88 @@ Common Policy                                 | Common OID    
 | PIV-I Hardware                                | 2.16.840.1.101.3.2.1.3.18 | PIV-I                                                                             |
 | SHA-1 Hardware                                | 2.16.840.1.101.3.2.1.3.24 | CAC and SHA-1 Medium Hardware Tokens through SHA-1 Federal Root CA                |
 
->**Note:** Commercial Best Practice (CBP) are issued against the same policy requirements as Federal Bridge Medium Hardware except the trusted roles who issue the certificates may not be U.S. Citizens.
+>**Note:** Commercial Best Practices (CBPs) are issued against the same policy requirements as **Federal Bridge Medium Hardware**, except the trusted roles who issue the certificates may not be U.S. citizens.
 
-## How do I set dynamic path validation in Windows operating systems?
 
-Dynamic path validation differs from static in that the certificate validation software will build the
-path based on the AIA entry in the certificate. If the FCPCA Trust Anchor is installed, rather than
-importing all intermediate CA certificates, enable dynamic path validation in Microsoft Windows
-and let CAPI discover and validate intermediate certificates that are required to validate a
-certificate.
+## How do I set dynamic path validation in Windows operating systems? <!-- We should explain what dynamic path validation is. -->
 
-To set dynamic path validation, there is a registry setting.  All registry settings for managed government computers should use group policy objects or automated configuration management tools available in your agency.
+With dynamic path validation (as opposed to static path validation), the certificate validation software will build the path based on the Authority Information Access (AIA) entry in the certificate.  For Microsoft Windows OSs, do this: 
 
-* Under the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\CertDllCreateCertificateChainEngine\Config folder, create a new
-DWORD entry.
-* Add _MaxAIAUrlRetrievalCertCount_ as the name
-* Set the value to “30”
-* A reboot is required 
+  1. If the **FCPCA Trust Anchor** is installed (rather than importing all Intermediate CA Certificates), enable **Dynamic Path Validation**.  
+  2. Let Microsoft Cryptographic Application Programming Interface (CAPI) discover and validate Intermediate Certificates that are required to validate a certificate. <!-- This sentence sounds redundant. -->
 
+To set dynamic path validation, you must instate a required registry setting. (**Note:** All registry settings for managed Federal Government computers should use group policy objects or the automated configuration management tools available in your agency.) To change the registry setting, do this: <!-- What is a group policy object?  -->
+
+  1. Under the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\OID\EncodingType 0\ CertDllCreateCertificateChainEngine\Config** folder, create a new DWORD entry.
+  2. Add **_MaxAIAUrlRetrievalCertCount_** as the **name.**
+  3. Set the value to **30.**
+  4. Do a system reboot (required). 
+  
+
+## How do I download and install the FCPCA Trust Anchor?
+
+  1. Download the **FCPCA Trust Anchor** from http://http.fpki.gov/fcpca/fcpca.crt
+  2. Click on the downloaded **fcpca.crt** file, and click on the **Details** tab. 
+  3. Scroll to the bottom of the page and verify the thumbprint matches: **90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1**.
+  4. Then, verify the subject matches: **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US**.
+  4. Click on the **General** tab, and then click the **install certificate** button.
+  5. Select **user** or **local machine**, depending on your need.  (If you are unsure, select **user**.)
+  6. To ensure that the FCPCA Trust Anchor is installed in the Trusted Root Store, select **place in the following store** and select **trust root certification authorities**.
+  7. Review the details to ensure that everything is correct. Then, click **Finish**.
+  
+  
+## How do I download and install the FPKI Intermediate and Issuing CA Certificates?
+
+  1. Download the following **P7** files: 
+     * http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c
+     * http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c
+     * http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c
+  2. Then, do a Windows search for **mmc.exe** (Microsoft Management Console). 
+  3. Once the **mmc.exe** opens, click on **CTRL + M** to open the snap-in menu.
+  4. Click on **Certificates** and **Add**.  Then, click on **OK**.  (A tree hierarchy appears with the different certificate folders.)
+  5. Click on the **Intermediate Certificate Authorities** folder, and then click on the **Certificates** subfolder.
+  6. Click on the **Action** tab from the the top navigation bar and then **Import**. 
+  7. Follow the prompts to import the downloaded FPKI P7 files from Step 1.
+
+To view a list of more FPKI CA certificates, click ![**here**]({{site.baseurl}}/blob/staging/pages/fpki_crls.md). <!-- broken link; question out to Chunde ![Example of an identity certificate with intermediate and root]({{site.baseurl}}/img/certificatechain_small.png){:style="float:center"}
+-->
+
+
+## How do I manage a Trust Store on a Domain Controller?
+
+First, you will need to add a **Root CA certificate** to the **Domain Controller Trust Store**.  Do this:
+
+  1. Follow the steps in the previous section to download and install an **FCPCA Trust Anchor**.
+  2. Open a command-line prompt as an Administrator on the **Forest Domain Controller**. 
+  3. Type: **certutil –f –dspublish .crt2 RootCA** 
+  4. View the **Enterprise Trusted Root.**  Then, type: **certutil –viewstore –enterprise root**
+
+Once the FCPCA Trust Anchor has been installed in the Active Directory (AD) Forest’s Trusted Root CA Store, the Issuing CAs will be published in the **Network Authentication (NTAuth) Store**.  This will prevent the ability of a fraudulent user’s smartcard that may contain a valid userPrincipalName (UPN) within the Subject Alternative Name (SAN) field from gaining access to the system.
+
+  5. Open a command-line prompt as an Administrator on the **Forest Domain Controller**. 
+  2. Type:  **certutil –dspublish –f .cer NTAuthCA** 
+  3. Repeat Step 2 for all Issuing CAs.
+  4. View the **NTAuth Trusted Root** by typing: **certutil –viewstore –enterprise NTAuth** 
+
+While not required, you can improve the speed of certificate validation by publishing the **Intermediate CAs** to the domain’s **Intermediate Certificate Store**.  Do this:
+
+  1. Open a command prompt as an Administrator on the **Forest Domain Controller**. 
+  2. Type: **certutil –dspublish –f .cer subCA** 
+  3. Repeat Step 2 for all Intermediate CAs 
+  4. View the **NTAuth Trusted Root** by typing: **certutil –viewstore –enterprise**
+  5. Finally, to propagate the domain controller change, type: **gpupdate /force** 
+  
+
+## How do I fix certificate validation looping in the Windows operating systems?
+
+**Certificate validation looping** occurs when a certificate validates past the FCPCA Trust Anchor.  This issue can be caused by a misconfigured Trust Store, or it may be OS-specific (e.g., Microsoft CAPI uses the certificate path with the most information against which certificates are validated in the Microsoft Trust Store). Because the FCPCA is cross-certified with the Federal Bridge Certificate Authority, it is possible that a Federal Government certificate could validate to a commercial Trust Store.  
+
+To fix certificate validation looping, do this:
+
+  1. Do a Windows search for **mmc.exe** (Microsoft Management Console). 
+  2. Once the **mmc.exe** opens, click on **CRTL + M** to open the snap-in menu.
+  3. Click on **Certificates** and **Add**.  Then, click on **OK**.  (A tree hierarchy appears with the different certificate folders.) 
+  4. Click on the **Intermediate Certificate Authorities** folder, and then click on the **Certificates** subfolder.
+  5. Sort on the **Issued To** field. 
+  6. Delete all certificates **issued to** the Federal Bridge (i.e., Federal Bridge CA and Federal Bridge CA 2013).  **Do NOT delete the ones issued “by” the Federal Common Policy CA**.
+  7. Delete all certificates **issued to** the Federal Common Policy CA.
