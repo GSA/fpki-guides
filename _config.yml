@@ -56,7 +56,7 @@ navigation:
   url: ''
   internal: true
   coll: false
-- text: Certificate Authorities
+- text: Certification Authorities
   url: ca
   internal: true
   coll: false
