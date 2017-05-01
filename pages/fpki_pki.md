@@ -15,20 +15,12 @@ The topics contained in these Federal Public Key Infrastructure (FPKI) Guides wi
 
 
 ## What is Public Key Infrastructure (PKI)?
-PKI provides for public key encryption of data and digital signature services. <!-- This paragraph needs a more complete, concise definion of PKI.  The most important factor appears to be "encryption" since it appears first...? Will a program manager understand what "digital signature services" entail? --> It is implemented through specific policies, processes, server platforms, software, and workstations. This "system" is used to administer public key certificates and public-private "key pairs." It also includes services that issue, maintain, and revoke public key certificates.
+PKI provides for public key encryption of data and digital signature services. It is implemented through specific policies, processes, server platforms, software, and workstations. This "system" is used to administer public key certificates and public-private "key pairs." It also includes services that issue, maintain, and revoke public key certificates.
 
 PKI uses public key (PK) cryptography.  PK cryptography uses public and private key pairs to encrypt and decrypt data. <!-- This paragraph seems to be about cryptograpy but digresses into public and private key discussion. -->Public keys may be disseminated widely; however, a private key is known only to the owner (senders and receivers). A sender uses a private key to encrypt unprotected information (i.e., transform plaintext to ciphertext). A receiver uses a corresponding private key to either: (a) transform the ciphertext back into plaintext, (b) verify the sender’s identity, or (c) verify the data’s integrity, or some combination of these options. <!-- Doesn't say how the data is encrypted, decrypted, etc. -->
 
 ![Example of Public Key Infrastructure]({{site.baseurl}}/img/PKI-image1.jpg){:style="float:center"}
 
-## Why use PKI?
-PKI is "high assurance," which means that **Relying Parties** <!-- Need to define "Relying Party." --> can have a high degree of confidence in its ability to secure data. For example, PKI provides much stronger authentication method than a userID and password. As a result, PKI helps organizations meet their security, business, and compliance needs.<!-- "compliance" relates to what? --> The following table describes some of the benefits of using PKI.
-
-|**Benefit**| **Description**|
-|-------|------------|
-|**Enhanced Security**|PKI helps to meet four core aspects of security: data integrity, confidentiality, identification and authentication, and non-repudiation.|
-|**Increased Compliance**|PKI helps organizations to comply with laws and mandates, such as Federal Information Security Modernization Act (FISMA), E-Gov Act, Government Paperwork Elimination Act (GPEA), and Health Insurance Portability and Accountability Act (HIPAA).|
-|**Improved Business Capabilities**|PKI helps to reduce costs/burdens and increase efficiency through electronic processes and capabilities.|
 
 ## What are the components of PKI?
 The four components of PKI include **Certificate Authorities (CAs)**, **Registration Authorities (RAs)**, **repositories**, and **archives**. <!-- How do components differ from the "system" described in "What is PKI" above? Only 4 components? -->There are two types of PKI users: **Certificate Holders** and **Relying Parties**. A fifth, optional component is the **Attribute Authority**. The following table describes these components and related functions in detail.
