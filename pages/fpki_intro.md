@@ -11,11 +11,11 @@ We want you to contribute and share lessons learned, and any information you thi
 
 The information on this page provides introductory information to answer the following questions:
 
-1. [What is the FPKI?](#what-is-the-federal-pki)
-2. [What is an example?](#what-is-an-example)
-2. [Why should agencies use the FPKI?](#why-should-agencies-use-certificates-from-the-fpki)
-3. [Why is the FPKI important?](#why-is-the-fpki-important)
-5. [Where can I find the Policies and Standards?](#where-can-i-find-the-policies-and-standards)
+- [What is the FPKI?](#what-is-the-federal-pki)
+- [What is an example?](#what-is-an-example)
+- [Why should agencies use the FPKI?](#why-should-agencies-use-certificates-from-the-fpki)
+- [Why is the FPKI important?](#why-is-the-fpki-important)
+- [Where can I find the Policies and Standards?](#where-can-i-find-the-policies-and-standards)
 
 
 ### What is the FPKI?
@@ -38,7 +38,7 @@ The FPKI includes US federal, State, Local, Tribal, Territorial, international g
 To give a simple example, we'll explain the PIV certificates.  Although we have many other types of identity certificates, it's easiest to explain with **PIV** since you might have one:
 
 * Identity certificates are issued and digitally signed by a _Certification Authority_.  
-* The _Certification Authority_ that issued and digitally signed your PIV certificates is called an _Intermediate Certificate Authority_ because it was issued a certificate by another _Certificate Authority_.  
+* The _Certification Authority_ that issued and digitally signed your PIV certificates is called an _Intermediate Certification Authority_ because it was issued a certificate by another _Certification Authority_.  
 * This process of issuing and signing continues until there is one  _Certification Authority_ that is called the _Root Certification Authority_.
 
 ![Example of an identity certificate with intermediate and root]({{site.baseurl}}/img/pivcertificatechain_small.png){:style="float:center"}
@@ -86,8 +86,8 @@ The FPKI is important to Federal agencies as well as citizens, businesses, and o
 
 ### Where can I find the Policies and Standards?
 
-* [Federal Common Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS){:target="_blank"} is the certificate policy for the Federal Root Certificate Authority.
-* [Federal Bridge Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS){:target="_blank"} is the certificate policy for the Federal Bridge Certificate Authority.
+* [Federal Common Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS){:target="_blank"} is the certificate policy for the Federal Root Certification Authority.
+* [Federal Bridge Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS){:target="_blank"} is the certificate policy for the Federal Bridge Certification Authority.
 * [X.509 Certificate and CRL Extensions Profile](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008Od8CAE){:target="_blank"} specifies certificate and certificate revocation list (CRL) extension profiles for FPKI infrastructure systems.
 * [X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for PIV-I Cards](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t00000008ObiCAE){:target="_blank"} specifies certificate and certificate revocation list (CRL) extension profiles for use with Personal Identity Verification Interoperable (PIV-I) cards.
 * [X.509 Certificate and CRL Extensions Profile for the Shared Service Provider (SSP) Program](https://www.idmanagement.gov/IDM/s/document_detail?Id=kA0t0000000GmdcCAC){:target="_blank"} specifies certificate and certificate revocation list (CRL) extension profiles for certificates and CRLs issued under COMMON.
