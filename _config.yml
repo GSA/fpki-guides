@@ -87,10 +87,10 @@ navigation:
 #  internal: true
 #  coll: true
 #  collname: faq
-- text: About PKI
-  url: pki
-  internal: true
-  coll: false
+#- text: About PKI
+#  url: pki
+#  internal: true
+#  coll: false
 #  collname: pkifundamentals
 #- text: Glossary
 #  url: glossary

@@ -1,8 +1,10 @@
+<!---
 ---
 layout: default
 title: About Public Key Infrastructure
 permalink: /pki/
 ---
+--->
 
 The topics contained in these Federal Public Key Infrastructure (FPKI) Guides will help program managers and engineers understand both Public Key Infrastructure (PKI) and FPKI--what they are and how they work.
 
