@@ -15,7 +15,7 @@ The information on this page provides introductory information to answer the fol
 2. [What is an example?](#what-is-an-example)
 2. [Why should agencies use the FPKI?](#why-should-agencies-use-certificates-from-the-fpki)
 3. [Why is the FPKI important?](#why-is-the-fpki-important)
-5. [Where can I find the policies and standards?](#where-can-i-find-the-policies-and-standards)
+5. [Where can I find the Policies and Standards?](#where-can-i-find-the-policies-and-standards)
 
 
 ### What is the FPKI?
@@ -34,7 +34,7 @@ The participating Certification Authorities and the Policies, Processes, and Aud
 The FPKI includes US federal, State, Local, Tribal, Territorial, international governments, and commercial organizations who work together to provide services for the benefit of the federal government.
 
 
-### What is an Example?
+### What is an example?
 To give a simple example, we'll explain the PIV certificates.  Although we have many other types of identity certificates, it's easiest to explain with **PIV** since you might have one:
 
 * Identity certificates are issued and digitally signed by a _Certificate Authority_.  
@@ -50,7 +50,7 @@ For the US Federal Government Executive branch agencies, there is one Root Certi
 *  [A graph of the federal public key infrastructure, including the business communities](https://fpki-graph.fpki-lab.gov/){:target="_blank"}
 
 
-### Why Should Agencies Use Certificates from the FPKI?
+### Why should Agencies use certificates from the FPKI?
 
 All Agencies should use the FPKI to enhance their security and trust for:
 
@@ -70,7 +70,7 @@ The FPKI provides four core technical capabilities:
 These four core capabilities are made possible by leveraging digital certificates, their standards, processes, and a mission-critical Trust Infrastructure to administer the certificates. The Trust Infrastructure provides the technical functionality for issuing, maintaining, and revoking the certificates.
 
 
-### Why is the FPKI Important?
+### Why is the FPKI important?
 
 The FPKI is important to Federal agencies as well as citizens, businesses, and organizations that need access to federal agency services and facilities.  It contains the Federal Government's Trust Infrastructure, and facilitates trust of PIV, PIV-I, and other government and non-government credentials.
 
@@ -84,7 +84,7 @@ The FPKI is important to Federal agencies as well as citizens, businesses, and o
 |**The FPKI Approved Providers List**|By leveraging the [FPKI Approved Provider List](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000XRrC){:target="_blank"}, Federal agencies can be sure they are using Providers that meet all necessary Federal government standards, and can be sure of the level of assurance when relying on approved Providers' certificates.  This saves Federal agencies an enormous amount of time and effort, as well as reducing risk.|
 
 
-### Where Can I Find the Policies and Standards?
+### Where can I find the Policies and Standards?
 
 * [Federal Common Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS){:target="_blank"} is the certificate policy for the Federal Root Certificate Authority.
 * [Federal Bridge Certificate Policy](https://www.idmanagement.gov/IDM/s/article_content_old?tag=a0Gt0000000SfwS){:target="_blank"} is the certificate policy for the Federal Bridge Certificate Authority.
