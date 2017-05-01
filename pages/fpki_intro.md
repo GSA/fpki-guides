@@ -37,15 +37,15 @@ The FPKI includes US federal, State, Local, Tribal, Territorial, international g
 ### What is an example?
 To give a simple example, we'll explain the PIV certificates.  Although we have many other types of identity certificates, it's easiest to explain with **PIV** since you might have one:
 
-* Identity certificates are issued and digitally signed by a _Certificate Authority_.  
-* The _Certificate Authority_ that issued and digitally signed your PIV certificates is called an _Intermediate Certificate Authority_ because it was issued a certificate by another _Certificate Authority_.  
-* This process of issuing and signing continues until there is one  _Certificate Authority_ that is called the _Root Certificate Authority_.
+* Identity certificates are issued and digitally signed by a _Certification Authority_.  
+* The _Certification Authority_ that issued and digitally signed your PIV certificates is called an _Intermediate Certificate Authority_ because it was issued a certificate by another _Certificate Authority_.  
+* This process of issuing and signing continues until there is one  _Certification Authority_ that is called the _Root Certification Authority_.
 
 ![Example of an identity certificate with intermediate and root]({{site.baseurl}}/img/pivcertificatechain_small.png){:style="float:center"}
 
 The full process of proving identity when issuing the certificates, auditing the certificate authorities, and the cryptographic protections of the digital signatures establish the basis of Trust.
 
-For the US Federal Government Executive branch agencies, there is one Root Certificate Authority named _Federal Common Policy Certificate Authority (COMMON)_, and dozens of Intermediate Certificate Authorities, and Bridged Certificate Authorities.  
+For the US Federal Government Executive branch agencies, there is one Root Certification Authority named _Federal Common Policy Certification Authority (COMMON)_, and dozens of Intermediate Certificate Authorities, and Bridged Certificate Authorities.  
 
 *  [A graph of the federal public key infrastructure, including the business communities](https://fpki-graph.fpki-lab.gov/){:target="_blank"}
 
