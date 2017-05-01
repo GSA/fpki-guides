@@ -25,7 +25,7 @@ Operating systems, browsers, and some commercial software use trust stores to ve
 
 Here is a table of common trust stores, and whether the Federal Common Policy CA (FCPCA) root certificate is included. 
 
-Application Trust Store|Includes FCPCA?|Trust Store Manager|Platforms serviced|Program Information Location
+Trust Store|Includes FCPCA?|Trust Store Manager|Platforms serviced|Program Information Location
 ---|---|---|---|---
 Microsoft Root Certificate Program|Yes|Microsoft Management Console|Windows OS, Internet Explorer Browser, Outlook|http://aka.ms/RootCert
 Apple Root Certificate Program|Yes|Keychain Access utility|iOS, WatchOS, OS X, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
