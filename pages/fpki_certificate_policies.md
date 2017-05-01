@@ -24,7 +24,7 @@ When a Certification Authority (CA) issues a certificate, it is providing a stat
 The Certificate Policy provides the information that can be used by a certificate user to decide whether or not to trust a certificate.
 
 ### Why do we use Certificate Policies?
-Certificate policies are used to establish trust relationships between Certificate Authorities.  This is called _cross-certification_. When CAs issue cross certificates, one CA assesses and recognizes one or more certificate polices of the other CA.
+Certificate policies are used to establish trust relationships between Certification Authorities.  This is called _cross-certification_. When CAs issue cross certificates, one CA assesses and recognizes one or more certificate polices of the other CA.
 
 
 
@@ -36,7 +36,7 @@ Certificate policies are used to establish trust relationships between Certifica
 ### What are the Certificate Policy Object Identifiers?
 The Federal PKI has twenty-five (25) certificate policies for people and non-person entity (NPE) certificates.   
 
-* Twelve (12) of the certificate policies are used only within the Federal Bridge Certificate Authority to map organizational policies across the issuing CAs and Bridges.
+* Twelve (12) of the certificate policies are used only within the Federal Bridge Certification Authority to map organizational policies across the issuing CAs and Bridges.
 * Thirteen (13) certificate policies are used for the final end entity certificates.
 
 All certificate policies denote a US Government issued and authorized certificate.  
