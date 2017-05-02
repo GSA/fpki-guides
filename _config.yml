@@ -2,7 +2,7 @@
 
 title: Federal Public Key Infrastructure Guides
 name: Federal Public Key Infrastructure Guides
-email: icam@gsa.gov
+email: fpki@gsa.gov
 author:
     name: FICAM
 description: Information on the US Federal Public Key Infrastructure (FPKI)
@@ -56,11 +56,11 @@ navigation:
   url: ''
   internal: true
   coll: false
-- text: Certificate Authorities
+- text: Certification Authorities
   url: ca
   internal: true
   coll: false
-- text: CRLs and Certificates
+- text: Certificates and CRLs
   url: crls
   internal: true
   coll: false
@@ -87,10 +87,10 @@ navigation:
 #  internal: true
 #  coll: true
 #  collname: faq
-- text: About PKI
-  url: pki
-  internal: true
-  coll: false
+#- text: About PKI
+#  url: pki
+#  internal: true
+#  coll: false
 #  collname: pkifundamentals
 #- text: Glossary
 #  url: glossary

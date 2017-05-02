@@ -4,63 +4,83 @@ title: Certification Authorities
 permalink: /ca/
 ---
 
-A **_certification authority_** is an entity (system) that issues digital certificates.  These digital certificates are based on _cryptography_, and follow the X.509 standards defined for information security.
+A **_certification authority_** is a system that issues digital certificates.  These digital certificates are based on _cryptography_, and follow the X.509 standards defined for information security.
 
-The Federal PKI has three certification authorities (CAs) operated by the FPKI Management Authority (FPKIMA). These three certification authorities serve as the root and anchors for the other _intermediate_ and _issuing_ certification authorities operated by US Federal agencies, State, Local, Tribal, Territorial, international and commercial partners.  These three main CAs are referred to as FPKI Trust Infrastructure CAs.
+The Federal PKI is a network of hundreds of certification authorities that are either _root_, _intermediate_ or _issuing_ certification authorities. 
+
+Any CA in the Federal PKI may be referred to as a Federal PKI CA.   The four highest level CAs in the Federal PKI hierarchy are the **Federal PKI Trust Infrastructure CAs** and are operated and managed by the Federal PKI Management Authority (FPKIMA) program office.  
+
+These four main CAs are referred to as Federal PKI Trust Infrastructure CAs.
+
 ![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
 
-* [Federal Common Policy Certification Authority (COMMON)](#federal-common-policy-certification-authority-common)
-* [Federal Bridge Certification Authority (FBCA)](#federal-bridge-certification-authority-fbca)
-* [SHA-1 Federal Root Certification Authority (_SHA1 FRCA_)](#sha-1-federal-root-certification-authority-sha1-frca)
+* [Federal Common Policy Certification Authority](#federal-common-policy-certification-authority)
+* [Federal Bridge Certification Authority 2013](#federal-bridge-certification-authority)
+* [Federal Bridge Certification Authority 2016](#federal-bridge-certification-authority)
+* [SHA-1 Federal Root Certification Authority G2](#sha-1-federal-root-certification-authority)
 
-The FPKI Management Authority is a program office established by the Federal government to manage, operate and maintain the three certification authorities that serve as the root and anchors for other intermediate and issuing certification authorities.
+These Federal PKI Trust Infrastructure CAs serve as the _root_ and _trust anchors_ for the _intermediate_ and _issuing_ certification authorities operated by:  
 
-Any CA in the FPKI can be referred to as a _FPKI CA_, but only these three operated by the FPKIMA are FPKI Trust Infrastructure CAs and they are the highest level CAs in the hierarchy.
+- Federal Government Agencies  
+- State, Local, Tribal, Territorial, and International Governments  
+- Commercial Partners 
 
-These next sections describe the three Trusted Infrastructure CAs.
 
-{% include alert-info.html content="A new effort is underway to establish a Federal root and issuing certification authorities dedicated to Public Trust TLS/SSL device certificates. Follow or contribute to the development of the new Federal certificate policy for this Public Trust effort: https://github.com/uspki/policies" %}
+{% include alert-info.html heading="Public trust for websites" content="A new effort is in the planning stages to establish another Federal Government Root and Issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies" %}
 
-### Federal Common Policy Certification Authority (_COMMON_) ####
+### Federal Common Policy Certification Authority
 
-![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
-*Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
-For the US Federal Government agencies, there is one Root Certification Authority named Federal Common Policy Certification Authority (COMMON).
+<!--- ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
+*Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"} --->
 
-COMMON serves as the Federal PKI (FPKI) trust anchor for the Federal Government in support of [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. COMMON was designed so any certificate issued by any FPKI CA can validate a certificate path to a single Root CA. See the example to the right where a person certificate, issued by a FPKI CA, can validate its certificate path back to COMMON.
+For the Federal Government executive branch agencies, there is one Root Certification Authority.  This certification authority is named _Federal Common Policy CA_ and may be referenced by either the acronym _FCPCA_ or as _COMMON_ in documents. 
 
-The COMMON root certificate is distributed by commercial vendors who include it in their commercial off the shelf product [trust stores](../truststores/).  This enables Federal Government systems to be able to trust FPKI person and device certificates issued by FPKI CAs. It is also possible to manually add the Federal Common Policy CA root certificate into trust stores, if it is not available by default.
+FCPCA serves as the Federal PKI trust anchor for the Federal Government to support government enterprise devices and person trust, including [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. The design of FCPCA enables any certificate issued by any Federal PKI CA to validate its certificate path to a single root CA. 
 
-{% include alert-warning.html content="Currently, the Federal Common Policy Certification Authority is included in some Trust Stores by default (i.e. Chrome and Internet Explorer browsers include the COMMON trust anchor). Other browsers, such as Mozilla, do not include the Federal Common Policy Certification Authority by default. " %}
+Many commercial vendors include the FCPCA root certificate in their commercial-off-the-shelf (COTS) products' [Trust Stores](../truststores/). This enables Federal Government systems to trust person and enterprise device certificates issued by Federal PKI CAs. It is also possible to add the Federal Common Policy CA root certificate into trust stores for _government managed_ devices and servers, if it is not available by default.
 
-### Federal Bridge Certification Authority (_FBCA_)
+{% include alert-warning.html content="The Federal Common Policy CA certificate is included in the trust stores for some platforms such as Microsoft and Adobe. Other platforms including Mozilla and Firefox do not include the Federal Common Policy CA by default. " %}
+
+### Federal Bridge Certification Authority
 
 ![FPKI Federal Bridge Logo]({{site.baseurl}}/img/fbca-logo.png){:style="float:left;width:15%;"}
-The Federal Bridge Certification Authority (FBCA) is the PKI Bridge or link between the Federal Common Policy CA and the other CAs that comprise the FPKI, including Issuing CAs operated by Federal agencies, commercial organizations, state, local, and foreign governments. The FBCA provides a means to map participating Issuing CAs so the certificates validate to the Federal Common Policy Certification Authority root certificate.
+The Federal Bridge Certification Authority (FBCA) is a PKI Bridge or link between the Federal Common Policy CA and other CAs that comprise the Federal PKI network and which may operate under comparable but _different_ certificate policies.  
 
-![Example of the FBCA Certification Path]({{site.baseurl}}/img/fbca-chainV2.png){:style="width:40%;float:right;"}
-*Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}The Issuing CAs related to the FBCA are cross-certified.  These Issuing CAs have established a trust relationship with the FBCA and are audited for conformance to the certificate policies. The partners have extended the reach of the FPKI well beyond the boundaries of the Federal Government.
+The FBCA provides a means to map these certificate policies and CAs to allow the certificates to validate to the Federal Common Policy Certification Authority root certificate.  
 
-### SHA-1 Federal Root Certification Authority (_SHA1 FRCA_)
+<!--- ![Example of the FBCA Certification Path]({{site.baseurl}}/img/fbca-chainV2.png){:style="width:40%;float:right;"}
+*Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"} --->
 
-The SHA-1 Federal Root CA (SHA-1 FRCA) is a Certificate Authority supporting Federal entities that still require using certificates that have the deprecated SHA-1 signature hash algorithm. The SHA-1 hash algorithm is an older algorithm that has been deemed to be not secure enough for today’s standards.  Federal organizations should no longer be using certificates with this hash.  However, the SHA-1 FPKI CA was created and maintained to facilitate the backwards interoperability for those systems unable to fully transition to SHA-256 and to support the migrations over time.
+There are two Federal Bridge Certification Authorities:  
 
-{% include alert-warning.html content="Use of certificates using the SHA-1 signature hash algorithm under current policy should be limited to applications in which the risks associated with the use of the deprecated SHA-1 algorithm have been deemed acceptable and will only be asserted within the SHA-1 FPKI." %}
+- Federal Bridge CA 2013
+- Federal Bridge CA 2016
 
-### All FPKI Certificate Authorities
+The CAs signed by these Federal Bridge CAs are _cross-certified_.  These CAs have established a trust relationship and are audited for conformance to the certificate policies. This cross-certification process has extended the reach of the Federal PKI well beyond the boundaries of the Federal Government.
+
+### SHA-1 Federal Root Certification Authority
+
+The SHA-1 Federal Root CA G2 (SHA-1 FRCA) is a Certification Authority supporting Federal entities that still have certificates that have the deprecated SHA-1 signature hash algorithm. The SHA-1 Federal Root CA was created and maintained to facilitate backwards interoperability for those legacy systems unable to fully transition to SHA-256 and to support the migrations over time.
+
+The SHA-1 hash algorithm has been deemed to be not secure enough for today’s standards.  Federal organizations should no longer be using certificates with this hash.  
+
+{% include alert-warning.html content="Certificates using the SHA-1 signature hash algorithm under current policy are limited to legacy enterprise systems and are being completely phased out." %}
+
+### All Federal PKI Certification Authorities
 
 ![FPKI Participating CAs]({{site.baseurl}}/img/participatingCAsV3.png){:style="width:35%;float:right;"}
 
-A Certification Authority that is part of the FPKI is called a *Participating Certificate Authority*. Participating Certification Authorities include US Federal agencies, State, Local, Tribal, Territorial, international and commercial partners. The following sections describe the various FPKI Participating Certification Authorities.
+A Certification Authority that is part of the Federal PKI is called a _participating Certification Authority_.  There are hundreds of participating Certificate Authorities that form the Federal PKI network.  
 
-There are over 150 Participating Certificate Authorities that form the Federal PKI network.    We might _label_ or identify the individual certificate authority systems by a category that shows when the system was established, what types of communities it is used for, or
+We might _label_ or identify the certification authority systems by a category that shows _when_ the system was established, what types of _communities_ it is or was used for, and for historical records purposes.  
 
+We realize all the acronyms and labels may be confusing, and welcome your input to help us improve and add information over time. 
 
 |**Certification Authority Category**|**Description**|
 |-----------|---------------|
-| PKI Shared Service Provider | A Shared Service Provider (SSP) CA is *subordinate* to the Federal Common Policy CA (FCPCA) which means its Root Certificate has been signed and issued by another Certification Authority, in this case the FCPCA. Any certificate the SSP CA creates, signs and issues to people or devices are in the trust chain of the FCPCA. An SSP CA implementation must go through a certification process and must adhere to strict IT security and Federal policy standards and requirements.  Once they meet these specifications, the SSP organization receives an Authority to Operate (ATO) and is contracted by the Federal government to issue certificates to Federal employees, contractors and Federal devices that are deployed in Federal agency networks. |
+| PKI Shared Service Provider | A Shared Service Provider (SSP) CA is *subordinate* to the Federal Common Policy CA (FCPCA).  Any certificate the SSP CA creates, signs and issues to people or devices are in the trust chain of the FCPCA. An SSP must adhere to strict Federal IT security, standards and requirements.  The Shared Service Providers are granted a FISMA Authority to Operate (ATO), undergo continuous monitoring, and are contracted by the Federal government to issue certificates to Federal employees, contractors and federal devices that are deployed in Federal agency networks. |
 | Private Sector Certification Authorities | A Private Sector Certification Authority that is cross-certified has shown a valid need to either conduct business or provide PKI services to the Federal government. |
-| Access Certificates for Electronic Services (ACES) Certification Authorities | In a similar service model to the PKI SSP program, the ACES Certificate Authorities issues certificates to U.S. persons and authorized business representatives who have demonstrated need to access Federal network systems.  ACES was established in the late 1990's and was the predecessor for the development of the COMMON root and today's Federal Public Key Infrastructure. |
+| Access Certificates for Electronic Services (ACES) Certification Authorities | The ACES Certification Authorities issues certificates to authorized U.S. business representatives who have a need to digitally sign documents or access some web based systems.  ACES was established in the late 1990's and was the predecessor for the development of today's Federal Public Key Infrastructure. |
 | Other Government Certification Authorities | These are CAs managed and operated by State, Local, Tribal, Territorial, or international government organizations. |
 | Bridge Certification Authorities | Bridge CAs connect member PKIs and are designed to enable interoperability between different PKIs operating under their own Certificate Policy. A Bridge CA is not a Root. |
-| Federal Agency Legacy | Prior to 2004, there were a number of agencies that had already deployed and invested significant funding into their own PKI and Certificate Authorities. Some of these agencies opted out of migrating to the PKI SSP program and continue to manage the existing infrastructures. These Federal Agency Legacy PKIs operate an internal PKI that is cross-certified with one or more FPKI Trust Infrastructure CAs.|
+| Federal Agency Legacy | Prior to 2004, there were agencies that had already deployed and invested in their own PKI and Certification Authorities. Some of these agencies opted out of migrating to the Shared Service Provider program and continue to manage their existing infrastructures. These Federal Agencies Legacy one or more Certification Authorities that is cross-certified with one or more FPKI Trust Infrastructure CAs.|
