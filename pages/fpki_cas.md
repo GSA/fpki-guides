@@ -6,11 +6,9 @@ permalink: /ca/
 
 A **_certification authority_** is a system that issues digital certificates.  These digital certificates are based on _cryptography_, and follow the X.509 standards defined for information security.
 
-The Federal PKI is a network of hundreds of certification authorities that are either _root_, _intermediate_ or _issuing_ certification authorities. 
+The Federal PKI is a network of hundreds of certification authorities (CA) that are either _root_, _intermediate_ or _issuing_ certification authorities. 
 
 Any CA in the Federal PKI may be referred to as a Federal PKI CA.   The four highest level CAs in the Federal PKI hierarchy are the **Federal PKI Trust Infrastructure CAs** and are operated and managed by the Federal PKI Management Authority (FPKIMA) program office.  
-
-These four main CAs are referred to as Federal PKI Trust Infrastructure CAs.
 
 ![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
 
