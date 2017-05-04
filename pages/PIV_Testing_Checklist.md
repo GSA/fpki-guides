@@ -23,7 +23,7 @@ Topic|Type| Credential Affected
 [Missing entryUUID OID and cardUUID in Biometric Objects](#missing-entryuuid-oid-and-carduuid-object-in-biometric-objects)|Issue|PIV
 [Cardholder Certificates Valid for Over 3 Years](#cardholder-certificates-valid-for-over-3-years)|Issue|PIV & PIV-I
 [Missing UUID in the SAN Extension of the PIV Auth and Card Auth Certificates](#missing-uuid-in-the-san-extension-of-the-piv-auth-and-card-auth-certificates)|Issue|PIV
-[Content Signing Certificate Does Not Assert `id-fpki-common-contentSigning`](#uuid-appears-before-the-fasc-n-in-the-san-extension-of-the-card-authentication-certificate)|Issue|PIV
+[Content Signing Certificate Does Not Assert `id-fpki-common-contentSigning`](#content-signing-certificate-does-not-assert-id-fpki-common-contentsigning)|Issue|PIV
 [Facial Image Data Type Specifies Wrong Image Format](#facial-image-data-type-specifies-wrong-image-format)|Issue|PIV & PIV-I
 [UUID Appears Before the FASC-N in the SAN Extension of the Card Auth Certifcate](#uuid-appears-before-the-fasc-n-in-the-san-extension-of-the-card-authentication-certificate)|Note|PIV
 [Card Uses Deprecated Applet Version](#card-uses-deprecated-applet-version)|Note|PIV & PIV-I
