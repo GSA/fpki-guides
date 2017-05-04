@@ -1,41 +1,67 @@
 ---
 layout: default
-title: CRLs and Certificates
+title: Certificates and CRLs
 permalink: /crls/
 ---
+This page lists the endpoints to retrieve the certificates and certificate revocation lists (CRLs) for the trust infrastructure CAs.  We are working on compiling and adding information for ALL CAs currently in the Federal PKI network. 
 
-* ***Federal Common Policy Certification Authority (Common or FCPCA)***
+When downloading **any** Certificate file from the list below, please verify the thumbprint (hash) on the downloaded file.  You can [verify the hash](#verify-a-hash) using common utilities on operating systems. 
 
-     * [Common CA Root Certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}
+### Federal Common Policy CA
 
-     * [CRL](http://http.fpki.gov/fcpca/fcpca.crl){:target="_blank"}
+|**Federal Common Policy CA**|**Information**|
+|-----------|---------------|
+| Federal Common Policy CA Root Certificate | http://http.fpki.gov/fcpca/fcpca.crt |
+| Distinguished Name 						| **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US** |
+| sha1 Thumbprint							| 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
+| Certificate Revocation List				| http://http.fpki.gov/fcpca/fcpca.crl							|
+| P7C file - Issued By						| http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c	|
+| P7C file - Issued To						| http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c	|
 
-     * FCPCA DN:  **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US**
 
-     * sha1 Thumbprint: **90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1**
+### Federal Bridge CA 2016
 
-     * [P7Cs (Issued By)](http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c){:target="_blank"}
+|**Federal Bridge CA 2016**|**Information**|
+|-----------|---------------|
+| Certificate Revocation List				| http://http.fpki.gov/bridge/fbca2016.crl					|
+| P7C file - Issued By						| http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c	|
+| P7C file - Issued To						| http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c	|
 
-     * [P7Cs (Issued To):](http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c){:target="_blank"}
 
-* ***Federal Bridge Certification Authority (Bridge or FCPCA)***
+### Federal Bridge CA 2013
 
-     * [FBCA CRL](http://http.fpki.gov/bridge/fbca.crl){:target="_blank"}
+|**Federal Bridge CA 2013**|**Information**|
+|-----------|---------------|
+| Certificate Revocation List				| http://http.fpki.gov/bridge/fbca2013.crl					|
+| P7C file - Issued By						| http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c	|
+| P7C file - Issued To						| http://http.fpki.gov/bridge/caCertsIssuedTofbca2013.p7c	|
 
-     * [FBCA2013 CRL](http://http.fpki.gov/bridge/fbca2013.crl){:target="_blank"}  
 
-     * [P7Cs (Issued By)](http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c){:target="_blank"}
+### SHA-1 Federal Root CA G2
 
-     * [P7Cs (Issued To)](http://http.fpki.gov/bridge/caCertsIssuedTofbca2013.p7c){:target="_blank"}
+|**SHA-1 Federal Root CA G2**|**Information**|
+|-----------|---------------|
+| Certificate Revocation List				| http://http.fpki.gov/sha1frca/sha1frca.crl				|
+| P7C file - Issued By						| http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c	|
+| P7C file - Issued To						| http://http.fpki.gov/sha1frca/caCertsIssuedTosha1frca.p7c	|
 
-* ***SHA-1 Federal Root Certification Authority (SHA1 FRCA)***
+	 
 
-     * [SHA1 FRCA CRL](http://http.fpki.gov/sha1frca/sha1frca.crl){:target="_blank"}
+### Verify a hash
+You can verify the hash on files, including certificate files, using common utilities on operating systems.  Examples:
 
-     * [P7Cs (Issued By)](http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c){:target="_blank"}
+```
+		certutil -hashfile <filename>.crt SHA1
+```
 
-     * [P7Cs (Issued To)](http://http.fpki.gov/sha1frca/caCertsIssuedTosha1frca.p7c){:target="_blank"}
+```
+		openssl dgst -sha1 <filename>.crt
+```	
 
-* ***Legacy Federal Common Policy Certification Authority (Legacy FCPCA)***
+```
+		sha1sum <filename>.crt
+```
 
-     * [Legacy FCPCA CRL](http://fpkia.gsa.gov/CommonPolicy/CommonPolicy%281%29.crl){:target="_blank"}
+	 
+	 
+	 

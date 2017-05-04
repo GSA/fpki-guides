@@ -1,4 +1,4 @@
-This work is in early Alpha stage and is led by the GSA FICAM Program in coordination with the ICAM Subcommittee of the Federal CIO Council.
+This work is in early Alpha stage and is led by GSA teams and the Federal Public Key Infrastructure community in coordination with the ICAM Subcommittee of the Federal CIO Council.
 
 # Federal Public Key Infrastructure Guides
 This repository is for the collaborative development of the Federal Identity, Credential, and Access Management Playbooks and Guides for the *Federal Public Key Infrastructure*.  
@@ -8,6 +8,24 @@ This content is Vendor neutral. Marketing materials for Commercial Products shou
 
 ## Plain Language
 Contributors should consider the audience when submitting content. Plain language benefits a broad audience. Review your proposed content for use of acronyms and specialized jargon before submitting.
+
+## Roadmap
+
+The expected roadmap for these guides:
+
+May 5th, 2017:
+
+- Deployed to fpki.idmanagement.gov
+- leveraging Federalist platform as a service for hosting
+
+May 2017++:
+
+- Change notices from the Federal Public Key Infrastructure service providers
+- On-going contributions and collections
+- Mapping of all the endpoints and additional info from AIA crawler tools
+- Applications and patterns
+- Developer tools and tips
+
 
 ## How to Contribute
 For information on how to contribute to the site, visit the Contribute page [here]({{site.baseurl}}/contribute.md/). The source repository exists [here](https://github.com/GSA/fpki-guides/). 
