@@ -4,7 +4,7 @@ title: Common Issues Checklist for PIV/PIV-I Card Testing
 permalink: /PIV_Testing_Checklist/
 ---
 
-![GSA FIPS 201 logo](../img/FIPS201-logo.JPG){:style="float:left"}
+![GSA FIPS 201 logo]({{site.baseurl}}/img/FIPS201-logo.JPG){:style="float:left"}
 
 ## Overview
 This guide provides a list of common issues found during recent PIV/PIV-I card testing.  These issues are listed for one of two reasons:
