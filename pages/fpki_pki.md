@@ -22,8 +22,6 @@ PKI leverages public key (PK) cryptography, which is a branch of mathematics tha
 A sender uses a private key to transform unprotected information (plaintext) into coded text  (ciphertext). The receiver uses a corresponding private key to either (a) transform the ciphertext back into
 plaintext, (b) verify the sender’s identity, (c) verify the data’s integrity, or some combination.
 
-![Example of Public Key Infrastructure]({{site.baseurl}}/img/PKI-image1.jpg){:style="float:center"}
-
 
 ## Why Use PKI?
 PKI is high assurance - relying parties have a high degree of confidence in its use and results.  For example, PKI provides a much stronger authentication method than mechanisms such as userID/password.  The high confidence is because of PKI's mathematical underpinning, which compromise extremely unlikely.
