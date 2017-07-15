@@ -1,0 +1,8 @@
+["Notice date": "<date in MM/DD/YYYY format>",
+"Change type": "<your change type>",
+"Start Date and Time": "<in MM/DD/YYYY format>",
+"End Date and Time": "<in MM/DD/YYYY format>",
+"System": "<Operating System, Application etc>",
+"Change Description": "<detailed statement>",
+"Impact": "<impact statement>",
+"Contact": "<email, phone etc>"]
