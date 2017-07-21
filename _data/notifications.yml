@@ -1,0 +1,29 @@
+#data file for fpki-guides change notification
+#format:
+#notice_date: "<date in MM/DD/YYYY format>"
+#change_type: "<your change_type>"
+#start date_and_time: "<in MM/DD/YYYY format>"
+#end date_and_time: "<in MM/DD/YYYY format>"
+#system: "<Operating system, Application etc>"
+#change_description: "<detailed statement>"
+#impact: "<impact statement>"
+#contact: "<email, phone etc>"
+#
+
+- notice_date: 07/21/2017
+  change_type: sample
+  start date_and_time: 07/21/2017
+  end date_and_time: 07/21/2017
+  system: sample os
+  change_description: sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description
+  impact: sample non impace
+  contact: sampleuser@sampleagency.gov
+
+- notice_date: 06/21/2017
+  change_type: sample 1
+  start date_and_time: 05/21/2017
+  end date_and_time: 06/21/2017
+  system: sample os 1
+  change_description: sample change_description 1
+  impact: sample non impact 1
+  contact: sampleuser1@sampleagency.gov
