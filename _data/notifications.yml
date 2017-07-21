@@ -2,8 +2,8 @@
 #format:
 #notice_date: "<date in MM/DD/YYYY format>"
 #change_type: "<your change_type>"
-#start_date_time: "<in MM/DD/YYYY format>"
-#end_date_time: "<in MM/DD/YYYY format>"
+#start_datetime: "<in MM/DD/YYYY format>"
+#end_datetime: "<in MM/DD/YYYY format>"
 #system: "<Operating system, Application etc>"
 #change_description: "<detailed statement>"
 #impact: "<impact statement>"
@@ -12,8 +12,8 @@
 
 - notice_date: 07/21/2017
   change_type: sample
-  start_date_time: 07/21/2017
-  end_date_time: 07/21/2017
+  start_datetime: 07/21/2017
+  end_datetime: 07/21/2017
   system: sample os
   change_description: sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description
   impact: sample non impace
@@ -21,8 +21,8 @@
 
 - notice_date: 06/21/2017
   change_type: sample 1
-  start_date_time: 05/21/2017
-  end_date_time: 06/21/2017
+  start_datetime: 05/21/2017
+  end_datetime: 06/21/2017
   system: sample os 1
   change_description: sample change_description 1
   impact: sample non impact 1
