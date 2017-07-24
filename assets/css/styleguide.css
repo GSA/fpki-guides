@@ -3401,6 +3401,8 @@ code[class*="language-"], pre[class*="language-"] {
       }
     }
   }
+}
+
 
   .notification {
     margin-bottom: 3em;
@@ -3414,4 +3416,3 @@ code[class*="language-"], pre[class*="language-"] {
   .notification-element {
     margin-top: 0.5em;
   }
-}
