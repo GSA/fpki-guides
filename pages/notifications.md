@@ -18,7 +18,7 @@ System **outages** - either through a planned maintenance activity or unplanned 
 
 To report a change **or** system outage not listed below, please email fpki@gsa.gov.
 
-### Notifications
+## Notifications
 <!-- This block loops through the notifications yml file under the data directory. -->
 
 <div class="usa-width-one-whole">
