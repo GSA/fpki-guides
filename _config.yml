@@ -64,10 +64,6 @@ navigation:
   url: crls
   internal: true
   coll: false
-- text: Change Notifications
-  url: notifications
-  internal: true
-  coll: false
 # - text: Certificate Policies
   # url: policyobjects
   # internal: true
@@ -78,6 +74,10 @@ navigation:
   coll: false
 - text: Useful Tools
   url: tools
+  internal: true
+  coll: false
+- text: Change Notifications
+  url: notifications
   internal: true
   coll: false
 #https://github.com/jekyll/jekyll/issues/2346

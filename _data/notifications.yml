@@ -1,29 +1,41 @@
 #data file for fpki-guides change notification
 #format:
-#notice_date: "<date in MM/DD/YYYY format>"
-#change_type: "<your change_type>"
-#start_datetime: "<in MM/DD/YYYY format>"
-#end_datetime: "<in MM/DD/YYYY format>"
+#notice_date: "<date in MM/DD/YYYY HH:MM EST format>"
+#change_type: "< CA Certificate Issuance, CA Certificate Revocation, New CA, CA Termination, New OCSP URI, New CRL Distribution Point, OCSP Outage, CRL Outage >"
+#start_datetime: "<in MM/DD/YYYY HH:MM format>"
+#end_datetime: "<in MM/DD/YYYY HH:MM format>"
 #system: "<Operating system, Application etc>"
 #change_description: "<detailed statement>"
 #impact: "<impact statement>"
 #contact: "<email, phone etc>"
-#
+# ca_certificate: <pem encoded>
+# cdp_uri:
+# aia_uri:
+# sia_uri:
+# ocsp_uri:
 
-- notice_date: 07/21/2017
-  change_type: sample
-  start_datetime: 07/21/2017
-  end_datetime: 07/21/2017
-  system: sample os
+
+- notice_date: 07/21/2017 15:34 EST
+  change_type: CA Certificate Issuance
+  start_datetime:
+  end_datetime: 07/21/2017 15:34 EST
+  system: Federal Bridge CA 2016
   change_description: sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description
   impact: sample non impace
   contact: sampleuser@sampleagency.gov
+  ca_certificate_hash:
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject:
+  cdp_uri: http://pki.treas.gov/dhsca4.crl
+  aia_uri: http://pki.treas.gov/sample.p7b
+  sia_uri: http://pki.treas.gov/sample.p7b
+  ocsp_uri:
 
-- notice_date: 06/21/2017
-  change_type: sample 1
-  start_datetime: 05/21/2017
-  end_datetime: 06/21/2017
-  system: sample os 1
+- notice_date: 07/20/2017 15:34 EST
+  change_type: CA Certificate Revocation
+  start_datetime: 07/24/2017 15:34 EST
+  end_datetime: 07/25/2017 12:01 EST
+  system: Federal Bridge CA 2016
   change_description: sample change_description 1
-  impact: sample non impact 1
+  impact: sample non impace
   contact: sampleuser1@sampleagency.gov
