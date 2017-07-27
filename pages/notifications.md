@@ -24,6 +24,7 @@ To report a change **or** system outage not listed below, please email fpki@gsa.
 <div class="usa-width-one-whole">
 <hr>
 <% assign len = site.data.notifications|length %}
+<!-- Loop through notifications last is displayed first -->
 {% for i len to 1 by -1 %}
   {% assign notification = site.data.notifications[i] %}
   <ul class="usa-unstyled-list">
