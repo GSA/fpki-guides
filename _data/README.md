@@ -11,17 +11,17 @@
 #data file for fpki-guides change notification
 #format:
     ```
-#notice_date: "<date in MM/DD/YYYY HH:MM EST format>"
-#change_type: "< CA Certificate Issuance, CA Certificate Revocation, New CA, CA Termination, New OCSP URI, New CRL Distribution Point, OCSP Outage, CRL Outage >"
-#start_datetime: "<in MM/DD/YYYY HH:MM format>"
-#end_datetime: "<in MM/DD/YYYY HH:MM format>"
-#system: "<Operating system, Application etc>"
-#change_description: "<detailed statement>"
-#impact: "<impact statement>"
-#contact: "<email, phone etc>"
-# ca_certificate: <pem encoded>
-# cdp_uri:
-# aia_uri:
-# sia_uri:
-# ocsp_uri:
+notice_date: "<date in MM/DD/YYYY HH:MM EST format>"
+change_type: "< CA Certificate Issuance, CA Certificate Revocation, New CA, CA Termination, New OCSP URI, New CRL Distribution Point, OCSP Outage, CRL Outage >"
+start_datetime: "<in MM/DD/YYYY HH:MM format>"
+end_datetime: "<in MM/DD/YYYY HH:MM format>"
+system: "<Operating system, Application etc>"
+change_description: "<detailed statement>"
+impact: "<impact statement>"
+contact: "<email, phone etc>"
+ca_certificate: <pem encoded>
+cdp_uri:
+aia_uri:
+sia_uri:
+ocsp_uri:
    ```
