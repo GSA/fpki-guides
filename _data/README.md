@@ -10,6 +10,7 @@
  
 #data file for fpki-guides change notification
 #format:
+    ```
 #notice_date: "<date in MM/DD/YYYY HH:MM EST format>"
 #change_type: "< CA Certificate Issuance, CA Certificate Revocation, New CA, CA Termination, New OCSP URI, New CRL Distribution Point, OCSP Outage, CRL Outage >"
 #start_datetime: "<in MM/DD/YYYY HH:MM format>"
@@ -23,3 +24,4 @@
 # aia_uri:
 # sia_uri:
 # ocsp_uri:
+   ```
