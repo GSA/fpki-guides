@@ -1,52 +1,107 @@
 ---
 layout: default
-title: Guidance Document Template
+title: Template Title of This Page
 permalink: /template/
 ---
-This page serves as the template for creating your own guidance document to add to one of the FICAM Guides.  
 
-To create your own page using the github website, copy the content from this file, paste it into a new file (new files can be created through the 'new file' link at the top of the pages folder), give the new file a name (at the top of the page there will be a box that says 'name your file'), and change the title and permalink at the very top section of the file (the permalink should match the new file name). The title should be what you want to appear at the top of the page on the site, and the permalink text should match the name of the file, but in the format /mypage/ instead of mypage.md.
+Markdown is a simple way of writing and formatting.  The formats can be used across many different platforms including for websites and documents.  We created a sample template to help you with your page. 
 
-In this template, you will see text that explains how to use this template and comments explaining the formats.
+To review information on how to contribute and how to Add a New Page: https://piv.idmanagement.gov/contribute 
+If you want to learn more about markdown formatting: https://guides.github.com/features/mastering-markdown/
 
-<!--- For example, this code denotes a comment, and information written inside of it will not appear on the website but can be used as a reference for others viewing the file. -->
+You can copy and paste this template into a new page, and use the sample markdown. 
+
+You probably noticed this block at the top of the page.  
+
+layout: default 
+title: Title of the Page
+permalink: /template/
+
+This block at the top of the page is used for website navigation when your guide is posted.  Update the _Title of the Page_ and the _/template/_ 
+
+## Overview
+
+To begin your guide, briefly state its purpose in one to two sentences for an Overview.  You may include information on the intended audience, the intended outcome of the guide, and any other information that would help the user to understand the guide.
+
+Then add a table of contents link for each section. For example:
+
+* [Section 1 Title](#words-in-section1-title-separated-by-dashes)
+* [Section 2 Title](#words-in-section2-title-separated-by-dashes)
+* [Section 3 Title](#words-in-section3-title-separated-by-dashes)
+
+We propose these sections for most guides:
+
+## Before You get Started
+This section should tell the user what to prepare before starting a set of procedures. Explain any assumptions as bulleted lists. Clearly state the hardware and software requirements. 
+
+## Procedure 1
+This section should tell the user how to achieve the goal. Explain all steps simply and don't try to recreate other resources that are easily found.  Focus on the government and what can be unique when implementing or executing.
+
+## Procedure 2
+This section should tell the user how to achieve the goal. Explain all steps simply and don't try to recreate other resources that are easily found.  Focus on the government and what can be unique when implementing or executing. 
+
+Here are sample markdown formats for you:
+
+Headings use the hash sign with a space. 
+
+## This Is a Second-Level Heading
+### This is a third-level heading
+#### This is a fourth-level heading
 
 
-<!--- The '#' symbol is used to denote headers, with different amounts aligning with different header styles. -->
+### Number List Items
 
-#### Overview
-This text should be populated with a brief overview of what content is contained within the guidance document, and may include information on the intended audience, the outcome of the guide, and any other information that would help the user to understand the guide.
+1. Step 1 of procedure. (Indent 2 spaces, enter a number, and add 1 space.) 
+2. Step 2 of procedure.
 
-##### Assumptions
-*  This text will be a bullet explaining a precondition or assumption before the user begins to follow the steps outlined in this document
-*  The asterisk symbol denotes a bulleted item, and an indented asterisk denotes a second level bullet
-    *  This is a second level bullet
+### Bullet List Items
 
-#### Before you get started
-This text will provide any reference information that may be needed to complete the steps outlined in the guide.
+* Bullet 1 (Indent 2 spaces, enter an asterisk, and add 1 space.)
+* Bullet 2
 
-*  This text names a link to a reference document [with the hyperlink text within brackets](and the actual URL within parentheses)
+### Bold and Italics
 
-<!-- If you want to insert an image onto the page use the format below. The align feature at the end can either be "left", "center", or "right". -->
+* Use double asterisks to bold a word:  **bold**.
+* Use underscores to create italics:  _italics_.
 
-![Alt text for an image goes here]({{site.baseurl}}/folder that image is in/imagename.png){:align="right"}
+### Code Blocks
 
-### 1. Title of Procedure 1
+To create a code block, use spaces, backticks (```), and Returns in this order: 
 
-This is the main body text that explains the purpose of the procedure and any context that you might need before diving into the individual steps. The text within each step should walk the user directly through exactly what they need to do to complete the procedure.  
+* 4 spaces plus 3 backticks (```) to start the code block 
+* A Return
+* Type or paste in the code that the user needs to enter for a specific step
+* Another Return
+* 4 spaces plus 3 backticks to end the code block
+* Another Return
 
-**Text within double asterisks will appear as bolded.**  
+For example:
 
-*Text within single asterisks will appear as italicized.*  
+   ```
+   Text within three backticks for code or command line samples
+   ```
 
-```Text within three backticks style code or command line samples```  
+### Code Comments
 
-For more information on formatting in markdown, go [here.](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+Code comments will be invisible in a webpage view, but others will be able to see the comment in GitHub Markdown. <!--For example, this code denotes a comment. It will not appear on a webpage but can be used as a reference for others viewing the file.-->
 
-1.	Step 1 of the procedure...
-2.	Step 2 of the procedure...
+### Images
+
+To insert an image into your Page, upload the image file to the **/img/** folder in the GitHub repository.  Then at the image insertion point in your page, add these formats to link to the image.
+
+![This is what I want a screen reader to say for 508 compliance]({{site.baseurl}}/img/imagename.png)
+
+![Text for an image aligned right goes here]({{site.baseurl}}/img/imagename.png){:align="right"}
+
+![Text for another image aligned left goes here]({{site.baseurl}}/img/anotherimagename.png){:style="float:left;width:25%;"}
 
 
-#### References
+### Links to Other Documents
 
-Any referential links should be added to this section. Links appear in the following format [hyperlink text]({{ site.baseurl }}{{ page.url }})
+To link to useful references, information:
+
+[This is what I want my link to say]({{site.baseurl}}/insertlink/)
+
+To link to a document, or to another website, you need to always open the link in a new window: 
+
+[This is what I want my link to say](https://www.governmentagency.gov){:target="blank"}

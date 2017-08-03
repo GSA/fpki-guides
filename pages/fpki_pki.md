@@ -21,8 +21,6 @@ PKI provides for public key encryption of data and digital signature services. I
 
 PKI uses public key (PK) cryptography.  PK cryptography uses public and private key pairs to encrypt and decrypt data. <!-- This paragraph seems to be about cryptograpy but digresses into public and private key discussion. -->Public keys may be disseminated widely; however, a private key is known only to the owner (senders and receivers). A sender uses a private key to encrypt unprotected information (i.e., transform plaintext to ciphertext). A receiver uses a corresponding private key to either: (a) transform the ciphertext back into plaintext, (b) verify the sender’s identity, or (c) verify the data’s integrity, or some combination of these options. <!-- Doesn't say how the data is encrypted, decrypted, etc. -->
 
-![Example of Public Key Infrastructure]({{site.baseurl}}/img/PKI-image1.jpg){:style="float:center"}
-
 
 ## What are the components of PKI?
 The four components of PKI include **Certificate Authorities (CAs)**, **Registration Authorities (RAs)**, **repositories**, and **archives**. <!-- How do components differ from the "system" described in "What is PKI" above? Only 4 components? -->There are two types of PKI users: **Certificate Holders** and **Relying Parties**. A fifth, optional component is the **Attribute Authority**. The following table describes these components and related functions in detail.
