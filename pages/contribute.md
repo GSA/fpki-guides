@@ -4,7 +4,7 @@ title: How to Contribute
 permalink: /contribute/
 ---
 
-Thank you for considering contributing to our development of open and transparent PIV Guides.  Everyone has tricks and tips and we want to share these with our colleagues! 
+Thank you for considering contributing to our development of open and transparent Federal PKIU Guides.  Everyone has tricks and tips and we want to share these with our colleagues! 
 
 To contribute to this site, you can:
 
@@ -56,8 +56,7 @@ In the GitHub repository [here]({{site.repo_url}}){:target="_blank"} under the '
 
 There are folders containing the content and diagrams. 
 
-*  _pages_: includes the pages for Introduction, Identifiers, Getting Started, and Certificate Trust
-* _networkconfig_: includes the pages for the configurations for network authentication
+*  _pages_: includes the content on the pages 
 * _img_: includes all diagrams and images and are available for download and reuse anywhere
 
 We encourage you to read our [LICENSE]({{ site.repo_url }}/blob/{{ site.branch }}/LICENSE.md){:target="_blank"} and our [README]({{ site.repo_url }}/blob/{{ site.branch }}/README.md){:target="_blank"}, which exist within this repository.  
