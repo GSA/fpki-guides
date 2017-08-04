@@ -10,21 +10,21 @@
  ### The end user email should content data in following format
  
      ```
-      notice_date: 07/21/2017 15:34 EST
-      change_type: CA Certificate Issuance
-      start_datetime:
-      end_datetime: 07/21/2017 15:34 EST
-      system: Federal Bridge CA 2016
-      change_description: sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description
-      impact: sample non impace
-      contact: sampleuser@sampleagency.gov
-      ca_certificate_hash:
-      ca_certificate_issuer: Federal Bridge CA 2016
-      ca_certificate_subject:
-      cdp_uri: http://pki.treas.gov/dhsca4.crl
-      aia_uri: http://pki.treas.gov/sample.p7b
-      sia_uri: http://pki.treas.gov/sample.p7b
-      ocsp_uri:     
+      notice_date: <ie, 07/21/2017 15:34 EST >
+      change_type: <ie, CA Certificate Issuance >
+      start_datetime: <ie,  07/21/2017 15:34 EST >
+      end_datetime:  <ie, 07/21/2017 15:34 EST >
+      system: <ie, Federal Bridge CA 2016 >
+      change_description: <ie, sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description >
+      impact: <ie, sample non impact >
+      contact: <ie, sampleuser@sampleagency.gov >
+      ca_certificate_hash: <ie, SHA256>
+      ca_certificate_issuer: <ie, Federal Bridge CA 2016 >
+      ca_certificate_subject: <ie, john Dou>
+      cdp_uri: <ie, http://pki.treas.gov/dhsca4.crl>
+      aia_uri: <ie, http://pki.treas.gov/sample.p7b>
+      sia_uri: <ie, http://pki.treas.gov/sample.p7b>
+      ocsp_uri: <ie, http://pki.treas.gov/dhsca4.crl>    
       
       ```
      
