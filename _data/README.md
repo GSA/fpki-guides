@@ -10,23 +10,21 @@
  The end user email should content data in following format
  
      ```
- 
-  notice_date: 07/21/2017 15:34 EST
-  change_type: CA Certificate Issuance
-  start_datetime:
-  end_datetime: 07/21/2017 15:34 EST
-  system: Federal Bridge CA 2016
-  change_description: sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description
-  impact: sample non impace
-  contact: sampleuser@sampleagency.gov
-  ca_certificate_hash:
-  ca_certificate_issuer: Federal Bridge CA 2016
-  ca_certificate_subject:
-  cdp_uri: http://pki.treas.gov/dhsca4.crl
-  aia_uri: http://pki.treas.gov/sample.p7b
-  sia_uri: http://pki.treas.gov/sample.p7b
-  ocsp_uri:
-      
+      notice_date: 07/21/2017 15:34 EST
+      change_type: CA Certificate Issuance
+      start_datetime:
+      end_datetime: 07/21/2017 15:34 EST
+      system: Federal Bridge CA 2016
+      change_description: sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description
+      impact: sample non impace
+      contact: sampleuser@sampleagency.gov
+      ca_certificate_hash:
+      ca_certificate_issuer: Federal Bridge CA 2016
+      ca_certificate_subject:
+      cdp_uri: http://pki.treas.gov/dhsca4.crl
+      aia_uri: http://pki.treas.gov/sample.p7b
+      sia_uri: http://pki.treas.gov/sample.p7b
+      ocsp_uri:     
       ```
      
      After rececing the email, the technical person should:
