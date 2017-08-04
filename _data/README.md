@@ -7,7 +7,7 @@
 
  This directory (_data) contains YML data file notifications.yml. The format for the notification.yml is located at the beginning comment section of the yml file. The pages/notifications.md processes data in notifications.yml	for display.	The latest notification entry in notification.yml are displayed first, in reverse order of entry. The notification data can be emailed by end user to <email> and a technical person with back end access to paste the notification to the end of file _data/notifications.yml
  
- The end user email should content data in following format
+ ### The end user email should content data in following format
  
      ```
       notice_date: 07/21/2017 15:34 EST
@@ -25,9 +25,10 @@
       aia_uri: http://pki.treas.gov/sample.p7b
       sia_uri: http://pki.treas.gov/sample.p7b
       ocsp_uri:     
+      
       ```
      
-     After rececing the email, the technical person should:
+### After rececing the email, the technical person should:
      
      1. browse to following github url, https://github.com/GSA/fpki-guides/blob/change-notifications/_data/notifications.yml. 
      2. click on edit icon
