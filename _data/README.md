@@ -10,7 +10,8 @@
  The end user email should content data in following format
  
      ```
- notice_date: 07/21/2017 15:34 EST
+ 
+  notice_date: 07/21/2017 15:34 EST
   change_type: CA Certificate Issuance
   start_datetime:
   end_datetime: 07/21/2017 15:34 EST
@@ -25,7 +26,8 @@
   aia_uri: http://pki.treas.gov/sample.p7b
   sia_uri: http://pki.treas.gov/sample.p7b
   ocsp_uri:
-     ```
+      
+      ```
      
      After rececing the email, the technical person should:
      
