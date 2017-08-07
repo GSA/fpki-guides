@@ -6,7 +6,7 @@ layout: default
 This page lists the changes to certification authorities and supporting systems operating within the Federal PKI community.  
 
 - [List of Notifications](#notifications)
-<!-- - [Add New Notification](http://github.com/GSA/fpki-guides/issues/new?title=System%20Notification%20for%3A%20%3CYour%20Organization%3E&amp;body=%23%23%23%23%20Notice%20Date:%0A%3CEnter%20Notice%20Date%20Here%3E%0A%0A%23%23%23%23%20System:%0A%3CEnter%20System%20Name%20Here%3E&amp;labels[]=System%20Notification) -->
+- [Add New Notification](http://github.com/GSA/fpki-guides/issues/new?title=System%20Notification%20for%3A%20%3CYour%20Organization%3E&amp;body=%23%23%23%23%20Notice%20Date:%0A%3CEnter%20Notice%20Date%20Here%3E%0A%0A%23%23%23%23%20System:%0A%3CEnter%20System%20Name%20Here%3E&amp;labels[]=System%20Notification)
 
 The communication of changes, and planned or unplanned system outages, is required by the certificate policies and the incident management process.  Strong communication allows for planning and response and benefits the Federal PKI community as a whole.  Planned changes of the these types require notifications two (2) weeks in advance:
 
