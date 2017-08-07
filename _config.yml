@@ -75,7 +75,7 @@ navigation:
   url: tools
   internal: true
   coll: false
-- text: System Notifications - 08/07/2017 15:34 EST
+- text: System Notifications
   url: notifications
   internal: true
   coll: false
