@@ -35,6 +35,7 @@ The notification data can also be emailed by end user to  fpki@gsa.gov and a tec
      2. select 'System Notification' tag
      3. copy the latest 'System Notification'
      4. Paste it into _data/notifications.yml file as below 3 - 6
+     5. ensure the notification entry you pasted does not have unnecessary empty lines.
      
 ### After receiving the email, the technical person should:
      
