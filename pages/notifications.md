@@ -6,7 +6,7 @@ layout: default
 This page lists the changes to certification authorities and supporting systems operating within the Federal PKI community.  
 
 - [List of Notifications](#notifications)
-- [Add New Notification]({{site.system_notification_url}})
+- [Add New Notification]({{site.config.system_notification_url}})
 
 The communication of changes, and planned or unplanned system outages, is required by the certificate policies and the incident management process.  Strong communication allows for planning and response and benefits the Federal PKI community as a whole.  Planned changes of the these types require notifications two (2) weeks in advance:
 
