@@ -1,7 +1,17 @@
-Submit Notification Via GitHub Issue
+---		
+ layout: default		
+ title: User Guide		
+ collection: data		
+ permalink: data/UserGuide/		
+---		
+
+### Submit Notification Via GitHub Issue
+
 1.	Click on the ‘Add New Notification’.
 2.	Enter all relevant data and click 'Submit new issue' to submit the notification.
-Submit Notification Via Email
+
+### Submit Notification Via Email
+
 The notification data can also be emailed by end user to fpki@gsa.gov and a technical person with back end access to paste the notification to the end of file _data/notifications.yml
 The end user email should contain data in following format
  ```
