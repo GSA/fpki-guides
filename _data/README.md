@@ -28,7 +28,7 @@
       
       ```
      
-### After rececing the email, the technical person should:
+### After receiving the email, the technical person should:
      
      1. browse to following github url, https://github.com/GSA/fpki-guides/blob/change-notifications/_data/notifications.yml. 
      2. click on edit icon
