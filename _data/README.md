@@ -33,7 +33,7 @@
      1. browse to following github url, https://github.com/GSA/fpki-guides/blob/change-notifications/_data/notifications.yml. 
      2. click on edit icon
      3. cut/paste the the the abov content from the email to the end of _data/notifications.yml file. 
-     4. Add a dash - at the beginnig of what you pasted.
+     4. Add a dash "-" at the beginnig of what you pasted (refer to existing notification entries for postion and spacing).
      5. Commit the change to the file.
      6. test the new entry with following url: https://federalist-proxy.app.cloud.gov/preview/gsa/fpki-guides/change-notifications/notifications/#notifications
      
