@@ -5,7 +5,7 @@
  permalink: data/README/		
 ---		
 
- This directory (_data) contains YML data file notifications.yml. The format for the notification.yml is located at the beginning comment section of the yml file. The pages/notifications.md processes data in notifications.yml	for display.	The latest notification entry in notification.yml are displayed first, in reverse order of entry. The notification data can be emailed by end user to <email> and a technical person with back end access to paste the notification to the end of file _data/notifications.yml
+ This directory (_data) contains YML data file notifications.yml. The format for the notification.yml is located at the beginning comment section of the yml file. The pages/notifications.md processes data in notifications.yml	for display.	The latest notification entry in notification.yml are displayed first, in reverse order of entry. The notification data can be emailed by end user to  fpki@gsa.gov and a technical person with back end access to paste the notification to the end of file _data/notifications.yml
  
  ### The end user email should contain data in following format
  
