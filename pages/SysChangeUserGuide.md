@@ -1,9 +1,8 @@
----		
- layout: default		
- title: User Guide		
- collection: pages		
- permalink: pages/SysChangeUserGuide/		
----		
+---
+title: System Changes and Notifications User Guide
+permalink: /SysChangeUserGuide/
+layout: default
+---
 
 ### Submit Notification Via GitHub Issue
 
