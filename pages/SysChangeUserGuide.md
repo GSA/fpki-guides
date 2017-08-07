@@ -2,7 +2,7 @@
  layout: default		
  title: User Guide		
  collection: pages		
- permalink: pages/UserGuide/		
+ permalink: pages/SysChangeUserGuide/		
 ---		
 
 ### Submit Notification Via GitHub Issue
