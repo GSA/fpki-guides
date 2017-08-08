@@ -1,14 +1,18 @@
 #data file for fpki-guides change notification
-#format:
+#format
+
 #notice_date: "<date in MM/DD/YYYY HH:MM EST format>"
-#change_type: "< CA Certificate Issuance, CA Certificate Revocation, New CA, CA Termination, New OCSP URI, New CRL Distribution Point, OCSP Outage, CRL Outage >"
+#change_type: "< CA Certificate Issuance, CA Certificate Revocation, New CA, CA Termination, New URI in Certificates, OCSP Outage, CRL Outage >"
 #start_datetime: "<in MM/DD/YYYY HH:MM format>"
 #end_datetime: "<in MM/DD/YYYY HH:MM format>"
 #system: "<Operating system, Application etc>"
 #change_description: "<detailed statement>"
-#impact: "<impact statement>"
 #contact: "<email, phone etc>"
+### The following are all optional fields based on the change type
 # ca_certificate: <pem encoded>
+# ca_certificate_hash: <the sha1 thumbprint of the certificate>
+# ca_certificate_issuer: <the issuer DN of the CA certificate>
+# ca_certificate_subject: <the subject DN of the CA certificate>
 # cdp_uri:
 # aia_uri:
 # sia_uri:
@@ -21,7 +25,6 @@
   end_datetime: 07/21/2017 15:34 EST
   system: Federal Bridge CA 2016
   change_description: sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description
-  impact: sample non impace
   contact: sampleuser@sampleagency.gov
   ca_certificate_hash:
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -37,7 +40,6 @@
   end_datetime: 07/25/2017 12:01 EST
   system: Federal Bridge CA 2016
   change_description: sample change_description 1
-  impact: sample non impace
   contact: sampleuser1@sampleagency.gov
 
 - notice_date: 07/27/2017 15:34 EST
@@ -46,7 +48,6 @@
   end_datetime: 07/21/2017 15:34 EST
   system: Federal Bridge CA 2016
   change_description: sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description
-  impact: sample non impace
   contact: sampleuser@sampleagency.gov
   ca_certificate_hash:
   ca_certificate_issuer: Federal Bridge CA 2016
