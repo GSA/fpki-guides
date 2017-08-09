@@ -6,7 +6,7 @@ Please follow the guidelines in this document to insert a system change or plann
 
 The data directory (_data) in Github contains a YAML data file structured for notifications. The file is named notifications.yml. The format for the notification.yml is located at the beginning comment section of the yml file. The pages/notifications.md processes the data in the notifications.yml for display. The latest notification entry in notification.yml  will be displayed at the top of the notification list. The other notifications are displayed in the descending order of the notification time. 
 
-The notification data can be provides as a GitHub issue or via email. Once the notification data is received, a member of the FPKI team OR the submitting organization should follow the instructions below to add the notification to the list.
+The notification data can be provided as a GitHub issue or via email. Once the notification data is received, a member of the FPKI team OR the submitting organization should follow the instructions below to add the notification to the list.
 
 Retrieve notification from GitHub Issue:
 	1. Access the FPKI-Guide issues list at https://github.com/GSA/fpki-guides/issues.
