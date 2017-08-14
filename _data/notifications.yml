@@ -18,58 +18,388 @@
 # sia_uri:
 # ocsp_uri:
 
-
-- notice_date: 07/21/2017 15:34 EST
+- notice_date: June 20, 2017 12:15:44 PM
   change_type: CA Certificate Issuance
-  start_datetime:
-  end_datetime: 07/21/2017 15:34 EST
-  system: Federal Bridge CA 2016
-  change_description: sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description
-  contact: sampleuser@sampleagency.gov
-  ca_certificate_hash:
+  start_datetime: June 20, 2017 12:15:44 PM
+  end_datetime: August 31, 2018 11:14:34 PM
+  system: N/A
+  change_description: N/A
+  contact: fpki@gsa.gov
+  ca_certificate: -----BEGIN CERTIFICATE-----
+MIIFYjCCBEqgAwIBAgIUV9GJDiJgPRFlUh+zz71itf9BhVkwDQYJKoZIhvcNAQEL
+BQAwVzELMAkGA1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsG
+A1UECxMERlBLSTEfMB0GA1UEAxMWRmVkZXJhbCBCcmlkZ2UgQ0EgMjAxNjAeFw0x
+NzA2MjAxNjE1NDRaFw0xODA5MDEwMzE0MzRaMGExCzAJBgNVBAYTAlVTMRIwEAYD
+VQQKEwlJZGVuVHJ1c3QxIDAeBgNVBAsTF0lkZW5UcnVzdCBQdWJsaWMgU2VjdG9y
+MRwwGgYDVQQDExNJZGVuVHJ1c3QgQUNFUyBDQSAxMIIBIjANBgkqhkiG9w0BAQEF
+AAOCAQ8AMIIBCgKCAQEApbIA4VQViR0Byntck4o59i8fysqSDVdXk+OKJrLGNnkm
+p0VyL7w+sqakBhQ8QTojwobNJ3c4tdX/S402kL/5KFioMmk2Tir5kHfmJ2DF7ROG
+3y0z7abnG2JPMz7+LVBXmac97jg+M10wFRiPlnTGchSY07sDDTQvfpdyxRXmD+KA
+TpsjilrrMBAFvlyQMAJZSsuQ6+irIXuFj8irYINyvykNIik0zrfQQllMujrEw4XW
+36b5EXTFMKVj8aGQNZ3XuFbfyzppKm6BjtdgkIvrIDf8a1VWcr6QsPFuf27aSrfX
+uloWbQWGW6wNUjHIht6ht3xQil3HHJxJXlhWX/VJoQIDAQABo4ICGjCCAhYwDwYD
+VR0TAQH/BAUwAwEB/zAzBgNVHSAELDAqMAwGCmCGSAFlAwIBAwIwDAYKYIZIAWUD
+AgEDAzAMBgpghkgBZQMCAQMlMFcGA1UdIQRQME4wGAYKYIZIAWUDAgEDAgYKYIZI
+AWUDAgEBAjAYBgpghkgBZQMCAQMDBgpghkgBZQMCAQEDMBgGCmCGSAFlAwIBAyUG
+CmCGSAFlAwIBAQUwUAYIKwYBBQUHAQsERDBCMEAGCCsGAQUFBzAFhjRodHRwOi8v
+YXBwcy5pZGVudHJ1c3QuY29tL3Jvb3RzL3B1YmxpY3NlY3RvcnJvb3QucDdjMCkG
+A1UdHgEB/wQfMB2hGzAZpBcwFTETMBEGCgmSJomT8ixkARkWA21pbDAMBgNVHSQE
+BTADgQEAMFMGCCsGAQUFBwEBBEcwRTBDBggrBgEFBQcwAoY3aHR0cDovL2h0dHAu
+ZnBraS5nb3YvYnJpZGdlL2NhQ2VydHNJc3N1ZWRUb2ZiY2EyMDE2LnA3YzAKBgNV
+HTYEAwIBADAOBgNVHQ8BAf8EBAMCAQYwHwYDVR0jBBgwFoAUI7CzfRZU1AJWdus6
+vqlrL0N7KBYwOQYDVR0fBDIwMDAuoCygKoYoaHR0cDovL2h0dHAuZnBraS5nb3Yv
+YnJpZGdlL2ZiY2EyMDE2LmNybDAdBgNVHQ4EFgQU5jMJY4m1ZhpP1bPMD6v7tQzH
+80cwDQYJKoZIhvcNAQELBQADggEBAB39dhT545BOSswWkQyhh23nE3wAPfE6yryc
+sfANdYomHRNKUuoLHD450SzYeiPEdcDHKL9cNe02ZCc5CPkOrjv6/9Z6g0R9CxEY
+UbeCE93pkaQEryUzr0BXoRP60FVbl66qVAANcsPAgW4a3d+SfEjlm7R2agtvEizz
+Y3ryetge6GHGUzxjM/AxWVvev+JdvOALvNo6OFQgYjBs4v2tP6QJyRTaHlmvbY8y
+h5KR1h0QFfGnno6fxdtZahDV282azKZmO5bAjPS0gntSVn/fbjqRkzBh2ejN4lDR
+EJTSR6vTbg87fppnPKy2sCd0sAA1REhcPFvCoHMDmAHNPMj36y4=
+-----END CERTIFICATE-----
+  ca_certificate_hash: 8c 7a 33 76 da 95 e2 be 52 da bc 03 21 56 f4 c4 78 74 e4 c4
   ca_certificate_issuer: Federal Bridge CA 2016
-  ca_certificate_subject:
-  cdp_uri: http://pki.treas.gov/dhsca4.crl
-  aia_uri: http://pki.treas.gov/sample.p7b
-  sia_uri: http://pki.treas.gov/sample.p7b
-  ocsp_uri:
+  ca_certificate_subject:  IdenTrust ACES CA 1
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://apps.identrust.com/roots/publicsectorroot.p7c
+  ocsp_uri: N/A
 
-- notice_date: 07/20/2017 15:34 EST
-  change_type: CA Certificate Revocation
-  start_datetime: 07/24/2017 15:34 EST
-  end_datetime: 07/25/2017 12:01 EST
-  system: Federal Bridge CA 2016
-  change_description: sample change_description 1
-  contact: sampleuser1@sampleagency.gov
-
-- notice_date: 07/27/2017 15:34 EST
+- notice_date: June 20, 2017 12:26:12 PM
   change_type: CA Certificate Issuance
-  start_datetime:
-  end_datetime: 07/21/2017 15:34 EST
-  system: Federal Bridge CA 2016
-  change_description: sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description sample change_description
-  contact: sampleuser@sampleagency.gov
-  ca_certificate_hash:
-  ca_certificate_issuer: Federal Bridge CA 2016
-  ca_certificate_subject:
-  cdp_uri: http://pki.treas.gov/dhsca4.crl
-  aia_uri: http://pki.treas.gov/sample.p7b
-  sia_uri: http://pki.treas.gov/sample.p7b
-  ocsp_uri:
+  start_datetime: June 20, 2017 12:26:12 PM
+  end_datetime: August 31, 2018 11:24:37 PM
+  system: N/A
+  change_description: N/A
+  contact: fpki@gsa.gov
+  ca_certificate: -----BEGIN CERTIFICATE-----
+MIIFZzCCBE+gAwIBAgIURmg8G1G1HLkfc5d0NeQ8+CvpzHQwDQYJKoZIhvcNAQEL
+BQAwVzELMAkGA1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsG
+A1UECxMERlBLSTEfMB0GA1UEAxMWRmVkZXJhbCBCcmlkZ2UgQ0EgMjAxNjAeFw0x
+NzA2MjAxNjI2MTJaFw0xODA5MDEwMzI0MzdaMGExCzAJBgNVBAYTAlVTMRIwEAYD
+VQQKEwlJZGVuVHJ1c3QxIDAeBgNVBAsTF0lkZW5UcnVzdCBQdWJsaWMgU2VjdG9y
+MRwwGgYDVQQDExNJZGVuVHJ1c3QgQUNFUyBDQSAyMIIBIjANBgkqhkiG9w0BAQEF
+AAOCAQ8AMIIBCgKCAQEAz7xGQ9mm19AMWvdrfWDlFYfNy2UFnqyjQYt5+2Qqw6TK
+7iTNQSw9df+EkBloZgRytJuF7617B6Pn4uNzR2wETA2hChAwc91MmusRlRs6SJqX
+ShlUX8Xd/GE/UtjEuR6A5vC0Uz7J7WD56Q9N4oEwnugb3vhZX49jz5cp9TLXqEWm
+D/Ot7rDmRK1iEDNtLeT1sSp9rdBGQc6SUib4E4GYZXbk2DNZtznPeayUc5/1Ob33
+kH1jyYkdbvo8nQYyS/IoqqHr+BsFpdVGF2GNXJufrDSUWb1TjUtqNWomQH+sFKEt
+iHcTZGp5jmjTMOUopU0PJhYJVgmvLhmiw1abzjagFwIDAQABo4ICHzCCAhswDwYD
+VR0TAQH/BAUwAwEB/zAzBgNVHSAELDAqMAwGCmCGSAFlAwIBAwIwDAYKYIZIAWUD
+AgEDAzAMBgpghkgBZQMCAQMlMFcGA1UdIQRQME4wGAYKYIZIAWUDAgEDAgYKYIZI
+AWUDAgEBAjAYBgpghkgBZQMCAQMDBgpghkgBZQMCAQEDMBgGCmCGSAFlAwIBAyUG
+CmCGSAFlAwIBAQUwVQYIKwYBBQUHAQsESTBHMEUGCCsGAQUFBzAFhjlodHRwOi8v
+dmFsaWRhdGlvbi5pZGVudHJ1c3QuY29tL2NlcnRzL2lzc3VlZGJ5YWNlc2NhMi5w
+N2MwKQYDVR0eAQH/BB8wHaEbMBmkFzAVMRMwEQYKCZImiZPyLGQBGRYDbWlsMAwG
+A1UdJAQFMAOBAQAwUwYIKwYBBQUHAQEERzBFMEMGCCsGAQUFBzAChjdodHRwOi8v
+aHR0cC5mcGtpLmdvdi9icmlkZ2UvY2FDZXJ0c0lzc3VlZFRvZmJjYTIwMTYucDdj
+MAoGA1UdNgQDAgEAMA4GA1UdDwEB/wQEAwIBBjAfBgNVHSMEGDAWgBQjsLN9FlTU
+AlZ26zq+qWsvQ3soFjA5BgNVHR8EMjAwMC6gLKAqhihodHRwOi8vaHR0cC5mcGtp
+Lmdvdi9icmlkZ2UvZmJjYTIwMTYuY3JsMB0GA1UdDgQWBBQGzSi05Rxdv7o/rxIJ
+Q4OdefzsMjANBgkqhkiG9w0BAQsFAAOCAQEAr82qQVam5q6AgovSpZelDkpLG47u
+GvklzRUouj/ao9RHcrrV6zK0jL7wooGX7GLIP7DapslxnpTY4YRpbuzoKQfvZE4Y
+7DOKpplrssJtjd8t/STOgYg1/8N7Tz6YbL8jszq5iO5ropShBegPx7hOSxX4fbi/
+tiRDH32r4BsyCI/89ShFXbAJYGKtA5UXJczQ7h2DGHT6154DGxJgIic/ttTQgwUC
+qXEOoKaBC0H8y4si8utPMgVlYZptQVhx76Rk4Fax05hg4Z2IntfKiw34IW2iCrzJ
+epGq6ITdmYzea+kj0JTpwybmgk2x7L111yXI7QJRn96o8tSEJVP5lT2hCw==
+-----END CERTIFICATE-----
+  ca_certificate_hash: f2 82 e5 05 30 11 13 e7 36 8a 26 2e 4e 3d fe 23 ed 39 c9 54
+  ca_certificate_issuer:  Federal Bridge CA 2016
+  ca_certificate_subject: IdenTrust ACES CA 2
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://validation.identrust.com/certs/issuedbyacesca2.p7c
+  ocsp_uri: N/A
 
-- notice_date: 08/07/2017 15:34 EST 
+- notice_date: June 20, 2017 12:56:58 PM
   change_type: CA Certificate Issuance
-  start_datetime:
-  end_datetime: 07/21/2017 15:34 EST
-  system: Federal Bridge CA 2016
-  change_description: sample change_description sample change_description
-  impact: sample non impace
-  contact: sampleuser@sampleagency.gov
-  ca_certificate_hash: SHA256
+  start_datetime: June 20, 2017 12:56:58 PM
+  end_datetime: September 24, 2018 11:55:36 PM
+  system: N/A
+  change_description: N/A
+  contact: fpki@gsa.gov
+  ca_certificate: -----BEGIN CERTIFICATE-----
+MIIKGzCCCQOgAwIBAgIUZvxRvyJb2MTmEeFW5zCkg/+ZkMMwDQYJKoZIhvcNAQEL
+BQAwVzELMAkGA1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsG
+A1UECxMERlBLSTEfMB0GA1UEAxMWRmVkZXJhbCBCcmlkZ2UgQ0EgMjAxNjAeFw0x
+NzA2MjAxNjU2NThaFw0xODA5MjUwMzU1MzZaME0xCzAJBgNVBAYTAlVTMRIwEAYD
+VQQKEwlJZGVuVHJ1c3QxKjAoBgNVBAMTIUlkZW5UcnVzdCBHbG9iYWwgQ29tbW9u
+IFJvb3QgQ0EgMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAONUqTPU
+VYIq6VpF0VRruVtyK+roeCGzumAJf9p5E+WQJrcDUabyqeD4ltiCUqJvMPODcYjb
+QDDCblBPLNlwVjR30PZm4fIheCnOMkEz27TsC6CDtByEH16JElojQECHLbZMloAS
+beegl2t94bjz3VL0oytZl38U5lDxJwWSc/PWaCNLDGuWUnZQxLaNnzIRl/ATXBv+
+VNrxOOFe4HC2eazHwR1ipABg9IwjnT7BAz/R30Y6RDOi39P8gIKHozz7pgmwncMe
+wk0ex+ZsYhR1tJ2sb56RB9gknyJfbWScIZWyZJ3JKutLiceCdhCubHb7VL3j4uLA
+oa67KJxXyRXiLl/LW71Bqd4jRXnFR2rsJ3zzqiqUCmpyt3BL9/dMabitbdFOyznR
+fKBOCU7waDufAxZl3cbdTkfMFkqqR28r7HENLIs8QnW095HOEqfYMOHzxMcQDtzv
+CdE0v5suXYZ1l1XvZfhzUQ/W67pFP9jPWTKNPOdSCP/PBjU3yYzlKV3WO4PpJKeA
+vU6szhkz/xWRP6vJAhA531SzCCrTZaHwkf+eetIn8VMnKzX9tBetFs9CNrBx4fX2
+ehLiW/tBNh8TbzhjaspJp3sPvimX2TQk7IwxMCH0NYuezrF9j8xm7ADZHwWO1usZ
+iXrqAVelgmkB3nrrPQwcpmIuqetv3wAgOQ6RAgMBAAGjggXnMIIF4zAPBgNVHRMB
+Af8EBTADAQH/MIGXBgNVHSAEgY8wgYwwDAYKYIZIAWUDAgEDAjAMBgpghkgBZQMC
+AQMDMAwGCmCGSAFlAwIBAwwwDAYKYIZIAWUDAgEDDjAMBgpghkgBZQMCAQMPMAwG
+CmCGSAFlAwIBAyUwDAYKYIZIAWUDAgEDJjAMBgpghkgBZQMCAQMSMAwGCmCGSAFl
+AwIBAxMwDAYKYIZIAWUDAgEDFDCCA4gGA1UdIQSCA38wggN7MBkGCmCGSAFlAwIB
+AwIGC2CGSAGG+S8AZAIBMBkGCmCGSAFlAwIBAwIGC2CGSAGG+S8AZAICMBkGCmCG
+SAFlAwIBAwIGC2CGSAGG+S8AZAIDMBkGCmCGSAFlAwIBAwIGC2CGSAGG+S8AZAIE
+MBkGCmCGSAFlAwIBAwIGC2CGSAGG+S8AZAIFMBkGCmCGSAFlAwIBAwIGC2CGSAGG
++S8AZAIGMBkGCmCGSAFlAwIBAwIGC2CGSAGG+S8AZAIHMBkGCmCGSAFlAwIBAwIG
+C2CGSAGG+S8AZAIIMBkGCmCGSAFlAwIBAwMGC2CGSAGG+S8AZAMBMBkGCmCGSAFl
+AwIBAwMGC2CGSAGG+S8AZAMCMBkGCmCGSAFlAwIBAwMGC2CGSAGG+S8AZAMDMBkG
+CmCGSAFlAwIBAwMGC2CGSAGG+S8AZAMEMBkGCmCGSAFlAwIBAwMGC2CGSAGG+S8A
+ZAMFMBkGCmCGSAFlAwIBAwMGC2CGSAGG+S8AZAMGMBkGCmCGSAFlAwIBAyUGC2CG
+SAGG+S8AZCUBMBkGCmCGSAFlAwIBAyUGC2CGSAGG+S8AZCUCMBkGCmCGSAFlAwIB
+Aw4GC2CGSAGG+S8AZA4BMBkGCmCGSAFlAwIBAw4GC2CGSAGG+S8AZA4CMBkGCmCG
+SAFlAwIBAwwGC2CGSAGG+S8AZAwBMBkGCmCGSAFlAwIBAwwGC2CGSAGG+S8AZAwC
+MBkGCmCGSAFlAwIBAwwGC2CGSAGG+S8AZAwDMBkGCmCGSAFlAwIBAwwGC2CGSAGG
++S8AZAwEMBkGCmCGSAFlAwIBAw8GC2CGSAGG+S8AZA8BMBkGCmCGSAFlAwIBAw8G
+C2CGSAGG+S8AZA8CMBkGCmCGSAFlAwIBAw8GC2CGSAGG+S8AZA8DMBkGCmCGSAFl
+AwIBAw8GC2CGSAGG+S8AZA8EMBkGCmCGSAFlAwIBAyYGC2CGSAGG+S8AZCYBMBkG
+CmCGSAFlAwIBAyYGC2CGSAGG+S8AZCYCMBkGCmCGSAFlAwIBAxIGC2CGSAGG+S8A
+ZBIAMBkGCmCGSAFlAwIBAxIGC2CGSAGG+S8AZBIBMBkGCmCGSAFlAwIBAxIGC2CG
+SAGG+S8AZBICMBkGCmCGSAFlAwIBAxMGC2CGSAGG+S8AZBMBMBkGCmCGSAFlAwIB
+AxQGC2CGSAGG+S8AZBQBMFgGCCsGAQUFBwELBEwwSjBIBggrBgEFBQcwBYY8aHR0
+cDovL3ZhbGlkYXRpb24uaWRlbnRydXN0LmNvbS9yb290cy9Jc3N1ZWRieUlHQ1Jv
+b3RDQTEucDdjMFYGA1UdHgEB/wRMMEqhSDAZpBcwFTETMBEGCgmSJomT8ixkARkW
+A21pbDArpCkwJzELMAkGA1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVu
+dDAMBgNVHSQEBTADgQEAMAoGA1UdNgQDAgEAMFMGCCsGAQUFBwEBBEcwRTBDBggr
+BgEFBQcwAoY3aHR0cDovL2h0dHAuZnBraS5nb3YvYnJpZGdlL2NhQ2VydHNJc3N1
+ZWRUb2ZiY2EyMDE2LnA3YzAOBgNVHQ8BAf8EBAMCAQYwHwYDVR0jBBgwFoAUI7Cz
+fRZU1AJWdus6vqlrL0N7KBYwOQYDVR0fBDIwMDAuoCygKoYoaHR0cDovL2h0dHAu
+ZnBraS5nb3YvYnJpZGdlL2ZiY2EyMDE2LmNybDAdBgNVHQ4EFgQU+PmLL3+QQ5+P
+5owstUm4T5KLFnQwDQYJKoZIhvcNAQELBQADggEBAD6xXvvE2GmtsAbzB9+mewdn
+mLyXE0SWbWfzJx2pISE0LVxAa7AAzNTSMiVCjzX5zRoGpkBEeyw16U2ltphrXI8a
+g9O9Os/JNFB7NbcDKXuSRvjMHPk4GUEU/eji+7xNmNy1+ri5WAOyFNbnq62tiGRs
+gQhJu/dDYnySSOXhhQRxRqXmfCZqCASAQjnvJnPMHqf/pPraQtbRJ0536C1N/90d
+1GO2K8gAAkwlWCQYz8zyVgmGg3gn0wPA3Mung8JJCJT5ahe9t/slOu9UKD6j8PjL
+t3E8fMcuNWQU8vzM0eFuKtk/YGF8dCjB8jFABSMlRMdGIswEvWK439ri6mS+2L8=
+-----END CERTIFICATE-----
+  ca_certificate_hash: 8f 0c 18 76 9e 9e 6d 48 c5 8e 41 8e 9b d5 79 84 a7 ae 49 f4
   ca_certificate_issuer: Federal Bridge CA 2016
-  ca_certificate_subject: john Dou
-  cdp_uri: http://pki.treas.gov/dhsca4.crl
-  aia_uri: http://pki.treas.gov/sample.p7b
-  sia_uri: http://pki.treas.gov/sample.p7b
-  ocsp_uri: http://pki.treas.gov/dhsca4.crl
+  ca_certificate_subject: IdenTrust Global Common Root CA 1
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://validation.identrust.com/roots/IssuedbyIGCRootCA1.p7c
+  ocsp_uri: N/A
+  
+  - notice_date: July 12, 2017 10:59:26 AM
+  change_type: CA Certificate Issuance
+  start_datetime: July 12, 2017 10:59:26 AM
+  end_datetime: July 30, 2018 11:58:27 PM
+  system: N/A
+  change_description: N/A
+  contact: fpki@gsa.gov
+  ca_certificate: -----BEGIN CERTIFICATE-----
+MIIFszCCBJugAwIBAgIUPmcJXUUzosmJ+mc/q4F+1VhBdCIwDQYJKoZIhvcNAQEL
+BQAwVzELMAkGA1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsG
+A1UECxMERlBLSTEfMB0GA1UEAxMWRmVkZXJhbCBCcmlkZ2UgQ0EgMjAxNjAeFw0x
+NzA3MTIxNDU5MjZaFw0xODA3MzEwMzU4MjdaMDYxCzAJBgNVBAYTAlVTMRAwDgYD
+VQQKEwdPUkMgUEtJMRUwEwYDVQQDEwxPUkMgTkZJIENBIDMwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQDHwIYnpSzMGNmE8PPLxYT9wBQX+hb928KDmpAa
+Ou/nRlBPrRGTn56nHbaDDb6n6UiL+k+mYXhyQ4I8bFeuoRgyah/fHeDgnqY/il7d
+zEX3e31ptSeK8tAF/GNRJxWEerE0qAEJySHfepcFt1c5ouIHPLkH2lsxMcSuuOAC
+UeZxnZRI9NGHV5rb/uGOm9KZJrImD5vwEbDwNb5P9YMi1GxHr32B+E6kkqNVoOI5
+bG67fFWCdLcdcx0ymEHDN7izx6TmpMWcicN17w+MFfVhPFQvP0mvDxLjPWwtkzH/
+h5LKGOmTNrLjDohANv/f9xD5ViE5sF+oSoQedzMZI2gv3tMVAgMBAAGjggKWMIIC
+kjAPBgNVHRMBAf8EBTADAQH/MGsGA1UdIARkMGIwDAYKYIZIAWUDAgEDAzAMBgpg
+hkgBZQMCAQMMMAwGCmCGSAFlAwIBAyUwDAYKYIZIAWUDAgEDJjAMBgpghkgBZQMC
+AQMSMAwGCmCGSAFlAwIBAxMwDAYKYIZIAWUDAgEDFDBTBggrBgEFBQcBAQRHMEUw
+QwYIKwYBBQUHMAKGN2h0dHA6Ly9odHRwLmZwa2kuZ292L2JyaWRnZS9jYUNlcnRz
+SXNzdWVkVG9mYmNhMjAxNi5wN2MwTQYIKwYBBQUHAQsEQTA/MD0GCCsGAQUFBzAF
+hjFodHRwOi8vY3JsLXNlcnZlci5vcmMuY29tL2NhQ2VydHMvT1JDTkZJM19TSUEu
+cDdjMIHIBgNVHSEEgcAwgb0wGQYKYIZIAWUDAgEDAwYLKwYBBAGeUgEBAQMwGQYK
+YIZIAWUDAgEDDAYLKwYBBAGeUgEBAQwwGQYKYIZIAWUDAgEDJQYLKwYBBAGeUgEB
+ASUwGQYKYIZIAWUDAgEDJgYLKwYBBAGeUgEBASYwGQYKYIZIAWUDAgEDEgYLKwYB
+BAGeUgEBARIwGQYKYIZIAWUDAgEDEwYLKwYBBAGeUgEBARMwGQYKYIZIAWUDAgED
+FAYLKwYBBAGeUgEBARQwDAYDVR0kBAUwA4EBADAKBgNVHTYEAwIBADAOBgNVHQ8B
+Af8EBAMCAQYwHwYDVR0jBBgwFoAUI7CzfRZU1AJWdus6vqlrL0N7KBYwOQYDVR0f
+BDIwMDAuoCygKoYoaHR0cDovL2h0dHAuZnBraS5nb3YvYnJpZGdlL2ZiY2EyMDE2
+LmNybDAdBgNVHQ4EFgQU2R8ss4cpXQf+SWgtgPLdZvZPpIYwDQYJKoZIhvcNAQEL
+BQADggEBAJ+qtc3H7+a5FJu2CJKwd/foBosSxoL0rrRUGjfh9w76N8zhDW/rKkEI
+oNyCVFNq9QupDY0YwfOJgLCDvCmivX3H+7HREj59Nz5UpfBwu1MV2N0DLTm8HBQU
+1A1KLyaXA1Eam3KDZxJ5+Cf3I/wp2iKWM4Gj1ZP5dXmXXkfV37vn9RKTRRyaC6aB
+7Bnx+ZiQwbv/gNrGjsP17+/HlZ4mkaXjfDMKF9RK3YnuIiASO/NKiir7XQ4qetXN
+3wlvIrKNa4CO757zMXR7tMdPLHsdvQnMe17uOIIizn1PCxYIapqWgYZL1+Ld/BWI
+Y4Oy1u4yZADvUFJKZswfae7PUwX67rw=
+-----END CERTIFICATE-----
+  ca_certificate_hash: 8a 0a 15 2e f9 36 74 72 c8 83 28 e7 b8 18 a5 7a ed ea 33 ef
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: ORC NFI CA 3
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/ORCNFI3_SIA.p7c
+  ocsp_uri: N/A
+  
+- notice_date:  July 25, 2017 12:57:21 PM
+  change_type: CA Certificate Issuance
+  start_datetime: July 25, 2017 12:57:21 PM
+  end_datetime: October 26, 2017 11:56:43 PM
+  system: N/A
+  change_description: N/A
+  contact: fpki@gsa.gov
+  ca_certificate: -----BEGIN CERTIFICATE-----
+MIIGdDCCBVygAwIBAgIUYP5FVD5i6SrxQ87oMH1UAG89l2YwDQYJKoZIhvcNAQEL
+BQAwVzELMAkGA1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsG
+A1UECxMERlBLSTEfMB0GA1UEAxMWRmVkZXJhbCBCcmlkZ2UgQ0EgMjAxNjAeFw0x
+NzA3MjUxNjU3MjFaFw0xNzEwMjcwMzU2NDNaMHsxCzAJBgNVBAYTAlVTMRcwFQYD
+VQQKEw5WZXJpU2lnbiwgSW5jLjEfMB0GA1UECxMWVmVyaVNpZ24gVHJ1c3QgTmV0
+d29yazEyMDAGA1UEAxMpVmVyaVNpZ24gQ2xhc3MgMyBTU1AgSW50ZXJtZWRpYXRl
+IENBIC0gRzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDKn6+tSPux
+PqPU9C2z/vdNezMCcg42qoqBO0rsDXw7T6ruApaBLc3p03NEt25B/awwPaqAcqc0
+h6/QLUxtgRy7IgcWwcFh7ulJJQD/eZ0T+ZzCUfia/eR3gAxMOkluXc+/6qGX3+Tb
+KXk1BzQ1QMp7y4idc910qWzVeoK7rNVf1U4xyyGg5e6wY4Q7CZLOO6T5Y+OITxs2
+doF3ZBi+gjdQ2nTJsN3dVLaZHMUKSCAa9uHCSf5NiSd0jlDy4LkO+lnNxLe4Rofz
+urrrnr+1nFJjuuQKayoQ1qG+r6Nc6x/qfyGkJVPjZRy5oBhaGpLfVyVsaXwzDQQR
+pTB/rUf5vZWXAgMBAAGjggMSMIIDDjAPBgNVHRMBAf8EBTADAQH/MIGIBgNVHSAE
+gYAwfjAMBgpghkgBZQMCAQMDMAwGCmCGSAFlAwIBAwwwDAYKYIZIAWUDAgEDDjAM
+BgpghkgBZQMCAQMPMAwGCmCGSAFlAwIBAyUwDAYKYIZIAWUDAgEDJjAMBgpghkgB
+ZQMCAQMSMAwGCmCGSAFlAwIBAxMwDAYKYIZIAWUDAgEDFDBTBggrBgEFBQcBAQRH
+MEUwQwYIKwYBBQUHMAKGN2h0dHA6Ly9odHRwLmZwa2kuZ292L2JyaWRnZS9jYUNl
+cnRzSXNzdWVkVG9mYmNhMjAxNi5wN2MwggESBgNVHSEEggEJMIIBBTAbBgpghkgB
+ZQMCAQMlBg1ghkgBhvhFAQcXAwEIMBsGCmCGSAFlAwIBAwMGDWCGSAGG+EUBBxcD
+AQYwGwYKYIZIAWUDAgEDDAYNYIZIAYb4RQEHFwMBBzAbBgpghkgBZQMCAQMOBg1g
+hkgBhvhFAQcXAwEOMBsGCmCGSAFlAwIBAw8GDWCGSAGG+EUBBxcDAQ8wGwYKYIZI
+AWUDAgEDEgYNYIZIAYb4RQEHFwMBEjAbBgpghkgBZQMCAQMTBg1ghkgBhvhFAQcX
+AwERMBsGCmCGSAFlAwIBAxQGDWCGSAGG+EUBBxcDARQwGwYKYIZIAWUDAgEDJgYN
+YIZIAYb4RQEHFwMBJDBgBggrBgEFBQcBCwRUMFIwUAYIKwYBBQUHMAWGRGh0dHA6
+Ly9zc3Atc2lhLnN5bWF1dGguY29tL1ZUTlNTUC9DZXJ0c19pc3N1ZWRfYnlfQ2xh
+c3MzU1NQQ0EtRzIucDdjMAwGA1UdJAQFMAOBAQAwCgYDVR02BAMCAQAwDgYDVR0P
+AQH/BAQDAgEGMB8GA1UdIwQYMBaAFCOws30WVNQCVnbrOr6pay9DeygWMDkGA1Ud
+HwQyMDAwLqAsoCqGKGh0dHA6Ly9odHRwLmZwa2kuZ292L2JyaWRnZS9mYmNhMjAx
+Ni5jcmwwHQYDVR0OBBYEFFHuzWg5PUy6js6JcJ1Vkr2GPD1dMA0GCSqGSIb3DQEB
+CwUAA4IBAQAdtKML8oD/cqwD/oU2lCxD64MpGUFRCxCG5E4wF0dfgrQ6AkyeH2hd
+1a+vEV2EtmJMbxSsDJxVfCGwtlzbWUwzPbResIGwyObX0MBvAYAoALFfJyHeVhEI
+sAxo5fXf7dWDBE9Lp11wdUEIk2zGbH1eFJnZ/Yy2/8A1AxnUnplCOO/a3rV0TKOP
+iPGjbHP4SQdVXoZwgsoV8gkE+wwPcHRlH2sB7TwgICqBnejXsWVVCoqz71gwWy1P
+sHQkfocsBvz1MtaAl/bAxgQvA8Z9HhJgvE1QZrIl57KzOGkVKolqBpnFkjbt+HKa
+I7CXSEvJOpalI6KZ96jUZlx8YVcs8bc3
+-----END CERTIFICATE-----
+  ca_certificate_hash: 63 3b 29 78 0d 72 f9 b6 e6 52 f8 58 6b 13 87 02 19 5a 2c cd
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: VeriSign Class 3 SSP Intermediate CA - G2
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://ssp-sia.symauth.com/VTNSSP/Certs_issued_by_Class3SSPCA-G2.p7c
+  ocsp_uri: N/A
 
+- notice_date: August 3, 2017 1:33:41 PM
+  change_type: CA Certificate Issuance
+  start_datetime: August 3, 2017 1:33:41 PM
+  end_datetime: August 3, 2020 1:30:57 PM
+  system: N/A
+  change_description: N/A
+  contact: fpki@gsa.gov
+  ca_certificate: -----BEGIN CERTIFICATE-----
+MIIFjjCCBHagAwIBAgIUf+N67/s/AgfOOycKe/bQgvCMkJMwDQYJKoZIhvcNAQEL
+BQAwVzELMAkGA1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsG
+A1UECxMERlBLSTEfMB0GA1UEAxMWRmVkZXJhbCBCcmlkZ2UgQ0EgMjAxNjAeFw0x
+NzA4MDMxNzMzNDFaFw0yMDA4MDMxNzMwNTdaMIGCMQswCQYDVQQGEwJVUzEYMBYG
+A1UEChMPVS5TLiBHb3Zlcm5tZW50MSMwIQYDVQQLExpHb3Zlcm5tZW50IFByaW50
+aW5nIE9mZmljZTEiMCAGA1UECxMZQ2VydGlmaWNhdGlvbiBBdXRob3JpdGllczEQ
+MA4GA1UECxMHR1BPIFBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+AMg1og8AyMO5Dog5eNl7AUGdwISMFtw/yzUbMfoTmZTnC22IDsnpCIEG25C6sz4s
+eOC5sww4nUR6B2TiMKUKY4UNOy56gZdpL4+nAiMUlKZY+AZt/a6Uu51tfgRfmnRK
+fi6PX4VOsRKV9GDNhC9lbvuizUUyfXewn2lzdlwd8r4DV/WN0sGU3cwcbdSlvFtg
+qavDoOIC//IM17F2+p4NNs6dcWdYUIwrMIAp9E1tPmaS/o8SU6LdWID/aPggNhVz
+ZMWZSzxR/MDmtjXinHM0ibDOP/OvApqt4MJ/tDx59XnWoz42RpSZWVDeOgvd2ojS
+6pH3/WuRjVYwGozO8OAcaK0CAwEAAaOCAiQwggIgMA8GA1UdEwEB/wQFMAMBAf8w
+MwYDVR0gBCwwKjAMBgpghkgBZQMCAQMDMAwGCmCGSAFlAwIBAwwwDAYKYIZIAWUD
+AgEDJTBTBggrBgEFBQcBAQRHMEUwQwYIKwYBBQUHMAKGN2h0dHA6Ly9odHRwLmZw
+a2kuZ292L2JyaWRnZS9jYUNlcnRzSXNzdWVkVG9mYmNhMjAxNi5wN2MwVwYDVR0h
+BFAwTjAYBgpghkgBZQMCAQMMBgpghkgBZQMCARECMBgGCmCGSAFlAwIBAwMGCmCG
+SAFlAwIBEQEwGAYKYIZIAWUDAgEDJQYKYIZIAWUDAgERAzApBgNVHR4BAf8EHzAd
+oRswGaQXMBUxEzARBgoJkiaJk/IsZAEZFgNtaWwwVwYIKwYBBQUHAQsESzBJMEcG
+CCsGAQUFBzAFhjtodHRwOi8vd3d3Lmdwby1mYmNhLWNybHMub2lzLmdwby5nb3Yv
+Y2FDZXJ0c0lzc3VlZEJ5R1BPLnA3YzAPBgNVHSQECDAGgAEAgQEAMAoGA1UdNgQD
+AgEAMA4GA1UdDwEB/wQEAwIBBjAfBgNVHSMEGDAWgBQjsLN9FlTUAlZ26zq+qWsv
+Q3soFjA5BgNVHR8EMjAwMC6gLKAqhihodHRwOi8vaHR0cC5mcGtpLmdvdi9icmlk
+Z2UvZmJjYTIwMTYuY3JsMB0GA1UdDgQWBBQicXghtYRtswHjEnRBTk1FB+lS/zAN
+BgkqhkiG9w0BAQsFAAOCAQEAVSfsEXg7MBM3B69F0yTlpoSWgnDx1wY4X0C6DDoS
+0eZV/s2AJZZ4cZhx1Zx9rNtWZVIcUZY4Uk6lvGtXS0u/2bvJPSdMul16ChBUO1eC
+DR1idJ0v/CPys1rGlO5vCEaygwBBFGNoQDz8rvreL1eQJYaDDFr135uAY6JPl81A
+0IkEOqA3iJEjZfA/9/XYPe+8I0faqlNysbJ7BkAhwkgwQFujCT/xLEu+prYB3slV
+fPdHVKtsIp6Yqti6ayk6Ag5PrjQojwIEF8WPpcSWjcjpHApiuLxphut68sZWqt0v
+j6+FIEG85czsOV9n3YXMpswSZ8SSE17L/KfqbCvAVZE3Rw==
+-----END CERTIFICATE-----
+  ca_certificate_hash: b8 ea bb 18 ed 54 4c 9f cf b2 99 bd 5d 32 21 27 e6 f4 8d 90
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: GPO PCA
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://www.gpo-fbca-crls.ois.gpo.gov/caCertsIssuedByGPO.p7c
+  ocsp_uri: N/A
+  
+- notice_date: August 4, 2017 3:28:27 PM
+  change_type: CA Certificate Issuance
+  start_datetime: August 4, 2017 3:28:27 PM
+  end_datetime: August 4, 2020 3:58:27 PM
+  system: N/A
+  change_description: N/A
+  contact: fpki@gsa.gov
+  ca_certificate: -----BEGIN CERTIFICATE-----
+MIIIBTCCBu2gAwIBAgIEQNivJjANBgkqhkiG9w0BAQsFADCBgjELMAkGA1UEBhMC
+VVMxGDAWBgNVBAoMD1UuUy4gR292ZXJubWVudDEjMCEGA1UECwwaR292ZXJubWVu
+dCBQcmludGluZyBPZmZpY2UxIjAgBgNVBAsMGUNlcnRpZmljYXRpb24gQXV0aG9y
+aXRpZXMxEDAOBgNVBAsMB0dQTyBQQ0EwHhcNMTcwODA0MTkyODI3WhcNMjAwODA0
+MTk1ODI3WjBXMQswCQYDVQQGEwJVUzEYMBYGA1UEChMPVS5TLiBHb3Zlcm5tZW50
+MQ0wCwYDVQQLEwRGUEtJMR8wHQYDVQQDExZGZWRlcmFsIEJyaWRnZSBDQSAyMDE2
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp01eW8ltfSQg24Tv1NQ
+ys0cltQca4HyipsPRqfft+//7URZzoeWb19Xsf4zq0fHhZd3PIoOFM0veWonFNJ4
+W6WlSzg6uN/2iwvaUxEjWZ+pYjKQ9BpPBYM+Pc2bFXuQ2Iuhzcy4wEOfzaeLviNB
+fSkz31l9QMDj2nPDr0O/llhKwoOyKuIhfpOXavkVaYx+DGiROvC3LIFaCr2ShrmE
+mZKYBJ/UxInCkeEhUkh+3QCfj/ktPvLoXgpUzE+CSC8MAl4HtjLkkyk3zFZ3IXZm
+GpnyCxPiw/k74JgcnD/1I8iGL4/L6b9fGuJoMge9u7Y3id64cP3IyYNEKxi+hncS
+OQIDAQABo4IEqzCCBKcwDgYDVR0PAQH/BAQDAgEGME8GA1UdIARIMEYwDAYKYIZI
+AWUDAgERATAMBgpghkgBZQMCARECMAwGCmCGSAFlAwIBEQMwDAYKYIZIAWUDAgER
+BDAMBgpghkgBZQMCAREFMA8GA1UdEwEB/wQFMAMBAf8wUwYIKwYBBQUHAQsERzBF
+MEMGCCsGAQUFBzAFhjdodHRwOi8vaHR0cC5mcGtpLmdvdi9icmlkZ2UvY2FDZXJ0
+c0lzc3VlZEJ5ZmJjYTIwMTYucDdjMIIBSAYIKwYBBQUHAQEEggE6MIIBNjCBwQYI
+KwYBBQUHMAKGgbRsZGFwOi8vZGlyZWN0b3J5Lm9pcy5ncG8uZ292L291PUdQTyUy
+MFBDQSxvdT1DZXJ0aWZpY2F0aW9uJTIwQXV0aG9yaXRpZXMsb3U9R292ZXJubWVu
+dCUyMFByaW50aW5nJTIwb2ZmaWNlLG89VS5TLiUyMEdvdmVybm1lbnQsYz1VUz9j
+QUNlcnRpZmljYXRlO2JpbmFyeSxjcm9zc0NlcnRpZmljYXRlUGFpcjtiaW5hcnkw
+SwYIKwYBBQUHMAKGP2h0dHA6Ly93d3cuZ3BvLWZiY2EtY3Jscy5vaXMuZ3BvLmdv
+di9HUE8tUENBLUNBQ2VydGlmaWNhdGVzLnA3YzAjBggrBgEFBQcwAYYXaHR0cDov
+L3d3dy5vY3NwLmdwby5nb3YwVwYDVR0hBFAwTjAYBgpghkgBZQMCAREBBgpghkgB
+ZQMCAQMDMBgGCmCGSAFlAwIBEQIGCmCGSAFlAwIBAwwwGAYKYIZIAWUDAgERAwYK
+YIZIAWUDAgEDJTBgBgNVHR4BAf8EVjBUoVIwUKROMEwxCzAJBgNVBAYTAlVTMRgw
+FgYDVQQKDA9VLlMuIEdvdmVybm1lbnQxIzAhBgNVBAsMGkdvdmVybm1lbnQgUHJp
+bnRpbmcgT2ZmaWNlMB0GA1UdDgQWBBQjsLN9FlTUAlZ26zq+qWsvQ3soFjCCAZUG
+A1UdHwSCAYwwggGIMIIBhKCCAYCgggF8hoGqbGRhcDovL2RpcmVjdG9yeS5vaXMu
+Z3BvLmdvdi9jbj1DUkw0LG91PUdQTyUyMFBDQSxvdT1DZXJ0aWZpY2F0aW9uJTIw
+QXV0aG9yaXRpZXMsb3U9R292ZXJubWVudCUyMFByaW50aW5nJTIwT2ZmaWNlLG89
+VS5TLiUyMEdvdmVybm1lbnQsYz1VUz9hdXRob3JpdHlSZXZvY2F0aW9uTGlzdDti
+aW5hcnmGNmh0dHA6Ly93d3cuZ3BvLWZiY2EtY3Jscy5vaXMuZ3BvLmdvdi9HUE8t
+UENBLUNSTGE0LmNybKSBlDCBkTELMAkGA1UEBhMCVVMxGDAWBgNVBAoMD1UuUy4g
+R292ZXJubWVudDEjMCEGA1UECwwaR292ZXJubWVudCBQcmludGluZyBPZmZpY2Ux
+IjAgBgNVBAsMGUNlcnRpZmljYXRpb24gQXV0aG9yaXRpZXMxEDAOBgNVBAsMB0dQ
+TyBQQ0ExDTALBgNVBAMMBENSTDQwHwYDVR0jBBgwFoAUInF4IbWEbbMB4xJ0QU5N
+RQfpUv8wDQYJKoZIhvcNAQELBQADggEBAEy/a7rtyApsOvbX1k2UPnUDVTaV8LYf
+qo16FxDwu1gVcSWE4gZFhAB7U37YouBIzPoFQiyExTAbP+yeGQY4jQllsjP3RZGW
+HZG/CQhhYkKGPt053L/l8qWdCsRlbtCT2cwa+x2NP28pi9J9++MjD6K3qUII5GMa
+QNZS08yifKStVzSmdD5qN5X23OiTV2AX27hAp7KEI6vu9rlqdQbbQkU/nJa+O6W/
+fJbUGwz1lDdgEBFb2k3jXpE7dx0h4ASLYPU0dE+r23bGNAoxkLtAaiHUHn8rxDsA
+34UaLed4bDEGhksd4kvKIwEwBy06t+ktxJ2897FH/FOaC4/oMeGM1zA=
+-----END CERTIFICATE-----
+  ca_certificate_hash: b5 d4 0b e9 4f 2e 01 4f 51 0b 29 64 36 6f 10 13 f4 1a f3 0e
+  ca_certificate_issuer: GPO PCA
+  ca_certificate_subject: Federal Bridge CA 2016
+  cdp_uri: http://www.gpo-fbca-crls.ois.gpo.gov/GPO-PCA-CRLa4.crl
+  aia_uri: http://www.gpo-fbca-crls.ois.gpo.gov/GPO-PCA-CACertificates.p7c
+  sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
+  ocsp_uri: http://www.ocsp.gpo.gov
+  
+#- notice_date: 
+#  change_type: CA Certificate Issuance
+#  start_datetime:
+#  end_datetime: 
+#  system: N/A
+#  change_description: N/A
+#  contact: fpki@gsa.gov
+#  ca_certificate: 
+#  ca_certificate_hash:
+#  ca_certificate_issuer: 
+#  ca_certificate_subject:
+#  cdp_uri: 
+#  aia_uri: 
+#  sia_uri: 
+#  ocsp_uri: N/A
