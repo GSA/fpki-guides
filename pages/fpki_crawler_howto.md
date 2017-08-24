@@ -1,4 +1,12 @@
 # Introduction
+The FPKI Crawler provides a relationship view of all CA certificates that are cross certified with the Federal Bridge Certification Authority (FBCA). It also validates each CA’s certificate path to the FPKI Common Policy Certification Authority (CA).
+The FPKI Crawler website can be found at https://fpki-graph.fpki-lab.gov/
+
+# FPKI Graph
+The FPKI Graph is very useful in finding the relationship that exist between each CA root certificate with other certificates in the Federal Public Key Infrastruction ecosystem. The inbound and outbound links of any certificate can be easily identified by clicking on the certificates in the graph.
+
+The graph also allows us to view how a certificate is linked to the root Federal Common Policy CA. It also shows the relationship to the federal bridges that exist in the Federal PKI infrastructure.
+
 The Federal PKI Management Authority (FPKIMA) Authority Information Access (AIA) Crawler application is designed to find all CA certificates that are issued from and validate to the Federal Common Policy CA (COMMON).
 
 Each CA validating to COMMON should have an AIA extension in its public certificate that defines a Uniform Resource Locator (URL) where it’s signing CA certificate can be found.  Following each CA certificate’s AIA chain should result in finding the certificate that is cross-certified with COMMON.  Each CA should also have a Subject Information Access (SIA) extension in its public certificate that defines a URL where each of its subordinate CA public certificates can be found.  The crawler application will use these AIAs and SIAs to find all CA certificates.
