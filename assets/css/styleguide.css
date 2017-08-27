@@ -3388,3 +3388,31 @@ code[class*="language-"], pre[class*="language-"] {
   @media screen and (min-width: 600px) {
     .usa-disclaimer-official {
       padding-left: 3rem; } }
+
+/* Change Notification style */
+.notifications {
+  h2 {
+    margin: 0.3em 0;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+  .notification {
+    margin-bottom: 3em;
+    padding-bottom: 3em;
+    border-bottom: 1px solid #ddd;
+    @media only screen and (min-width: $nav-breakpoint) {
+      border: none;
+    }
+  }
+
+  .notification-element {
+    margin-top: 0.5em;
+  }
