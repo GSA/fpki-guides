@@ -115,6 +115,18 @@
   sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
   ocsp_uri: http://www.ocsp.gpo.gov
   
+- notice_date: August 22, 2017
+  change_type: CA Certificate Revocation
+  start_datetime: August 25, 2017
+  system: Verizon Federal PKI Shared Service Provider
+  change_description: The CA certificate for the issuing CA named Executive Office of the President CA-B8 will be revoked on August 25th and a long term CRL will be published.  This CA is no longer active. 
+  contact: vziamssp@verizon.com, fpki@gsa.gov
+  ca_certificate_hash: 8c 7a 33 76 da 95 e2 be 52 da bc 03 21 56 f4 c4 78 74 e4 c4
+  ca_certificate_issuer: CN=Betrusted Production SSP CA A1,OU=Betrusted Production SSP CA A1,OU=SSP,O=Betrusted US Inc,C=US
+  ca_certificate_subject:  CN=Executive Office of the President CA-B8,OU=PKI,OU=Services,DC=ssp,DC=eop,DC=gov
+  
+  
+
 #- notice_date: 
 #  change_type: CA Certificate Issuance
 #  start_datetime:
