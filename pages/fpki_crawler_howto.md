@@ -25,7 +25,9 @@ The file ‘FederalCommonPolicyTree.csv’ provides a data view of the relations
 The data found at https://fpki-graph.fpki-lab.gov/crawler/AIACrawler.html provides the list of each certificate that has a valid AIA chain with the Federal Common Policy. The CA Certificates are broken down into three categories:
 
 a)	Certificates Found with Validated AIA Chains to COMMON. All valid paths are printed, and for each path, the FPKI certificate policies for which they validate are listed.
+
 b)	Certificates Found with Validated Chains to COMMON not through AIA. Only the valid path found using [JDK PKIX] is listed, and the certificate policies for which they validate are listed.
+
 c)	Certificates Found with NO Validated Chains to COMMON. Those certificates that do not path validate, only the certificate information is listed.
 
 Each CA certificate is listed as a hyperlink to its detailed certificate information. The data also provides the current validation status of each certificate. An example is shown below.
