@@ -50,6 +50,9 @@ The file ‘allcertsfoundaturi.csv’ lists each AIA URL and either the error re
 ## 5.	Certificates with AIA Information in XML Format
 The file ‘allcertsfoundaturi.xml’ contains a listing of each AIA URL in XML format. For each AIA URL, if there was an error extracting the certificates, this will be listed, otherwise all certificates found at that AIA are listed.
 
+## 6.	FPKI CRLs and OCSP Responders
+The certificates that have been revoked are listed in the ‘FPKI_CDPs.csv’ file. This file contains the Issuer DN, the issuing certificate authority URL along with the OSCP Responders list, if any. This file will help any agency user to monitor any revoked certificates.
+
 # Public Certificates for Download
 The crawler provides the public certificate information as binary data for download and analysis by any FPKI validating agency or organization. The data involves all certificates retrieved by the FPKI Crawler.
 
