@@ -32,7 +32,9 @@ c)	Certificates Found with NO Validated Chains to COMMON. Those certificates tha
 
 Each CA certificate is listed as a hyperlink to its detailed certificate information. The data also provides the current validation status of each certificate. An example is shown below.
 
+```
 Issuer CN=Federal Bridge CA 2016,OU=FPKI,O=U.S. Government,C=US serial# 0x03F42   status GOOD
+```
 
 ## 3.	All Certificates in CSV Format
 
