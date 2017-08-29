@@ -10,9 +10,9 @@ The graph allows us to view how a certificate is linked to the root Federal Comm
 Each CA validating to COMMON should have an AIA extension in its public certificate that defines a Uniform Resource Locator (URL) where it’s signing CA certificate can be found.  Following each CA certificate’s AIA chain should result in finding the certificate that is cross-certified with COMMON.  Each CA should also have a Subject Information Access (SIA) extension in its public certificate that defines a URL where each of its subordinate CA public certificates can be found.  The crawler application will use these AIAs and SIAs to find all CA certificates.
 
 # FPKI Crawler Outputs
-There are a number of output files generated designed to provide detailed information about the certificates found, including path validation, certificate policy validation, organized certificate lists, and Comma Separated Value (CSV) Spreadsheets for review in Microsoft Excel or OpenOffice.
+The FPKI crawler also provides a set of data that can be useful for any government agency in administering their certificate keystore and building the trust store. The output files provide detailed information about the certificates. The information includes path validation, certificate policy validation, organized certificate lists, and Comma Separated Value (CSV) Spreadsheets for review in Microsoft Excel or OpenOffice.
 
-Results are available at https://fpki-graph.fpki-lab.gov/crawler/
+The crawler outputs are available at https://fpki-graph.fpki-lab.gov/crawler/
 
 # Processing Flow
 The AIA Crawler performs two main processing passes prior to generating the results in several formats.
