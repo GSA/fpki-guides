@@ -37,7 +37,7 @@ Opera|No longer operates its own program and relies upon Mozilla.
 
 {% include alert-info.html content="Google Chrome uses the underlying trust library of the operating system on Windows or Apple OS X systems. Linux-based systems distribute the Mozilla NSS Library which may be modified by each version of Linux." %}
 
-{% include alert-info.html content="In Microsoft, the Federal Common Policy CA is called, "U.S. Government Common Policy." %}
+{% include alert-info.html content="In Microsoft, the Federal Common Policy CA is called: U.S. Government Common Policy." %}
 
 ### How do I set dynamic path validation for the trust store in Windows operating systems?
 
