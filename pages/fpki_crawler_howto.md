@@ -1,7 +1,7 @@
 # FPKI Crawler
 
 ## Introduction
-As a federal agency or an entity supporting a federal agency, it might be useful to understand the relationships between the various certification authorities (CA) and how it relates to the federal agency security architecture. The FPKI Crawler provides a relationship view of all CAs with a relationship to the Federal Public Key Infrastructure (FPKI). It also validates each CA’s certificate path to the FPKI Common Policy Certification Authority (CA).
+As a federal agency or an entity supporting a federal agency, it might be useful to understand the relationships between the various certification authorities (CA) and how it relates to the federal agency security infrastucture. The FPKI Crawler provides a relationship view of all CAs with a relationship to the Federal Public Key Infrastructure (FPKI). It also validates each CA’s certificate path to the FPKI Common Policy Certification Authority (CA).
 The FPKI Crawler website can be found at https://fpki-graph.fpki-lab.gov/
 
 ## FPKI Graph
