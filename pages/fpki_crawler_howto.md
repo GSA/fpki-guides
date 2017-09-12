@@ -1,74 +1,101 @@
-# FPKI Crawler
+---
+layout: default 
+title: How To Use the FPKI Crawler
+permalink: /fpkicrawler/
+---
 
-## Introduction
-As a federal agency or an entity supporting a federal agency, it might be useful to understand the relationships between the various certification authorities (CA) and how it relates to the federal agency security infrastucture. The FPKI Crawler provides a relationship view of all CAs with a relationship to the Federal Public Key Infrastructure (FPKI). It also validates each CA’s certificate path to the FPKI Common Policy Certification Authority (CA).
-The FPKI Crawler website can be found at https://fpki-graph.fpki-lab.gov/
+Your agency or organization may need to understand the complex relationships between the Certification Authorities (CAs) within the Federal Public Key Infrastructure (FPKI) and/or you may want to analyze or download CA certificates. To this end, the FPKI Crawler offers some useful tools that can help you to:
+
+* Visualize CA relationships, including cross-certified CAs
+* Understand how CAs validate to the Federal Common Policy CA (COMMON)
+* Access CA certificate data for reporting and analysis
+* Download CA certificates
+
+### 
+* [FPKI Graph](#fpki-graph)
+* [FPKI Crawler Outputs](#fpki-crawler-outputs)
+  * [Public Certificates for Reporting and Analysis](#public-certificates-for-reporting-and-analysis)
+  * [Public Certificates for Download](#public-certificates-for-download)
 
 ## FPKI Graph
-The FPKI Graph is very useful in finding the relationship that exists between each CA certificate with other certificates in the FPKI ecosystem. The inbound and outbound links of any certificate can be easily identified by clicking on the dots in the graph.
 
-The graph allows us to view how a certificate is linked to the root Federal Common Policy CA (COMMON). It also shows the relationship to the other CAs and bridges that exist in the Federal PKI infrastructure.
+The FPKI Crawler provides an [FPKI Graph](https://fpki-graph.fpki-lab.gov/){:target="_blank"}_ to help you visualize the relationships between the CAs and Bridges in the FPKI ecosystem and the cross-certified CAs. This tool also shows you how each CA validates to the Root, COMMON.
 
-Each CA validating to COMMON should have an AIA extension in its public certificate that defines a Uniform Resource Locator (URL) where certificates issued to signing CA can be found. Following each CA certificate’s AIA chain should result in finding the certificate that is certified by COMMON. Each CA should also have a Subject Information Access (SIA) extension in its public certificate that defines a URL where all CA certificates that it has issued can be found. The crawler application will use these AIAs and SIAs to find all CA certificates.
+* Click on any dot in the FPKI Graph to see that CA's inbound and outbound relationships. 
 
-## FPKI Crawler Outputs
-The FPKI crawler generates data that can be useful to any government agency in understanding and administering their certificate key store as well as building the trust store. The output files provide detailed information about the certificates. The information includes path validation, certificate policy validation, organized certificate lists, and Comma Separated Value (CSV) Spreadsheets for review in Microsoft Excel or OpenOffice.
+## FPKI Crawler Output Files
 
-The crawler outputs are available at https://fpki-graph.fpki-lab.gov/crawler/.
+The [FPKI Crawler](https://fpki-graph.fpki-lab.gov/crawler/){:target="_blank"}_ (_AIA Crawler Results_ webpage) offers output files in several formats (CSV, HTML, XML, and .p7b) to help you understand and administer your certificate Key Store and build a Trust Store. 
 
-The CAs are categorized by type and agency or company using information from the CA certificate DN. The type can be U.S. Government, State or Commercial. For U.S. Government, the Agency is extracted from the DN. For State Governments, the state name is extracted. For commercial CAs, the company name is extracted.
+{% include alert-info.html heading="The FPKI Crawler uses AIAs and SIAs to find all CA certificates." content="Each CA public certificate should contain Authority Information Access (AIA) and Subject Information Access (SIA) extensions. An AIA chain will lead to the COMMON-certified CA certificate for download. The SIA gives a URL to a list of all certificates issued by a CA." %} 
 
-## Public Certificates for Reporting & Analysis
+### Public Certificates for Reporting and Analysis
 
-### 1.	Federal Common Policy Tree
-The file ‘FederalCommonPolicyTree.csv’ provides a data view of the relationship of all the Certification Authorities (CAs) with a certificate path to COMMON. The data also contains the CAs that cross certify with each of those CAs as well. Hence, this data is useful to understand the relationships that exist between each CA and COMMON similar to the data presented in the graph in a visual format.
+> **Note:**&nbsp;&nbsp;The Crawler categorizes CA certificates by _Type_ (_U.S. Government_, _State_, or _Company_) and _Organization_ (_Agency_, _State Name_, and _Company Name_), which is extracted from the Distinguished Name (DN).
 
-### 2.	All Certificates in Web Page (HTML)
-The data found at https://fpki-graph.fpki-lab.gov/crawler/AIACrawler.html provides the list of each certificate that has a valid certificate chain with COMMON. The CA Certificates are broken down into three categories:
+#### 1. Federal Common Policy Tree File (_FederalCommonPolicyTree.csv_)
 
-#### a)	Certificates Found with Validated AIA Chains to COMMON. 
-All valid paths are printed, and for each path, the FPKI certificate policies for which they validate are listed.
+The _FederalCommonPolicyTree.csv_ (Microsoft Excel) is a data view of all CAs that validate to COMMON and the cross-certified CAs. 
 
-#### b)	Certificates Found with Validated Chains to COMMON (not via AIA). 
-A valid path found using [JDK PKIX] is listed, and the certificate policies for which they validate are listed.
+#### 2. All Certificates (_AIACrawler.html_)
 
-#### c)	Certificates Found with NO Validated Chains to COMMON. 
-The certificates that are found while chasing AIA and SIA which do not have a path that validates to COMMON, are listed in this group. Only the certificate information is listed. These certificates tend to be cross-certificates issued to the FPKI that allow a partner PKI to make use of its Root CA as the trust anchor instead of COMMON.
+The _AIACrawler.html_ (HTML) file lists all CA certificates found by the FPKI Crawler (in four Sections):
 
-Each CA certificate is listed as a hyperlink to its detailed certificate information. The data also provides the current validation status of each certificate. An example is shown below.
+* **Certificates Found with Validated AIA Chains to COMMON &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. 
 
-```
-Issuer CN=Federal Bridge CA 2016,OU=FPKI,O=U.S. Government,C=US serial# 0x03F42   status GOOD
-```
+* **Certificates Found with Validated Chains to COMMON, NOT Found through AIA &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. (These certificates are found via Java Development Kit [JDK] Public Key Infrastructure for X.509 Certificates [PKIX], when no validating chain is found via AIA.)   
 
-### 3.	All Certificates in CSV Format
+* **Certificates Found with NO Validated Chains to COMMON &mdash;** All CA certificates with NO validated path to COMMON. (These certificates are found through using AIA and SIA extensions.) This file lists only certificate information. (These tend to be cross-certificates issued to FPKI CAs that allow a partner PKI to use its own Root CA as the trust anchor instead of COMMON.)
 
-The ‘allcerts.csv’ output file contains a line item for each CA certificate found by the crawler. This file will be useful for analyzing the list of certificates. The certificate details are presented as raw data in a spreadsheet format. The columns include Subject DN, Issuer DN, Certificate Group, Serial Number, Signing Algorithm (typically SHA1 or SHA-256), the Subject Key as a hexadecimal number, Authority Key.
+* **All Certificates &mdash;** All CA certificates in the FPKI.
 
-The Online Certificate Status Protocol (OCSP) URL found in the certificate, if any, is listed in a separate column. Any Certificate Revocation List Distribution Point (CRLDP) URLs will be listed in one column for HTTP, one for LDAP CRLDP, and one Unknown/Error column.
+> For each CA certificate listed in the _AIACrawler.html_ file, you will see _Cert_ and _Issuer_ data and status.  For example:
 
-The AIA and SIA URLs are listed in separate columns for each OID and HTTP, LDAP or Unknown/Error. The OIDs include id-ad-caIssuers, id-ad-caRepository, and id-ad-timeStamping.
+   ```
+  Issuer CN=Federal Bridge CA 2016,OU=FPKI,O=U.S. Government,C=US serial# 0x03F42   status GOOD
+   ```
+   
+> For detailed data about CA certificates or issuers, click any link in the _AIACrawler.html_ file.
 
-### 4.	Certificates with AIA Information in CSV Format
-The file ‘allcertsfoundaturi.csv’ lists each AIA URL and either the error retrieving certificates or the list of CA certificates found at that AIA. It includes the following certificate information: Subject DN, Issuer DN, Serial Number, Signing Algorithm, Not Before, Subject Key and Authority Key as hexadecimal numbers.
+#### 3. Certificates with AIA Information (_allcertsfoundaturi.xml_)
 
-### 5.	Certificates with AIA Information in XML Format
-The file ‘allcertsfoundaturi.xml’ contains a listing of each AIA URL in XML format. For each AIA URL, if there was an error extracting the certificates, this will be listed, otherwise all certificates found at that AIA are listed.
+The _allcertsfoundaturi.xml_ (XML) file lists all AIA URLs and extraction errors found.
 
-## Public Certificates for Download
-The crawler provides the public certificate information as binary data for download and analysis by any FPKI validating agency or organization. The data involves all certificates retrieved by the FPKI Crawler.
+#### 4. Certificates with AIA Information (_allcertsfoundaturi.csv_)
 
-```
-The certificates from the files should not be used for importing directly into a trust store before they are analysed for applicable trust relationship determination. The certificate data is made available for analysis.
-```
+The _allcertsfoundaturi.csv_ (Microsoft Excel) file lists all AIA URLs and CA certificates found and extraction errors. 
 
-### 1.	All CA Certificates in One File
-CACertificatesValidatingToCommonPolicy.p7b contains all certificates retrieved by the FPKI Crawler. This file allows you to easily sort the certificates by expiration date, issuer or subject. 
+* This file's key columns include:&nbsp;&nbsp;Error (if any), Certificate DN, Issuer (DN), Serial Number, Not Before, Sig Alg (Signing Algorithm), Subject Key, and Authority Key.
 
-### 2.	All CA Certificates Broken Down into Eight Files
-The certificates found in the files ‘CACertificatesValidatingToCommonPolicy_1.p7b’ through ‘CACertificatesValidatingToCommonPolicy_8.p7b’ contain all of the CA certificates found by the crawler, broken evenly into eight separate files. The certificates are broken down into 8 different files for easier  analysis.
+#### 5. All Certificates File (_allcerts.csv_)
 
-### 3.	Certificate Files by Groups
-The CA certificates are partitioned into types and categories as defined in the Certificate Grouping section. For each of these groups, all CA certificates are organized into a single PKCS#7 file. In addition, another PKCS#7 file is generated containing all of the CA certificates plus all additional certificates required for path validation to COMMON.
+The _allcerts.csv_ (Microsoft Excel) file lists all CA certificates found. This file is helpful when you want to analyze certificates. 
 
-As an example, the Federal Government’s Veterans Affairs Agency from the Verizon Shared Service Provider Certification Authority has two CAs that can be found in ‘US_Government__VA.p7b’. In order to path validate these CAs to COMMON, a Betrusted cross certificate is required. Therefore, the file ‘US_Government__VA_FullPath.p7b’ contains both the CAs plus the cross certificate.
+* This file's key columns include:&nbsp;&nbsp;Subject DN, Issuer DN, (Certificate) Group, Serial (Number), Sig Alg (Signing Algorithm) (typically SHA1 or SHA-256), Subject Key, and Authority Key.
+
+* If found in a certificate, the Online Certificate Status Protocol (OCSP) URL will be listed in the OCSP HTTP column. The Certificate Revocation List Distribution Point (CRLDP) URLs will be listed in three columns: CDRLDP HTTP; the CDRLDP LDAP; and the CRLDP, AIA and SIA ERRORS.
+
+* The AIA and SIA URLs for Object Identifiers (OIDs) (i.e., OIDs are id-ad-caIssuers, id-ad-caRepository, and id-ad-timeStamping) will be listed in these columns:&nbsp;&nbsp;AIA id-ad-caIssuers HTTP; AIA id-ad-caIssuers LDAP; AIA id-ad-caRepository LDAP; SIA id-ad-caIssuers HTTP; SIA id-ad-caRepository HTTP; SIA id-ad-caRepository LDAP; SIA id-ad-caRepository LDAP; SIA id-ad-timeStamping HTTP; SIA id-ad-timeStamping LDAP; and CRLDP, AIA and SIA ERRORS. 
+
+### Public Certificates for Download
+
+The FPKI Crawler provides all CA public certificates that it finds for download and analysis.
+
+{% include alert-warning.html heading = "Do Not Import Certificates into a Trust Store before Analysis!" content="These certificates are available for analysis only. Determine all applicable trust relationships before importing any certificate." %}
+
+#### 1. All CA Certificates in a Single File (_CACertificatesValidatingToCommonPolicy.p7b_)
+
+The _CACertificatesValidatingToCommonPolicy.p7b_ file contains all CA certificates found. You can easily sort these by expiration date, issuer, or subject. 
+
+#### 2. All CA Certificates Broken Down into Eight Files (_CACertificatesValidatingToCommonPolicy_1.p7b_ through _8.p7b_)
+
+The files, _CACertificatesValidatingToCommonPolicy_1.p7b_ through _CACertificatesValidatingToCommonPolicy_8.p7b_, contain all CA certificates found, broken down into eight files to simplify analysis and download.
+
+#### 3. Certificate Files Grouped by Type and Organization (Additional _.p7b_ Certificates)
+
+For these .p7b files, the CA certificates are grouped by _Type_ (_U.S. Government_, _State_, or _Company_) and _Organization_ (_Agency_, _State Name_, and _Company Name_). For every _Type_ and _Organization_, there are two files: 
+
+* All CA certificates found
+* All CA certificates found, plus all other certificates required for path validation to COMMON.
+
+> For example:&nbsp;&nbsp;The U.S. Department of Veterans Affairs' CA (issued by the Verizon Federal Shared Service Provider [SSP] CA) has two CA certificates in the _US_Government_VA.p7b_ file. In order to validate these two paths to COMMON, a Betrusted cross-certificate is required. Therefore, the _US_Government_VA_FullPath.p7b_ file contains both the CA certificates and the Betrusted cross-certificate.
