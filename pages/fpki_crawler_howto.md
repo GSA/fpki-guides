@@ -29,7 +29,7 @@ The [FPKI Crawler](https://fpki-graph.fpki-lab.gov/crawler/){:target="_blank"}_ 
 
 ### Public Certificates for Analysis and Reporting
 
-> **Note:**&nbsp;&nbsp;The Crawler categorizes CA certificates by _Type_ (_U.S. Government_, _State_, or _Company_) and _Organization_ (_Agency_, _State Name_, and _Company Name_), which is extracted from the Distinguished Name (DN).
+**Note:**&nbsp;&nbsp;The Crawler categorizes CA certificates by _Type_ (_U.S. Government_, _State_, or _Company_) and _Organization_ (_Agency_, _State Name_, and _Company Name_), which is extracted from the Distinguished Name (DN).
 
 #### 1. Federal Common Policy Tree File (_FederalCommonPolicyTree.csv_)
 
@@ -43,20 +43,17 @@ The _FederalCommonPolicyTree.csv_ (Microsoft Excel) gives you the certificate da
 The _AIACrawler.html_ (HTML) file lists all CA certificates found by the FPKI Crawler (in four Sections):
 
 * **Certificates Found with Validated AIA Chains to COMMON &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. 
-
 * **Certificates Found with Validated Chains to COMMON, NOT Found through AIA &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. (These certificates are found via Java Development Kit [JDK] Public Key Infrastructure for X.509 Certificates [PKIX], when no validating chain is found via AIA.)   
-
 * **Certificates Found with NO Validated Chains to COMMON &mdash;** All CA certificates with NO validated path to COMMON. (These certificates are found through using AIA and SIA extensions.) This file lists only certificate information. (These tend to be cross-certificates issued to FPKI CAs that allow a partner PKI to use its own Root CA as the trust anchor instead of COMMON.)
-
 * **All Certificates &mdash;** All CA certificates in the FPKI.
 
-> For each CA certificate listed, you will see _Cert_ and _Issuer_ data and status. For example:
+For each CA certificate listed, you will see _Cert_ and _Issuer_ data and status. For example:
 
-   ```
+  ```
   Issuer CN=Federal Bridge CA 2016,OU=FPKI,O=U.S. Government,C=US serial# 0x03F42   status GOOD
-   ```
+  ```
    
-> For detailed data about CA certificates or issuers, click any link in the _AIACrawler.html_ file.
+For detailed data about CA certificates or issuers, click any link in the _AIACrawler.html_ file.
 
 #### 3. Certificates with AIA Information (_allcertsfoundaturi.xml_)
 
@@ -73,9 +70,7 @@ The _allcertsfoundaturi.csv_ (Microsoft Excel) file lists all AIA URLs and CA ce
 The _allcerts.csv_ (Microsoft Excel) file lists all CA certificates found. This file is helpful when you want to analyze certificates. 
 
 * The key columns include:&nbsp;&nbsp;Subject DN, Issuer DN, (Certificate) Group, Serial (Number), Sig Alg (Signing Algorithm) (typically SHA1 or SHA-256), Subject Key, and Authority Key.
-
 * If found in a certificate, the Online Certificate Status Protocol (OCSP) URL will be listed in the OCSP HTTP column. The Certificate Revocation List Distribution Point (CRLDP) URLs will be listed in three columns: CDRLDP HTTP; the CDRLDP LDAP; and the CRLDP, AIA and SIA ERRORS.
-
 * The AIA and SIA URLs for Object Identifiers (OIDs) (i.e., OIDs are id-ad-caIssuers, id-ad-caRepository, and id-ad-timeStamping) will be listed in these columns:&nbsp;&nbsp;AIA id-ad-caIssuers HTTP; AIA id-ad-caIssuers LDAP; AIA id-ad-caRepository LDAP; SIA id-ad-caIssuers HTTP; SIA id-ad-caRepository HTTP; SIA id-ad-caRepository LDAP; SIA id-ad-caRepository LDAP; SIA id-ad-timeStamping HTTP; SIA id-ad-timeStamping LDAP; and CRLDP, AIA and SIA ERRORS. 
 
 ### Public Certificates for Download
