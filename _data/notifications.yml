@@ -150,7 +150,7 @@
   ca_certificate_issuer: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Federated Trust CA-1
   ca_certificate_subject: C=US, O=Trinity Health, CN=Trinity Health Direct CA
   cdp_uri: http://crl4.digicert.com/DigiCertFederatedTrustCA-1.crl, http://crl3.digicert.com/DigiCertFederatedTrustCA-1.crl
-  aia_uri: http://cacerts.digicert.com/aiaTrinityHealthDirectCA.p7c,
+  aia_uri: http://cacerts.digicert.com/aiaTrinityHealthDirectCA.p7c
   sia_uri:
   ocsp_uri: http://ocsp.digicert.com
 
