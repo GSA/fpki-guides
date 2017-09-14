@@ -4,7 +4,7 @@ title: How To Use the FPKI Crawler
 permalink: /fpkicrawler/
 ---
 
-As a federal agency or an entity supporting a federal agency, it might be useful to understand the relationships between the various certification authorities (CA) and how they relate to the federal agency security infrastucture.
+As a federal agency or an entity supporting a federal agency, it is helpful to understand the relationships between the various certification authorities (CA) and how they relate to the federal agency security infrastucture.
 
 The FPKI Crawler provides a view of these relationships of the CAs that are cross certified with the Federal Bridge Certification Authority (FBCA).
  
@@ -31,19 +31,21 @@ The [FPKI Crawler](https://fpki-graph.fpki-lab.gov/crawler/){:target="_blank"}_ 
 
 **Note:**&nbsp;&nbsp;The Crawler categorizes CA certificates by _Type_ (_U.S. Government_, _State_, or _Company_) and _Organization_ (_Agency_, _State Name_, and _Company Name_), which is extracted from the Distinguished Name (DN).
 
-#### 1. Federal Common Policy Tree File (_FederalCommonPolicyTree.csv_)
+#### 1. Federal Common Policy Tree (_FederalCommonPolicyTree.csv_)
 
 The _FederalCommonPolicyTree.csv_ (Microsoft Excel) gives you the certificate data for:
 
 * All CAs that validate to COMMON
 * All cross-certified CAs 
 
+This data is useful to understand the relationships that exist between each CA and COMMON similar to the data presented in the graph in a visual format.
+
 #### 2. All Certificates (_AIACrawler.html_)
 
 The _AIACrawler.html_ (HTML) file lists all CA certificates found by the FPKI Crawler (in four Sections):
 
 * **Certificates Found with Validated AIA Chains to COMMON &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. 
-* **Certificates Found with Validated Chains to COMMON, NOT Found through AIA &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. (These certificates are found via Java Development Kit [JDK] Public Key Infrastructure for X.509 Certificates [PKIX], when no validating chain is found via AIA.)   
+* **Certificates Found with Validated Chains to COMMON, NOT Found through AIA &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. (These certificates are found via JDK PKIX, when no validating chain is found via AIA.)   
 * **Certificates Found with NO Validated Chains to COMMON &mdash;** All CA certificates with NO validated path to COMMON. (These certificates are found through using AIA and SIA extensions.) This file lists only certificate information. (These tend to be cross-certificates issued to FPKI CAs that allow a partner PKI to use its own Root CA as the trust anchor instead of COMMON.)
 * **All Certificates &mdash;** All CA certificates in the FPKI.
 
@@ -51,7 +53,6 @@ For each CA certificate listed, you will see _Cert_ and _Issuer_ data and status
 
    ```
   Issuer CN=Federal Bridge CA 2016,OU=FPKI,O=U.S. Government,C=US serial# 0x03F42   status GOOD
-  
    ```
    
 For detailed data about CA certificates or issuers, click any link in the _AIACrawler.html_ file.
