@@ -125,7 +125,34 @@
   ca_certificate_issuer: CN=Betrusted Production SSP CA A1,OU=Betrusted Production SSP CA A1,OU=SSP,O=Betrusted US Inc,C=US
   ca_certificate_subject:  CN=Executive Office of the President CA-B8,OU=PKI,OU=Services,DC=ssp,DC=eop,DC=gov
   
-  
+
+- notice_date: September 14, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: Aug 24, 2017
+  system: DigiCert Federated ID CA-1
+  change_description: A new CA certificate was issued for a subordinate CA under Digicert Federated ID CA-1. The CA certificate is for DigiCert Federated Trust CA-1.
+  contact: ben.wilson at digicert dot com
+  ca_certificate_hash: E2:9C:44:38:7F:7B:AA:9F:49:EF:CC:AE:A6:54:BC:E2:0C:FF:5F:D3
+  ca_certificate_issuer: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Federated ID CA-1
+  ca_certificate_subject: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Federated Trust CA-1
+  cdp_uri: http://crl3.digicert.com/DigiCertFederatedIDCA-1.crl, http://crl4.digicert.com/DigiCertFederatedIDCA-1.crl
+  aia_uri: http://cacerts.digicert.com/aiaDigiCertFederatedTrustCA-1.p7c
+  sia_uri: None
+  ocsp_uri: http://ocsp.digicert.com
+
+- notice_date: September 14, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: Aug 24, 2017
+  system: DigiCert Federated ID CA-1
+  change_description: A new CA certificate was issued for a subordinate CA under Digicert Federated Trust CA-1. The CA certificate is for Trinity Health Direct CA.
+  contact: ben.wilson at digicert dot com
+  ca_certificate_hash: 91:C3:74:48:0A:BA:3B:B9:B4:6C:8A:87:0F:95:E0:CA:98:CF:0C:70
+  ca_certificate_issuer: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Federated Trust CA-1
+  ca_certificate_subject: C=US, O=Trinity Health, CN=Trinity Health Direct CA
+  cdp_uri: http://crl4.digicert.com/DigiCertFederatedTrustCA-1.crl, http://crl3.digicert.com/DigiCertFederatedTrustCA-1.crl
+  aia_uri: http://cacerts.digicert.com/aiaTrinityHealthDirectCA.p7c,
+  sia_uri:
+  ocsp_uri: http://ocsp.digicert.com
 
 #- notice_date: 
 #  change_type: CA Certificate Issuance
