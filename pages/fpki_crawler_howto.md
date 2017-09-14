@@ -4,11 +4,9 @@ title: How To Use the FPKI Crawler
 permalink: /fpkicrawler/
 ---
 
-When you delve deeply into Certification Authority relationships in the FPKI, it's clear that they are complex! 
+As a federal agency or an entity supporting a federal agency, it might be useful to understand the relationships between the various certification authorities (CA) and how they relate to the federal agency security infrastucture.
 
-You might need to understand their relationships more fully, analyze certificates, or download them. How can you see these relationships? Where do you get these certificates? Which ones you need? 
-
-The FPKI Crawler can help you sort it all out.
+The FPKI Crawler provides a view of these relationships of the CAs that are cross certified with the Federal Bridge Certification Authority (FBCA).
  
 * [FPKI Graph](#fpki-graph)
 * [FPKI Crawler Outputs](#fpki-crawler-outputs)
@@ -17,9 +15,11 @@ The FPKI Crawler can help you sort it all out.
 
 ## FPKI Graph
 
-The FPKI Crawler provides an [FPKI Graph](https://fpki-graph.fpki-lab.gov/){:target="_blank"}_ to help you see the relationships between the CAs and Bridges in the FPKI ecosystem and the cross-certified CAs. You can also see how each CA certificate validates to the Root, COMMON.
+The FPKI Crawler provides a [FPKI Graph](https://fpki-graph.fpki-lab.gov/){:target="_blank"}_ to help you see the relationships between the CAs and Bridges in the FPKI ecosystem and the cross-certified CAs. You can also see how each CA certificate validates to the Root, COMMON.
 
 * Click on any dot in the FPKI Graph to see that CA's inbound and outbound relationships. 
+
+Each CA validating to COMMON should have an AIA extension in its public certificate that defines a Uniform Resource Locator (URL) where certificates issued to signing CA can be found. Following each CA certificate’s AIA chain should result in finding the certificate that is certified by COMMON. Each CA should also have a Subject Information Access (SIA) extension in its public certificate that defines a URL where all CA certificates that it has issued can be found.
 
 ## FPKI Crawler Output Files
 
