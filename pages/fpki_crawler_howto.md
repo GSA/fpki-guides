@@ -4,9 +4,11 @@ title: How To Use the FPKI Crawler
 permalink: /fpkicrawler/
 ---
 
-As a federal agency or an entity supporting a federal agency, it is helpful to understand the relationships between the various certification authorities (CA) and how they relate to the federal agency security infrastucture.
+AWhen you delve deeply into Certification Authority relationships in the FPKI, it's clear that they are complex!
 
-The FPKI Crawler provides a view of these relationships of the CAs that are cross certified with the Federal Bridge Certification Authority (FBCA).
+You might need to understand their relationships more fully, analyze certificates, or download them. How can you see these relationships? Where do you get these certificates? Which ones you need?
+
+The FPKI Crawler can help you sort it all out.
  
 * [FPKI Graph](#fpki-graph)
 * [FPKI Crawler Outputs](#fpki-crawler-outputs)
@@ -44,9 +46,9 @@ This data is useful to understand the relationships that exist between each CA a
 
 The _AIACrawler.html_ (HTML) file lists all CA certificates found by the FPKI Crawler (in four Sections):
 
-* **Certificates Found with Validated AIA Chains to COMMON &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. 
-* **Certificates Found with Validated Chains to COMMON, NOT Found through AIA &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. (These certificates are found via JDK PKIX, when no validating chain is found via AIA.)   
-* **Certificates Found with NO Validated Chains to COMMON &mdash;** All CA certificates with NO validated path to COMMON. (These certificates are found through using AIA and SIA extensions.) This file lists only certificate information. (These tend to be cross-certificates issued to FPKI CAs that allow a partner PKI to use its own Root CA as the trust anchor instead of COMMON.)
+* **Certificates with Validated AIA Chains to COMMON &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. 
+* **Certificates with Validated Chains to COMMON, not through AIA &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate.   
+* **Certificates with No Validated Chains to COMMON &mdash;** All CA certificates with NO validated path to COMMON. This file lists only certificate information. These tend to be cross-certificates issued to FPKI CAs that allow a partner PKI to use its own Root CA as the trust anchor instead of COMMON.
 * **All Certificates &mdash;** All CA certificates in the FPKI.
 
 For each CA certificate listed, you will see _Cert_ and _Issuer_ data and status. For example:
@@ -79,7 +81,7 @@ The _allcerts.csv_ (Microsoft Excel) file lists all CA certificates found. This 
 
 The FPKI Crawler provides all CA public certificates that it finds for analysis and download.
 
-{% include alert-warning.html heading = "Do Not Import Certificates into a Trust Store before Analysis!" content="These certificates are available for analysis only. Please determine all applicable trust relationships before importing any certificate." %}
+{% include alert-warning.html heading = "Do not import certificates into a trust store before analysis!" content="These certificates are available for analysis only. Please determine all applicable trust relationships before importing any certificate." %}
 
 #### 1. All CA Certificates in a Single File (_CACertificatesValidatingToCommonPolicy.p7b_)
 
