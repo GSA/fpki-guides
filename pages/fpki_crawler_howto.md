@@ -17,9 +17,9 @@ The FPKI Crawler can help you sort it all out.
 
 ## FPKI Graph
 
-The FPKI Crawler provides a [FPKI Graph](https://fpki-graph.fpki-lab.gov/){:target="_blank"}_ to help you see the relationships between the CAs and Bridges in the FPKI ecosystem and the cross-certified CAs. You can also see how each CA certificate validates to the Root, COMMON.
+The FPKI Crawler provides an [FPKI Graph](https://fpki-graph.fpki-lab.gov/){:target="_blank"}_ to help you see the relationships between the CAs and Bridges in the FPKI ecosystem and the cross-certified CAs. It also shows you how each CA certificate validates to the Root, COMMON.
 
-* Click on any dot in the FPKI Graph to see that CA's inbound and outbound relationships. 
+* Click on any dot in the FPKI Graph to see that CA's inbound and outbound relationships.
 
 Each CA validating to COMMON should have an AIA extension in its public certificate that defines a Uniform Resource Locator (URL) where certificates issued to signing CA can be found. Following each CA certificate’s AIA chain should result in finding the certificate that is certified by COMMON. Each CA should also have a Subject Information Access (SIA) extension in its public certificate that defines a URL where all CA certificates that it has issued can be found.
 
@@ -27,11 +27,13 @@ Each CA validating to COMMON should have an AIA extension in its public certific
 
 The [FPKI Crawler](https://fpki-graph.fpki-lab.gov/crawler/){:target="_blank"}_ (_AIA Crawler Results_ webpage) offers output files in CSV, HTML, XML, and .p7b formats to help you understand and administer your certificate Key Store and build a Trust Store. 
 
-{% include alert-info.html heading="The FPKI Crawler uses AIAs and SIAs to find all CA certificates." content="Each CA public certificate should contain Authority Information Access (AIA) and Subject Information Access (SIA) extensions. An AIA chain will lead to the COMMON-certified CA certificate for download. The SIA gives a URL to a list of all certificates issued by a CA." %} 
+{% include alert-info.html heading="The FPKI Crawler uses Authority Information Access (AIA) and Subject Information Access (SIA) extensions to find all CA certificates." content="Each CA public certificate should contain AIA and SIA extensions. The AIA extension will give a Uniform Resource Locator (URL) where you can find the certificates issued to the signing CA. An AIA chain will lead you to the COMMON-certified CA certificate for download. The SIA will give you a URL to a list of all certificates issued by a CA." %} 
+
+{% include alert-info.html heading="The FPKI Crawler uses AIA and SIA extensions to find all CA certificates." content="Each CA public certificate should contain these extensions. The AIA extension will give a Uniform Resource Locator (URL) where you can find the certificates issued to the signing CA. An AIA chain will lead you to the COMMON-certified CA certificate for download. The SIA will give you a URL where you can find all certificates issued by a CA." %}
 
 ### Public Certificates for Analysis and Reporting
 
-**Note:**&nbsp;&nbsp;The Crawler categorizes CA certificates by _Type_ (_U.S. Government_, _State_, or _Company_) and _Organization_ (_Agency_, _State Name_, and _Company Name_), which is extracted from the Distinguished Name (DN).
+> **Note:**&nbsp;&nbsp;The Crawler categorizes CA certificates by _Type_ (_U.S. Government_, _State_, or _Company_) and _Organization_ (_Agency_, _State Name_, and _Company Name_), which is extracted from the Distinguished Name (DN).
 
 #### 1. Federal Common Policy Tree (_FederalCommonPolicyTree.csv_)
 
@@ -40,15 +42,15 @@ The _FederalCommonPolicyTree.csv_ (Microsoft Excel) gives you the certificate da
 * All CAs that validate to COMMON
 * All cross-certified CAs 
 
-This data is useful to understand the relationships that exist between each CA and COMMON similar to the data presented in the graph in a visual format.
+This file will help you to understand the relationships that exist between each CA and COMMON (similar to the FPKI Graph's visual data).
 
 #### 2. All Certificates (_AIACrawler.html_)
 
 The _AIACrawler.html_ (HTML) file lists all CA certificates found by the FPKI Crawler (in four Sections):
 
 * **Certificates with Validated AIA Chains &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. 
-* **Certificates with Validated Chains other than AIA &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate.   
-* **Certificates with No Validated Chains &mdash;** All CA certificates with NO validated path to COMMON. This file lists only certificate information. These tend to be cross-certificates issued to FPKI CAs that allow a partner PKI to use its own Root CA as the trust anchor instead of COMMON.
+* **Certificates with Validated Chains Other than AIA &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate.   
+* **Certificates with No Validated Chains &mdash;** All CA certificates with no validated path to COMMON. This file lists only certificate information. These tend to be cross-certificates issued to FPKI CAs that allow a partner PKI to use its own Root CA as the trust anchor instead of COMMON.
 * **All Certificates &mdash;** All CA certificates in the FPKI.
 
 For each CA certificate listed, you will see _Cert_ and _Issuer_ data and status. For example:
@@ -75,7 +77,7 @@ The _allcerts.csv_ (Microsoft Excel) file lists all CA certificates found. This 
 
 * The key columns include:&nbsp;&nbsp;Subject DN, Issuer DN, (Certificate) Group, Serial (Number), Sig Alg (Signing Algorithm) (typically SHA1 or SHA-256), Subject Key, and Authority Key.
 * If found in a certificate, the Online Certificate Status Protocol (OCSP) and the Certificate Revocation List Distribution Point (CRLDP) URLs will be listed in the file.
-* The AIA and SIA URLs for Object Identifiers (OIDs) (i.e., OIDs are id-ad-caIssuers, id-ad-caRepository, and id-ad-timeStamping) will be listed in the file. 
+* The AIA and SIA URLs for Object Identifiers (OIDs) will be listed in the file. The OIDs are id-ad-caIssuers, id-ad-caRepository, and id-ad-timeStamping.
 
 ### Public Certificates for Download
 
