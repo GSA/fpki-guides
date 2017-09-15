@@ -21,15 +21,11 @@ The FPKI Crawler provides an [FPKI Graph](https://fpki-graph.fpki-lab.gov/){:tar
 
 * Click on any dot in the FPKI Graph to see that CA's inbound and outbound relationships.
 
-Each CA validating to COMMON should have an AIA extension in its public certificate that defines a Uniform Resource Locator (URL) where certificates issued to signing CA can be found. Following each CA certificate’s AIA chain should result in finding the certificate that is certified by COMMON. Each CA should also have a Subject Information Access (SIA) extension in its public certificate that defines a URL where all CA certificates that it has issued can be found.
+Each CA that validates to COMMON should have an Authority Information Access (AIA) extension in its public certificate that gives a Uniform Resource Locator (URL) where you can see the certificates issued to the signing CA. If you follow each CA certificate’s AIA chain, it will lead you to the COMMON-certified certificate. Each CA should also have a Subject Information Access (SIA) extension in its public certificate that gives a URL where you can see all CA certificates that it has issued.
 
 ## FPKI Crawler Output Files
 
 The [FPKI Crawler](https://fpki-graph.fpki-lab.gov/crawler/){:target="_blank"}_ (_AIA Crawler Results_ webpage) offers output files in CSV, HTML, XML, and .p7b formats to help you understand and administer your certificate Key Store and build a Trust Store. 
-
-{% include alert-info.html heading="The FPKI Crawler uses Authority Information Access (AIA) and Subject Information Access (SIA) extensions to find all CA certificates." content="Each CA public certificate should contain AIA and SIA extensions. The AIA extension will give a Uniform Resource Locator (URL) where you can find the certificates issued to the signing CA. An AIA chain will lead you to the COMMON-certified CA certificate for download. The SIA will give you a URL to a list of all certificates issued by a CA." %} 
-
-{% include alert-info.html heading="The FPKI Crawler uses AIA and SIA extensions to find all CA certificates." content="Each CA public certificate should contain these extensions. The AIA extension will give a Uniform Resource Locator (URL) where you can find the certificates issued to the signing CA. An AIA chain will lead you to the COMMON-certified CA certificate for download. The SIA will give you a URL where you can find all certificates issued by a CA." %}
 
 ### Public Certificates for Analysis and Reporting
 
