@@ -86,7 +86,7 @@ The _CACertificatesValidatingToCommonPolicy.p7b_ file contains all CA certificat
 
 #### 2. All CA Certificates Broken Down into Eight Files (_CACertificatesValidatingToCommonPolicy_1.p7b_ through _8.p7b_)
 
-The files, _CACertificatesValidatingToCommonPolicy_1.p7b_ through _CACertificatesValidatingToCommonPolicy_8.p7b_, contain all CA certificates found, broken down into eight files to simplify analysis and download.
+_CACertificatesValidatingToCommonPolicy_1.p7b_ through _CACertificatesValidatingToCommonPolicy_8.p7b_ contain all CA certificates found, broken down into eight files to simplify analysis and download.
 
 #### 3. Certificate Files Grouped by Type and Organization (Additional _.p7b_ Certificates)
 
