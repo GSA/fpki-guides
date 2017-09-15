@@ -51,14 +51,9 @@ The _AIACrawler.html_ (HTML) file lists all CA certificates found by the FPKI Cr
 
 For each CA certificate listed, you will see _Cert_ and _Issuer_ data and status. For example:
 
-```
+   ```
   Issuer CN=Federal Bridge CA 2016,OU=FPKI,O=U.S. Government,C=US serial# 0x03F42   status GOOD
-  
-```
-```
-	certutil -hashfile fcpca.crt SHA1
-```
-
+   ```
 For detailed data about CA certificates or issuers, click any link in the _AIACrawler.html_ file.
 
 #### 3. Certificates with AIA Information (_allcertsfoundaturi.xml_)
