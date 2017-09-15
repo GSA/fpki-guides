@@ -74,8 +74,8 @@ The _allcertsfoundaturi.csv_ (Microsoft Excel) file lists all AIA URLs and CA ce
 The _allcerts.csv_ (Microsoft Excel) file lists all CA certificates found. This file is helpful when you want to analyze certificates. 
 
 * The key columns include:&nbsp;&nbsp;Subject DN, Issuer DN, (Certificate) Group, Serial (Number), Sig Alg (Signing Algorithm) (typically SHA1 or SHA-256), Subject Key, and Authority Key.
-* If found in a certificate, the Online Certificate Status Protocol (OCSP) URL will be listed in the OCSP HTTP column. The Certificate Revocation List Distribution Point (CRLDP) URLs will be listed in three columns: CDRLDP HTTP; the CDRLDP LDAP; and the CRLDP, AIA and SIA ERRORS.
-* The AIA and SIA URLs for Object Identifiers (OIDs) (i.e., OIDs are id-ad-caIssuers, id-ad-caRepository, and id-ad-timeStamping) will be listed in these columns:&nbsp;&nbsp;AIA id-ad-caIssuers HTTP; AIA id-ad-caIssuers LDAP; AIA id-ad-caRepository LDAP; SIA id-ad-caIssuers HTTP; SIA id-ad-caRepository HTTP; SIA id-ad-caRepository LDAP; SIA id-ad-caRepository LDAP; SIA id-ad-timeStamping HTTP; SIA id-ad-timeStamping LDAP; and CRLDP, AIA and SIA ERRORS. 
+* If found in a certificate, the Online Certificate Status Protocol (OCSP) and the Certificate Revocation List Distribution Point (CRLDP) URLs will be listed in the file.
+* The AIA and SIA URLs for Object Identifiers (OIDs) (i.e., OIDs are id-ad-caIssuers, id-ad-caRepository, and id-ad-timeStamping) will be listed in the file. 
 
 ### Public Certificates for Download
 
