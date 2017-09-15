@@ -95,4 +95,4 @@ For these .p7b files, the CA certificates are grouped by _Type_ and _Organizatio
 * All CA certificates found
 * All CA certificates found, plus any other certificate needed to validate to COMMON.
 
-> For example:&nbsp;&nbsp;the _US_Government_VA.p7b_ (U.S. Department of Veterans Affairs) contains two CA certificates issued by the Verizon Federal Shared Service Provider CA. To validate their paths to COMMON requires a Betrusted cross-certificate, so the _US_Government_VA_FullPath.p7b_ contains the two CA certificates, plus the Betrusted cross-certificate.
+For example:&nbsp;&nbsp;the _US_Government_VA.p7b_ (U.S. Department of Veterans Affairs) contains two CA certificates issued by the Verizon Federal Shared Service Provider CA. To validate their paths to COMMON requires a Betrusted cross-certificate, so the _US_Government_VA_FullPath.p7b_ contains the two CA certificates, plus the Betrusted cross-certificate.
