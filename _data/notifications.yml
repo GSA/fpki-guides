@@ -137,7 +137,7 @@
   ca_certificate_subject: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Federated Trust CA-1
   cdp_uri: http://crl3.digicert.com/DigiCertFederatedIDCA-1.crl, http://crl4.digicert.com/DigiCertFederatedIDCA-1.crl
   aia_uri: http://cacerts.digicert.com/aiaDigiCertFederatedTrustCA-1.p7c
-  sia_uri: None
+  sia_uri: 
   ocsp_uri: http://ocsp.digicert.com
 
 - notice_date: September 14, 2017
