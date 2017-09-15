@@ -46,9 +46,9 @@ This data is useful to understand the relationships that exist between each CA a
 
 The _AIACrawler.html_ (HTML) file lists all CA certificates found by the FPKI Crawler (in four Sections):
 
-* **Certificates with Validated AIA Chains to COMMON &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. 
-* **Certificates with Validated Chains to COMMON, not through AIA &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate.   
-* **Certificates with No Validated Chains to COMMON &mdash;** All CA certificates with NO validated path to COMMON. This file lists only certificate information. These tend to be cross-certificates issued to FPKI CAs that allow a partner PKI to use its own Root CA as the trust anchor instead of COMMON.
+* **Certificates with Validated AIA Chains &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate. 
+* **Certificates with Validated Chains other than AIA &mdash;** All CA certificates with validated paths to COMMON and the certificate policies to which they validate.   
+* **Certificates with No Validated Chains &mdash;** All CA certificates with NO validated path to COMMON. This file lists only certificate information. These tend to be cross-certificates issued to FPKI CAs that allow a partner PKI to use its own Root CA as the trust anchor instead of COMMON.
 * **All Certificates &mdash;** All CA certificates in the FPKI.
 
 For each CA certificate listed, you will see _Cert_ and _Issuer_ data and status. For example:
