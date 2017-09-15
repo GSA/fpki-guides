@@ -17,7 +17,7 @@ The FPKI Crawler can help you sort it all out.
 
 ## FPKI Graph
 
-The FPKI Crawler provides an [FPKI Graph](https://fpki-graph.fpki-lab.gov/){:target="_blank"}_ to help you see the relationships between the CAs and Bridges in the FPKI ecosystem and the cross-certified CAs. It also shows you how each CA certificate validates to the Root, COMMON.
+The FPKI Crawler provides an [FPKI Graph](https://fpki-graph.fpki-lab.gov/){:target="_blank"} to help you see the relationships between the CAs and Bridges in the FPKI ecosystem and the cross-certified CAs. It also shows you how each CA certificate validates to the Root, COMMON.
 
 * Click on any dot in the FPKI Graph to see that CA's inbound and outbound relationships.
 
