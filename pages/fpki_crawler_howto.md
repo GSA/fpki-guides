@@ -53,6 +53,7 @@ For each CA certificate listed, you will see _Cert_ and _Issuer_ data and status
 
    ```
   Issuer CN=Federal Bridge CA 2016,OU=FPKI,O=U.S. Government,C=US serial# 0x03F42   status GOOD
+  
    ```
    
 For detailed data about CA certificates or issuers, click any link in the _AIACrawler.html_ file.
