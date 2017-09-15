@@ -78,7 +78,7 @@ The _allcerts.csv_ (Microsoft Excel) file lists all CA certificates found. This 
 
 The FPKI Crawler provides all CA public certificates that it finds for analysis and download.
 
-{% include alert-warning.html heading = "Do not import certificates into a trust store before analysis!" content="These certificates are available for analysis only. Please determine all applicable trust relationships before importing any certificate." %}
+{% include alert-warning.html heading = "Do not import certificates into a Trust Store before analysis!" content="These certificates are available for analysis only. Please determine all applicable trust relationships before importing any certificate." %}
 
 #### 1. All CA Certificates in a Single File (_CACertificatesValidatingToCommonPolicy.p7b_)
 
