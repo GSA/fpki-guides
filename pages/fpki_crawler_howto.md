@@ -21,7 +21,7 @@ The FPKI Crawler provides an [FPKI Graph](https://fpki-graph.fpki-lab.gov/){:tar
 
 * Click on any dot in the FPKI Graph to see that CA's inbound and outbound relationships.
 
-Each CA that validates to COMMON should have an Authority Information Access (AIA) extension in its public certificate that gives a Uniform Resource Locator (URL) where you can see the certificates issued to the signing CA. If you follow each CA certificate’s AIA chain, it will lead you to the COMMON-certified certificate. Each CA should also have a Subject Information Access (SIA) extension in its public certificate that gives a URL where you can see all CA certificates that it has issued.
+Each CA that validates to COMMON should have an Authority Information Access (AIA) extension in its public certificate that gives a URL where you can see the certificates issued to the signing CA. If you follow each CA certificate’s AIA chain, it will lead you to the COMMON-certified certificate. Each CA should also have a Subject Information Access (SIA) extension in its public certificate that gives a URL where you can see all CA certificates that it has issued.
 
 ## FPKI Crawler Output Files
 
