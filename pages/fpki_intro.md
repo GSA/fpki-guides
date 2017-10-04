@@ -3,7 +3,6 @@ layout: default
 title: Introduction
 permalink: /
 ---
-
 Welcome to the **Federal Public Key Infrastructure** (FPKI) guides!  In these guides, you will find information about the Federal Public Key Infrastructure including commonly used links, tools, tips, and information for leveraging the Federal PKI.  
 
 These guides are [open source](https://github.com/gsa/fpki-guides){:target="_blank"} and a _work in progress_ and we [welcome contributions]({{ site.baseurl }}/contribute/) from our colleagues.  We encourage you to contribute and share information you think is helpful for your colleagues.
@@ -83,10 +82,10 @@ The Federal PKI is important to Federal agencies as well as businesses and other
 
 ### Where can I find the Policies and Standards?
 
-* [Federal Common Certificate Policy](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/Common-Policy-Framework.pdf){:target="_blank"} is the certificate policy for the Federal Root Certification Authority.
-* [Federal Bridge Certificate Policy](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/FBCA_CP.pdf){:target="_blank"} is the certificate policy for the Federal Bridge Certification Authority.
-* [X.509 Certificate and CRL Extensions Profile](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki_certificate_May2015-v1.2.pdf){:target="_blank"} specifies certificate and certificate revocation list (CRL) extension profiles for FPKI infrastructure systems.
-* [X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for PIV-I Cards](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/PIV-I-Certificate-v1.1.pdf){:target="_blank"} specifies certificate and certificate revocation list (CRL) extension profiles for use with Personal Identity Verification Interoperable (PIV-I) cards.
-* [X.509 Certificate and CRL Extensions Profile for the Shared Service Provider (SSP) Program](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/Cert-Profile-for-SSP-v1-7-20150505.pdf){:target="_blank"} specifies certificate and certificate revocation list (CRL) extension profiles for certificates and CRLs issued under COMMON.
+* [Federal Common Certificate Policy](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-x509-cert-common-policy.pdf){:target="_blank"} is the certificate policy for the Federal Root Certification Authority.
+* [Federal Bridge Certificate Policy](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/FBCA-Certificate-Policy-v2.31-06-29-17.pdf){:target="_blank"} is the certificate policy for the Federal Bridge Certification Authority.
+* [X.509 Certificate and CRL Extensions Profile](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-x509-cert-profiles.pdf){:target="_blank"} specifies certificate and certificate revocation list (CRL) extension profiles for FPKI infrastructure systems.
+* [X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for PIV-I Cards](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"} specifies certificate and certificate revocation list (CRL) extension profiles for use with Personal Identity Verification Interoperable (PIV-I) cards.
+* [X.509 Certificate and CRL Extensions Profile for the Shared Service Provider (SSP) Program](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"} specifies certificate and certificate revocation list (CRL) extension profiles for certificates and CRLs issued under COMMON.
 * [OMB 2016 Circular A-130](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/circulars/A130/a130revised.pdf){:target="_blank"} establishes general policy for the planning, budgeting, governance, acquisition, and management of Federal information, personnel, equipment, funds, IT resources and supporting infrastructure and services.
 * [OMB Memorandum M-05-05](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2005/m05-05.pdf){:target="_blank"}  requires the use of an SSP to mitigate the risk of commercial managed services for public key infrastructure (PKI) and electronic signatures.

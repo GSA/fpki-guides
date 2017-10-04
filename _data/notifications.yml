@@ -1,0 +1,184 @@
+#data file for fpki-guides change notification
+#format
+
+#notice_date: notice date in <MM/DD/YYYY>
+#change_type: < CA Certificate Issuance, CA Certificate Revocation, New CA, CA Termination, New URI in Certificates, OCSP Outage, CRL Outage >
+#start_datetime: start date of the change in <MM/DD/YYYY HH:MM> format
+#end_datetime: end date of the change in <MM/DD/YYYY HH:MM> format
+#system: <what is the system known as>
+#change_description: <detailed statement>
+#contact: <email, phone>
+### The following are all optional fields based on the change type
+# ca_certificate_hash: <the sha1 thumbprint of the certificate>
+# ca_certificate_issuer: <the issuer DN of the CA certificate>
+# ca_certificate_subject: <the subject DN of the CA certificate>
+# cdp_uri:
+# aia_uri:
+# sia_uri:
+# ocsp_uri:
+
+- notice_date: June 20, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: June 20, 2017 12:15:44 PM
+  system: Federal PKI Trust Infrastructure
+  change_description: Issuance of cross-certificate from Federal Bridge to Identrust
+  contact: fpki@gsa.gov
+  ca_certificate_hash: 8c 7a 33 76 da 95 e2 be 52 da bc 03 21 56 f4 c4 78 74 e4 c4
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject:  IdenTrust ACES CA 1
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://apps.identrust.com/roots/publicsectorroot.p7c
+  ocsp_uri: N/A
+
+- notice_date: June 20, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: June 20, 2017 12:26:12 PM
+  system: Federal PKI Trust Infrastructure
+  change_description: Issuance of cross-certificate from Federal Bridge to Identrust
+  contact: fpki@gsa.gov
+  ca_certificate_hash: f2 82 e5 05 30 11 13 e7 36 8a 26 2e 4e 3d fe 23 ed 39 c9 54
+  ca_certificate_issuer:  Federal Bridge CA 2016
+  ca_certificate_subject: IdenTrust ACES CA 2
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://validation.identrust.com/certs/issuedbyacesca2.p7c
+  ocsp_uri: N/A
+
+- notice_date: June 20, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: June 20, 2017 12:56:58 PM
+  system: Federal PKI Trust Infrastructure
+  change_description: Issuance of cross-certificate from Federal Bridge to Identrust
+  contact: fpki@gsa.gov
+  ca_certificate_hash: 8f 0c 18 76 9e 9e 6d 48 c5 8e 41 8e 9b d5 79 84 a7 ae 49 f4
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: IdenTrust Global Common Root CA 1
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://validation.identrust.com/roots/IssuedbyIGCRootCA1.p7c
+  ocsp_uri: N/A
+  
+- notice_date: July 12, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: July 12, 2017 10:59:26 AM
+  system: Federal PKI Trust Infrastructure
+  change_description: Issuance of cross-certificate from Federal Bridge to Widepoint
+  contact: fpki@gsa.gov
+  ca_certificate_hash: 8a 0a 15 2e f9 36 74 72 c8 83 28 e7 b8 18 a5 7a ed ea 33 ef
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: ORC NFI CA 3
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/ORCNFI3_SIA.p7c
+  ocsp_uri: N/A
+  
+- notice_date:  July 25, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: July 25, 2017 12:57:21 PM
+  system: Federal PKI Trust Infrastructure
+  change_description: Issuance of cross-certificate from Federal Bridge to Symantec
+  contact: fpki@gsa.gov
+  ca_certificate_hash: 63 3b 29 78 0d 72 f9 b6 e6 52 f8 58 6b 13 87 02 19 5a 2c cd
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: VeriSign Class 3 SSP Intermediate CA - G2
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://ssp-sia.symauth.com/VTNSSP/Certs_issued_by_Class3SSPCA-G2.p7c
+  ocsp_uri: N/A
+
+- notice_date: August 3, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: August 3, 2017 1:33:41 PM
+  system: N/A
+  change_description: Issuance of cross-certificate from Federal Bridge to US Government Publishing Office
+  contact: fpki@gsa.gov
+  ca_certificate_hash: b8 ea bb 18 ed 54 4c 9f cf b2 99 bd 5d 32 21 27 e6 f4 8d 90
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: GPO PCA
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://www.gpo-fbca-crls.ois.gpo.gov/caCertsIssuedByGPO.p7c
+  ocsp_uri: N/A
+  
+- notice_date: August 4, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: August 4, 2017 3:28:27 PM
+  system: US Government Publishing Office CAs
+  change_description: Issuance of cross-certificate from US Government Publishing Office to Federal Bridge
+  contact: fpki@gsa.gov
+  ca_certificate_hash: b5 d4 0b e9 4f 2e 01 4f 51 0b 29 64 36 6f 10 13 f4 1a f3 0e
+  ca_certificate_issuer: GPO PCA
+  ca_certificate_subject: Federal Bridge CA 2016
+  cdp_uri: http://www.gpo-fbca-crls.ois.gpo.gov/GPO-PCA-CRLa4.crl
+  aia_uri: http://www.gpo-fbca-crls.ois.gpo.gov/GPO-PCA-CACertificates.p7c
+  sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
+  ocsp_uri: http://www.ocsp.gpo.gov
+  
+- notice_date: August 22, 2017
+  change_type: CA Certificate Revocation
+  start_datetime: August 25, 2017
+  system: Verizon Federal PKI Shared Service Provider
+  change_description: The CA certificate for the issuing CA named Executive Office of the President CA-B8 will be revoked on August 25th and a long term CRL will be published.  This CA is no longer active. 
+  contact: vziamssp@verizon.com, fpki@gsa.gov
+  ca_certificate_hash: 
+  ca_certificate_issuer: CN=Betrusted Production SSP CA A1,OU=Betrusted Production SSP CA A1,OU=SSP,O=Betrusted US Inc,C=US
+  ca_certificate_subject:  CN=Executive Office of the President CA-B8,OU=PKI,OU=Services,DC=ssp,DC=eop,DC=gov
+  
+
+- notice_date: September 14, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: Aug 24, 2017
+  system: DigiCert Federated ID CA-1
+  change_description: A new CA certificate was issued for a subordinate CA under Digicert Federated ID CA-1. The CA certificate is for DigiCert Federated Trust CA-1.
+  contact: ben.wilson at digicert dot com
+  ca_certificate_hash: E2:9C:44:38:7F:7B:AA:9F:49:EF:CC:AE:A6:54:BC:E2:0C:FF:5F:D3
+  ca_certificate_issuer: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Federated ID CA-1
+  ca_certificate_subject: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Federated Trust CA-1
+  cdp_uri: http://crl3.digicert.com/DigiCertFederatedIDCA-1.crl, http://crl4.digicert.com/DigiCertFederatedIDCA-1.crl
+  aia_uri: http://cacerts.digicert.com/aiaDigiCertFederatedTrustCA-1.p7c
+  sia_uri: 
+  ocsp_uri: http://ocsp.digicert.com
+
+- notice_date: September 14, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: Aug 24, 2017
+  system: DigiCert Federated ID CA-1
+  change_description: A new CA certificate was issued for a subordinate CA under Digicert Federated Trust CA-1. The CA certificate is for Trinity Health Direct CA.
+  contact: ben.wilson at digicert dot com
+  ca_certificate_hash: 91:C3:74:48:0A:BA:3B:B9:B4:6C:8A:87:0F:95:E0:CA:98:CF:0C:70
+  ca_certificate_issuer: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Federated Trust CA-1
+  ca_certificate_subject: C=US, O=Trinity Health, CN=Trinity Health Direct CA
+  cdp_uri: http://crl4.digicert.com/DigiCertFederatedTrustCA-1.crl, http://crl3.digicert.com/DigiCertFederatedTrustCA-1.crl
+  aia_uri: http://cacerts.digicert.com/aiaTrinityHealthDirectCA.p7c
+  sia_uri:
+  ocsp_uri: http://ocsp.digicert.com
+
+- notice_date: September 30, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: September 28, 2017
+  system: Federal PKI Trust Infrastructure
+  change_description: Issuance of cross-certificate from Federal Bridge to DigiCert
+  contact: fpki@gsa.gov
+  ca_certificate_hash: e8 0b dd c6 1e d8 c4 3a d0 95 fc 94 62 17 be 45 bd d3 47 c1
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: DigiCert Federated ID CA-1
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://cacerts.digicert.com/siaDigiCertFederatedIDCA-1.p7c
+  ocsp_uri: N/A
+
+#- notice_date: 
+#  change_type: CA Certificate Issuance
+#  start_datetime:
+#  end_datetime: 
+#  system: N/A
+#  change_description: N/A
+#  contact: fpki@gsa.gov
+#  ca_certificate_hash:
+#  ca_certificate_issuer: 
+#  ca_certificate_subject:
+#  cdp_uri: 
+#  aia_uri: 
+#  sia_uri: 
+#  ocsp_uri: N/A
