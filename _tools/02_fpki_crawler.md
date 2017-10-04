@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: How To Use the FPKI Crawler
+title: FPKI Crawler
 collection: tools
 permalink: tools/fpkicrawler/
 ---
@@ -9,28 +9,12 @@ When you look deeper into the Certification Authority relationships in the Feder
 
 You might need to understand their relationships more fully, analyze certificates, or download them. How can you see these relationships? Where do you get these certificates? Which ones you need?
 
-The FPKI Crawler can help you sort it all out.
+The FPKI Crawler can help you sort it all out. The [FPKI Crawler](https://fpki-graph.fpki-lab.gov/crawler/){:target="_blank"}_ (_AIA Crawler Results_ webpage) offers output files in CSV, HTML, XML, and .p7b formats to help you understand and administer the certificates and build a Trust Store. 
  
-* [FPKI Graph](#fpki-graph)
-* [FPKI Crawler Outputs](#fpki-crawler-outputs)
-  * [Public Certificates for Analysis and Reporting](#public-certificates-for-analysis-and-reporting)
-  * [Public Certificates for Download](#public-certificates-for-download)
+* [Public Certificates for Analysis and Reporting](#public-certificates-for-analysis-and-reporting)
+* [Public Certificates for Download](#public-certificates-for-download)
 
-## FPKI Graph
-
-The FPKI Crawler provides an [FPKI Graph](https://fpki-graph.fpki-lab.gov/){:target="_blank"} to help you see the relationships between the CAs and Bridges in the FPKI ecosystem and the cross-certified CAs. It also shows you how each CA certificate validates to the Root, COMMON.
-
-* Click on any dot in the FPKI Graph to see that CA's inbound and outbound relationships.
-
-The FPKI Crawler uses Authority Information Access (AIA) and Subject Information Access (SIA) extensions to find all CA certificates. Each CA that validates to COMMON should have an AIA extension in its public certificate that gives a URL where you can see the certificates issued to the signing CA. If you follow each CA certificate’s AIA chain, it will lead you to the COMMON certificate. Each CA should also have an SIA extension in its public certificate that gives a URL where you can see all CA certificates that it has issued.
-
-## FPKI Crawler Output Files
-
-The [FPKI Crawler](https://fpki-graph.fpki-lab.gov/crawler/){:target="_blank"}_ (_AIA Crawler Results_ webpage) offers output files in CSV, HTML, XML, and .p7b formats to help you understand and administer the certificates and build a Trust Store. 
-
-### Public Certificates for Analysis and Reporting
-
-> **Note:**&nbsp;&nbsp;The Crawler categorizes CA certificates by _Type_ (_U.S. Government_, _State_, or _Company_) and _Organization_ (_Agency_, _State Name_, and _Company Name_), which is extracted from the Distinguished Name (DN).
+## Public Certificates for Analysis and Reporting
 
 #### 1. Federal Common Policy Tree (_FederalCommonPolicyTree.csv_)
 
@@ -75,7 +59,7 @@ The _allcerts.csv_ (Microsoft Excel) file lists all CA certificates found. This 
 * If found in a certificate, the Online Certificate Status Protocol (OCSP) and the Certificate Revocation List Distribution Point (CRLDP) URLs will be listed in the file.
 * The AIA and SIA URLs for Object Identifiers (OIDs) will be listed in the file. The OIDs are id-ad-caIssuers, id-ad-caRepository, and id-ad-timeStamping.
 
-### Public Certificates for Download
+## Public Certificates for Download
 
 The FPKI Crawler provides all CA public certificates that it finds for analysis and download.
 
