@@ -1,10 +1,11 @@
 ---
 layout: default 
 title: How To Use the FPKI Crawler
-permalink: /fpkicrawler/
+collection: tools
+permalink: tools/fpkicrawler/
 ---
 
-When you delve deeply into Certification Authority relationships in the FPKI, it's clear that they are complex!
+When you look deeper into the Certification Authority relationships in the Federal PKI, it's clear that they are complex/
 
 You might need to understand their relationships more fully, analyze certificates, or download them. How can you see these relationships? Where do you get these certificates? Which ones you need?
 
