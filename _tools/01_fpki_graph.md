@@ -15,7 +15,7 @@ The Federal Common Policy Certificate Authority (CA) (_"COMMON"_) is shown at th
 - See the upper left-hand of the FPKI Graph webpage for the _Search_ function. You can enter a CA name to quickly find it on the Graph.
 - In the lower left-hand corner of the webpage is a _Zoom_ scroll bar. You can zoom in for closer views and see the CA names.
 
-You cannot download the certificates from the Graph. To download the certificates, you need to use the [FPKI Crawler](https://fpki-graph.fpki-lab.gov/crawler/){target="_blank"} or retrieve the certificates from the Authority Information Access (AIA) or Subject Information Access (SIA) URIs. (See below for more information on AIAs and SIAs.)    
+You cannot download the certificates from the Graph. To download the certificates, you need to use the [FPKI Crawler](https://fpki-graph.fpki-lab.gov/crawler/){:target="_blank"} or retrieve the certificates from the Authority Information Access (AIA) or Subject Information Access (SIA) URIs. (See below for more information on AIAs and SIAs.)    
 
 ### How the FPKI Graph Works
 
