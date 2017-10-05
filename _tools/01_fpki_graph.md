@@ -29,6 +29,6 @@ Most CA certificates will also have an SIA extension with a URI to the CA certif
 - You will find a dozen or more certificates that are issued by COMMON (Root) to other intermediate or issuing CAs.  
 - The SIA URIs from each of these certificates can then be retrieved to find the next set of signed certificates.
 
-#### Acknowledgment
+### Acknowledgment
 
 The FPKI Graph was built by using the same tools and code as the [Berkley ICSI SSL Notary](https://notary.icsi.berkeley.edu/trust-tree/){:target="_blank"}. 
