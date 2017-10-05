@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkicrawler/
 ---
 
-When you look deeper into the Certification Authority relationships in the Federal PKI, it's clear that they are complex/
+When you look deeply into the Certification Authority relationships in the Federal PKI, it's clear that they are complex.
 
 You might need to understand their relationships more fully, analyze certificates, or download them. How can you see these relationships? Where do you get these certificates? Which ones you need?
 
