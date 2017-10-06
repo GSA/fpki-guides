@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Useful Tools
+collection: tools
 permalink: /tools/
 ---
 
