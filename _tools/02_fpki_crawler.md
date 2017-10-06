@@ -9,7 +9,7 @@ When you look deeply into<!--Deeply is grammatical. What about "study"?--> the C
 
 You might need to understand their relationships more fully, analyze certificates, or download them. How can you see these relationships? Where do you get these certificates? Which ones you need?
 
-The FPKI Crawler can help you sort it all out. The [FPKI Crawler](https://fpki-graph.fpki-lab.gov/crawler/){:target="_blank"}_ (_AIA Crawler Results_ webpage) offers output files in CSV, HTML, XML, and .p7b formats to help you understand and administer the certificates and build a Trust Store. 
+The FPKI Crawler can help you sort it all out. The [FPKI Crawler](https://fpki-graph.fpki-lab.gov/crawler/){:target="_blank"} offers output files in CSV, HTML, XML, and .p7b formats to help you understand and administer the certificates. Information on the files provided by the FPKI Crawler includes:
  
 * [Public Certificates for Analysis and Reporting](#public-certificates-for-analysis-and-reporting)
 * [Public Certificates for Download](#public-certificates-for-download)
