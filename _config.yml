@@ -72,9 +72,10 @@ navigation:
   internal: true
   coll: false
 - text: Useful Tools
-  url: tools
+  url: tools/
   internal: true
-  coll: false
+  coll: true
+  collname: tools
 - text: System Notifications
   url: notifications
   internal: true
@@ -119,6 +120,10 @@ collections:
   faq:
     label: "FAQ"
     permalink: /faq/:path/
+    output: true
+  tools:
+    label: "Useful Tools"
+    permalink: /tools/:path/
     output: true
 
 
