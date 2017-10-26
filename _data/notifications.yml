@@ -168,7 +168,7 @@
   sia_uri: http://cacerts.digicert.com/siaDigiCertFederatedIDCA-1.p7c
   ocsp_uri: N/A
 
-- notice_date: October 5, 2017
+- notice_date: October 20, 2017
   change_type: CA Certificate Issuance
   start_datetime: November 3, 2017
   system: TSCP SHA256 Bridge CA
