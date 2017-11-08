@@ -1,10 +1,10 @@
 ---
 layout: default
 title: PIV-I Digital Signature Certificate Profile
-permalink: /_profiles/pividigsignature/
+permalink: profiles/pividigsignature/
 ---
 
-## Worksheet 8: PIV-I Digital Signature Certificate Profile
+## Worksheet 8:&nbsp;&nbsp;PIV-I Digital Signature Certificate Profile
 
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
