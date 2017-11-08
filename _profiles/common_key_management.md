@@ -22,9 +22,9 @@ permalink: /_profiles/commonkeymanagement/
 |AuthorityInfoAccess   | Mandatory  |  | **id-ad-caIssuers** {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>**id-ad-ocsp** {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. | 
 | SubjectKeyIdentifier   | Mandatory |  | Octet string.  |
 | CRLDistributionPoints   | Mandatory |   |  This extension must appear in all certificates and must include at least an HTTP URI distribution point name.<BR>The reasons and cRLIssuer fields must be omitted. | 
-| CertificatePolicies   | Mandatory  |  | Applicable certificate policies. |
+| CertificatePolicies   | Mandatory  |  | Applicable certificate policies.<BR>Three policy OIDs are defined for key-management certificates issued to human subscribers under the Common CP.<BR>End entity certificates should assert one of the three policies:<BR>2.16.840.1.101.3.2.1.3.6 - id-fpki-common-policy<BR>2.16.840.1.101.3.2.1.3.7 - id-fpki-common-hardware<BR>2.16.840.1.101.3.2.1.3.16 - id-fpki-common-High<BR>Other policy OIDs may be asserted as well. |
 | AuthorityKeyIdentifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
-| Extendedkeyusage   | Optional |  |  If included to support specific applications, the extension should be non-critical.<BR>The 2 values listed for keyPurposeID should be included for key-management purposes:<BR>1.3.6.1.5.5.7.3.4 - Id-kp-emailProtection<BR>.<BR>1.3.6.1.4.311.10.3.4 - Encrypting File System<BR>Additional key purposes may be specified.  |
+| Extendedkeyusage   | Optional |  |  If included to support specific applications, the extension should be non-critical.<BR>The 2 values listed for keyPurposeID should be included for key-management purposes:<BR>1.3.6.1.5.5.7.3.4 - Id-kp-emailProtection<BR>1.3.6.1.4.311.10.3.4 - Encrypting File System<BR>Additional key purposes may be specified.  |
 |SubjectAlternativeName   | Optional  |  |   |
 | SubjectDirectoryAttributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280 [3].<BR>countryOfCitizenship {1.3.6.1.5.5.7.9.4} - ISO 3166 Country Code(s). | 
 | IssuerAltName   | Optional  |  |   | 
