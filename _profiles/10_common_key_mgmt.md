@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Common Key Management Certificate Profile
-permalink: /_profiles/commonkeymanagement/
+permalink: profiles/commonkeymgmt/
 ---
 
-## Worksheet 10: Common Key Management Certificate Profile
+## Worksheet 10:&nbsp;&nbsp;Common Key Management Certificate Profile
 
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
