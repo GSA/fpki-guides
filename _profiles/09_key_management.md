@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Key Management Certificate Profile
-permalink: /_profiles/keymanagement/
+permalink: profiles/keymanagement/
 ---
 
 ## Worksheet 9: Key Management Certificate Profile
