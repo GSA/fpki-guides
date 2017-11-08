@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CRL Profile
+title: Common End Entity Signature Certificate Profile
 permalink: /_profiles/commonendentitysignature/
 ---
 
