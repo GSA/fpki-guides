@@ -1,10 +1,10 @@
 ---
 layout: default
 title: End Entity Signature Certificate Profile
-permalink: /_profiles/endentitysignature/
+permalink: profiles/endentitysignature/
 ---
 
-## Worksheet 6: End Entity Signature Certificate Profile
+## Worksheet 6:&nbsp;&nbsp;End Entity Signature Certificate Profile
 
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
