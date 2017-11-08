@@ -26,5 +26,5 @@ permalink: /_profiles/commonendentitysignature/
 | AuthorityKeyIdentifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
 | Extendedkeyusage   | Optional |  |  If included to support specific applications, the extension should be non-critical.<BR>The 3 values listed for keyPurposeID should be included for signing purposes.<BR>1.3.6.1.5.5.7.3.4 - Id-kp-emailProtection<BR>1.3.6.1.4.1.311.10.3.12 - MSFT Document Signing<BR>1.2.840.113583.1.1.5 - Adobe-Certified Document Signing.<BR>Additional key purposes may be specified.  |
 |SubjectAlternativeName   | Optional  |  |   |
-| SubjectDirectoryAttributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in [13].<BR>countryOfCitizenship {1.3.6.1.5.5.7.9.4} - ISO 3166 Country Code(s). | 
+| SubjectDirectoryAttributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280 [3].<BR>countryOfCitizenship {1.3.6.1.5.5.7.9.4} - ISO 3166 Country Code(s). | 
 | IssuerAltName   | Optional  |  |   | 
