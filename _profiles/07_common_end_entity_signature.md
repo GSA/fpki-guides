@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Common End Entity Signature Certificate Profile
-permalink: /_profiles/commonendentitysignature/
+permalink: profiles/commonendentitysignature/
 ---
 
-## Worksheet 7: Common End Entity Signature Certificate Profile
+## Worksheet 7:&nbsp;&nbsp;Common End Entity Signature Certificate Profile
 
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
