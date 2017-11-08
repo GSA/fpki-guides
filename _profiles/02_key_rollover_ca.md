@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Key Rollover CA Certificate Profile
-permalink: /_profiles/keyrollover/
+permalink: profiles/keyrollover/
 ---
 
-## Worksheet 2: Key Rollover CA Certificate Profile
+## Worksheet 2:&nbsp;&nbsp;Key Rollover CA Certificate Profile
 
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
