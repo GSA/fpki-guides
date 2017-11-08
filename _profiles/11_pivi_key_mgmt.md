@@ -4,7 +4,7 @@ title: PIV-I Key Management Certificate Profile
 permalink: /_profiles/pivikeymgmt/
 ---
 
-## Worksheet 11:&nbsp;&ngsp;PIV-I Key Management Certificate Profile
+## Worksheet 11:&nbsp;&nbsp;PIV-I Key Management Certificate Profile
 
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
