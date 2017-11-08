@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Self-Signed CA Certificate Profile
-permalink: /_profiles/selfsignedca/
+permalink: profiles/selfsignedca/
 ---
 
-## Worksheet 1: Self-Signed CA Certificate Profile
+## Worksheet 1:&nbsp;&nbsp;Self-Signed CA Certificate Profile
 
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
