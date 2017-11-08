@@ -22,7 +22,7 @@ permalink: /_profiles/pividigsignature/
 |AuthorityInfoAccess   | Mandatory  |  | **id-ad-caIssuers** {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>**id-ad-ocsp** {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. | 
 | SubjectKeyIdentifier   | Mandatory |  | Octet string.  |
 | CRLDistributionPoints   | Mandatory |   |  This extension must appear in all certificates and must include at least an HTTP URI distribution point name.<BR>The reasons and cRLIssuer fields must be omitted. | 
-| CertificatePolicies   | Mandatory  |  | Applicable certificate policies – at least one of:<BR>2.16.840.1.101.3.2.1.3.6 - id-fpki-common-policy<BR>2.16.840.1.101.3.2.1.3.7 - id-fpki-common-hardware<BR>2.16.840.1.101.3.2.1.3.16 - id-fpki-common-High. |
+| CertificatePolicies   | Mandatory  |  | Applicable certificate policies – at least one policy mapped to FBCA mediumHW or PIV-I Hardware. |
 | AuthorityKeyIdentifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
 | Extendedkeyusage   | Optional |  |  If included to support specific applications, the extension should be non-critical.<BR>The 3 values listed for keyPurposeID should be included for signing purposes.<BR>1.3.6.1.5.5.7.3.4 - Id-kp-emailProtection<BR>1.3.6.1.4.1.311.10.3.12 - MSFT Document Signing<BR>1.2.840.113583.1.1.5 - Adobe-Certified Document Signing.<BR>Additional key purposes may be specified.  |
 |SubjectAlternativeName   | Optional  |  |   |
