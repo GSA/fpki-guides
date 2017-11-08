@@ -1,10 +1,10 @@
 ---
 layout: default
 title: CRL Profile
-permalink: /_profiles/crl/
+permalink: profiles/crl/
 ---
 
-## Worksheet 5: Certificate Revocation List (CRL) Certificate Profile
+## Worksheet 5:&nbsp;&nbsp;Certificate Revocation List (CRL) Certificate Profile
 
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
