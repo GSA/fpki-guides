@@ -20,15 +20,11 @@ permalink: profiles/pivicardauth/
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
 | KeyUsage  | Mandatory | True |  digitalSignature.  |
 |AuthorityInfoAccess   | Mandatory  |  | **id-ad-caIssuers** {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>**id-ad-ocsp** {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. OCSP is required for PIV-I CardAuth.  | 
-
-**CELESTE STOPPED HERE**
-
 | SubjectKeyIdentifier   | Mandatory |  | Octet string.  |
 | CRLDistributionPoints   | Mandatory |   |  This extension must appear in all certificates and must include at least an HTTP URI distribution point name.<BR>The reasons and cRLIssuer fields must be omitted. | 
-| CertificatePolicies   | Mandatory  |  | Applicable certificate policy:<BR>2.16.840.1.101.3.2.1.3.17 - id-fpki-common-cardAuth<BR>Other policies may be asserted as well. |
+| CertificatePolicies   | Mandatory  |  | Applicable certificate policy.<BR>Must have a policy mapping to PIV-I cardAuth.<BR>Other policies may be asserted as well. |
 | AuthorityKeyIdentifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
-| Extendedkeyusage   | Mandatory | True |  This extension shall assert only the id-PIV-cardAuth keyPurposeID {2.16.840.1.101.3.6.8}.<BR>The id-PIV-cardAuth keyPurposeID specifies that the public key is used to authenticate the PIV card rather than the PIV cardholder.  |
-|SubjectAlternativeName   | Mandatory  | Otherwise set criticality to TRUE. | Must include a UUID. No other name forms may be included.<BR>This field contains the UUID from the CHUID of the PIV-I card encoded as a URI, as specified in RFC 4122, Section 3.  |
-|piv-interim<BR>(2.16.840.1.101.3.6.9.1)   | Mandatory  |  | The PIV interim indicator extension is defined in FIPS 201-2, Appendix B.2.<BR>The value of this extension is asserted as follows:<BR>1. TRUE if, at the time of credential issuance: (1) the FBI National Criminal History Fingerprint Check has been completed successfully, and (2) an NACI has been initiated but has not been completed.<BR>2. FALSE if, at the time of credential issuance, the subject’s NACI has been completed and successfully adjudicated.  |
+| Extendedkeyusage   | Mandatory | True |  This extension shall assert only the id-PIV-cardAuth keyPurposeID {2.16.840.1.101.3.6.8}.<BR>The id-PIV-cardAuth keyPurposeID specifies that the public key is used to authenticate the PIV-I card rather than the PIV-I cardholder.  |
+|SubjectAlternativeName   | Mandatory  | **??**Otherwise set criticality to TRUE. | Must include a UUID. No other name forms may be included.<BR>This field contains the UUID from the CHUID of the PIV-I card encoded as a URI, as specified in RFC 4122, Section 3.  |
 | SubjectDirectoryAttributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280 [3].<BR>countryOfCitizenship {1.3.6.1.5.5.7.9.4} - ISO 3166 Country Code(s). | 
 | IssuerAltName   | Optional  |  |   | 
