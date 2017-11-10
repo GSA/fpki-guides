@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Common End Entity Signature Certificate Profile
-permalink: profiles/commonendentitysignature/
+permalink: profiles/commonendentitysign/
 ---
 
 ## Worksheet 7:&nbsp;&nbsp;Common End Entity Signature Certificate Profile
