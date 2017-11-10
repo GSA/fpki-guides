@@ -20,12 +20,11 @@ permalink: profiles/commonpivcontentsign/
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
 | KeyUsage  | Mandatory | True |  c=yes; digitalSignature.  | 
 | Extendedkeyusage   | Mandatory  | True | Id-PIV-content-signing keyPurposeID {2.16.840.1.101.3.6.7} specifies that the public key may be used to verify signatures on PIV CHUIDs and PIV biometrics.  |
-|AuthorityInfoAccess   | Mandatory  |  | **id-ad-caIssuers** {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>**id-ad-ocsp** {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. OCSP is required for common Authentication.  |
+|AuthorityInfoAccess   | Mandatory  |  | **id-ad-caIssuers** {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>**id-ad-ocsp** {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. OCSP is required for PIV content signer certificates.  |
 | SubjectKeyIdentifier   | Mandatory |  | Octet string.  |
-| CRLDistributionPoints   | Mandatory |   |  This extension must appear in all certificates and must include at least an HTTP URI distribution point name.<BR>The reasons and cRLIssuer fields must be omitted. | 
-| CertificatePolicies   | Mandatory  |  | Applicable certificate policy:<BR>2.16.840.1.101.3.2.1.3.13 - id-fpki-common-Authentication |
+| CRLDistributionPoints   | Mandatory |   |   | 
+| CertificatePolicies   | Mandatory  |  | Common PIV content signer - 2.16.840.1.101.3.6.7. |
 | AuthorityKeyIdentifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
-|SubjectAlternativeName   | Mandatory  |  | Must include a UUID that contains the UUID from the CHUID of the PIV-I card encoded as a URI, as specified in RFC 4122, Section 3.<BR>Any additional name types may be present.<BR>Other names may be included to support local applications.  |
- 
-| SubjectDirectoryAttributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280 [3].<BR>countryOfCitizenship {1.3.6.1.5.5.7.9.4} - ISO 3166 Country Code(s). | 
+|SubjectAltName   | Optional  |  |   |
 | IssuerAltName   | Optional  |  |   | 
+| Subject Directory Attribute   | Optional  |  |   | 
