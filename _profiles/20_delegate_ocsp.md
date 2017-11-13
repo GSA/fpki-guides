@@ -27,5 +27,5 @@ permalink: profiles/delegateocsp/
 | CertificatePolicies   | Mandatory  |  | All certificate policy OIDs in certificates for which this Responder is authoritative.  | 
 |SubjectAlternativeName   | Optional  |  |   | 
 |BasicConstraints   | Optional  |  |   |
-|AuthorityInfoAccess   | Mandatory  |  | **id-ad-caIssuers** {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>**id-ad-ocsp** {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder.  | 
+|AuthorityInfoAccess   | Optional  |  |  | 
 | IssuerAltName   | Optional  |  |   | 
