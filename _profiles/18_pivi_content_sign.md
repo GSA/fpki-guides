@@ -19,7 +19,7 @@ permalink: profiles/pivicontentsign/
 |               |                 |              |                                       |
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
 | KeyUsage  | Mandatory | True |  c=yes; digitalSignature.  | 
-| Extendedkeyusage   | Mandatory  | True | Id-PIV-content-signing keyPurposeID {2.16.840.1.101.3.6.7} specifies that the public key may be used to verify signatures on PIV-I CHUIDs and PIV-I biometrics.  |
+| Extendedkeyusage   | Mandatory  | True | **Id-PIV-content-signing keyPurposeID** {2.16.840.1.101.3.6.7} specifies that the public key may be used to verify signatures on PIV-I CHUIDs and PIV-I biometrics.  |
 |AuthorityInfoAccess   | Mandatory  |  | **id-ad-caIssuers** {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>**id-ad-ocsp** {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. OCSP is required for PIV-I content-signer certificates.  |
 | SubjectKeyIdentifier   | Mandatory |  | Octet string.  |
 | CRLDistributionPoints   | Mandatory |   |   | 
