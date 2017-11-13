@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Common PIV Content Signing Certificate Profile
+title: Common PIV Content-Signing Certificate Profile
 permalink: profiles/commonpivcontentsign/
 ---
 
-## Worksheet 17:&nbsp;&nbsp;Common PIV Content Signing Certificate Profile
+## Worksheet 17:&nbsp;&nbsp;Common PIV Content-Signing Certificate Profile
 
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
@@ -20,10 +20,10 @@ permalink: profiles/commonpivcontentsign/
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
 | KeyUsage  | Mandatory | True |  c=yes; digitalSignature.  | 
 | Extendedkeyusage   | Mandatory  | True | Id-PIV-content-signing keyPurposeID {2.16.840.1.101.3.6.7} specifies that the public key may be used to verify signatures on PIV CHUIDs and PIV biometrics.  |
-|AuthorityInfoAccess   | Mandatory  |  | **id-ad-caIssuers** {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>**id-ad-ocsp** {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. OCSP is required for PIV content signer certificates.  |
+|AuthorityInfoAccess   | Mandatory  |  | **id-ad-caIssuers** {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>**id-ad-ocsp** {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. OCSP is required for PIV content-signer certificates.  |
 | SubjectKeyIdentifier   | Mandatory |  | Octet string.  |
 | CRLDistributionPoints   | Mandatory |   |   | 
-| CertificatePolicies   | Mandatory  |  | Common PIV content signer - 2.16.840.1.101.3.6.7. |
+| CertificatePolicies   | Mandatory  |  | Common PIV content-signer - 2.16.840.1.101.3.6.7. |
 | AuthorityKeyIdentifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
 |SubjectAltName   | Optional  |  |   |
 | IssuerAltName   | Optional  |  |   | 
