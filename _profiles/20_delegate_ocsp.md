@@ -26,7 +26,7 @@ permalink: profiles/delegateocsp/
 | CRLDistributionPoints   | Mandatory |   |   | 
 | CertificatePolicies   | Mandatory  |  | All certificate policy OIDs in certificates for which this Responder is authoritative.  | 
 |SubjectAlternativeName   | Optional  |  |   | 
-|subjectAltName   | Optional  |  | dnsName must be present for TLS public serverAuthentication certificates.<BR>Other name forms may be present, based on certificate type.  | 
 |BasicConstraints   | Optional  |  |   |
+|subjectAltName   | Optional  |  | dnsName must be present for TLS public serverAuthentication certificates.<BR>Other name forms may be present, based on certificate type.  | 
 |AuthorityInfoAccess   | Optional  |  | **id-ad-caIssuers** access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA. | 
 | IssuerAltName   | Optional  |  |   | 
