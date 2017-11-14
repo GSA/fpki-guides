@@ -24,7 +24,7 @@ permalink: profiles/keymanagement/
 | CRLDistributionPoints   | Mandatory |   |  This extension must appear in all certificates and must include at least an HTTP URI distribution point name.<BR>The reasons and cRLIssuer fields must be omitted. | 
 | CertificatePolicies   | Mandatory  |  | Applicable certificate policies. |
 | AuthorityKeyIdentifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
-| Extendedkeyusage   | Optional |  |  If included to support specific applications, the extension should be non-critical.<BR>The 2 values listed for keyPurposeID should be included for key-management purposes:<BR>1.3.6.1.5.5.7.3.4 - Id-kp-emailProtection<BR>.<BR>1.3.6.1.4.311.10.3.4 - Encrypting File System<BR>Additional key purposes may be specified.  |
+| Extendedkeyusage   | Optional |  |  If included to support specific applications, the extension should be non-critical.<BR>The 2 values listed for keyPurposeID should be included for key-management purposes:<BR>1.3.6.1.5.5.7.3.4 - Id-kp-emailProtection<BR>1.3.6.1.4.311.10.3.4 - Encrypting File System<BR>Additional key purposes may be specified.  |
 |SubjectAlternativeName   | Optional  |  |   |
 | SubjectDirectoryAttributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280 [3].<BR>countryOfCitizenship {1.3.6.1.5.5.7.9.4} - ISO 3166 Country Code(s). | 
 | IssuerAltName   | Optional  |  |   | 
