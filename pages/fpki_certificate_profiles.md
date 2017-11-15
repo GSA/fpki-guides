@@ -10,23 +10,25 @@ To maximize interoperability among Federal Government, State, Local, Tribal, and
 
 The _Common Policy CP_ covers 18 certificate profiles and two CRL extensions profiles (i.e., OCSP responder and CRL):  
 
-**Since this list is so long, better to direct the reader to click the sidebar nav +-sign to see the profiles list links.**
+<**Since this list is so long, better to direct the reader to click the sidebar nav +-sign to see the profiles list links.**>
 
 * Self-Signed CA (link)
 * xxxx 
 * xxxx
 * xxxx
 
-**Traceability Matrix Table**
+**Common Policy CP Certificate Profile Worksheet Traceability**
 
-| **Certificate Profile Worksheets**   | **SSP**       | **FBCA**     | **PIV-I**     | **Current**   |
-| :----------------------------------  | :-----:       | :-----:      | :------:      | :------:      |
-| Self-Signed CA                       | 1             | 1            |               | 1             |
-| Key Rollover CA                      | 2             | 2            |  1            | 2             |
-| Peer-to-Peer Cross-Certificate       | 3             | 3            |  2            | 3             |
-
-
-
+| **Certificate Profile Worksheets**   | **SSP**        | **FBCA**     | **PIV-I**     | **Current**   |
+| :----------------------------------  | :-----:        | :-----:      | :------:      | :------:      |
+| Self-Signed CA                       | 1              | 1            |               | 1             |
+| Key Rollover CA                      | 2              | 2            |  1            | 2             |
+| Peer-to-Peer Cross-Certificate       | 3              | 3            |  2            | 3             |
+| Intermediate or Subordinate CA       | 3              | 3            |  2            | 4             |
+| CRL       | 4              | 4            |  3            | 5             |
+| End Entity Signature       |                | 5            |               | 6             |
+| Common End Entity Signature       | 5              |              |               | 7             |
+| PIV-I End Entity Signature Certificate Profile       |                |              |  6            | 8             |
 
 **This would be better in the Background section:**
 
