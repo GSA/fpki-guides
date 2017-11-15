@@ -19,11 +19,11 @@ The _Common Policy CP_ covers 18 certificate profiles and two CRL extensions pro
 
 **Traceability Matrix Table**
 
-| **Certificate Profile Worksheets**   | **SSP** | **FBCA** | **PIV-I** | **Current**  |
-| :----------------------------------  | :-----: | :-----:  | :------:  | :------:     |
-| Self-Signed CA                       | 1       | 1        |           | 1            |
-
-                                   |
+| **Certificate Profile Worksheets**   | **SSP**       | **FBCA**     | **PIV-I**     | **Current**   |
+| :----------------------------------  | :-----:       | :-----:      | :------:      | :------:      |
+| Self-Signed CA                       | 1             | 1            |               | 1             |
+| Key Rollover CA                      | 2             | 2            |  1            | 2             |
+| Peer-to-Peer Cross-Certificate       | 3             | 3            |  2            | 3             |
 
 
 
