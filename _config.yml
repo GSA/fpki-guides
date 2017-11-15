@@ -66,6 +66,10 @@ navigation:
 - text: Certificate Policies
   url: policyobjects
   internal: true
+  coll: false
+  text: Certificate Profiles
+  url: certprofiles
+  internal: true
   coll: true
   collname: profiles
 - text: Trust Stores
