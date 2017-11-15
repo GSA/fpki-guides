@@ -4,71 +4,40 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
+This section provides the X.509 v3 certificate profiles plus the v2 certificate revocation list (CRL) extensions profiles for the Federal Public Key Infrastructure (FPKI). These profiles specify the unique parameter settings needed for certificates and CRLs issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (_Common Policy CP_). They also give guidance for certificates issued under other Certificate Policies that are cross-certified with the Federal Bridge Certification Authority (FBCA).
+
+To maximize interoperability among Federal Government, State, Local, Tribal, and Territorial PKI communities **<Is this what Wendy meant by "outside Fed Govt?">**, these profiles include certain formats and semantics from the PKIX Working Group's Internet X.509 PKI certificate and CRL profiles. (See RFC 6818.) 
+
+The _Common Policy CP_ covers 18 certificate profiles and two CRL extensions profiles (i.e., OCSP responder and CRL):  
+
+**Since this list is so long, better to direct the reader to click the sidebar nav +-sign to see the profiles list links.**
+
+* Self-Signed CA (link)
+* xxxx 
+* xxxx
+* xxxx
+
+**Traceability Matrix Table**
+
+| **Certificate Profile Worksheets**   | **SSP** | **FBCA** | **PIV-I** | **Current**  |
+| :----------------------------------  | :-----: | :-----:  | :------:  | :------:     |
+| Self-Signed CA                       | 1       | 1        |           | 1            |
+
+                                   |
+
+
+
+
+**This would be better in the Background section:**
+
 1. [What is a Certificate Profile?](#what-is-a-certificate-profile)
 1. [Why do we use Certificate Profiles?](#why-do-we-use-certificate-profiles)
-1. [What is a Certificate Policy Object Identifier?](#what-is-a-certificate-policy-object-identifier)
-1. [What are the Certificate Policies Object Identifiers in use?](#what-are-the-certificate-policy-object-identifiers)
-1. [How do I view the Certificate Policy Object Identifier?](#how-do-i-view-the-certificate-policy-object-identifier)
-1. [How do I use the Certificate Policy Object Identifier?](#how-do-i-use-the-certificate-policy-object-identifier)
 
 ### What is a Certificate Profile?
 
-The certificate policy specifies the the security requirement, issuance procedure and protection of the private key associated with a certificate.  Certificate policies are identified in a certificate by including one or more Object Identifiers (OIDs).  
-
->A Certificate Policy (CP) is defined in the Internet X.509 Public Key Infrastructure Certificate Policy and Certification Practices Framework as "a named set of rules that indicates the applicability of a certificate to a particular community and/or class of application with common security requirements".
-
-When a Certification Authority (CA) issues a certificate, it is providing a statement to a certificate user that a public key is bound to an _entity_.
-
-> _Entity_ can be a person, device, website, or organization
-
-The Certificate Policy provides the information that can be used by a certificate user to decide whether or not to trust a certificate.
+A certificate profile gives the unique parameter settings for a certificate covered under a Certificate Policy. Certificate profiles identify their governing Certificate Policies by citing one or more Object Identifiers (OIDs).  
 
 ### Why do we use Certificate Profiles?
-Certificate policies are used to establish trust relationships between Certification Authorities.  This is called _cross-certification_. When CAs issue cross certificates, one CA assesses and recognizes one or more certificate polices of the other CA.
 
 
 
-### What is a Certificate Policy Object Identifier?
-
-
-
-
-### What are the Certificate Policy Object Identifiers?
-The Federal PKI has twenty-five (25) certificate policies for people and non-person entity (NPE) certificates.   
-
-* Twelve (12) of the certificate policies are used only within the Federal Bridge Certification Authority to map organizational policies across the issuing CAs and Bridges.
-* Thirteen (13) certificate policies are used for the final end entity certificates.
-
-All certificate policies denote a US Government issued and authorized certificate.  
-The Commercial Best Practices (CBP) identifier on certificate policies indicate the trusted roles or individuals assigned a role in certificate issuance do not have to be U.S. citizens.  
-A hardware (HW) identifier indicate the private key is generated and protected on a hardware based token.  
-The risk level referenced refers to the level of risk associated with transactions accepting certificates
-issued under the specified certificate policy.
-
-
-| Certificate Policy | Policy Object Identifier (OID) | Risk |
-|--------------------|--------------------------------| -----|
-|common-policy|2.16.840.1.101.3.2.1.3.6|Medium risk – authentication, signature or encryption of USG individual person, group, device, or role.|
-|common-HW|2.16.840.1.101.3.2.1.3.7|High risk – authentication, signature or encryption of USG individual person, group, role, or device where private key is protected on hardware token.|
-|common-devices|2.16.840.1.101.3.2.1.3.8|Medium risk – USG authentication or encryption of device.|
-|common-devicesHW|2.16.840.1.101.3.2.1.3.36|Medium risk - authentication or encryption of USG device where private key protected on hardware token.|
-|common-auth|2.16.840.1.101.3.2.1.3.13|High risk - Shows possession of PIV card with PIN use|
-|common-high|2.16.840.1.101.3.2.1.3.16|High risk – authentication, signature or encryption of USG individual person, group, role, or device where private key is protected on hardware token.|
-|common-cardAuth|2.16.840.1.101.3.2.1.3.17|Shows possession of PIV card w/o PIN use.|
-|common-piv-contentSigning|2. 16.840.1.101.3.2.1.3.39|Signs security objects on PIV or Derived PIV.|
-|SHA1-mediumCBP|2.16.840.1.101.3.2.1.3.21|Medium risk – authentication, signature or encryption of individual person, group, device, or role. (SHA1)|
-|SHA1-mediumHW-CBP|2.16.840.1.101.3.2.1.3.22|Medium risk – authentication, signature or encryption of individual person, group, or role where private key is protected on hardware token. (SHA1)|
-|SHA1-medium|2.16.840.1.101.3.2.1.3.23|Medium risk – authentication, signature or encryption of individual person, group, device, or role. (SHA1)|
-|SHA1-mediumHW|2.16.840.1.101.3.2.1.3.24|Medium risk – authentication, signature or encryption of individual person, group, or role where private key is protected on hardware token. (SHA1)|
-|SHA1-devices|2.16.840.1.101.3.2.1.3.25|Medium risk - authentication or encryption of device .(SHA1)|  
-
-
-| Certificate Policy | Policy Object Identifier (OID) | Risk |
-|--------------------|--------------------------------| -----|
-|FBCA-rudimentary|
-
-
-### How do I view the Certificate Policy Object Identifier?
-
-
-### How do I use the Certificate Policy Object Identifier?
