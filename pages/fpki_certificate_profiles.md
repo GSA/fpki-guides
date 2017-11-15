@@ -52,7 +52,7 @@ The _Common Policy CP_ covers 18 certificate profiles and two CRL extensions pro
 
 ### What is a Certificate Profile?
 
-A certificate profile gives the unique parameter settings for a certificate covered under a Certificate Policy. Certificate profiles identify their governing Certificate Policies by citing one or more Object Identifiers (OIDs).  
+A **_certificate profile_** is gives the unique parameter settings for a certificate covered under a Certificate Policy. Certificate profiles identify their governing Certificate Policies by citing one or more Object Identifiers (OIDs).  
 
 ### Why do we use Certificate Profiles?
 
