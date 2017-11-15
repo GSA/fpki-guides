@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Common End Entity Signature Certificate Profile
+title: Common End Entity Signature
 permalink: profiles/commonendentitysign/
 ---
 

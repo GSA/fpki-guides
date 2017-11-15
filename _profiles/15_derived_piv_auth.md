@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Derived PIV Authentication Certificate Profile
+title: Derived PIV Authentication
 permalink: profiles/derivedpivauth/
 ---
 

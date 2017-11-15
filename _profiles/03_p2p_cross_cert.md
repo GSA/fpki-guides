@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Peer-to-Peer Cross-Certicate Certificate Profile
+title: Peer-to-Peer Cross-Certicate
 permalink: profiles/p2pcrosscert/
 ---
 

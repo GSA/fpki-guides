@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Common Key Management Certificate Profile
+title: Common Key Management
 permalink: profiles/commonkeymgmt/
 ---
 

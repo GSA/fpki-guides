@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Key Rollover CA Certificate Profile
+title: Key Rollover CA
 permalink: profiles/keyrollover/
 ---
 

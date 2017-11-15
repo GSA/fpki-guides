@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PIV-I Content-Signing Certificate Profile
+title: PIV-I Content-Signing
 permalink: profiles/pivicontentsign/
 ---
 

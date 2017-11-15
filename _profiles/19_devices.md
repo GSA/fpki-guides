@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Computing and Communications Devices Certificate Profile
+title: Computing and Communications Devices
 permalink: profiles/devices/
 ---
 

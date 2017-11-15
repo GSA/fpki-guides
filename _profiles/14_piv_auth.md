@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PIV Authentication Certificate Profile
+title: PIV Authentication
 permalink: profiles/pivauth/
 ---
 
