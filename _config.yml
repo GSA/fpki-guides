@@ -66,7 +66,8 @@ navigation:
 - text: Certificate Policies
   url: policyobjects
   internal: true
-  coll: false
+  coll: true
+  collname: profiles
 - text: Trust Stores
   url: truststores
   internal: true
@@ -125,8 +126,10 @@ collections:
     label: "Useful Tools"
     permalink: /tools/:path/
     output: true
-
-
+  profiles:
+    label: "Certificate Profiles"
+    permalink: /profiles/:path/
+    output: true
 
 include:
 - _stylesheets
