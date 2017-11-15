@@ -5,13 +5,13 @@ permalink: /certprofiles/
 ---
 
 1. [What is a Certificate Profile?](#what-is-a-certificate-profile)
-1. [Why do we use Certificate Policies?](#why-do-we-use-certificate-policies)
+1. [Why do we use Certificate Profiles?](#why-do-we-use-certificate-profiles)
 1. [What is a Certificate Policy Object Identifier?](#what-is-a-certificate-policy-object-identifier)
 1. [What are the Certificate Policies Object Identifiers in use?](#what-are-the-certificate-policy-object-identifiers)
 1. [How do I view the Certificate Policy Object Identifier?](#how-do-i-view-the-certificate-policy-object-identifier)
 1. [How do I use the Certificate Policy Object Identifier?](#how-do-i-use-the-certificate-policy-object-identifier)
 
-### What is a Certificate Policy?
+### What is a Certificate Profile?
 
 The certificate policy specifies the the security requirement, issuance procedure and protection of the private key associated with a certificate.  Certificate policies are identified in a certificate by including one or more Object Identifiers (OIDs).  
 
@@ -23,7 +23,7 @@ When a Certification Authority (CA) issues a certificate, it is providing a stat
 
 The Certificate Policy provides the information that can be used by a certificate user to decide whether or not to trust a certificate.
 
-### Why do we use Certificate Policies?
+### Why do we use Certificate Profiles?
 Certificate policies are used to establish trust relationships between Certification Authorities.  This is called _cross-certification_. When CAs issue cross certificates, one CA assesses and recognizes one or more certificate polices of the other CA.
 
 
