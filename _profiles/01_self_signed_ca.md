@@ -20,6 +20,6 @@ permalink: profiles/selfsignedca/
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
 | KeyUsage  | Mandatory | True |  keyCertSign, cRLSign, DigitalSignature (optional), nonRepudiation (optional). |
 | BasicConstraints   | Mandatory | True |  cA=True; path length constraint not included. |
-| SubjectInfoAccess   | Mandatory | False |  id-ad-caRepository (1.3.6.1.5.5.7.48.5) access method entry containing at least one HTTP URL for .p7c file containing certificates issued by this CA.<BR>Certificates may also include a URI name form to specify an LDAP accessible directory server.<BR>Each URI must point to a location where CA certificates issued by the subject of this certificate may be found.  |
-| SubjectKeyIdentifier   | Mandatory | False | Octet string   |
-|IssuerAltName   | Optional  | False  | Any name types may be present; most common is rfc822Name for email of PKI administrator. |
+| SubjectInfoAccess   | Mandatory |  |  id-ad-caRepository (1.3.6.1.5.5.7.48.5) access method entry containing at least one HTTP URL for .p7c file containing certificates issued by this CA.<BR>Certificates may also include a URI name form to specify an LDAP accessible directory server.<BR>Each URI must point to a location where CA certificates issued by the subject of this certificate may be found.  |
+| SubjectKeyIdentifier   | Mandatory |  | Octet string   |
+|IssuerAltName   | Optional  |  | Any name types may be present; most common is rfc822Name for email of PKI administrator. |
