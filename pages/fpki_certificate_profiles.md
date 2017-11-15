@@ -10,7 +10,7 @@ To maximize interoperability among Federal Government, State, Local, Tribal, and
 
 The _Common Policy CP_ covers 18 certificate profiles and two CRL extensions profiles (i.e., OCSP responder and CRL):  
 
-<**Since this list is so long, better to direct the reader to click the sidebar nav +-sign to see the profiles list links.**>
+<**Since this list is so long, it would be better to direct the reader to click the sidebar nav +-sign to see the profiles links.**>
 
 * Self-Signed CA (link)
 * xxxx 
@@ -19,8 +19,8 @@ The _Common Policy CP_ covers 18 certificate profiles and two CRL extensions pro
 
 **Common Policy CP Certificate Profile Worksheet Traceability**
 
-| **Certificate Profile Worksheets**   | **SSP**        | **FBCA**     | **PIV-I**     | **Current**   |
-| :----------------------------------  | :-----:        | :-----:      | :------:      | :------:      |
+| **Certificate Profile Worksheets**   | **SSP**<BR>**(FIPS 201-2)**        | **FBCA**     | **PIV-I**     | **Current**   |
+| :----------------------------------  | :------:        | :------:      | :------:      | :------:      |
 | Self-Signed CA                       | 1              | 1            |               | 1             |
 | Key Rollover CA                      | 2              | 2            |  1            | 2             |
 | Peer-to-Peer Cross-Certificate       | 3              | 3            |  2            | 3             |
@@ -29,8 +29,23 @@ The _Common Policy CP_ covers 18 certificate profiles and two CRL extensions pro
 | End Entity Signature       |                | 5            |               | 6             |
 | Common End Entity Signature       | 5              |              |               | 7             |
 | PIV-I End Entity Signature Certificate Profile       |                |              |  6            | 8             |
+| End Entity Key Management       |                |  6           |               | 9             |
+| Common End Entity Key Management       | 6               |             |               | 10             |
+| PIV-I End Entity Key Management       |                |             | 7              | 11             |
+| PIV Card Authentication       | 8               |             |               | 12             |
+| PIV-I Card Authentication       |                |             |  4             | 13             |
+| PIV Authentication       |  9              |             |               | 14             |
+| Common Derived PIV Authentication       |  11              |             |               | 15             |
+| PIV-I Authentication       |                |             |  5             | 16             |
+| Common PIV Content Signing       | 10               |             |               | 17             |
+| PIV-I Content Signing       |                |             |  8             | 18             |
+| PIV-I Content Signing       |                |             |  8             | 18             |
+| Computing and Communications Devices       | 7               |             |               | 19             |
+| Delegated OCSP Responder       | 12               |             | 9             | 20             |
 
-**This would be better in the Background section:**
+
+
+**Move this to Background section:**
 
 1. [What is a Certificate Profile?](#what-is-a-certificate-profile)
 1. [Why do we use Certificate Profiles?](#why-do-we-use-certificate-profiles)
