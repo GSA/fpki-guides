@@ -63,11 +63,11 @@ navigation:
   url: crls
   internal: true
   coll: false
-- text: Certificate Policies
-  url: policyobjects
-  internal: true
-  coll: false
-  text: Certificate Profiles
+#- text: Certificate Policies
+#  url: policyobjects
+#  internal: true
+#  coll: false
+- text: Certificate Profiles
   url: certprofiles
   internal: true
   coll: true

@@ -4,7 +4,7 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-1. [What is a Certificate Policy?](#what-is-a-certificate-policy)
+1. [What is a Certificate Profile?](#what-is-a-certificate-profile)
 1. [Why do we use Certificate Policies?](#why-do-we-use-certificate-policies)
 1. [What is a Certificate Policy Object Identifier?](#what-is-a-certificate-policy-object-identifier)
 1. [What are the Certificate Policies Object Identifiers in use?](#what-are-the-certificate-policy-object-identifiers)
