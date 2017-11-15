@@ -20,7 +20,7 @@ permalink: profiles/devices/
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
 | AuthorityKeyIdentifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
 | SubjectKeyIdentifier   | Mandatory |  | Octet string.  |
-| KeyUsage  | Mandatory | True |  digitalSignature<BR>nonRepudiation - Must NOT be asserted for devices.<BR>keyEncipherment - May be asserted when public key is RSA.<BR>keyAgreement - May be asserted when public key is elliptic curve.  | 
+| KeyUsage  | Mandatory | True |  **digitalSignature**<BR>nonRepudiation - Must NOT be asserted for devices.<BR>keyEncipherment - May be asserted when public key is RSA.<BR>keyAgreement - May be asserted when public key is elliptic curve.  | 
 |AuthorityInfoAccess   | Mandatory  |  | **id-ad-caIssuers** {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>**id-ad-ocsp** {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder.  |
 |SubjectAlternativeName   | Mandatory  |  |   | 
 |BasicConstraints   | Mandatory  |  |   | 
