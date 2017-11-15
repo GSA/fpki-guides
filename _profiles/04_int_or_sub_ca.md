@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Intermediate or Subordinate CA Certificate Profile
+title: Intermediate or Subordinate CA
 permalink: profiles/intorsubca/
 ---
 

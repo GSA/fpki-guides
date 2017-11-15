@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Self-Signed CA Certificate Profile
+title: Self-Signed CA
 permalink: profiles/selfsignedca/
 ---
 

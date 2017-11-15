@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Key Management Certificate Profile
+title: Key Management
 permalink: profiles/keymanagement/
 ---
 

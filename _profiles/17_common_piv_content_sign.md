@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Common PIV Content-Signing Certificate Profile
+title: Common PIV Content-Signing
 permalink: profiles/commonpivcontentsign/
 ---
 

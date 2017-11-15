@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Common Card Authentication Certificate Profile
+title: Common Card Authentication
 permalink: profiles/commoncardauth/
 ---
 

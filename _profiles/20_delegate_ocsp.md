@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Delegate OCSP Responder Certificate Profile
+title: Delegate OCSP Responder
 permalink: profiles/delegateocsp/
 ---
 

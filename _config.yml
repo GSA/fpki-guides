@@ -63,10 +63,15 @@ navigation:
   url: crls
   internal: true
   coll: false
-# - text: Certificate Policies
-  # url: policyobjects
-  # internal: true
-  # coll: false
+#- text: Certificate Policies
+#  url: policyobjects
+#  internal: true
+#  coll: false
+- text: Certificate Profiles
+  url: certprofiles
+  internal: true
+  coll: true
+  collname: profiles
 - text: Trust Stores
   url: truststores
   internal: true
@@ -125,8 +130,10 @@ collections:
     label: "Useful Tools"
     permalink: /tools/:path/
     output: true
-
-
+  profiles:
+    label: "Certificate Profiles"
+    permalink: /profiles/:path/
+    output: true
 
 include:
 - _stylesheets

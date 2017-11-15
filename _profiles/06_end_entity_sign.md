@@ -1,6 +1,6 @@
 ---
 layout: default
-title: End Entity Signature Certificate Profile
+title: End Entity Signature
 permalink: profiles/endentitysignature/
 ---
 

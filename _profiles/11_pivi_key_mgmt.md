@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PIV-I Key Management Certificate Profile
+title: PIV-I Key Management
 permalink: /_profiles/pivikeymgmt/
 ---
 
