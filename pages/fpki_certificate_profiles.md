@@ -4,15 +4,25 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-This section specifies the X.509 v3 certificate profiles and the v2 certificate revocation list (CRL) extensions profiles for the Federal Public Key Infrastructure (FPKI). These profiles give the unique parameter settings needed for certificates and CRLs issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (_Common Policy CP_). They also give guidance for certificates issued under other Certificate Policies that are cross-certified with the Federal Bridge Certification Authority (FBCA).
+### [**Who needs to create certificate profiles? Who is the audience?**]
 
-To maximize interoperability across Federal Government, State, Local, Tribal, and Territorial PKI communities,<!--Is this what Wendy meant by "outside Fed Govt?"--> these profiles include certain formats and semantics taken from [RFC 5280](#rfc-5280). 
+### What is a Certificate Profile?<!--maybe?-->
 
-Use the left-hand sidebar (**+**) to navigate to the certificate and CRL extensions profiles covered by the _Common Policy CP_.  
+A **_certificate profile_** gives the unique parameter settings for a certificate covered under a Certificate Policy. 
 
-The certificate profile _worksheets_ have appeared in three standards prior to the current _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_. The worksheet numbering is traced below:
+### Why do we use Certificate Profiles?<!--maybe?-->
 
-**Common Policy CP Certificate Profile Worksheet Traceability**
+### How do we create Certificate Profiles?<!--maybe?-->
+
+This section identifies the X.509 v3 certificate profiles and the v2 certificate revocation list (CRL) extensions profiles for the Federal Public Key Infrastructure (FPKI). These profiles give the unique parameter settings needed for certificates and CRLs issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (_Common Policy CP_). They also give guidance for certificates issued under other Certificate Policies that are cross-certified with the Federal Bridge Certification Authority (FBCA).
+
+To maximize interoperability across Federal Government, State, Local, Tribal, and Territorial PKI communities,<!--Is this what Wendy meant by "outside Fed Govt?"--> these certificate profiles include certain formats and semantics taken from [RFC 5280](#rfc-5280). 
+
+* Use the left-hand sidebar (**+**) to navigate to the certificate and CRL extensions profiles covered by the _Common Policy CP_.  
+
+The certificate profiles _worksheets_ have appeared in three standards prior to the current _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_. The certificate profiles and numbering are given in the traceability matrix below:
+
+**Common Policy CP Certificate Profile Worksheet Traceability Matrix**
 
 | **Certificate Profile<BR>Worksheets**   | **SSP**<BR>**(FIPS 201-2)**        | **FBCA**     | **PIV-I**     | **Current**   |
 | :----------------------------------  | :------:        | :-----------:      | :-----------:      | :-----------:      |
@@ -40,18 +50,5 @@ The certificate profile _worksheets_ have appeared in three standards prior to t
 
 ###### RFC 5280
 _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).
-
-
-**Possible Background section:**
-
-1. What is a Certificate Profile?
-1. Why do we use Certificate Profiles?
-
-### What is a Certificate Profile?
-
-A **_certificate profile_** is gives the unique parameter settings for a certificate covered under a Certificate Policy. Certificate profiles identify their governing Certificate Policies by citing one or more Object Identifiers (OIDs).  
-
-### Why do we use Certificate Profiles?
-
 
 
