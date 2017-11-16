@@ -16,7 +16,7 @@ A **_certificate profile_** gives the unique parameter settings for a certificat
 
 This section identifies the X.509 v3 certificate profiles and the v2 certificate revocation list (CRL) extensions profiles for the Federal Public Key Infrastructure (FPKI). These profiles give the unique parameter settings needed for certificates and CRLs issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (_Common Policy CP_). They also give guidance for certificates issued under other Certificate Policies that are cross-certified with the Federal Bridge Certification Authority (FBCA).
 
-To maximize interoperability across Federal Government, State, Local, Tribal, and Territorial PKI communities,<!--Is this what Wendy meant by "outside Fed Govt?"--> these certificate profiles include certain formats and semantics taken from RFC 5280<sup>[1](#myfootnote1)</sup>. 
+To maximize interoperability across Federal Government, State, Local, Tribal, and Territorial PKI communities,<!--Is this what Wendy meant by "outside Fed Govt?"--> these certificate profiles include certain formats and semantics taken from RFC 5280.<sup>[1](#myfootnote1)</sup> 
 
 * Use the left-hand sidebar (**+**) to navigate to the certificate and CRL extensions profiles covered by the _Common Policy CP_.  
 
@@ -48,10 +48,6 @@ The certificate profiles _worksheets_ have appeared in three standards prior to 
 | Computing and Communications Devices       | 7               |             |               | 19             |
 | Delegated OCSP Responder       | 12               |             | 9             | 20             |
 
-###### RFC 5280 
-_Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).
 
 <a name="myfootnote1">1</a>:&nbsp;&nbsp;RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).
-
-[1]:RFC 5280, _Internet X.509 document.
 
