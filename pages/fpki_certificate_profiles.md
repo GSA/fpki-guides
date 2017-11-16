@@ -4,18 +4,13 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-This section provides the X.509 v3 certificate profiles plus the v2 certificate revocation list (CRL) extensions profiles for the Federal Public Key Infrastructure (FPKI). These profiles specify the unique parameter settings needed for certificates and CRLs issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (_Common Policy CP_). They also give guidance for certificates issued under other Certificate Policies that are cross-certified with the Federal Bridge Certification Authority (FBCA).
+This section specifies the X.509 v3 certificate profiles and the v2 certificate revocation list (CRL) extensions profiles for the Federal Public Key Infrastructure (FPKI). These profiles give the unique parameter settings needed for certificates and CRLs issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (_Common Policy CP_). They also give guidance for certificates issued under other Certificate Policies that are cross-certified with the Federal Bridge Certification Authority (FBCA).
 
-To maximize interoperability among Federal Government, State, Local, Tribal, and Territorial PKI communities **<Is this what Wendy meant by "outside Fed Govt?">**, these profiles include certain formats and semantics from the PKIX Working Group's Internet X.509 PKI certificate and CRL profiles. (See RFC 6818.) 
+To maximize interoperability across Federal Government, State, Local, Tribal, and Territorial PKI communities,<!--Is this what Wendy meant by "outside Fed Govt?"--> these profiles include certain formats and semantics from the PKIX Working Group's Internet X.509 PKI certificate and CRL profiles [1](#rfc-5280). 
 
-The _Common Policy CP_ covers 18 certificate profiles and two CRL extensions profiles (i.e., OCSP responder and CRL):  
+The _Common Policy CP_ covers 18 certificate profiles and two CRL extensions profiles (i.e., OCSP responder and CRL). Click the sidebar navigation **+** sign to see a list of profiles. Click on a profile name.  
 
-<**Since this list is so long, it would be better to direct the reader to click the sidebar nav +-sign to see the profiles links.**>
-
-* Self-Signed CA (link)
-* xxxx 
-* xxxx
-* xxxx
+These certificate profile "worksheets" appear in three previous documents. The previous worksheet numbers correspond to the current numbers, as shown in the traceablity matrix below.
 
 **Common Policy CP Certificate Profile Worksheet Traceability**
 
@@ -43,9 +38,10 @@ The _Common Policy CP_ covers 18 certificate profiles and two CRL extensions pro
 | Computing and Communications Devices       | 7               |             |               | 19             |
 | Delegated OCSP Responder       | 12               |             | 9             | 20             |
 
+1. RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).
 
 
-**Move this to Background section:**
+**Possible Background section:**
 
 1. [What is a Certificate Profile?](#what-is-a-certificate-profile)
 1. [Why do we use Certificate Profiles?](#why-do-we-use-certificate-profiles)
