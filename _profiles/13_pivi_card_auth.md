@@ -1,10 +1,10 @@
 ---
 layout: default
-title: PIV-I Authentication
-permalink: profiles/piviauth/
+title: PIV-I Card Authentication
+permalink: profiles/pivicardauth/
 ---
 
-## Worksheet 13:&nbsp;&nbsp;PIV-I Authentication Certificate Profile
+## Worksheet 13:&nbsp;&nbsp;PIV-I Card Authentication Certificate Profile
 
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
