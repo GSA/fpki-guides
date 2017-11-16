@@ -48,7 +48,6 @@ The certificate profiles _worksheets_ have appeared in three standards prior to 
 | Computing and Communications Devices       | 7               |             |               | 19             |
 | Delegated OCSP Responder       | 12               |             | 9             | 20             |
 
-###### RFC 5280
-_Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).
+###### RFC 5280 _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).
 
 
