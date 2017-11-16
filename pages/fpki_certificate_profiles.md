@@ -8,13 +8,13 @@ This section specifies the X.509 v3 certificate profiles and the v2 certificate 
 
 To maximize interoperability across Federal Government, State, Local, Tribal, and Territorial PKI communities,<!--Is this what Wendy meant by "outside Fed Govt?"--> these profiles include certain formats and semantics from [RFC 5280](#rfc-5280). 
 
-The _Common Policy CP_ covers 18 certificate profiles and two CRL extensions profiles (i.e., OCSP responder and CRL). Click the sidebar navigation **+** sign to see a list of profiles. Click on a profile name.  
+Click the **+** on the left-hand sidebar to see the 18 certificate profiles and two CRL extensions profiles covered by the _Common Policy CP_.  
 
-These certificate profile "worksheets" appear in three previous documents. The previous worksheet numbers correspond to the current numbers, as shown in the traceablity matrix below.
+The certificate profile details (called _Worksheets_) appeared in three previous standards. The matrix below traces these documents and the historical Worksheet numbering to the current version.
 
 **Common Policy CP Certificate Profile Worksheet Traceability**
 
-| **Certificate Profile Worksheets**   | **SSP**<BR>**(FIPS 201-2)**        | **FBCA**     | **PIV-I**     | **Current**   |
+| **Certificate Profile<BR>Worksheets**   | **SSP**<BR>**(FIPS 201-2)**        | **FBCA**     | **PIV-I**     | **Current**   |
 | :----------------------------------  | :------:        | :-----------:      | :-----------:      | :-----------:      |
 | Self-Signed CA                       | 1              | 1            |               | 1             |
 | Key Rollover CA                      | 2              | 2            |  1            | 2             |
