@@ -18,8 +18,8 @@ permalink: profiles/p2pcrosscert/
 | Signature   |       |       |   sha256 WithRSAEncryption {1 2 840 113549 1 1 11}<BR>or ECDSA with appropriate Hash.   |
 |               |                 |              |                                       |
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
-| AuthorityKeyIdentifier  | Mandatory |  |  Octet string; typically derived using the SHA-1 hash of the signer’s public key. |
-| SubjectKeyIdentifier  | Mandatory |  |  Octet string; typically derived using the SHA-1 hash of the signer’s public key. |
+| AuthorityKeyIdentifier  | Mandatory | False |  Octet string; typically derived using the SHA-1 hash of the signer’s public key. |
+| SubjectKeyIdentifier  | Mandatory | False |  Octet string; typically derived using the SHA-1 hash of the signer’s public key. |
 | KeyUsage  | Mandatory | True |  keyCertSign, cRLSign, DigitalSignature (optional), nonRepudiation (optional). |
 | BasicConstraints   | Mandatory | True |  cA=True; path length constraint is optional. |
 | SubjectInfoAccess   | Mandatory | False |  id-ad-caRepository (1.3.6.1.5.5.7.48.5) access method entry containing at least one HTTP URL for .p7c file containing certificates issued by this CA.<BR>Certificates may also include a URI name form to specify an LDAP-accessible directory server.<BR>Each URI must point to a location where CA certificates issued by the subject of this certificate may be found. <BR>SubjectInfoAccess may be omitted if the subject CA does not issue any CA certificates. |
