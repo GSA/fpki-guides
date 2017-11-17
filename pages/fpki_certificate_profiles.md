@@ -10,22 +10,30 @@ To maximize interoperability across Federal Government and external PKI communit
 
 * To find a certificate or CRL extensions profile, click the **+** on the left sidebar. Select your profile. 
 
-## CA Certificate Profiles
-
-2-sentence paragraphs combine XX 
+## Certification Authority (CA) Certificate Profiles 
  
 [Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)
-link
-link
-link
+[Key Rollover CA]({{ site.baseurl }}/profiles/keyrollover/)
+[Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)
+[Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)
 
 ## PIV
 
-xxxxx
+PIV Card Authentication 
+PIV Authentication
+Common PIV Content Signing
 
 ## PIV-I
 
+PIV-I End Entity Signature Certificate Profile
+PIV-I End Entity Key Management
+PIV-I Card Authentication
+PIV-I Authentication
+PIV-I Content Signing
+
 ## Derived PIV
+
+Common Derived PIV Authentication
 
 ## End Entity
 
