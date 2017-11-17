@@ -4,7 +4,7 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-This section provides the X.509 v3 certificate and the v2 certificate revocation list (CRL) extensions profiles for the the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (_Common Policy CP_). These profiles specify the unique parameter settings for certificates and CRLs issued under the _Common Policy CP_. They also give guidance for those certificates issued under other certificate policies cross-certified with the Federal Bridge Certification Authority (FBCA).
+This section provides the X.509 v3 certificate and the v2 certificate revocation list (CRL) extensions profiles for the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_). These profiles specify the unique parameter settings for certificates and CRLs issued under the _Common Policy CP_. They also give guidance for those certificates issued under other certificate policies cross-certified with the Federal Bridge Certification Authority (FBCA).
 
 To maximize interoperability across Federal Government and external PKI communities, these profiles now include certain formats and semantics from RFC 5280.<sup>[1](#myfootnote1)</sup> 
 
