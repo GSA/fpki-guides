@@ -8,9 +8,11 @@ This section provides the X.509 v3 certificate and the v2 certificate revocation
 
 To maximize interoperability across Federal Government and external PKI communities, these profiles now include certain formats and semantics from RFC 5280.<sup>[1](#myfootnote1)</sup> 
 
+**For historical traceability information.... add words and link to table below...
+
 * To find a certificate or CRL extensions profile, click the **+** on the left sidebar. Select your profile. 
 
-## Certification Authority (CA) Certificate Profiles 
+## CA Certificate Profiles 
  
 [Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)
 [Key Rollover CA]({{ site.baseurl }}/profiles/keyrollover/)
