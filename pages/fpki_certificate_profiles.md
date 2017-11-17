@@ -14,7 +14,7 @@ To maximize interoperability across Federal Government and external PKI communit
 
 2-sentence paragraphs combine XX 
  
-link
+[welcome contributions]({{ site.baseurl }}/contribute/)
 link
 link
 link
