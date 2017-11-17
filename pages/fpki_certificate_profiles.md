@@ -8,13 +8,15 @@ This section provides the X.509 v3 certificate and the v2 certificate revocation
 
 To maximize interoperability across Federal Government and external PKI communities, these profiles now include certain formats and semantics from RFC 5280.<sup>[1](#myfootnote1)</sup> 
 
-* To find a certificate or CRL extensions profile, click the **+** on the left-hand sidebar. Select your profile.  
+* To find a certificate or CRL extensions profile, click the **+** on the left sidebar. Select your profile.  
 
 ## History and Traceability
 
-The certificate and CRL extensions profiles for the _Common Policy CP_ have appeared in three previous standards:  SSP (FIPS 201), FBCA, and PIV-I. The current profiles will be published in the _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_. The profile-numbering traceability is below:
+The certificate and CRL extensions profiles for the _Common Policy CP_ have appeared in three previous standards:  SSP (FIPS 201), FBCA, and PIV-I. The current profiles will be published in the _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_. 
 
-**Common Policy CP Certificate Profile Traceability Matrix**
+The profile-numbering traceability is below:
+
+### Certificate Profile Traceability Matrix
 
 | **Certificate Profile<BR>Worksheets**   | **SSP**<BR>**(FIPS 201)**        | **FBCA**     | **PIV-I**     | **Current**   |
 | :----------------------------------  | :------:        | :-----------:      | :-----------:      | :-----------:      |
