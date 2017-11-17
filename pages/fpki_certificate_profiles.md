@@ -14,7 +14,7 @@ To maximize interoperability across Federal Government and external PKI communit
 
 2-sentence paragraphs combine XX 
  
-[welcome contributions]({{ site.baseurl }}/contribute/)
+[Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)
 link
 link
 link
