@@ -13,7 +13,7 @@ permalink: /policyobjects/
 
 ### What is a Certificate Policy?
 
-The certificate policy[^1] specifies the the security requirement, issuance procedure and protection of the private key associated with a certificate.  Certificate policies are identified in a certificate by including one or more Object Identifiers (OIDs).  
+The certificate policy[^n] specifies the the security requirement, issuance procedure and protection of the private key associated with a certificate.  Certificate policies are identified in a certificate by including one or more Object Identifiers (OIDs).  
 
 >A Certificate Policy (CP) is defined in the Internet X.509 Public Key Infrastructure Certificate Policy and Certification Practices Framework as "a named set of rules that indicates the applicability of a certificate to a particular community and/or class of application with common security requirements".
 
@@ -75,4 +75,4 @@ issued under the specified certificate policy.
 
 
 
-[^1]: Test footnote
+[^n]: Test footnote
