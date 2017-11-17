@@ -8,7 +8,32 @@ This section provides the X.509 v3 certificate and the v2 certificate revocation
 
 To maximize interoperability across Federal Government and external PKI communities, these profiles now include certain formats and semantics from RFC 5280.<sup>[1](#myfootnote1)</sup> 
 
-* To find a certificate or CRL extensions profile, click the **+** on the left sidebar. Select your profile.  
+* To find a certificate or CRL extensions profile, click the **+** on the left sidebar. Select your profile. 
+
+## CA Certificate Profiles
+
+2-sentence paragraphs combine XX 
+ 
+link
+link
+link
+link
+
+## PIV
+
+xxxxx
+
+## PIV-I
+
+## Derived PIV
+
+## End Entity
+
+## Device
+
+## CRL
+
+
 
 ## History and Traceability
 
@@ -37,7 +62,6 @@ The profile-numbering traceability is below:
 | Common Derived PIV Authentication       |  11              |             |               | 15             |
 | PIV-I Authentication       |                |             |  5             | 16             |
 | Common PIV Content Signing       | 10               |             |               | 17             |
-| PIV-I Content Signing       |                |             |  8             | 18             |
 | PIV-I Content Signing       |                |             |  8             | 18             |
 | Computing and Communications Devices       | 7               |             |               | 19             |
 | Delegated OCSP Responder       | 12               |             | 9             | 20             |
