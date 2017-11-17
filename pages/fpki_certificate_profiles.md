@@ -4,17 +4,7 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-### [**Who needs to create certificate profiles? Who is the audience?**]
-
-### What is a Certificate Profile?<!--maybe?-->
-
-A **_certificate profile_** gives the unique parameter settings for a certificate covered under a Certificate Policy. 
-
-### Why do we use Certificate Profiles?<!--maybe?-->
-
-### How do we create Certificate Profiles?<!--maybe?-->
-
-This section identifies the X.509 v3 certificate profiles and the v2 certificate revocation list (CRL) extensions profiles for the Federal Public Key Infrastructure (FPKI). These profiles give the unique parameter settings needed for certificates and CRLs issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (_Common Policy CP_). They also give guidance for certificates issued under other Certificate Policies that are cross-certified with the Federal Bridge Certification Authority (FBCA).
+This section identifies the X.509 v3 certificate profiles and the v2 certificate revocation list (CRL) extensions profiles for the Federal Public Key Infrastructure (FPKI). These profiles specify the unique parameter settings needed for certificates and CRLs issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (_Common Policy CP_). They also give guidance for certificates issued under other Certificate Policies that are cross-certified with the Federal Bridge Certification Authority (FBCA).
 
 To maximize interoperability across Federal Government, State, Local, Tribal, and Territorial PKI communities,<!--Is this what Wendy meant by "outside Fed Govt?"--> these certificate profiles include certain formats and semantics taken from RFC 5280.<sup>[1](#myfootnote1)</sup> 
 
