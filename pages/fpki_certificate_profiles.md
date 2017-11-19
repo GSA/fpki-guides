@@ -12,7 +12,9 @@ To maximize interoperability across Federal Government and external PKI communit
 
 * To find a certificate or CRL extensions profile, click the **+** on the left sidebar. Select your profile. 
 
-### CA Certificate Profiles 
+## Certificate Profile Worksheets
+
+### CAs 
  
 [Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)
 [Key Rollover CA]({{ site.baseurl }}/profiles/keyrollover/)
@@ -36,15 +38,22 @@ To maximize interoperability across Federal Government and external PKI communit
 
 ### Derived PIV
 
-[Common Derived PIV Authentication]({{ site.baseurl }}/profiles/commonderivedpivauth/)
+[Derived PIV Authentication]({{ site.baseurl }}/profiles/derivedpivauth/)
 
 ### End Entity
 
+End Entity Signature
+End Entity Key Management
+Common End Entity Key Management
+
 ### Devices
 
-### CRL
+Computing and Communications Devices
 
+### CRL and OCSP
 
+CRL
+Delegated OCSP Responder
 
 ## History and Traceability
 
