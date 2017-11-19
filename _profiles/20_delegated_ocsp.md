@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Delegate OCSP Responder
-permalink: profiles/delegateocsp/
+title: Delegated OCSP Responder
+permalink: profiles/delegatedocsp/
 ---
 
-## Worksheet 20:&nbsp;&nbsp;Delegate OCSP Responder Certificate Profile
+## Worksheet 20:&nbsp;&nbsp;Delegated OCSP Responder Certificate Profile
 
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
