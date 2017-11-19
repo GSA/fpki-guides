@@ -28,15 +28,15 @@ To maximize interoperability across Federal Government and external PKI communit
 
 ### PIV-I
 
-PIV-I End Entity Signature Certificate Profile
-PIV-I End Entity Key Management
-PIV-I Card Authentication
-PIV-I Authentication
-PIV-I Content Signing
+[PIV-I End Entity Signature]({{ site.baseurl }}/profiles/pivieesign/)
+[PIV-I End Entity Key Management]({{ site.baseurl }}/profiles/pivieekeymgmt/)
+[PIV-I Card Authentication]({{ site.baseurl }}/profiles/pivicardauth/)
+[PIV-I Authentication]({{ site.baseurl }}/profiles/piviauth/)
+[PIV-I Content Signing]({{ site.baseurl }}/profiles/pivicontentsign/)
 
 ### Derived PIV
 
-Common Derived PIV Authentication
+[Common Derived PIV Authentication]({{ site.baseurl }}/profiles/commonderivedpivauth/)
 
 ### End Entity
 
