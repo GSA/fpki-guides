@@ -14,6 +14,8 @@ To maximize interoperability across Federal Government and external PKI communit
 
 ## Certificate Profile Worksheets
 
+**Double-check all of these**
+
 ### CAs 
  
 [Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)
@@ -42,18 +44,18 @@ To maximize interoperability across Federal Government and external PKI communit
 
 ### End Entity
 
-End Entity Signature
-End Entity Key Management
-Common End Entity Key Management
+[End Entity Signature]({{ site.baseurl }}/profiles/eesign/)
+[End Entity Key Management]({{ site.baseurl }}/profiles/eekeymgmt/)
+[Common End Entity Key Management]({{ site.baseurl }}/profiles/commoneekeymgmt/)
 
 ### Devices
 
-Computing and Communications Devices
+[Computing and Communications Devices]({{ site.baseurl }}/profiles/devices/)
 
 ### CRL and OCSP
 
-CRL
-Delegated OCSP Responder
+[CRL]({{ site.baseurl }}/profiles/crl/)
+[Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
 
 ## History and Traceability
 
