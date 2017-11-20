@@ -7,13 +7,15 @@ permalink: /certprofiles/
 These profiles specify the unique parameter settings needed for X.509 v3 certificates and v2 certificate revocation list (CRL) extensions issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_). They will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_. 
 
 The current updates include:
-* Revised certificate and CRL extensions values.<!--Check with Wendy--accurate statement?-->
+* Revised certificate and CRL extensions values.
 * Guidance for certificates issued under certificate policies cross-certified with the Federal Bridge Certification Authority (FBCA).
 * Formats and semantics taken from RFC 5280[^n] to promote interoperability across federal and external PKI communities. 
 
 ## Certificate and Extensions Profile Worksheets
 
-For a traceability matrix of worksheet versions, go to:  [Historical Worksheet Numbering](#historical-worksheet-numbering). 
+Go to:&nbsp;&nbsp;[Historical Worksheet Numbering](#historical-worksheet-numbering) to trace previous to current worksheet numbers. 
+
+* Click a link to view a profile worksheet.
 
 ### CAs 
  
