@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PIV-I Digital Signature
-permalink: profiles/pividigsignature/
+permalink: profiles/pividigsign/
 ---
 
 ## Worksheet 8:&nbsp;&nbsp;PIV-I Digital Signature Certificate Profile
