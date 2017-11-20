@@ -88,7 +88,7 @@ For a mapping of past-to-current worksheet numbers, go to:&nbsp;&nbsp;[Worksheet
 | Computing and Communications Devices       | 7               |             |               | 19             |
 | Delegated OCSP Responder       | 12               |             | 9             | 20             |
 
-
+_____________
 [^n} These certificate and OCSP/CRL extensions profiles will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.
 [^n]RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<BR>
 [^n]_X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program_, FPKIPA, Shared Service Provider Working Group, July 17, 2017.<BR>
