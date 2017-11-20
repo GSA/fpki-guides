@@ -19,46 +19,49 @@ See the [Worksheet Traceability Matrix](#historical-worksheet-traceability-matri
 
 ### CAs 
  
-[Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)<BR>
-[Key Rollover CA]({{ site.baseurl }}/profiles/keyrolloverca/)<BR>
-[Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)<BR>
-[Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)<BR>
+[1: Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)<BR>
+[2: Key Rollover CA]({{ site.baseurl }}/profiles/keyrolloverca/)<BR>
+[3: Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)<BR>
+[4: Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)<BR>
 
 ### PIV
 
-[PIV Card Authentication]({{ site.baseurl }}/profiles/pivcardauth/)<BR>
-[PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<BR>
-[Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)<BR>
+[14. PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<BR>
+[17. Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)<BR>
 
 ### PIV-I
 
-[PIV-I Digital Signature]({{ site.baseurl }}/profiles/pividigsign/)<BR>
-[PIV-I Key Management]({{ site.baseurl }}/profiles/pivikeymgmt/)<BR>
-[PIV-I Card Authentication]({{ site.baseurl }}/profiles/pivicardauth/)<BR>
-[PIV-I Authentication]({{ site.baseurl }}/profiles/piviauth/)<BR>
-[PIV-I Content Signing]({{ site.baseurl }}/profiles/pivicontentsign/)<BR>
+[8. PIV-I Digital Signature]({{ site.baseurl }}/profiles/pividigsign/)<BR>
+[11. PIV-I Key Management]({{ site.baseurl }}/profiles/pivikeymgmt/)<BR>
+[13. PIV-I Card Authentication]({{ site.baseurl }}/profiles/pivicardauth/)<BR>
+[16. PIV-I Authentication]({{ site.baseurl }}/profiles/piviauth/)<BR>
+[18. PIV-I Content Signing]({{ site.baseurl }}/profiles/pivicontentsign/)<BR>
+
+### Common
+
+[12. Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)
+[10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)
 
 ### Derived PIV
 
-[Derived PIV Authentication]({{ site.baseurl }}/profiles/derivedpivauth/)
+[15. Derived PIV Authentication]({{ site.baseurl }}/profiles/derivedpivauth/)
 
 ### End Entity
 
-[End Entity Signature]({{ site.baseurl }}/profiles/endentitysign/)<BR>
-[Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<BR>
+[6. End Entity Signature]({{ site.baseurl }}/profiles/endentitysign/)<BR>
+[7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<BR>
 
 ### Devices
 
-[Computing and Communications Devices]({{ site.baseurl }}/profiles/devices/)
+[19. Computing and Communications Devices]({{ site.baseurl }}/profiles/devices/)
 
 ### CRL and OCSP Responder
 
-[CRL]({{ site.baseurl }}/profiles/crl/)<BR>
-[Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
+[5. CRL]({{ site.baseurl }}/profiles/crl/)<BR>
+[20. Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
 
 **What category?**<!--Email to Wendy on 11-20 for her return from leave-->
-[Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)
-[Key Management]({{ site.baseurl }}/profiles/keymgmt/)
+[9. Key Management]({{ site.baseurl }}/profiles/keymgmt/)
 
 ## Worksheet Traceability Matrix
 
@@ -71,7 +74,7 @@ See the [Worksheet Traceability Matrix](#historical-worksheet-traceability-matri
 | CRL       | 4              | 4            |  3            | 5             |
 | End Entity Signature       |                | 5            |               | 6             |
 | Common End Entity Signature       | 5              |              |               | 7             |
-| PIV-I End Entity Signature Certificate Profile       |                |              |  6            | 8             |
+| PIV-I End Entity Signature       |                |              |  6            | 8             |
 | End Entity Key Management       |                |  6           |               | 9             |
 | Common End Entity Key Management       | 6               |             |               | 10             |
 | PIV-I End Entity Key Management       |                |             | 7              | 11             |
