@@ -13,7 +13,7 @@ The current updates include:
 
 ## Certificate and Extensions Profile Worksheets
 
-Go to:&nbsp;&nbsp;[Historical Worksheet Numbering](#historical-worksheet-numbering) to trace previous to current worksheet numbers. 
+See the [Worksheet Traceability Matrix](#historical-worksheet-traceability-matrix) for previous-to-current version numbers. 
 
 * Click a link to view a profile worksheet.
 
@@ -57,7 +57,7 @@ Go to:&nbsp;&nbsp;[Historical Worksheet Numbering](#historical-worksheet-numberi
 [CRL]({{ site.baseurl }}/profiles/crl/)<BR>
 [Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
 
-## Historical Worksheet Numbering 
+## Worksheet Traceability Matrix
 
 | **Certificate Profile Worksheet**   | **SSP**<BR>**(FIPS 201)**        | **FBCA**     | **PIV-I**     | **Current**   |
 | :----------------------------------  | :------:        | :-----------:      | :-----------:      | :-----------:      |
