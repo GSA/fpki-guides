@@ -1,7 +1,7 @@
 ---
 layout: default
 title: End Entity Signature
-permalink: profiles/endentitysignature/
+permalink: profiles/endentitysign/
 ---
 
 ## Worksheet 6:&nbsp;&nbsp;End Entity Signature Certificate Profile
