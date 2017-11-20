@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Key Management
-permalink: profiles/keymanagement/
+permalink: profiles/keymgmt/
 ---
 
-## Worksheet 9: **_End Entity??_** Key Management Certificate Profile
+## Worksheet 9: Key Management Certificate Profile
 
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
