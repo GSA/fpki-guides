@@ -4,15 +4,16 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-Certificate profiles specify the unique parameter settings needed for certificates and CRLs issued under a certificate policy. 
+These profiles specify the unique parameter settings needed for X.509 v3 certificates and v2 certificate revocation list (CRL) extensions issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_). They will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_. 
 
-The links below will take you to the X.509 v3 certificate and the v2 certificate revocation list (CRL) extensions profiles for the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_). 
+The current updates include:
+* Revised certificate and CRL extensions values.<!--Check with Wendy--accurate statement?-->
+* Guidance for certificates issued under certificate policies cross-certified with the Federal Bridge Certification Authority (FBCA).
+* Formats and semantics taken from RFC 5280[^n] to promote interoperability across federal and external PKI communities. 
 
-**Notes on _Common Policy CP_ Certificate Profile Worksheets:** 
-* They also include guidance for certificates issued under certificate policies cross-certified with the Federal Bridge Certification Authority (FBCA), as well as certain formats and semantics from RFC 5280[^n] to promote interoperability across PKI communities. 
-* Previous versions of these certificate profile worksheets appeared in the SSP[^n], FBCA[^], and PIV-I[^]. To trace the profiles' worksheet numbering, go to: [Historical Worksheet-Numbering Table](#historical certificate-profile-worksheet-numbering)  
+## Certificate and Extensions Profile Worksheets
 
-## Certificate Profile Worksheets
+For a traceability matrix of worksheet versions, go to:  [Historical Worksheet Numbering](#historical-worksheet-numbering). 
 
 ### CAs 
  
@@ -26,7 +27,6 @@ The links below will take you to the X.509 v3 certificate and the v2 certificate
 [PIV Card Authentication]({{ site.baseurl }}/profiles/pivcardauth/)<BR>
 [PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<BR>
 [Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)<BR>
-
 
 ### PIV-I
 
@@ -55,13 +55,9 @@ The links below will take you to the X.509 v3 certificate and the v2 certificate
 [CRL]({{ site.baseurl }}/profiles/crl/)<BR>
 [Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
 
-## Historical Certificate Profile Worksheet Numbering
+## Historical Worksheet Numbering 
 
-The certificate and CRL extensions profiles for the _Common Policy CP_ have appeared in three previous standards:  SSP (FIPS 201), FBCA, and PIV-I. The current profiles will be published in the upcoming document, X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I. 
-
-The profile-numbering traceability is below:
-
-| **Certificate Profile<BR>Worksheets**   | **SSP**<BR>**(FIPS 201)**        | **FBCA**     | **PIV-I**     | **Current**   |
+| **Certificate Profile Worksheet**   | **SSP**<BR>**(FIPS 201)**        | **FBCA**     | **PIV-I**     | **Current**   |
 | :----------------------------------  | :------:        | :-----------:      | :-----------:      | :-----------:      |
 | Self-Signed CA                       | 1              | 1            |               | 1             |
 | Key Rollover CA                      | 2              | 2            |  1            | 2             |
@@ -87,7 +83,7 @@ The profile-numbering traceability is below:
 
 
 [^n]RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<BR>
-[^n]SSP<BR>
-[^n]FBCA<BR>
-[^n]PIV-I<BR>
+[^n]_X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program_, FPKIPA, Shared Service Provider Working Group, July 17, 2017.<BR>
+[^n]_Federal Public Key Infrastructure (PKI) X.509 Certificate and CRL Exensions Profile_, FPKIPA, July 17, 2017.<BR>
+[^n]_X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards_, FPKIPA, PIV-I Tiger Team, July 17, 2017.<BR>
 
