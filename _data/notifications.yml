@@ -123,8 +123,7 @@
   contact: vziamssp@verizon.com, fpki@gsa.gov
   ca_certificate_hash: 
   ca_certificate_issuer: CN=Betrusted Production SSP CA A1,OU=Betrusted Production SSP CA A1,OU=SSP,O=Betrusted US Inc,C=US
-  ca_certificate_subject:  CN=Executive Office of the President CA-B8,OU=PKI,OU=Services,DC=ssp,DC=eop,DC=gov
-  
+  ca_certificate_subject:  CN=Executive Office of the President CA-B8,OU=PKI,OU=Services,DC=ssp,DC=eop,DC=gov  
 
 - notice_date: September 14, 2017
   change_type: CA Certificate Issuance
@@ -174,6 +173,76 @@
   system: TSCP SHA256 Bridge CA
   change_description: Issuance of a cross-certificate to Alexion Pharmaceuticals, Inc
   contact: shauna.russell@tscp.org, fpki@gsa.gov
+
+- notice_date: November 16, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: August 21, 2017
+  system: Federal PKI Trust Infrastructure
+  change_description: Issuance of cross-certificate from Federal Bridge to ORC (Widepoint) ACES
+  contact: fpki@gsa.gov
+  ca_certificate_hash: 55 73 fc c5 e6 ff ff 2b 71 01 81 ac ca a2 ef da db 8f 0f 4e
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: CN=ORC ACES 4, O=ORC PKI, C=US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/ORCACES4_SIA.p7c
+  ocsp_uri: N/A
+  
+- notice_date: November 16, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: October 4, 2017
+  system: Federal PKI Trust Infrastructure
+  change_description: Issuance of cross-certificate from Federal Bridge to ORC (Widepoint) Non-Federal Issuer CA
+  contact: fpki@gsa.gov
+  ca_certificate_hash: b0 55 c6 ee 10 4e 01 eb 68 8c 8f b4 f8 7c f7 7c a3 76 af db
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: CN=ORC NFI CA 2, O=ORC PKI, C=US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/ORCNFI2_SIA.p7c
+  ocsp_uri: N/A
+  
+- notice_date: November 16, 2017
+  change_type: CA Certificate Issuance, CA Certificate Revocation, New CA, URI Change, System Outage
+  start_datetime: October 4, 2017
+  system: Federal PKI Trust Infrastructure
+  change_description: Issuance of cross-certificate from Federal Bridge to Verizon Non-Federal Issuer CA
+  contact: fpki@gsa.gov
+  ca_certificate_hash: 68 70 66 bc e5 6b 6e 20 ae a0 c6 05 b9 b6 67 93 42 26 9f 21
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: CT-CSSP-CA-A1
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://sia1.com-strong-id.net/CA/CT-CSSP-CA-A1-SIA.p7c
+  ocsp_uri: N/A
+ 
+- notice_date: November 16, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: October 25, 2017
+  system: Federal PKI Trust Infrastructure
+  change_description: Issuance of cross-certificate from Federal Bridge to Symantec
+  contact: fpki@gsa.gov
+  ca_certificate_hash: 91 45 31 f5 a6 10 91 40 05 42 2e 56 d6 71 12 18 13 3b 10 48
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: CN=Symantec Class 3 SSP Intermediate CA - G3
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://ssp-sia.symauth.com/STNSSP/Certs_Issued_by_Class3SSPCA-G3.p7c
+  ocsp_uri: N/A
+   
+- notice_date: November 16, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: ‎November ‎16, ‎2017 14:52:56
+  system: Federal PKI Trust Infrastructure
+  change_description: Issuance of cross-certificate from Federal Bridge 2016 to Entrust Non-Federal Root CA
+  contact: fpki@gsa.gov
+  ca_certificate_hash: ‎22 05 08 b0 ab 72 e2 ee 3a ca a6 a9 ef 50 01 c8 7c 52 3e a4
+  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: OU = Entrust Managed Services NFI Root CA, OU = Certification Authorities, O = Entrust, C = US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://nfirootweb.managed.entrust.com/SIA/CAcertsIssuedByNFIRootCA.p7c
+  ocsp_uri: N/A
 
 #- notice_date: 
 #  change_type: CA Certificate Issuance
