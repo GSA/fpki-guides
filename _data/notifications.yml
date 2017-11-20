@@ -203,7 +203,7 @@
   ocsp_uri: N/A
   
 - notice_date: November 16, 2017
-  change_type: CA Certificate Issuance, CA Certificate Revocation, New CA, URI Change, System Outage
+  change_type: CA Certificate Issuance
   start_datetime: October 4, 2017
   system: Federal PKI Trust Infrastructure
   change_description: Issuance of cross-certificate from Federal Bridge to Verizon Non-Federal Issuer CA
@@ -232,11 +232,11 @@
    
 - notice_date: November 16, 2017
   change_type: CA Certificate Issuance
-  start_datetime: ‎November ‎16, ‎2017 14:52:56
+  start_datetime: November 16, 2017 
   system: Federal PKI Trust Infrastructure
   change_description: Issuance of cross-certificate from Federal Bridge 2016 to Entrust Non-Federal Root CA
   contact: fpki@gsa.gov
-  ca_certificate_hash: ‎22 05 08 b0 ab 72 e2 ee 3a ca a6 a9 ef 50 01 c8 7c 52 3e a4
+  ca_certificate_hash: 22 05 08 b0 ab 72 e2 ee 3a ca a6 a9 ef 50 01 c8 7c 52 3e a4
   ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
   ca_certificate_subject: OU = Entrust Managed Services NFI Root CA, OU = Certification Authorities, O = Entrust, C = US
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
