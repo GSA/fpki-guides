@@ -65,13 +65,13 @@ For a mapping of past-to-current worksheet numbers, go to:&nbsp;&nbsp;[Worksheet
 
 ## Worksheet Traceability Matrix
 <!--The titles of worksheets 8, 9, 10, 11, 12, and 13 do not map to the titles of the current worksheets. Need to resolve these with Wendy.-->
-| **Certificate Profile Worksheet**   | **SSP**[^n]<BR>**(FIPS 201)**        | **FBCA[^n]**     | **PIV-I[^n]**     | **Current**   |
-| :----------------------------------  | :------:        | :-----------:      | :-----------:      | :-----------:      |
-| Self-Signed CA                       | 1              | 1            |               | 1             |
-| Key Rollover CA                      | 2              | 2            |  1            | 2             |
-| Peer-to-Peer Cross-Certificate       | 3              | 3            |  2            | 3             |
-| Intermediate or Subordinate CA       | 3              | 3            |  2            | 4             |
-| CRL       | 4              | 4            |  3            | 5             |
+| **Certificate Profile Worksheet**   | **SSP**[^n]  | **FBCA[^n]**     | **PIV-I[^n]**     | **Current**   |
+| :----------------------------------  | :---------:        | :-----------:      | :-----------:      | :-----------:      |
+| Self-Signed CA                       | 1                  | 1            |               | 1             |
+| Key Rollover CA                      | 2                  | 2            |  1            | 2             |
+| Peer-to-Peer Cross-Certificate       | 3                  | 3            |  2            | 3             |
+| Intermediate or Subordinate CA       | 3                  | 3            |  2            | 4             |
+| CRL                                  | 4                  | 4            |  3            | 5             |
 | End Entity Signature       |                | 5            |               | 6             |
 | Common End Entity Signature       | 5              |              |               | 7             |
 | PIV-I End Entity Signature       |                |              |  6            | 8             |
@@ -89,7 +89,7 @@ For a mapping of past-to-current worksheet numbers, go to:&nbsp;&nbsp;[Worksheet
 | Delegated OCSP Responder       | 12               |             | 9             | 20             |
 
 
-[^n} These certificate and OCSP/CRL extensions profiles will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.
+[^n] These certificate and OCSP/CRL extensions profiles will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.
 [^n]RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<BR>
 [^n]_X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program_, FPKIPA, Shared Service Provider Working Group, July 17, 2017.<BR>
 [^n]_Federal Public Key Infrastructure (PKI) X.509 Certificate and CRL Exensions Profile_, FPKIPA, July 17, 2017.<BR>
