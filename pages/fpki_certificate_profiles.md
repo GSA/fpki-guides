@@ -18,25 +18,25 @@ To maximize interoperability across Federal Government and outside PKI communiti
 
 ### CAs 
  
-[Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)
-[Key Rollover CA]({{ site.baseurl }}/profiles/keyrollover/)
-[Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)
-[Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)
+[Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)<BR>
+[Key Rollover CA]({{ site.baseurl }}/profiles/keyrollover/)<BR>
+[Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)<BR>
+[Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)<BR>
 
 ### PIV
 
-[PIV Card Authentication]({{ site.baseurl }}/profiles/pivcardauth/)
-[PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)
-[Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)
+[PIV Card Authentication]({{ site.baseurl }}/profiles/pivcardauth/)<BR>
+[PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<BR>
+[Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)<BR>
 
 
 ### PIV-I
 
-[PIV-I End Entity Signature]({{ site.baseurl }}/profiles/pivieesign/)
-[PIV-I End Entity Key Management]({{ site.baseurl }}/profiles/pivieekeymgmt/)
-[PIV-I Card Authentication]({{ site.baseurl }}/profiles/pivicardauth/)
-[PIV-I Authentication]({{ site.baseurl }}/profiles/piviauth/)
-[PIV-I Content Signing]({{ site.baseurl }}/profiles/pivicontentsign/)
+[PIV-I End Entity Signature]({{ site.baseurl }}/profiles/pivieesign/)<BR>
+[PIV-I End Entity Key Management]({{ site.baseurl }}/profiles/pivieekeymgmt/)<BR>
+[PIV-I Card Authentication]({{ site.baseurl }}/profiles/pivicardauth/)<BR>
+[PIV-I Authentication]({{ site.baseurl }}/profiles/piviauth/)<BR>
+[PIV-I Content Signing]({{ site.baseurl }}/profiles/pivicontentsign/)<BR>
 
 ### Derived PIV
 
@@ -44,9 +44,9 @@ To maximize interoperability across Federal Government and outside PKI communiti
 
 ### End Entity
 
-[End Entity Signature]({{ site.baseurl }}/profiles/eesign/)
-[End Entity Key Management]({{ site.baseurl }}/profiles/eekeymgmt/)
-[Common End Entity Key Management]({{ site.baseurl }}/profiles/commoneekeymgmt/)
+[End Entity Signature]({{ site.baseurl }}/profiles/eesign/)<BR>
+[End Entity Key Management]({{ site.baseurl }}/profiles/eekeymgmt/)<BR>
+[Common End Entity Key Management]({{ site.baseurl }}/profiles/commoneekeymgmt/)<BR>
 
 ### Devices
 
@@ -54,7 +54,7 @@ To maximize interoperability across Federal Government and outside PKI communiti
 
 ### CRL and OCSP
 
-[CRL]({{ site.baseurl }}/profiles/crl/)
+[CRL]({{ site.baseurl }}/profiles/crl/)<BR>
 [Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
 
 ## History and Traceability
