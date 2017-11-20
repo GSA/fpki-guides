@@ -4,16 +4,16 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-These profiles specify the unique parameter settings needed for X.509 v3 certificates and v2 certificate revocation list (CRL) extensions issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_). They will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_. 
+These profiles specify the unique parameter settings for X.509 v3 certificates and v2 certificate revocation list (CRL) extensions issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_).[^n] The current profiles include the following updates:
+* Revised profile fields, extensions, and values.<!--Validate this with Wendy.-->
+* Guidance for certificates issued under policies cross-certified with the Federal Bridge Certification Authority (FBCA).
+* Formats and semantics taken from RFC 5280[^n] to maximize interoperability across federal and external PKI communities. 
 
-Current profile updates include:
-* Revised certificate and CRL extensions values.
-* Guidance for certificates issued under certificate policies cross-certified with the Federal Bridge Certification Authority (FBCA).
-* Formats and semantics taken from RFC 5280[^n] to promote interoperability across federal and external PKI communities. 
+Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined, as well as two profiles covering the OCSP Responses and CRLs.
 
 ## Certificate and Extensions Profile Worksheets
 
-See the [Worksheet Traceability Matrix](#historical-worksheet-traceability-matrix) for previous-to-current version numbers. 
+For a mapping of past-to-current worksheet numbers, go to:&nbsp;&nbsp;[Worksheet Traceability Matrix](#historical-worksheet-traceability-matrix). 
 
 * Click a link to view a profile worksheet.
 
@@ -37,7 +37,7 @@ See the [Worksheet Traceability Matrix](#historical-worksheet-traceability-matri
 [16. PIV-I Authentication]({{ site.baseurl }}/profiles/piviauth/)<BR>
 [18. PIV-I Content Signing]({{ site.baseurl }}/profiles/pivicontentsign/)<BR>
 
-### Common
+### Common (?)
 
 [12. Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)
 [10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)
@@ -64,7 +64,7 @@ See the [Worksheet Traceability Matrix](#historical-worksheet-traceability-matri
 [9. Key Management]({{ site.baseurl }}/profiles/keymgmt/)
 
 ## Worksheet Traceability Matrix
-
+<!--The titles of worksheets 8, 9, 10, 11, 12, and 13 do not map to the titles of the current worksheets. Need to resolve these with Wendy.-->
 | **Certificate Profile Worksheet**   | **SSP**[^n]<BR>**(FIPS 201)**        | **FBCA[^n]**     | **PIV-I[^n]**     | **Current**   |
 | :----------------------------------  | :------:        | :-----------:      | :-----------:      | :-----------:      |
 | Self-Signed CA                       | 1              | 1            |               | 1             |
@@ -89,7 +89,7 @@ See the [Worksheet Traceability Matrix](#historical-worksheet-traceability-matri
 | Delegated OCSP Responder       | 12               |             | 9             | 20             |
 
 
-
+[^n} These certificate and OCSP/CRL extensions profiles will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.
 [^n]RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<BR>
 [^n]_X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program_, FPKIPA, Shared Service Provider Working Group, July 17, 2017.<BR>
 [^n]_Federal Public Key Infrastructure (PKI) X.509 Certificate and CRL Exensions Profile_, FPKIPA, July 17, 2017.<BR>
