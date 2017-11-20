@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Key Rollover CA
-permalink: profiles/keyrollover/
+permalink: profiles/keyrolloverca/
 ---
 
 ## Worksheet 2:&nbsp;&nbsp;Key Rollover CA Certificate Profile
