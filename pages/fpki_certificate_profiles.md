@@ -86,8 +86,8 @@ The profile-numbering traceability is below:
 
 
 
-[^n]RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).
-[^n]SSP
-[^n]FBCA
-[^n]PIV-I
+[^n]RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<BR>
+[^n]SSP<BR>
+[^n]FBCA<BR>
+[^n]PIV-I<BR>
 
