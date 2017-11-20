@@ -64,15 +64,15 @@ For a mapping of past-to-current worksheet numbers, go to:&nbsp;&nbsp;[Worksheet
 [9. Key Management]({{ site.baseurl }}/profiles/keymgmt/)
 
 ## Worksheet Traceability Matrix
-<!--The titles of worksheets 8, 9, 10, 11, 12, and 13 do not map to the titles of the current worksheets. Need to resolve these with Wendy.-->
-| **Certificate Profile Worksheet**   | **SSP**[^n]  | **FBCA[^n]**     | **PIV-I[^n]**     | **Current**   |
-| :----------------------------------  | :---------:        | :-----------:      | :-----------:      | :-----------:      |
-| Self-Signed CA                       | 1                  | 1            |               | 1             |
-| Key Rollover CA                      | 2                  | 2            |  1            | 2             |
-| Peer-to-Peer Cross-Certificate       | 3                  | 3            |  2            | 3             |
-| Intermediate or Subordinate CA       | 3                  | 3            |  2            | 4             |
-| CRL                                  | 4                  | 4            |  3            | 5             |
-| End Entity Signature       |                | 5            |               | 6             |
+
+| **Certificate Profile Worksheet**   | **SSP**  | **FBCA**     | **PIV-I**     | **Current**   |
+| :----------------------------------  | :---------:  | :-----------:    | :-----------:      | :-----------:      |
+| Self-Signed CA                       | 1            | 1                |               | 1             |
+| Key Rollover CA                      | 2             | 2               |  1            | 2             |
+| Peer-to-Peer Cross-Certificate       | 3             | 3                |  2            | 3             |
+| Intermediate or Subordinate CA       | 3              | 3               |  2            | 4             |
+| CRL                                  | 4              | 4               |  3            | 5             |
+| End Entity Signature       |                | 5        |                 | 6             |
 | Common End Entity Signature       | 5              |              |               | 7             |
 | PIV-I End Entity Signature       |                |              |  6            | 8             |
 | End Entity Key Management       |                |  6           |               | 9             |
