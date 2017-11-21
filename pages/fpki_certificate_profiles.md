@@ -17,19 +17,19 @@ For a mapping of past-to-current profile worksheet numbers, go to:&nbsp;&nbsp;[W
 
 * Click a link to view a profile worksheet.
 
-### CAs 
+### Certification Authority (CA) 
  
 [1: Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)<BR>
 [2: Key Rollover CA]({{ site.baseurl }}/profiles/keyrolloverca/)<BR>
 [3: Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)<BR>
 [4: Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)<BR>
 
-### PIV
+### Personal Identity Verfication (PIV)
 
 [14. PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<BR>
 [17. Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)<BR>
 
-### PIV-I
+### Personal Identity Verfication &mdash; Interoperable (PIV-I)
 
 [8. PIV-I Digital Signature]({{ site.baseurl }}/profiles/pividigsign/)<BR>
 [11. PIV-I Key Management]({{ site.baseurl }}/profiles/pivikeymgmt/)<BR>
@@ -55,7 +55,7 @@ For a mapping of past-to-current profile worksheet numbers, go to:&nbsp;&nbsp;[W
 
 [19. Computing and Communications Devices]({{ site.baseurl }}/profiles/devices/)
 
-### CRL and OCSP Responder
+### Certificate Revocation List (CRL) and Online Certificate Status Prototol (OCSP) Responder
 
 [5. CRL]({{ site.baseurl }}/profiles/crl/)<BR>
 [20. Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
