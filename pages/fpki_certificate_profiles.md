@@ -15,7 +15,7 @@ Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined
 
 The new profile worksheets are linked below according to **xx category**. These will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.
 
-The [Worksheet Numbering Traceability Matrix](#worksheet-numbering-traceability-matrix) maps the past-to-current profile worksheet numbering.  
+The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matrix) maps the past-to-current profile worksheet numbering.  
 
 ### Certification Authority (CA) 
  
@@ -59,9 +59,9 @@ The [Worksheet Numbering Traceability Matrix](#worksheet-numbering-traceability-
 [Worksheet 20. Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
 
 <!--Historical profile worksheet naming for 8-13+15 doesn't match current worksheet naming. Validate with Wendy next week.-->
-## Worksheet Numbering Traceability Matrix
+## Worksheet Numbers Traceability Matrix
 
-| **Certificate Profile**           | **Shared<BR>Service<BR>Provider (SSP)<sup>[2](#2)</sup> <BR>Worksheets**  | **Federal<BR>Bridge<BR>Certification<BR>Authority (FBCA)<sup>[3](#3)</sup> <BR>Worksheets**     | **Personal<BR>Identity<BR>Verification<BR>Interoperable<BR>(PIV-I)<sup>[4](#4)</sup> Worksheets**     | **Current<BR>Worksheets**   |
+| **Certificate Profile**           | **Shared<BR>Service<BR>Provider (SSP)<sup>[2](#2)</sup> <BR>**  | **Federal<BR>Bridge<BR>Certification<BR>Authority (FBCA)<sup>[3](#3)</sup> <BR>**     | **Personal<BR>Identity<BR>Verification<BR>Interoperable<BR>(PIV-I)<sup>[4](#4)</sup>**     | **Current<BR>**   |
 | :----------------------------------  | :---------:  | :-----------:    | :-----------:      | :-----------:      |
 | Self-Signed CA                       | 1            | 1                |               | 1             |
 | Key Rollover CA                      | 2             | 2               |  1            | 2             |
