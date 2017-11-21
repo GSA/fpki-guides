@@ -7,65 +7,65 @@ permalink: /certprofiles/
 These profiles specify the unique parameter settings for X.509 v3 certificates and v2 certificate revocation list (CRL) extensions issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_).[^n] Current updates to these profiles include:
 * Revised profile fields, extensions, and values.<!--Validate this with Wendy.-->
 * Guidance for certificates issued under policies cross-certified with the Federal Bridge Certification Authority (FBCA).
-* Formats and semantics from RFC 5280[^n] to maximize interoperability across federal and external PKI communities. 
+* Formats and semantics from RFC 5280<sup>[1](#1)</sup> to maximize interoperability across federal and external PKI communities. 
 
-Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined, as well as two profiles for OCSP Responses and CRLs.
+Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined, as well as two profiles for the Online Certificate Status Protocol (OCSP) Responses and Certificate Revocation Lists (CRLs).
 
 ## Certificate and Extensions Profile Worksheets
 
-For a mapping of past-to-current profile worksheet numbers, go to:&nbsp;&nbsp;[Worksheet Traceability Matrix](#worksheet-traceability-matrix). 
+The new certificate profile worksheets are linked below. These worksheets will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.
 
-* Click a link to view a profile worksheet.
+For a mapping of past-to-current worksheet numbering, see the [Worksheet Numbering Traceability Matrix](#worksheet-numbering-traceability-matrix). 
 
 ### Certification Authority (CA) 
  
-[1: Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)<BR>
-[2: Key Rollover CA]({{ site.baseurl }}/profiles/keyrolloverca/)<BR>
-[3: Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)<BR>
-[4: Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)<BR>
+[Worksheet 1: Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)<BR>
+[Worksheet 2: Key Rollover CA]({{ site.baseurl }}/profiles/keyrolloverca/)<BR>
+[Worksheet 3: Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)<BR>
+[Worksheet 4: Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)<BR>
 
 ### Personal Identity Verfication (PIV)
 
-[14. PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<BR>
-[17. Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)<BR>
+[Worksheet 14. PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<BR>
+[Worksheet 17. Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)<BR>
 
-### Personal Identity Verfication &mdash; Interoperable (PIV-I)
+### Personal Identity Verfication&mdash;Interoperable (PIV-I)
 
-[8. PIV-I Digital Signature]({{ site.baseurl }}/profiles/pividigsign/)<BR>
-[11. PIV-I Key Management]({{ site.baseurl }}/profiles/pivikeymgmt/)<BR>
-[13. PIV-I Card Authentication]({{ site.baseurl }}/profiles/pivicardauth/)<BR>
-[16. PIV-I Authentication]({{ site.baseurl }}/profiles/piviauth/)<BR>
-[18. PIV-I Content Signing]({{ site.baseurl }}/profiles/pivicontentsign/)<BR>
+[Worksheet 8. PIV-I Digital Signature]({{ site.baseurl }}/profiles/pividigsign/)<BR>
+[Worksheet 11. PIV-I Key Management]({{ site.baseurl }}/profiles/pivikeymgmt/)<BR>
+[Worksheet 13. PIV-I Card Authentication]({{ site.baseurl }}/profiles/pivicardauth/)<BR>
+[Worksheet 16. PIV-I Authentication]({{ site.baseurl }}/profiles/piviauth/)<BR>
+[Worksheet 18. PIV-I Content Signing]({{ site.baseurl }}/profiles/pivicontentsign/)<BR>
 
 ### Common <**Is this a group**?>
 
-[12. Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)<BR>
-[10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)
+[Worksheet 12. Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)<BR>
+[Worksheet 10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)
 
 ### Derived PIV
 
-[15. Derived PIV Authentication]({{ site.baseurl }}/profiles/derivedpivauth/)
+[Worksheet 15. Derived PIV Authentication]({{ site.baseurl }}/profiles/derivedpivauth/)
 
 ### End Entity
 
-[6. End Entity Signature]({{ site.baseurl }}/profiles/endentitysign/)<BR>
-[7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<BR>
+[Worksheet 6. End Entity Signature]({{ site.baseurl }}/profiles/endentitysign/)<BR>
+[Worksheet 7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<BR>
 
 ### Devices
 
-[19. Computing and Communications Devices]({{ site.baseurl }}/profiles/devices/)
+[Worksheet 19. Computing and Communications Devices]({{ site.baseurl }}/profiles/devices/)
 
 ### Certificate Revocation List (CRL) and Online Certificate Status Prototol (OCSP) Responder
 
-[5. CRL]({{ site.baseurl }}/profiles/crl/)<BR>
-[20. Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
+[Worksheet 5. CRL]({{ site.baseurl }}/profiles/crl/)<BR>
+[Worksheet 20. Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
 
 **<Pertains to what group?>**<!--Email to Wendy on 11-20 for her return from leave-->
 [9. Key Management]({{ site.baseurl }}/profiles/keymgmt/)
-<!--Historical profile worksheet naming for 8-13 doesn't match current worksheet naming. Validate with Wendy next week.-->
-## Worksheet Traceability Matrix
+<!--Historical profile worksheet naming for 8-13+15 doesn't match current worksheet naming. Validate with Wendy next week.-->
+## Worksheet Numbering Traceability Matrix
 
-| **Certificate Profile Worksheet**   | **SSP[x]**  | **FBCA[x]**     | **PIV-I[x]**     | **Current**   |
+| **Certificate Profile**           | **Shared<BR>Service<BR>Provider (SSP)<sup>[2](#2)</sup> <BR>Worksheet**  | **Federal<BR>Bridge<BR>Certification<BR>Authority (FBCA)<sup>[3](#3)</sup> <BR>Worksheet**     | **Personal<BR>Identity<BR>Verification<BR>Interoperable<BR>(PIV-I)<sup>[4](#4)</sup> Worksheet**     | **Current<BR>Worksheet**   |
 | :----------------------------------  | :---------:  | :-----------:    | :-----------:      | :-----------:      |
 | Self-Signed CA                       | 1            | 1                |               | 1             |
 | Key Rollover CA                      | 2             | 2               |  1            | 2             |
@@ -89,9 +89,8 @@ For a mapping of past-to-current profile worksheet numbers, go to:&nbsp;&nbsp;[W
 | Delegated OCSP Responder       | 12               |             | 9             | 20             |
 
 -----------------
-[^n] These certificate and OCSP/CRL extensions profiles will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.<BR>
-[^n]RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<BR>
-[^n]_X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program_, FPKIPA, Shared Service Provider Working Group, July 17, 2017.<BR>
-[^n]_Federal Public Key Infrastructure (PKI) X.509 Certificate and CRL Exensions Profile_, FPKIPA, July 17, 2017.<BR>
-[^n]_X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards_, FPKIPA, PIV-I Tiger Team, July 17, 2017.
+<a name="1">1</a>. RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<BR>
+<a name="2">2</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program_, FPKIPA, Shared Service Provider Working Group, July 17, 2017.<BR>
+<a name="3">3</a>. _Federal Public Key Infrastructure (PKI) X.509 Certificate and CRL Exensions Profile_, FPKIPA, July 17, 2017.<BR>
+<a name="4">4</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards_, FPKIPA, PIV-I Tiger Team, July 17, 2017.
 
