@@ -37,31 +37,27 @@ The [Worksheet Numbering Traceability Matrix](#worksheet-numbering-traceability-
 [Worksheet 16. PIV-I Authentication]({{ site.baseurl }}/profiles/piviauth/)<BR>
 [Worksheet 18. PIV-I Content Signing]({{ site.baseurl }}/profiles/pivicontentsign/)<BR>
 
-### Common <**Is this a group**?>
-
-[Worksheet 12. Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)<BR>
-[Worksheet 10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)
-
 ### Derived PIV
 
 [Worksheet 15. Derived PIV Authentication]({{ site.baseurl }}/profiles/derivedpivauth/)
 
-### End Entity
+### Common
+
+[Worksheet 7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<BR>
+[Worksheet 12. Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)<BR>
+[Worksheet 10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)
+[Worksheet 19. Computing and Communications Devices]({{ site.baseurl }}/profiles/devices/)
+
+### FBCA
 
 [Worksheet 6. End Entity Signature]({{ site.baseurl }}/profiles/endentitysign/)<BR>
-[Worksheet 7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<BR>
-
-### Devices
-
-[Worksheet 19. Computing and Communications Devices]({{ site.baseurl }}/profiles/devices/)
+[Worksheet 9. Key Management]({{ site.baseurl }}/profiles/keymgmt/)
 
 ### Certificate Revocation List (CRL) and Online Certificate Status Prototol (OCSP) Responder
 
 [Worksheet 5. CRL]({{ site.baseurl }}/profiles/crl/)<BR>
 [Worksheet 20. Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
 
-**<Pertains to what group?>**<!--Email to Wendy on 11-20 for her return from leave-->
-[9. Key Management]({{ site.baseurl }}/profiles/keymgmt/)
 <!--Historical profile worksheet naming for 8-13+15 doesn't match current worksheet naming. Validate with Wendy next week.-->
 ## Worksheet Numbering Traceability Matrix
 
