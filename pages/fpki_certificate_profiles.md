@@ -13,9 +13,9 @@ Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined
 
 ## Certificate and Extensions Profile Worksheets
 
-The new certificate profile worksheets are linked below. These worksheets will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.
+The new profile worksheets are linked below according to **xx category**. These will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.
 
-For a mapping of past-to-current worksheet numbering, see the [Worksheet Numbering Traceability Matrix](#worksheet-numbering-traceability-matrix). 
+The [Worksheet Numbering Traceability Matrix](#worksheet-numbering-traceability-matrix) maps the past-to-current profile worksheet numbering.  
 
 ### Certification Authority (CA) 
  
@@ -65,7 +65,7 @@ For a mapping of past-to-current worksheet numbering, see the [Worksheet Numberi
 <!--Historical profile worksheet naming for 8-13+15 doesn't match current worksheet naming. Validate with Wendy next week.-->
 ## Worksheet Numbering Traceability Matrix
 
-| **Certificate Profile**           | **Shared<BR>Service<BR>Provider (SSP)<sup>[2](#2)</sup> <BR>Worksheet**  | **Federal<BR>Bridge<BR>Certification<BR>Authority (FBCA)<sup>[3](#3)</sup> <BR>Worksheet**     | **Personal<BR>Identity<BR>Verification<BR>Interoperable<BR>(PIV-I)<sup>[4](#4)</sup> Worksheet**     | **Current<BR>Worksheet**   |
+| **Certificate Profile**           | **Shared<BR>Service<BR>Provider (SSP)<sup>[2](#2)</sup> <BR>Worksheets**  | **Federal<BR>Bridge<BR>Certification<BR>Authority (FBCA)<sup>[3](#3)</sup> <BR>Worksheets**     | **Personal<BR>Identity<BR>Verification<BR>Interoperable<BR>(PIV-I)<sup>[4](#4)</sup> Worksheets**     | **Current<BR>Worksheets**   |
 | :----------------------------------  | :---------:  | :-----------:    | :-----------:      | :-----------:      |
 | Self-Signed CA                       | 1            | 1                |               | 1             |
 | Key Rollover CA                      | 2             | 2               |  1            | 2             |
