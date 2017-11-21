@@ -61,7 +61,7 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 <!--Historical profile worksheet naming for 8-13+15 doesn't match current worksheet naming. Validate with Wendy next week.-->
 ## Worksheet Numbers Traceability Matrix
 
-| **Certificate Profile**           | **Shared<BR>Service<BR>Provider (SSP)<sup>[2](#2)</sup> <BR>**  | **Federal<BR>Bridge<BR>Certification<BR>Authority (FBCA)<sup>[3](#3)</sup> <BR>**     | **Personal<BR>Identity<BR>Verification<BR>Interoperable<BR>(PIV-I)<sup>[4](#4)</sup>**     | **Current<BR>**   |
+| **Certificate Profile**           | **Shared<BR>Service<BR>Provider<BR>(SSP)<sup>[2](#2)</sup> <BR>**  | **Federal<BR>Bridge<BR>Certification<BR>Authority (FBCA)<sup>[3](#3)</sup> <BR>**     | **Personal<BR>Identity<BR>Verification<BR>Interoperable<BR>(PIV-I)<sup>[4](#4)</sup>**     | **Current<BR>**   |
 | :----------------------------------  | :---------:  | :-----------:    | :-----------:      | :-----------:      |
 | Self-Signed CA                       | 1            | 1                |               | 1             |
 | Key Rollover CA                      | 2             | 2               |  1            | 2             |
