@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PIV-I Digital Signature
+title: PIV-I Digital Signature Certificate Profile
 permalink: profiles/pividigsign/
 ---
 
@@ -18,13 +18,16 @@ permalink: profiles/pividigsign/
 | Signature   |       |       |   sha256 WithRSAEncryption {1 2 840 113549 1 1 11}<BR>or ECDSA with appropriate Hash.   |
 |               |                 |              |                                       |
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
-| KeyUsage  | Mandatory | True |  digitalSignature, nonRepudiation. |
-|AuthorityInfoAccess   | Mandatory  |  | **id-ad-caIssuers** {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>**id-ad-ocsp** {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. | 
-| SubjectKeyIdentifier   | Mandatory |  | Octet string.  |
-| CRLDistributionPoints   | Mandatory |   |  This extension must appear in all certificates and must include at least an HTTP URI distribution point name.<BR>The reasons and cRLIssuer fields must be omitted. | 
-| CertificatePolicies   | Mandatory  |  | Applicable certificate policies – at least one policy mapped to FBCA mediumHW or PIV-I Hardware. |
-| AuthorityKeyIdentifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
-| Extendedkeyusage   | Optional |  |  If included to support specific applications, the extension should be non-critical.<BR>The 3 values listed for keyPurposeID should be included for signing purposes.<BR>1.3.6.1.5.5.7.3.4 - Id-kp-emailProtection<BR>1.3.6.1.4.1.311.10.3.12 - MSFT Document Signing<BR>1.2.840.113583.1.1.5 - Adobe-Certified Document Signing.<BR>Additional key purposes may be specified.  |
-|SubjectAlternativeName   | Optional  |  |   |
-| SubjectDirectoryAttributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280 [3].<BR>countryOfCitizenship {1.3.6.1.5.5.7.9.4} - ISO 3166 Country Code(s). | 
-| IssuerAltName   | Optional  |  |   | 
+| Key Usage  | Mandatory | True |  digitalSignature, nonRepudiation. |
+|Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. | 
+| Subject Key Identifier   | Mandatory |  | Octet string.  |
+| CRL Distribution Points   | Mandatory |   |  This extension must appear in all certificates and must include at least an HTTP URI distribution point name.<BR>The reasons and cRLIssuer fields must be omitted. | 
+| Certificate Policies   | Mandatory  |  | Applicable certificate policies&mdash;at least one policy mapped to FBCA mediumHW or PIV-I Hardware. |
+| Authority Key Identifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
+| Extended Key Usage   | Optional |  |  If included to support specific applications, the extension should be non-critical.<BR>The 3 values listed for keyPurposeID should be included for signing purposes:<BR>- 1.3.6.1.5.5.7.3.4 - Id-kp-emailProtection<BR>- 1.3.6.1.4.1.311.10.3.12 - MSFT Document Signing<BR>- 1.2.840.113583.1.1.5 - Adobe-Certified Document Signing<BR>Additional key purposes may be specified.  |
+|Subject Alternative Name   | Optional  |  |   |
+| Subject Directory Attributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280 [^n].<BR>countryOfCitizenship {1.3.6.1.5.5.7.9.4} - ISO 3166 Country Code(s). | 
+| Issuer Alternative Name   | Optional  |  |   | 
+
+-------
+[^n]RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).
