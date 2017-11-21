@@ -31,5 +31,5 @@ permalink: profiles/commoncardauth/
 | Issuer Alternative Name   | Optional  |  |   | 
 
 -------
-[^n] **ISO 3166?  Country of citizenship not specified in RFC 5280.**
+[^n] **ISO 3166?  Country of citizenship not specified in RFC 5280.**<BR>
 [^n] NIST SP 800-78-4, _Cryptographic Algorithms and Key Sizes for Personal Identity Verification_, W. Timothy Polk, Donna F. Dodson, William E. Burr, Hildegard Ferraiolo, and David Cooper (May 2015).
