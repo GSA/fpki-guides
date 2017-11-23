@@ -24,7 +24,7 @@ permalink: profiles/pivicardauth/
 | CR LDistribution Points   | Mandatory |   |  This extension must appear in all certificates and must include at least an HTTP URI distribution point name.<BR>The reasons and cRLIssuer fields must be omitted. | 
 | Certificate Policies   | Mandatory  |  | Applicable certificate policy.<BR>Must have a policy mapping to PIV-I cardAuth.<BR>Other policies may be asserted as well. |
 | Authority Key Identifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
-| Extendedkeyusage   | Mandatory | True |  This extension shall assert only the id-PIV-cardAuth keyPurposeID {2.16.840.1.101.3.6.8}.<BR>The id-PIV-cardAuth keyPurposeID specifies that the public key is used to authenticate the PIV-I card rather than the PIV-I cardholder.  |
+| Extended Key Usage   | Mandatory | True |  This extension shall assert only the id-PIV-cardAuth keyPurposeID {2.16.840.1.101.3.6.8}.<BR>The id-PIV-cardAuth keyPurposeID specifies that the public key is used to authenticate the PIV-I card rather than the PIV-I cardholder.  |
 |Subject Alternative Name   | Mandatory  | Otherwise set criticality to TRUE. | Must include a UUID. No other name forms may be included.<BR>This field contains the UUID from the CHUID of the PIV-I card encoded as a URI, as specified in RFC 4122, Section 3.<sup>[3](#3)</sup>  |
 | Subject Directory Attributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280.<sup>[4](#4)</sup><br>countryOfCitizenship {1.3.6.1.5.5.7.9.4} (ISO 3166<sup>[5](#5)</sup>) | 
 | Issuer Alternative Name   | Optional  |  |   | 
