@@ -9,7 +9,7 @@ These profiles specify the unique parameter settings for X.509 v3 certificates a
 * Guidance for certificates issued under policies cross-certified with the Federal Bridge Certification Authority (FBCA).
 * Formats and semantics from RFC 5280<sup>[1](#1)</sup> to maximize interoperability across federal and external PKI communities. 
 
-Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined, as well as two profiles for the Online Certificate Status Protocol (OCSP) Responses and Certificate Revocation Lists (CRLs).
+Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined, as well as the profiles for the Online Certificate Status Protocol (OCSP) Responses and Certificate Revocation Lists (CRLs).
 
 ## Certificate and Extensions Profile Worksheets
 
