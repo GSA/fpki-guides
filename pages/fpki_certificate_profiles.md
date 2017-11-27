@@ -16,7 +16,7 @@ Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined
 
 The profile worksheets (linked below) will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.
 
-The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matrix) maps the past-to-current profile worksheet numbering.  
+The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matrix) maps the past-to-current profile worksheet numbering. (**Note:**&nbsp;&nbsp;Some profile worksheet titles have changed.)
 
 ### Certification Authority (CA) 
  
