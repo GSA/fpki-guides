@@ -27,6 +27,9 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 
 ### Personal Identity Verfication (PIV)
 
+[Worksheet 7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<BR><!--Wendy's 11-27 note:  common signature. Is this that?-->
+[Worksheet 10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)<BR>
+[Worksheet 12. Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)<BR>
 [Worksheet 14. PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<BR>
 [Worksheet 17. Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)<BR>
 
@@ -42,11 +45,8 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 
 [Worksheet 15. Derived PIV Authentication]({{ site.baseurl }}/profiles/derivedpivauth/)
 
-### Common
+### Devices
 
-[Worksheet 7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<BR>
-[Worksheet 12. Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)<BR>
-[Worksheet 10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)<BR>
 [Worksheet 19. Computing and Communications Devices]({{ site.baseurl }}/profiles/devices/)
 
 ### FBCA
