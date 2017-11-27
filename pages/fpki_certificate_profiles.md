@@ -20,14 +20,14 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 
 ### Certification Authority (CA) 
  
-[Worksheet 1: Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)<BR>
-[Worksheet 2: Key Rollover CA]({{ site.baseurl }}/profiles/keyrolloverca/)<BR>
-[Worksheet 3: Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)<BR>
-[Worksheet 4: Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)<BR>
+[Worksheet 1. Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)<BR>
+[Worksheet 2. Key Rollover CA]({{ site.baseurl }}/profiles/keyrolloverca/)<BR>
+[Worksheet 3. Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)<BR>
+[Worksheet 4. Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)<BR>
 
 ### Personal Identity Verfication (PIV)
 
-[Worksheet 7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<BR><!--Wendy's 11-27 note:  common signature. Is this that?-->
+[Worksheet 7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<BR>
 [Worksheet 10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)<BR>
 [Worksheet 12. Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)<BR>
 [Worksheet 14. PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<BR>
