@@ -14,7 +14,7 @@ permalink: profiles/p2pcrosscert/
 | Issuer Distinguished Name   |       |       |  Unique X.500 Issuing CA DN. <BR>For CAs operating under the Common Policy CP (i.e., _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_), must use one of the name forms specified in the Common Policy CP, Section 3.1.1. |
 | Validity Period   |       |       |  No longer than 3 years from date of issue.<BR>Expressed in UTCTime for dates until end of 2049 and GeneralizedTime for dates thereafter.  | 
 | Subject   |       |       |   Unique X.500 Issuing CA DN.<BR>For CAs operating under the Common Policy CP, must use one of the name forms specified in the Common Policy CP, Section 3.1.1.<BR>Subject name should be encoded exactly as it is encoded in the issuer field of certificates issued by the subject.   |
-| Subject Public Key Information   |       |       |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1 2 840 113549 1 1 1}.<BR>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-2.   |
+| Subject Public Key Information   |       |       |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1 2 840 113549 1 1 1}.<BR>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-4.<sup>[1](#1)</sup>   |
 | Signature   |       |       |   sha256 WithRSAEncryption {1 2 840 113549 1 1 11}<BR>or ECDSA with appropriate Hash.   |
 |               |                 |              |                                       |
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
@@ -32,3 +32,6 @@ permalink: profiles/p2pcrosscert/
 | Inhibit Any Policy   | Optional  |  | SkipCerts=0. |
 | Name Constraints   | Optional  | True | If present, any combination of permitted and excluded subtrees may appear.<BR>If permitted and excluded subtrees overlap, the excluded subtree takes precedence.<BR>It is recommended that name constraints only be imposed on the directoryName name form. |
 | Issuer Alternative Name   | Optional  |  | Any name types may be present; most common is rfc822Name for email of PKI administrator. |
+
+-------
+<a name="1">1</a>. NIST SP 800-78-4, _Cryptographic Algorithms and Key Sizes for Personal Identity Verification_, W. Timothy Polk, Donna F. Dodson, William E. Burr, Hildegard Ferraiolo, and David Cooper (May 2015).<br>
