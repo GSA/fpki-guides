@@ -10,7 +10,7 @@ Current updates to these profiles include:
 * Revised profile fields, extensions, and values.
 * Formats and semantics from RFC 5280<sup>[1](#1)</sup> to maximize interoperability across federal and external PKI communities.
 
-Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined, as well as the profiles for the Online Certificate Status Protocol (OCSP) Responses and Certificate Revocation Lists (CRLs).
+Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined, as well as profiles for the Online Certificate Status Protocol (OCSP) Responses and Certificate Revocation Lists (CRLs).
 
 ## Certificate and Extensions Profile Worksheets
 
