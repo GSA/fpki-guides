@@ -21,7 +21,7 @@ Current updates to these profiles include:
 
 ## Certificate and Extensions Profile Worksheets
 
-The profile worksheets (linked below) will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.
+The FPKI profile worksheets will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.
 
 The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matrix) maps the past-to-current profile worksheet numbering. (**Note:**&nbsp;&nbsp;Some profile worksheet titles have changed.)
 
