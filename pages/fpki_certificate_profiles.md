@@ -11,7 +11,7 @@ Certificate formats and semantics are defined in X.509, as further described in 
 
 **cb proposed edited version of para. 2:**<br>
 **What has changed:**
-* The profile formats have been simplied.
+* The profile formats have been simplified.<br>
 **What has not changed:**  
 * Profile formats and semantics are defined in X.509 and further described in RFC 5280.<sup>[1](#1)</sup> 
 >**Note:**&nbsp;&nbsp;The updated FPKI profiles state where they deviate from the RFC 5280-specified formats.
