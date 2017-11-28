@@ -10,11 +10,12 @@ These profiles specify the unique parameter settings for X.509 v3 certificates a
 Certificate formats and semantics are defined in X.509, as further described in RFC 52801.  These profiles state where they deviate from the profiles defined in RFC 5280.
 
 **cb proposed edited version of para. 2:**<br>
+
 **What has changed:**
 * The profile formats have been simplified.<br>
 **What has not changed:**  
-* Profile formats and semantics are defined in X.509 and further described in RFC 5280.<sup>[1](#1)</sup> 
->**Note:**&nbsp;&nbsp;The updated FPKI profiles state where they deviate from the RFC 5280-specified formats.
+* Profile formats and semantics are defined in X.509 and further described in RFC 5280.<sup>[1](#1)</sup><br>
+The updated FPKI profiles state where they deviate from the RFC 5280-specified formats.
 * The profiles provide detailed descriptions of acceptable values.
 
 **cb original paragraph**:  
