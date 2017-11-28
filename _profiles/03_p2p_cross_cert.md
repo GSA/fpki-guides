@@ -30,7 +30,7 @@ permalink: profiles/p2pcrosscert/
 | Policy Mappings  | Mandatory  |  | Pairs of issuerDomainPolicy OID mapped to the equivalent subjectDomainPolicy OID. |
 | Policy Constraints   | Optional  |  | Either requireExplicitPolicy or inhibitPolicyMapping may be present.<BR>If present, this extension should be marked as noncritical to support legacy applications that cannot process policyConstraints.<BR>InhibitPolicyMapping SkipCerts should be 1 in certs issued to a cross-certified Bridge; 0 when issued to a member of the issuing Bridge CA; and 2 within the FPKI trust infrastructure to a CA that may issue a cross-certificate to a Bridge. |
 | Inhibit Any Policy   | Optional  |  | SkipCerts=0. |
-| Name Constraints   | Optional  | True | If present, any combination of permitted and excluded subtrees may appear.<BR>If permitted and excluded subtrees overlap, the excluded subtree takes precedence.<BR>It is recommended that name constraints only be imposed on the directoryName name form. |
+| Name Constraints   | Optional  | True | If present, any combination of permitted and excluded subtrees may appear.<BR>If permitted and excluded subtrees overlap, the excluded subtree takes precedence. |
 | Issuer Alternative Name   | Optional  |  | Any name types may be present; most common is rfc822Name for email of PKI administrator. |
 
 -------
