@@ -4,27 +4,20 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-These profiles specify the unique parameter settings for X.509 v3 certificates and v2 certificate revocation lists (CRLs) issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_). They also give guidance for certificates issued under CPs that are cross-certified with the Federal Bridge Certification Authority (FBCA). 
+Certificate profile formats and semantics are defined in X.509**<Footnote for X.509?>** and further described in RFC 5280.<sup>[1](#1)</sup> These FPKI profiles specify the unique, detailed parameter settings for X.509 v3 certificates and v2 certificate revocation lists (CRLs) issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_). They also give guidance for certificates issued under CPs that are cross-certified with the Federal Bridge Certification Authority (FBCA). Any deviations from the RFC 5280-specified formats are noted.
 
-**Wendy's proposed wording of para. 2:** These profiles <!--Repeats "these profiles".-->have been updated to simplify the format while retaining information about what extensions are required and a high level description of acceptable values.
+Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined, as well as profiles for the Online Certificate Status Protocol (OCSP) Responses and Certificate Revocation Lists (CRLs).
+
+------
+**Wendy's proposed wording of para. 2:** These profiles have been updated to simplify the format while retaining information about what extensions are required and a high level description of acceptable values.
 Certificate formats and semantics are defined in X.509, as further described in RFC 52801.  These profiles state where they deviate from the profiles defined in RFC 5280.
+ **<Is the phrase, "detailed parameter settings?>** equal to **"what extensions are required and a high level description of acceptable values"?** **<If not, replace "detailed parameter settings" above with "required extensions and detailed descriptions of acceptable values.">**
 
-**cb proposed edited version of para. 2:**<br>
-
-**What has changed:**
-* The profile formats have been simplified.<br>
-**What has not changed:**  
-* Profile formats and semantics are defined in X.509 and further described in RFC 5280.<sup>[1](#1)</sup><br>
-The updated FPKI profiles state where they deviate from the RFC 5280-specified formats.
-* The profiles provide detailed descriptions of acceptable values.
-
-**cb original paragraph**:  
+**cb original para**:  
 Current updates to these profiles include:
 * Revised profile fields, extensions, and values.
 * Formats and semantics from RFC 5280<sup>[1](#1)</sup> to maximize interoperability across federal and external PKI communities.
 
-
-Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined, as well as profiles for the Online Certificate Status Protocol (OCSP) Responses and Certificate Revocation Lists (CRLs).
 
 ## Certificate and Extensions Profile Worksheets
 
