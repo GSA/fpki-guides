@@ -1,12 +1,13 @@
-{% assign current = page.url | downcase | split: '/' %}
+{% assign current = page.url | downcase | remove: '/' %}
 
 <aside class="sidenav" id="menu-content">
   <nav>
     <ul class="usa-sidenav-list">
       {% for link in site.navigation %}
-          <li class="group {% if page.title == link.text %}usa-current-section{% endif %}">
-            <a href="{% if link.internal == true %}{{ site.baseurl }}/{% endif %}{{ link.url }}" title="{{ link.text }}">{{ link.text }}</a>
-
+          {% assign navUrl = link.url | strip %}
+          <li class="group{% if navUrl == current %} usa-current-section{% endif %}">
+            <a href="{% if link.internal == true %}{{ site.baseurl }}/{% endif %}{{ link.url }}" title="{{ page.title }}">{{ link.text }}</a>
+          
           {% if link.coll == true %}
           <button class="usa-sidenav-expand_subnav"
                   aria-expanded="{% if page.collection == link.collname %}true{% else %}false{% endif %}"
@@ -19,20 +20,25 @@
           {% assign temp = slash | append: link.url %}
 		  
           {% for child in site.[collectionName] %}
-          {% if child.url != temp %}
-          	<li class="group {% if page.title == child.title %}usa-current{% endif %}">
-          	<a href="{{ site.baseurl }}{{ child.url }}" title="{% if page.title == child.title %}Current Page {% else %}{{ child.title }}{% endif %}">{{ child.title }}</a>
-          	</li>
-          {% endif %}
+              {% assign navtext = child.title %}
+              {% if child.navtitle != null %}
+                {% assign navtext = child.navtitle %} 
+              {% endif %}
+              {% if child.url != temp %}
+               <li class="group {% if page.title == child.title %}usa-current{% endif %}">
+                <a href="{{ site.baseurl }}{{ child.url }}" title="{% if page.title == child.title %}Current Page {% else %}{{ child.title }}{% endif %}">{{ navtext }}</a>
+               </li>
+              {% endif %}
           {% endfor %}
           </ul>
           {% endif %}
           </li>
        {% endfor %}
 	   {% for notification in site.data.notifications reversed %}
-			{% if forloop.index == 1 %}
-				<a href="{{site.baseurl}}/notifications/#notifications" class="btn btn-primary">Latest System Notification: {{ notification.notice_date }}</a>
-			{% endif %}
+		{% if forloop.index == 1 %}
+		    <a href="{{site.baseurl}}/notifications/#notifications" class="btn btn-primary">Latest System Notification: {{ notification.notice_date }}</a>
+                   {% break %}
+		{% endif %}
 	   {% endfor %}
     </ul>
   </nav>
