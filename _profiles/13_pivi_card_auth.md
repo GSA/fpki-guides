@@ -30,7 +30,7 @@ permalink: profiles/pivicardauth/
 | Issuer Alternative Name   | Optional  |  |   | 
 
 --------
-<a name="1">1</a>. [_NIST Recommendation for X.509 Path Validation_](https://csrc.nist.gov/projects/pki-testing/){target="_blank"}, Version 0.5 (May 2004).
+<a name="1">1</a>. [_NIST Recommendation for X.509 Path Validation_](https://csrc.nist.gov/projects/pki-testing/){target="_blank"}, Version 0.5 (May 2004).<br>
 <a name="2">2</a>. NIST SP 800-78-4, _Cryptographic Algorithms and Key Sizes for Personal Identity Verification_, W. Timothy Polk, Donna F. Dodson, William E. Burr, Hildegard Ferraiolo, and David Cooper (May 2015).<br>
 <a name="3">3</a>. RFC 4122, _A Universally Unique IDentifier (UUID) URN Namespace_, P. Leach, M. Mealling, and R. Salz (July 2005).<br>
 <a name="4">4</a>. **<Originally said "[13]" (NIST SP 800-78-2). RFC 5280 doesn't specify citizenship>** RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<br>
