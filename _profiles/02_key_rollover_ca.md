@@ -25,7 +25,7 @@ permalink: profiles/keyrolloverca/
 | Subject Key Identifier   | Mandatory |  | Octet string; typically derived using the SHA-1 hash of the subject public key.   |
 | Certificate Policies   | Mandatory  |  | Applicable certificate policy identifiers. |
 | CRL Distribution Points   | Mandatory  |  | This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.  |
-| Authority Information Access   | Mandatory  |  | authorityInfoAccess consists of a sequence of accessMethod and accessLocation pairs.<BR>id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry containing HTTP URL for .p7c file containing certificates issued to this CA;<BR>LDAP URI may optionally be included.<BR>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder, if available. |
+| Authority Information Access   | Mandatory  |  | authorityInfoAccess consists of a sequence of accessMethod and accessLocation pairs.<BR>id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry containing HTTP URL for .p7c file containing certificates issued to this CA;<BR>LDAP URI may be optionally included.<BR>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder, if available. |
 | Issuer Alternative Name   | Optional  |  | Any name types may be present; most common is rfc822Name for email of PKI administrator. |
 
 -------
