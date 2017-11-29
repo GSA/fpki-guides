@@ -19,9 +19,9 @@ permalink: profiles/derivedpivauth/
 |               |                 |              |                                       |
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
 | Key Usage  | Mandatory | True |  digitalSignature.  |
-| Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. OCSP is required for common Derived PIVAuth and Derived PIVAuth Hardware.  | 
+| Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder.<br>OCSP is required for common Derived PIVAuth and Derived PIVAuth Hardware.  | 
 | Subject Key Identifier   | Mandatory |  | Octet string.  |
-| CR LDistribution Points   | Mandatory |   |  This extension must appear in all certificates and must include at least an HTTP URI distribution point name.<BR>The reasons and cRLIssuer fields must be omitted. | 
+| CRL Distribution Points   | Mandatory |   |  This extension must appear in all certificates and must include at least an HTTP URI distribution point name.<BR>The reasons and cRLIssuer fields must be omitted. | 
 | Certificate Policies   | Mandatory  |  | Applicable certificate policy: <BR>2.16.840.1.101.3.2.1.3.40 - id-fpki-common-derived-pivAuth<br>2.16.840.1.101.3.2.1.3.41 - id-fpki-common-derived-pivAuth-hardware |
 | Authority Key Identifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
 | Subject Alternative Name   | Mandatory  |  | Must include a UUID.<BR>Any additional name types may be present.<BR>Other names may be included to support local applications.  |
