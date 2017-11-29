@@ -28,7 +28,7 @@ permalink: profiles/pivauth/
 | PIV Interim   | Mandatory  |  | The piv-interim indicator {2.16.840.1.101.3.6.9.1} extension is defined in FIPS 201-2, Appendix B.2. The value of this extension is asserted as follows:<br>1. TRUE if, at the time of credential issuance:<br>(1) the FBI National Criminal History Fingerprint Check has been completed successfully, and<br>(2) an NACI has been initiated but has not been completed.<br>2. FALSE if, at the time of credential issuance, the subject’s NACI has been completed and successfully adjudicated.  |
 | Extended Key Usage   | Optional  | True | If included to support specific applications, this extension should be non-critical.<br>The following 3 values for keyPurposeID should be included:<br>- Microsoft Smart Card Logon<br>- TLS Client Authentication<br>- pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>- 3.6.1.5.5.7.3.2 - TLS client authentication<BR>- 3.6.1.5.2.3.4 - id-pkinit-KPClientAuth<br>- 3.6.1.5.5.7.3.21 - id-kp-secureShellClient<br>The key purpose value may be implemented as needed by the Subscriber.  | 
 | Subject Directory Attributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280.<sup>[2](#2)</sup><br>- countryOfCitizenship {1.3.6.1.5.5.7.9.4} (ISO 3166.<sup>[3](#3)</sup>) | 
-| IssuerAltName   | Optional  |  |   | 
+| Issuer Alternative Name   | Optional  |  |   | 
 
 ------
 <a name="1">1</a>. NIST SP 800-78-4, _Cryptographic Algorithms and Key Sizes for Personal Identity Verification_, W. Timothy Polk, Donna F. Dodson, William E. Burr, Hildegard Ferraiolo, and David Cooper (May 2015).<br>
