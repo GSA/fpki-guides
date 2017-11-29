@@ -19,14 +19,14 @@ permalink: profiles/endentitysign/
 |               |                 |              |                                       |
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
 | Key Usage  | Mandatory | True |  digitalSignature, nonRepudiation. |
-|Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. | 
+|Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. | 
 | Subject Key Identifier   | Mandatory |  | Octet string.  |
 | CRL Distribution Points   | Mandatory |   |  This extension must appear in all certificates and include at least an HTTP URI distribution point name.<BR>This profile recommends against the use of indirect CRLs or CRLs segmented by reasonCode. | 
 | Certificate Policies   | Mandatory  |  | Applicable certificate policies. |
 | Authority Key Identifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
-| Extended Key Usage   | Optional |  |  If included to support specific applications, this extension should be non-critical.<BR>The 3 values listed for keyPurposeID should be included for signing purposes:<BR>1.3.6.1.5.5.7.3.4 - Id-kp-emailProtection<BR>1.3.6.1.4.1.311.10.3.12 - MSFT Document Signing<BR>1.2.840.113583.1.1.5 - Adobe Certified Document Signing<BR>Additional key purposes may be specified.  |
+| Extended Key Usage   | Optional |  |  If included to support specific applications, this extension should be non-critical.<BR>The 3 values listed for keyPurposeID should be included for signing purposes:<br>- 1.3.6.1.5.5.7.3.4 - Id-kp-emailProtection<br>- 1.3.6.1.4.1.311.10.3.12 - MSFT Document Signing<br>- 1.2.840.113583.1.1.5 - Adobe Certified Document Signing<br>Additional key purposes may be specified.  |
 | Subject Alternative Name   | Optional  |  |   |
-| Subject Directory Attributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280.<sup>[2](#2)</sup><BR>countryOfCitizenship {1.3.6.1.5.5.7.9.4}<br>ISO 3166<sup>[3](#3)</sup> specifies country codes. | 
+| Subject Directory Attributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280.<sup>[2](#2)</sup><br>- countryOfCitizenship {1.3.6.1.5.5.7.9.4}<br>ISO 3166<sup>[3](#3)</sup> specifies country codes. | 
 | Issuer Alternative Name   | Optional  |  |   | 
 | Freshest CRL   | Optional  |  |   |
 
