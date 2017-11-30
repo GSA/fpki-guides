@@ -10,12 +10,12 @@ permalink: profiles/pivicontentsign/
 | :-------- | :---: | :---: | :-------------------------------     |
 | Version   |       |       | V3 (2)                                 |
 | Serial Number   |       |       | Must be unique. |
-| Issuer Signature Algorithm   |       |       |  One of the following:<br>sha256 WithRSAEncryption {1 2 840 113549 1 1 11}<br>ecdsa-with-SHA256 {1.2.840.10045.4.3.2}<br>ecdsa-with-SHA384 {1.2.840.10045.4.3.3}<br>ecdsa-with-SHA512 {1.2.840.10045.4.3.4}. | 
+| Issuer Signature Algorithm   |       |       |  One of the following:<br>sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>ecdsa-with-SHA256 {1.2.840.10045.4.3.2}<br>ecdsa-with-SHA384 {1.2.840.10045.4.3.3}<br>ecdsa-with-SHA512 {1.2.840.10045.4.3.4}. | 
 | Issuer Distinguished Name   |       |       |  Unique X.500 Issuing CA DN.  |
 | Validity Period   |       |       |  No longer than 9 years from date of issue.<BR>Expressed in UTCTime for dates until end of 2049 and GeneralizedTime for dates thereafter.  | 
 | Subject   |       |       |   Unique X.500 subject DN.   |
-| Subject Public Key Information   |       |       |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1 2 840 113549 1 1 1}.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-2.   |
-| Signature   |       |       |   sha256 WithRSAEncryption {1 2 840 113549 1 1 11}<BR>or ECDSA with appropriate Hash.   |
+| Subject Public Key Information   |       |       |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1.2.840.113549.1.1.1}.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-4.<sup>[1](#1)</sup>   |
+| Signature   |       |       |   sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>or ECDSA with appropriate Hash.   |
 |               |                 |              |                                       |
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
 | Key Usage  | Mandatory | True |  c=yes; digitalSignature.  | 
@@ -28,3 +28,6 @@ permalink: profiles/pivicontentsign/
 | Subject Alternative Name   | Optional  |  |   |
 | Issuer Alternative Name   | Optional  |  |   | 
 | Subject Directory Attribute   | Optional  |  |   | 
+
+------
+<a name="1">1</a>. NIST SP 800-78-4, _Cryptographic Algorithms and Key Sizes for Personal Identity Verification_, W. Timothy Polk, Donna F. Dodson, William E. Burr, Hildegard Ferraiolo, and David Cooper (May 2015).
