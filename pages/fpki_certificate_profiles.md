@@ -66,9 +66,9 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 | **Certificate Profile**           | **Shared<BR>Service<BR>Provider<BR>(SSP)<sup>[2](#2)</sup> <BR>**  | **Federal<BR>Bridge<BR>Certification<BR>Authority<BR>(FBCA)<sup>[3](#3)</sup> <BR>**     | **Personal<BR>Identity<BR>Verification<BR>Interoperable<BR>(PIV-I)<sup>[4](#4)</sup>**     | **Current<BR>**   |
 | :----------------------------------  | :---------:  | :-----------:    | :-----------:      | :-----------:      |
 | Self-Signed CA                       | 1            | 1                |               | [1]({{ site.baseurl }}/profiles/selfsignedca/)             |
-| Key Rollover CA                      | 2             | 2               |  1            | 2             |
-| Peer-to-Peer Cross-Certificate       | 3             | 3                |  2            | 3             |
-| Intermediate or Subordinate CA       | 3              | 3               |  2            | 4             |
+| Key Rollover CA                      | 2             | 2               |  1            | [2]({{ site.baseurl }}/profiles/keyrolloverca/             |
+| Peer-to-Peer Cross-Certificate       | 3             | 3                |  2            | [3]({{ site.baseurl }}/profiles/p2pcrosscert/)             |
+| Intermediate or Subordinate CA       | 3              | 3               |  2            | [4]({{ site.baseurl }}/profiles/intorsubca/)             |
 | CRL                                  | 4              | 4               |  3            | 5             |
 | End Entity Signature       |                | 5        |                 | 6             |
 | Common End Entity Signature       | 5              |              |               | 7             |
