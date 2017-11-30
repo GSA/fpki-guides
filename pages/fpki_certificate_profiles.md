@@ -66,25 +66,25 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 | **Certificate Profile**           | **Shared<BR>Service<BR>Provider<BR>(SSP)<sup>[2](#2)</sup> <BR>**  | **Federal<BR>Bridge<BR>Certification<BR>Authority<BR>(FBCA)<sup>[3](#3)</sup> <BR>**     | **Personal<BR>Identity<BR>Verification<BR>Interoperable<BR>(PIV-I)<sup>[4](#4)</sup>**     | **Current<BR>**   |
 | :----------------------------------  | :---------:  | :-----------:    | :-----------:      | :-----------:      |
 | Self-Signed CA                       | 1            | 1                |               | [1]({{ site.baseurl }}/profiles/selfsignedca/)             |
-| Key Rollover CA                      | 2             | 2               |  1            | [2]({{ site.baseurl }}/profiles/keyrolloverca/             |
+| Key Rollover CA                      | 2             | 2               |  1            | [2]({{ site.baseurl }}/profiles/keyrolloverca/)             |
 | Peer-to-Peer Cross-Certificate       | 3             | 3                |  2            | [3]({{ site.baseurl }}/profiles/p2pcrosscert/)             |
 | Intermediate or Subordinate CA       | 3              | 3               |  2            | [4]({{ site.baseurl }}/profiles/intorsubca/)             |
-| CRL                                  | 4              | 4               |  3            | 5             |
-| End Entity Signature       |                | 5        |                 | 6             |
-| Common End Entity Signature       | 5              |              |               | 7             |
-| PIV-I End Entity Signature       |                |              |  6            | 8             |
-| End Entity Key Management       |                |  6           |               | 9             |
-| Common End Entity Key Management       | 6               |             |               | 10             |
-| PIV-I End Entity Key Management       |                |             | 7              | 11             |
-| PIV Card Authentication       | 8               |             |               | 12             |
-| PIV-I Card Authentication       |                |             |  4             | 13             |
-| PIV Authentication       |  9              |             |               | 14             |
-| Common Derived PIV Authentication       |  11              |             |               | 15             |
-| PIV-I Authentication       |                |             |  5             | 16             |
-| Common PIV Content Signing       | 10               |             |               | 17             |
-| PIV-I Content Signing       |                |             |  8             | 18             |
-| Computing and Communications Devices       | 7               |             |               | 19             |
-| Delegated OCSP Responder       | 12               |             | 9             | 20             |
+| CRL                                  | 4              | 4               |  3            | [5]({{ site.baseurl }}/profiles/crl/)             |
+| End Entity Signature       |                | 5        |                 | [6]({{ site.baseurl }}/profiles/endentitysign/)             |
+| Common End Entity Signature       | 5              |              |               | [7]({{ site.baseurl }}/profiles/commonendentitysign/)             |
+| PIV-I End Entity Signature       |                |              |  6            | [8]({{ site.baseurl }}/profiles/pividigsign/)             |
+| End Entity Key Management       |                |  6           |               | [9]({{ site.baseurl }}/profiles/keymgmt/)             |
+| Common End Entity Key Management       | 6               |             |               | [10]({{ site.baseurl }}/profiles/commonkeymgmt/)             |
+| PIV-I End Entity Key Management       |                |             | 7              | [11]({{ site.baseurl }}/profiles/pivikeymgmt/)             |
+| PIV Card Authentication       | 8               |             |               | [12]({{ site.baseurl }}/profiles/commoncardauth/)             |
+| PIV-I Card Authentication       |                |             |  4             | [13]({{ site.baseurl }}/profiles/pivicardauth/)             |
+| PIV Authentication       |  9              |             |               | [14]({{ site.baseurl }}/profiles/pivauth/)             |
+| Common Derived PIV Authentication       |  11              |             |               | [15]({{ site.baseurl }}/profiles/derivedpivauth/)             |
+| PIV-I Authentication       |                |             |  5             | [16]({{ site.baseurl }}/profiles/piviauth/)             |
+| Common PIV Content Signing       | 10               |             |               | [17]({{ site.baseurl }}/profiles/commonpivcontentsign/)             |
+| PIV-I Content Signing       |                |             |  8             | [18]({{ site.baseurl }}/profiles/pivicontentsign/)             |
+| Computing and Communications Devices       | 7               |             |               | [19]({{ site.baseurl }}/profiles/devices/)             |
+| Delegated OCSP Responder       | 12               |             | 9             | [20]({{ site.baseurl }}/profiles/delegatedocsp/)             |
 
 -----------------
 <a name="1">1</a>. RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<br>
