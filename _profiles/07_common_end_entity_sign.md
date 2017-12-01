@@ -19,7 +19,7 @@ permalink: profiles/commonendentitysign/
 |               |                 |              |                                       |
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
 | Key Usage  | Mandatory | True |  digitalSignature, nonRepudiation. |
-| Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder. | 
+| Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URL for the Issuing CA OCSP Responder. | 
 | Subject Key Identifier   | Mandatory |  | Octet string.  |
 | CRL Distribution Points   | Mandatory |   |  This extension must appear in all certificates and must include at least an HTTP URI distribution point name.<br>This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>The reasons and cRLIssuer fields must be omitted.<!--New statement created redundancy. Wendy needs to adjust 2 statements.--> | 
 | Certificate Policies   | Mandatory  |  | Applicable certificate policies&mdash;at least one of:<BR>- 2.16.840.1.101.3.2.1.3.6 - id-fpki-common-policy<BR>- 2.16.840.1.101.3.2.1.3.7 - id-fpki-common-hardware<BR>- 2.16.840.1.101.3.2.1.3.16 - id-fpki-common-High. |
