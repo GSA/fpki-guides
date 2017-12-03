@@ -9,20 +9,20 @@ permalink: profiles/pivicontentsign/
 | **Field** |       |       | **Value**                             |
 | :-------- | :---: | :---: | :-------------------------------     |
 | Version   |       |       | V3 (2)                                 |
-| Serial Number   |       |       | Must be unique. |
+| Serial Number   |       |       | Must be a positive, unique number. |
 | Issuer Signature Algorithm   |       |       |  One of the following:<br>sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>ecdsa-with-SHA256 {1.2.840.10045.4.3.2}<br>ecdsa-with-SHA384 {1.2.840.10045.4.3.3}<br>ecdsa-with-SHA512 {1.2.840.10045.4.3.4}. | 
-| Issuer Distinguished Name   |       |       |  Unique X.500 Issuing CA DN.  |
+| Issuer   |       |       |  Unique X.500 Issuing CA DN.<br>PrintableString encoding should be used whenever possible for Issuer and Subject Distinguished Names.  |
 | Validity Period   |       |       |  No longer than 9 years from date of issue.<BR>Expressed in UTCTime for dates until end of 2049 and GeneralizedTime for dates thereafter.  | 
-| Subject   |       |       |   Unique X.500 subject DN.   |
+| Subject   |       |       |   Unique X.500 subject DN.<br>PrintableString encoding should be used whenever possible for Issuer and Subject Distinguished Names.   |
 | Subject Public Key Information   |       |       |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1.2.840.113549.1.1.1}.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-4.<sup>[1](#1)</sup>   |
 | Signature   |       |       |   sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>or ECDSA with appropriate Hash.   |
 |               |                 |              |                                       |
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
 | Key Usage  | Mandatory | True |  c=yes; digitalSignature.  | 
-| Extended Key Usage   | Mandatory  | True | Id-PIV-content-signing keyPurposeID {2.16.840.1.101.3.6.7} specifies that the public key may be used to verify signatures on PIV-I CHUIDs and PIV-I biometrics.  |
-|Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry contains HTTP URL for the Issuing CA OCSP Responder.<br>OCSP is required for PIV-I content-signer certificates.  |
+| Extended Key Usage   | Mandatory  | True | id-PIV-content-signing keyPurposeID {2.16.840.1.101.3.6.7} specifies that the public key may be used to verify signatures on PIV-I CHUIDs and PIV-I biometrics.  |
+| Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URL for the Issuing CA OCSP Responder.<br>OCSP is required for PIV-I content-signer certificates.  |
 | Subject Key Identifier   | Mandatory |  | Octet string.  |
-| CRL Distribution Points   | Mandatory |   |   | 
+| CRL Distribution Points   | Mandatory |   | This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>  | 
 | Certificate Policies   | Mandatory  |  | Must map to the FBCA PIV-I content-signing policy. |
 | Authority Key Identifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
 | Subject Alternative Name   | Optional  |  |   |
