@@ -24,7 +24,7 @@ permalink: profiles/devices/
 | Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URL for the Issuing CA OCSP Responder.  |
 | Subject Alternative Name   | Mandatory  |  |   | 
 | Basic Constraints   | Mandatory  |  |   | 
-| CRL DistributionPoints   | Mandatory |   | This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>  | 
+| CRL DistributionPoints   | Mandatory |   | This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code therefore the reasons and cRLIssuer fields must be omitted. | 
 | Certificate Policies   | Mandatory  |  | Applicable certificate policies must indicate device certificates.  |
 | Extended Key Usage   | Optional  |  |  | 
 | Subject Alternative Name   | Optional  |  | dnsName must be present for TLS public serverAuthentication certificates.<br>Other name forms may be present, based on certificate type.  | 
