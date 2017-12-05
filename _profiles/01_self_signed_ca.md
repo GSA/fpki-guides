@@ -18,7 +18,7 @@ permalink: profiles/selfsignedca/
 | Signature   |       |       |   sha256WithRSAEncryption {1.2.840.113549.1.1.11} or ECDSA with appropriate Hash.   |
 |               |                 |              |                                       |
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
-| Key Usage  | Mandatory | True |  keyCertSign<br>cRLSign<br>digitalSignature (optional)<br>nonRepudiation (optional).<br>DigitalSignature and nonRepudiation are allowed only when the CA also signs OCSP responses.  |
+| Key Usage  | Mandatory | True |  keyCertSign<br>cRLSign<br>digitalSignature (optional)<br>nonRepudiation (optional)<br>DigitalSignature and nonRepudiation are allowed only when the CA also signs OCSP responses.  |
 | Basic Constraints   | Mandatory | True |  cA=True; path length constraint not included. |
 | Subject Information Access   | Mandatory |  |  id-ad-caRepository {1.3.6.1.5.5.7.48.5} access method entry that contains at least one HTTP URL for .p7c file containing certificates issued by this CA.<br>Certificates may also include a URI name form to specify an LDAP accessible directory server.<br>Each URI must point to a location where CA certificates issued by the subject of this certificate may be found.  |
 | Subject Key Identifier   | Mandatory |  | Octet string   |
