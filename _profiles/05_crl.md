@@ -12,7 +12,7 @@ permalink: profiles/crl/
 | Issuer Signature Algorithm   |       |       |  Must match the Issuer Signature Algorithm of the CA’s certificate. One of the following: <br>sha256WithRSAEncryption {1.2.840.113549.1.1.11} <br>ecdsa-with-SHA256 {1.2.840.10045.4.3.2} <br>ecdsa-with-SHA384 {1.2.840.10045.4.3.3} <br>ecdsa-with-SHA512 {1.2.840.10045.4.3.4} | 
 | Issuer   |       |       |  Unique X.500 Issuing CA Distinguished Name (DN).<br>Issuer name should be encoded exactly as encoded in the Issuer fields of the certificates that are covered by this CRL.<br>PrintableString encoding should be used whenever possible for Issuer DNs. |
 | Effective Date   |       |       |  Expressed in UTCTime for dates until end of 2049 and GeneralizedTime for dates thereafter.  |
-| Next Upate   |       |       |  Expressed in UTCTime for dates until end of 2049 and GeneralizedTime for dates thereafter.  | 
+| Next Update   |       |       |  Expressed in UTCTime for dates until end of 2049 and GeneralizedTime for dates thereafter.  | 
 | Revoked Certificates List   |       |       |  0 or more 2-tuple of certificate serial number and revocation.<br>Expressed in UTCTime for dates until end of 2049 and GeneralizedTime for dates thereafter.  | 
 | Issuer's Signature   |       |       |   sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>or ECDSA with appropriate Hash.   |
 |               |                 |              |                                       |
