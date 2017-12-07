@@ -4,7 +4,7 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-These FPKI profiles have been simplified but retain the detailed parameter settings for X.509 version 3 certificates and version 2 certificate revocation lists (CRLs) issued under the FPKI Common Policy CP.<sup>[1](#1)</sup> They also give guidance for certificates under other CPs that are cross-certified with the Federal Bridge Certification Authority (FBCA).
+These FPKI profiles have been simplified but retain the detailed parameter settings for X.509 version 3 certificates and version 2 certificate revocation lists (CRLs) issued under the FPKI Common Policy CP.<sup>[1](#1)</sup> They also give guidance for certificates issued under other CPs that are cross-certified with the Federal Bridge Certification Authority (FBCA).
 
 **Note:**&nbsp;&nbsp;Certificate profile formats and semantics are defined by X.509 and further described in RFC 5280.<sup>[2](#2)</sup> The FPKI profiles state where they deviate from RFC 5280.
 
