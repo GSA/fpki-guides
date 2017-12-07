@@ -6,13 +6,13 @@ permalink: /certprofiles/
 
 These FPKI profiles have been simplified but retain the detailed parameter settings for X.509 version 3 certificates and version 2 certificate revocation lists (CRLs) issued under the FPKI Common Policy CP.<sup>[1](#1)</sup> They also give guidance for certificates whose issuing CAs are cross-certified with the Federal Bridge Certification Authority (FBCA).
 
-**Note:**&nbsp;&nbsp;Certificate profile formats and semantics are defined by X.509 and further described in RFC 5280.<sup>[2](#2)</sup> These FPKI profiles state where they deviate from RFC 5280.
+**Note:**&nbsp;&nbsp;Certificate profile formats and semantics are defined by X.509 and further described in RFC 5280.<sup>[2](#2)</sup> The FPKI profiles state where they deviate from RFC 5280.
 
 Eighteen (18) profiles covered by the FPKI Common Policy CP are defined, as well as profiles for the Online Certificate Status Protocol (OCSP) Responses and CRLs.
 
 ## Certificate and Extensions Profile Worksheets
 
-The FPKI profile will be published in the upcoming X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, FBCA, and PIV-I.
+The FPKI profiles will be published in the upcoming X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, FBCA, and PIV-I.
 
 The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matrix) maps the past-to-current profile worksheet numbering. (**Note:**&nbsp;&nbsp;Some profile worksheet titles have changed.)
 
