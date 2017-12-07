@@ -23,7 +23,7 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 [Worksheet 3. Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)<BR>
 [Worksheet 4. Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)<BR>
 
-### Personal Identity Verfication (PIV)
+### Personal Identity Verification (PIV)
 
 [Worksheet 7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<BR>
 [Worksheet 10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)<BR>
@@ -31,7 +31,7 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 [Worksheet 14. PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<BR>
 [Worksheet 17. Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)<BR>
 
-### Personal Identity Verfication&mdash;Interoperable (PIV-I)
+### Personal Identity Verification&mdash;Interoperable (PIV-I)
 
 [Worksheet 8. PIV-I Digital Signature]({{ site.baseurl }}/profiles/pividigsign/)<BR>
 [Worksheet 11. PIV-I Key Management]({{ site.baseurl }}/profiles/pivikeymgmt/)<BR>
@@ -52,7 +52,7 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 [Worksheet 6. End Entity Signature]({{ site.baseurl }}/profiles/endentitysign/)<BR>
 [Worksheet 9. Key Management]({{ site.baseurl }}/profiles/keymgmt/)
 
-### Certificate Revocation List (CRL) and Online Certificate Status Prototol (OCSP) Responder
+### CRL and OCSP Responder
 
 [Worksheet 5. CRL]({{ site.baseurl }}/profiles/crl/)<BR>
 [Worksheet 20. Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
@@ -84,7 +84,7 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 | Delegated OCSP Responder       | 12               |             | 9             | [20]({{ site.baseurl }}/profiles/delegatedocsp/)             |
 
 -----------------
-<a name="1">1</a>. _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_, v1.27, June 29, 2017.
+<a name="1">1</a>. _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_, v1.27, June 29, 2017.<br>
 <a name="2">2</a>. RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<br>
 <a name="3">3</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program_, July 17, 2017.<br>
 <a name="4">4</a>. _Federal Public Key Infrastructure (PKI) X.509 Certificate and CRL Extensions Profile_, July 17, 2017.<br>
