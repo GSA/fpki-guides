@@ -4,18 +4,15 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-Certificate profile formats and semantics are defined by X.509 and further described in RFC 5280.<sup>[1](#1)</sup> The Federal Public Key Infrastructure (FPKI) profiles (linked below) specify the unique, detailed parameter settings for X.509 v3 certificates and v2 certificate revocation lists (CRLs) issued under the _X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_). They also give guidance for those issued under other Certificate Policies that are cross-certified with the Federal Bridge Certification Authority (FBCA). Any FPKI deviations from RFC 5280 are noted in the profiles.
+These FPKI profiles have been simplified but retain the detailed parameter settings for X.509 version 3 certificates and version 2 certificate revocation lists (CRLs) issued under the FPKI Common Policy CP.<sup>[1](#1)</sup> They also give guidance for certificates whose issuing CAs are cross-certified with the Federal Bridge Certification Authority (FBCA).
 
-Eighteen (18) certificate profiles covered by the _Common Policy CP_ are defined, as well as profiles for the Online Certificate Status Protocol (OCSP) Responses and Certificate Revocation Lists (CRLs).
+**Note:**&nbsp;&nbsp;Certificate profile formats and semantics are defined by X.509 and further described in RFC 5280.<sup>[2](#2)</sup> These FPKI profiles state where they deviate from RFC 5280.
 
-------
-**Wendy's proposed wording of para. 2:** These profiles have been updated to simplify the format while retaining information about what extensions are required and a high level description of acceptable values.
-Certificate formats and semantics are defined in X.509, as further described in RFC 52801.  These profiles state where they deviate from the profiles defined in RFC 5280.
- **<Is the phrase, "detailed parameter settings?>** equal to **"what extensions are required and a high level description of acceptable values"?** **<If not, replace "detailed parameter settings" above with "required extensions and detailed descriptions of acceptable values.">**
+Eighteen (18) profiles covered by the FPKI Common Policy CP are defined, as well as profiles for the Online Certificate Status Protocol (OCSP) Responses and CRLs.
 
 ## Certificate and Extensions Profile Worksheets
 
-The FPKI profile worksheets will be published in the upcoming _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, Federal Bridge, and PIV-I_.
+The FPKI profile will be published in the upcoming X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, FBCA, and PIV-I.
 
 The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matrix) maps the past-to-current profile worksheet numbering. (**Note:**&nbsp;&nbsp;Some profile worksheet titles have changed.)
 
@@ -60,10 +57,10 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 [Worksheet 5. CRL]({{ site.baseurl }}/profiles/crl/)<BR>
 [Worksheet 20. Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
 
-<!--Historical profile worksheet naming for 8-13+15 doesn't match current worksheet naming. Validate with Wendy next week.-->
+<!--Wendy does not think we should add the new names in parentheses.-->
 ## Worksheet Numbers Traceability Matrix
 
-| **Certificate Profile**           | **Shared<BR>Service<BR>Provider<BR>(SSP)<sup>[2](#2)</sup> <BR>**  | **Federal<BR>Bridge<BR>Certification<BR>Authority<BR>(FBCA)<sup>[3](#3)</sup> <BR>**     | **Personal<BR>Identity<BR>Verification<BR>Interoperable<BR>(PIV-I)<sup>[4](#4)</sup>**     | **Current<BR>**   |
+| **Certificate Profile**           | **Shared<br>Service<br>Provider<br>(SSP)<sup>[3](#3)</sup><br>**  | **Federal<br>Bridge<br>Certification<br>Authority<br>(FBCA)<sup>[4](#4)</sup><br>**     | **Personal<br>Identity<br>Verification<br>Interoperable<br>(PIV-I)<sup>[5](#5)</sup>**     | **Current<br>**   |
 | :----------------------------------  | :---------:  | :-----------:    | :-----------:      | :-----------:      |
 | Self-Signed CA                       | 1            | 1                |               | [1]({{ site.baseurl }}/profiles/selfsignedca/)             |
 | Key Rollover CA                      | 2             | 2               |  1            | [2]({{ site.baseurl }}/profiles/keyrolloverca/)             |
@@ -87,8 +84,9 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 | Delegated OCSP Responder       | 12               |             | 9             | [20]({{ site.baseurl }}/profiles/delegatedocsp/)             |
 
 -----------------
-<a name="1">1</a>. RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<br>
-<a name="2">2</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program_, FPKIPA, Shared Service Provider Working Group, July 17, 2017.<br>
-<a name="3">3</a>. _Federal Public Key Infrastructure (PKI) X.509 Certificate and CRL Exensions Profile_, FPKIPA, July 17, 2017.<br>
-<a name="4">4</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards_, FPKIPA, PIV-I Tiger Team, July 17, 2017.
+<a name="1">1</a>. _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_, v1.27, June 29, 2017.
+<a name="2">2</a>. RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<br>
+<a name="3">3</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program_, July 17, 2017.<br>
+<a name="4">4</a>. _Federal Public Key Infrastructure (PKI) X.509 Certificate and CRL Extensions Profile_, July 17, 2017.<br>
+<a name="5">5</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards_, July 17, 2017.
 
