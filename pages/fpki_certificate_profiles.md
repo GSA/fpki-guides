@@ -4,40 +4,38 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-These FPKI profiles have been simplified but retain the detailed parameter settings for X.509 version 3 certificates and version 2 certificate revocation lists (CRLs) issued under the FPKI Common Policy CP.<sup>[1](#1)</sup> They also give guidance for certificates issued under other CPs that are cross-certified with the Federal Bridge Certification Authority (FBCA).
+These FPKI profiles have been simplified but retain the detailed parameter settings for X.509 version 3 certificates and version 2 certificate revocation lists (CRLs) issued under the FPKI Common Policy CP.<sup>[1](#1)</sup> They also give guidance for certificates issued under other CPs that are cross-certified with the Federal Bridge Certification Authority (FBCA). These profiles will be published in the upcoming X.509 Certificate and CRL Extensions Profile for the Shared Service Providers (SSP) Program, FBCA, and PIV-I.
 
 **Note:**&nbsp;&nbsp;Certificate profile formats and semantics are defined by X.509 and further described in RFC 5280.<sup>[2](#2)</sup> The FPKI profiles state where they deviate from RFC 5280.
 
 Eighteen (18) profiles covered by the FPKI Common Policy CP are defined, as well as profiles for the Online Certificate Status Protocol (OCSP) Responses and CRLs.
 
-## Certificate and Extensions Profile Worksheets
+## Certificate and CRL Extensions Profile Worksheets
 
-The FPKI profiles will be published in the upcoming X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program, FBCA, and PIV-I.
-
-The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matrix) maps the past-to-current profile worksheet numbering. (**Note:**&nbsp;&nbsp;Some profile worksheet titles have changed.)
+The 20 profile worksheets are linked below by category. See the [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matrix) for the past-to-current profile worksheet numbering. (**Note:**&nbsp;&nbsp;Some profile worksheet titles have changed.)
 
 ### Certification Authority (CA) 
  
-[Worksheet 1. Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)<BR>
-[Worksheet 2. Key Rollover CA]({{ site.baseurl }}/profiles/keyrolloverca/)<BR>
-[Worksheet 3. Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)<BR>
-[Worksheet 4. Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)<BR>
+[Worksheet 1. Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)<br>
+[Worksheet 2. Key Rollover CA]({{ site.baseurl }}/profiles/keyrolloverca/)<br>
+[Worksheet 3. Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)<br>
+[Worksheet 4. Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)<br>
 
 ### Personal Identity Verification (PIV)
 
-[Worksheet 7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<BR>
-[Worksheet 10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)<BR>
-[Worksheet 12. Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)<BR>
-[Worksheet 14. PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<BR>
-[Worksheet 17. Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)<BR>
+[Worksheet 7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<br>
+[Worksheet 10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)<br>
+[Worksheet 12. Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)<br>
+[Worksheet 14. PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<br>
+[Worksheet 17. Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)<br>
 
 ### Personal Identity Verification&mdash;Interoperable (PIV-I)
 
-[Worksheet 8. PIV-I Digital Signature]({{ site.baseurl }}/profiles/pividigsign/)<BR>
-[Worksheet 11. PIV-I Key Management]({{ site.baseurl }}/profiles/pivikeymgmt/)<BR>
-[Worksheet 13. PIV-I Card Authentication]({{ site.baseurl }}/profiles/pivicardauth/)<BR>
-[Worksheet 16. PIV-I Authentication]({{ site.baseurl }}/profiles/piviauth/)<BR>
-[Worksheet 18. PIV-I Content Signing]({{ site.baseurl }}/profiles/pivicontentsign/)<BR>
+[Worksheet 8. PIV-I Digital Signature]({{ site.baseurl }}/profiles/pividigsign/)<br>
+[Worksheet 11. PIV-I Key Management]({{ site.baseurl }}/profiles/pivikeymgmt/)<br>
+[Worksheet 13. PIV-I Card Authentication]({{ site.baseurl }}/profiles/pivicardauth/)<br>
+[Worksheet 16. PIV-I Authentication]({{ site.baseurl }}/profiles/piviauth/)<br>
+[Worksheet 18. PIV-I Content Signing]({{ site.baseurl }}/profiles/pivicontentsign/)<br>
 
 ### Derived PIV
 
@@ -49,15 +47,14 @@ The [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matr
 
 ### FBCA
 
-[Worksheet 6. End Entity Signature]({{ site.baseurl }}/profiles/endentitysign/)<BR>
+[Worksheet 6. End Entity Signature]({{ site.baseurl }}/profiles/endentitysign/)<br>
 [Worksheet 9. Key Management]({{ site.baseurl }}/profiles/keymgmt/)
 
 ### CRL and OCSP Responder
 
-[Worksheet 5. CRL]({{ site.baseurl }}/profiles/crl/)<BR>
+[Worksheet 5. CRL]({{ site.baseurl }}/profiles/crl/)<br>
 [Worksheet 20. Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
 
-<!--Wendy does not think we should add the new names in parentheses.-->
 ## Worksheet Numbers Traceability Matrix
 
 | **Certificate Profile**           | **Shared<br>Service<br>Provider<br>(SSP)<sup>[3](#3)</sup><br>**  | **Federal<br>Bridge<br>Certification<br>Authority<br>(FBCA)<sup>[4](#4)</sup><br>**     | **Personal<br>Identity<br>Verification<br>Interoperable<br>(PIV-I)<sup>[5](#5)</sup>**     | **Current<br>**   |
