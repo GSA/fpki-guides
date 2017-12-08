@@ -20,7 +20,7 @@ permalink: profiles/commonendentitysign/
 | **Extension** |  **Required**   | **Critical** | **Value**                             |
 | Key Usage  | Mandatory | True |  digitalSignature<br>nonRepudiation |
 | Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<BR>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URL for the Issuing CA OCSP Responder. | 
-| Subject Key Identifier   | Mandatory |  | Octet string.  |
+| Subject Key Identifier   | Mandatory |  | Octet string  |
 | CRL Distribution Points   | Mandatory |   |  This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, the reasons and cRLIssuer fields must be omitted. | 
 | Certificate Policies   | Mandatory  |  | At least one of the applicable certificate policies:<br>id-fpki-common-policy  {2.16.840.1.101.3.2.1.3.6}<br>id-fpki-common-hardware {2.16.840.1.101.3.2.1.3.7}<br> id-fpki-common-High {2.16.840.1.101.3.2.1.3.16}  |
 | Authority Key Identifier   | Mandatory  |  | Octet string (same as subject key identifier in Issuing CA certificate). |
