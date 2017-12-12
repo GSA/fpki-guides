@@ -4,12 +4,14 @@ title: PIV Authentication
 permalink: profiles/allpivauth/
 ---
 
-This profile combines and updates the previous _Worksheets 9 and 11_ (SSP<sup>[1](#1)</sup>) and _Worksheet 5_ (PIV-I<sup>[2](#2)</sup>).
+This profile worksheet combines and updates the parameter settings for PIV, PIV-I, and Derived PIV Authentication. This information was previously published in _Worksheets 9 and 11_ (SSP<sup>[1](#1)</sup>) and _Worksheet 5_ (PIV-I<sup>[2](#2)</sup>).
 
-**These requirements from Section 7, except for "OCSP Port 80," are already given in the Worksheet. Purpose of reiterating these as an Intro? **
+**Note:**&nbsp;&nbsp;Critical extensions that are not listed in these worksheets must NOT be included in certificates or CRLs issued under the Common Policy CP.
+
+**These Section 7 requirements, except for the "OCSP Port 80" statement, are already given in the Worksheet, so they add 95% redundant information.**
 
 ### PIV Authentication Extensions
-<!--Why are these being called out? New requirements?-->
+
 * The Online Certificate Status Protocol (OCSP) server must respond on Port 80 to provide certificate statuses. 
 * _Authority Information Access_ must include an access method of type id-ad-ocsp. The access location must be an HTTP Uniform Resource Identifier (URI).
 * _Certificate Policies_ must assert the id-fpki-common-authentication policy OID.
@@ -17,7 +19,7 @@ This profile combines and updates the previous _Worksheets 9 and 11_ (SSP<sup>[1
 * _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
 * _PIV Interim_ must state that the Subject's National Agency Check with Inquiries (NACI) has been completed and successfully adjudicated at certificate issuance.
 
-### PIV-I Authentication Extensions
+### Derived PIV Authentication Extensions
 
 * _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
 * _PIV Interim_ must state that the Subject's NACI has been completed and successfully adjudicated at certificate issuance.
@@ -26,7 +28,7 @@ This profile combines and updates the previous _Worksheets 9 and 11_ (SSP<sup>[1
 
 | **Field**  | **Value**                             |
 | :--------  | :-------------------------------     |
-| Version   | V3 (2)                                 |
+| Version   | V3                                 |
 | Serial Number    | Must be a unique, positive number. |
 | Issuer Signature Algorithm   |  One of the following:<br>sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>ecdsa-with-SHA256 {1.2.840.10045.4.3.2}<br>ecdsa-with-SHA384 {1.2.840.10045.4.3.3}<br>ecdsa-with-SHA512 {1.2.840.10045.4.3.4} | 
 | Issuer   |  Unique X.500 Issuing CA Distinguished Name (DN).<br>PrintableString encoding should be used whenever possible for Issuer and Subject DNs. |
@@ -38,6 +40,7 @@ This profile combines and updates the previous _Worksheets 9 and 11_ (SSP<sup>[1
 
 | **Extension** |  **Required**   | **Critical** | **14. PIV** | **16. PIV-I** |  **15. Derived PIV**  |
 | :-------- | :---: | :---: | :---- | :-----  | :-----     |
+| Source  |  |  |    | [a link](https://github.com/GSA/fpki-guides/blob/145-cert-profiles-migrate/_profiles/14_piv_auth.md)  | digitalSignature  |
 | Key Usage  | Mandatory | True |  digitalSignature  | digitalSignature  | digitalSignature  |
 | Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required for common Authentication.  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required for common Authentication.  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required for common Derived PIVAuth and Derived PIVAuth Hardware.  |
 | Subject Key Identifier   | Mandatory |  | Octet string  | Octet string  | Octet string  |
