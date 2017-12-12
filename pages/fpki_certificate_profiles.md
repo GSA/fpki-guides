@@ -4,15 +4,17 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-These FPKI profiles have been simplified, since their July 2017 publication, but retain the detailed parameter settings for X.509 version 3 certificates and version 2 certificate revocation lists (CRLs) issued under the FPKI Common Policy CP.<sup>[1](#1)</sup> They also give guidance for certificates issued under other CPs that are cross-certified with the Federal Bridge Certification Authority (FBCA). These profiles will be published in the upcoming X.509 Certificate and CRL Extensions Profile for the Shared Service Providers (SSP) Program, FBCA, and PIV-I.
+These profiles have been simplified (since July 2017) to increase certificate compatibility across federal, state, local, tribal, and commercial PKI communities. They still retain the required settings for the X.509 v3 certificates and v2 certificate revocation lists (CRLs) issued under the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_.<sup>[1](#1)</sup> They also give guidance for certificates issued under other CPs cross-certified with the Federal Bridge Certification Authority (FBCA). 
+
+These profiles will be published in the upcoming X.509 Certificate and CRL Extensions Profile for the Shared Service Providers (SSP) Program, FBCA, and PIV-I.
 
 **Note:**&nbsp;&nbsp;Certificate profile formats and semantics are defined by X.509 and further described in RFC 5280.<sup>[2](#2)</sup> The FPKI profiles state where they deviate from RFC 5280.
 
-Eighteen (18) profiles covered by the FPKI Common Policy CP are defined, as well as profiles for the Online Certificate Status Protocol (OCSP) Responses and CRLs.
-
 ## Certificate and CRL Extensions Profile Worksheets
 
-The 20 profile worksheets are linked below by category. See the [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matrix) for the past-to-current profile worksheet numbering. (**Note:**&nbsp;&nbsp;Some profile worksheet titles have changed.)
+Twenty (20) profiles have been defined for the Common Policy CP. **FBCA?**
+
+To trace the past-to-current profile numbering, see the [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matrix). (**Note:**&nbsp;&nbsp;Some profile worksheet titles have changed.)
 
 ### Certification Authority (CA) 
  
