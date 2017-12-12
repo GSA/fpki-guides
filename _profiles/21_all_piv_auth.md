@@ -4,20 +4,23 @@ title: PIV Authentication
 permalink: profiles/allpivauth/
 ---
 
-## Historical Profile Worksheet Numbering:
+This profile combines and updates the previous _Worksheets 9 and 11_ (SSP<sup>[1](#1)</sup>) and _Worksheet 5_ (PIV-I<sup>[2](#2)</sup>).
 
-This profile combines and updates the previous _Worksheets 9 and 11_ (SSP)<sup>[1](#1)</sup>) and _Worksheet 5_ (PIV-I<sup>[2](#2)</sup>).
+**These requirements from Section 7, except for "OCSP Port 80," are already given in the Worksheet. Purpose of reiterating these as an Intro? **
 
-## General Guidance <!--Is this info.=changed guidance from the July 17, 2017, certificate profile documents?-->
+### PIV Authentication Extensions
+<!--Why are these being called out? New requirements?-->
+* The Online Certificate Status Protocol (OCSP) server must respond on Port 80 to provide certificate statuses. 
+* _Authority Information Access_ must include an access method of type id-ad-ocsp. The access location must be an HTTP Uniform Resource Identifier (URI).
+* _Certificate Policies_ must assert the id-fpki-common-authentication policy OID.
+* _Subject Alternative Name_ must include the Federal Agency Smart Card Number (FASC-N) from the PIV card that holds the certificates. The Subject Alternative Name may contain name forms beyond the FASC-N and Universally Unique Identifier (UUID) when required by applications with which the certificate will be used.
+* _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
+* _PIV Interim_ must state that the Subject's National Agency Check with Inquiries (NACI) has been completed and successfully adjudicated at certificate issuance.
 
-**Although all of this information from Section 7 is given within the Profile (except for Port 80 info), should we reiterate this as an Intro?**
+### PIV-I Authentication Extensions
 
-* (revised) For PIV Authentication certificates, an Online Certificate Status Protocol (OCSP) server must respond on Port 80 to provide certificate statuses. The Authority Information Access extension must include an access method of type id-ad-ocsp. The access location must be an HTTP Unformation Resource Identifier (URI).
-* PIV Authentication certificates must assert the id-fpki-common-authentication policy OID.
-* (revised) PIV Authentication certificates must include a Subject Alternative Name extension that includes the Federal Agency Smart Card Number (FASC-N) from the PIV Card that holds the certificates. The Subject Alternative Name extension in PIV Authentication certificates may contain any name forms in addition to the FASC-N and UUID that are required by the applications with which the certificate will be used.
-* (revised) PIV and Derived PIV Authentication certificates must not set a Key Usage bit of nonRepudiation.
-* (revised) PIV and Derived PIV Authentication certificates must include a PIV Interim extension indicating where the subject's NACI has been completed and successfully adjudicated at certificate issuance. 
-* (revised) FIPS 201 requires that certificates that can be used to verify signatures on the CHUID or biometric data on PIV Cards include an Extended Key Usage extension that asserts id-PIV-content-signing.  After October 15, 2015 the id-PIV-content-signing EKU can only be asserted in Common PIV ContentSigning certificates (i.e. the certificate must assert the id-fpki-common-piv-contentSigning certificate policy). 
+* _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
+* _PIV Interim_ must state that the Subject's NACI has been completed and successfully adjudicated at certificate issuance.
 
 ## Worksheet XX:&nbsp;&nbsp;PIV, PIV-I, and Derived PIV Authentication Certificate Profile
 
@@ -36,7 +39,7 @@ This profile combines and updates the previous _Worksheets 9 and 11_ (SSP)<sup>[
 | **Extension** |  **Required**   | **Critical** | **14. PIV** | **16. PIV-I** |  **15. Derived PIV**  |
 | :-------- | :---: | :---: | :---- | :-----  | :-----     |
 | Key Usage  | Mandatory | True |  digitalSignature  | digitalSignature  | digitalSignature  |
-| Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URL for the Issuing CA OCSP Responder.<br>OCSP is required for common Authentication.  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URL for the Issuing CA OCSP Responder.<br>OCSP is required for common Authentication.  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URL for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URL for the Issuing CA OCSP Responder.<br>OCSP is required for common Derived PIVAuth and Derived PIVAuth Hardware.  |
+| Authority Information Access   | Mandatory  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required for common Authentication.  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required for common Authentication.  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required for common Derived PIVAuth and Derived PIVAuth Hardware.  |
 | Subject Key Identifier   | Mandatory |  | Octet string  | Octet string  | Octet string  |
 | CRL Distribution Points   | Mandatory |   |  This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, omit the reasons and cRLIssuer fields. | This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, omit the reasons and cRLIssuer fields. | This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, omit the reasons and cRLIssuer fields. | 
 | Certificate Policies   | Mandatory  |  | Applicable certificate policy:<br>id-fpki-common-authentication {2.16.840.1.101.3.2.1.3.13}  | Applicable certificate policy:<br>id-fpki-certpcy-pivi-hardware {2.16.840.1.101.3.2.1.3.18}  | Applicable certificate policy:<br>id-fpki-common-derived-pivAuth {2.16.840.1.101.3.2.1.3.40} <br>id-fpki-common-derived-pivAuth-hardware {2.16.840.1.101.3.2.1.3.41}   |
