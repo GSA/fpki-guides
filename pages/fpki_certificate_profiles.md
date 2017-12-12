@@ -4,7 +4,7 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-These profiles have been simplified (since July 2017) to increase certificate compatibility across federal, state, local, tribal, and commercial PKI communities. They still retain the required settings for the X.509 v3 certificates and v2 certificate revocation lists (CRLs) issued under the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_.<sup>[1](#1)</sup> They also give guidance for certificates issued under other CPs cross-certified with the Federal Bridge Certification Authority (FBCA). 
+These profiles have been simplified (since July 2017) to increase certificate compatibility across federal, state, local, tribal, and commercial PKI communities. They still retain the required settings for the X.509 v3 certificates and v2 certificate revocation lists (CRLs) issued under the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_.<sup>[1](#1)</sup> They also give guidance for certificates issued under other Certificate Policies cross-certified with the Federal Bridge Certification Authority (FBCA). 
 
 These profiles will be published in the upcoming X.509 Certificate and CRL Extensions Profile for the Shared Service Providers (SSP) Program, FBCA, and PIV-I.
 
