@@ -6,7 +6,7 @@ permalink: profiles/allpivauth/
 
 This profile specifies the updated settings for PIV, PIV-I, and Derived PIV Authentication certificates. (These profiles were published previously as _SSP<sup>[1](#1)</sup> Worksheets 9_ and _11_ and _PIV-I<sup>[2](#2)</sup> Worksheet 5_.)
 
-X.509 v3 certificates contain identity and attribute data for a subject using a base certificate with extensions. The base certificate contains information such as:  certificate version number, certificate’s identifying serial number, the signature algorithm used to sign the certificate, the issuer’s Distinguished Name (DN), the certificate's validity period, the subject's DS, and the subject’s public key. Extension are added to further define *add relevant information here*. See _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup> for detailed certificate information.
+X.509 v3 certificates contain identity and attribute data for a subject using a base certificate with extensions. The base certificate contains information such as:  certificate version number, certificate’s identifying serial number, the signature algorithm used to sign the certificate, the issuer’s Distinguished Name (DN), the certificate's validity period, the subject's DS, and the subject’s public key. Extension are added to further define **add relevant information here**. See _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup> for detailed certificate information.
 
 * **These extracted Section 7 requirements, except for the "OCSP Port 80" statement, are already given in the combined Profile, so they add about 95% redundant information.**
 
