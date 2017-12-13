@@ -14,13 +14,13 @@ To trace the past-to-current profile numbering, see the [Worksheet Numbers Trace
 
 Nine profiles have been defined:
 
-Worksheet 1. PIV, Derived PIV, and PIV-I Authentication<br>
-Worksheet 2. PIV Card Auth, PIV-I Card Auth<br>
-Worksheet 3. PIV Key Management, PIV-I Key Management, FBCA Key Management<br>
-Worksheet 4. End Entity Signature / PIV, PIV-I Dig Sig, FBCA End Entity Signature<br>
-Worksheet 5. PIV Content Signing, PIV-I Content Signing<br>
-Worksheet 6. CA Certificates (all four)<br>
-Worksheet 7. Devices<br>
+[Worksheet 1. PIV Authentication, Derived PIV Authentication, and PIV-I Authentication]({{ site.baseurl }}/profiles/allpivauth/<br>
+Worksheet 2. PIV Card Authentication and PIV-I Card Authentication<br>
+Worksheet 3. PIV Key Management, PIV-I Key Management, and FBCA Key Management<br>
+Worksheet 4. **PIV?** Common End Entity Signature, (FBCA) End Entity Signature, and PIV-I Digital Signature<br>
+Worksheet 5. PIV Content Signing and PIV-I Content Signing<br>
+Worksheet 6. Self-Signed CA, Key Rollover CA, Peer-to-Peer Cross Certificate and Intermediate or Subordinate CA<br>
+Worksheet 7. Devices (Computing and Communications Devices)<br>
 Worksheet 8. CRL<br>
 Worksheet 9. OCSP<br>
 
@@ -28,7 +28,7 @@ Worksheet 9. OCSP<br>
 
 | **Certificate Profile**           | **Shared<br>Service<br>Provider<br>(SSP)<sup>[3](#3)</sup><br>**  | **Federal<br>Bridge<br>Certification<br>Authority<br>(FBCA)<sup>[4](#4)</sup><br>**     | **Personal<br>Identity<br>Verification<br>Interoperable<br>(PIV-I)<sup>[5](#5)</sup>**     | **Current<br>**   |
 | :----------------------------------  | :---------:  | :-----------:    | :-----------:      | :-----------:      |
-| Self-Signed CA                       | 1            | 1                |               | [6]({{ site.baseurl }}/profiles/selfsignedca/)             |
+| Self-Signed CA                       | 1            | 1                |               | [6]({{ site.baseurl }}/profiles/xxxx/)             |
 | Key Rollover CA                      | 2             | 2               |  1            | [6]({{ site.baseurl }}/profiles/keyrolloverca/)             |
 | Peer-to-Peer Cross-Certificate       | 3             | 3                |  2            | [6]({{ site.baseurl }}/profiles/p2pcrosscert/)             |
 | Intermediate or Subordinate CA       | 3              | 3               |  2            | [6]({{ site.baseurl }}/profiles/intorsubca/)             |
