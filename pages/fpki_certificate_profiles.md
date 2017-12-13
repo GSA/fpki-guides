@@ -36,7 +36,7 @@ Nine profiles have been defined:
 | PIV Card Authentication       | 8               |             |               | [2]({{ site.baseurl }}/profiles/commoncardauth/)             |
 | PIV-I Card Authentication       |                |             |  4             | [2]({{ site.baseurl }}/profiles/pivicardauth/)             |
 | (PIV?) (Common) End Entity Key Management       | 6               |             |               | [3]({{ site.baseurl }}/profiles/commonkeymgmt/)    |
-| PIV-I Key Management       |                |             | 7              | [3]({{ site.baseurl }}/profiles/pivikeymgmt/)             |
+| PIV-I Key Management       |                |             | 7              | [3]({{ site.baseurl }}/profiles/pivikeymgmt/)   |
 | (FBCA?) (End Entity) Key Management       |                |  6           |               | [3]({{ site.baseurl }}/profiles/keymgmt/)
              |
 | Common End Entity Signature       | 5              |              |               | [4]({{ site.baseurl }}/profiles/commonendentitysign/)             |
