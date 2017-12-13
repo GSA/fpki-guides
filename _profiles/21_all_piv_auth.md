@@ -4,25 +4,36 @@ title: PIV Authentication
 permalink: profiles/allpivauth/
 ---
 
-This profile worksheet combines and updates the parameter settings for PIV, PIV-I, and Derived PIV Authentication. This information was previously published in _Worksheets 9 and 11_ (SSP<sup>[1](#1)</sup>) and _Worksheet 5_ (PIV-I<sup>[2](#2)</sup>).
+This profile combines three previously separate Authentication profiles:&nbsp;&nbsp;PIV, PIV-I, and Derived PIV. These profiles were published previously as _Worksheets 9 and 11_ (SSP<sup>[1](#1)</sup>) and _Worksheet 5_ (PIV-I<sup>[2](#2)</sup>).
 
-**Note:**&nbsp;&nbsp;Critical extensions that are not listed in these worksheets must NOT be included in certificates or CRLs issued under the Common Policy CP.
+**These extracted Section 7 requirements, except for the "OCSP Port 80" statement, are already given in the combine Worksheet, so they add 95% redundant information.**
 
-**These Section 7 requirements, except for the "OCSP Port 80" statement, are already given in the Worksheet, so they add 95% redundant information.**
+**Note:**&nbsp;&nbsp;Critical extensions that are not listed in these worksheets MUST NOT be included in certificates or CRLs issued under the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, Common Policy CP). Certificate and CRL issuers may include additional information in non-critical extensions for local use but should not expect clients in the Federal PKI to process this information.  
 
-### PIV Authentication Extensions
+## Extension Requirements
+
+### PIV Authentication
 
 * The Online Certificate Status Protocol (OCSP) server must respond on Port 80 to provide certificate statuses. 
 * _Authority Information Access_ must include an access method of type id-ad-ocsp. The access location must be an HTTP Uniform Resource Identifier (URI).
 * _Certificate Policies_ must assert the id-fpki-common-authentication policy OID.
-* _Subject Alternative Name_ must include the Federal Agency Smart Card Number (FASC-N) from the PIV card that holds the certificates. The Subject Alternative Name may contain name forms beyond the FASC-N and Universally Unique Identifier (UUID) when required by applications with which the certificate will be used.
+* _Subject Alternative Name_ must include the Federal Agency Smart Card Number (FASC-N) and Universally Unique Identifier UUID<!--UUID from section 7.2--> from the PIV card that holds the certificates. The Subject Alternative Name may contain name forms beyond the FASC-N and UUID when required by applications with which the certificate will be used.
 * _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
 * _PIV Interim_ must state that the Subject's National Agency Check with Inquiries (NACI) has been completed and successfully adjudicated at certificate issuance.
 
-### Derived PIV Authentication Extensions
+### Derived PIV Authentication
 
 * _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
 * _PIV Interim_ must state that the Subject's NACI has been completed and successfully adjudicated at certificate issuance.
+
+### PIV-I Authentication Extensions
+
+**Add note about certificates issued under the FBCA?**
+
+* The Online Certificate Status Protocol (OCSP) server must respond on Port 80 to provide certificate statuses. 
+* _Authority Information Access_ must include an access method of type id-ad-ocsp. The access location must be an HTTP Uniform Resource Identifier (URI).
+* _Subject Alternative Name_ must include the UUID from the PIV-I card that holds the certificates and NOT include any other name forms.
+* _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
 
 ## Worksheet XX:&nbsp;&nbsp;PIV, PIV-I, and Derived PIV Authentication Certificate Profile
 
