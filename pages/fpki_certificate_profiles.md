@@ -19,7 +19,7 @@ Nine profiles have been defined:
 * Worksheet 3. PIV Key Management, PIV-I Key Management, and FBCA Key Management<br>
 * Worksheet 4. **PIV?** Common End Entity Signature, (FBCA) End Entity Signature, and PIV-I Digital Signature<br>
 * Worksheet 5. PIV Content Signing and PIV-I Content Signing<br>
-* Worksheet 6. Self-Signed CA, Key Rollover CA, Peer-to-Peer Cross Certificate and Intermediate or Subordinate CA<br>
+* Worksheet 6. Self-Signed CA, Key Rollover CA, Peer-to-Peer Cross Certificate, and Intermediate or Subordinate CA<br>
 * Worksheet 7. Devices <!--renamed Computing and Communications Devices--><br>
 * Worksheet 8. Certificate Revocation List (CRL)<br>
 * Worksheet 9. Online Certificate Status Protocol (OCSP)<br>
@@ -30,26 +30,27 @@ Nine profiles have been defined:
 
 | **Certificate Profile**           | **Shared<br>Service<br>Provider<br>(SSP)<sup>[4](#4)</sup><br>**  | **Federal<br>Bridge<br>Certification<br>Authority<br>(FBCA)<sup>[5](#5)</sup><br>**     | **Personal<br>Identity<br>Verification<br>Interoperable<br>(PIV-I)<sup>[6](#6)</sup>**     | **Current<br>**   |
 | :----------------------------------  | :---------:  | :-----------:    | :-----------:      | :-----------:      |
+| PIV Authentication       |  9              |             |               | [1]({{ site.baseurl }}/profiles/all pivauth/)       |
+| Derived PIV Authentication       |  11              |             |               | [1]({{ site.baseurl }}/profiles/allpivauth/)             |
+| PIV-I Authentication       |                |             |  5             | [1]({{ site.baseurl }}/profiles/allpivauth/)    |
+| PIV Card Authentication       | 8               |             |               | [2]({{ site.baseurl }}/profiles/commoncardauth/)             |
+| PIV-I Card Authentication       |                |             |  4             | [2]({{ site.baseurl }}/profiles/pivicardauth/)             |
+| (PIV?) (Common) End Entity Key Management       | 6               |             |               | [3]({{ site.baseurl }}/profiles/commonkeymgmt/)    |
+| PIV-I Key Management       |                |             | 7              | [3]({{ site.baseurl }}/profiles/pivikeymgmt/)             |
+| (FBCA?) (End Entity) Key Management       |                |  6           |               | [3]({{ site.baseurl }}/profiles/keymgmt/)
+             |
+| Common End Entity Signature       | 5              |              |               | [4]({{ site.baseurl }}/profiles/commonendentitysign/)             |
+| (FBCA?) End Entity Signature       |                | 5        |                 | [4]({{ site.baseurl }}/profiles/endentitysign/)             |
+| PIV-I Digital Signature       |                |              |  6            | [4]({{ site.baseurl }}/profiles/pividigsign/)             |
+| (Common) PIV Content Signing       | 10               |             |               | [5]({{ site.baseurl }}/profiles/commonpivcontentsign/)             |
+| PIV-I Content Signing       |                |             |  8             | [5]({{ site.baseurl }}/profiles/pivicontentsign/)             |
 | Self-Signed CA                       | 1            | 1                |               | [6]({{ site.baseurl }}/profiles/xxxx/)             |
 | Key Rollover CA                      | 2             | 2               |  1            | [6]({{ site.baseurl }}/profiles/keyrolloverca/)             |
 | Peer-to-Peer Cross-Certificate       | 3             | 3                |  2            | [6]({{ site.baseurl }}/profiles/p2pcrosscert/)             |
 | Intermediate or Subordinate CA       | 3              | 3               |  2            | [6]({{ site.baseurl }}/profiles/intorsubca/)             |
+| Devices (Computing and Communications Devices)       | 7               |             |               | [7]({{ site.baseurl }}/profiles/devices/)             |
 | CRL                                  | 4              | 4               |  3            | [8]({{ site.baseurl }}/profiles/crl/)             |
-| End Entity Signature       |                | 5        |                 | [4]({{ site.baseurl }}/profiles/endentitysign/)             |
-| Common End Entity Signature       | 5              |              |               | [4]({{ site.baseurl }}/profiles/commonendentitysign/)             |
-| PIV-I End Entity Signature       |                |              |  6            | [4]({{ site.baseurl }}/profiles/pividigsign/)             |
-| End Entity Key Management       |                |  6           |               | [3]({{ site.baseurl }}/profiles/keymgmt/)             |
-| Common End Entity Key Management       | 6               |             |               | [3]({{ site.baseurl }}/profiles/commonkeymgmt/)             |
-| PIV-I End Entity Key Management       |                |             | 7              | [3]({{ site.baseurl }}/profiles/pivikeymgmt/)             |
-| PIV Card Authentication       | 8               |             |               | [2]({{ site.baseurl }}/profiles/commoncardauth/)             |
-| PIV-I Card Authentication       |                |             |  4             | [2]({{ site.baseurl }}/profiles/pivicardauth/)             |
-| PIV Authentication       |  9              |             |               | [1]({{ site.baseurl }}/profiles/all pivauth/)             |
-| Common Derived PIV Authentication       |  11              |             |               | [1]({{ site.baseurl }}/profiles/allpivauth/)             |
-| PIV-I Authentication       |                |             |  5             | [1]({{ site.baseurl }}/profiles/allpivauth/)             |
-| Common PIV Content Signing       | 10               |             |               | [5]({{ site.baseurl }}/profiles/commonpivcontentsign/)             |
-| PIV-I Content Signing       |                |             |  8             | [5]({{ site.baseurl }}/profiles/pivicontentsign/)             |
-| Computing and Communications Devices       | 7               |             |               | [7]({{ site.baseurl }}/profiles/devices/)             |
-| Delegated OCSP Responder       | 12               |             | 9             | [9]({{ site.baseurl }}/profiles/delegatedocsp/)             |
+| OCSP       | 12               |             | 9             | [9]({{ site.baseurl }}/profiles/delegatedocsp/)             |
 
 -----------------
 <a name="1">1</a>. _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_, v1.27, June 29, 2017.<br>
