@@ -4,9 +4,9 @@ title: PIV Authentication
 permalink: profiles/allpivauth/
 ---
 
-This profile specifies the updated settings for PIV, PIV-I, and Derived PIV Authentication certificates. (These profiles were published previously as _Worksheets 9 and 11_ [SSP<sup>[1](#1)</sup>] and _Worksheet 5_ [PIV-I<sup>[2](#2)</sup>].)
+This profile specifies the updated settings for PIV, PIV-I, and Derived PIV Authentication certificates. (These profiles were published previously as _SSP Worksheets 9_ and _11_ [SSP<sup>[1](#1)</sup>] and _PIV-I Worksheet 5_ [PIV-I<sup>[2](#2)</sup>].)
 
-**These extracted Section 7 requirements, except for the "OCSP Port 80" statement, are already given in the combine Worksheet, so they add 95% redundant information.**
+* **These extracted Section 7 requirements, except for the "OCSP Port 80" statement, are already given in the combined Profile, so they add about 95% redundant information.**
 
 **Note:**&nbsp;&nbsp;Critical extensions that are not listed in these worksheets MUST NOT be included in certificates or CRLs issued under the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, Common Policy CP). Certificate and CRL issuers may include additional information in non-critical extensions for local use but should not expect clients in the Federal PKI to process this information.  
 
