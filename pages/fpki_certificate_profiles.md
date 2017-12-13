@@ -14,15 +14,15 @@ To trace the past-to-current profile numbering, see the [Worksheet Numbers Trace
 
 Nine profiles have been defined:
 
-[Worksheet 1. PIV Authentication, Derived PIV Authentication, and PIV-I Authentication]({{ site.baseurl }}/profiles/allpivauth/<br>
-Worksheet 2. PIV Card Authentication and PIV-I Card Authentication<br>
-Worksheet 3. PIV Key Management, PIV-I Key Management, and FBCA Key Management<br>
-Worksheet 4. **PIV?** Common End Entity Signature, (FBCA) End Entity Signature, and PIV-I Digital Signature<br>
-Worksheet 5. PIV Content Signing and PIV-I Content Signing<br>
-Worksheet 6. Self-Signed CA, Key Rollover CA, Peer-to-Peer Cross Certificate and Intermediate or Subordinate CA<br>
-Worksheet 7. Devices (Computing and Communications Devices)<br>
-Worksheet 8. CRL<br>
-Worksheet 9. OCSP<br>
+* [Worksheet 1. PIV Authentication, Derived PIV Authentication, and PIV-I Authentication]({{ site.baseurl }}/profiles/allpivauth/)<br>
+* Worksheet 2. PIV Card Authentication and PIV-I Card Authentication<br>
+* Worksheet 3. PIV Key Management, PIV-I Key Management, and FBCA Key Management<br>
+* Worksheet 4. **PIV?** Common End Entity Signature, (FBCA) End Entity Signature, and PIV-I Digital Signature<br>
+* Worksheet 5. PIV Content Signing and PIV-I Content Signing<br>
+* Worksheet 6. Self-Signed CA, Key Rollover CA, Peer-to-Peer Cross Certificate and Intermediate or Subordinate CA<br>
+* Worksheet 7. Devices (Computing and Communications Devices)<br>
+* Worksheet 8. CRL<br>
+* Worksheet 9. OCSP<br>
 
 ## Worksheet Numbers Traceability Matrix
 
