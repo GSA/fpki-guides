@@ -4,9 +4,9 @@ title: Certificate Profiles
 permalink: /certprofiles/
 ---
 
-The certificate profiles for the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_<sup>[1](#1)</sup> have been simplified to increase compatibility across federal and other PKI communities. They specify the updated settings for the X.509 v3 certificates and v2 certificate revocation lists (CRLs) issued under this policy. They also give guidance for certificates issued under other Certificate Policies that are cross-certified with the Federal Bridge Certification Authority (FBCA). (These profiles will be published in the upcoming X.509 Certificate and CRL Extensions Profile for the Shared Service Providers [SSP] Program, FBCA, and PIV-Interoperable [PIV-I].)
+The certificate profiles for the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_<sup>[1](#1)</sup> have been simplified to increase compatibility across federal and other PKI communities.<sup>[2](#2)</sup> They specify the updated settings for the X.509 v3 certificates and v2 certificate revocation lists (CRLs) issued under this policy. They also give guidance for certificates issued under other Certificate Policies that are cross-certified with the Federal Bridge Certification Authority (FBCA). 
 
-**Note:**&nbsp;&nbsp;Certificate profile formats and semantics are defined by X.509 and further described in RFC 5280.<sup>[2](#2)</sup> These profiles state where they deviate from RFC 5280.
+**Note:**&nbsp;&nbsp;Certificate profile formats and semantics are defined by X.509 and further described in RFC 5280.<sup>[3](#3)</sup> These profiles state where they deviate from RFC 5280.
 
 ## Certificate and CRL Extensions Profile Worksheets
 
@@ -20,15 +20,15 @@ Nine profiles have been defined:
 * Worksheet 4. **PIV?** Common End Entity Signature, (FBCA) End Entity Signature, and PIV-I Digital Signature<br>
 * Worksheet 5. PIV Content Signing and PIV-I Content Signing<br>
 * Worksheet 6. Self-Signed CA, Key Rollover CA, Peer-to-Peer Cross Certificate and Intermediate or Subordinate CA<br>
-* Worksheet 7. Devices (Computing and Communications Devices)<br>
-* Worksheet 8. CRL<br>
-* Worksheet 9. OCSP<br>
+* Worksheet 7. Devices <!--renamed Computing and Communications Devices--><br>
+* Worksheet 8. Certificate Revocation List (CRL)<br>
+* Worksheet 9. Online Certificate Status Protocol (OCSP)<br>
 
 ## Worksheet Numbers Traceability Matrix
 
 <!--These links don't work yet-->
 
-| **Certificate Profile**           | **Shared<br>Service<br>Provider<br>(SSP)<sup>[3](#3)</sup><br>**  | **Federal<br>Bridge<br>Certification<br>Authority<br>(FBCA)<sup>[4](#4)</sup><br>**     | **Personal<br>Identity<br>Verification<br>Interoperable<br>(PIV-I)<sup>[5](#5)</sup>**     | **Current<br>**   |
+| **Certificate Profile**           | **Shared<br>Service<br>Provider<br>(SSP)<sup>[4](#4)</sup><br>**  | **Federal<br>Bridge<br>Certification<br>Authority<br>(FBCA)<sup>[5](#5)</sup><br>**     | **Personal<br>Identity<br>Verification<br>Interoperable<br>(PIV-I)<sup>[6](#6)</sup>**     | **Current<br>**   |
 | :----------------------------------  | :---------:  | :-----------:    | :-----------:      | :-----------:      |
 | Self-Signed CA                       | 1            | 1                |               | [6]({{ site.baseurl }}/profiles/xxxx/)             |
 | Key Rollover CA                      | 2             | 2               |  1            | [6]({{ site.baseurl }}/profiles/keyrolloverca/)             |
@@ -53,8 +53,9 @@ Nine profiles have been defined:
 
 -----------------
 <a name="1">1</a>. _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_, v1.27, June 29, 2017.<br>
-<a name="2">2</a>. RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<br>
-<a name="3">3</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program_, July 17, 2017.<br>
-<a name="4">4</a>. _Federal Public Key Infrastructure (PKI) X.509 Certificate and CRL Extensions Profile_, July 17, 2017.<br>
-<a name="5">5</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards_, July 17, 2017.
+<a name="2">2</a>. These profiles will be published in the upcoming X.509 Certificate and CRL Extensions Profile for the Shared Service Providers (SSP) Program, FBCA, and PIV-Interoperable (PIV-I).<br>
+<a name="3">3</a>. RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<br>
+<a name="4">4</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program_, July 17, 2017.<br>
+<a name="5">5</a>. _Federal Public Key Infrastructure (PKI) X.509 Certificate and CRL Extensions Profile_, July 17, 2017.<br>
+<a name="6">6</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards_, July 17, 2017.
 
