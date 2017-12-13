@@ -26,6 +26,8 @@ Nine profiles have been defined:
 
 ## Worksheet Numbers Traceability Matrix
 
+<!--These links don't work yet-->
+
 | **Certificate Profile**           | **Shared<br>Service<br>Provider<br>(SSP)<sup>[3](#3)</sup><br>**  | **Federal<br>Bridge<br>Certification<br>Authority<br>(FBCA)<sup>[4](#4)</sup><br>**     | **Personal<br>Identity<br>Verification<br>Interoperable<br>(PIV-I)<sup>[5](#5)</sup>**     | **Current<br>**   |
 | :----------------------------------  | :---------:  | :-----------:    | :-----------:      | :-----------:      |
 | Self-Signed CA                       | 1            | 1                |               | [6]({{ site.baseurl }}/profiles/xxxx/)             |
@@ -41,9 +43,9 @@ Nine profiles have been defined:
 | PIV-I End Entity Key Management       |                |             | 7              | [3]({{ site.baseurl }}/profiles/pivikeymgmt/)             |
 | PIV Card Authentication       | 8               |             |               | [2]({{ site.baseurl }}/profiles/commoncardauth/)             |
 | PIV-I Card Authentication       |                |             |  4             | [2]({{ site.baseurl }}/profiles/pivicardauth/)             |
-| PIV Authentication       |  9              |             |               | [1]({{ site.baseurl }}/profiles/pivauth/)             |
-| Common Derived PIV Authentication       |  11              |             |               | [1]({{ site.baseurl }}/profiles/derivedpivauth/)             |
-| PIV-I Authentication       |                |             |  5             | [1]({{ site.baseurl }}/profiles/piviauth/)             |
+| PIV Authentication       |  9              |             |               | [1]({{ site.baseurl }}/profiles/all pivauth/)             |
+| Common Derived PIV Authentication       |  11              |             |               | [1]({{ site.baseurl }}/profiles/allpivauth/)             |
+| PIV-I Authentication       |                |             |  5             | [1]({{ site.baseurl }}/profiles/allpivauth/)             |
 | Common PIV Content Signing       | 10               |             |               | [5]({{ site.baseurl }}/profiles/commonpivcontentsign/)             |
 | PIV-I Content Signing       |                |             |  8             | [5]({{ site.baseurl }}/profiles/pivicontentsign/)             |
 | Computing and Communications Devices       | 7               |             |               | [7]({{ site.baseurl }}/profiles/devices/)             |
