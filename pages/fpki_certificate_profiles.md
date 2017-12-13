@@ -12,48 +12,17 @@ The certificate profiles for the _X.509 Certificate Policy for the U.S. Federal 
 
 To trace the past-to-current profile numbering, see the [Worksheet Numbers Traceability Matrix](#worksheet-numbers-traceability-matrix). (**Note:**&nbsp;&nbsp;Some profile worksheet titles have changed.)
 
-Twenty (20) profiles have been defined:
+Nine profiles have been defined:
 
-### Certification Authority (CA) 
- 
-[Worksheet 1. Self-Signed CA]({{ site.baseurl }}/profiles/selfsignedca/)<br>
-[Worksheet 2. Key Rollover CA]({{ site.baseurl }}/profiles/keyrolloverca/)<br>
-[Worksheet 3. Peer-to-Peer Cross-Certificate]({{ site.baseurl }}/profiles/p2pcrosscert/)<br>
-[Worksheet 4. Intermediate or Subordinate CA]({{ site.baseurl }}/profiles/intorsubca/)<br>
-
-### Personal Identity Verification (PIV)
-
-[Worksheet 7. Common End Entity Signature]({{ site.baseurl }}/profiles/commonendentitysign/)<br>
-[Worksheet 10. Common Key Management]({{ site.baseurl }}/profiles/commonkeymgmt/)<br>
-[Worksheet 12. Common Card Authentication]({{ site.baseurl }}/profiles/commoncardauth/)<br>
-[Worksheet 14. PIV Authentication]({{ site.baseurl }}/profiles/pivauth/)<br>
-[Worksheet 17. Common PIV Content Signing]({{ site.baseurl }}/profiles/commonpivcontentsign/)<br>
-
-### Personal Identity Verification&mdash;Interoperable (PIV-I)
-
-[Worksheet 8. PIV-I Digital Signature]({{ site.baseurl }}/profiles/pividigsign/)<br>
-[Worksheet 11. PIV-I Key Management]({{ site.baseurl }}/profiles/pivikeymgmt/)<br>
-[Worksheet 13. PIV-I Card Authentication]({{ site.baseurl }}/profiles/pivicardauth/)<br>
-[Worksheet 16. PIV-I Authentication]({{ site.baseurl }}/profiles/piviauth/)<br>
-[Worksheet 18. PIV-I Content Signing]({{ site.baseurl }}/profiles/pivicontentsign/)<br>
-
-### Derived PIV
-
-[Worksheet 15. Derived PIV Authentication]({{ site.baseurl }}/profiles/derivedpivauth/)
-
-### Devices
-
-[Worksheet 19. Computing and Communications Devices]({{ site.baseurl }}/profiles/devices/)
-
-### FBCA
-
-[Worksheet 6. End Entity Signature]({{ site.baseurl }}/profiles/endentitysign/)<br>
-[Worksheet 9. Key Management]({{ site.baseurl }}/profiles/keymgmt/)
-
-### CRL and OCSP Responder
-
-[Worksheet 5. CRL]({{ site.baseurl }}/profiles/crl/)<br>
-[Worksheet 20. Delegated OCSP Responder]({{ site.baseurl }}/profiles/delegatedocsp/)
+Worksheet 1. PIV Auth, PIV-I Auth, Derived PIV (auth)  **Worksheet link**
+2. PIV Card Auth, PIV-I Card Auth
+3. PIV Key Management, PIV-I Key Management, FBCA Key Management
+4. End Entity Signature / PIV, PIV-I Dig Sig, FBCA End Entity Signature
+5. PIV Content Signing, PIV-I Content Signing
+6. CA Certificates (all four)
+7. Devices - and add explanation
+8. CRL
+9. OCSP
 
 ## Worksheet Numbers Traceability Matrix
 
