@@ -4,6 +4,10 @@ title: PIV-I Content-Signing
 permalink: profiles/pivicontentsign/
 ---
 
+From Section 7.2:  PIV-I Content Signing certificates that are used to verify signatures on the CHUID or biometric data on PIV-I cards include an extended key usage extension that maps to id-fpki-pivi-content-signing
+
+
+
 ## Worksheet 18:&nbsp;&nbsp;PIV-I Content-Signing Certificate Profile
 
 | **Field** |       |       | **Value**                             |
