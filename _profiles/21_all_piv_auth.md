@@ -4,7 +4,7 @@ title: PIV Authentication
 permalink: profiles/allpivauth/
 ---
 
-This profile specifies the updated settings for PIV, PIV-I, and Derived PIV Authentication certificates. (These profiles were published previously as _SSP Worksheets 9_ and _11_ [SSP<sup>[1](#1)</sup>] and _PIV-I Worksheet 5_ [PIV-I<sup>[2](#2)</sup>].)
+This profile specifies the updated settings for PIV, PIV-I, and Derived PIV Authentication certificates. (These profiles were published previously as _SSP Worksheets 9_ and _11_<sup>[1](#1)</sup> and _PIV-I Worksheet 5_<sup>[2](#2)</sup>.)
 
 * **These extracted Section 7 requirements, except for the "OCSP Port 80" statement, are already given in the combined Profile, so they add about 95% redundant information.**
 
