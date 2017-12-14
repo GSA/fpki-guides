@@ -12,12 +12,11 @@ For standard, detailed certificate information, see the _ITU-T X.509 Recommendat
 
 This profile worksheet consists of three worksheets that were previously published on July 17, 2017:
 
-| **Deprecated Certificate<br>Profile Policy**  | **Original Worksheet<br>Name** |  **Deprecated Worksheet<br>Number**  |
 | :----: | :---- |  :----:  |
+| **Deprecated Certificate<br>Profile Policy**  | **Original Worksheet<br>Name** |  **Deprecated Worksheet<br>Number**  |
 |  SSP<sup>[3](#3)</sup>  |  PIV Authentication  | 9  |
 |  SSP  |  Common Derived PIV Authentication  | 11  |
 |  PIV-I<sup>[4](#4)</sup>  | PIV-I Authentication  |  5| 
-
 
 ## General Extension Requirements
 
