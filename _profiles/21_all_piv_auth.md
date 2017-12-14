@@ -4,19 +4,20 @@ title: Authentication Certificate Profile
 permalink: profiles/allpivauth/
 ---
 
-X.509 v3 certificates contain a subject's identity and attribute data categorized by Field (i.e., base certificate) and Extension (i.e., further definitions). This _Authentication Certificate Profile_ specifies the unique settings required for PIV, PIV-I, and Derived PIV authentication certificates. 
+X.509 v3 certificates contain a subject's identity and attribute data categorized by Field (i.e., base certificate) and Extension (i.e., further definitions). This _Authentication Certificate Profile_ specifies the unique settings required for PIV, PIV-I, and Derived PIV authentication certificates.
+
+For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[1](#1)</sup> and RFC 5280<sup>[2](#2)</sup>.
 
 ## Profile Worksheet Traceability&nbsp;&mdash;&nbsp;Previous Versions
 
 This profile worksheet consists of three worksheets that were previously published on July 17, 2017:
 
 | **Deprecated Certificate<br>Profile Policy**  | **Original Worksheet<br>Name** |  **Deprecated Worksheet<br>Number**  |
-| :---- | :---- |  :----:  |
-|  SSP<sup>[1](#1)</sup>  |  PIV Authentication  | 9  |
+| :----: | :---- |  :----:  |
+|  SSP<sup>[3](#3)</sup>  |  PIV Authentication  | 9  |
 |  SSP  |  Common Derived PIV Authentication  | 11  |
-|  PIV-I<sup>[2](#2)</sup>  | PIV-I Authentication  |  5| 
+|  PIV-I<sup>[4](#4)</sup>  | PIV-I Authentication  |  5| 
 
-For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup>.
 
 ## General Extension Requirements
 
@@ -76,10 +77,10 @@ For standard, detailed certificate information, see the _ITU-T X.509 Recommendat
 | Issuer Alternative Name   | Optional  |  |   |   |   | 
 
 ------
-<a name="1">1</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program)_ (July 17, 2017).<br>
-<a name="2">2</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards_, July 17, 2017.
-<a name="3">3</a>. ITU-I X.509 Recommendation (October 2016).
-<a name="4">4</a>. RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<br>
+<a name="1">1</a>. ITU-I X.509 Recommendation (October 2016).<br>
+<a name="2">2</a>. RFC 5280, _Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile_, David Cooper, Stefan Santesson, Stephen Farrell, Sharon Boeyen, Russell Housley, and Tim Polk (May 2008).<br>
+<a name="3">3</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program)_ (July 17, 2017).<br>
+<a name="4">4</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards_, July 17, 2017.
 <a name="5">5</a>. _X.509 Certificate Policy For The Federal Bridge Certification Authority (FBCA)_, Version 2.31, June 29, 2017
 <a name="6">6</a>. NIST SP 800-78-4, _Cryptographic Algorithms and Key Sizes for Personal Identity Verification_, W. Timothy Polk, Donna F. Dodson, William E. Burr, Hildegard Ferraiolo, and David Cooper (May 2015).<br>
 <a name="7">7</a>. RFC 4122, _A Universally Unique Identifier (UUID) URN Namespace_, P. Leach, M. Mealling, and R. Salz (July 2005).<br>
