@@ -11,7 +11,7 @@ X.509 v3 certificates contain a subject's identity and attribute data categorize
 This profile worksheet consists of three worksheets that were previously published on July 17, 2017:
 
 | **Deprecated Certificate<br>Profile Policy**  | **Original Worksheet<br>Name** |  **Deprecated Worksheet<br>Number**  |
-| :----: | :----: |  :----:  |
+| :---- | :---- |  :----:  |
 |  SSP<sup>[1](#1)</sup>  |  PIV Authentication  | 9  |
 |  SSP  |  Common Derived PIV Authentication  | 11  |
 |  PIV-I<sup>[2](#2)</sup>  | PIV-I Authentication  |  5| 
