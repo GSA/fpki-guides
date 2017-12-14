@@ -8,7 +8,7 @@ X.509 v3 certificates contain a subject's identity and attribute data categorize
 
 For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[1](#1)</sup> and RFC 5280<sup>[2](#2)</sup>.
 
-## Profile Worksheet Traceability&nbsp;&mdash;&nbsp;Previous Versions
+## Profile Worksheet Traceability
 
 This profile worksheet consists of three worksheets that were previously published on July 17, 2017:
 
