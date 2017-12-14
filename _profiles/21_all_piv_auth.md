@@ -1,21 +1,30 @@
 ---
 layout: default
-title: PIV Authentication
+title: Authentication Certificate Profile
 permalink: profiles/allpivauth/
 ---
 
-This profile specifies the updated settings for PIV, PIV-I, and Derived PIV Authentication certificates. (These profiles were published previously as _SSP<sup>[1](#1)</sup> Worksheets 9_ and _11_ and _PIV-I<sup>[2](#2)</sup> Worksheet 5_.)
+X.509 v3 certificates contain a Subject's identity and attribute data divided into Fields (i.e., base certificate) and Extensions (i.e., further defintions). This _Authentication Certificate Profile_ specifies these settings for PIV, PIV-I, and Derived PIV authentication certificates. 
 
-X.509 v3 certificates contain identity and attribute data for a subject using a base certificate with extensions. The base certificate contains information such as:  certificate version number, certificate’s identifying serial number, the signature algorithm used to sign the certificate, the issuer’s Distinguished Name (DN), the certificate's validity period, the subject's DS, and the subject’s public key. Extension are added to further define **add relevant information here**. See _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup> for detailed certificate information.
+## Profile Worksheet Traceability&nbsp;&mdash;&nbsp;Previous Versions
 
-* **These extracted Section 7 requirements, except for the "OCSP Port 80" statement, are already given in the combined Profile, so they add about 95% redundant information.**
+This profile worksheet consists of three previously published worksheets from July 17, 2017:
 
-## Extension Requirements
+| **Deprecated Certificate Profile Policy**  | **Deprecated Worksheet Name** |  **Deprecated Worksheet<br>Number**  |
+| :----: | :----: |  :----:  |
+|  SSP<sup>[1](#1)</sup>  |  PIV Authentication  | 9  |
+|  SSP  |  Common Derived PIV Authentication  | 11  |
+|  PIV-I<sup>[2](#2)</sup>  | PIV-I Authentication  |  5| 
 
-**Note:**&nbsp;&nbsp;Critical extensions that are not listed in these worksheets MUST NOT be included in certificates or CRLs issued under the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, Common Policy CP). Issuers may include additional information for local use in non-critical extensions but should not expect other organizations in the Federal PKI to process this information.  
+For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup>.
+
+## General Extension Requirements
+
+**Note:**&nbsp;&nbsp;If a critical extension is not listed in this worksheet, it MUST NOT be included in certificates or CRLs issued under the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, Common Policy CP). Issuers may include additional information for local use in non-critical extensions but should not expect other organizations in the Federal PKI to process this information.  
 
 ### PIV Authentication
 
+* Adhere to applicable Common Policy CP requirements.
 * The Online Certificate Status Protocol (OCSP) server must respond on Port 80 to provide certificate statuses. 
 * _Authority Information Access_ must include an access method of type id-ad-ocsp. The access location must be an HTTP Uniform Resource Identifier (URI).
 * _Certificate Policies_ must assert the id-fpki-common-authentication policy OID.
@@ -23,19 +32,19 @@ X.509 v3 certificates contain identity and attribute data for a subject using a 
 * _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
 * _PIV Interim_ must state that the Subject's National Agency Check with Inquiries (NACI) has been completed and successfully adjudicated at certificate issuance.
 
-### Derived PIV Authentication
-
-* _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
-* _PIV Interim_ must state that the Subject's NACI has been completed and successfully adjudicated at certificate issuance.
-
 ### PIV-I Authentication Extensions
 
-**Add note about certificates issued under the FBCA?**
-
+* Adhere to applicable FBCA CP requirements.
 * The Online Certificate Status Protocol (OCSP) server must respond on Port 80 to provide certificate statuses. 
 * _Authority Information Access_ must include an access method of type id-ad-ocsp. The access location must be an HTTP Uniform Resource Identifier (URI).
 * _Subject Alternative Name_ must include the UUID from the PIV-I card that holds the certificates and NOT include any other name forms.
 * _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
+
+### Derived PIV Authentication
+
+* Adhere to applicable Common Policy CP requirements.
+* _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
+* _PIV Interim_ must state that the Subject's NACI has been completed and successfully adjudicated at certificate issuance.
 
 ## Worksheet 1:&nbsp;&nbsp;PIV, PIV-I, and Derived PIV Authentication Certificate Profile
 
@@ -46,7 +55,7 @@ X.509 v3 certificates contain identity and attribute data for a subject using a 
 | Issuer Signature Algorithm   |  One of the following:<br>sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>ecdsa-with-SHA256 {1.2.840.10045.4.3.2}<br>ecdsa-with-SHA384 {1.2.840.10045.4.3.3}<br>ecdsa-with-SHA512 {1.2.840.10045.4.3.4} | 
 | Issuer   |  Unique X.500 Issuing CA Distinguished Name (DN).<br>PrintableString encoding should be used whenever possible for Issuer and Subject DNs. |
 | Validity Period  |  No longer than 3 years from date of issue.<br>Expressed in UTCTime for dates until end of 2049 and GeneralizedTime for dates thereafter.  | 
-| Subject   |   Must use one of the name forms specified in the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, Common Policy CP), Section 3.1.1.<br>PrintableString encoding should be used whenever possible for Issuer and Subject DNs.   |
+| Subject   |   For PIV and Derived PIV certificates, must use a name form specified in the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, Common Policy CP), Section 3.1.1.<br>For PIV-I, must use a name form specified in the _X.509 Certificate Policy for the Federal Bridge Certification Authority_. PrintableString encoding should be used whenever possible for Issuer and Subject DNs.   |
 | Subject Public Key Information  |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1.2.840.113549.1.1.1}.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-4.<sup>[5](#5)</sup>   |
 | Signature   |   sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>or ECDSA with appropriate Hash.   |
 
