@@ -47,6 +47,8 @@ This profile revises three previously published profiles:
 
 ## Worksheet 1:&nbsp;&nbsp;PIV, PIV-I, and Derived PIV Authentication Certificate Profile
 
+### Base Certificate Fields
+
 | **Field**  | **Value**                             |
 | :--------  | :-------------------------------     |
 | Version   | V3                                 |
@@ -60,8 +62,8 @@ This profile revises three previously published profiles:
 
 ### Mandatory Extensions
 
-| **Extension** |  **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** |<br>
-| :-------- | :---: | :---: | :---- | :-----  | :-----     |
+| **Extension** |  **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** | 
+| :-------- | :---: | :---:  :-----  | :-----     |
 | **Source**  |   | [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  [PIV-I 5](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"}   |
 | Key Usage  | True |  digitalSignature  | digitalSignature  | digitalSignature  |
 | Authority Information Access  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required for common Authentication.  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required for common Derived PIVAuth and Derived PIVAuth Hardware.  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required for common Authentication.  |
@@ -74,11 +76,11 @@ This profile revises three previously published profiles:
 
 ### Optional Extensions
 
-| **Extension** |  **Required**   | **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** |
-| :-------- | :---: | :---: | :---- | :-----  | :-----     |
-| Extended Key Usage   | Optional  | True | If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>Microsoft Smart Card Logon<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber.  | If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber.  |  If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>Microsoft Smart Card Logon<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber. | 
-| Subject Directory Attributes   | Optional  |  | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280.</sup><br>countryOfCitizenship {1.3.6.1.5.5.7.9.4}<br>ISO 3166<sup>[9](#9)</sup> specifies country codes. | Same as for PIV Authentication.  | Same as for PIV Authentication.  |
-| Issuer Alternative Name   | Optional  |  |   |   |   | 
+| **Extension**  | **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** |
+| :-------- | :------: | :---:  :-----  | :-----     |
+| Extended Key Usage   | True | If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>Microsoft Smart Card Logon<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber.  | If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber.  |  If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>Microsoft Smart Card Logon<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber. | 
+| Subject Directory Attributes    | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280.</sup><br>countryOfCitizenship {1.3.6.1.5.5.7.9.4}<br>ISO 3166<sup>[9](#9)</sup> specifies country codes. | Same as for PIV Authentication.  | Same as for PIV Authentication.  |
+| Issuer Alternative Name     |   |   |   | 
 
 ------
 <a name="1">1</a>. _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_, v1.27, June 29, 2017.<br>
