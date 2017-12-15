@@ -17,7 +17,7 @@ This profile supersedes three previously published "worksheets":
 |  PIV-I<sup>[6](#6)</sup>  | PIV-I Authentication  |  5| 
 
 ## Updated Profile Extension Details
-
+<!--Have these extensions indeed been updated since the prevous 3 (superseded) worksheets? Unclear why this information should be upfront unless there is something new for the user (i.e., "What's New for This Version" or "What Has Changed"). Reason for the limited subset of extension details here should be explained/understood.-->
 ### PIV and Derived PIV Authentication
 
 * Conform to _Common Policy CP_.
