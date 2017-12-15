@@ -21,36 +21,29 @@ This profile revises three previously published profiles:
 |  SSP  |  Common Derived PIV Authentication  | 11  |
 |  PIV-I<sup>[6](#6)</sup>  | PIV-I Authentication  |  5| 
 
-## Mandatory Extensions and General Requirements
+## Mandatory Extensions and Information
 
 **Note:**&nbsp;&nbsp;If a critical extension is not listed in this worksheet, it MUST NOT be included in certificates or CRLs issued under the _Common Policy CP_. Issuers may include additional information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it.  
 
-### PIV Authentication Profilen&nbsp;&mdash;&nbsp;Mandatory Requirements
+### PIV and Derived PIV Authentication Requirements
 
 * Conform to _Common Policy CP_.
-* _Authority Information Access_: Access method of id-ad-ocsp. 
-* _AIA Location_:  HTTP Uniform Resource Identifier (URI).
-* _Certificate Policies_:  Assert id-fpki-common-authentication policy OID.
-* _Subject Alternative Name_:  PIV card FASC-N and UUID. Other name forms allowed if needed for applications.
-* _Key Usage_ bit: digitalSignature. NonRepudiation is not allowed.
-* _PIV Interim_: State completed Subject's National Agency Check with Inquiries (NACI) and successful adjudication.
+* _Authority Information Access_:&nbsp;&nbsp;id-ad-ocsp access method. 
+* _AIA Location_:&nbsp;&nbsp;HTTP URI.
+* _Certificate Policies_:&nbsp;&nbsp;Assert id-fpki-common-authentication policy OID.
+* _Subject Alternative Name_:&nbsp;&nbsp;PIV card FASC-N and UUID. Other name forms allowed if needed by applications.
+* _Key Usage_:&nbsp;&nbsp;digitalSignature. NonRepudiation is not allowed.
+* _PIV Interim_:&nbsp;&nbsp;State Subject's completed NACI with successful adjudication.
+* OCSP server must respond on Port 80. 
 
-* **Note:**&nbsp;&nbsp;The Online Certificate Status Protocol (OCSP) server must respond on Port 80. 
+### PIV-I Authentication Requirements
 
-### Derived PIV Authentication&nbsp;&mdash;&nbsp;Mandatory Extension Details
-
-* Derived PIV Authentication certificates must conform to _Common Policy CP_ requirements.
-* _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
-* _PIV Interim_ must state that the Subject's NACI has been completed and successfully adjudicated at certificate issuance.
-
-### PIV-I Authentication&nbsp;&mdash;&nbsp;Mandatory Extension Details
-
-* PIV-I Authentication certificates must conform to the _FBCA CP_ requirements.
-* The Online Certificate Status Protocol (OCSP) server must respond on Port 80. 
-* _Authority Information Access_ must include an access method of type id-ad-ocsp. The access location must be an HTTP Uniform Resource Identifier (URI).
-* _Subject Alternative Name_ must include the UUID from the PIV-I card that holds the certificates and NOT include any other name forms.
-* _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
-
+* Conform to _FBCA CP_.
+* _Authority Information Access_:&nbsp;&nbsp;id-ad-ocsp access method. 
+* _AIA Location_:&nbsp;&nbsp;HTTP URI.
+* _Subject Alternative Name_:&nbsp;&nbsp;PIV-I card UUID. NO other name forms allowed.
+* _Key Usage_:&nbsp;&nbsp;digitalSignature. NonRepudiation is not allowed.
+* OCSP server must respond on Port 80. 
 
 ## Worksheet 1:&nbsp;&nbsp;PIV, PIV-I, and Derived PIV Authentication Certificate Profile
 
