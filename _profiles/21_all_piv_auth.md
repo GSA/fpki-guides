@@ -14,10 +14,9 @@ This profile supercedes three previously published profiles:
 |  SSP  |  Common Derived PIV Authentication  | 11  |
 |  PIV-I<sup>[6](#6)</sup>  | PIV-I Authentication  |  5| 
 
+## Extention Details
 
-## Profile Worksheet 1:&nbsp;&nbsp;PIV, PIV-I, and Derived PIV Authentication Certificate Profile
-
-### Extention Details for PIV and Derived PIV Authentication
+### PIV and Derived PIV Authentication
 
 * Conform to _Common Policy CP_.
 * _Authority Information Access_:&nbsp;&nbsp;id-ad-ocsp access method. 
@@ -27,7 +26,7 @@ This profile supercedes three previously published profiles:
 * _Key Usage_:&nbsp;&nbsp;digitalSignature. NonRepudiation is not allowed.
 * _PIV Interim_:&nbsp;&nbsp;State Subject's completed NACI with successful adjudication.
 
-### Extension Details for PIV-I Authentication
+### PIV-I Authentication
 
 * Conform to _FBCA CP_.
 * _Authority Information Access_:&nbsp;&nbsp;id-ad-ocsp access method. 
@@ -35,7 +34,7 @@ This profile supercedes three previously published profiles:
 * _Subject Alternative Name_:&nbsp;&nbsp;PIV-I card UUID. NO other name forms allowed.
 * _Key Usage_:&nbsp;&nbsp;digitalSignature. NonRepudiation is not allowed.
 
-### Base Certificate Fields
+## Base Certificate Fields
 
 | **Field**  | **Value**                             |
 | :--------  | :-------------------------------     |
@@ -48,9 +47,9 @@ This profile supercedes three previously published profiles:
 | Subject Public Key Information  |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1.2.840.113549.1.1.1}.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-4.<sup>[7](#7)</sup>   |
 | Signature   |   sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>or ECDSA with appropriate Hash.   |
 
-### Mandatory Extensions
+## Mandatory Extensions
 
-**Notes:**
+>**Notes:**
 * Critical extensions that are NOT listed in the profile MUST NOT be included in certificates or CRLs issued under the _Common Policy CP_. Issuers may include information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it. 
 * The OSCP server must respond on Port 80.<!--Can this statement go into the profile somewhere?-->
 
@@ -66,7 +65,7 @@ This profile supercedes three previously published profiles:
 | Subject Alternative Name   |  | Must include FASC-N name form and, after October 15, 2015, must also include a UUID.<br>The FASC-N specifies the FASC-N of the PIV card that contains the corresponding PIV Authentication key.<br>Any additional name types may be present.<br>Other names may be included to support local applications.  | Must include a UUID.<br>Any additional name types may be present.<br>Other names may be included to support local applications.  | Must include a UUID that contains the UUID from the CHUID of the PIV-I card encoded as a URI, as specified in RFC 4122,<sup>[8](#8)</sup> Section 3.<br>Any additional name types may be present.<br>Other names may be included to support local applications.  | 
 | PIV Interim   |  | The piv-interim indicator {2.16.840.1.101.3.6.9.1} extension is defined in FIPS 201-2, Appendix B.2, as PIV NACI indicator. The value of this extension is asserted as follows:<br>1. TRUE if, at the time of credential issuance:<br>(1) the FBI National Criminal History Fingerprint Check has been completed successfully, and<br>(2) an NACI has been initiated but has not been completed.<br>2. FALSE if, at the time of credential issuance, the subject’s NACI has been completed and successfully adjudicated. | The piv-interim indicator {2.16.840.1.101.3.6.9.1} extension is defined in FIPS 201-2, Appendix B.2, as PIV NACI indicator. The value of this extension is asserted as follows:<br>1. TRUE if, at the time of credential issuance:<br>(1) the FBI National Criminal History Fingerprint Check has been completed successfully, and<br>(2) an NACI has been initiated but has not been completed.<br>2. FALSE if, at the time of credential issuance, the subject’s NACI has been completed and successfully adjudicated.  |   | 
 
-### Optional Extensions
+## Optional Extensions
 
 | **Extension**  | **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** |
 | :-------- | :------ | :----- | :-----  | :-----     |
