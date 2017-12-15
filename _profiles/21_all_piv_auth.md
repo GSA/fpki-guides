@@ -15,13 +15,9 @@ This profile supercedes three previously published profiles:
 |  PIV-I<sup>[6](#6)</sup>  | PIV-I Authentication  |  5| 
 
 
-## Worksheet 1:&nbsp;&nbsp;PIV, PIV-I, and Derived PIV Authentication Certificate Profile
+## Profile Worksheet 1:&nbsp;&nbsp;PIV, PIV-I, and Derived PIV Authentication Certificate Profile
 
-## Mandatory Extension Requirements
-
-**Note:**&nbsp;&nbsp;If a **critical extension** is NOT listed in this worksheet, it MUST NOT be included in certificates or CRLs issued under the _Common Policy CP_. Issuers may include additional information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it.  
-
-### PIV and Derived PIV Authentication
+### Extention Details for PIV and Derived PIV Authentication
 
 **Note:**&nbsp;&nbsp;The OCSP server must respond on Port 80. 
 
@@ -33,9 +29,7 @@ This profile supercedes three previously published profiles:
 * _Key Usage_:&nbsp;&nbsp;digitalSignature. NonRepudiation is not allowed.
 * _PIV Interim_:&nbsp;&nbsp;State Subject's completed NACI with successful adjudication.
 
-### PIV-I Authentication
-
-**Note:**&nbsp;&nbsp;The OCSP server must respond on Port 80. 
+### Extension Details for PIV-I Authentication
 
 * Conform to _FBCA CP_.
 * _Authority Information Access_:&nbsp;&nbsp;id-ad-ocsp access method. 
@@ -57,6 +51,10 @@ This profile supercedes three previously published profiles:
 | Signature   |   sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>or ECDSA with appropriate Hash.   |
 
 ### Mandatory Extensions
+
+**Notes:**
+* If a critical extension is NOT listed in this worksheet, it MUST NOT be included in certificates or CRLs issued under the _Common Policy CP_. Issuers may include additional information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it. 
+* The OSCP server must respond on Port 80.<!--Can this statement go into the profile somewhere?-->
 
 | **Extension** |  **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** | 
 | :-------- | :-----: | :----- | :-----  | :-----  |
