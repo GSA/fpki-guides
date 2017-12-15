@@ -1,10 +1,13 @@
 ---
 layout: default
-title: Authentication Certificate Profile
+title: PIV, Derived PIV, and PIV-I Authentication Certificate Profile
 permalink: profiles/allpivauth/
 ---
 
-X.509 v3 certificates contain a subject's identity and attribute data categorized by Field (i.e., base certificate) and Extension (i.e., further definitions). This _Authentication Certificate Profile_ specifies the unique settings required for PIV, PIV-I, and Derived PIV authentication certificates.
+X.509 v3 certificates contain a subject's identity and attribute data categorized by _Field_ (i.e., base certificate) and _Extension_. This profile specifies the unique settings required for:
+
+* **PIV and Derived PIV authentication certificates** issued under _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, Common Policy CP) 
+* **PIV-I Authentication certificates** issued under the _X.509 Certificate Policy For The Federal Bridge Certification Authority (FBCA)_.
 
 For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[1](#1)</sup> and RFC 5280<sup>[2](#2)</sup>.
 
@@ -12,7 +15,7 @@ For standard, detailed certificate information, see the _ITU-T X.509 Recommendat
 
 This profile worksheet consists of three worksheets that were previously published on July 17, 2017:
 
-| **Deprecated Certificate<br>Profile Policy**  | **Original Worksheet Name** |  **Deprecated Worksheet<br>Number**  |
+| **Deprecated Certificate<br>Profile Policy**  | **Deprecated Worksheet Name** |  **Deprecated Worksheet<br>Number**  |
 | :----: | :---- |  :----:  |
 |  SSP<sup>[3](#3)</sup>  |  PIV Authentication  | 9  |
 |  SSP  |  Common Derived PIV Authentication  | 11  |
@@ -20,11 +23,11 @@ This profile worksheet consists of three worksheets that were previously publish
 
 ## General Extension Requirements
 
-**Note:**&nbsp;&nbsp;If a critical extension is not listed in this worksheet, it MUST NOT be included in certificates or CRLs issued under the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, Common Policy CP). Issuers may include additional information for local use in non-critical extensions but should not expect other organizations in the Federal PKI to process this information.  
+**Note:**&nbsp;&nbsp;If a critical extension is not listed in this worksheet, it MUST NOT be included in certificates or CRLs issued under the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, Common Policy CP). Issuers may include additional information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it.  
 
 ### PIV Authentication
 
-* Adhere to applicable Common Policy CP requirements.
+* PIV Authentication certificates must conform to Common Policy CP requirements.
 * The Online Certificate Status Protocol (OCSP) server must respond on Port 80 to provide certificate statuses. 
 * _Authority Information Access_ must include an access method of type id-ad-ocsp. The access location must be an HTTP Uniform Resource Identifier (URI).
 * _Certificate Policies_ must assert the id-fpki-common-authentication policy OID.
@@ -32,19 +35,20 @@ This profile worksheet consists of three worksheets that were previously publish
 * _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
 * _PIV Interim_ must state that the Subject's National Agency Check with Inquiries (NACI) has been completed and successfully adjudicated at certificate issuance.
 
+### Derived PIV Authentication
+
+* Derived PIV Authentication certificates must conform to applicable Common Policy CP requirements.
+* _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
+* _PIV Interim_ must state that the Subject's NACI has been completed and successfully adjudicated at certificate issuance.
+
 ### PIV-I Authentication
 
-* Adhere to applicable _X.509 Certificate Policy For The Federal Bridge Certification Authority (FBCA)_ (aka, FBCA CP) requirements.
+* PIV-I Authentication certificates must conform to _X.509 Certificate Policy For The Federal Bridge Certification Authority (FBCA)_ (aka, FBCA CP) requirements.
 * The Online Certificate Status Protocol (OCSP) server must respond on Port 80 to provide certificate statuses. 
 * _Authority Information Access_ must include an access method of type id-ad-ocsp. The access location must be an HTTP Uniform Resource Identifier (URI).
 * _Subject Alternative Name_ must include the UUID from the PIV-I card that holds the certificates and NOT include any other name forms.
 * _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
 
-### Derived PIV Authentication
-
-* Adhere to applicable Common Policy CP requirements.
-* _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
-* _PIV Interim_ must state that the Subject's NACI has been completed and successfully adjudicated at certificate issuance.
 
 ## Worksheet 1:&nbsp;&nbsp;PIV, PIV-I, and Derived PIV Authentication Certificate Profile
 
