@@ -7,7 +7,7 @@ permalink: profiles/allpivauth/
 X.509 v3 certificates contain a subject's identity and attribute data categorized by _Field_ (i.e., base certificate) and _Extension_. This profile specifies the unique settings required for:
 
 * **PIV and Derived PIV Authentication certificates issued under the _Common Policy CP_**<sup>[1](#1)</sup> 
-* **PIV-I Authentication certificates issued under the _FBCA CP_**<sup>[2](#2)</sup>.
+* **PIV-I Authentication certificates issued under the _FBCA CP_**<sup>[2](#2)</sup>
 
 (For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup>.)
 
@@ -21,11 +21,16 @@ This profile revises three previously published profiles:
 |  SSP  |  Common Derived PIV Authentication  | 11  |
 |  PIV-I<sup>[6](#6)</sup>  | PIV-I Authentication  |  5| 
 
-## Mandatory Extensions and Information
 
-**Note:**&nbsp;&nbsp;If a critical extension is not listed in this worksheet, it MUST NOT be included in certificates or CRLs issued under the _Common Policy CP_. Issuers may include additional information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it.  
+## Worksheet 1:&nbsp;&nbsp;PIV, PIV-I, and Derived PIV Authentication Certificate Profile
 
-### PIV and Derived PIV Authentication Requirements
+## Mandatory Extension Requirements
+
+**Note:**&nbsp;&nbsp;If a **critical extension** is NOT listed in this worksheet, it MUST NOT be included in certificates or CRLs issued under the _Common Policy CP_. Issuers may include additional information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it.  
+
+### PIV and Derived PIV Authentication
+
+**Note:**&nbsp;&nbsp;The OCSP server must respond on Port 80. 
 
 * Conform to _Common Policy CP_.
 * _Authority Information Access_:&nbsp;&nbsp;id-ad-ocsp access method. 
@@ -34,18 +39,16 @@ This profile revises three previously published profiles:
 * _Subject Alternative Name_:&nbsp;&nbsp;PIV card FASC-N and UUID. Other name forms, if applications need them.
 * _Key Usage_:&nbsp;&nbsp;digitalSignature. NonRepudiation is not allowed.
 * _PIV Interim_:&nbsp;&nbsp;State Subject's completed NACI with successful adjudication.
-* OCSP server must respond on Port 80. 
 
-### PIV-I Authentication Requirements
+### PIV-I Authentication
+
+**Note:**&nbsp;&nbsp;The OCSP server must respond on Port 80. 
 
 * Conform to _FBCA CP_.
 * _Authority Information Access_:&nbsp;&nbsp;id-ad-ocsp access method. 
 * _AIA Location_:&nbsp;&nbsp;HTTP URI.
 * _Subject Alternative Name_:&nbsp;&nbsp;PIV-I card UUID. NO other name forms allowed.
 * _Key Usage_:&nbsp;&nbsp;digitalSignature. NonRepudiation is not allowed.
-* OCSP server must respond on Port 80. 
-
-## Worksheet 1:&nbsp;&nbsp;PIV, PIV-I, and Derived PIV Authentication Certificate Profile
 
 ### Base Certificate Fields
 
