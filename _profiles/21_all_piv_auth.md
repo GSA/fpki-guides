@@ -4,9 +4,11 @@ title: PIV, Derived PIV, and PIV-I Authentication Certificate Profile
 permalink: profiles/allpivauth/
 ---
 
-This profile specifies the unique settings required for _PIV Authentication_ and _Derived PIV Authentication_ certificates issued under the _Common Policy CP_,<sup>[1](#1)</sup> as well as _PIV-I Authentication_ certificates issued under the _FBCA CP_.<sup>[2](#2)</sup> (For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup>.)
+This profile specifies the unique settings required for X.509 _PIV Authentication_ and _Derived PIV Authentication_ certificates issued under the _Common Policy CP_,<sup>[1](#1)</sup> as well as _PIV-I Authentication_ certificates issued under the _FBCA CP_.<sup>[2](#2)</sup> (For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup>.)
 
-This profile supercedes three previously published profiles:
+## Superseded Versions
+
+This profile supersedes three previously published "worksheets":
 
 | **Deprecated Certificate<br>Profile Policy**  | **Deprecated Worksheet Name** |  **Deprecated Worksheet<br>Number**  |
 | :----: | :---- |  :----:  |
@@ -14,7 +16,7 @@ This profile supercedes three previously published profiles:
 |  SSP  |  Common Derived PIV Authentication  | 11  |
 |  PIV-I<sup>[6](#6)</sup>  | PIV-I Authentication  |  5| 
 
-## Extention Details
+## Extension Details
 
 ### PIV and Derived PIV Authentication
 
