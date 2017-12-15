@@ -16,7 +16,7 @@ This profile supersedes three previously published "worksheets":
 |  SSP  |  Common Derived PIV Authentication  | 11  |
 |  PIV-I<sup>[6](#6)</sup>  | PIV-I Authentication  |  5| 
 
-## Extension Details
+## Updated Profile Extension Details
 
 ### PIV and Derived PIV Authentication
 
