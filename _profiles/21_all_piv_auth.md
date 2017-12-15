@@ -6,14 +6,14 @@ permalink: profiles/allpivauth/
 
 X.509 v3 certificates contain a subject's identity and attribute data categorized by _Field_ (i.e., base certificate) and _Extension_. This profile specifies the unique settings required for:
 
-* **PIV and Derived PIV authentication certificates** issued under the _Common Policy CP_<sup>[1](#1)</sup> 
-* **PIV-I Authentication certificates** issued under the _FBCA CP_<sup>[2](#2)</sup>.
+* **PIV and Derived PIV Authentication certificates issued under the _Common Policy CP_**<sup>[1](#1)</sup> 
+* **PIV-I Authentication certificates issued under the _FBCA CP_**<sup>[2](#2)</sup>.
 
-For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup>.
+(For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup>.)
 
 ## Profile Worksheet Traceability
 
-This profile worksheet consists of three worksheets that were previously published on July 17, 2017:
+This profile revises three previously published profiles:
 
 | **Deprecated Certificate<br>Profile Policy**  | **Deprecated Worksheet Name** |  **Deprecated Worksheet<br>Number**  |
 | :----: | :---- |  :----:  |
@@ -21,30 +21,32 @@ This profile worksheet consists of three worksheets that were previously publish
 |  SSP  |  Common Derived PIV Authentication  | 11  |
 |  PIV-I<sup>[6](#6)</sup>  | PIV-I Authentication  |  5| 
 
-## General Extension Requirements
+## Mandatory Extensions and General Requirements
 
 **Note:**&nbsp;&nbsp;If a critical extension is not listed in this worksheet, it MUST NOT be included in certificates or CRLs issued under the _Common Policy CP_. Issuers may include additional information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it.  
 
-### PIV Authentication
+### PIV Authentication Profilen&nbsp;&mdash;&nbsp;Mandatory Requirements
 
-* PIV Authentication certificates must conform to _Common Policy CP_ requirements.
-* The Online Certificate Status Protocol (OCSP) server must respond on Port 80 to provide certificate statuses. 
-* _Authority Information Access_ must include an access method of type id-ad-ocsp. The access location must be an HTTP Uniform Resource Identifier (URI).
-* _Certificate Policies_ must assert the id-fpki-common-authentication policy OID.
-* _Subject Alternative Name_ must include the Federal Agency Smart Card Number (FASC-N) and Universally Unique Identifier UUID<!--UUID from section 7.2--> from the PIV card that holds the certificates. The Subject Alternative Name may contain name forms beyond the FASC-N and UUID when required by applications with which the certificate will be used.
-* _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
-* _PIV Interim_ must state that the Subject's National Agency Check with Inquiries (NACI) has been completed and successfully adjudicated at certificate issuance.
+* Conform to _Common Policy CP_.
+* _Authority Information Access_: Access method of id-ad-ocsp. 
+* _AIA Location_:  HTTP Uniform Resource Identifier (URI).
+* _Certificate Policies_:  Assert id-fpki-common-authentication policy OID.
+* _Subject Alternative Name_:  PIV card FASC-N and UUID. Other name forms allowed if needed for applications.
+* _Key Usage_ bit: digitalSignature. NonRepudiation is not allowed.
+* _PIV Interim_: State completed Subject's National Agency Check with Inquiries (NACI) and successful adjudication.
 
-### Derived PIV Authentication
+* **Note:**&nbsp;&nbsp;The Online Certificate Status Protocol (OCSP) server must respond on Port 80. 
+
+### Derived PIV Authentication&nbsp;&mdash;&nbsp;Mandatory Extension Details
 
 * Derived PIV Authentication certificates must conform to _Common Policy CP_ requirements.
 * _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
 * _PIV Interim_ must state that the Subject's NACI has been completed and successfully adjudicated at certificate issuance.
 
-### PIV-I Authentication
+### PIV-I Authentication&nbsp;&mdash;&nbsp;Mandatory Extension Details
 
 * PIV-I Authentication certificates must conform to the _FBCA CP_ requirements.
-* The Online Certificate Status Protocol (OCSP) server must respond on Port 80 to provide certificate statuses. 
+* The Online Certificate Status Protocol (OCSP) server must respond on Port 80. 
 * _Authority Information Access_ must include an access method of type id-ad-ocsp. The access location must be an HTTP Uniform Resource Identifier (URI).
 * _Subject Alternative Name_ must include the UUID from the PIV-I card that holds the certificates and NOT include any other name forms.
 * _Key Usage_ bit, nonRepudiation, is not allowed. DigitalSignature is mandatory.
