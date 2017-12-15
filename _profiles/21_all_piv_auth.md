@@ -24,9 +24,9 @@ This profile supersedes three previously published "worksheets":
 * _Authority Information Access_:&nbsp;&nbsp;id-ad-ocsp access method. 
 * _AIA Location_:&nbsp;&nbsp;HTTP URI.
 * _Certificate Policies_:&nbsp;&nbsp;Assert id-fpki-common-authentication policy OID.
-* _Subject Alternative Name_:&nbsp;&nbsp;PIV card FASC-N and UUID. Other name forms, if applications need them.
+* _Subject Alternative Name_:&nbsp;&nbsp;PIV card FASC-N and UUID. Other name forms, if needed by applications.
 * _Key Usage_:&nbsp;&nbsp;digitalSignature. NonRepudiation is not allowed.
-* _PIV Interim_:&nbsp;&nbsp;State Subject's completed NACI with successful adjudication.
+* _PIV Interim_:&nbsp;&nbsp;State Subject achieved successfully adjudicated NACI.
 
 ### PIV-I Authentication
 
