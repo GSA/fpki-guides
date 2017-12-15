@@ -4,16 +4,9 @@ title: PIV, Derived PIV, and PIV-I Authentication Certificate Profile
 permalink: profiles/allpivauth/
 ---
 
-X.509 v3 certificates contain a subject's identity and attribute data categorized by _Field_ (i.e., base certificate) and _Extension_. This profile specifies the unique settings required for:
+This profile specifies the unique settings required for _PIV Authentication_ and _Derived PIV Authentication_ certificates issued under the _Common Policy CP_,<sup>[1](#1)</sup> as well as _PIV-I Authentication_ certificates issued under the _FBCA CP_.<sup>[2](#2)</sup> (For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup>.)
 
-* **PIV and Derived PIV Authentication certificates issued under the _Common Policy CP_**<sup>[1](#1)</sup> 
-* **PIV-I Authentication certificates issued under the _FBCA CP_**<sup>[2](#2)</sup>
-
-(For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup>.)
-
-## Profile Worksheet Traceability
-
-This profile revises three previously published profiles:
+This profile supercedes three previously published profiles:
 
 | **Deprecated Certificate<br>Profile Policy**  | **Deprecated Worksheet Name** |  **Deprecated Worksheet<br>Number**  |
 | :----: | :---- |  :----:  |
