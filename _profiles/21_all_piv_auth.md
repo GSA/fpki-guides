@@ -19,8 +19,6 @@ This profile supercedes three previously published profiles:
 
 ### Extention Details for PIV and Derived PIV Authentication
 
-**Note:**&nbsp;&nbsp;The OCSP server must respond on Port 80. 
-
 * Conform to _Common Policy CP_.
 * _Authority Information Access_:&nbsp;&nbsp;id-ad-ocsp access method. 
 * _AIA Location_:&nbsp;&nbsp;HTTP URI.
@@ -53,7 +51,7 @@ This profile supercedes three previously published profiles:
 ### Mandatory Extensions
 
 **Notes:**
-* If a critical extension is NOT listed in this worksheet, it MUST NOT be included in certificates or CRLs issued under the _Common Policy CP_. Issuers may include additional information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it. 
+* Critical extensions that are NOT listed in the profile MUST NOT be included in certificates or CRLs issued under the _Common Policy CP_. Issuers may include information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it. 
 * The OSCP server must respond on Port 80.<!--Can this statement go into the profile somewhere?-->
 
 | **Extension** |  **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** | 
