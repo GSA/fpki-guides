@@ -8,7 +8,7 @@ This profile specifies the unique settings required for X.509 PIV Authentication
 
 ## Superseded Versions
 
-This profile supersedes three previously published "worksheets":
+This profile supersedes three previously published profile worksheets:
 
 | **Deprecated Certificate<br>Profile Policy**  | **Deprecated Worksheet Name** |  **Deprecated Worksheet<br>Number**  |
 | :----: | :---- |  :----:  |
