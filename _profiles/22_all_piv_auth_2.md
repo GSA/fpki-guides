@@ -12,14 +12,16 @@ This profile supersedes three previously published profile worksheets:
 
 | **Deprecated Certificate<br>Profile Policy<br>and Worksheet**  | **Deprecated Worksheet Name** | 
 | :----: | :---- | 
-|  [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"} <sup>[5](#5)</sup>  |  PIV Authentication  | 
+|  [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}<sup>[5](#5)</sup>  |  PIV Authentication  | 
 |  [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
 |   [PIV-I 5](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"}<sup>[6](#6)</sup>  | PIV-I Authentication  | 
 
 ## Updated Profile Extension Details
 <!--Have these extensions indeed been updated since the prevous 3 (superseded) worksheets? Unclear why this information should be upfront unless there is something new for the user (i.e., "What's New for This Version" or "What Has Changed"). Reason for the limited subset of extension details here should be explained/understood.-->
 
-### PIV and Derived PIV Authentication
+**<Wendy recommends that these bullet lists be removed>**
+
+### PIV and Derived PIV Authentication 
 
 * Conform to _Common Policy CP_.
 * _Authority Information Access_:&nbsp;&nbsp;id-ad-ocsp access method.  
@@ -37,7 +39,7 @@ This profile supersedes three previously published profile worksheets:
 * _Subject Alternative Name_:&nbsp;&nbsp;PIV-I card UUID. NO other name forms allowed.
 * _Key Usage_:&nbsp;&nbsp;digitalSignature. NonRepudiation is not allowed.
 
-## Base Certificate Fields
+## Mandatory Fields (Base Certificate)
 
 | **Field**  | **Value**                             |
 | :--------  | :-------------------------------     |
@@ -52,7 +54,7 @@ This profile supersedes three previously published profile worksheets:
 
 ## Mandatory Extensions
 
-These are **Mandatory** extensions for all PIV, Derived PIV, and PIV-I Authentication certificates.
+These Mandatory extensions apply to all PIV, Derived PIV, and PIV-I Authentication certificates.
 
 >**Notes:**
 * Critical extensions that are NOT listed in the profile MUST NOT be included in certificates or CRLs issued under the _Common Policy CP_. Issuers may include information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it. 
@@ -76,7 +78,7 @@ These are **Mandatory** extensions for all PIV, Derived PIV, and PIV-I Authentic
 
 ## Optional Extensions
 
-These are **Optional** extensions for PIV, Derived PIV, and PIV-I Authentication certificates.
+These **Optional** extensions apply to all PIV, Derived PIV, and PIV-I Authentication certificates.
 
 | **Optional<br>Extension**  | **Critical** | **Value** |
 | :-------- | :------ | :----- | 
