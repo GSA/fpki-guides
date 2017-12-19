@@ -40,9 +40,7 @@ _These **Mandatory** extensions apply to **all** PIV, Derived PIV, and PIV-I Aut
 | **Subject Key Identifier**   |  | Octet string  | 
 | **CRL Distribution Points**   | |  This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, omit the reasons and cRLIssuer fields. | 
 | **Authority Key Identifier**   |  | Octet string (same as subject key identifier in Issuing CA certificate). | Octet string (same as subject key identifier in Issuing CA certificate). | Octet string (same as subject key identifier in Issuing CA certificate). |  
-
-_These **Mandatory** extensions **are unique** and may apply to PIV, Derived PIV, or PIV-I Authentication certificates._
-
+|         |         |         |
 | **Mandatory<br>Extension**  | **Critical** | **PIV** | **Derived PIV**  |  **PIV-I** |
 | :-------- | :------ | :----- | :-----  | :-----     |
 | **Certificate Policies**   |  | Applicable certificate policy:<br>id-fpki-common-authentication {2.16.840.1.101.3.2.1.3.13}  |  Applicable certificate policy:<br>id-fpki-common-derived-pivAuth {2.16.840.1.101.3.2.1.3.40} <br>id-fpki-common-derived-pivAuth-hardware {2.16.840.1.101.3.2.1.3.41}  | Applicable certificate policy:<br>id-fpki-certpcy-pivi-hardware {2.16.840.1.101.3.2.1.3.18}   |
