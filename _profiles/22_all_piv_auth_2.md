@@ -16,30 +16,7 @@ This profile supersedes three previously published profile worksheets:
 |  [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
 |   [PIV-I 5](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"}<sup>[6](#6)</sup>  | PIV-I Authentication  | 
 
-## Updated Profile Extension Details
-<!--Have these extensions indeed been updated since the prevous 3 (superseded) worksheets? Unclear why this information should be upfront unless there is something new for the user (i.e., "What's New for This Version" or "What Has Changed"). Reason for the limited subset of extension details here should be explained/understood.-->
-
-> **_Wendy recommends that the following bullet lists be removed from the combined profile_**
-
-### PIV and Derived PIV Authentication 
-
-* Conform to _Common Policy CP_.
-* _Authority Information Access_:&nbsp;&nbsp;id-ad-ocsp access method.  
-* _AIA Location_:&nbsp;&nbsp;HTTP URI.
-* _Certificate Policies_:&nbsp;&nbsp;Assert id-fpki-common-authentication policy OID.
-* _Subject Alternative Name_:&nbsp;&nbsp;PIV card FASC-N and UUID. Other name forms, if needed by applications.
-* _Key Usage_:&nbsp;&nbsp;digitalSignature. NonRepudiation is not allowed.
-* _PIV Interim_:&nbsp;&nbsp;State Subject achieved successfully adjudicated NACI.
-
-### PIV-I Authentication
-
-* Conform to _FBCA CP_.
-* _Authority Information Access_:&nbsp;&nbsp;id-ad-ocsp access method. 
-* _AIA Location_:&nbsp;&nbsp;HTTP URI.
-* _Subject Alternative Name_:&nbsp;&nbsp;PIV-I card UUID. NO other name forms allowed.
-* _Key Usage_:&nbsp;&nbsp;digitalSignature. NonRepudiation is not allowed.
-
-## Mandatory Fields (Base Certificate)
+## Base Certificate&nbsp;&mdash;&nbsp;
 
 | **Field**  | **Value**                             |
 | :--------  | :-------------------------------     |
