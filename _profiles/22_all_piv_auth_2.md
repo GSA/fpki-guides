@@ -69,7 +69,7 @@ This profile supersedes three previously published profile worksheets:
 
 ## Mandatory Extensions with Unique Values
 
-| **Extension**  | **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** |
+| **Mandatory<br>Extension**  | **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** |
 | :-------- | :------ | :----- | :-----  | :-----     |
 | Authority Information Access  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required for common Authentication.  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required for common Derived PIVAuth and Derived PIVAuth Hardware.  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required for common Authentication.  |  
 | Certificate Policies   |  | Applicable certificate policy:<br>id-fpki-common-authentication {2.16.840.1.101.3.2.1.3.13}  |  Applicable certificate policy:<br>id-fpki-common-derived-pivAuth {2.16.840.1.101.3.2.1.3.40} <br>id-fpki-common-derived-pivAuth-hardware {2.16.840.1.101.3.2.1.3.41}  | Applicable certificate policy:<br>id-fpki-certpcy-pivi-hardware {2.16.840.1.101.3.2.1.3.18}   |
@@ -80,17 +80,16 @@ This profile supersedes three previously published profile worksheets:
 
 **Use these optional extensions for all PIV, Derived PIV, and PIV-I Authentication certificates**:
 
-| **Extension**  | **Critical** | **Value** |
+| **Optional<br>Extension**  | **Critical** | **Value** |
 | :-------- | :------ | :----- | 
 | Subject Directory Attributes |    | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280.</sup><br>countryOfCitizenship {1.3.6.1.5.5.7.9.4}<br>ISO 3166<sup>[9](#9)</sup> specifies country codes. | 
 | Issuer Alternative Name     |   |   |  
 
 ## Optional Extensions with Unique Values
 
-| **Extension**  | **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** |
+| **Optional<br>Extension**  | **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** |
 | :-------- | :------ | :----- | :-----  | :-----     |
 | Extended Key Usage   | True | If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>**Microsoft Smart Card Logon**<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber.  | If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber.  |  If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>**Microsoft Smart Card Logon**<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber. |  
-
 
 ------
 <a name="1">1</a>. _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_, v1.27, June 29, 2017.<br>
