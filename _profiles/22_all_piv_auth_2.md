@@ -54,17 +54,10 @@ _These **Mandatory** extensions **are unique** and may apply to PIV, Derived PIV
 _These **Optional** extensions apply to **all** PIV, Derived PIV, and PIV-I Authentication certificates._
 
 | **Optional<br>Extension**  | **Critical** | **Value** |
-| :-------- | :------ | :----- | 
+| :-------- | :------ | :----- |
+| **Extended Key Usage**   | True | If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>Microsoft Smart Card Logon; however, if the private key is not on a smart card, do not include the EKU for Microsoft Smart Card Logon.<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber.  | 
 | **Subject Directory Attributes** |    | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280.</sup><br>countryOfCitizenship {1.3.6.1.5.5.7.9.4}<br>ISO 3166<sup>[9](#9)</sup> specifies country codes. | 
 | **Issuer Alternative Name**     |   |   |  
-
-### Optional Extensions with Unique Values
-
-_These **Optional** extensions **are unique** and may apply to PIV, Derived PIV, or PIV-I Authentication certificates._
-
-| **Optional<br>Extension**  | **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** |
-| :-------- | :------ | :----- | :-----  | :-----     |
-| **Extended Key Usage**   | True | If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>Microsoft Smart Card Logon. If the private key is not on a smart card, the EKU for Microsoft Smart Card Logon should not be included.<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber.  | If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber.  |  If included to support specific applications, this extension should be non-critical. The following values for keyPurposeID should be included:<br>**Microsoft Smart Card Logon**<br>TLS Client Authentication<br>pkinit-KPClientAuth<br>Additional key purposes may be specified:<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>id-pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>id-kp-secureShellClient {3.6.1.5.5.7.3.21}<br>The keyPurposeID value may be implemented as needed by the subscriber. |  
 
 ------
 <a name="1">1</a>. _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_, v1.27, June 29, 2017.<br>
