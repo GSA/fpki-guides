@@ -11,7 +11,7 @@ This profile specifies the unique settings required for X.509 PIV Authentication
 This profile supersedes three previously published profile worksheets:
 
 | **Deprecated Certificate<br>Profile Policy<br>and Worksheet**  | **Deprecated Worksheet Name** | 
-| :----: | :---- |  :----:  |
+| :----: | :---- | 
 |  [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"} <sup>[5](#5)</sup>  |  PIV Authentication  | 
 |  [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
 |   [PIV-I 5](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"}<sup>[6](#6)</sup>  | PIV-I Authentication  | 
