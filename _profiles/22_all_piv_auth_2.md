@@ -20,6 +20,7 @@ This profile supersedes three previously published profile worksheets:
 
 ## Updated Profile Extension Details
 <!--Have these extensions indeed been updated since the prevous 3 (superseded) worksheets? Unclear why this information should be upfront unless there is something new for the user (i.e., "What's New for This Version" or "What Has Changed"). Reason for the limited subset of extension details here should be explained/understood.-->
+
 ### PIV and Derived PIV Authentication
 
 * Conform to _Common Policy CP_.
@@ -59,7 +60,7 @@ This profile supersedes three previously published profile worksheets:
 * Critical extensions that are NOT listed in the profile MUST NOT be included in certificates or CRLs issued under the _Common Policy CP_. Issuers may include information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it. 
 * The OSCP server must respond on Port 80.<!--Can this statement go into the profile somewhere?-->
 
-| **Extension** |  **Critical** | **Value** | 
+| **Mandatory<br>Extension** |  **Critical** | **Value** | 
 | :-------- | :-----: | :----- | 
 | Key Usage  | True |  digitalSignature  | 
 | Subject Key Identifier   |  | Octet string  | 
