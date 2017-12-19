@@ -10,13 +10,11 @@ This profile specifies the unique settings required for X.509 PIV Authentication
 
 This profile supersedes three previously published profile worksheets:
 
-| **Deprecated Certificate<br>Profile Policy**  | **Deprecated Worksheet Name** |  **Deprecated Worksheet<br>Number**  |
+| **Deprecated Certificate<br>Profile Policy<br>and Worksheet**  | **Deprecated Worksheet Name** | 
 | :----: | :---- |  :----:  |
-|  SSP<sup>[5](#5)</sup>  |  PIV Authentication  | 9  |
-|  SSP  |  Common Derived PIV Authentication  | 11  |
-|  PIV-I<sup>[6](#6)</sup>  | PIV-I Authentication  |  5| 
-
-| **Source**  |   | [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  [PIV-I 5](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"}   |
+|  [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"} <sup>[5](#5)</sup>  |  PIV Authentication  | 
+|  [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
+|   [PIV-I 5](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"}<sup>[6](#6)</sup>  | PIV-I Authentication  | 
 
 ## Updated Profile Extension Details
 <!--Have these extensions indeed been updated since the prevous 3 (superseded) worksheets? Unclear why this information should be upfront unless there is something new for the user (i.e., "What's New for This Version" or "What Has Changed"). Reason for the limited subset of extension details here should be explained/understood.-->
@@ -54,7 +52,7 @@ This profile supersedes three previously published profile worksheets:
 
 ## Mandatory Extensions
 
-**Use these mandatory extensions for all PIV, Derived PIV, and PIV-I Authentication certificates**:
+These are **Mandatory** extensions for all PIV, Derived PIV, and PIV-I Authentication certificates.
 
 >**Notes:**
 * Critical extensions that are NOT listed in the profile MUST NOT be included in certificates or CRLs issued under the _Common Policy CP_. Issuers may include information in non-critical extensions for local use, but other Federal PKI organizations are not required to process it. 
@@ -67,7 +65,7 @@ This profile supersedes three previously published profile worksheets:
 | CRL Distribution Points   | |  This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, omit the reasons and cRLIssuer fields. | 
 | Authority Key Identifier   |  | Octet string (same as subject key identifier in Issuing CA certificate). | Octet string (same as subject key identifier in Issuing CA certificate). | Octet string (same as subject key identifier in Issuing CA certificate). |  
 
-## Mandatory Extensions with Unique Values
+### Mandatory Extensions with Unique Values
 
 | **Mandatory<br>Extension**  | **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** |
 | :-------- | :------ | :----- | :-----  | :-----     |
@@ -78,14 +76,14 @@ This profile supersedes three previously published profile worksheets:
 
 ## Optional Extensions
 
-**Use these optional extensions for all PIV, Derived PIV, and PIV-I Authentication certificates**:
+These are **Optional** extensions for PIV, Derived PIV, and PIV-I Authentication certificates.
 
 | **Optional<br>Extension**  | **Critical** | **Value** |
 | :-------- | :------ | :----- | 
 | Subject Directory Attributes |    | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280.</sup><br>countryOfCitizenship {1.3.6.1.5.5.7.9.4}<br>ISO 3166<sup>[9](#9)</sup> specifies country codes. | 
 | Issuer Alternative Name     |   |   |  
 
-## Optional Extensions with Unique Values
+### Optional Extensions with Unique Values
 
 | **Optional<br>Extension**  | **Critical** | **PIV (14)** | **Derived PIV (15)**  |  **PIV-I (16)** |
 | :-------- | :------ | :----- | :-----  | :-----     |
