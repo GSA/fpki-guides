@@ -12,9 +12,9 @@ For standard, detailed certificate information, see the _ITU-T X.509 Recommendat
 
 ## Certificate Profile Traceability Matrix
 
-The current profile supersedes 3 previously published profiles.
+This profile supersedes 3 previously published profiles:
 
-| **Current<br>Number** | **Current Profile Name**   |  **Superseded Policy<br>and Profile Number**  | **Deprecated<br>Profile Name** | 
+| **Current<br>Number** | **Current Profile Name**   |  **Superseded Policy<br>and Profile Number**  | **Deprecated Profile Name** | 
 | :----: | :----: | :----:| :----: |
 |  **1**  | **PIV, Derived PIV,<br>and PIV-I Authentication** | [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}<sup>[5](#5)</sup>  |  PIV Authentication  | 
 |  **1**  |  **PIV, Derived PIV,<br>and PIV-I Authentication** | [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
@@ -38,7 +38,7 @@ The current profile supersedes 3 previously published profiles.
 | **Mandatory<br>Extension** |  **Critical** | **Value** | 
 | :-------- | :-----: | :----- | 
 | **Key Usage**  | True |  digitalSignature. NonRepudiation is NOT allowed.  | 
-| **Authority Information Access**  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required.  
+| **Authority Information Access**  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the OCSP server that provides status information about the certificate. |
 | **Subject Key Identifier**   |  | Octet string  | 
 | **CRL Distribution Points**   | |  This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, omit the reasons and cRLIssuer fields. | 
 | **Authority Key Identifier**   |  | Octet string (same as Subject Key Identifier in Issuing CA certificate). |  
