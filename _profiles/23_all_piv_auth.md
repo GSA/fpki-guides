@@ -30,9 +30,7 @@ The current profile supersedes 3 previously published profiles.
 | **Subject Public Key Information**  |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1.2.840.113549.1.1.1}.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-4.<sup>[7](#7)</sup>   |
 | **Signature**   |   sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>or ECDSA with appropriate hash.   |
 
-## Mandatory Extensions
-
-### Common Values for PIV, Derived PIV, and PIV-I Authentication Certificates
+## Mandatory Extensions:&nbsp;&nbsp;Shared Values
 
 | **Mandatory<br>Extension** |  **Critical** | **Value** | 
 | :-------- | :-----: | :----- | 
@@ -42,9 +40,7 @@ The current profile supersedes 3 previously published profiles.
 | **CRL Distribution Points**   | |  This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, omit the reasons and cRLIssuer fields. | 
 | **Authority Key Identifier**   |  | Octet string (same as Subject Key Identifier in Issuing CA certificate). |  
 
-## Mandatory Extensions
-
-### Unique Values for PIV, Derived PIV, and PIV-I Authentication Certificates
+## Mandatory Extensions:&nbsp;&nbsp;Unique Values
 
 | **Mandatory<br>Extension**  | **Critical** | **PIV Value** | **Derived PIV Value**  |  **PIV-I Value** |
 | :-------- | :------ | :----- | :-----  | :-----     |
