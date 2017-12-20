@@ -28,12 +28,12 @@ This profile supersedes three previously published profiles:
 | :--------  | :-------------------------------     |
 | **Version**   | V3                                 |
 | **Serial Number**    | Must be a unique, positive number. |
-| **Issuer Signature Algorithm**   |  One of the following:<br>sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>ecdsa-with-SHA256 {1.2.840.10045.4.3.2}<br>ecdsa-with-SHA384 {1.2.840.10045.4.3.3}<br>ecdsa-with-SHA512 {1.2.840.10045.4.3.4} | 
+| **Issuer Signature Algorithm**   |  One of the following:<br>**sha256WithRSAEncryption {1.2.840.113549.1.1.11}**<br>**ecdsa-with-SHA256 {1.2.840.10045.4.3.2}**<br>**ecdsa-with-SHA384 {1.2.840.10045.4.3.3}**<br>**ecdsa-with-SHA512 {1.2.840.10045.4.3.4}** | 
 | **Issuer**   |  Unique X.500 Issuing CA Distinguished Name (DN).<br>PrintableString encoding should be used whenever possible for Issuer and Subject DNs. |
 | **Validity Period**  |  No longer than 3 years from date of issue.<br>Expressed in UTCTime for dates until end of 2049 and GeneralizedTime for dates thereafter.  | 
 | **Subject**   |   For PIV and Derived PIV certificates, must use a name form specified in the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, Common Policy CP), Section 3.1.1.<br>For PIV-I, must use a name form specified in the _X.509 Certificate Policy for the Federal Bridge Certification Authority_.<br>PrintableString encoding should be used whenever possible for Issuer and Subject DNs.   |
-| **Subject Public Key Information**  |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1.2.840.113549.1.1.1}.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-4.<sup>[7](#7)</sup>   |
-| **Signature**   |   sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>or ECDSA with appropriate Hash.   |
+| **Subject Public Key Information**  |   For RSA, must be at least 2048 bit modulus, **rsaEncryption {1.2.840.113549.1.1.1}**.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-4.<sup>[7](#7)</sup>   |
+| **Signature**   |   **sha256WithRSAEncryption {1.2.840.113549.1.1.11}**<br>or **ECDSA with appropriate Hash**.   |
 
 ## Mandatory Extensions
 
@@ -45,7 +45,7 @@ This profile supersedes three previously published profiles:
 | Authority Information Access  |  | **id-ad-caIssuers {1.3.6.1.5.5.7.48.2}** access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>**id-ad-ocsp {1.3.6.1.5.5.7.48.1}** access method entry that contains HTTP URI for the Issuing CA OCSP Responder.<br>OCSP is required.  
 | **Subject Key Identifier**   |  | **Octet string**  | 
 | **CRL Distribution Points**   | |  This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, omit the reasons and cRLIssuer fields. | 
-| **Authority Key Identifier**   |  | **Octet string** (same as subject key identifier in Issuing CA certificate). |  
+| **Authority Key Identifier**   |  | **Octet string** (same as Subject Key Identifier in Issuing CA certificate). |  
 
 * _These mandatory extensions have **unique** values for PIV, Derived PIV, and PIV-I Authentication certificates._
 
