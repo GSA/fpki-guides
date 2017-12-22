@@ -9,15 +9,15 @@ This profile specifies the unique settings required for:
 * X.509 **Derived PIV Authentication** certificates issued under the _Common Policy CP_
 * X.509 **PIV-I Authentication** certificates issued under the _FBCA CP_.<sup>[2](#2)</sup>
 
-For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup>.
+For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280.<sup>[4](#4)</sup>
 
 ## Certificate Profile Traceability Matrix
 
-| **Current<br>Number** | **Current Profile Name**   |  **Superseded Policy<br>and Profile Number**  | **Deprecated Profile Name** | 
+| **Current<br>Number** | **Current Profile**   |  **Superseded Policy<br>and Profile Number**  | **Deprecated Profile** | 
 | :----: | :----: | :----:| :----: |
 |  **1**  | PIV, Derived PIV,<br>and PIV-I Authentication | [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}<sup>[5](#5)</sup>  |  PIV Authentication  | 
-|  **1**  |  PIV, Derived PIV,<br>and PIV-I Authentication | [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
-| **1**   |  PIV, Derived PIV,<br>and PIV-I Authentication |  [PIV-I 5](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"}<sup>[6](#6)</sup>  | PIV-I Authentication  | 
+|  **1**  |  Same | [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
+| **1**   |  Same |  [PIV-I 5](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"}<sup>[6](#6)</sup>  | PIV-I Authentication  | 
 
 ## Mandatory Base Certificate
 
