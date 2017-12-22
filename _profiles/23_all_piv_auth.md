@@ -5,14 +5,13 @@ permalink: profiles/allpivauth3/
 ---
 This profile specifies the unique settings required for:
 
-* X.509 **PIV Authentication** and **Derived PIV Authentication** certificates issued under the _Common Policy CP_<sup>[1](#1)</sup>
+* X.509 **PIV Authentication** certificates issued under the _Common Policy CP_<sup>[1](#1)</sup>
+* X.509 **Derived PIV Authentication** certificates issued under the _Common Policy CP_
 * X.509 **PIV-I Authentication** certificates issued under the _FBCA CP_.<sup>[2](#2)</sup>
 
 For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup>.
 
 ## Certificate Profile Traceability Matrix
-
-This profile supersedes 3 previously published profiles:
 
 | **Current<br>Number** | **Current Profile Name**   |  **Superseded Policy<br>and Profile Number**  | **Deprecated Profile Name** | 
 | :----: | :----: | :----:| :----: |
@@ -33,7 +32,7 @@ This profile supersedes 3 previously published profiles:
 | **Subject Public Key Information**  |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1.2.840.113549.1.1.1}.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-4.<sup>[7](#7)</sup>   |
 | **Signature**   |   sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>or ECDSA with appropriate hash.   |
 
-## Mandatory Extensions:&nbsp;&nbsp;Shared Values
+## Mandatory Extensions Common to All PIV Classes for Authentication
 
 | **Mandatory<br>Extension** |  **Critical** | **Value** | 
 | :-------- | :-----: | :----- | 
@@ -43,7 +42,7 @@ This profile supersedes 3 previously published profiles:
 | **CRL Distribution Points**   | |  This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, omit the reasons and cRLIssuer fields. | 
 | **Authority Key Identifier**   |  | Octet string (same as Subject Key Identifier in Issuing CA certificate). |  
 
-## Mandatory Extensions:&nbsp;&nbsp;Unique Values
+## Mandatory Extensions Specific to Each PIV Class for Authentication
 
 | **Mandatory<br>Extension**  | **Critical** | **PIV Value** | **Derived PIV Value**  |  **PIV-I Value** |
 | :-------- | :------ | :----- | :-----  | :-----     |
@@ -51,7 +50,7 @@ This profile supersedes 3 previously published profiles:
 | **Subject Alternative Name**   |  | Must include FASC-N name form and, after October 15, 2015, must also include a UUID.<br>The FASC-N specifies the FASC-N of the PIV card that contains the corresponding PIV Authentication key.<br>Any additional name types may be present.<br>Other names may be included to support local applications.  | Must include a UUID.<br>Any additional name types may be present.<br>Other names may be included to support local applications.  | Must include a UUID that contains the UUID from the CHUID of the PIV-I card encoded as a URI, as specified in RFC 4122,<sup>[8](#8)</sup> Section 3.<br>Any additional name types may be present.<br>Other names may be included to support local applications.  | 
 | **PIV Interim**   |  | piv-interim indicator {2.16.840.1.101.3.6.9.1} is defined in FIPS 201-2, Appendix B.2, as PIV NACI indicator. The value of this extension is asserted as follows:<br>1. TRUE if, at the time of credential issuance:<br>(1) the FBI National Criminal History Fingerprint Check has been completed successfully, and<br>(2) an NACI has been initiated but has not been completed.<br>2. FALSE if, at the time of credential issuance, the subject’s NACI has been completed and successfully adjudicated. | Same value as for PIV.  |   | 
 
-## Optional Extensions:&nbsp;&nbsp;Shared Values
+## Optional Extensions Common to All PIV Classes for Authentication
 
 | **Optional<br>Extension**  | **Critical** | **Value** |
 | :-------- | :------ | :----- |
