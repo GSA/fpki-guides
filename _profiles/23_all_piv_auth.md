@@ -15,9 +15,9 @@ For standard, detailed certificate information, see the _ITU-T X.509 Recommendat
 
 | **Current<br>Number** | **Current Profile Name**   |  **Superseded Policy<br>and Profile Number**  | **Deprecated Profile Name** | 
 | :----: | :----: | :----:| :----: |
-|  **1**  | **PIV, Derived PIV,<br>and PIV-I Authentication** | [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}<sup>[5](#5)</sup>  |  PIV Authentication  | 
-|  **1**  |  **PIV, Derived PIV,<br>and PIV-I Authentication** | [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
-| **1**   |  **PIV, Derived PIV,<br>and PIV-I Authentication** |  [PIV-I 5](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"}<sup>[6](#6)</sup>  | PIV-I Authentication  | 
+|  **1**  | PIV, Derived PIV,<br>and PIV-I Authentication | [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}<sup>[5](#5)</sup>  |  PIV Authentication  | 
+|  **1**  |  PIV, Derived PIV,<br>and PIV-I Authentication | [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
+| **1**   |  PIV, Derived PIV,<br>and PIV-I Authentication |  [PIV-I 5](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"}<sup>[6](#6)</sup>  | PIV-I Authentication  | 
 
 ## Mandatory Base Certificate
 
