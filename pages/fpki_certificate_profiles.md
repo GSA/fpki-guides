@@ -2,6 +2,7 @@
 layout: default
 title: Certificate Profiles
 permalink: /certprofiles/
+collection: profiles
 ---
 
 The certificate profiles for the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_<sup>[1](#1)</sup> have been simplified to increase compatibility across federal and other PKI communities.<sup>[2](#2)</sup> They specify the updated settings for the X.509 v3 certificates and v2 certificate revocation lists (CRLs) issued under this policy. They also give guidance for certificates issued under other Certificate Policies that are cross-certified with the Federal Bridge Certification Authority (FBCA). 
