@@ -5,15 +5,15 @@ permalink: profiles/allpivauth3/
 ---
 This profile specifies the unique settings required for:
 
-* X.509 **PIV Authentication** certificates issued under the _Common Policy CP_<sup>[1](#1)</sup>
+* X.509 **PIV Authentication** certificates issued under the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_)<sup>[1](#1)</sup>
 * X.509 **Derived PIV Authentication** certificates issued under the _Common Policy CP_
-* X.509 **PIV-I Authentication** certificates issued under the _FBCA CP_.<sup>[2](#2)</sup>
+* X.509 **PIV-I Authentication** certificates issued under the  _X.509 Certificate Policy for the Federal Bridge Certification Authority_ (aka, _FBCA CP_)<sup>[2](#2)</sup>
 
-For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280.<sup>[4](#4)</sup>
+For standard certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280.<sup>[4](#4)</sup>
 
 ## Certificate Profile Traceability Matrix
 
-| **Current<br>Number** | **Current Profile**   |  **Superseded Policy<br>and Profile Number**  | **Deprecated Profile** | 
+| **Current<br>Profile Number** | **Current Profile**   |  **Superseded Policy<br>and Profile Number**  | **Deprecated Profile** | 
 | :----: | :----: | :----:| :----: |
 |  **1**  | PIV, Derived PIV,<br>and PIV-I Authentication | [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}<sup>[5](#5)</sup>  |  PIV Authentication  | 
 |  **1**  |  Same | [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
@@ -28,7 +28,7 @@ For standard, detailed certificate information, see the _ITU-T X.509 Recommendat
 | **Issuer Signature Algorithm**   |  One of the following:<br>sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>ecdsa-with-SHA256 {1.2.840.10045.4.3.2}<br>ecdsa-with-SHA384 {1.2.840.10045.4.3.3}<br>ecdsa-with-SHA512 {1.2.840.10045.4.3.4} | 
 | **Issuer**   |  Unique X.500 Issuing CA Distinguished Name (DN).<br>PrintableString encoding should be used whenever possible for Issuer and Subject DNs. |
 | **Validity Period**  |  No longer than 3 years from date of issue.<br>Expressed in UTCTime for dates until end of 2049 and GeneralizedTime for dates thereafter.  | 
-| **Subject**   |   For PIV and Derived PIV certificates, must use a name form specified in the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, Common Policy CP), Section 3.1.1.<br>For PIV-I, must use a name form specified in the _X.509 Certificate Policy for the Federal Bridge Certification Authority_.<br>PrintableString encoding should be used whenever possible for Issuer and Subject DNs.   |
+| **Subject**   |   For PIV and Derived PIV certificates, must use a name form specified in the _Common Policy CP_, Section 3.1.1.<br>For PIV-I, must use a name form specified in the _FBCA CP_.<br>PrintableString encoding should be used whenever possible for Issuer and Subject DNs.   |
 | **Subject Public Key Information**  |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1.2.840.113549.1.1.1}.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-4.<sup>[7](#7)</sup>   |
 | **Signature**   |   sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>or ECDSA with appropriate hash.   |
 
