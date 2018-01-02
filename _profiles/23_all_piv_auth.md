@@ -32,7 +32,7 @@ For standard certificate information, see the _ITU-T X.509 Recommendation_<sup>[
 | **Subject Public Key Information**  |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1.2.840.113549.1.1.1}.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve referenced in NIST SP 800-78-4.<sup>[7](#7)</sup>   |
 | **Signature**   |   sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>or ECDSA with appropriate hash.   |
 
-## Mandatory Extensions Common to All PIV Classes for Authentication
+## Mandatory Extensions Common to PIV, Derived PIV, and PIV-I Authentication
 
 | **Mandatory<br>Extension** |  **Critical** | **Value** | 
 | :-------- | :-----: | :----- | 
@@ -42,15 +42,15 @@ For standard certificate information, see the _ITU-T X.509 Recommendation_<sup>[
 | **CRL Distribution Points**   | |  This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, omit the reasons and cRLIssuer fields. | 
 | **Authority Key Identifier**   |  | Octet string (same as Subject Key Identifier in Issuing CA certificate). |  
 
-## Mandatory Extensions Specific to Each PIV Class for Authentication
+## Mandatory Extensions Specific to PIV, Derived PIV, and PIV-I Authentication
 
-| **Mandatory<br>Extension**  | **Critical** | **PIV Value** | **Derived PIV Value**  |  **PIV-I Value** |
+| **Mandatory<br>Extension**  | **Critical** | **PIV** | **Derived PIV**  |  **PIV-I** |
 | :-------- | :------ | :----- | :-----  | :-----     |
 | **Certificate Policies**   |  | Applicable certificate policy:<br>id-fpki-common-authentication {2.16.840.1.101.3.2.1.3.13}  |  Applicable certificate policy:<br>id-fpki-common-derived-pivAuth {2.16.840.1.101.3.2.1.3.40} <br>id-fpki-common-derived-pivAuth-hardware {2.16.840.1.101.3.2.1.3.41}  | Applicable certificate policy:<br>id-fpki-certpcy-pivi-hardware {2.16.840.1.101.3.2.1.3.18}   |
 | **Subject Alternative Name**   |  | Must include FASC-N name form and, after October 15, 2015, must also include a UUID.<br>The FASC-N specifies the FASC-N of the PIV card that contains the corresponding PIV Authentication key.<br>Any additional name types may be present.<br>Other names may be included to support local applications.  | Must include a UUID.<br>Any additional name types may be present.<br>Other names may be included to support local applications.  | Must include a UUID that contains the UUID from the CHUID of the PIV-I card encoded as a URI, as specified in RFC 4122,<sup>[8](#8)</sup> Section 3.<br>Any additional name types may be present.<br>Other names may be included to support local applications.  | 
 | **PIV Interim**   |  | piv-interim indicator {2.16.840.1.101.3.6.9.1} is defined in FIPS 201-2, Appendix B.2, as PIV NACI indicator. The value of this extension is asserted as follows:<br>1. TRUE if, at the time of credential issuance:<br>(1) the FBI National Criminal History Fingerprint Check has been completed successfully, and<br>(2) an NACI has been initiated but has not been completed.<br>2. FALSE if, at the time of credential issuance, the subject’s NACI has been completed and successfully adjudicated. | Same value as for PIV.  |   | 
 
-## Optional Extensions Common to All PIV Classes for Authentication
+## Optional Extensions Common to PIV, Derived PIV, and PIV-I Authentication
 
 | **Optional<br>Extension**  | **Critical** | **Value** |
 | :-------- | :------ | :----- |
