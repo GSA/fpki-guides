@@ -1,9 +1,9 @@
 ---
 layout: default
-title: PIV, Derived PIV, and PIV-I Authentication Certificate Profile
+title: PIV, Derived PIV, and PIV-I Authentication Certificate Worksheet
 permalink: profiles/allpivauth3/
 ---
-This profile specifies the unique settings required for:
+This worksheet specifies the unique settings required for:
 
 * X.509 **PIV Authentication** certificates issued under the _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_)<sup>[1](#1)</sup>
 * X.509 **Derived PIV Authentication** certificates issued under the _Common Policy CP_
@@ -11,9 +11,11 @@ This profile specifies the unique settings required for:
 
 For standard certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280.<sup>[4](#4)</sup>
 
-## Certificate Profile Traceability Matrix
+## Traceability
 
-|  **Superseded Certificate Profile<br>and Worksheet Number**  | **Superseded Worksheet** | 
+This worksheet supersedes three previously worksheets:
+
+|  **Superseded Certificate Profiles<br>and Worksheet Numbers**  | **Superseded Worksheet Names** | 
 | :----:| :----: |
 | [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}<sup>[5](#5)</sup>  |  PIV Authentication  | 
 | [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
@@ -34,6 +36,8 @@ For standard certificate information, see the _ITU-T X.509 Recommendation_<sup>[
 
 ## Mandatory Extensions Common to PIV, Derived PIV, and PIV-I Authentication
 
+_These **Mandatory** extensions apply to **all** PIV, Derived PIV, and PIV-I Authentication certificates._
+
 | **Mandatory<br>Extension** |  **Critical** | **Value** | 
 | :-------- | :-----: | :----- | 
 | **Key Usage**  | True |  digitalSignature. NonRepudiation is NOT allowed.  | 
@@ -42,7 +46,9 @@ For standard certificate information, see the _ITU-T X.509 Recommendation_<sup>[
 | **CRL Distribution Points**   | |  This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, omit the reasons and cRLIssuer fields. | 
 | **Authority Key Identifier**   |  | Octet string (same as Subject Key Identifier in Issuing CA certificate). |  
 
-## Mandatory Extensions Specific to PIV, Derived PIV, and PIV-I Authentication
+## Mandatory Extensions Unique to PIV, Derived PIV, or PIV-I Authentication
+
+_These **Mandatory** extensions are **unique** to either PIV, Derived PIV, or PIV-I Authentication certificates._
 
 | **Mandatory<br>Extension**  | **Critical** | **PIV** | **Derived PIV**  |  **PIV-I** |
 | :-------- | :------ | :----- | :-----  | :-----     |
@@ -51,6 +57,8 @@ For standard certificate information, see the _ITU-T X.509 Recommendation_<sup>[
 | **PIV Interim**   |  | piv-interim indicator {2.16.840.1.101.3.6.9.1} is defined in FIPS 201-2, Appendix B.2, as PIV NACI indicator. The value of this extension is asserted as follows:<br>1. TRUE if, at the time of credential issuance:<br>(1) the FBI National Criminal History Fingerprint Check has been completed successfully, and<br>(2) an NACI has been initiated but has not been completed.<br>2. FALSE if, at the time of credential issuance, the subject’s NACI has been completed and successfully adjudicated. | Same value as for PIV.  |   | 
 
 ## Optional Extensions Common to PIV, Derived PIV, and PIV-I Authentication
+
+_These **Optional** extensions apply to **all** PIV, Derived PIV, and PIV-I Authentication certificates._
 
 | **Optional<br>Extension**  | **Critical** | **Value** |
 | :-------- | :------ | :----- |
