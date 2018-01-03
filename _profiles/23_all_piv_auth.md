@@ -13,11 +13,11 @@ For standard certificate information, see the _ITU-T X.509 Recommendation_<sup>[
 
 ## Certificate Profile Traceability Matrix
 
-| **Current<br>Profile Number** | **Current Profile**   |  **Superseded Policy<br>and Profile Number**  | **Deprecated Profile** | 
-| :----: | :----: | :----:| :----: |
-|  **1**  | PIV, Derived PIV,<br>and PIV-I Authentication | [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}<sup>[5](#5)</sup>  |  PIV Authentication  | 
-|  **1**  |  Same | [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
-| **1**   |  Same |  [PIV-I 5](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"}<sup>[6](#6)</sup>  | PIV-I Authentication  | 
+|  **Superseded Certificate Profile<br>and Worksheet Number**  | **Superseded Worksheet** | 
+| :----:| :----: |
+| [SSP 9](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}<sup>[5](#5)</sup>  |  PIV Authentication  | 
+| [SSP 11](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-cert-profile-ssp.pdf){:target="_blank"}  |  Common Derived PIV Authentication  | 
+| [PIV-I 5](https://www.idmanagement.gov/wp-content/uploads/sites/1171/uploads/fpki-pivi-cert-profiles.pdf){:target="_blank"}<sup>[6](#6)</sup>  | PIV-I Authentication  | 
 
 ## Mandatory Base Certificate
 
