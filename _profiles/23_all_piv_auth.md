@@ -13,7 +13,7 @@ For standard certificate information, see the _ITU-T X.509 Recommendation_<sup>[
 
 ## Traceability
 
-This worksheet supersedes three previously worksheets:
+This worksheet supersedes three previously published worksheets:
 
 |  **Superseded Certificate Profiles<br>and Worksheet Numbers**  | **Superseded Worksheet Names** | 
 | :----:| :----: |
