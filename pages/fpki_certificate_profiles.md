@@ -14,9 +14,7 @@ These worksheets also give guidance for issuing certificates under policies that
 
 ## Worksheets
 
-We've restructured the 20 past worksheets to create nine worksheets. See the mapping in the [**Traceability Table**](#traceability) below. (**Note:**&nbsp;&nbsp;Some worksheet names have changed.) 
-
-The nine new worksheets are:
+We've restructured the 20 past worksheets to create nine worksheets: 
 
 * [Worksheet 1. PIV Authentication, Derived PIV Authentication, and PIV-I Authentication]({{ site.baseurl }}/profiles/allpivauth/)<br>
 * Worksheet 2. PIV Card Authentication and PIV-I Card Authentication<br>
@@ -27,6 +25,8 @@ The nine new worksheets are:
 * Worksheet 7. Devices <!--renamed Computing and Communications Devices--><br>
 * Worksheet 8. Certificate Revocation Lists (CRLs)<br>
 * Worksheet 9. Online Certificate Status Protocol (OCSP)<br>
+
+See the past-to-new worksheet mapping in the [**Traceability Table**](#traceability) below. 
 
 ## Traceability Table
 
