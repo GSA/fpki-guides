@@ -4,7 +4,7 @@ title: Certificate Profiles
 permalink: /certprofiles/
 collection: profiles
 ---
-To encourage certificate compatibility across federal and PKI communities, we simplified the new worksheets.<sup>[1](#1)</sup>. These worksheets still specify all the unique settings for the X.509<sup>[2](#2)</sup> v3 certificates and v2 CRLs issued under:
+To encourage certificate compatibility across federal and PKI communities, we simplified the new worksheets.<sup>[1](#1)</sup> These worksheets still specify all the unique settings for the X.509<sup>[2](#2)</sup> v3 certificates and v2 CRLs issued under:
 
 * _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_)<sup>[3](#3)</sup>
 * _X.509 Certificate Policy for the Federal Bridge Certification Authority_ (aka, _FBCA CP_)<sup>[4](#4)</sup> 
@@ -57,7 +57,7 @@ The nine new worksheets are:
 
 -----------------
 <a name="1">1</a>. These profiles will be published in the upcoming X.509 Certificate and CRL Extensions Profile for the Shared Service Providers (SSP) Program, FBCA, and PIV-Interoperable (PIV-I).<br>
-<a name="2">2</a>.Certificate profile formats and semantics are defined by X.509 and further described in RFC 5280<sup>[8](#8)</sup>. The FPKI worksheets state where they deviate from RFC 5280.
+<a name="2">2</a>.Certificate profile formats and semantics are defined by X.509 and further described in RFC 5280.<sup>[8](#8)</sup> The FPKI worksheets state where they deviate from RFC 5280.
 <a name="3">3</a>. _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_, v1.27, June 29, 2017.<br>
 <a name="4">4</a>. _X.509 Certificate Policy For The Federal Bridge Certification Authority (FBCA)_, Version 2.31, June 29, 2017<br>
 <a name="5">5</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for the Shared Service Providers (SSP) Program_, July 17, 2017.<br>
