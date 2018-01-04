@@ -15,8 +15,8 @@ Any CA in the FPKI may be referred to as a _Federal PKI CA_. The three highest l
 * [SHA-1 Federal Root Certification Authority G2](#sha-1-federal-root-certification-authority)
 
 ![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
-
-
+<br>
+<br>
 
 {% include alert-info.html heading="Public trust for websites" content="A new effort is in the planning stages to establish another Federal Government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies" %}
 
