@@ -10,7 +10,7 @@ The Federal PKI (FPKI) is a network of hundreds of certification authorities (CA
 
 Any CA in the FPKI may be referred to as a _Federal PKI CA_. The three highest level CAs in the FPKI hierarchy are the **_FPKI Trust Infrastructure CAs_**, which are operated and managed by the Federal PKI Management Authority (FPKIMA) Program Office:
 
-![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:25%;float:center;"}
+![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
 
 * [Federal Common Policy Certification Authority](#federal-common-policy-certification-authority)
 * [Federal Bridge Certification Authority](#federal-bridge-certification-authority)
