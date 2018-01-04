@@ -8,7 +8,7 @@ A **_certification authority_** is a system that issues digital certificates. Th
 
 The Federal PKI is a network of hundreds of certification authorities (CAs) that are either _root_, _intermediate_ or _issuing_ CAs. <!--Capitalize or lowercased preferred? (consistency)-->
 
-Any CA in the Federal PKI may be referred to as a _Federal PKI CA_. The three highest level CAs in the Federal PKI hierarchy are the **Federal PKI Trust Infrastructure CAs,** which are operated and managed by the Federal PKI Management Authority (FPKIMA) program office:
+Any CA in the Federal PKI may be referred to as a _Federal PKI CA_. The three highest level CAs in the Federal PKI hierarchy are the **_Federal PKI Trust Infrastructure CAs_**, which are operated and managed by the Federal PKI Management Authority (FPKIMA) program office:
 
 * [Federal Common Policy Certification Authority](#federal-common-policy-certification-authority)
 * [Federal Bridge Certification Authority](#federal-bridge-certification-authority)
@@ -40,9 +40,7 @@ Many commercial vendors include the FCPCA root certificate in their commercial-o
 
 ### Federal Bridge Certification Authority
 
-The Federal Bridge Certification Authority (FBCA) is:
-
-* Federal Bridge CA 2016
+The Federal Bridge Certification Authority (FBCA) is the _**Federal Bridge CA 2016_**.
 
 ![FPKI Federal Bridge Logo]({{site.baseurl}}/img/fbca-logo.png){:style="float:left;width:15%;"}
 The FBCA is a PKI Bridge or link between the FCPCA and other CAs that comprise the Federal PKI network and which may operate under comparable but _different_ certificate policies.  
