@@ -19,8 +19,8 @@ Any CA in the FPKI may be referred to as a _Federal PKI CA_. The three highest l
 
 ### Federal Common Policy Certification Authority
 
-<!--- ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
-*Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"} --->
+<!--- ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:30%;float:right;"}
+*Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:30%;"} --->
 
 The FCPCA serves as the _root_ and _trust anchor_ for the _intermediate_ and _issuing_ CAs operated by:  
 
