@@ -19,6 +19,9 @@ Any CA in the FPKI may be referred to as a _Federal PKI CA_. The three highest l
 
 ### Federal Common Policy Certification Authority
 
+<!--- ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
+*Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"} --->
+
 The FCPCA serves as the _root_ and _trust anchor_ for the _intermediate_ and _issuing_ CAs operated by:  
 
 - Federal Government Executive Branch Agencies  
@@ -29,9 +32,6 @@ The FCPCA serves as the _root_ and _trust anchor_ for the _intermediate_ and _is
 {% include alert-info.html heading="Public trust for websites" content="A new effort is in the planning stages to establish another Federal Government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies" %}
 
 
-
-<!--- ![Example of COMMON Serving as the Trust Anchor]({{site.baseurl}}/img/fcpca-chainV5.png){:style="width:40%;float:right;"}
-*Example of COMMON as the Trust Anchor*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"} --->
 
 
 >The _Federal Common Policy CA_ may be referred to as the _FCPCA_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the Federal Government, the FCPCA supports government person trust and enterprise devices, including [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
