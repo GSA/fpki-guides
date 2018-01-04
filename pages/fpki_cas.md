@@ -10,12 +10,11 @@ The Federal PKI (FPKI) is a network of hundreds of certification authorities (CA
 
 Any CA in the FPKI may be referred to as a _Federal PKI CA_. The three highest level CAs in the FPKI hierarchy are the **_FPKI Trust Infrastructure CAs_**, which are operated and managed by the Federal PKI Management Authority (FPKIMA) Program Office:
 
+![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
+
 * [Federal Common Policy Certification Authority](#federal-common-policy-certification-authority)
 * [Federal Bridge Certification Authority](#federal-bridge-certification-authority)
 * [SHA-1 Federal Root Certification Authority G2](#sha-1-federal-root-certification-authority)
-
-
-![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
 
 
 ### Federal Common Policy Certification Authority
@@ -25,9 +24,6 @@ The FCPCA serves as the _root_ and _trust anchor_ for the _intermediate_ and _is
 - Federal Government Executive Branch Agencies  
 - State, Local, Tribal, Territorial, and International Governments  
 - Commercial Partners 
-
-
-![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
 
 
 {% include alert-info.html heading="Public trust for websites" content="A new effort is in the planning stages to establish another Federal Government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies" %}
