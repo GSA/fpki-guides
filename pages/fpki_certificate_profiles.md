@@ -4,12 +4,12 @@ title: Certificate Profiles
 permalink: /certprofiles/
 collection: profiles
 ---
-To encourage certificate compatibility across federal and PKI communities, we simplified the new worksheets.<sup>[1](#1)</sup> These worksheets still specify all the unique settings for the X.509<sup>[2](#2)</sup> v3 certificates and v2 CRLs issued under:
+To encourage certificate compatibility across federal and PKI communities, we've simplified the new worksheets.<sup>[1](#1)</sup> These worksheets still specify all the unique settings for the X.509<sup>[2](#2)</sup> v3 certificates and v2 CRLs issued under:
 
 * _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ (aka, _Common Policy CP_)<sup>[3](#3)</sup>
 * _X.509 Certificate Policy for the Federal Bridge Certification Authority_ (aka, _FBCA CP_)<sup>[4](#4)</sup> 
 
-These worksheets also give guidance for issuing certificates under policies that are cross-certified with the FBCA.  
+You'll also find worksheet guidance if you need to issue certificates under policies that are cross-certified with the FBCA.  
 <!--Didn't see any worksheets with statements to this effect.-->
 
 ## Worksheets
