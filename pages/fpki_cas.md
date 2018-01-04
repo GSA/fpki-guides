@@ -14,6 +14,10 @@ Any CA in the FPKI may be referred to as a _Federal PKI CA_. The three highest l
 * [Federal Bridge Certification Authority](#federal-bridge-certification-authority)
 * [SHA-1 Federal Root Certification Authority G2](#sha-1-federal-root-certification-authority)
 
+
+![FPKI Trust Infrastructure]({{site.baseurl}}/img/fpki_trust_cas.png){:style="width:35%;float:right;"}
+
+
 ### Federal Common Policy Certification Authority
 
 The FCPCA serves as the _root_ and _trust anchor_ for the _intermediate_ and _issuing_ CAs operated by:  
