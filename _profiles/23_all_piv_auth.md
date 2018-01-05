@@ -54,7 +54,7 @@ _These **Mandatory** extensions are **unique** to either PIV, Derived PIV, or PI
 | :-------- | :------ | :----- | :-----  | :-----     |
 | **Certificate Policies**   |  | id-fpki-common-authentication {2.16.840.1.101.3.2.1.3.13}  |  id-fpki-common-derived-pivAuth {2.16.840.1.101.3.2.1.3.40} **OR** id-fpki-common-derived-pivAuth-hardware {2.16.840.1.101.3.2.1.3.41}  | id-fpki-certpcy-pivi-hardware {2.16.840.1.101.3.2.1.3.18}   |
 | **Subject Alternative Name**   |  | Must include FASC-N name form and, after October 15, 2015, must also include a UUID, as specified in RFC 4122,<sup>[8](#8)</sup> Section 3. Additional name forms may be present to support local applications.  | Must include a UUID. Additional name forms may be present to support local applications.  | Must include a UUID. Additional name forms may be present to support local applications.  | 
-| **PIV Interim**   |  | piv-interim indicator {2.16.840.1.101.3.6.9.1}, defined in FIPS 201-2,<sup>[9](#9)</sup> Appendix B.2, as _PIV NACI indicator_. TRUE, if the FBI National Criminal History Fingerprint Check completed successfully, and if NACI has been initiated but not yet completed at time of issuance.<br>FALSE, if NACI completed and successfully adjudicated at time of issuance. | piv-interim indicator {2.16.840.1.101.3.6.9.1} is TRUE, if the FBI National Criminal History Fingerprint Check completed successfully, and if NACI has been initiated but not yet completed at time of issuance.<br>FALSE, if NACI completed and successfully adjudicated at time of issuance.  |   | 
+| **PIV Interim**   |  | piv-interim indicator {2.16.840.1.101.3.6.9.1}, defined in FIPS 201-2, Appendix B.2, as _PIV NACI indicator_. TRUE, if the FBI National Criminal History Fingerprint Check completed successfully, and if NACI has been initiated but not yet completed at time of issuance.<br>FALSE, if NACI completed and successfully adjudicated at time of issuance. | piv-interim indicator {2.16.840.1.101.3.6.9.1} is TRUE, if the FBI National Criminal History Fingerprint Check completed successfully, and if NACI has been initiated but not yet completed at time of issuance.<br>FALSE, if NACI completed and successfully adjudicated at time of issuance.  |   | 
 
 ## Optional Extensions Common to PIV, Derived PIV, and PIV-I Authentication
 
@@ -63,7 +63,7 @@ _These **Optional** extensions apply to **all** PIV, Derived PIV, and PIV-I Auth
 | **Optional<br>Extension**  | **Critical** | **Value** |
 | :-------- | :------ | :----- |
 | **Extended Key Usage**   | True | If included, this extension should be non-critical. Should include:<br>Microsoft Smart Card Logon {1.3.6.1.4.1.311.20.2.2}, only if the private key is on a smart card.<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>Additional key purposes may be specified (e.g., id-kp-secureShellClient {3.6.1.5.5.7.3.21}). | 
-| **Subject Directory Attributes** |    | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280.</sup><br>countryOfCitizenship {1.3.6.1.5.5.7.9.4}<br>ISO 3166<sup>[10](#10)</sup> specifies country codes. | 
+| **Subject Directory Attributes** |    | This extension may be included to indicate the cardholder's country or countries of citizenship, as specified in RFC 5280.</sup><br>countryOfCitizenship {1.3.6.1.5.5.7.9.4}<br>ISO 3166<sup>[9](#9)</sup> specifies country codes. | 
 | **Issuer Alternative Name**     |   |   |  
 
 ------
@@ -75,5 +75,4 @@ _These **Optional** extensions apply to **all** PIV, Derived PIV, and PIV-I Auth
 <a name="6">6</a>. _X.509 Certificate and Certificate Revocation List (CRL) Extensions Profile for Personal Identity Verification Interoperable (PIV-I) Cards_, July 17, 2017.<br>
 <a name="7">7</a>. NIST SP 800-78-4, _Cryptographic Algorithms and Key Sizes for Personal Identity Verification_, W. Timothy Polk, Donna F. Dodson, William E. Burr, Hildegard Ferraiolo, and David Cooper (May 2015).<br>
 <a name="8">8</a>. RFC 4122, _A Universally Unique Identifier (UUID) URN Namespace_, P. Leach, M. Mealling, and R. Salz (July 2005).<br>
-<a name="9">9</a>. FIPS PUB 201-2, _Personal Identity Verification (PIV) of Federal Employees and Contractors_, August 2013.
-<a name="10">10</a>. ISO 3166, _Codes for the representation of names of countries and their subdivisions — Part 1: Country codes_ (November 15, 2013). 
+<a name="9">9</a>. ISO 3166, _Codes for the representation of names of countries and their subdivisions — Part 1: Country codes_ (November 15, 2013). 
