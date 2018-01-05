@@ -43,7 +43,7 @@ _These **Mandatory** extensions apply to **all** PIV, Derived PIV, and PIV-I Aut
 | **Key Usage**  | True |  digitalSignature. NonRepudiation is NOT allowed.  | 
 | **Authority Information Access**  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the OCSP server that provides status information about the certificate. |
 | **Subject Key Identifier**   |  | Octet string  | 
-| **CRL Distribution Points**   | |  At least one HTTP URI to a file containing a DER-encoded CRL with an _application/pkix-crl_ file type. Omit the reasons and cRLIssuer fields. | 
+| **CRL Distribution Points**   | |  Must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with an _application/pkix-crl_ file type. Omit the reasons and cRLIssuer fields. | 
 | **Authority Key Identifier**   |  | Octet string (same as Subject Key Identifier in Issuing CA certificate). |  
 
 ## Mandatory Extensions Unique to PIV, Derived PIV, or PIV-I Authentication
@@ -52,8 +52,8 @@ _These **Mandatory** extensions are **unique** to either PIV, Derived PIV, or PI
 
 | **Mandatory<br>Extension**  | **Critical** | **PIV** | **Derived PIV**  |  **PIV-I** |
 | :-------- | :------ | :----- | :-----  | :-----     |
-| **Certificate Policies**   |  | Applicable certificate policy:<br>id-fpki-common-authentication {2.16.840.1.101.3.2.1.3.13}  |  Applicable certificate policy:<br>id-fpki-common-derived-pivAuth {2.16.840.1.101.3.2.1.3.40} <br>id-fpki-common-derived-pivAuth-hardware {2.16.840.1.101.3.2.1.3.41}  | Applicable certificate policy:<br>id-fpki-certpcy-pivi-hardware {2.16.840.1.101.3.2.1.3.18}   |
-| **Subject Alternative Name**   |  | Must include FASC-N name form and, after October 15, 2015, must also include a UUID.<br>The FASC-N specifies the FASC-N of the PIV card that contains the corresponding PIV Authentication key.<br>Any additional name types may be present.<br>Other names may be included to support local applications.  | Must include a UUID.<br>Any additional name types may be present.<br>Other names may be included to support local applications.  | Must include a UUID that contains the UUID from the CHUID of the PIV-I card encoded as a URI, as specified in RFC 4122,<sup>[8](#8)</sup> Section 3.<br>Any additional name types may be present.<br>Other names may be included to support local applications.  | 
+| **Certificate Policies**   |  | id-fpki-common-authentication {2.16.840.1.101.3.2.1.3.13}  |  id-fpki-common-derived-pivAuth {2.16.840.1.101.3.2.1.3.40} **OR** id-fpki-common-derived-pivAuth-hardware {2.16.840.1.101.3.2.1.3.41}  | id-fpki-certpcy-pivi-hardware {2.16.840.1.101.3.2.1.3.18}   |
+| **Subject Alternative Name**   |  | Must include FASC-N name form and, after October 15, 2015, must also include a UUID, as specified in RFC 4122,<sup>[8](#8)</sup> Section 3. Additional name forms may be present to support local applications.  | Must include a UUID. Additional name forms may be present to support local applications.  | Must include a UUID. Additional name forms may be present to support local applications.  | 
 | **PIV Interim**   |  | piv-interim indicator {2.16.840.1.101.3.6.9.1} is defined in FIPS 201-2, Appendix B.2, as PIV NACI indicator. The value of this extension is asserted as follows:<br>1. TRUE if, at the time of credential issuance:<br>(1) the FBI National Criminal History Fingerprint Check has been completed successfully, and<br>(2) an NACI has been initiated but has not been completed.<br>2. FALSE if, at the time of credential issuance, the subject’s NACI has been completed and successfully adjudicated. | Same value as for PIV.  |   | 
 
 ## Optional Extensions Common to PIV, Derived PIV, and PIV-I Authentication
