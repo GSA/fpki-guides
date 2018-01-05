@@ -43,7 +43,7 @@ _These **Mandatory** extensions apply to **all** PIV, Derived PIV, and PIV-I Aut
 | **Key Usage**  | True |  digitalSignature. NonRepudiation is NOT allowed.  | 
 | **Authority Information Access**  |  | id-ad-caIssuers {1.3.6.1.5.5.7.48.2} access method entry that contains HTTP URI for .p7c file containing certificates issued to Issuing CA.<br>id-ad-ocsp {1.3.6.1.5.5.7.48.1} access method entry that contains HTTP URI for the OCSP server that provides status information about the certificate. |
 | **Subject Key Identifier**   |  | Octet string  | 
-| **CRL Distribution Points**   | |  This extension must appear in all certificates and include at least one HTTP URI to a file containing a DER-encoded CRL with a file type of _application/pkix-crl_.<br>This profile prohibits CRLs segmented by reason code; therefore, omit the reasons and cRLIssuer fields. | 
+| **CRL Distribution Points**   | |  At least one HTTP URI to a file containing a DER-encoded CRL with an _application/pkix-crl_ file type. Omit the reasons and cRLIssuer fields. | 
 | **Authority Key Identifier**   |  | Octet string (same as Subject Key Identifier in Issuing CA certificate). |  
 
 ## Mandatory Extensions Unique to PIV, Derived PIV, or PIV-I Authentication
