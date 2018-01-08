@@ -53,9 +53,11 @@ The CAs signed by the Federal Bridge CA 2016 are _cross-certified_. These CAs ha
 
 ### SHA-1 Federal Root Certification Authority
 
-The SHA-1 Federal Root CA G2 (SHA-1 FRCA) supports federal entities that still have certificates which use the deprecated SHA-1 signature hash algorithm. The SHA-1 hash algorithm has been deemed not secure enough for today’s standards. The SHA-1 FRCA was created and is maintained to facilitate backwards interoperability for those legacy systems unable to fully transition to SHA-256 and to support the migrations over time. Federal organizations should no longer use certificates with the SHA-1 hash.  
+The SHA-1 Federal Root CA G2 (SHA-1 FRCA) was created and is maintained to facilitate backwards interoperability for legacy systems unable to fully transition to SHA-256. The SHA-1 Federal Root CA G2 supports some defense partners and government legacy applications that still use SHA-1 certificates. 
 
-{% include alert-warning.html content="Certificates using the SHA-1 signature hash algorithm under current policy are limited to legacy enterprise systems and are being completely phased out." %}
+The deprecated SHA-1 hash algorithm has been deemed not secure enough for today’s federal systems. Federal agencies should no longer generate, use, or accept certificates with the SHA-1 hash.  
+
+{% include alert-warning.html content="Certificates using the SHA-1 signature hash algorithm under current policy are limited to legacy systems and are being completely phased out." %}
 
 ### All Federal PKI Certification Authorities
 
@@ -74,4 +76,4 @@ We realize all the acronyms and labels may be confusing and welcome your input t
 | Access Certificates for Electronic Services (ACES) Certification Authorities | The ACES CAs issue certificates to authorized U.S. business representatives who need to digitally sign documents or access certain web-based systems.  ACES was established in the late 1990s and is the predecessor for the development of today's Federal PKI. |
 | Other Government Certification Authorities | These CAs are managed and operated by State, Local, Tribal, Territorial, or International Governments. |
 | Bridge Certification Authorities | Bridge CAs connect member PKIs and are designed to enable interoperability between different PKIs operating under their own certificate policies. A Bridge CA is not a _root_. |
-| Federal Agency Legacy | Prior to 2004, some agencies had already deployed and invested in their own PKI and CAs. Some of these agencies opted out of migrating to the SSP Program and continued to manage their existing infrastructures. These Federal Agencies Legacy own one or more CAs that are cross-certified with one or more Federal PKI Trust Infrastructure CAs.|
+| Federal Agency Legacy | Prior to 2004, some agencies had already deployed and invested in their own PKI and CAs. Some of these agencies opted out of migrating to the SSP Program and continued to manage their existing infrastructures. These Federal Agencies Legacy operate one or more CAs that are cross-certified with a Federal PKI Trust Infrastructure CA.|
