@@ -35,7 +35,7 @@ The _Federal Common Policy CA_ may be referred to as the _FCPCA_, or as _COMMON_
 
 Many commercial vendors include the FCPCA root certificate in their commercial-off-the-shelf (COTS) products' [Trust Stores](../truststores/). This enables Federal Government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCA root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
 
-{% include alert-warning.html content="The FCPCA root certificate is included in the trust stores for some platforms such as Microsoft and Adobe. Other platforms, including Mozilla and Firefox, do not include the FCPCA by default. " %}
+{% include alert-warning.html content="The FCPCA root certificate is included in the trust stores for some platforms such as Microsoft, Apple, and Adobe. Other platforms do not include the FCPCA by default. " %}
 
 ### Federal Bridge Certification Authority
 
