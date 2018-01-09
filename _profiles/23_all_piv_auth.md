@@ -52,7 +52,7 @@ _These **Mandatory** extensions are **unique** to either PIV, Derived PIV, or PI
 
 | **Mandatory<br>Extension**  | **Critical** | **PIV** | **Derived PIV**  |  **PIV-I** |
 | :-------- | :------ | :----- | :-----  | :-----     |
-| **Certificate Policies**   |  | id-fpki-common-authentication {2.16.840.1.101.3.2.1.3.13}  |  id-fpki-common-derived-pivAuth {2.16.840.1.101.3.2.1.3.40}<br>_**OR**_ id-fpki-common-derived-pivAuth-hardware {2.16.840.1.101.3.2.1.3.41}  | A policy OID that maps to id-fpki-certpcy-pivi-hardware {2.16.840.1.101.3.2.1.3.18}.   |
+| **Certificate Policies**   |  | id-fpki-common-<br>authentication {2.16.840.1.101.3.2.1.3.13}  |  id-fpki-common-derived-pivAuth {2.16.840.1.101.3.2.1.3.40}<br>_**OR**_ id-fpki-common-derived-pivAuth-hardware {2.16.840.1.101.3.2.1.3.41}  | A policy OID that maps to id-fpki-certpcy-pivi-hardware {2.16.840.1.101.3.2.1.3.18}.   |
 | **Subject Alternative Name**   |  | Must include FASC-N name form. After October 15, 2015, must also include a UUID encoded as a URI, as specified in RFC 4122,<sup>[8](#8)</sup> Section 3. Additional name forms may be present to support local applications.  | Must include a UUID encoded as a URI, as specified in RFC 4122, Section 3. Additional name forms may be present to support local applications.  | Same value as for Derived PIV.  | 
 | **PIV Interim**   |  | piv-interim indicator {2.16.840.1.101.3.6.9.1}, defined in FIPS 201-2 as _PIV NACI indicator_. FALSE, if NACI successfully adjudicated at issuance. TRUE, if FBI NCHC successful, but adjudication not finalized. Also TRUE if NACI initiated but not completed at issuance.  | Same value as for PIV.  |   | 
 
