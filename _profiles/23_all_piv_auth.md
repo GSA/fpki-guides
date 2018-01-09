@@ -30,7 +30,7 @@ This worksheet supersedes three previously published worksheets:
 | **Issuer Signature Algorithm**   |  One of the following:<br>sha256WithRSAEncryption {1.2.840.113549.1.1.11}<br>ecdsa-with-SHA256 {1.2.840.10045.4.3.2}<br>ecdsa-with-SHA384 {1.2.840.10045.4.3.3}<br>ecdsa-with-SHA512 {1.2.840.10045.4.3.4} | 
 | **Issuer**   |  Unique X.500 Issuing CA Distinguished Name (DN). PrintableString encoding should be used whenever possible for Issuer and Subject DNs. |
 | **Validity Period**  |  No longer than 3 years from date of issue. Expressed in UTCTime for dates until end of 2049 and GeneralizedTime for dates thereafter.  | 
-| **Subject**   |   For PIV and Derived PIV certificates, must use a name form specified in the _Common Policy CP_, Section 3.1.1. For PIV-I, must use a name form specified in the _FBCA CP_. PrintableString encoding should be used whenever possible for Issuer and Subject DNs.   |
+| **Subject**   |   For PIV and Derived PIV certificates, must use a name form specified in the _Common Policy CP_, Section 3.1.1. For PIV-I, must use a name form specified in the _FBCA CP_, Section 7.1.4. PrintableString encoding should be used whenever possible for Issuer and Subject DNs.   |
 | **Subject Public Key Information**  |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1.2.840.113549.1.1.1}.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve from NIST SP 800-78-4.<sup>[7](#7)</sup>   |
 | **Signature**   |   sha256WithRSAEncryption {1.2.840.113549.1.1.11} or ECDSA with appropriate hash.   |
 
@@ -53,7 +53,7 @@ _These **Mandatory** extensions are **unique** to either PIV, Derived PIV, or PI
 | **Mandatory<br>Extension**  | **Critical** | **PIV** | **Derived PIV**  |  **PIV-I** |
 | :-------- | :------ | :----- | :-----  | :-----     |
 | **Certificate Policies**   |  | id-fpki-common-authentication {2.16.840.1.101.3.2.1.3.13}  |  id-fpki-common-derived-pivAuth {2.16.840.1.101.3.2.1.3.40}<br>_**OR**_ id-fpki-common-derived-pivAuth-hardware {2.16.840.1.101.3.2.1.3.41}  | A policy OID that maps to id-fpki-certpcy-pivi-hardware {2.16.840.1.101.3.2.1.3.18}.   |
-| **Subject Alternative Name**   |  | Must include FASC-N name form. After October 15, 2015, must also include a UUID encoded as a URI, as specified in RFC 4122,<sup>[8](#8)</sup> Section 3. Additional name forms may be present to support local applications.  | Must include a UUID, encoded as a URI, as specified in RFC 4122,<sup>8</sup> Section 3. Additional name forms may be present to support local applications.  | Same value as for Derived PIV.  | 
+| **Subject Alternative Name**   |  | Must include FASC-N name form. After October 15, 2015, must also include a UUID encoded as a URI, as specified in RFC 4122,<sup>[8](#8)</sup> Section 3. Additional name forms may be present to support local applications.  | Must include a UUID, encoded as a URI, as specified in RFC 4122, Section 3. Additional name forms may be present to support local applications.  | Same value as for Derived PIV.  | 
 | **PIV Interim**   |  | piv-interim indicator {2.16.840.1.101.3.6.9.1}, defined in FIPS 201-2 as _PIV NACI indicator_.  FALSE, if NACI successfully adjudicated at issuance. TRUE, if FBI NCHC successful, but adjudication not finalized. Also TRUE if NACI initiated but not completed at issuance.  | Same value as for PIV.  |   | 
 
 ## Optional Extensions Common to PIV, Derived PIV, and PIV-I Authentication
