@@ -33,7 +33,7 @@ The FCPCA serves as the _root_ and _trust anchor_ for the _intermediate_ and _is
 
 The _Federal Common Policy CA_ may be referred to as the _FCPCA_, or as _COMMON_ in documents. As the FPKI root and trust anchor for the Federal Government, the FCPCA supports government person trust and enterprise devices, including [Personal Identity Verification (PIV) credentials](https://piv.idmanagement.gov/#what-is-piv){:target="_blank"}. The FCPCA's design enables any certificate issued by any FPKI CA to validate its certificate path to a single root CA.
 
-Many commercial vendors include the FCPCA root certificate in their commercial-off-the-shelf (COTS) products' [Trust Stores](../truststores/). This enables Federal Government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCA root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
+Many commercial vendors include the FCPCA root certificate in their commercial-off-the-shelf (COTS) products' [_Trust Stores_](../truststores/). This enables Federal Government systems to trust person and enterprise device certificates issued by FPKI CAs. It is possible to add the FCPCA root certificate to trust stores for _government-managed_ devices and servers, if it's not available by default.
 
 {% include alert-warning.html content="The FCPCA root certificate is included in the trust stores for some platforms such as Microsoft, Apple, and Adobe. Other platforms, such as Mozilla, do not include the FCPCA by default. " %}
 
@@ -49,7 +49,7 @@ The FBCA provides a means to map these certificate policies and CAs and allow ce
 <!--- ![Example of the FBCA Certification Path]({{site.baseurl}}/img/fbca-chainV2.png){:style="width:40%;float:right;"}
 *Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"} -->
 
-The CAs signed by the Federal Bridge CA 2016 are _cross-certified_. These CAs have established a trust relationship with the FBCA and are audited annually for conformance to the certificate policies. This cross-certification process has extended the reach of the Federal PKI well beyond the boundaries of the Federal Government.
+The CAs signed by the Federal Bridge CA 2016 are _cross-certified_. These CAs have established a trust relationship with the FBCA and are audited annually for conformance to the certificate policies. This cross-certification process has extended the reach of the FPKI well beyond the boundaries of the Federal Government.
 
 ### SHA-1 Federal Root Certification Authority
 
@@ -71,7 +71,7 @@ We realize all the acronyms and labels may be confusing and welcome your input t
 
 |**Certification Authority Category**|**Description**|
 |-----------|---------------|
-| PKI Shared Service Provider (SSP) Certification Authorities | An SSP CA is *subordinate* to the FCPCA.  Any certificate that an SSP CA creates, signs, and issues to people or devices is in the FCPCA trust chain. An SSP must adhere to strict federal IT security standards and requirements.  The SSPs are granted a FISMA Authority To Operate (ATO), undergo continuous monitoring, and are contracted by the Federal Government to issue certificates to federal employees and contractors, as well as devices that are deployed in federal agency networks. |
+| PKI Shared Service Provider (SSP) Certification Authorities | An SSP CA is *subordinate* to the FCPCA.  Any certificate that an SSP CA creates, signs, and issues to people or devices is in the FCPCA _trust chain_. An SSP must adhere to strict federal IT security standards and requirements.  The SSPs are granted a FISMA Authority To Operate (ATO), undergo continuous monitoring, and are contracted by the Federal Government to issue certificates to federal employees and contractors, as well as devices that are deployed in federal agency networks. |
 | Private Sector Certification Authorities | A Private Sector CA that is cross-certified has shown a valid need to conduct business or provide PKI services to the Federal Government. |
 | Access Certificates for Electronic Services (ACES) Certification Authorities | The ACES CAs issue certificates to authorized U.S. business representatives who need to digitally sign documents or access certain web-based systems.  ACES was established in the late 1990s and is the predecessor for the development of today's Federal PKI. |
 | Other Government Certification Authorities | These CAs are managed and operated by State, Local, Tribal, Territorial, or International Governments. |
