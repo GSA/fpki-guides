@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PIV, Derived PIV, and PIV-I Authentication Certificate Worksheet
+title: PIV, Derived PIV, and PIV-I Authentication Certificate Profile Worksheet
 permalink: profiles/allpivauth3/
 ---
 This worksheet specifies the unique settings required for:
@@ -62,7 +62,7 @@ _These **Optional** extensions apply to **all** PIV, Derived PIV, and PIV-I Auth
 
 | **Optional<br>Extension**  | **Critical** | **Value** |
 | :-------- | :------ | :----- |
-| **Extended Key Usage**   | True | If included, EKU should be non-critical and include:<br>Microsoft Smart Card Logon {1.3.6.1.4.1.311.20.2.2}, only if the private key is on a smart card.<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>Additional key purposes may be specified (e.g., id-kp-secureShellClient {3.6.1.5.5.7.3.21}). | 
+| **Extended Key Usage**   | True | If included, EKU should be non-critical and include:<br>Microsoft Smart Card Logon {1.3.6.1.4.1.311.20.2.2}, only if the private key is on a<br>smart card.<br>TLS Client Authentication {3.6.1.5.5.7.3.2}<br>pkinit-KPClientAuth {3.6.1.5.2.3.4}<br>Additional key purposes may be specified (e.g., id-kp-secureShellClient {3.6.1.5.5.7.3.21}). | 
 | **Subject Directory Attributes** |    | May be included to identify the cardholder's country/countries of citizenship, as specified in RFC 5280. countryOfCitizenship {1.3.6.1.5.5.7.9.4}. ISO 3166<sup>[9](#9)</sup> specifies country codes. | 
 | **Issuer Alternative Name**     |   |   |  
 
