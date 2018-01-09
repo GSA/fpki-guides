@@ -31,7 +31,7 @@ This worksheet supersedes three previously published worksheets:
 | **Issuer**   |  Unique X.500 Issuing CA Distinguished Name (DN). PrintableString encoding should be used whenever possible for Issuer and Subject DNs. |
 | **Validity Period**  |  No longer than 3 years from date of issue. Expressed in UTCTime for dates until end of 2049 and GeneralizedTime for dates thereafter.  | 
 | **Subject**   |   For PIV and Derived PIV certificates, must use a name form specified in the _Common Policy CP_, Section 3.1. For PIV-I, must use a name form specified in the _FBCA CP_, Section 7.1.4. PrintableString encoding should be used whenever possible for Issuer and Subject DNs.   |
-| **Subject Public Key Information**  |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1.2.840.113549.1.1.1}.<br>For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve from NIST SP 800-78-4.<sup>[7](#7)</sup>   |
+| **Subject Public Key Information**  |   For RSA, must be at least 2048 bit modulus, rsaEncryption {1.2.840.113549.1.1.1}. For ECC, implicitly specify parameters through an OID associated with a NIST-approved curve from NIST SP 800-78-4.<sup>[7](#7)</sup>   |
 | **Signature**   |   sha256WithRSAEncryption {1.2.840.113549.1.1.11} or ECDSA with appropriate hash.   |
 
 ## Mandatory Extensions Common to PIV, Derived PIV, and PIV-I Authentication
