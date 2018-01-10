@@ -49,11 +49,11 @@ The FBCA provides a means to map these certificate policies and CAs and allow ce
 <!--- ![Example of the FBCA Certification Path]({{site.baseurl}}/img/fbca-chainV2.png){:style="width:40%;float:right;"}
 *Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"} -->
 
-The CAs signed by the Federal Bridge CA 2016 are _cross-certified_. These CAs have established a trust relationship with the FBCA and are audited annually for conformance to the certificate policies. This cross-certification process has extended the reach of the FPKI well beyond the boundaries of the Federal Government.
+The CAs with certificates signed by the Federal Bridge CA 2016 are _cross-certified_. These CAs have established a trust relationship with the FPKI and are audited annually for conformance to the certificate policies. This cross-certification process has extended the reach of the FPKI well beyond the boundaries of the Federal Government.
 
 ### SHA-1 Federal Root Certification Authority
 
-The SHA-1 Federal Root CA G2 (SHA-1 FRCA) was created and is maintained to facilitate backwards interoperability for legacy systems unable to fully transition to SHA-256. The SHA-1 Federal Root CA G2 supports some defense partners and government legacy applications that still use SHA-1 certificates. 
+The SHA-1 Federal Root CA G2 (SHA1 FRCA) was created and is maintained to facilitate backwards interoperability for government legacy systems unable to transition to SHA-256.
 
 The deprecated SHA-1 hash algorithm has been deemed not secure enough for today’s federal systems. Federal agencies should no longer generate, use, or accept certificates with the SHA-1 hash.  
 
