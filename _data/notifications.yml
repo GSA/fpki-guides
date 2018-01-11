@@ -246,10 +246,10 @@
   
 - notice_date: January 2, 2018
   change_type:  CA Certificate Issuance
-  start_datetime: Late January 2018
-  end_datetime: NA
+  start_datetime: January 2018
+  end_datetime: 
   system: CertiPath Bridge
-  change_description: CertiPath Policy Management Authority has approved NextgenID for cross certification with the CertiPath Bridge CA – G2. The cross certificate will be issued later in January 2018.
+  change_description: CertiPath has approved NextgenID for cross certification with the CertiPath Bridge CA – G2. The cross certificate will be issued later in January 2018.
   contact: fpki@gsa.gov
   ca_certificate_hash: 
   ca_certificate_issuer: CertiPath Bridge CA - G2
