@@ -1,4 +1,10 @@
-## Federal PKI HOT TOPIC - Microsoft Government Domain Constraint
+---
+layout: default
+title: Announcements
+permalink: /announcements/
+---
+
+## Microsoft Government Domain Constraint
 
 Microsoft has released Public Key Infrastructure (PKI) policy requirements that impact Federal Government Agencies from an operational and cost perspective. One of the requirements will take effect in April 2018 and will impact SSL certificates issued by CAs in the Federal PKI. Agencies use SSL certificates to secure internal and public-facing websites to implement HTTPS as per DHS Binding Operational Directive 18-01. As a result, by April 2018, agency employees and contractors may receive errors when browsing to internal (intranet) websites that uses SSL certificates from Federal PKI CAs, Windows 10, and Microsoft Internet Explorer. 
 
