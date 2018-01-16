@@ -1,4 +1,10 @@
-## Federal PKI HOT TOPIC - Google Certificate Transparency Enforcement
+---
+ layout: default
+ title: Announcements
+ permalink: /announcements/
+---
+
+## Google Certificate Transparency Enforcement
 
 Google announced Certificate Transparency (CT) would be enforced for all server authentication certificates in Google Chrome. Certificate Transparency is an open framework for monitoring and logging public server authentication certificates. It provides a two main benefits for website owners and browser operators:
 1. Detect certificate issuance or misissuance; and
