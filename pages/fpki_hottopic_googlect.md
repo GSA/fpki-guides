@@ -4,26 +4,23 @@
  permalink: /announcements/
 ---
 
-## Google Set To Enforce Certificate Transparency
+In **Date?**April, 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all public<!--Says "public" below.-->server authentication (i.e., SSL) certificates that validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores. <!--Why is this new Google policy a problem for the FPKI? We need to explain this. Other notes: in Microsoft announcement, we talked about "SSL" certificates. The original text here sounded like we meant Microsoft's, Apple's, and Mozilla's own Root CAs.)--> 
 
-Google has announced that it will enforce Certificate Transparency (CT) for all server authentication (i.e., SSL) certificates in Google Chrome.<!--When will this start? The Root CA certificate that issued the auth certs is in the Google trust store?--> 
+{% include info-alert.html="CT is an open framework used to monitor and log public server authentication certificates, detect issuance/mis-issuance, and identify rogue CAs <!--Since this is about Google using CT, do "website owners and browser operators" apply here?--> %}
 
-CT is an open framework for monitoring and logging public server authentication certificates. It provides a two main benefits for website owners and browser operators:
-1. Detects certificate issuance or mis-issuance
-2. Identifies rogue Certification Authorities (CAs)
+CT will validate any server authentication certificate with no errors if:
 
-CT enforcement applies to server authentication (SSL) certificates that validate to a Root CA certficate distributed by Microsoft, Apple, or Mozilla. A certificate must satisfy the following requirements to validate without errors:
+1. It appears in a CT log and either the certificate or browswer session serves a Signed Certificate Timestamp (SCT)<br>
+**OR**<br>
+2. The website uses Online Certificate Status Protocol (OCSP) Stapling
 
-1. It must be in a CT log and serve a Signed Certificate Timestamp (SCT) in the certificate or the browser session; or
-2. The website must have OCSP Stapling enabled.
+<!--What specific response are we looking for from the FPKI community?-->Please send your feedback with any agency concerns by **DATE [Maybe April 6, 2018?]** to **fpki@gsa.gov**.
 
-Please send your feedback with any agency concerns by **DATE [Maybe April 6, 2018?]** to **fpki@gsa.gov**.
+### **Our deadline for community response? Google's CT start date? What day??** Deadline: April XX, 2018
 
-### Deadline: April 2018
-
-### Impacted Platforms and Federal PKI CAs
-1. Google Chrome on Linux, macOS, Windows, Android, ChromeOS, and iOS.
-2. Federal PKI CA-issued SSL (server authentication) certificates (that validate to FCPCA [COMMON].
+### Affected Operating Systems and Server Authentication Certificates
+1. Linux, macOS, Windows, Android, ChromeOS, and iOS running Google Chrome
+2. Federal PKI CA-issued, server authentication certificates <!--Above says "public server authentication certificates." 
 
 ### Example Error Page
 <Insert Pic>
@@ -32,8 +29,8 @@ Please send your feedback with any agency concerns by **DATE [Maybe April 6, 201
 <Insert Content>
 
 ### Frequently Asked Questions
-1. Will this impact my internal Agency CA?
-- If you use the agency's CA as a Root (not FCPCA [COMMON]), it shouldn't have any impact. This only impacts server authentication certificates that validate to a Root CA distributed by Microsoft, Apple, or Mozilla trust stores. 
+1. Will this impact my agency's internal Root CA?
+* If you use an agency Root CA (not COMMON Root CA), it shouldn't have any impact. This change only impacts server authentication certificates that validate to a Root CA distributed by Microsoft, Apple, or Mozilla trust stores. <!--If FPKI decides to remove the COMMON Root from the Microsoft and Apple trust stores, then...?-->
 
 #### Google Certificate Transparency Recommended Reading
 1. [What is Certificate Transparency](https://www.certificate-transparency.org/)
