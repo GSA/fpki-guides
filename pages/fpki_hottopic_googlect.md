@@ -4,33 +4,34 @@
  permalink: /announcements/
 ---
 
-In **Date?**April, 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all public<!--Says "public" below.-->server authentication (i.e., SSL) certificates that validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores. <!--Why is this new Google policy a problem for the FPKI? We need to explain this. Other notes: in Microsoft announcement, we talked about "SSL" certificates. The original text here sounded like we meant Microsoft's, Apple's, and Mozilla's own Root CAs.)--> 
+In **Date?** April 2018,<!--When?--> Google will begin enforcing Certificate Transparency (CT) in Chrome for all public<!--Says "public" below.-->server authentication (i.e., SSL) certificates that validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores. <!--Why is this new Google policy a problem for the FPKI? We need to explain this. Other notes: in Microsoft announcement, we talked about "SSL" certificates. The original text here sounded like we meant Microsoft's, Apple's, and Mozilla's own Root CAs.)--> 
 
-{% include info-alert.html="CT is an open framework used to monitor and log public server authentication certificates, detect issuance/mis-issuance, and identify rogue CAs <!--Since this is about Google using CT, do "website owners and browser operators" apply here?--> %}
+{% include info-alert.html content="CT is an open framework used to monitor and log public server authentication certificates, detect issuance/mis-issuance, and identify rogue CAs." %} <!--Since this is about Google using CT, do "website owners and browser operators" apply here?-->
 
 CT will validate any server authentication certificate with no errors if:
 
-1. It appears in a CT log and either the certificate or browswer session serves a Signed Certificate Timestamp (SCT)<br>
+1. It appears in a CT log and either the certificate or browser session serves a Signed Certificate Timestamp (SCT)<br>
 **OR**<br>
 2. The website uses Online Certificate Status Protocol (OCSP) Stapling
 
 <!--What specific response are we looking for from the FPKI community?-->Please send your feedback with any agency concerns by **DATE [Maybe April 6, 2018?]** to **fpki@gsa.gov**.
 
-### **Our deadline for community response? Google's CT start date? What day??** Deadline: April XX, 2018
+### **FPKI or Google?** Deadline: April XX, 2018
 
 ### Affected Operating Systems and Server Authentication Certificates
-1. Linux, macOS, Windows, Android, ChromeOS, and iOS running Google Chrome
-2. Federal PKI CA-issued, server authentication certificates <!--Above says "public server authentication certificates." 
+1. Linux, macOS, Windows, Android, ChromeOS, and iOS
+2. Federal PKI CA-issued, server authentication certificates <!--Above says "public server authentication certificates."> 
 
 ### Example Error Page
 <Insert Pic>
 
 ### Recommended Fix for Enterprise Chrome Administrators
+<!--What is it that needs to be fixed?-->
 <Insert Content>
 
 ### Frequently Asked Questions
-1. Will this impact my agency's internal Root CA?
-* If you use an agency Root CA (not COMMON Root CA), it shouldn't have any impact. This change only impacts server authentication certificates that validate to a Root CA distributed by Microsoft, Apple, or Mozilla trust stores. <!--If FPKI decides to remove the COMMON Root from the Microsoft and Apple trust stores, then...?-->
+1. Will Google's use of CT impact my agency's internal Root CA-issued certificates?
+* It shouldn't have any impact if you use an agency's Root CA (not COMMON Root CA). This change only impacts server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores. <!--If FPKI decides to remove the COMMON Root from the Microsoft and Apple trust stores, then...?-->
 
 #### Google Certificate Transparency Recommended Reading
 1. [What is Certificate Transparency](https://www.certificate-transparency.org/)
