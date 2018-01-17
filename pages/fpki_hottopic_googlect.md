@@ -4,7 +4,7 @@
  permalink: /announcements/
 ---
 
-In **Date?** April 2018,<!--When?--> Google will begin enforcing Certificate Transparency (CT) in Chrome for all public<!--Says "public" below.-->server authentication (i.e., SSL) certificates that validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores. <!--Why is this new Google policy a problem for the FPKI? We need to explain this. Other notes: in Microsoft announcement, we talked about "SSL" certificates. The original text here sounded like we meant Microsoft's, Apple's, and Mozilla's own Root CAs.)--> 
+In **Date?** April 2018,<!--When?--> Google will begin enforcing Certificate Transparency (CT) in Chrome for all public <!--Says "public" below.-->server authentication (i.e., SSL) certificates that validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores. <!--Why is this new Google policy a problem for the FPKI? We need to explain this. Other notes: in Microsoft announcement, we talked about "SSL" certificates. The original text here sounded like we meant Microsoft's, Apple's, and Mozilla's own Root CAs.)--> 
 
 {% include info-alert.html content="CT is an open framework used to monitor and log public server authentication certificates, detect issuance/mis-issuance, and identify rogue CAs." %} <!--Since this is about Google using CT, do "website owners and browser operators" apply here?-->
 
@@ -20,13 +20,13 @@ CT will validate any server authentication certificate with no errors if:
 
 ### Affected Operating Systems and Server Authentication Certificates
 1. Linux, macOS, Windows, Android, ChromeOS, and iOS
-2. Federal PKI CA-issued, server authentication certificates <!--Above says "public server authentication certificates."> 
+2. Federal PKI CA-issued, server authentication certificates 
 
 ### Example Error Page
 <Insert Pic>
 
 ### Recommended Fix for Enterprise Chrome Administrators
-<!--What is it that needs to be fixed?-->
+<!--What is it that administrators need to fix?-->
 <Insert Content>
 
 ### Frequently Asked Questions
