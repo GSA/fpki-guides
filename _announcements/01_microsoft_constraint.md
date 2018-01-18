@@ -23,7 +23,7 @@ Please recommend Option 1 or 2 and send any agency impacts or concerns by **Janu
 
 > **How can we limit this impact?**&nbsp;&nbsp;Network domain administrators can distribute new group policies to restore the _pre-change_ behavior for Microsoft OS-based, government-managed equipment. (For steps, see _Option 1 FAQs_ and _Microsoft Certificate Trust Lists [CTL] recommended reading_ below.)
 
-* **Result 3:**&nbsp;&nbsp;Based on agency feedback, Option 1 would have the least impact on mission-critical operations and systems. 
+* **Result 2:**&nbsp;&nbsp;Based on agency feedback, Option 1 would have the least impact on mission-critical operations and systems. 
 
 **Network Administrator's FAQs for Option 1**
 
