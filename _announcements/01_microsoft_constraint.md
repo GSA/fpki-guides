@@ -5,12 +5,12 @@ title: Microsoft Policies Set To Impact the Federal Government
 pubDate: January 15, 2018
 collection: announcements
 permalink: announcements/microsoft_pki_policy_changes
-description: Microsoft has issued new Public Key Infrastructure (PKI) policy requirements that could impact 14 federal agencies. Under these requirements, the Federal PKI must undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first change will occur in April 2018. Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, SSL (i.e., server authentication) certificates.
+description: Microsoft has issued new Public Key Infrastructure (PKI) policy requirements that could impact 14 federal agencies. Under these requirements, the Federal PKI must undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first change will occur in April 2018. Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, server authentication certificates (SSL) certificates.
 ---
 
-Microsoft has issued new Public Key Infrastructure (PKI) policy requirements that could impact 14 federal agencies. Under these requirements, the Federal PKI must undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first change will occur in April 2018&nbsp;&mdash;&nbsp;Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, SSL (i.e., server authentication) certificates.
+Microsoft has issued new Public Key Infrastructure (PKI) policy requirements that could impact 14 federal agencies. Under these requirements, the Federal PKI must undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first change will occur in April 2018&nbsp;&mdash;&nbsp;Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, server authentication (SSL) certificates.<!--Changed to same referencing ("server authentication certificates") as used in Google announcement for consistency.-->
 
-{% include alert-info.html heading="Agencies use SSL certificates to secure intranet and internet websites, per HTTPS mandate (BOD 18-01.<sup>[1](#1)</sup>)" %} 
+{% include alert-info.html heading="Agencies use server authentication certificates to secure intranet and internet websites, per HTTPS mandate (Binding Operational Directive 18-01. %} 
 
 ### Options for Federal PKI Response to Microsoft
 
@@ -19,13 +19,13 @@ Please recommend Option 1 or 2 and send any agency impacts or concerns by **Janu
 ### Option 1
 #### (Recommended)&nbsp;The FPKI instructs Microsoft to remove the Federal Common Policy Certification Authority (FCPCA) (aka, COMMON) Root certificate trust bit from the Microsoft trust store
 <!--The FPKI Guides' CAs page says "FCPCA" for Root CA and says "COMMON" is used in documents.--which is most correct?-->
-* **Result 1:**&nbsp;&nbsp;Your users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, SSL certificates.
+* **Result 1:**&nbsp;&nbsp;Your users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, server authentication certificates.
 
 > **How can we limit this impact?**&nbsp;&nbsp;Network domain administrators can distribute new group policies to restore the _pre-change_ behavior for Microsoft OS-based, government-managed equipment. (For steps, see _Option 1 FAQs_ and _Microsoft Certificate Trust Lists [CTL] recommended reading_ below.)
 
 * **Result 3:**&nbsp;&nbsp;Based on agency feedback, Option 1 would have the least impact on mission-critical operations and systems. 
 
-**Network Admnistrator's FAQs for Option 1**
+**Network Administrator's FAQs for Option 1**
 
 1. Do I need to remove the baked-in version of the FCPCA Root certificate?
 > _No, don't remove this certificate if it's already installed._
@@ -41,11 +41,11 @@ Please recommend Option 1 or 2 and send any agency impacts or concerns by **Janu
 ### Option 2
 #### (Greatest potential impact on operations and mission-critical systems)&nbsp;Microsoft continues to distribute the FCPCA Root CA certificate with the server authentication trust bit enabled, but with an added _Domain Constraint_
 
-* **Result 1:**&nbsp;&nbsp;With the added _domain constraint_, your users will get errors from Microsoft Edge/IE or Chrome for any FPKI CA-issued, SSL certificate, if it doesn't include a fully qualified domain name: _.gov_, _.us_, _.mil_, or IP address. The Microsoft Certificate Trust List (CTL) globally enforces this constraint through the Microsoft Certificate Trust List (CTL). Network domain administrators can't modify this constraint. 
+* **Result 1:**&nbsp;&nbsp;With the added _domain constraint_, your users will get errors from Microsoft Edge/IE or Chrome for any FPKI CA-issued, server authentication certificate, if it doesn't include a fully qualified domain name: _.gov_, _.us_, _.mil_, or IP address. The Microsoft Certificate Trust List (CTL) globally enforces this constraint through the Microsoft Certificate Trust List (CTL). Network domain administrators can't modify this constraint. 
 
 * **Result 2:**&nbsp;&nbsp;Based on agency feedback, Option 2 is detrimental to mission operations in the near-term, because issued certificates use intranet domain name aliases (e.g., intranetapp vs. intranetapp.agency.gov).
 
-**Network Admnistrator's FAQs for Option 2**
+**Network Administrator's FAQs for Option 2**
 
 **NOTE: TBD.**
 
