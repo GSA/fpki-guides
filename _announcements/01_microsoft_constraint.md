@@ -1,7 +1,11 @@
 ---
 layout: default
+navtitle: Microsoft Policy Changes
 title: Microsoft Policies Set To Impact the Federal Government
-permalink: /announcements/
+pubDate: January 15, 2018
+collection: announcements
+permalink: announcements/microsoft_pki_policy_changes
+description: Microsoft has issued new Public Key Infrastructure (PKI) policy requirements that could impact 14 federal agencies. Under these requirements, the Federal PKI must undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first change will occur in April 2018. Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, SSL (i.e., server authentication) certificates.
 ---
 
 Microsoft has issued new Public Key Infrastructure (PKI) policy requirements that could impact 14 federal agencies. Under these requirements, the Federal PKI must undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first change will occur in April 2018&nbsp;&mdash;&nbsp;Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, SSL (i.e., server authentication) certificates.
@@ -24,15 +28,15 @@ Please recommend Option 1 or 2 and send any agency impacts or concerns by **Janu
 **Network Admnistrator's FAQs for Option 1**
 
 1. Do I need to remove the baked-in version of the FCPCA Root certificate?
-* _No, don't remove this certificate if it's already installed._
+> _No, don't remove this certificate if it's already installed._
 2. Do I need to add the FCPCA Root certificate to the Trust Root Certification Authorities store via GPO, or should I add it to the enterprise trust store?
-* _If the FCPCA Root certificate is already installed, you don't need to reinstall or change its root store. However, if it's not installed, follow the **PIV Guides**_ steps for [Network Authentication](https://piv.idmanagement.gov/networkconfig/){:target= "_blank"}.
+> _If the FCPCA Root certificate is already installed, you don't need to reinstall or change its root store. However, if it's not installed, follow the **PIV Guides** steps for [Network Authentication](https://piv.idmanagement.gov/networkconfig/){:target= "_blank"}._
 3. Do I need to change any trust bit for the GPO?
-* **NOTE: TBD.**
+> NOTE: TBD.
 4. What Windows versions are affected?
-* _All Windows versions (e.g., Windows 10, Server 2016, legacy client-server OSs)._
+> _All Windows versions (e.g., Windows 10, Server 2016, legacy client-server OSs)._
 5. Will the GPO distribution affect IPSec certificates if the server authentication bit is enabled and when used with Microsoft OSs?
-* _Yes, it could affect any certificate asserting server authentication._
+> _Yes, it could affect any certificate asserting server authentication._
 
 ### Option 2
 #### (Greatest potential impact on operations and mission-critical systems)&nbsp;Microsoft continues to distribute the FCPCA Root CA certificate with the server authentication trust bit enabled, but with an added _Domain Constraint_
@@ -54,4 +58,4 @@ To prepare for these changes, please review these Microsoft documents:
 2. [Configure Trusted Roots and Disallowed Certificates](https://technet.microsoft.com/en-us/library/dn265983.aspx){:target= "_blank"}
 
 -------
-<a name="1">1</a>. Binding Operational Directive 18-01,_Enhance Email and Web Security_, U.S. Department of Homeland Security, October 16, 2017, [BOD 18-01](https://cyber.dhs.gov/assets/report/bod-18-01.pdf){:target=_"blank"}. Additional information at: [https://cyber.dhs.gov/]{:target=_"blank"}
+<a name="1">1</a>. Binding Operational Directive 18-01,_Enhance Email and Web Security_, U.S. Department of Homeland Security, October 16, 2017, [BOD 18-01](https://cyber.dhs.gov/assets/report/bod-18-01.pdf){:target=_"blank"}. Additional information at: [cyber.dhs.gov](https://cyber.dhs.gov/){:target=_"blank"}

@@ -76,6 +76,11 @@ navigation:
   internal: true
   coll: true
   collname: tools
+- text: Announcements
+  url: announcements/
+  internal: true
+  coll: true
+  collname: announcements
 - text: System Notifications
   url: notifications
   internal: true
@@ -125,8 +130,10 @@ collections:
     label: "Useful Tools"
     permalink: /tools/:path/
     output: true
-
-
+  announcements:
+    label: "Announcements"
+    permalink: /announcements/:path/
+    output: true
 
 include:
 - _stylesheets
