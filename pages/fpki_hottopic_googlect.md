@@ -11,7 +11,7 @@ In **Date?** April 2018,<!--When?--> Google will begin enforcing Certificate Tra
 CT will validate any server authentication certificate with no errors if:
 
 1. It appears in a CT log and either the certificate or browser session serves a Signed Certificate Timestamp (SCT)<br>
-**OR**<br>
+**OR**<br> <!--Do agencies put their server auth certificates into a CT log or does Google do this automatically? Research into SCT suggests that the log itself returns an SCT when a certificate is submitted to it, is "certificate or browser session serving the SCT" incorrect? Do agencies normally include an SCT for all server auth certificates or is it an automatic function?-->
 2. The website uses Online Certificate Status Protocol (OCSP) Stapling
 
 <!--What specific response are we looking for from the FPKI community?-->Please send your feedback with any agency concerns by **DATE [Maybe April 6, 2018?]** to **fpki@gsa.gov**.
