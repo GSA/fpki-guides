@@ -58,4 +58,4 @@ To prepare for these changes, please review these Microsoft documents:
 2. [Configure Trusted Roots and Disallowed Certificates](https://technet.microsoft.com/en-us/library/dn265983.aspx){:target= "_blank"}
 
 -------
-<a name="1">1</a>. Binding Operational Directive 18-01,_Enhance Email and Web Security_, U.S. Department of Homeland Security, October 16, 2017, [BOD 18-01](https://cyber.dhs.gov/assets/report/bod-18-01.pdf){:target=_"blank"}. Additional information at: [cyber.dhs.gov](https://cyber.dhs.gov/){:target=_"blank"}
+Binding Operational Directive 18-01,_Enhance Email and Web Security_, U.S. Department of Homeland Security, October 16, 2017, [BOD 18-01](https://cyber.dhs.gov/assets/report/bod-18-01.pdf){:target=_"blank"}. Additional information at: [cyber.dhs.gov](https://cyber.dhs.gov/){:target=_"blank"}
