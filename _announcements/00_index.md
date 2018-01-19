@@ -14,6 +14,6 @@ may affect your agency's operations.
   <hr/>
   <h3><a href="{{site.baseurl}}/{{ item.permalink }}"  title="{{ item.title }}">{{ item.title }}</a></h3>
   <strong>Date:</strong> {{ item.pubDate }}<br />
-  <strong>Description:</strong> {{ item.description }} <a href="{{site.baseurl}}/{{ item.permalink }}"  title="{{ item.title }}">Read more..</a>
+  <strong>Description:</strong> {{ item.description }}
   {% endif %}
 {% endfor %}
