@@ -10,7 +10,7 @@ description: Microsoft has issued new Public Key Infrastructure (PKI) policy req
 
 Microsoft has issued new Public Key Infrastructure (PKI) policy requirements that could impact 14 federal agencies. Under these requirements, the Federal PKI must undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first change will occur in April 2018&nbsp;&mdash;&nbsp;Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, server authentication (SSL) certificates.<!--Changed to same referencing ("server authentication certificates") as used in Google announcement for consistency.-->
 
-{% include alert-info.html heading="Agencies use server authentication certificates to secure intranet and internet websites, per HTTPS mandate (Binding Operational Directive 18-01." %} 
+{% include alert-info.html content="Agencies use server authentication certificates to secure intranet and internet websites, per HTTPS mandate (Binding Operational Directive 18-01." %} 
 
 ### Options for Federal PKI Response to Microsoft
 
