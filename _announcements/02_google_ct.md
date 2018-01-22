@@ -4,7 +4,7 @@
  title: Google Set To Enforce Certificate Transparency
  pubDate: January 16, 2018
  collection: announcements
- permalink: announcements/googlecertificatetransparency
+ permalink: announcements/googlect/
  description: In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all public server authentication (i.e., SSL) certificates that validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores. 
 ---
 

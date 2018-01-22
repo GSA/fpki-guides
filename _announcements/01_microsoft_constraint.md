@@ -4,7 +4,7 @@ navtitle: Microsoft Policy Changes
 title: Microsoft Policies Set To Impact the Federal Government
 pubDate: January 15, 2018
 collection: announcements
-permalink: announcements/microsoftpkipolicychanges
+permalink: announcements/mspkichanges/
 description: Microsoft has issued new Public Key Infrastructure (PKI) policy requirements that could impact 14 federal agencies. Under these requirements, the Federal PKI must undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first change will occur in April 2018. Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, server authentication certificates (SSL) certificates.
 ---
 
