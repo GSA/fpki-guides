@@ -26,16 +26,16 @@ CT will validate any server authentication certificate with no errors if:
 1. Linux, macOS, Windows, Android, ChromeOS, and iOS
 2. Federal PKI CA-issued, server authentication certificates 
 
-### Example Error Page
+### Error Page Example
 <Insert Pic>
 
 ### Recommended Fix for Enterprise Chrome Administrators
-<!--What is it that administrators need to fix?-->
+<!--What exactly do administrators need to fix? Does the FPKI have "Enterprise Chrome Administrators"? Or are they "Network Domain Administrators," as in Microsoft Hot Topic? (consistency issue)-->
 <Insert Content>
 
 ### Frequently Asked Questions
-1. Will Google's use of CT impact my agency's internal Root CA-issued certificates?
-> _It shouldn't have any impact if you use an agency's Root CA for server authentication certificates (not COMMON Root CA). This change only impacts server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ <!--If FPKI decides to remove the COMMON Root certificate from the Microsoft and Apple trust stores, then...?-->
+1. Will Google's use of CT impact my agency's internal, Root CA-issued server authentication certificates?
+> _It should have no impact if you use an agency's Root CA to issue server authentication certificates. Google's CT change will impact only server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ <!--If FPKI decides to remove the COMMON Root certificate trust bit from the Microsoft and Apple trust stores, per Option 1 in Microsoft Hot Topic, then what issues, if any, will remain with Google's use of CT?-->
 
 #### Google Certificate Transparency Recommended Reading
 1. [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}
