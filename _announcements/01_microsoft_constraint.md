@@ -5,12 +5,13 @@ title: Microsoft Policies Set To Impact the Federal Government
 pubDate: January 15, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
-description: Microsoft has issued new Public Key Infrastructure (PKI) policy requirements that could impact 14 federal agencies. Under these requirements, the Federal PKI must undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first change will occur in April 2018. Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, server authentication certificates (SSL) certificates.
+description: Microsoft's new Public Key Infrastructure (PKI) policy requirements could impact 14 federal agencies. Under these requirements, Microsoft mandates that the Federal PKI undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first impact will occur in April 2018&nbsp;&mdash;&nbsp;Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, server authentication certificates (SSL) certificates.
 ---
+**REVIEWERS: We need to decide whether we should use the term, "COMMON Root certificate" or "FCPCA Root certificate**
 
-Microsoft has issued new Public Key Infrastructure (PKI) policy requirements that could impact 14 federal agencies. Under these requirements, the Federal PKI must undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first change will occur in April 2018&nbsp;&mdash;&nbsp;Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, server authentication (SSL) certificates.<!--Changed to same referencing ("server authentication certificates") as used in Google announcement for consistency.-->
+Microsoft's new Public Key Infrastructure (PKI) policy requirements could impact 14 federal agencies. Under these requirements, Microsoft mandates that the FPKI undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first impact will occur in April 2018&nbsp;&mdash;&nbsp;Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, server authentication (SSL) certificates.<!--Changed to same referencing ("server authentication certificates") as used in Google announcement for consistency.-->
 
-{% include alert-info.html content="Agencies use server authentication certificates to secure intranet and internet websites, per HTTPS mandate (Binding Operational Directive 18-01." %} 
+{% include alert-info.html content="Agencies use server authentication certificates to secure intranet and internet websites, per HTTPS mandate (Binding Operational Directive 18-01)." %} 
 
 ### Options for Federal PKI Response to Microsoft
 
@@ -32,10 +33,10 @@ Please recommend Option 1 or 2 and send any agency impacts or concerns by **Janu
 2. Do I need to add the FCPCA Root certificate to the Trust Root Certification Authorities store via GPO, or should I add it to the enterprise trust store?
 > _If the FCPCA Root certificate is already installed, you don't need to reinstall or change its root store. However, if it's not installed, follow the **PIV Guides** steps for [Network Authentication](https://piv.idmanagement.gov/networkconfig/){:target= "_blank"}._
 3. Do I need to change any trust bit for the GPO?
-> NOTE: TBD.
+> NOTE: Answer/step is TBD.
 4. What Windows versions are affected?
 > _All Windows versions (e.g., Windows 10, Server 2016, legacy client-server OSs)._
-5. Will the GPO distribution affect IPSec certificates if the server authentication bit is enabled and when used with Microsoft OSs?
+5. Will the GPO distribution affect IPSec certificates if the server authentication bit is enabled and used with Microsoft OSs?
 > _Yes, it could affect any certificate asserting server authentication._
 
 ### Option 2
