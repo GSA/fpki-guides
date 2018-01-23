@@ -11,15 +11,15 @@ description: Microsoft's new Public Key Infrastructure (PKI) policy requirements
 
 Microsoft's new Public Key Infrastructure (PKI) policy requirements could impact 14 federal agencies. Under these requirements, Microsoft mandates that the FPKI undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first impact will occur in April 2018&nbsp;&mdash;&nbsp;Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, server authentication (SSL) certificates.<!--Changed to same referencing ("server authentication certificates") as used in Google announcement for consistency.-->
 
-{% include alert-info.html content="Agencies use server authentication certificates to secure intranet and internet websites, per HTTPS mandate (Binding Operational Directive 18-01)." %} 
+{% include alert-info.html content="Agencies use server authentication certificates to secure intranet and internet websites, per HTTPS mandate&mdash;Binding Operational Directive 18-01." %} 
 
 ### Options for Federal PKI Response to Microsoft
 
-Please recommend Option 1 or 2 and send any agency impacts or concerns by **January 26, 2018** to **_fpki@gsa.gov_**. 
+Please recommend Option 1 or 2 and send any agency impacts or concerns by **January 26, 2018** to **_fpki@gsa.gov_**. <!--Update date.--> 
 
 ### Option 1
 #### (Recommended)&nbsp;The FPKI instructs Microsoft to remove the Federal Common Policy Certification Authority (FCPCA) (aka, COMMON) Root certificate trust bit from the Microsoft trust store
-<!--The FPKI Guides' CAs page says "FCPCA" for Root CA and says "COMMON" is used in documents.--which is most correct?-->
+<!--The FPKI Guides' CAs page suggests that "FCPCA Root CA" is preferred over "COMMON Root CA."-->
 * **Result 1:**&nbsp;&nbsp;Your users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, server authentication certificates.
 
 > **How can we limit this impact?**&nbsp;&nbsp;Network domain administrators can distribute new group policies to restore the _pre-change_ behavior for Microsoft OS-based, government-managed equipment. (For steps, see _Option 1 FAQs_ and _Microsoft Certificate Trust Lists [CTL] recommended reading_ below.)
@@ -28,9 +28,9 @@ Please recommend Option 1 or 2 and send any agency impacts or concerns by **Janu
 
 **Network Administrator's FAQs for Option 1**
 
-1. Do I need to remove the baked-in version of the FCPCA Root certificate?
+1. Do I need to remove the baked-in version of the FCPCA Root CA certificate?
 > _No, don't remove this certificate if it's already installed._
-2. Do I need to add the FCPCA Root certificate to the Trust Root Certification Authorities store via GPO, or should I add it to the enterprise trust store?
+2. Do I need to add the FCPCA Root CA certificate to the Trust Root Certification Authorities store via GPO, or should I add it to the Enterprise Trust Store?<!--Is enterprise trust store = browser-related?-->
 > _If the FCPCA Root certificate is already installed, you don't need to reinstall or change its root store. However, if it's not installed, follow the **PIV Guides** steps for [Network Authentication](https://piv.idmanagement.gov/networkconfig/){:target= "_blank"}._
 3. Do I need to change any trust bit for the GPO?
 > NOTE: Answer/step is TBD.
@@ -42,7 +42,7 @@ Please recommend Option 1 or 2 and send any agency impacts or concerns by **Janu
 ### Option 2
 #### (Greatest potential impact on operations and mission-critical systems)&nbsp;Microsoft continues to distribute the FCPCA Root CA certificate with the server authentication trust bit enabled, but with an added _Domain Constraint_
 
-* **Result 1:**&nbsp;&nbsp;With the added _domain constraint_, your users will get errors from Microsoft Edge/IE or Chrome for any FPKI CA-issued, server authentication certificate, if it doesn't include a fully qualified domain name: _.gov_, _.us_, _.mil_, or IP address. The Microsoft Certificate Trust List (CTL) globally enforces this constraint through the Microsoft Certificate Trust List (CTL). Network domain administrators can't modify this constraint. 
+* **Result 1:**&nbsp;&nbsp;With the added _domain constraint_, your users will get errors from Microsoft Edge/IE or Chrome for any FPKI CA-issued, server authentication certificate, if it doesn't include a fully qualified domain name: _.gov_, _.us_, _.mil_, or IP address. The Microsoft globally enforces this constraint through the Microsoft Certificate Trust List (CTL). Network domain administrators can't modify this constraint. 
 
 * **Result 2:**&nbsp;&nbsp;Based on agency feedback, Option 2 is detrimental to mission operations in the near-term, because issued certificates use intranet domain name aliases (e.g., intranetapp vs. intranetapp.agency.gov).
 
