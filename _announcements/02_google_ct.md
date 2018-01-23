@@ -16,9 +16,9 @@ CT will validate any server authentication certificate with no errors if:
 
 1. It appears in a CT log and either the certificate or browser session serves a Signed Certificate Timestamp (SCT)<br>
 **OR**<br/><!--Can the certificate creator put it into a CT log or does only Google CT do this? Research into SCT suggests that the log itself returns an SCT when a certificate is submitted to it, so is "certificate or browser session serves the SCT" correct? If that original statement is correct (vs. internet articles), is the SCT applied manually by the cert creator to the cert or is this an automatic process?-->
-2. The website uses Online Certificate Status Protocol (OCSP) Stapling.
+2. The website uses Online Certificate Status Protocol (OCSP) Stapling.<!--LaChelle said that this isn't correct.-->
 
-<!--Are we looking for a specific response from the FPKI community or only general feedback? Best to give an exact date.-->Please send your feedback with any agency concerns by **DATE [Maybe April 6, 2018?]** to **fpki@gsa.gov**.
+<!--Are we looking for only general feedback from the FPKI community? Need to give an exact date.-->Please send your feedback with any agency concerns by **DATE [Maybe April 6, 2018?]** to **fpki@gsa.gov**.
 
 ### **Whose deadline? FPKI or Google?** Deadline: April 2018
 
@@ -32,7 +32,7 @@ CT will validate any server authentication certificate with no errors if:
 
 ### Frequently Asked Questions
 1. Will Google's use of CT impact my agency's internal, Root CA-issued server authentication certificates?
-> _It should have no impact if you use an agency's Root CA to issue server authentication certificates. Google's CT change will impact only server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ <!--If FPKI decides to remove the COMMON Root certificate trust bit from the Microsoft and Apple trust stores, per Option 1 in Microsoft Hot Topic, then what issues, if any, will remain with Google's use of CT?-->
+> _There should be no impact if you use an agency's internal, Root CA to issue server authentication certificates. Google's CT change will impact only server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ <!--If FPKI decides to remove the COMMON Root certificate trust bit from the Microsoft and Apple trust stores, per Option 1 in Microsoft Hot Topic, then what issues, if any, will remain with Google's use of CT?-->
 
 #### Google Certificate Transparency Recommended Reading
 1. [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}
