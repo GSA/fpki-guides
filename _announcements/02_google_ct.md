@@ -27,11 +27,11 @@ CT will validate any server authentication certificate with no errors if:
 2. Federal PKI CA-issued, server authentication certificates 
 
 ### Error Page Example
-<Insert Pic>
+**Insert Pic**
 
 ### Recommended Fix for Enterprise Chrome Administrators
 <!--What exactly do administrators need to fix? Does the FPKI have "Enterprise Chrome Administrators"? Or are they "Network Domain Administrators," as in Microsoft Hot Topic? (consistency issue)-->
-<Insert Content>
+**Insert Content**
 
 ### Frequently Asked Questions
 1. Will Google's use of CT impact my agency's internal, Root CA-issued server authentication certificates?
