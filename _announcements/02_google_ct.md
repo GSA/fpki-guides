@@ -5,10 +5,10 @@
  pubDate: January 16, 2018
  collection: announcements
  permalink: announcements/googlect/
- description: In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all public server authentication (i.e., SSL) certificates that validate to a Root Certification Authority (CA) certificate <!--"trust bit" needed?-->in the Microsoft, Apple, or Mozilla trust stores. 
+ description: In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all public server authentication (i.e., SSL) certificates that validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores. 
 ---
 
-In April 2018,<!--When?--> Google will begin enforcing Certificate Transparency (CT) in Chrome for all public <!--Says "public" below.-->server authentication (i.e., SSL) certificates that validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores. <!--Why is this new Google policy a problem for the FPKI? We need to explain this. Other notes: in Microsoft announcement, we talked about "SSL" certificates. The original text here sounded like we meant Microsoft's, Apple's, and Mozilla's own Root CAs.)--> 
+In April 2018,<!--When?--> Google will begin enforcing Certificate Transparency (CT) in Chrome for all public <!--Says "public" below.-->server authentication (i.e., SSL) certificates that validate to a Root Certification Authority (CA) certificate <!--"trust bit" needed?-->in the Microsoft, Apple, or Mozilla trust stores. <!--Why is this new Google policy a problem for the FPKI? We need to explain this. Other notes: in Microsoft announcement, we talked about "SSL" certificates. The original text here sounded like we meant Microsoft's, Apple's, and Mozilla's own Root CAs.)--> 
 
 {% include alert-info.html content="CT is an open framework that allows website owners and browser operators to monitor and log public server authentication certificates, detect issuance/mis-issuance, and identify rogue CAs." %} 
 
