@@ -8,17 +8,17 @@
  description: In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all public server authentication (i.e., SSL) certificates that validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores. 
 ---
 
-In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all SSL certificates. These certificates must validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores that is enabled for server authentication. 
+In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all SSL certificates that are enabled for server authentication. These certificates must validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores. 
 
 {% include alert-info.html content="CT is an open framework that allows website owners and browser operators to monitor and log public server authentication certificates, detect issuance/mis-issuance, and identify rogue CAs." %}
 
-How does CT work? When a CT log submits a certificate, the certificate receives a serial number (called a Signed Certificate Timestamp [SCT]). The CA provider can also embed the SCT in the certificate when submitting it. CT logs are:
+How does CT work? When a CT log submits a certificate<!--submits it to what, where?-->, the certificate receives a serial number (called a Signed Certificate Timestamp [SCT]). The CA provider can also embed the SCT in the certificate when submitting it. CT logs are:
 1. Append-only, entries cannot be deleted, modified, or retroactively inserted into a log. 
 2. Cryptographically secure using Merkle Tree Hashes to prevent tampering and misbehavior.
 3. Publicly auditable. (Anyone can query a log and verify legitimate entries.)
 
 Google is enforcing this new policy to:<sup>[1](#1)</sup>
-1. Make it impossible (or at least very difficult) for a CA to issue a SSL certificate for a domain without the certificate being visible to the domain owner.
+1. Make it difficult for a CA to issue an SSL certificate for a domain without the certificate being visible to the domain owner.
 2. Provide an open auditing and monitoring system that lets any domain owner or CA determine whether certificates have been mistakenly or maliciously issued.
 3. Protect users (as much as possible) from being duped by certificates that were mistakenly or maliciously issued.
 
@@ -36,52 +36,56 @@ Please send any questions to **fpki@gsa.gov**.
 
 ### Google Enforcement Deadline: April 2018
 
-### Impacted Community
-1. Server authentication certificates issued by a Root CA enabled for server authentication and distributed by either Microsoft, Apple, or Mozilla (e.g., if the Root CA is not distributed by an Operating System, it is not impacted by CT enforcement.)
-2. Users of Google Chrome on Windows, Apple, and Linux, including mobile OSs Android, Apple iOS, and Windows Mobile.
+### Impacted Certificates and Users
+1. Any Root CA-issued, SSL certificates enabled for server authentication, where Microsoft, Apple, or Mozilla distribute the Root CA certificate through their trust stores. (**Note:**&nbsp;&nbsp;when an OS doesn't distribute a Root CA, it won't be impacted by CT enforcement.)
+2. Users of Google Chrome on Windows, Apple, and Linux, including Android, Apple iOS, and Windows Mobile.
 
 ### Error Page Example
 
 Insert Pic
 
 ### Recommended Fix for Enterprise Administrators
-An agency's Enterprise Administrator may disable CT-checking for agency owned end-points.
+You can disable CT-checking for agency-owned end-points.
 
-This policy allows certificates for the hostnames in the specified URLs to not be disclosed via CT. This allows certificates that would otherwise be untrusted, because they were not properly publicly disclosed, to continue to be used, but makes it harder to detect mis-issued certificates for those hosts.
+<!!--Is there a simpler way to say this?-->The new Google policy <!--Correct?-->allows you to hide certificates for hostnames in the specified URLs via CT. So, certificates that would otherwise be untrusted, because they were not properly disclosed, to continue to being used. However, it's harder to detect mis-issued certificates for these hosts.
 
-If this policy is not set, any certificate that must be disclosed via CT, Google will treat it as untrusted if it is not disclosed according to the Certificate Transparency policy.
+If this policy is not set, Google will treat as untrusted any certificate disclosed via CT, if not disclosed according to the policy.
+
 
 **Windows registry location for Windows clients:**
 Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls
-Example Value:
+
+Example value:
 Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
 Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
 
-Windows registry location for Google Chrome OS clients:
+**Windows registry location for Google Chrome OS clients:**
 Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls
-Example Value:
+
+Example value:
 Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
 Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
 
-Mac/Linux preference name:
-CertificateTransparencyEnforcementDisabledForUrls
-Example Value:
+**MacOS and Linux**
+Preference name: CertificateTransparencyEnforcementDisabledForUrls
+Example value:
+```
 <array>
   <string>example.com</string>
   <string>.example.com</string>
 </array>
+```
 
-Android restriction name:
-CertificateTransparencyEnforcementDisabledForUrls
-Example Value:
-["example.com", ".example.com"]
+**Android** 
+Restriction name: CertificateTransparencyEnforcementDisabledForUrls
+Example value: example.com **or** .example.com
 
 ### Frequently Asked Questions
 1. Will Google's use of CT impact my agency's internal, Root CA-issued server authentication certificates?
 > _There should be no impact if you use an agency's internal, Root CA to issue server authentication certificates. Google's CT change will impact only server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ <!--If FPKI decides to remove the COMMON Root certificate trust bit from the Microsoft and Apple trust stores, per Option 1 in Microsoft Hot Topic, then what issues, if any, will remain with Google's use of CT?-->
 
 #### Google Certificate Transparency Recommended Reading
-<a name="1">1</a>. Extracted from [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}.
-2. [Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}.
-3. [How to Disable in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}.
+<a name="1">1</a>. Extracted from [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}.<br>
+2. [Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}.<br>
+3. [How to Disable in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}.<br>
 4. [Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}.
