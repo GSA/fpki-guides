@@ -12,14 +12,13 @@ Microsoft's new Public Key Infrastructure (PKI) policy requirements could impact
 
 {% include alert-info.html content="Agencies use SSL certificates to secure intranet and internet websites, per HTTPS mandate&mdash;Binding Operational Directive 18-01." %} 
 
-### Recommended Option for Federal PKI Response to Microsoft
+Please recommend the following Option and send any agency impacts or concerns by **January 26, 2018** to **_fpki@gsa.gov_**. 
 
-Please recommend the following Option and send any agency impacts or concerns by **January 26, 2018** to **_fpki@gsa.gov_**. <!--Update date.--> 
-
-### (Recommended)&nbsp;The FPKI instructs Microsoft to remove the Federal Common Policy Certification Authority (COMMON) Root certificate trust bit from the Microsoft trust store.
+### Recommended Option for Federal PKI Response to Microsoft:
+### The FPKI instructs Microsoft to remove the Federal Common Policy Certification Authority (COMMON) Root certificate trust bit from the Microsoft trust store.<br>
 * **Result 1:**&nbsp;&nbsp;Your users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, SSL certificates.
 
-> **How can we limit this impact?**&nbsp;&nbsp;Network domain administrators can distribute new group policies to restore the _pre-change_ behavior for Microsoft OS-based, government-managed equipment. (For steps, see _Option 1 FAQs_ and _Microsoft Certificate Trust Lists [CTL] recommended reading_ below.)
+> How can we limit this impact? &nbsp;&nbsp;Network domain administrators can distribute new group policies to restore the _pre-change_ behavior for Microsoft OS-based, government-managed equipment. (For steps, see _Option 1 FAQs_ and _Microsoft Certificate Trust Lists [CTL] recommended reading_ below.)
 
 * **Result 2:**&nbsp;&nbsp;Based on agency feedback, Option 1 would have the least impact on mission-critical operations and systems. 
 
