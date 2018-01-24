@@ -1,7 +1,7 @@
 ---
 layout: default
 navtitle: Microsoft Trust Store Impact
-title: Microsoft Policies Set To Impact the Federal Government
+title: Microsoft Trust Store Policies Set To Impact Federal Government
 pubDate: January 26, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
