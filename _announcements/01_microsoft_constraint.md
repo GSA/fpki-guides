@@ -16,7 +16,6 @@ Microsoft's new Public Key Infrastructure (PKI) policy requirements could impact
 
 Please recommend the following Option and send any agency impacts or concerns by **January 26, 2018** to **_fpki@gsa.gov_**. <!--Update date.--> 
 
-### Option
 #### (Recommended)&nbsp;The FPKI instructs Microsoft to remove the Federal Common Policy Certification Authority (COMMON) Root certificate trust bit from the Microsoft trust store.
 * **Result 1:**&nbsp;&nbsp;Your users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, SSL certificates.
 
