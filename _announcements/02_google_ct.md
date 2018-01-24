@@ -5,39 +5,41 @@
  pubDate: January 16, 2018
  collection: announcements
  permalink: announcements/googlect/
- description: In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all public server authentication (i.e., SSL) certificates that validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores. 
+ description: In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all SSL certificates enabled for server authentication. These certificates must validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores.  
 ---
 
-In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all SSL certificates that are enabled for server authentication. These certificates must validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Mozilla trust stores. 
+In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all SSL certificates enabled for server authentication. These certificates must validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Linux<!--Below Linux is mentioned, not Mozilla??--> trust stores. 
 
-{% include alert-info.html content="CT is an open framework that allows website owners and browser operators to monitor and log public server authentication certificates, detect issuance/mis-issuance, and identify rogue CAs." %}
+{% include alert-info.html content="CT is an open framework that allows website owners and browser operators to monitor and log public SSL certificates, detect issuance/mis-issuance, and identify rogue CAs." %}
 
-How does CT work? When a CT log submits a certificate<!--submits it to what, where?-->, the certificate receives a serial number (called a Signed Certificate Timestamp [SCT]). The CA provider can also embed the SCT in the certificate when submitting it. CT logs are:
-1. Append-only, entries cannot be deleted, modified, or retroactively inserted into a log. 
+CT works like this:&nbsp;&nsp;when a CT log submits a certificate<!--submits it to what, where?-->, it receives a serial number (called a Signed Certificate Timestamp [SCT]). (The CA provider may also embed an SCT in a certificate when submitting it.) 
+
+CT logs are:
+1. Append-only&mdash;issuers cannot delete, modify, or retroactively insert an entry into a log. 
 2. Cryptographically secure using Merkle Tree Hashes to prevent tampering and misbehavior.
-3. Publicly auditable. (Anyone can query a log and verify legitimate entries.)
+3. Publicly auditable. (Anyone can query a log and verify entries.) <!--Is "legitimate" necessary?-->
 
 Google is enforcing this new policy to:<sup>[1](#1)</sup>
-1. Make it difficult for a CA to issue an SSL certificate for a domain without the certificate being visible to the domain owner.
-2. Provide an open auditing and monitoring system that lets any domain owner or CA determine whether certificates have been mistakenly or maliciously issued.
-3. Protect users (as much as possible) from being duped by certificates that were mistakenly or maliciously issued.
+1. Make it difficult for a CA to issue SSL certificates without their being visible to a domain owner.
+2. Allow any domain owner or CA to identify mistakenly or maliciously issued certificates.
+3. Protect users (as much as possible) from being duped by mistakenly or maliciously issued certificates.
 
-A server authentication will validate properly in Google Chrome if the HTTPS sessions serves a SCT in the following manner. 
+Google Chrome will validate an SSL certificate if an HTTPS browser session serves an SCT. You can use one of three methods:<!--Can't follow this--> 
 
-1. **Certificate Embedding in x509 Extension** - A CA provider may embed an SCT directly into a server certificate extension. This method does not require server configuration changes, but must be verified it is supported with the CA Provider.
+1. **Certificate Embedding in x509 Extension** - A CA provider may embed an SCT in a SSL certificate extension. No server configuration changes are needed, but the extension must be supported by the CA provider.
 
-2. **TLS Extension** - Servers may deliver an SCT using a special TLS extension. After receiving the certificate, the server operator submits the certificate to a log and receives an SCT. The server operator includes the SCT in the signed_certificate_timestamp of the server. During a client TLS sessions, the SCT will be served by the server.
+2. **TLS Extension** - You can configure a web server to use a TLS extension to deliver an SCT during a client session. After receiving the certificate, the server operator submits it to a CT log and receives an SCT. He/she then includes the SCT in the server's signed_certificate_timestamp.
 
-This method requires web server modification and is currently supported on Apache v2.5 mod_ssl_ct and Nginx modules.
+The TLS extension is supported by Apache v2.5 mod_ssl_ct and Nginx web servers. <!--How does this relate to Windows, Apple, Linux users?-->
 
-3. **Online Certificate Stauts Protocol (OCSP) Stapling** - A CA provider includes the SCT as part of a server's OCSP response. This method is dependent on the CA Provider issuing a certificate to a CT log and the server operator enabling OCSP stapling on the server.
+3. **Online Certificate Stauts Protocol (OCSP) Stapling** - A CA provider can includes an SCT as part of a server's OCSP response. To do this, the CA provider issues a certificate to a CT log, and the server operator enables OCSP Stapling on the server.
 
 Please send any questions to **fpki@gsa.gov**.
 
 ### Google Enforcement Deadline: April 2018
 
 ### Impacted Certificates and Users
-1. Any Root CA-issued, SSL certificates enabled for server authentication, where Microsoft, Apple, or Mozilla distribute the Root CA certificate through their trust stores. (**Note:**&nbsp;&nbsp;when an OS doesn't distribute a Root CA, it won't be impacted by CT enforcement.)
+1. Any Root CA-issued, SSL certificates enabled for server authentication, where Microsoft, Apple, or Mozilla distribute the Root CA certificate through their trust stores. (**Note:**&nbsp;&nbsp;When an OS doesn't distribute a Root CA certificate, it won't be impacted by CT enforcement.)
 2. Users of Google Chrome on Windows, Apple, and Linux, including Android, Apple iOS, and Windows Mobile.
 
 ### Error Page Example
@@ -47,28 +49,29 @@ Insert Pic
 ### Recommended Fix for Enterprise Administrators
 You can disable CT-checking for agency-owned end-points.
 
-<!!--Is there a simpler way to say this?-->The new Google policy <!--Correct?-->allows you to hide certificates for hostnames in the specified URLs via CT. So, certificates that would otherwise be untrusted, because they were not properly disclosed, to continue to being used. However, it's harder to detect mis-issued certificates for these hosts.
+<!!--Is there a simpler way to say this?-->The new Google policy <!--Correct?-->allows you to hide certificates for hostnames in URLs via CT. So, certificates that would otherwise be untrusted, because they were not properly disclosed, to continue to being used. However, it's harder to detect mis-issued certificates for these hosts.
 
-If this policy is not set, Google will treat as untrusted any certificate disclosed via CT, if not disclosed according to the policy.
+If this policy is not set<!--What is being set?-->, **Google will treat any certificate as untrusted if disclosed via CT, if not disclosed according to the policy.**  REWORK
 
 
 **Windows registry location for Windows clients:**
 Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls
 
-Example value:
+_Example value:_
 Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
 Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
 
 **Windows registry location for Google Chrome OS clients:**
 Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls
 
-Example value:
+_Example value:_
 Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
 Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
 
 **MacOS and Linux**
 Preference name: CertificateTransparencyEnforcementDisabledForUrls
-Example value:
+_Example value:_
+
 ```
 <array>
   <string>example.com</string>
