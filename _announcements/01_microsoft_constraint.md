@@ -1,6 +1,6 @@
 ---
 layout: default
-navtitle: Microsoft Policy Changes
+navtitle: Microsoft PKI Impact
 title: Microsoft Policies Set To Impact the Federal Government
 pubDate: January 15, 2018
 collection: announcements
