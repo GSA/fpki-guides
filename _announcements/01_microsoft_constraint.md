@@ -2,7 +2,7 @@
 layout: default
 navtitle: Microsoft Trust Store Impact
 title: Microsoft Policies Set To Impact the Federal Government
-pubDate: January 15, 2018
+pubDate: January 26, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
 description: Microsoft's new Public Key Infrastructure (PKI) policy requirements could impact 14 federal agencies. Under these requirements, Microsoft mandates that the Federal PKI undergo an annual audit of how we operate, maintain, and issue certificates from our Certification Authorities (CAs). If the FPKI does not comply, the first impact will occur in April 2018&nbsp;&mdash;&nbsp;Windows users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, SSL certificates.
@@ -16,14 +16,14 @@ Microsoft's new Public Key Infrastructure (PKI) policy requirements could impact
 
 Please recommend the following Option and send any agency impacts or concerns by **January 26, 2018** to **_fpki@gsa.gov_**. <!--Update date.--> 
 
-#### (Recommended)&nbsp;The FPKI instructs Microsoft to remove the Federal Common Policy Certification Authority (COMMON) Root certificate trust bit from the Microsoft trust store.
+### (Recommended)&nbsp;The FPKI instructs Microsoft to remove the Federal Common Policy Certification Authority (COMMON) Root certificate trust bit from the Microsoft trust store.
 * **Result 1:**&nbsp;&nbsp;Your users will get errors when browsing with Microsoft Edge/IE or Chrome to intranet and internet websites that use FPKI CA-issued, SSL certificates.
 
 > **How can we limit this impact?**&nbsp;&nbsp;Network domain administrators can distribute new group policies to restore the _pre-change_ behavior for Microsoft OS-based, government-managed equipment. (For steps, see _Option 1 FAQs_ and _Microsoft Certificate Trust Lists [CTL] recommended reading_ below.)
 
 * **Result 2:**&nbsp;&nbsp;Based on agency feedback, Option 1 would have the least impact on mission-critical operations and systems. 
 
-**Network Administrator's FAQs**
+### Network Administrator's FAQs**
 
 1. Do I need to remove the baked-in version of the COMMON Root CA certificate?
 > _No, don't remove this certificate if it's already installed._
