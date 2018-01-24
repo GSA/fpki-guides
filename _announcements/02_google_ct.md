@@ -17,11 +17,10 @@ How does CT work? When a CT log submits a certificate, the certificate receives 
 2. Cryptographically secure using Merkle Tree Hashes to prevent tampering and misbehavior.
 3. Publicly auditable. (Anyone can query a log and verify legitimate entries.)
 
-Google is enforcing this new policy to<sup>[1](#1)</sup>:
+Google is enforcing this new policy to:<sup>[1](#1)</sup>
 1. Make it impossible (or at least very difficult) for a CA to issue a SSL certificate for a domain without the certificate being visible to the domain owner.
 2. Provide an open auditing and monitoring system that lets any domain owner or CA determine whether certificates have been mistakenly or maliciously issued.
 3. Protect users (as much as possible) from being duped by certificates that were mistakenly or maliciously issued.
-- From https://www.certificate-transparency.org/what-is-ct
 
 A server authentication will validate properly in Google Chrome if the HTTPS sessions serves a SCT in the following manner. 
 
@@ -82,7 +81,7 @@ Example Value:
 > _There should be no impact if you use an agency's internal, Root CA to issue server authentication certificates. Google's CT change will impact only server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ <!--If FPKI decides to remove the COMMON Root certificate trust bit from the Microsoft and Apple trust stores, per Option 1 in Microsoft Hot Topic, then what issues, if any, will remain with Google's use of CT?-->
 
 #### Google Certificate Transparency Recommended Reading
-<a name="1">1</a>. [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}
-2. [Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}
-3. [How to Disable in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}
-4. [Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}
+<a name="1">1</a>. Extracted from [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}.
+2. [Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}.
+3. [How to Disable in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}.
+4. [Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}.
