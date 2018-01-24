@@ -1,6 +1,6 @@
 ---
 layout: default
-navtitle: Microsoft PKI Impact
+navtitle: Microsoft Trust Store Impact
 title: Microsoft Policies Set To Impact the Federal Government
 pubDate: January 15, 2018
 collection: announcements
