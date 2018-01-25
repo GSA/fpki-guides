@@ -1,35 +1,37 @@
 ---
  layout: default
- navtitle: Google Policy Changes
+ navtitle: Google Certificate Transparency (CT) Impact
  title: Google Set To Enforce Certificate Transparency
  pubDate: January 16, 2018
  collection: announcements
  permalink: announcements/googlect/
- description: In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all SSL certificates enabled for server authentication. These certificates must validate to a Root Certification Authority (CA) certificate in the Microsoft, Apple, or Linux trust stores.  
+ description: In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all SSL certificates enabled for server authentication. Google's CT change will impact ONLY SSL certificates that validate to a Root CA whose certificate is distributed through one or more Operating System (OS) trust stores. For the Federal PKI, this change will impact SSL certificates enabled for server authentication that validate to the Federal Common Policy Certification Authority (COMMON). As a result, FPKI Chrome users will receive errors when browsing to intranet or internet websites.  
 ---
 
-In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all SSL certificates. These certificates normally validate to a Root Certification Authority (CA) certificate in one or more Operating System (OS) trust stores (Microsoft, Apple, Linux, or Mozilla). If an SSL certificate doesn't appear in a CT log, then Chrome will return an error. Options to prevent these errors are given below.
+In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome for all SSL certificates enabled for server authentication. Google's CT change will impact ONLY SSL certificates that validate to a Root CA whose certificate is distributed through one or more Operating System (OS) trust stores. For the Federal PKI, this change will impact SSL certificates enabled for server authentication that validate to the Federal Common Policy Certification Authority (COMMON). As a result, FPKI Chrome users will receive errors when browsing to intranet or internet websites.
 
 {% include alert-info.html content="CT is an open framework that allows website owners and browser operators to monitor and log SSL certificates, detect issuance/mis-issuance, and identify rogue CAs." %}
 
-### Purpose of Google's New CT Policy
+{% include alert-info.html heading="If the FPKI choses to remove the COMMON Root CA certificate trust bit from the Microsoft trust store, then Google's new CT change will NOT affect SSL certificates that validate to COMMON for Microsoft OS users of Chrome. (See the Microsoft Trust Store Impact Announcement.)" %}
+<!--For info-alert box about COMMON: do the explanations above sound right?  Add a link to info-alert box for Microsoft Hot Topic Announcement when MS H.T. published.-->
+To prevent these Chrome errors, please see the [Network Domain Administrator FAQs](#network-domain-administrator-faqs) given below.
+
+### Purpose of Google's CT Change
 The purpose of Google's new CT policy is to:<sup>[1](#1)</sup>
-1. Make it difficult for a CA to issue an SSL certificate without its being visible to a domain owner.
+1. Make it difficult for a CA to issue an SSL certificate that would not be visible to a domain owner.
 2. Allow any CA or domain owner to identify mistakenly or maliciously issued certificates.
 3. Protect users (as much as possible) from being duped by mistakenly or maliciously issued certificates.
 
 ### Impacted Users and Certificates
 1. Google Chrome users of Windows, Apple, Linux, Android, Apple iOS, and Windows Mobile.
-2. Any Root CA-issued, SSL certificate enabled for server authentication, whose Root CA certificate is distributed through the Microsoft, Apple, Linux, or Google trust store. 
-> **Note:**&nbsp;&nbsp;Google's CT enforcement won't affect an SSL certificate if the Root CA certificate isn't distributed by the OS trust store.
+2. Any SSL certificate enabled for server authentication that validates to COMMON, provided that COMMON is still distributed through the Microsoft, Apple, and Linux OS trust stores.
 
 Please send any questions about the Google CT policy changes to **fpki@gsa.gov**.
 
-### FAQs
+### Network Domain Administrator FAQs
 
-### What are CT Logs? <!--Who is the intended audience? If it's network domain administrators, then won't they know all about CT logs?-->
+### What are CT Logs?
 
-CT logs are:
 1. Append-only&mdash;issuers cannot delete, modify, or retroactively insert an entry into a log. 
 2. Cryptographically secure using Merkle Tree Hashes to prevent tampering and misbehavior.
 3. Publicly auditable. (Anyone can query a log and verify entries.)
@@ -90,7 +92,7 @@ Restriction name: CertificateTransparencyEnforcementDisabledForUrls
 
 ### Frequently Asked Questions
 1. Will Google's use of CT impact my agency's internal, Root CA-issued server authentication certificates?
-> _There should be no impact if you use an agency's internal, Root CA to issue server authentication certificates. Google's CT change will impact only server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ <!--If FPKI decides to remove the COMMON Root certificate trust bit from the Microsoft and Apple trust stores, per Option 1 in Microsoft Hot Topic, then what issues, if any, will remain with Google's use of CT?-->
+> _There should be no impact if you use an agency's internal, Root CA to issue server authentication certificates. Google's CT change will impact only server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ <!--What about Linux trust store? If FPKI decides to remove the COMMON Root certificate trust bit from the Microsoft, Apple, & Linux trust stores, per Option 1 in Microsoft Hot Topic, then what issues, if any, will remain with Google's use of CT?-->
 
 #### Google Certificate Transparency Recommended Reading
 <a name="1">1</a>. Extracted from [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}.<br>
