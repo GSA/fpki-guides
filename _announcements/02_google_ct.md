@@ -55,14 +55,14 @@ These 3 steps will prevent an error during an HTTPS browser session:
 ### Disable CT-Checking
 You may disable CT-checking for agency-owned end-points. The new Google CT change allows you to hide certificates for hostnames in URLs. That means that certificates that would have been untrusted (due to improper disclosure) can continue being used. (**Note:**&nbsp;&nbsp;It's harder to detect mis-issued SSL certificates for these hosts.)
 
-Follow the steps below; otherwise, Google will treat any certificate as untrusted if disclosed via CT not according to policy.<!--Can't follow this in relation to previous paragraph.-->
+Google will treat any certificate as untrusted if disclosed via CT not according to policy.<!--Can't follow this in relation to previous paragraph.-->
 
 <!--Below looks like steps to take for the different OSs. Correct?-->
 
 **Windows registry location for Windows clients:**
 Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls
 
-**Step is to add a value?**  Example value:
+**Step is to add a value?**  Add <!--These are "policies changes"?-->Example value:
 Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
 Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
 
@@ -90,7 +90,7 @@ Restriction name: CertificateTransparencyEnforcementDisabledForUrls
 
 **Step is to add a value?** _Example value:_ example.com **or** .example.com
 
-### Frequently Asked Questions
+### Other FAQs
 1. Will Google's use of CT impact my agency's internal, Root CA-issued server authentication certificates?
 > _There should be no impact if you use an agency's internal, Root CA to issue server authentication certificates. Google's CT change will impact only server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ <!--What about Linux trust store? If FPKI decides to remove the COMMON Root certificate trust bit from the Microsoft, Apple, & Linux trust stores, per Option 1 in Microsoft Hot Topic, then what issues, if any, will remain with Google's use of CT?-->
 
