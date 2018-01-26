@@ -46,14 +46,12 @@ Any one of these 3 steps will prevent a Chrome error during an HTTPS browser ses
 
 1. **X.509 V3 Extension.**&nbsp;&nbsp;An issuer may embed a Signed Certificate Timestamp (SCT) in a supported, SSL certificate by adding an extension: SignedCertificateTimestampList, OID 1.3.6.1.4.1.11129.2.4.5. No server configuration changes are needed.
 
-2. **TLS Extension.**&nbsp;&nbsp;Website operators may configure a web server by using a TLS extension to serve an SCT during a client session. After receiving the server certificate, the server operator submits it to a CT log and receives an SCT. He/she then includes the SCT in the server's signed_certificate_timestamp.
-
->**Note:**&nbsp;&nbsp;The TLS extension is supported by only Apache v2.5, haproxy, and nginx v1.9 web servers.<sup>[2](#2)</sup>
+2. **TLS Extension.**&nbsp;&nbsp;Website operators may configure a web server by using a TLS extension to serve an SCT during a client session. After receiving the server certificate, the server operator submits it to a CT log and receives an SCT. He/she then includes the SCT in the server's signed_certificate_timestamp. (**Note:**&nbsp;&nbsp;The TLS extension is supported by only Apache v2.5, haproxy, and nginx v1.9 web servers.<sup>[2](#2)</sup>)
 
 3. **Online Certificate Status Protocol (OCSP) Stapling.**&nbsp;&nbsp;An issuer may include an SCT with a server's OCSP response. To do this, an issuer issues a certificate to a CT log. The server operator then enables _OCSP Stapling_ on the server.
 
 ### Disable CT-Checking
-Google will treat any certificate as untrusted if disclosed via CT not according to policy; however, Chrome will not check for a CT entry if you change the OS Registry settings and define an agency domain, such as "example.com or agency.gov." That means that certificates that would have been untrusted (due to improper disclosure) can continue being used. (**Note:**&nbsp;&nbsp;It's harder to detect mis-issued SSL certificates for these hosts.) 
+Google will treat any certificate as untrusted if disclosed via CT not according to policy; however, Chrome will not check for a CT entry if you change the OS Registry settings and define an agency domain, such as "example.com" or "agency.gov." That means that certificates that would have been untrusted (due to improper disclosure) can continue being used. (**Note:**&nbsp;&nbsp;It's harder to detect mis-issued SSL certificates for these hosts.) 
 
 * **Windows Registry location for Windows clients:**<br>
 For Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls, add values:
@@ -75,8 +73,9 @@ For preference name, CertificateTransparencyEnforcementDisabledForUrls, add valu
   <string>.example.com</string>
 </array>
 ```
+
 * **Android**<br>
-For restriction name, CertificateTransparencyEnforcementDisabledForUrls, add values:
+For restriction name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
 ```
 CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
 CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
