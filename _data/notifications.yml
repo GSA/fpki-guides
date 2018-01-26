@@ -244,19 +244,19 @@
   sia_uri: http://nfirootweb.managed.entrust.com/SIA/CAcertsIssuedByNFIRootCA.p7c
   ocsp_uri: N/A
   
-- notice_date: January 2, 2018
+- notice_date: January 25, 2018
   change_type:  CA Certificate Issuance
-  start_datetime: January 2018
-  end_datetime: 
+  start_datetime: January 22, 2018 7:00:00 PM
+  end_datetime: February 28, 2019 6:59:59 PM
   system: CertiPath Bridge
-  change_description: CertiPath has approved NextgenID for cross certification with the CertiPath Bridge CA – G2. The cross certificate will be issued later in January 2018.
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA – G2 to NextgenID Root CA1.
   contact: fpki@gsa.gov
-  ca_certificate_hash: 
-  ca_certificate_issuer: CertiPath Bridge CA - G2
-  ca_certificate_subject: 
-  cdp_uri: 
-  aia_uri: 
-  sia_uri: 
+  ca_certificate_hash: 50a2bf7afe08edf3877854f6d0a6e59127f68a94
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
+  ca_certificate_subject: CN = NextgenIDRootCA1, OU = Certification Authorities, O = NextgenID, C = US
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
+  sia_uri: http://www.nextgenidtrust.com/PKI/certs/IssuedByNextgenIDRootCA1.p7c
   ocsp_uri:
 
 #- notice_date: 
