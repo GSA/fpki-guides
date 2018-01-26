@@ -68,12 +68,12 @@ For Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabled
 * **MacOS and Linux**<br>
 For preference name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
 
+```
  <array>
    <string>example.com</string>
    <string>.example.com</string>
  </array>
- 
- 
+ ```
 
 * **Android**<br>
 For restriction name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
