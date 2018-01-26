@@ -72,13 +72,15 @@ For preference name, CertificateTransparencyEnforcementDisabledForUrls, add valu
    <string>example.com</string>
    <string>.example.com</string>
  </array>
+ 
+ 
 
 * **Android**<br>
 For restriction name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
 
 ```
-  CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
-  CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
+   CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
+   CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
 ```
 
 ### Other FAQs
