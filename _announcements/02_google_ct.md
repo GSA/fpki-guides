@@ -55,33 +55,37 @@ Google will treat any certificate as untrusted if disclosed via CT not according
 
 * **Windows Registry location for Windows clients:**<br>
 For Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls, add values:
-```
-  Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
-  Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
-```
+
+   ```
+   Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
+   Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
+   ```
+
 * **Windows Registry location for Google Chrome OS clients:**<br>
 For Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls, add values:
-```
-  Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
-  Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
-```
+
+   ```
+   Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
+   Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
+   ```
+
 * **MacOS and Linux**<br>
 For preference name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
 
-```
- <array>
-   <string>example.com</string>
-   <string>.example.com</string>
- </array>
- ```
+   ```
+   <array>
+     <string>example.com</string>
+     <string>.example.com</string>
+   </array>
+   ```
 
 * **Android**<br>
 For restriction name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
 
-```
+   ```
    CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
    CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
-```
+   ```
 
 ### Other FAQs
 1. Will Google's use of CT impact my agency's internal, Root CA-issued server authentication certificates?
