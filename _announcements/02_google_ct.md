@@ -38,7 +38,7 @@ Please send any questions about the Google CT policy changes to **fpki@gsa.gov**
 
 #### Chrome Error Screen Example
 
-![Chrome Error Screen]({{site.baseurl}}/img/google_ct_hot_topic_error.png){:style="width:45%;float:center;"}
+![Chrome Error Screen]({{site.baseurl}}/img/google_ct_hot_topic_error.png){:style="width:75%;float:center;"}
 
 ### Prevent SSL Certificate Errors
 
