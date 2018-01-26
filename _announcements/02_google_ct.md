@@ -36,9 +36,9 @@ Please send any questions about the Google CT policy changes to **fpki@gsa.gov**
 2. Cryptographically secure using Merkle Tree Hashes to prevent tampering and misbehavior.
 3. Publicly auditable. (Anyone can query a log and verify entries.)
 
-### Example Error Screen
+### Chrome Error Screen Example
 
-CB - Insert pic
+![Chrome Error Screen]({{site.baseurl}}/img/google_ct_hot_topic_error.png){:style="float:center"}
 
 ### Prevent SSL Certificate Errors
 
