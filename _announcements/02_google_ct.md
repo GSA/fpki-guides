@@ -10,6 +10,8 @@
 
 In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome, which requires all SSL certificates enabled for server authentication to appear in a CT log. Google's CT change will impact ONLY those SSL certificates that validate to a Root CA whose certificate is distributed through one or more Operating System (OS) trust stores. For the Federal PKI, this means COMMON. As a result, FPKI users who browse to intranet or internet websites will receive an error if the SSL certificate does not appear in a CT log.
 
+**Please send any questions about the Google CT change to _fpki@gsa.gov_**.
+
 {% include alert-info.html content="CT is an open framework that allows website owners and browser operators to monitor and log SSL certificates, detect issuance/mis-issuance, and identify rogue CAs." %}
 
 To prevent these Chrome errors, please see the [Network Domain Administrator FAQs](#network-domain-administrator-faqs) given below.
@@ -29,8 +31,6 @@ Google's CT change will:<sup>[1](#1)</sup>
 ### Impacted Users and Certificates
 1. Google Chrome users of Windows, Apple, Linux, Android, Apple iOS, and Windows Mobile.
 2. Any SSL certificate enabled for server authentication that validates to COMMON, provided that the COMMON Root CA certificate is still distributed through the Microsoft, Apple, and Linux OS trust stores.
-
-Please send any questions about the Google CT policy changes to **fpki@gsa.gov**.
 
 ### Network Domain Administrator FAQs
 
