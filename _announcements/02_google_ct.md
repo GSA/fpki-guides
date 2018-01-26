@@ -66,7 +66,8 @@ For Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabled
  Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
 ```
 * **MacOS and Linux**<br>
-For preference name, CertificateTransparencyEnforcementDisabledForUrls, add values:
+For preference name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
+
 ```
 <array>
   <string>example.com</string>
@@ -76,6 +77,7 @@ For preference name, CertificateTransparencyEnforcementDisabledForUrls, add valu
 
 * **Android**<br>
 For restriction name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
+
 ```
 CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
 CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
