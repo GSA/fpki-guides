@@ -55,19 +55,19 @@ Any one of these 3 steps will prevent a Chrome error during an HTTPS browser ses
 ### Disable CT-Checking
 Google will treat any certificate as untrusted if disclosed via CT not according to policy; however, Chrome will not check for a CT entry if you change the OS Registry settings and define an agency domain, such as "example.com or agency.gov." That means that certificates that would have been untrusted (due to improper disclosure) can continue being used. (**Note:**&nbsp;&nbsp;It's harder to detect mis-issued SSL certificates for these hosts.) 
 
-* **Windows Registry location for Windows clients:**
+* **Windows Registry location for Windows clients:**<br>
 For Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls, add values:
 ```
  Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
  Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
 ```
-* **Windows Registry location for Google Chrome OS clients:**
+* **Windows Registry location for Google Chrome OS clients:**<br>
 For Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls, add values:
 ```
  Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
  Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
 ```
-* **MacOS and Linux**
+* **MacOS and Linux**<br>
 For preference name, CertificateTransparencyEnforcementDisabledForUrls, add values:
 ```
 <array>
@@ -75,7 +75,7 @@ For preference name, CertificateTransparencyEnforcementDisabledForUrls, add valu
   <string>.example.com</string>
 </array>
 ```
-* **Android** 
+* **Android**<br>
 For restriction name, CertificateTransparencyEnforcementDisabledForUrls, add values:
 ```
 CertificateTransparencyEnforcementDisabledForUrls\1 = "example.com"
@@ -84,7 +84,7 @@ CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
 
 ### Other FAQs
 1. Will Google's use of CT impact my agency's internal, Root CA-issued server authentication certificates?
-> _There should be no impact if you use an agency's internal, Root CA to issue server authentication certificates. Google's CT change will impact only server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ <!--What about Linux trust store? If FPKI decides to remove the COMMON Root certificate trust bit from the Microsoft, Apple, & Linux trust stores, per Option 1 in Microsoft Hot Topic, then what issues, if any, will remain with Google's use of CT?-->
+> _There should be no impact if you use an agency's internal, Root CA to issue server authentication certificates. Google's CT change will impact only server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ 
 
 #### Google Certificate Transparency Recommended Reading
 <a name="1">1</a>. Extracted from [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}.<br>
