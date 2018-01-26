@@ -12,12 +12,16 @@ In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chro
 
 {% include alert-info.html content="CT is an open framework that allows website owners and browser operators to monitor and log SSL certificates, detect issuance/mis-issuance, and identify rogue CAs." %}
 
-{% include alert-info.html content="If the FPKI chooses to remove the COMMON server authentication certificate trust bit from the Microsoft trust store, then Google's new CT change will NOT affect FPKI SSL certificates that validate to COMMON for Microsoft OS users of Chrome. (See the Microsoft Trust Store Impact Announcement.)" %}
-
 To prevent these Chrome errors, please see the [Network Domain Administrator FAQs](#network-domain-administrator-faqs) given below.
 
-### Google's CT Change Purpose
-The purpose of Google's new CT change is to:<sup>[1](#1)</sup>
+![Chrome Error Screen]({{site.baseurl}}/img/google_ct_hot_topic_error.png){:style="width:55%;float:center;"}
+
+**Chrome Error Screen Example**
+
+{% include alert-info.html content="If the FPKI chooses to remove the COMMON server authentication certificate trust bit from the Microsoft trust store, then Google's new CT change will NOT affect FPKI SSL certificates that validate to COMMON for Microsoft OS users of Chrome. (See the Microsoft Trust Store Impact Announcement.)" %}
+
+### Google's Purpose for CT Change
+Google's CT change will:<sup>[1](#1)</sup>
 1. Make it difficult for a CA to issue an SSL certificate that would not be visible to a domain owner.
 2. Allow any CA or domain owner to identify mistakenly or maliciously issued certificates.
 3. Protect users (as much as possible) from being duped by mistakenly or maliciously issued certificates.
@@ -35,10 +39,6 @@ Please send any questions about the Google CT policy changes to **fpki@gsa.gov**
 1. Append-only&mdash;issuers cannot delete, modify, or retroactively insert an entry into a log. 
 2. Cryptographically secure using Merkle Tree Hashes to prevent tampering and misbehavior.
 3. Publicly auditable. (Anyone can query a log and verify entries.)
-
-![Chrome Error Screen]({{site.baseurl}}/img/google_ct_hot_topic_error.png){:style="width:55%;float:center;"}
-
-**Chrome Error Screen Example**
 
 ### Prevent SSL Certificate Errors
 
