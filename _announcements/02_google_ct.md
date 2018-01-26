@@ -94,6 +94,6 @@ For restriction name, CertificateTransparencyEnforcementDisabledForUrls, add val
 #### Google Certificate Transparency Recommended Reading
 <a name="1">1</a>. Extracted from [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}.<br>
 <a name="2">2</a>. See [Certificate Transparency--Resources for Site Owners](https://sites.google.com/site/certificatetransparency/resources-for-site-owners){:target="_blank"}.<br>
-3. [Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}.<br>
-4. [How to Disable in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}.<br>
-5. [Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}.
+<a name="3">3</a>. [Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}.<br>
+<a name="4">4</a>. [How to Disable in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}.<br>
+<a name="5">5</a>. [Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}.
