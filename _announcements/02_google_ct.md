@@ -17,7 +17,7 @@ In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chro
 To prevent these Chrome errors, please see the [Network Domain Administrator FAQs](#network-domain-administrator-faqs) given below.
 
 ### Google's CT Change Purpose
-The purpose of Google's new CT policy is to:<sup>[1](#1)</sup>
+The purpose of Google's new CT change is to:<sup>[1](#1)</sup>
 1. Make it difficult for a CA to issue an SSL certificate that would not be visible to a domain owner.
 2. Allow any CA or domain owner to identify mistakenly or maliciously issued certificates.
 3. Protect users (as much as possible) from being duped by mistakenly or maliciously issued certificates.
@@ -38,7 +38,7 @@ Please send any questions about the Google CT policy changes to **fpki@gsa.gov**
 
 ### Chrome Error Screen Example
 
-![Chrome Error Screen]({{site.baseurl}}/img/google_ct_hot_topic_error.png){:style="float:center"}
+![Chrome Error Screen]({{site.baseurl}}/img/google_ct_hot_topic_error.png){:style="width:35%;float:center;"}
 
 ### Prevent SSL Certificate Errors
 
