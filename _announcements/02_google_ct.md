@@ -19,8 +19,8 @@ To prevent these Chrome errors, please see the [Network Domain Administrator FAQ
 
 **Chrome Error Screen Example**
 
-{% include alert-info.html content="If the FPKI chooses to remove the COMMON Root CA certificate from the Microsoft trust store, then Google's new CT change will NOT affect FPKI SSL certificates for Windows users of Chrome. (See the Microsoft Trust Store Impact Announcement.)" %}
-
+{% include alert-info.html content="If the FPKI chooses to remove the COMMON Root CA certificate's server authentication trust bit from the Microsoft trust store, then Google's new CT change will NOT affect FPKI SSL certificates for Windows users of Chrome. (See the Microsoft Trust Store Impact Announcement.)" %}
+<!--Added "server authentication trust bit"-->
 ### Google's Purpose for CT Change
 Google's CT change will:<sup>[1](#1)</sup>
 1. Make it difficult for a CA to issue an SSL certificate that would not be visible to a domain owner.
@@ -29,7 +29,7 @@ Google's CT change will:<sup>[1](#1)</sup>
 
 ### Impacted Users and Certificates
 1. Google Chrome users of Windows, Apple, Android, Apple iOS, and Windows Mobile.
-2. Any SSL certificate that validates to COMMON, provided that the COMMON Root CA certificate is still distributed through the Microsoft and Apple trust stores.
+2. Any SSL certificate that validates to COMMON, provided that the COMMON Root CA certificate's server authentication trust bit is still distributed through the Microsoft and Apple trust stores. <!--Added "server authentication trust bit"-->
 
 ### Network Domain Administrator FAQs
 
@@ -87,8 +87,8 @@ For restriction name, CertificateTransparencyEnforcementDisabledForUrls, add val
    ```
 
 ### Other FAQs
-1. Will Google's use of CT impact my agency's internal, Root CA-issued server authentication certificates?
-> _There should be no impact if you use an agency's internal, Root CA to issue server authentication certificates. Google's CT change will impact only server authentication certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ 
+1. Will Google's use of CT impact my agency's internal, Root CA-issued SSL certificates?
+> _There should be no impact if you use an agency's internal, Root CA to issue SSL certificates. Google's CT change will impact only SSL certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores._ 
 
 #### Google Certificate Transparency Recommended Reading
 <a name="1">1</a>. Extracted from [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}.<br>
