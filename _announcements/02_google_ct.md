@@ -5,10 +5,9 @@
  pubDate: January 26, 2018
  collection: announcements
  permalink: announcements/googlect/
- description: In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome, which requires all SSL certificates enabled for server authentication to appear in a CT log. Google's CT change will impact ONLY those SSL certificates that validate to a Root CA whose certificate is distributed through one or more Operating System (OS) trust stores. For the Federal PKI, this means COMMON. As a result, FPKI users who browse to intranet or internet websites will receive an error if the SSL certificate does not appear in a CT log.   
+ description:  In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple trust stores currently distribute the Federal PKI's COMMON Root CA certificate. As a result, if an FPKI SSL certificate doesn’t appear in a CT log, an FPKI Windows or Apple user will get an error when browsing with Chrome to intranet or internet websites.
 ---
-
-In April 2018, Google will begin enforcing Certificate Transparency (CT) in Chrome, which requires all SSL certificates enabled for server authentication to appear in a CT log. Google's CT change will impact ONLY those SSL certificates that validate to a Root CA whose certificate is distributed through one or more Operating System (OS) trust stores. For the Federal PKI, this means COMMON. As a result, FPKI users who browse to intranet or internet websites will receive an error if the SSL certificate does not appear in a CT log.
+In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple trust stores currently distribute the Federal PKI's COMMON Root CA certificate. As a result, if an FPKI SSL certificate doesn’t appear in a CT log, an FPKI Windows or Apple user will get an error when browsing with Chrome to intranet or internet websites.
 
 **Please send any questions about the Google CT change to _fpki@gsa.gov_**.
 
@@ -20,7 +19,7 @@ To prevent these Chrome errors, please see the [Network Domain Administrator FAQ
 
 **Chrome Error Screen Example**
 
-{% include alert-info.html content="If the FPKI chooses to remove the COMMON server authentication certificate trust bit from the Microsoft trust store, then Google's new CT change will NOT affect FPKI SSL certificates that validate to COMMON for Microsoft OS users of Chrome. (See the Microsoft Trust Store Impact Announcement.)" %}
+{% include alert-info.html content="If the FPKI chooses to remove the COMMON Root CA certificate from the Microsoft trust store, then Google's new CT change will NOT affect FPKI SSL certificates for Windows users of Chrome. (See the Microsoft Trust Store Impact Announcement.)" %}
 
 ### Google's Purpose for CT Change
 Google's CT change will:<sup>[1](#1)</sup>
@@ -29,8 +28,8 @@ Google's CT change will:<sup>[1](#1)</sup>
 3. Protect users (as much as possible) from being duped by mistakenly or maliciously issued certificates.
 
 ### Impacted Users and Certificates
-1. Google Chrome users of Windows, Apple, Linux, Android, Apple iOS, and Windows Mobile.
-2. Any SSL certificate enabled for server authentication that validates to COMMON, provided that the COMMON Root CA certificate is still distributed through the Microsoft, Apple, and Linux OS trust stores.
+1. Google Chrome users of Windows, Apple, Android, Apple iOS, and Windows Mobile.
+2. Any SSL certificate that validates to COMMON, provided that the COMMON Root CA certificate is still distributed through the Microsoft and Apple trust stores.
 
 ### Network Domain Administrator FAQs
 
@@ -69,7 +68,7 @@ For Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabled
    Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.com"
    ```
 
-* **MacOS and Linux**<br>
+* **MacOS**<br>
 For preference name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
 
    ```
