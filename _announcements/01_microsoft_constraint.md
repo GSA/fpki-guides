@@ -16,22 +16,46 @@ After this change is applied, Windows users may receive errors when browsing to 
 
 ## Mitigation
 
-**Ken:  What CA are we referencing?  What is the certificate hash? Consider ops teams - what is the name as it appears? [**Is the name in the Certificate = U.S. Government Root"? --cb]**
+**What CA are we referencing?  What is the certificate hash? Consider ops teams - what is the name as it appears?
 
 **Answer the common question of "What should I do?" with an Action up front and highlighted.** 
 
 **You should mitigate risks by creating or updating a group policy object used to manage trusted certificates on government managed devices.  In this group policy, place the <certificate in the enterprise trust store...etc>**
 
+1. To mitigate any impact to your agency, your domain administrator must publish the COMMON Root CA certificate to NTAuth Trust Store.  
 
 | **Federal Common Policy CA**  | **Details**                             |
 | :--------  | :-------------------------------     |
-| **Federal Common Policy CA Root Certificate<br>Certificate Name: U.S. Government Root CA?** |	http://http.fpki.gov/fcpca/fcpca.crt |
+| **Federal Common Policy CA<br> |	http://http.fpki.gov/fcpca/fcpca.crt |
 | Distinguished Name | **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US** |
 | sha1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
 | Certificate Revocation List | http://http.fpki.gov/fcpca/fcpca.crl |
 | p7c File - Issued By | http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c |
 | p7c file - Issued To | http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c |
 
+2. Verify that you are publishing the correct certificate using the SHA1 thumbprint. You can verify the hash on files, including certificate files, using common utilities for the Operating System. For example:
+
+```
+		certutil -hashfile <filename>.crt SHA1
+		openssl dgst -sha1 <filename>.crt
+		sha1sum <filename>.crt
+```
+
+3. Publish the COMMON Root CA certificate by using either the Group Policy Object (GPO) or the _certutil_ tool.
+
+### (Recommended) GPO Method
+1.	Log into a Domain Controller server as a member of the **Enterprise Administrators** group.
+2.	Open the GPMC: _gpmc.msc_
+3.	Within the appropriate GPO applied to the Domain Controllers, go to _Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\ _.
+4.	Right-click **Trusted Root Certification Authorities**, and then click **Import**.
+5.	On the **Welcome to the Certificate Import Wizard** page, click **Next**.
+6.	On the **File to Import** page, enter the path to the certificate files (e.g., _\\adfsresource\c$\fcpca.cer_), and then click **Next**.
+7.	On the **Certificate Store** page, click **Place all certificates in the following store**, and then click **Next**.
+8.	On the **Completing the Certificate Import Wizard** page, verify your information, and then click **Finish**.
+9.	Use the command: _gpupdate /force at the command line_ to replicate the group policy, or wait for it to replicate based on your replication time and settings.
+10.	Open **MMC.exe &gt; File &gt; Add/Remove Snap-in &gt; Certificates &gt; Computer account &gt; Local computer**, and then click **OK**.
+In the **Certificate (Local Computer) &gt; Trusted Root Certification Authorities &gt; Certificates** folder, you should see a certificate **Issued to** and **Issued by Federal Common Policy CA**. 
+11. Right-click on the **Federal Common Policy CA certificate**, and then click **properties** to verify that COMMON is enabled for all purposes.
 
 
 
