@@ -80,29 +80,31 @@ You must have **Enterprise Admin** permissions for the domain to use _certutil_.
 ```
 
 ### Frequently Asked Questions
-ADD THESE: 
+**LACHELLE ADDED THESE: 
 How can I determine if my intranet sites will be impacted?
 How can I determine if my agency users and equipment will be impacted?
 Is PIV network logon impacted? 
 - Answer: No.
-
 Why is the TLS trust bit being removed?
-- Answer: [add all the items on the auditing, restricting issuance to fully qualified domain names in the .gov/.mil/.fed.us namespaces, use of short name aliases on intranet only sites and applications, need to be open and transparent for practices and comply with public trust requirements, etc], 
+- Answer: [add all the items on the auditing, restricting issuance to fully qualified domain names in the .gov/.mil/.fed.us namespaces, use of short name aliases on intranet only sites and applications, need to be open and transparent for practices and comply with public trust requirements, etc]**
 
-
-1. Do I need to remove the "baked-in" version of the COMMON Root CA certificate?
+1. Why is the TLS trust bit being removed?
+> _Answer: [add all the items on the auditing, restricting issuance to fully qualified domain names in the .gov/.mil/.fed.us namespaces, use of short name aliases on intranet only sites and applications, need to be open and transparent for practices and comply with public trust requirements, etc]_ 
+2. How can I determine if my intranet sites will be impacted?
+> _If your intranet site is configured with COMMON, it is impacted. To determine if your intranet sites are configured with COMMON the recommended method is **input from LaChelle**._
+3. How can I determine if my agency users and equipment will be impacted?
+>_Internet: This is difficult to determine because it is dependent on other agencies and Federal PKI non-federal issuers (NFI) compliance, but is limited to those agencies and business partners who use TLS certificates that validate to COMMON.
+> Intranet:  See Question #2 answer._
+4. Is PIV network logon impacted? _No_.
+5. Do I need to remove the "baked-in" version of the COMMON Root CA certificate?
 > _No, don't remove this certificate if it's already installed._
-
-2. Do I need to add the COMMON Root CA certificate to the Trust Root Certification Authorities store via group policy object, or should I add it to the Enterprise Trust Store?
-> _If the COMMON Root CA certificate is already installed in the Enterprise trust store, you don't need to reinstall or change its root store. 
-
-3. Do I need to change any trust bit for the CA certificate managed by group policy object?
+6. Do I need to add the COMMON Root CA certificate to the Trust Root Certification Authorities store via GPO, or should I add it to the Enterprise trust store?
+> _If the COMMON Root CA certificate is already installed in the Enterprise trust store, you don't need to reinstall or change its root store. Propagate the COMMON Group Policy using either the GPO or certutil methods above._
+7. Do I need to change any trust bit for the CA certificate managed by group policy object?
 > _No, trust bits are not set by group policy objects. If your agency currently distributes COMMON through a group policy object and places this CA certificate into the Enterprise trust store, no change is needed.
-
-4. What Windows versions are affected?
+8. What Windows versions are affected?
 > _All Windows Operating System versions 
-
-5. Will the group policy object distribution affect IPSec certificates if the server authentication bit is enabled and used with Microsoft Operating Systems?
+9. Will the group policy object distribution affect IPSec certificates if the server authentication bit is enabled and used with Microsoft Operating Systems?
 > _No, group policy object distribution will not negatively impact IPSec certificates._
 
 To prepare for these changes, please review the following Microsoft documents:
