@@ -8,30 +8,30 @@ permalink: announcements/mspkichanges/
 description: Upcoming changes to Microsoft's Trust Store program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust bit for our U.S. Government Root CA<!--Is "CA" used in this context or just "Root"?--> from the Microsoft trust store.  The first impact is anticipated to occur in April 2018&nbsp;&mdash;&nbsp;Windows users will receive errors when browsing to government intranet and internet websites that use SSL certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment (GFE) by using configuration management tools, including your agency's Group Policy Objects (GPOs).  
 ---
 
-Upcoming changes to Microsoft's Trust Store program could impact your agency. Microsoft currently distributes the U.S. Government Root CA (aka _Federal Common Policy CA [COMMON]_) as a globally trusted root through the Microsoft Trust Store.  Microsoft distributes trusted root CA certificates to Microsoft Operating Systems using [Certificate Trust Lists](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target= "_blank"}. In April 2018, Microsoft will remove the **TLS trust bit** for COMMON from the globally distributed Certificate Trust List.   
+Upcoming changes to Microsoft's Trust Store program could impact your agency. In April 2018, Microsoft will remove the **TLS trust bit** for the U.S. Government Root CA (aka Federal Common Policy CA [COMMON]) from the globally distributed Certificate Trust List. 
+
+> Microsoft distributes COMMON as a globally trusted root through the Microsoft Trust Store.  Microsoft distributes trusted root CA certificates to Microsoft Operating Systems using [Certificate Trust Lists](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target= "_blank"}. 
 
 After this change occurs, Windows users may receive errors when browsing to government intranet and internet websites that use SSL certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment (GFE) by using configuration management tools, including your agency's Group Policy Objects (GPOs).
 
 ## Mitigation
 
-**What CA are we referencing?  What is the certificate hash? Consider ops teams - what is the name as it appears?
-
 **Answer the common question of "What should I do?" with an Action up front and highlighted.** 
 
 **You should mitigate risks by creating or updating a group policy object used to manage trusted certificates on government managed devices.  In this group policy, place the <certificate in the enterprise trust store...etc>**
 
-1. To mitigate any impact to your agency, your domain administrator must publish the COMMON Root CA certificate to NTAuth Trust Store.  
+1. To limit the impacts to your agency, domain administrators must add the COMMON Root CA certificate to the Enterprise Trust Store (i.e., NTAuth Trust Store). Certificate details:  
 
-| **Federal Common Policy CA**  | **Details**                             |
+| **Federal Common Policy CA (COMMON)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
-| **Federal Common Policy CA**<br>(sometimes given as "U.S. Government Common Policy") | http://http.fpki.gov/fcpca/fcpca.crt |
+| Federal Common Policy CA<br>(sometimes shown as _U.S. Government Common Policy_) | http://http.fpki.gov/fcpca/fcpca.crt |
 | Distinguished Name | **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US** |
 | sha1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
 | Certificate Revocation List | http://http.fpki.gov/fcpca/fcpca.crl |
 | p7c File - Issued By | http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c |
 | p7c file - Issued To | http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c |
 
-2. Verify that you are publishing the correct certificate using the SHA1 thumbprint. You can verify the hash on files, including certificate files, using common utilities for the Operating System. For example:
+2. To verify that you're adding the right certificate, please check the certificate's SHA1 hash. Use one of Windows' common utilities to do this:
 
 ```
 		certutil -hashfile <filename>.crt SHA1
@@ -39,7 +39,7 @@ After this change occurs, Windows users may receive errors when browsing to gove
 		sha1sum <filename>.crt
 ```
 
-3. Publish the COMMON Root CA certificate by using either the Group Policy Object (GPO) or the _certutil_ tool.
+3. Add the COMMON Root CA certificate by using the Group Policy Object (GPO) **or** the _certutil_ tool.
 
 ### (Recommended) GPO Method
 1.	Log into a Domain Controller server as a member of the **Enterprise Administrators** group.
