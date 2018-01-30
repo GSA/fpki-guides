@@ -16,12 +16,27 @@ After this change is applied, Windows users may receive errors when browsing to 
 
 ## Mitigation
 
-What CA are we referencing?  What is the certificate hash? Consider ops teams - what is the name as it appears?
+**Ken:  What CA are we referencing?  What is the certificate hash? Consider ops teams - what is the name as it appears? [**Is the name in the Certificate = U.S. Government Root"? --cb]**
+
+**Answer the common question of "What should I do?" with an Action up front and highlighted.** 
+
+**You should mitigate risks by creating or updating a group policy object used to manage trusted certificates on government managed devices.  In this group policy, place the <certificate in the enterprise trust store...etc>**
 
 
-Answer the common question of "What should I do?" with an Action up front and highlighted. 
+| **Federal Common Policy CA**  | **Details**                             |
+| :--------  | :-------------------------------     |
+| **Federal Common Policy CA Root Certificate<br>Certificate Name: U.S. Government Root CA?** |	http://http.fpki.gov/fcpca/fcpca.crt |
+| Distinguished Name | **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US** |
+| sha1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
+| Certificate Revocation List | http://http.fpki.gov/fcpca/fcpca.crl |
+| p7c File - Issued By | http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c |
+| p7c file - Issued To | http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c |
 
-You should mitigate risks by creating or updating a group policy object used to manage trusted certificates on government managed devices.  In this group policy, place the <certificate in the enterprise trust store...etc>
+
+
+
+
+
 
 
 
