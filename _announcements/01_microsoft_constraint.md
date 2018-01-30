@@ -28,8 +28,8 @@ You can limit the risks to your agency by following one of the 3 procedures belo
 **Under what circumstances would the domain administrator use each of the 3 different procedures? (CB)**
 **Inconsistent terms: Enterprise Administrators (group), Enterprise Admin, domain administrator. (CB)**
 
-### Procedure 1?  Title?  Add COMMON Root CA to Your Enterprise Trust Store
-
+### Procedure 1 - Need a title
+**Requires what admin permissions level?** (CB)
 1. To limit the risks to your agency, you'll need to add the COMMON Root CA certificate to the Enterprise Trust Store (i.e., NTAuth Trust Store). Certificate details:  
 
 | **Federal Common Policy CA (COMMON)**  | **Certificate Details**                             |
@@ -49,27 +49,26 @@ You can limit the risks to your agency by following one of the 3 procedures belo
 		sha1sum <filename>.crt
 ```
 
-3. Add the COMMON Root CA certificate by using the Group Policy Object (GPO) **or the _certutil_ tool. 
+3. Add the COMMON Root CA certificate to the NTAuth Trust Store by using the Group Policy Object (GPO) or the _certutil_ tool, as described below. 
 
 ### (Recommended) GPO Method
-1. Log into a Domain Controller server as a member of the **Enterprise Administrators** group.<!--Plural "Administrators" is correct?  Consistency issue.-->
+1. Log into a Domain Controller server as a member of the **Enterprise Administrators** group.<!--Plural "Administrators" is correct?-->
 2. Open the GPMC: _gpmc.msc_
-3. Within the appropriate GPO applied to the Domain Controllers, go to _Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\ _.
+3. Within the appropriate GPO applied to the Domain Controllers, go to _Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\ _. <!--Unclear meaning of "appropriate GPO".-->
 4. Right-click **Trusted Root Certification Authorities**, and then click **Import**.
 5. On the **Welcome to the Certificate Import Wizard** page, click **Next**.
 6. On the **File to Import** page, enter the path to the certificate files (e.g., _\\adfsresource\c$\fcpca.cer_), and then click **Next**.
 7. On the **Certificate Store** page, click **Place all certificates in the following store**, and then click **Next**.
 8. On the **Completing the Certificate Import Wizard** page, verify your information, and then click **Finish**.
-9. Use the command: _gpupdate /force at the command line_ to replicate the group policy, or wait for it to replicate based on your replication time and settings.
+9. At the command line, enter: _gpupdate /force_ to replicate the group policy, or wait for it to replicate based on your replication time and settings.
 10. Open **MMC.exe &gt; File &gt; Add/Remove Snap-in &gt; Certificates &gt; Computer account &gt; Local computer**, and then click **OK**.
-In the **Certificate (Local Computer) &gt; Trusted Root Certification Authorities &gt; Certificates** folder, you should see a certificate **Issued to** and **Issued by Federal Common Policy CA**. 
-11. Right-click on the **Federal Common Policy CA certificate**, and then click **properties** to verify that COMMON is enabled for all purposes.
+11. In the **Certificate (Local Computer) &gt; Trusted Root Certification Authorities &gt; Certificates** folder, you should see a certificate **Issued to** and **Issued by Federal Common Policy CA**. 
+12. Right-click on the **Federal Common Policy CA certificate**, and then click **properties** to verify that COMMON is enabled for all purposes.
 
 ### Certutil Method
+Add the COMMON Root CA certificate to NTAuth Trust Store by using the _certuil_ tool. You must have **Enterprise Administrator** permissions for the domain to use _certutil_.
 
-Add the COMMON Root CA certificate by using the _certuil_ tool.  You must have **Enterprise Administrator** permissions for the domain to use _certutil_.<!--Above we say "Enterprise Administrators Group." Consistency issue. If that is correct, then should this person also be in the Enterprise Administators Group? Windows-related group?-->
-
-1. To publish/add a certificate to NTAuth, enter command:
+1. To publish/add a certificate to NTAuth, enter the command:
 
 ```
   	certutil –dspublish –f <certificate_to_publish.cer or fcpca.cer> NTAuthCA
@@ -88,7 +87,7 @@ Add the COMMON Root CA certificate by using the _certuil_ tool.  You must have *
 ```
 
 ### Frequently Asked Questions
-**LACHELLE ADDED THESE: 
+**LACHELLE COMMENTS: 
 How can I determine if my intranet sites will be impacted?
 How can I determine if my agency users and equipment will be impacted?
 Is PIV network logon impacted? 
@@ -97,12 +96,12 @@ Why is the TLS trust bit being removed?
 - Answer: [add all the items on the auditing, restricting issuance to fully qualified domain names in the .gov/.mil/.fed.us namespaces, use of short name aliases on intranet only sites and applications, need to be open and transparent for practices and comply with public trust requirements, etc]**
 
 1. Why is the TLS trust bit being removed?
-> **_LaChelle:** [add all the items on the auditing, restricting issuance to fully qualified domain names in the .gov/.mil/.fed.us namespaces, use of short name aliases on intranet only sites and applications, need to be open and transparent for practices and comply with public trust requirements, etc]_ 
-**Ken** 
-* **Require Fully-Qualified Domain Names (FQDNs):** _The TLS trust bit is removed due to new Microsoft Trust Store requirements. As a government CA, Microsoft intended to restrict COMMON TLS certificate validation to only FQDNs: *.us, *.mil, or *.fed.us. Some federal agency PKIs, certified under COMMON, issue TLS certificates to intranet websites without an FQDN. Under the new Microsoft requirements, these agencies need to reissue all non-compliant certificates so their users do not receive a warning in either Internet Explorer (IE)/Edge or Chrome._
-* **New Public Audit Requirement:** _COMMON and many federal agency PKIs follow a government audit standard. Under Microsoft's new requirements, all certified CAs under COMMON that issue TLS certificates are required to submit a WebTrust<!--Not always WebTrust--> audit while still maintaining their government audit per federal PKI policy._
-* **Public Document Disclosure** _All CAs certified under COMMON are required to publicly post a security incident post-mortem and Certificate Practice Statements that may contain sensitive government information._
-* **Separate Issuing Certification Authority (CA)** _Any Federal PKI CA issuing TLS, Code Signing, or Email enabled certificates would have to establish a new CA for each type of certificate. This has the potential to double the size of the Federal PKI and increase operational cost of maintaining operations and compliance._
+> **_LaChelle's Comment:** [add all the items on the auditing, restricting issuance to fully qualified domain names in the .gov/.mil/.fed.us namespaces, use of short name aliases on intranet only sites and applications, need to be open and transparent for practices and comply with public trust requirements, etc]_ 
+**Ken added:** 
+* **_Require Fully-Qualified Domain Names (FQDNs):** The U.S. Government is removing the COMMON TLS trust bit because of Microsoft's Trust Store requirements. Microsoft planned to restrict COMMON TLS certificate validation to only FQDNs: *.us, *.mil, or *.fed.us. Some federal agency PKIs that are certified by COMMON issue TLS certificates to intranet websites without an FQDN. Under Microsoft's new requirements, these agencies would need to reissue all "non-compliant" certificates so their users would not receive errors in Internet Explorer (IE)/Edge and Chrome._
+* **_New Public Audit Requirement:** The Federal PKI and other federal agency PKIs follow a government audit standard. Under Microsoft's new requirements, all CAs certified under COMMON that issue TLS certificates would be required to submit a WebTrust<!--Not always WebTrust, acc. to MS info.--> audit and still comply with audit requirements, per federal PKI policy._
+* **_Sensitive Information Disclosure** All CAs certified under COMMON would be required to publicly post a security incident post-mortem and Certificate Practice Statements that may contain sensitive government information._<!--Is this Controlled Unclassified Information (CUI)?-->
+* **_Requirement To Create New Issuing Certification Authorities (CAs)** Any Federal PKI CA that issues TLS, Code Signing, or Email-enabled certificates would have to establish a new CA for each type of certificate. This could potentially double the size of the Federal PKI and increase the cost of maintaining operations and compliance._
 2. How can I determine if my intranet sites will be impacted?
 > _If your intranet site is configured with COMMON, it is impacted. To determine if your intranet sites are configured with COMMON the recommended method is **input from LaChelle**._
 3. How can I determine if my agency users and equipment will be impacted?
