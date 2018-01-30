@@ -27,9 +27,9 @@ You can limit the risks to your agency by following one of the 3 procedures belo
 **Per LaChelle's 1/29 question, we don't mention anything about risks to cross-govt users. (CB)**
 **Under what circumstances would the domain administrator use each of the 3 different procedures? (CB)**
 **Inconsistent terms: Enterprise Administrators (group), Enterprise Admin, domain administrator. (CB)**
+**First procedures (just below) require what admin permissions level? (CB)**
 
-### Procedure 1 - Need a title
-**Requires what admin permissions level?** (CB)
+### Need a title for these procedures
 1. To limit the risks to your agency, you'll need to add the COMMON Root CA certificate to the Enterprise Trust Store (i.e., NTAuth Trust Store). Certificate details:  
 
 | **Federal Common Policy CA (COMMON)**  | **Certificate Details**                             |
@@ -96,11 +96,11 @@ Why is the TLS trust bit being removed?
 - Answer: [add all the items on the auditing, restricting issuance to fully qualified domain names in the .gov/.mil/.fed.us namespaces, use of short name aliases on intranet only sites and applications, need to be open and transparent for practices and comply with public trust requirements, etc]**
 
 1. Why is the TLS trust bit being removed?
-> **_LaChelle's Comment:** [add all the items on the auditing, restricting issuance to fully qualified domain names in the .gov/.mil/.fed.us namespaces, use of short name aliases on intranet only sites and applications, need to be open and transparent for practices and comply with public trust requirements, etc]_ 
-**Ken added:** 
-* **_Require Fully-Qualified Domain Names (FQDNs):** The U.S. Government is removing the COMMON TLS trust bit because of Microsoft's Trust Store requirements. Microsoft planned to restrict COMMON TLS certificate validation to only FQDNs: *.us, *.mil, or *.fed.us. Some federal agency PKIs that are certified by COMMON issue TLS certificates to intranet websites without an FQDN. Under Microsoft's new requirements, these agencies would need to reissue all "non-compliant" certificates so their users would not receive errors in Internet Explorer (IE)/Edge and Chrome._
+**LaChelle's Comment: [add all the items on the auditing, restricting issuance to fully qualified domain names in the .gov/.mil/.fed.us namespaces, use of short name aliases on intranet only sites and applications, need to be open and transparent for practices and comply with public trust requirements, etc]** 
+>_Microsoft's new Trust Store requirements would cause operational and cost impacts to the U.S. Government, including:_  
+* **_Requirement for Fully-Qualified Domain Names (FQDNs):** The U.S. Government is removing the COMMON TLS trust bit because of Microsoft's Trust Store requirements. Microsoft planned to restrict COMMON TLS certificate validation to only FQDNs: *.us, *.mil, or *.fed.us. Some federal agency PKIs that are certified by COMMON issue TLS certificates to intranet websites without an FQDN. Under Microsoft's new requirements, these agencies would need to reissue all "non-compliant" certificates so their users would not receive errors in Internet Explorer (IE)/Edge and Chrome._
 * **_New Public Audit Requirement:** The Federal PKI and other federal agency PKIs follow a government audit standard. Under Microsoft's new requirements, all CAs certified under COMMON that issue TLS certificates would be required to submit a WebTrust<!--Not always WebTrust, acc. to MS info.--> audit and still comply with audit requirements, per federal PKI policy._
-* **_Sensitive Information Disclosure** All CAs certified under COMMON would be required to publicly post a security incident post-mortem and Certificate Practice Statements that may contain sensitive government information._<!--Is this Controlled Unclassified Information (CUI)?-->
+* **_Requirement To Disclose Sensitive Information** All CAs certified under COMMON would be required to publicly post a security incident post-mortem and Certificate Practice Statements that may contain sensitive government information._<!--Is this Controlled Unclassified Information (CUI)?-->
 * **_Requirement To Create New Issuing Certification Authorities (CAs)** Any Federal PKI CA that issues TLS, Code Signing, or Email-enabled certificates would have to establish a new CA for each type of certificate. This could potentially double the size of the Federal PKI and increase the cost of maintaining operations and compliance._
 2. How can I determine if my intranet sites will be impacted?
 > _If your intranet site is configured with COMMON, it is impacted. To determine if your intranet sites are configured with COMMON the recommended method is **input from LaChelle**._
