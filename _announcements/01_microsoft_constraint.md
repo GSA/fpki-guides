@@ -5,14 +5,14 @@ title: Microsoft Trust Store Policies Set To Impact Federal Government
 pubDate: January 26, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
-description: Upcoming changes for Microsoft's Trust Store program could impact your agency. The U.S. Government will be removing the TLS trust bit for our government root CA that is distributed in Microsoft's trust store.  The first impact is anticipated to occur in April 2018&nbsp;&mdash;&nbsp;.  Windows users will receive errors when browsing to government intranet and internet websites that use SSL certificates issued from Federal PKI CAs. The impact for the government intranets and government furnished equipment can be mitigated using configuration management tools including group policy objects managed in your agency.  
+description: Upcoming changes for Microsoft's Trust Store program could impact your agency. The Federal Government will be removing the Transport Layer Security (TLS) trust bit for our U.S. Government Root CA that Microsoft distributes through its trust store.  The first impact is anticipated to occur in April 2018&nbsp;&mdash;&nbsp;Windows users will receive errors when browsing to government intranet and internet websites that use SSL certificates issued from Federal PKI CAs. The impact for the government intranets and government-furnished equipment can be mitigated by using configuration management tools, including group policy objects managed by your agency.  
 ---
 
-Upcoming changes for Microsoft's Trust Store program could impact your agency in April 2018. The U.S. Government will be removing the TLS trust bit for our government root CA that is distributed in Microsoft's trust store.    
+Upcoming changes for Microsoft's Trust Store program could impact your agency in April 2018. The U.S. Government will be removing the TLS trust bit for our government root CA that Microsoft distributes through its trust store.    
 
-Microsoft distributes the Federal Common Policy CA (COMMON) as a globally trusted root in the Microsoft Trust Store.  Microsoft manages trusted root CA certificate distribution using [Certificate Trust Lists](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target= "_blank"} that are distributed to Microsoft operating systems. In April 2018, the globally distributed Certificate Trust List will remove the **TLS trust bit** from COMMON.    
+Microsoft distributes the Federal Common Policy CA (COMMON) (i.e., U.S. Government Root CA) as a globally trusted root through the Microsoft Trust Store.  Microsoft manages trusted root CA certificate distribution using [Certificate Trust Lists](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target= "_blank"} that are distributed to Microsoft operating systems. In April 2018, Microsoft will remove the **TLS trust bit** for COMMON from the globally distributed Certificate Trust List.    
 
-After this update is applied, Windows users may receive errors when browsing to government intranet and internet websites that use SSL certificates issued from Federal PKI CAs. The impact for the government intranets and government furnished equipment can be mitigated using configuration management tools including group policy objects managed in your agency. 
+After this change is applied, Windows users may receive errors when browsing to government intranet and internet websites that use SSL certificates issued from Federal PKI CAs. The impact for the government intranets and government-furnished equipment can be mitigated by using configuration management tools, including group policy objects managed by your agency. 
 
 ## Mitigation
 
