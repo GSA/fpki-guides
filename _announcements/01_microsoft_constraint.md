@@ -2,17 +2,15 @@
 layout: default
 navtitle: Microsoft Trust Store Impact
 title: Microsoft Trust Store Policies Set To Impact Federal Government
-pubDate: January 26, 2018
+pubDate: January 30, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
-description: Upcoming changes for Microsoft's Trust Store program could impact your agency. The Federal Government will be removing the Transport Layer Security (TLS) trust bit for our U.S. Government Root CA that Microsoft distributes through its trust store.  The first impact is anticipated to occur in April 2018&nbsp;&mdash;&nbsp;Windows users will receive errors when browsing to government intranet and internet websites that use SSL certificates issued from Federal PKI CAs. The impact for the government intranets and government-furnished equipment can be mitigated by using configuration management tools, including group policy objects managed by your agency.  
+description: Upcoming changes to Microsoft's Trust Store program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust bit for our U.S. Government Root CA<!--Is "CA" used in this context or just "Root"?--> from the Microsoft trust store.  The first impact is anticipated to occur in April 2018&nbsp;&mdash;&nbsp;Windows users will receive errors when browsing to government intranet and internet websites that use SSL certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment (GFE) by using configuration management tools, including your agency's Group Policy Objects (GPOs).  
 ---
 
-Upcoming changes for Microsoft's Trust Store program could impact your agency in April 2018. The U.S. Government will be removing the TLS trust bit for our government root CA that Microsoft distributes through its trust store.    
+Upcoming changes to Microsoft's Trust Store program could impact your agency. Microsoft currently distributes the U.S. Government Root CA (aka _Federal Common Policy CA [COMMON]_) as a globally trusted root through the Microsoft Trust Store.  Microsoft distributes trusted root CA certificates to Microsoft Operating Systems using [Certificate Trust Lists](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target= "_blank"}. In April 2018, Microsoft will remove the **TLS trust bit** for COMMON from the globally distributed Certificate Trust List.   
 
-Microsoft distributes the Federal Common Policy CA (COMMON) (i.e., U.S. Government Root CA) as a globally trusted root through the Microsoft Trust Store.  Microsoft manages trusted root CA certificate distribution using [Certificate Trust Lists](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target= "_blank"} that are distributed to Microsoft operating systems. In April 2018, Microsoft will remove the **TLS trust bit** for COMMON from the globally distributed Certificate Trust List.    
-
-After this change is applied, Windows users may receive errors when browsing to government intranet and internet websites that use SSL certificates issued from Federal PKI CAs. The impact for the government intranets and government-furnished equipment can be mitigated by using configuration management tools, including group policy objects managed by your agency. 
+After this change occurs, Windows users may receive errors when browsing to government intranet and internet websites that use SSL certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment (GFE) by using configuration management tools, including your agency's Group Policy Objects (GPOs).
 
 ## Mitigation
 
@@ -26,7 +24,7 @@ After this change is applied, Windows users may receive errors when browsing to 
 
 | **Federal Common Policy CA**  | **Details**                             |
 | :--------  | :-------------------------------     |
-| **Federal Common Policy CA**<br> |	http://http.fpki.gov/fcpca/fcpca.crt |
+| **Federal Common Policy CA**<br>(sometimes given as "U.S. Government Common Policy") | http://http.fpki.gov/fcpca/fcpca.crt |
 | Distinguished Name | **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US** |
 | sha1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
 | Certificate Revocation List | http://http.fpki.gov/fcpca/fcpca.crl |
