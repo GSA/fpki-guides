@@ -57,12 +57,27 @@ After this change is applied, Windows users may receive errors when browsing to 
 In the **Certificate (Local Computer) &gt; Trusted Root Certification Authorities &gt; Certificates** folder, you should see a certificate **Issued to** and **Issued by Federal Common Policy CA**. 
 11. Right-click on the **Federal Common Policy CA certificate**, and then click **properties** to verify that COMMON is enabled for all purposes.
 
+### Certutil Method
 
+You must have **Enterprise Admin** permissions for the domain to use _certutil_.
 
+1. To publish/add a certificate to NTAuth, enter command:
 
+```
+  	certutil –dspublish –f <certificate_to_publish.cer or fcpca.cer> NTAuthCA
+```
 
+2. To view all certificates in NTAuth:
 
+```
+	certutil –viewstore –enterprise NTAuth
+```
 
+4. To propagate from the domain controller(s) to the enterprise, enter:
+
+```
+  	gpupdate /force
+```
 
 ### Frequently Asked Questions
 ADD THESE: 
