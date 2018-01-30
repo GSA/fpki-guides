@@ -8,7 +8,7 @@ permalink: announcements/mspkichanges/
 description: Upcoming changes to Microsoft's Trust Store program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust bit for our U.S. Government Root CA<!--Is "CA" used in this context or just "Root"?--> from the Microsoft trust store.  The first impact is anticipated to occur in April 2018&nbsp;&mdash;&nbsp;Windows users will receive errors when browsing to government intranet and internet websites that use SSL certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment (GFE) by using configuration management tools, including your agency's Group Policy Objects (GPOs).  
 ---
 
-Upcoming changes to Microsoft's Trust Store program could impact your agency. In April 2018, Microsoft will remove the **TLS trust bit** for the U.S. Government Root CA (aka Federal Common Policy CA [COMMON]) from its globally distributed Certificate Trust List. 
+Upcoming changes to Microsoft's Trust Store program could impact your agency. In April 2018, Microsoft will remove the **TLS trust bit** for the U.S. Government Root CA (aka Federal Common Policy CA [COMMON]) from Microsoft's globally distributed Certificate Trust List. 
 
 > Microsoft distributes COMMON as a globally trusted root through the Microsoft Trust Store.  Microsoft distributes trusted root CA certificates to Microsoft Operating Systems using [Certificate Trust Lists](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target= "_blank"}. 
 
@@ -18,18 +18,18 @@ After this change occurs, Windows users may receive errors when browsing to gove
 
 You can limit the risks to your agency by following one of the 3 procedures below.
 
-**(LaChelle) Answer the common question of "What should I do?" with an Action up front and highlighted.** 
+**(LaChelle's comment) Answer the common question of "What should I do?" with an Action up front and highlighted.** 
 
-**(LaChelle) You should mitigate risks by creating or updating a group policy object used to manage trusted certificates on government managed devices.  In this group policy, place the <certificate in the enterprise trust store...etc>**
+**(LaChelle's comment) You should mitigate risks by creating or updating a group policy object used to manage trusted certificates on government managed devices.  In this group policy, place the <certificate in the enterprise trust store...etc>**
 
 **(LaChelle's 1/29/2018 email) What will be impacted are intranet sites and intranet applications, including any used by cross-govt users on the intranets."  
 
 **Per LaChelle's 1/29 question, we don't mention anything about risks to cross-govt users. (CB)**
-
 **Under what circumstances would the domain administrator use each of the 3 different procedures? (CB)**
+**Inconsistent terms: Enterprise Administrators (group), Enterprise Admin, domain administrator. (CB)**
 
-### Add COMMON Root CA to Your Enterprise Trust Store
-**No requirement for the administrator to be an "Enteprise Administrator"? (CB)**
+### Procedure 1?  Title?  Add COMMON Root CA to Your Enterprise Trust Store
+
 1. To limit the risks to your agency, you'll need to add the COMMON Root CA certificate to the Enterprise Trust Store (i.e., NTAuth Trust Store). Certificate details:  
 
 | **Federal Common Policy CA (COMMON)**  | **Certificate Details**                             |
