@@ -30,7 +30,7 @@ You can limit the risks to your agency by following one of the 3 procedures belo
 **First procedures (just below) require what admin permissions level? (CB)**
 
 ### Need a title for these procedures
-1. To limit the risks to your agency, you'll need to add the COMMON Root CA certificate to the Enterprise Trust Store (i.e., NTAuth Trust Store). Certificate details:  
+1. To limit the risks to your agency, you'll need to re-install COMMON in the NTAuth Trust Store. Certificate details:  
 
 | **Federal Common Policy CA (COMMON)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
@@ -49,7 +49,7 @@ You can limit the risks to your agency by following one of the 3 procedures belo
 		sha1sum <filename>.crt
 ```
 
-3. Add the COMMON Root CA certificate to the NTAuth Trust Store by using the Group Policy Object (GPO) or the _certutil_ tool, as described below. 
+3. Add COMMON to the NTAuth Trust Store by using the Group Policy Object (GPO) or the _certutil_ tool, as described below. 
 
 ### (Recommended) GPO Method
 1. Log into a Domain Controller server as a member of the **Enterprise Administrators** group.<!--Plural "Administrators" is correct?-->
@@ -66,7 +66,7 @@ You can limit the risks to your agency by following one of the 3 procedures belo
 12. Right-click on the **Federal Common Policy CA certificate**, and then click **properties** to verify that COMMON is enabled for all purposes.
 
 ### Certutil Method
-Add the COMMON Root CA certificate to NTAuth Trust Store by using the _certuil_ tool. You must have **Enterprise Administrator** permissions for the domain to use _certutil_.
+Add COMMON to the NTAuth Trust Store by using the _certuil_ tool. You must have **Enterprise Administrator** permissions for the domain to use _certutil_.
 
 1. To publish/add a certificate to NTAuth, enter the command:
 
@@ -108,10 +108,10 @@ Why is the TLS trust bit being removed?
 >_Internet: This is difficult to determine because it is dependent on other agencies and Federal PKI non-federal issuers (NFI) compliance, but is limited to those agencies and business partners who use TLS certificates that validate to COMMON.
 > Intranet:  See Question #2 answer._
 4. Is PIV network logon impacted? _No_.
-5. Do I need to remove the "baked-in" version of the COMMON Root CA certificate?
+5. Do I need to remove the "baked-in" version of COMMON?
 > _No, don't remove this certificate if it's already installed._
-6. Do I need to add the COMMON Root CA certificate to the Trust Root Certification Authorities store via GPO, or should I add it to the Enterprise trust store?
-> _If the COMMON Root CA certificate is already installed in the Enterprise trust store, you don't need to reinstall or change its root store. Propagate the COMMON Group Policy using either the GPO or certutil methods above._
+6. Do I need to add COMMON to the Trust Root Certification Authorities store via GPO, or should I add it to the Enterprise trust store?
+> _If COMMON is already installed in the Enterprise trust store, you don't need to reinstall or change its root store. Propagate the COMMON Group Policy using either the GPO or certutil methods above._
 7. Do I need to change any trust bit for the CA certificate managed by group policy object?
 > _No, trust bits are not set by group policy objects. If your agency currently distributes COMMON through a group policy object and places this CA certificate into the Enterprise trust store, no change is needed.
 8. What Windows versions are affected?
