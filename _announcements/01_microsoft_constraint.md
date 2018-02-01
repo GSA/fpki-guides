@@ -85,30 +85,22 @@ Add COMMON to the NTAuth Trust Store by using the _certuil_ tool. You must have 
 ```
 
 ### Frequently Asked Questions
-**LACHELLE COMMENTS: 
-How can I determine if my intranet sites will be impacted?
-How can I determine if my agency users and equipment will be impacted?
-Is PIV network logon impacted? 
-- Answer: No.
-Why is the TLS trust bit being removed?
-- Answer: [add all the items on the auditing, restricting issuance to fully qualified domain names in the .gov/.mil/.fed.us namespaces, use of short name aliases on intranet only sites and applications, need to be open and transparent for practices and comply with public trust requirements, etc]**
-
 1. Why is the TLS trust bit being removed?
-**LaChelle's Comment: [add all the items on the auditing, restricting issuance to fully qualified domain names in the .gov/.mil/.fed.us namespaces, use of short name aliases on intranet only sites and applications, need to be open and transparent for practices and comply with public trust requirements, etc]** 
->_Microsoft's new Trust Store requirements would cause operational and cost impacts to the U.S. Government, including:_  
-* **_Requirement for Fully-Qualified Domain Names (FQDNs):** The U.S. Government is removing the COMMON TLS trust bit because of Microsoft's Trust Store requirements. Microsoft planned to restrict COMMON TLS certificate validation to only FQDNs: *.us, *.mil, or *.fed.us. Some federal agency PKIs that are certified by COMMON issue TLS certificates to intranet websites without an FQDN. Under Microsoft's new requirements, these agencies would need to reissue all "non-compliant" certificates so their users would not receive errors in Internet Explorer (IE)/Edge and Chrome._
-* **_New Public Audit Requirement:** The Federal PKI and other federal agency PKIs follow a government auditing standard. Under Microsoft's new requirements, all CAs certified under COMMON that issue TLS certificates would be required to submit a WebTrust<!--Not always WebTrust, acc. to MS info.--> audit and still comply with audit requirements, per federal PKI policy._
-* **_Requirement To Disclose Sensitive Information** All CAs certified under COMMON would be required to publicly post a security incident post-mortem and Certificate Practice Statements that may contain sensitive government information._<!--Is this Controlled Unclassified Information (CUI)?-->
-* **_Requirement To Create New Issuing Certification Authorities (CAs)** Any Federal PKI CA that issues TLS, Code Signing, or Email-enabled certificates would have to establish a new CA for each type of certificate. This could potentially double the size of the Federal PKI and increase the cost of maintaining operations and compliance._
-2. How can I determine what intranet sites and applications will be impacted, including those used by cross-government users?
-> _Any intranet site configured with COMMON will be impacted. To determine which of your sites are involved, use either of these 2 tools:
-* [**DHS NCATS GitHub**](https://github.com/dhs-ncats){:target= "_blank"} and [**pshtt**](https://github.com/dhs-ncats/pshtt){:target= "_blank"}. (**Note:**&nbsp;&nbsp;You'll have to feed the tools the list of sub-domains. This data is usually harvested from your intranet DNS [blue coats, etc.] zone files. **pshtt** is also used to generate information for pulse.cio.gov dashboard.) 
+>Microsoft's new Trust Store requirements would cause operational and cost impacts to the U.S. Government, including:_  
+* **_Requirement for Fully-Qualified Domain Names (FQDNs):** The U.S. Government is removing the COMMON TLS trust bit because of Microsoft's Trust Store requirements. Microsoft planned to restrict COMMON TLS certificate validation to only FQDNs: *.us, *.mil, or *.fed.us. Some federal agency PKIs that are certified by COMMON issue TLS certificates to intranet websites without an FQDN. Under Microsoft's new requirements, these agencies would need to reissue all "non-compliant" certificates so their users would not receive errors in Internet Explorer (IE)/Edge and Chrome.
+* **New Public Audit Requirement:** The Federal PKI and other federal agency PKIs follow a government auditing standard. Under Microsoft's new requirements, all CAs certified under COMMON that issue TLS certificates would be required to submit a WebTrust<!--Not always WebTrust, acc. to MS info.--> audit and still comply with audit requirements, per federal PKI policy.
+* **Requirement To Disclose Sensitive Information** All CAs certified under COMMON would be required to publicly post a security incident post-mortem and Certificate Practice Statements that may contain sensitive government information.
+* **Requirement To Create New Issuing Certification Authorities (CAs)** Any Federal PKI CA that issues TLS, Code Signing, or Email-enabled certificates would have to establish a new CA for each type of certificate. This could potentially double the size of the Federal PKI and increase the cost of maintaining operations and compliance.
+2. How can I determine which of our intranet sites and applications will be impacted, including those used by cross-government users?
+> All intranet sites configured with COMMON will be impacted. To determine which of your sites are configured with COMMON, you can use tools/methods:
+* [**DHS NCATS GitHub**](https://github.com/dhs-ncats){:target= "_blank"} and [**pshtt**](https://github.com/dhs-ncats/pshtt){:target= "_blank"}.<br>**Note:**&nbsp;&nbsp;You'll have to feed the tools the list of sub-domains. This data is usually harvested from your intranet DNS [blue coats, etc.] zone files. **pshtt** is also used to generate information for pulse.cio.gov dashboard.<br> 
 * [**Test SSL**](https://github.com/drwetter/testssl.sh)
+* If you have an agreement with one of the FPKI Shared Service Providers (SSPs) and that agreement includes access to the SSP's registration portals to request TSL/SSL certificates, run a report on all issued certificates or ask the SSP to deliver this. 
 
-3. How can I determine if my agency users and equipment will be impacted?
->_Internet: This is difficult to determine because it is dependent on other agencies and Federal PKI non-federal issuers (NFI) compliance, but is limited to those agencies and business partners who use TLS certificates that validate to COMMON.
-> Intranet:  See Question #2 answer._
-4. Is PIV network logon impacted? _No_.
+3. How can I determine whether my agency users and GFE will be impacted?
+>**Internet:** Those impacted will be the agencies and business partners who use TLS/SSL certificates that validate to COMMON; however, this depends upon other agencies and FPKI Non-Federal Issuers' (NFI) compliance.<!--KM. Does this answer the question?--> 
+>**Intranet:** See the method and tools for Question 2.
+4. Is PIV network logon impacted? No.
 5. Do I need to remove the "baked-in" version of COMMON?
 > _No, don't remove this certificate if it's already installed._
 6. Do I need to add COMMON to the Trust Root Certification Authorities store via GPO, or should I add it to the Enterprise trust store?
