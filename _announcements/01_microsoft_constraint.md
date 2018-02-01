@@ -38,11 +38,11 @@ You can mitigate the impact for the government intranets and GFE by using config
 2. When using either the GPO or _certutil_ method (paragraphs below), verify that you're installing the right certificate. Compare the SHA1 Thumbprint above with that of the certificate you're installing. Use one of these Windows' utilities: 
 
 ```
-		certutil -hashfile <filename>.crt SHA1
+		certutil -hashfile <filename>.crt SHA1<br>
 		
-		openssl dgst** -sha1 <filename>.crt
+		openssl dgst** -sha1 <filename>.crt<br>
 		
-		sha1sum <filename>.crt
+		sha1sum <filename>.crt<br>
 ```
 
 ### GPO Method (Recommended)
