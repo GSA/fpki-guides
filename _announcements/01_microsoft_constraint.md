@@ -12,13 +12,13 @@ Upcoming changes to Microsoft's Trusted Root Program <!--Per Ken, MS calls this 
 
 {% info-alert.html content="Microsoft distributes COMMON as a globally trusted root through the Microsoft Trust Store. Microsoft distributes trusted root CA certificates to related Operating Systems using [Certificate Trust Lists](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target= "_blank"}." %} 
 
-Once this occurs, Federal FPKI users of Windows, Windows Mobile, Microsoft IE/Edge, and Google Chrome will receive errors when browsing to government intranet and internet websites that use TLS/SSL certificates that validate to COMMON. This will also impact cross-agency users of these websites (e.g., a DoD user visiting a DHS website). 
+After this occurs, Federal FPKI users of Windows, Windows Mobile, Microsoft IE/Edge, and Google Chrome will receive errors when browsing to government intranet and internet websites that use TLS/SSL certificates that validate to COMMON. Cross-agency users of these websites (e.g., a DoD user visiting a DHS website) will also be impacted. 
 
-You can mitigate the impact for the government intranet and internet websites, as well as for GFE, by using configuration management tools that include your agency's Group Policy Objects (GPOs) or _certutil_, as described below.
+To prevent these errors for government intranet and internet websites, as well as for GFE, you can use configuration management tools, including your agency's Group Policy Objects (GPOs) or _certutil_, as described below.
 
 ## What Should I Do?
 
-1. To limit the risks to your agency, you'll need to re-install COMMON Root in the NTAuth Trust Store by using the GPO or the _certutil_ tool, as described below. 
+1. The first step is to re-install the COMMON Root in the NTAuth Trust Store. See the [**GPO Steps**](#gpo-method-recommended) or [_**certutil_ Steps**](#certutil-method) below. 
 
 The certificate details for COMMON are:  
 
@@ -31,7 +31,9 @@ The certificate details for COMMON are:
 | p7c File - Issued By | http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c |
 | p7c file - Issued To | http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c |
 
-2. When using either method described below to re-install COMMON, verify that you have the right certificate. To do that, use one of Windows' common utilities (_certutil_, _openssl dgst_, or _sha1sum_) to that the SHA1 Thumbprints for COMMON and the certificate you're match. 
+2. 
+
+3. When using either the GPO or _certutil_ method (described below) to re-install COMMON, verify that you have the right certificate. To do that, use one of Windows' common utilities (_certutil_, _openssl dgst_, or _sha1sum_) to that the SHA1 Thumbprints for COMMON and the certificate you're match. 
 
 ```
 		certutil -hashfile <filename>.crt SHA1<br>
@@ -41,7 +43,7 @@ The certificate details for COMMON are:
 		sha1sum <filename>.crt<br>
 ```
 
-### GPO Method (Recommended)
+### GPO Method&nbsp;&mdash;&nbsp;Recommended
 1. Log into a Domain Controller server as a member of the **Enterprise Administrators** group.<!--Plural "Administrators" is correct?-->
 2. Open the GPMC: _gpmc.msc_
 3. Within the appropriate GPO applied to the Domain Controllers, go to _Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\ _. <!--Unclear meaning of "appropriate GPO".-->
