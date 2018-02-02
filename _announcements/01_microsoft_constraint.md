@@ -2,13 +2,13 @@
 layout: default
 navtitle: Microsoft Trust Store Impact
 title: Microsoft Trust Store Changes Set To Impact Federal Government
-pubDate: February 2, 2018
+pubDate: February 5, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
 description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust bit for our U.S. Government Root CA (i.e., COMMON) from the Microsoft Trust Store.  The first impact is anticipated to occur in April 2018&nbsp;&mdash;&nbsp;Windows users will receive errors when browsing to government intranet and internet websites that use TLS/SSL certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools, including your agency's group policy objects.  
 ---
 
-Upcoming changes to Microsoft's Trusted Root Program <!--Per Ken, MS calls this the "MS Trusted Root Program"-->could impact your agency. In April 2018, Microsoft will remove the **TLS trust bit** for our U.S. Government Root CA (i.e., Federal Common Policy CA [COMMON]) from Microsoft's globally distributed Certificate Trust List. 
+Upcoming changes to Microsoft's Trusted Root Program could impact your agency. In April 2018, Microsoft will remove the **TLS trust bit** for our U.S. Government Root CA (i.e., Federal Common Policy CA [COMMON]) from Microsoft's globally distributed Certificate Trust List. 
 
 {% info-alert.html content="Microsoft distributes COMMON as a globally trusted root through the Microsoft Trust Store. Microsoft distributes trusted root CA certificates to related Operating Systems using [Certificate Trust Lists](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target= "_blank"}." %} 
 
@@ -19,9 +19,9 @@ Once this occurs, government and partner users on Windows devices may start rece
 3. The website uses TLS/SSL certificates that were issued from Federal PKI CAs
 4. These certificates validate to the U.S. Government Root CA (i.e., COMMON)
 
-This will also impact cross-agency users of these intranet websites.  For example, a State<!--Department of State (DOS) or State Government user (ex: California)--> user browsing to a DHS-hosted intranet website. 
+This will also impact cross-agency users of these intranet websites.  For example, a State<!--Do we mean Department of State (DOS) or State Government user (ex: California)--> user browsing to a DHS-hosted intranet website. 
 
-You can mitigate the impact for the government intranet websites for all government-furnished equipment by using configuration management tools that include your agency's group policy objects or _certutil_, as described below.<!--LaChelle used all lowercase for "group policy object(s)," so change it here too.-->
+You can mitigate the impact for the government intranet websites for all government-furnished equipment by using configuration management tools that include your agency's group policy objects or _certutil_, as described below.<!--Changed to all lowercase for "group policy object(s)" with no acronym, per LaChelle's changes.-->
 
 {% info-alert.html content="Your network smartcard logon using PIV and CAC is not impacted." %} 
 
@@ -50,14 +50,14 @@ The certificate details for COMMON are:
 
 ### Group Policy Object (Recommended)
 1. Log into a Domain Controller server as a member of the **Enterprise Administrators** group.
-2. Open the GPMC: _gpmc.msc_
+2. Open the GPMC: `gpmc.msc`
 3. Within the appropriate group policy object applied to the Domain, go to _Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\_. 
 4. Right-click **Trusted Root Certification Authorities**, and then click **Import**.
 5. On the _Welcome to the Certificate Import Wizard_ page, click **Next**.
 6. On the **File to Import** page, enter the path to the certificate files (e.g., _\\adfsresource\c$\fcpca.cer_), and then click **Next**.
 7. On the **Certificate Store** page, click **Place all certificates in the following store**, and then click **Next**.
 8. On the **Completing the Certificate Import Wizard** page, verify your information, and then click **Finish**.
-9. At the command line, enter: `_gpupdate /force_` to replicate the group policy, or wait for it to replicate based on your replication time and settings.
+9. At the command line, enter: `gpupdate /force` to replicate the group policy, or wait for it to replicate based on your replication time and settings.
 10. Open **MMC.exe &gt; File &gt; Add/Remove Snap-in &gt; Certificates &gt; Computer account &gt; Local computer**.
 11. In the **Certificate (Local Computer) &gt; Enterprise Certification Authorities &gt; Certificates** folder, you should see a certificate **Issued to** and **Issued by Federal Common Policy CA**. 
 12. Right-click on the **Federal Common Policy CA certificate**, and then click **properties** to verify that COMMON is enabled for all purposes.
@@ -89,7 +89,7 @@ Add COMMON to the Enterprise Trust Store by using the _certuil_ tool. You must h
 The Federal PKI doesn't comply with the requirements for globally trusted TLS certificates.  These requirements include: 
 
 **a)** Requirement for Fully-Qualified Domain Names (FQDNs)<br>
-Microsoft planned to restrict COMMON TLS certificate validation to only FQDNs ending in .us, .mil or fed.us.  Some federal agency PKIs issue TLS/SSL certificates to intranet websites that don't have an FQDN or that have short names (aliases). Under the requirements, these agencies would need to reissue, resinstall, and reconfigure all "non-compliant" certificates and applications.  The Federal PKI community has determined this would have an impact on mission applications on the intranets, and will ...**add text.** 
+Microsoft planned to restrict COMMON TLS certificate validation to only FQDNs ending in .us, .mil or fed.us.  Some federal agency PKIs issue TLS/SSL certificates to intranet websites that don't have an FQDN or that have short names (aliases). Under the requirements, these agencies would need to reissue, re-install, and reconfigure all "non-compliant" certificates and applications.  The Federal PKI community has determined this would have an impact on mission applications on the intranets, and will ...**add text.** 
 
 **b)** Requirement for Public Audit<br>
 The Federal PKI follows a government auditing standard, and we have not restricted our issuance of TLS certificates to only government domains. Under Microsoft's requirements, all CAs in the Federal PKI that could issue TLS certificates would be required to submit a non-government audit or be technically constrained.  This is a challenge because we have **not** constrained our CAs.  
