@@ -5,37 +5,33 @@ title: Microsoft Trust Store Changes Set To Impact Federal Government
 pubDate: February 2, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
-description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust bit for our U.S. Government Root CA (i.e., COMMON) from the Microsoft trust store.  The first impact is anticipated to occur in April 2018&nbsp;&mdash;&nbsp;Windows users will receive errors when browsing to government intranet and internet websites that use TLS/SSL certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment (GFE) by using configuration management tools, including your agency's Group Policy Objects (GPOs).  
+description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust bit for our U.S. Government Root CA (i.e., COMMON) from the Microsoft trust store.  The first impact is anticipated to occur in April 2018&nbsp;&mdash;&nbsp;Windows users will receive errors when browsing to government intranet and internet websites that use TLS/SSL certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and Government-Furnished Equipment (GFE) by using configuration management tools, including your agency's Group Policy Objects (GPOs).  
 ---
 
-Upcoming changes to Microsoft's Trusted Root Program <!--MS calls this the "MS Trusted Root Program"-->could impact your agency. In April 2018, Microsoft will remove the **TLS trust bit** for our U.S. Government Root CA (i.e., Federal Common Policy CA [COMMON]) from Microsoft's globally distributed Certificate Trust List. 
+Upcoming changes to Microsoft's Trusted Root Program <!--Per Ken, MS calls this the "MS Trusted Root Program"-->could impact your agency. In April 2018, Microsoft will remove the **TLS trust bit** for our U.S. Government Root CA (i.e., Federal Common Policy CA [COMMON]) from Microsoft's globally distributed Certificate Trust List. 
 
 {% info-alert.html content="Microsoft distributes COMMON as a globally trusted root through the Microsoft Trust Store. Microsoft distributes trusted root CA certificates to related Operating Systems using [Certificate Trust Lists](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target= "_blank"}." %} 
 
-Once this occurs, users of Windows, Windows Mobile, Microsoft IE/Edge, and Google Chrome will receive errors when browsing to government intranet and internet websites that use TLS/SSL certificates issued by Federal PKI CAs. 
+Once this occurs, Federal FPKI users of Windows, Windows Mobile, Microsoft IE/Edge, and Google Chrome will receive errors when browsing to government intranet and internet websites that use TLS/SSL certificates that validate to COMMON. This will also impact cross-agency users of these websites (e.g., a DoD user visiting a DHS website). 
 
-You can mitigate the impact for the government intranets and GFE by using configuration management tools, including your agency's Group Policy Objects (GPOs) or _certutil_, as described below.
-
-## Who/What Is Impacted?
-
-* FPKI and partner users of Windows and Windows Mobile, Microsoft IE/Edge, and Google Chrome.
-* Any internet or intranet website using a TLS/SSL certificate that validates to COMMON.<!--Deleted: "provided that the COMMON Root CA certificate's server authentication trust bit is still distributed through the Microsoft and Apple trust stores."-->
-* Cross-agency websites (e.g., a DHS website visited by DoD employees).
+You can mitigate the impact for the government intranet and internet websites, as well as for GFE, by using configuration management tools that include your agency's Group Policy Objects (GPOs) or _certutil_, as described below.
 
 ## What Should I Do?
 
-1. To limit the risks to your agency, you'll need to re-install COMMON in the NTAuth Trust Store by using the Group Policy Object (GPO) or the _certutil_ tool, as described below. The certificate details for COMMON are:  
+1. To limit the risks to your agency, you'll need to re-install COMMON Root in the NTAuth Trust Store by using the GPO or the _certutil_ tool, as described below. 
+
+The certificate details for COMMON are:  
 
 | **Federal Common Policy CA (COMMON)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
 | Federal Common Policy CA<br>(sometimes shown as _U.S. Government Common Policy_) | http://http.fpki.gov/fcpca/fcpca.crt |
-| Distinguished Name | **cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US** |
-| sha1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
+| Distinguished Name | cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US |
+| **sha1 Thumbprint** | **90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1** |
 | Certificate Revocation List | http://http.fpki.gov/fcpca/fcpca.crl |
 | p7c File - Issued By | http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c |
 | p7c file - Issued To | http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c |
 
-2. When using either the GPO or _certutil_ method (paragraphs below), verify that you're installing the right certificate. Compare the SHA1 Thumbprint above with that of the certificate you're installing. Use one of these Windows' utilities: 
+2. When using either method described below to re-install COMMON, verify that you're installing the right certificate. To do that, use one of Windows' common utilities (_certutil_, _openssl dgst_, or _sha1sum_) to compare the SHA1 Thumbprint above with the SHA1 Thumbprint of the certificate you're installing. 
 
 ```
 		certutil -hashfile <filename>.crt SHA1<br>
