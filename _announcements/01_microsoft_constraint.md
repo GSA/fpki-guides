@@ -31,7 +31,7 @@ The certificate details for COMMON are:
 | p7c File - Issued By | http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c |
 | p7c file - Issued To | http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c |
 
-2. When using either method described below to re-install COMMON, verify that you're installing the right certificate. To do that, use one of Windows' common utilities (_certutil_, _openssl dgst_, or _sha1sum_) to compare the SHA1 Thumbprint above with the SHA1 Thumbprint of the certificate you're installing. 
+2. When using either method described below to re-install COMMON, verify that you have the right certificate. To do that, use one of Windows' common utilities (_certutil_, _openssl dgst_, or _sha1sum_) to that the SHA1 Thumbprints for COMMON and the certificate you're match. 
 
 ```
 		certutil -hashfile <filename>.crt SHA1<br>
