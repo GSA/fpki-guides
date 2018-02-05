@@ -1,7 +1,7 @@
 ---
 layout: default
 navtitle: Microsoft Trust Store Impact
-title: Microsoft Trust Store Changes Set To Impact Federal Government
+title: Microsoft Trusted Root Program Changes Set To Impact Federal Government
 pubDate: February 5, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
