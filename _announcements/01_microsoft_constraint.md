@@ -10,7 +10,7 @@ description: Upcoming changes to Microsoft's Trusted Root Program could impact y
 
 Upcoming changes to Microsoft's Trusted Root Program could impact your agency. In April 2018, Microsoft will remove the **TLS trust bit** for our U.S. Government Root CA (i.e., Federal Common Policy CA [COMMON]) from Microsoft's globally distributed Certificate Trust List. 
 
-{% alert-info.html content="Microsoft distributes COMMON as a globally trusted root through the Microsoft Trust Store. Microsoft distributes trusted root CA certificates to related Operating Systems using [Certificate Trust Lists](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target= "_blank"}." %} 
+{% include alert-info.html content="Microsoft distributes COMMON as a globally trusted root through the Microsoft Trust Store. Microsoft distributes trusted root CA certificates to related Operating Systems using Certificate Trust Lists." %} 
 
 Once this occurs, government and partner users of Windows devices may receive errors when **browsing** to internet or intranet websites.  These errors will appear if all of the following are true: 
 
@@ -23,7 +23,7 @@ This will also impact cross-agency users of these intranet websites.  For exampl
 
 You can mitigate the impact for government intranet websites for all government-furnished equipment by using configuration management tools that include your agency's group policy objects or _certutil_, as described below.<!--Changed to all lowercase for "group policy object(s)" with no acronym, per LaChelle's changes.-->
 
-{% alert-info.html content="Your network smartcard logon using PIV and CAC is not impacted." %} 
+{% include alert-info.html content="Your network smartcard logon using PIV and CAC is not impacted." %} 
 
 ## What Should I Do?
 
