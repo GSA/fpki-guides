@@ -43,7 +43,7 @@ Google's CT change has been planned and incrementally implemented for over two y
 Enterprise Chrome for government-furnished equipment will not check for a CT entry if you change the OS Registry settings and define an agency domain, such as "agency.gov." That means that certificates that would have been untrusted can continue being used. 
 **Note:** Make these configuration changes only for government-furnished equipment and explicit .gov or .mil domains in use for intranet websites.
 
-**a) Windows Registry location for Windows clients:**
+**a) Windows Registry location for Windows clients:**<br>
 
 For Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls, add values:
 
@@ -52,7 +52,7 @@ For Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledFo
    Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.agency.gov"
    ```
 
-**b) Windows Registry location for Google Chrome OS clients:**
+**b) Windows Registry location for Google Chrome OS clients:**<br>
 For Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls, add values:
 
    ```
@@ -60,8 +60,8 @@ For Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabled
    Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.agency.gov"
    ```
 
-**c) MacOS**
-For preference name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
+**c) MacOS**<br>
+For Preference Name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
 
    ```
    <array>
@@ -70,8 +70,8 @@ For preference name, CertificateTransparencyEnforcementDisabledForUrls, add valu
    </array>
    ```
 
-**d) Android**
-For restriction name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
+**d) Android**<br>
+For Restriction Name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
 
    ```
    CertificateTransparencyEnforcementDisabledForUrls\1 = "example.agency.gov"
