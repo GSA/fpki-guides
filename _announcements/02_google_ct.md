@@ -2,7 +2,7 @@
  layout: default
  navtitle: Google Certificate Transparency (CT) Impact
  title: Google Set To Enforce Certificate Transparency
- pubDate: January 26, 2018
+ pubDate: February 5, 2018
  collection: announcements
  permalink: announcements/googlect/
  description:  In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (i.e., COMMON) certificate. As a result, if a Federal PKI TLS/SSL certificate doesn’t appear in a CT log, then a Federal PKI Windows or Apple user will get an error when browsing with Chrome to intranet or internet websites.
