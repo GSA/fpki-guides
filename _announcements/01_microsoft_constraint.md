@@ -65,7 +65,7 @@ The certificate details for COMMON are:
 ### Certutil Method
 Add COMMON to the Enterprise Trust Store by using the _certuil_ tool. You must have **Enterprise Administrator** permissions for the domain to use _certutil_.
 
-1. To publish/add a certificate to Enterprise Trust, enter:
+1. To publish/add a certificate to the Enterprise Trust Store, enter:
 
 ```
   	certutil –dspublish –f <certificate_to_publish.cer or fcpca.cer> NTAuthCA
