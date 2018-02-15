@@ -1,19 +1,22 @@
+<!--
 ---
  layout: default
  navtitle: Google Certificate Transparency (CT) Impact
  title: Google Set To Enforce Certificate Transparency
- pubDate: February 5, 2018
+ pubDate: February 15, 2018
  collection: announcements
  permalink: announcements/googlect/
  description:  In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (i.e., COMMON) certificate. As a result, if a Federal PKI TLS/SSL certificate doesn’t appear in a CT log, then a Federal PKI Windows or Apple user will get an error when browsing with Chrome to intranet or internet websites.
----
-In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all TLS/SSL<!--Use TLS/SSL" as with MS Hot Topic--> certificates to appear in a CT log and serve proof of this inclusion when those TLS/SSL certificates validate to a Root CA certificate distributed globally by a trust store. The Microsoft and Apple Trust Stores currently distribute the COMMON Root CA certificate. 
+-->
 
-As a result, if a TLS/SSL certificate issued by a Federal PKI CA doesn’t appear in a CT log with a signed certificate timestamp, a Windows or Apple user will get an error when browsing with Chrome to the intranet or internet website using that certificate.
 
-At this time, no Federal PKI CAs used by the majority of **federal agencies** support CT.  
+In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all SSL/TLS certificates to appear in a CT log and serve proof of this inclusion when those TLS/SSL certificates validate to a Root CA certificate distributed globally by a trust store. The Microsoft and Apple Trust Stores currently distribute the COMMON Root CA certificate. 
 
-**Please send any questions about the Google CT change to _fpki@gsa.gov_**.
+If a TLS/SSL certificate issued by a Federal PKI CA doesn’t have a signed certificate timestamp, a Windows or Apple user will receive an error when browsing with Chrome to the intranet website using that certificate.
+
+At this time, no Federal PKI CAs used by the majority of **federal agencies** support Certificate Transparency.  
+
+**Please send any questions about the Chrome CT change to _fpki@gsa.gov_**.
 
 {% include alert-info.html content="CT is an open framework that allows website owners and browser operators to monitor and log TLS/SSL certificates, detect issuance/mis-issuance, and identify rogue CAs." %}
 
@@ -22,9 +25,7 @@ To prevent these Chrome errors, please see [Disabling Errors for Government-Furn
 ![Chrome Error Screen]({{site.baseurl}}/img/google_ct_hot_topic_error.png){:style="width:55%;float:center;"}
 
 **Chrome Error Screen Example**  
-<!--Changed to same words as used in MS Hot Topic-->
-{% include alert-info.html content="If the U.S. Government chooses to remove the TLS trust bit for our U.S. Government Root CA (i.e., COMMON Root CA) from Microsoft's Trust Store, then Google's new CT change will not affect Federal PKI TLS/SSL certificates used for intranet websites for Windows users of Chrome. (See the Microsoft Trust Store Impact Announcement.)" %}
-<!--Add --"but will still affect Apple users of Chrome"?-->
+
 
 ### Google's Purpose for CT Change
 Google's CT change has been planned and incrementally implemented for over two years.  Certificate Transparency provides a benefit to the global public trust community by:

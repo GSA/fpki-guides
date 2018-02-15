@@ -2,34 +2,45 @@
 layout: default
 navtitle: Microsoft Trust Store Impact
 title: Microsoft Trusted Root Program Changes Set To Impact Federal Government
-pubDate: February 5, 2018
+pubDate: February 14, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
-description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust bit for our U.S. Government Root CA (i.e., COMMON) from Microsoft's Trust Store.  The first impact is anticipated to occur in April 2018&nbsp;&mdash;&nbsp;Windows users will receive errors when browsing to government intranet and internet websites that use TLS/SSL certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools, including your agency's group policy objects.  
+description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust property for our U.S. Government Root CA (Federal Common Policy CA) from Microsoft's Trust Store.  The first impact is anticipated to occur in **April 2018**.<br><br>Windows users will receive errors when browsing to government intranet websites that use SSL/TLS certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for our federal enterprise devices.   
 ---
 
-Upcoming changes to Microsoft's Trusted Root Program could impact your agency. In April 2018, Microsoft will remove the **TLS trust bit** for our U.S. Government Root CA (i.e., Federal Common Policy CA [COMMON]) from Microsoft's globally distributed Certificate Trust List. 
+{% include alert-info.html content="Your network smartcard logon using PIV and CAC is not impacted." %} 
 
-{% include alert-info.html content="Microsoft distributes COMMON as a globally trusted root through the Microsoft Trust Store. Microsoft distributes trusted root CA certificates to related Operating Systems using Certificate Trust Lists." %} 
+Upcoming changes to Microsoft's Trusted Root Program could impact your agency. In April 2018, Microsoft will **remove** the trust for **SSL/TLS** from our U.S. Government Root CA (Federal Common Policy CA [COMMON]) from Microsoft's globally distributed Certificate Trust List. 
 
+- [What will be impacted?](#what-will-be-impacted)
+- [What should I do?](#what-should-i-do)
+- [Frequently Asked Questions?](#frequently-asked-questions)
+- [Additional Resources](#additional-resources)
+
+
+## What will be impacted?
 Once this occurs, government and partner users of Windows devices may receive errors when **browsing** to internet or intranet websites.  These errors will appear if all of the following are true: 
 
 1. Windows Operating System and Windows Mobile devices
 2. Microsoft Internet Explorer or Edge or Google Chrome
-3. The website uses TLS/SSL certificates that were issued by Federal PKI CAs
-4. These certificates validate to the U.S. Government Root CA (COMMON)
+3. The website uses SSL/TLS certificates that were issued by Federal PKI CAs
+4. These certificates validate to the Federal Common Policy CA [COMMON]
 
-This will also impact cross-agency users of these intranet websites.  For example, a State<!--Do we mean Department of State (DOS) or State Government user (ex: California)--> user browsing to a DHS-hosted intranet website. 
+This will also impact cross-agency users of the intranet websites.  For example, a Department of State user browsing to a Department of Homeland Security **intranet** website or application will receive an error if all of the four items are true. 
 
-You can mitigate the impact for government intranet websites for all government-furnished equipment by using configuration management tools that include your agency's group policy objects or _certutil_, as described below.<!--Changed to all lowercase for "group policy object(s)" with no acronym, per LaChelle's changes.-->
+You can mitigate the impact for government intranet websites for all government-furnished equipment.  
 
-{% include alert-info.html content="Your network smartcard logon using PIV and CAC is not impacted." %} 
+## What should I do?
 
-## What Should I Do?
+{% include alert-info.html content="These instructions are for agency network and domain system administrators." %} 
 
-1. To limit the risks to your agency, you'll need to install COMMON in the **Enterprise Trust Store** on all workstations and mobile devices using a group policy object.  It's preferred to use a group policy object to ensure you that have good configuration management options for the federal enterprise.  
+To limit the impact to your agency, you'll need to install Federal Common Policy CA in the **Enterprise Trust Store** or the **Trusted Roots Store** on all government managed Microsoft OS based workstations and mobile devices.  Two options to install include:
 
-The certificate details for COMMON are:  
+- [Install using Group Policy Objects](#group-policy-object)
+- [Install at your enterprise domain](#enterprise-domain)
+
+
+The certificate details for Federal Common Policy CA are:  
 
 | **Federal Common Policy CA (COMMON)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
@@ -37,91 +48,111 @@ The certificate details for COMMON are:
 | Distinguished Name | cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US |
 | **SHA-1 Thumbprint** | **90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1** |
 
+You should never install a root certificate without verifying it. To verify, download the certificate or email fpki at gsa dot gov for an out-of-band copy.  
 
-2. When using either method below to install a root CA certificate, verify that you have the right certificate. To verify, download the certificate from above or email fpki@gsa.gov for an out-of-band copy.  Use a common utility (_certutil_ on Windows or _openssl_ or _sha1sum_ on UNIX platforms) to verify that the SHA-1 hash of your certificate file matches the SHA1 value provided above.<!--The certificate itself uses the word, "Thumbprint," not "hash"--Ken pointed out.-->  
+Use a utility (_certutil_ on Windows or _openssl_ or _sha1sum_ on UNIX platforms) to verify that the SHA-1 thumbprint of the certificate file matches the SHA-1 value provided above.  
 
-```
-		certutil -hashfile <filename>.crt SHA1<br>
-		
-		openssl dgst -sha1 <filename>.crt<br>
-		
-		sha1sum <filename>.crt<br>
+``` 
+	certutil -hashfile fcpca.crt SHA1
 ```
 
-### Group Policy Object (Recommended)
-1. Log into a Domain Controller server as a member of the **Enterprise Administrators** group.
-2. Open the GPMC: `gpmc.msc`
-3. Within the appropriate group policy object applied to the Domain, go to _Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\_. 
-4. Right-click **Trusted Root Certification Authorities**, and then click **Import**.
-5. On the _Welcome to the Certificate Import Wizard_ page, click **Next**.
-6. On the **File to Import** page, enter the path to the certificate files (e.g., _\\adfsresource\c$\fcpca.cer_), and then click **Next**.
-7. On the **Certificate Store** page, click **Place all certificates in the following store**, and then click **Next**.
-8. On the **Completing the Certificate Import Wizard** page, verify your information, and then click **Finish**.
-9. At the command line, enter: `gpupdate /force` to replicate the group policy, or wait for it to replicate based on your replication time and settings.
-10. Open **MMC.exe &gt; File &gt; Add/Remove Snap-in &gt; Certificates &gt; Computer account &gt; Local computer**.
-11. In the **Certificate (Local Computer) &gt; Enterprise Certification Authorities &gt; Certificates** folder, you should see a certificate **Issued to** and **Issued by Federal Common Policy CA**. 
-12. Right-click on the **Federal Common Policy CA certificate**, and then click **properties** to verify that COMMON is enabled for all purposes.
-
-### Certutil Method
-Add COMMON to the Enterprise Trust Store by using the _certuil_ tool. You must have **Enterprise Administrator** permissions for the domain to use _certutil_.
-
-1. To publish/add a certificate to the Enterprise Trust Store, enter:
-
-```
-  	certutil –dspublish –f <certificate_to_publish.cer or fcpca.cer> NTAuthCA
+```	
+	openssl dgst -sha1 fcpca.crt
 ```
 
-2. To view all certificates in NTAuth<!--NTAuth or Enterprise Trust Store?-->:
-
-```
-	certutil –viewstore –enterprise NTAuth
+```	
+	sha1sum fcpca.crt
 ```
 
-4. To propagate from the domain controller(s) to the enterprise, enter:
+
+### Group Policy Object 
+You can add Federal Common Policy CA certificate to the Trusted Root Certificate Authorities using group policy objects.  
+
+How to set up group policy objects is a topic covered in Microsoft TechNet articles and other resources online.  Additional information:
+
+- You must have Enterprise Administrator privileges
+- You can set up the group policy object from a Domain Controller (or other approaches you use in your agency)
+- You may need to use multiple group policy objects to apply the configurations to all workstations in all groups and containers
+- Settings are under _Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\_
+- Import the fcpca.crt into **Trusted Root Certification Authorities**
+
+
+### Enterprise Domain
+You can add Federal Common Policy CA certificate to the enterprise trust store using _certuil_. Additional information:
+
+- You must have Enterprise Administrator privileges
+- You can run from a Domain Controller 
+- To publish/add a certificate to the enterprise trust store:
 
 ```
-  	gpupdate /force
+	certutil –dspublish –f <certificate_to_publish.cer or fcpca.crt> RootCA
+```
+
+- To view all certificates in enterprise trust store:
+
+```
+	certutil –viewstore –enterprise RootCA
+```
+
+- To propagate from the domain controller(s) to the enterprise:
+
+```
+	gpupdate /force
 ```
 
 ## Frequently Asked Questions
 
-#### 1. Why is the TLS trust bit being removed? 
-The Federal PKI doesn't comply with Microsoft's requirements for globally trusted TLS certificates.  These requirements include: 
+### 1. Why is the SSL/TLS trust being removed? 
+The Federal PKI doesn't comply with the requirements for globally trusted TLS certificates.  These requirements include: 
 
 **a) Requirement for Fully-Qualified Domain Names (FQDNs)**<br>
-Microsoft planned to restrict COMMON TLS certificate validation to only FQDNs ending in .us, .mil or fed.us.  Some federal agency PKIs issue TLS/SSL certificates to intranet websites that don't have an FQDN or that have short names (aliases). Under the requirements, these agencies would need to reissue, re-install, and reconfigure all "non-compliant" certificates and applications.  The Federal PKI community has determined this would have an impact on mission applications on the intranets, and will ...**NOTE: Add text.** 
+Microsoft planned to restrict SSL/TLS certificates to only certificates using fully qualified domain names ending in .gov, .mil or fed.us.  Some federal agencies issue SSL/TLS certificates to intranet websites.  These certificates don't have an FQDN; or these certificate contain intranet domains that don't end in .gov, .mil, or fed.us; or these use short names (aliases). Under the requirements, these agencies would need to reissue, re-install, and reconfigure all "non-compliant" certificates and applications.  The Federal PKI community has determined this would have a negative impact on mission applications on the intranets, and has voted to remove this public trust for SSL/TLS certificates issued under the Federal Common Policy CA from the Microsoft Trust Store Program. 
 
 **b) Requirement for Public Audit**<br>
-The Federal PKI follows a government auditing standard, and we have not restricted our issuance of TLS/SSL certificates to only government domains. Under Microsoft's requirements, all CAs in the Federal PKI that could issue TLS/SSL certificates would be required to submit a non-government audit or be technically constrained.  This is a challenge because we have **not** constrained our CAs.  
+The Federal PKI follows a government auditing standard, and we have not restricted our issuance of SSL/TLS certificates to only the .gov and .mil domains. Under the requirements, all CAs in Federal PKI that could issue SSL/TLS certificates are required to submit a non-government audit or be technically constrained.  Federal PKI has **not** technically constrained our CAs.  
 
 **c) Requirement To Disclose Certificate Practice Statements and Incident Post-Mortem Reports**<br>
-All Federal PKI CAs would be required to publicly post their Certificate Practice Statements and their Audit Letters.  The U.S. Government has attempted to disclose all Certificate Practice Statements for a number of years.  Some agencies include sensitive information in these documents and cannot disclose the documents publicly.  Public trust requires public disclosure and transparency. 
+Public trust requires public disclosure and transparency.  All Federal PKI CAs would be required to publicly post their Certificate Practice Statements and their Audit Letters.  The Federal PKI federal agency community has attempted to disclose all Certificate Practice Statements for a number of years.  However, some federal agencies include sensitive information in these documents and cannot disclose the documents publicly.  
 
 **d) Requirement To Create New Issuing Certification Authorities (CAs)**<br>
-Any Federal PKI CA that issues TLS/SSL, code-signing, or email-signing certificates (PIV) would have to establish a new CA for each type of certificate. This takes time, planning, and funding. 
+Any Federal PKI CA that issues SSL/TLS, code-signing, or email-signing certificates would have to establish a new CA for each type of certificate. This effort requires time, planning, and funding.   
 
 
-#### 2. How can I determine which of our intranet sites and applications will be impacted, including those used by cross-government users?  
-All intranet sites configured with a TLS/SSL certificate issued by a Federal PKI CA that validates to COMMON will be impacted.   
+#### 2. How can I determine which of our intranet websites and applications will be impacted, including those used by cross-government users?  
+All intranet sites configured with a SSL/TLS certificate issued by a Federal PKI CA that validates to Federal Common Policy CA will be impacted.   
 
-To determine which of your intranet sites are impacted, you can use some automated tools, or if you have an agreement with one of the Federal PKI Shared Service Providers (SSPs) and that agreement includes access to the SSP's registration portals to request TLS/SSL certificates, run a report on all issued certificates or ask the SSP to deliver this. 
+If you have an agreement with one of the Federal PKI Shared Service Providers (SSPs) for SSL/TLS certificates, run a report on all issued certificates or ask the SSP to deliver this report. 
 
-You can also scan your intranet websites in coordination with your CISO teams, as approved.  You could use existing tools or the DHS NCATS "pshtt" tool, which will also check for cipher suites and misconfigurations on the sites:  [**pshtt**](https://github.com/dhs-ncats/pshtt){:target= "_blank"}. (**Note:** This tool will not look just for FPKI certificates.  Outputs include all certificates and information.)
+You can also scan your intranet websites in coordination with your CISO teams.  You can use existing tools or the DHS NCATS "pshtt" tool, which will also check for cipher suites and mis-configurations on the intranet websites:  
+
+- [**pshtt**](https://github.com/dhs-ncats/pshtt){:target="_blank"}. 
+
+Note: This tool will not look just for Federal PKI certificates.  Outputs include all certificates and information.
 
 #### 3. How can I determine whether my agency users and government-furnished equipment will be impacted?  
-Check your Enterprise Trust Store configurations in your Microsoft domain and devices.  If COMMON is already installed in the Enterprise Trust Store, you don't need to reinstall or change its root store.  If COMMON is not installed in the Enterprise Trust Store, you should ensure that it is pushed in a group policy object for all your user devices.  
+Check your enterprise trust store configurations in your Microsoft domain and devices.  If Federal Common Policy CA is already installed in the enterprise trust store, you don't need to reinstall or change its root store.  If Federal Common Policy CA is not installed in the enterprise trust store, you should ensure that it is distributed in a group policy object to Trusted Root Certificate Authorities or via the enterprise domain to the enterprise store for all your user devices.  
+
+View where and how a certificate is being installed using the certificates snap-in (certmgr.msc).  Under View -> Options, click the Show _Physical certificate stores_ option.    
 
 #### 4. Is PIV network login impacted?  
 No. 
 
-#### 5. Do I need to remove the "baked-in" version of COMMON?  
-No, don't remove this certificate if it's already installed.
+#### 5. Do I need to remove the "baked-in" version of Federal Common Policy CA?  
+No, don't remove this certificate.  You may see two versions of the certificate in Trusted Root Certificate Authorities - one from the Microsoft distribution and one from your enterprise group policy or enterprise trust store.  Each version is being distributed differently, and will have different properties set.  
 
-#### 6. Do I need to add COMMON to the Trusted Root Certification Authorities store, or should I add it to the Enterprise Trust Store?
-If COMMON is already installed in the Enterprise Trust Store, you don't need to reinstall or change its root store. Propagate COMMON using either the GPO or _certutil_ methods above.
+#### 6. Do I need to add Federal Common Policy CA to the Trusted Root Certification Authorities store, or should I add it to the Enterprise Trust Store?
+Microsoft uses different physical containers and logical views of these containers for trust stores.  In addition, different tools will have different **names** for the same physical or logical view.  For example:
 
-#### 7. Do I need to change any trust bit for the CA certificate managed by group policy objects?
-No, trust bits are not set by group policy objects. If your agency currently distributes COMMON through a group policy object and places this CA certificate into the Enterprise Trust Store, no change is needed.<!--Changed "NTAuth" to "Enterprise"-->
+| **Certificates snap-in (mmc)**  | **Enterprise PKI snap-in**  |  **certutil** | **Registry** | 
+| :--------  | :-------------------------------     |
+| Trusted Root Certification Authorities | Certificate Authorities Container tab|  Root and RootCA | Root | 
+
+It can be confusing and the easiest is to follow one of the two steps in [What should I do?](#what-should-i-do)
+
+To read detailed information on certificate stores, logical views, physical views, and registry locations: [Managing Certificates with Certificate Stores](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386971(v=vs.85).aspx){:target="_blank"}
+
+#### 7. Do I need to change any trust property for the CA certificate managed by group policy objects?
+No, trust properties are not set by group policy objects. If your agency currently distributes Federal Common Policy CA through a group policy object, no change is needed.
 
 #### 8. What Windows versions are affected?
 All Windows Operating System versions. 
@@ -129,10 +160,8 @@ All Windows Operating System versions.
 #### 9. Will the group policy object distribution affect IPSec certificates if the server authentication bit is enabled and used with Microsoft Operating Systems?
 No, group policy object distribution will not negatively impact IPSec certificates.
 
+## Additional Resources
 
-#### Additional Resources
-
-Additional resources on Microsoft Trust Lists and configuring trusted CAs: 
-
-2. [Certificate Trust List Overview](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target= "_blank"}
-2. [Configure Trusted Roots and Disallowed Certificates](https://technet.microsoft.com/en-us/library/dn265983.aspx){:target= "_blank"}
+1. [Certificate Trust List Overview](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376545(v=vs.85).aspx){:target="_blank"}
+1. [Managing Certificates with Certificate Stores](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386971(v=vs.85).aspx){:target="_blank"}
+1. [Configure Trusted Roots and Disallowed Certificates](https://technet.microsoft.com/en-us/library/dn265983.aspx){:target="_blank"}
