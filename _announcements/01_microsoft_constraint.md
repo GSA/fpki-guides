@@ -46,7 +46,7 @@ The certificate details for Federal Common Policy CA are:
 | :--------  | :-------------------------------     |
 | Federal Common Policy CA<br>(sometimes shown as _U.S. Government Common Policy_) | http://http.fpki.gov/fcpca/fcpca.crt |
 | Distinguished Name | cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US |
-| **SHA-1 Thumbprint** | **90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1** |
+| SHA-1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
 
 You should never install a root certificate without verifying it. To verify, download the certificate or email fpki at gsa dot gov for an out-of-band copy.  
 
@@ -73,7 +73,7 @@ How to set up group policy objects is a topic covered in Microsoft TechNet artic
 - You must have Enterprise Administrator privileges
 - You can set up the group policy object from a Domain Controller (or other approaches you use in your agency)
 - You may need to use multiple group policy objects to apply the configurations to all workstations in all groups and containers
-- Settings are under _Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\_
+- Settings are under Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\
 - Import the fcpca.crt into **Trusted Root Certification Authorities**
 
 
