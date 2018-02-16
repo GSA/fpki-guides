@@ -28,7 +28,7 @@ Once this occurs, government and partner users of Windows devices may receive er
 
 This will also impact cross-agency users of the intranet websites.  For example, a Department of State user browsing to a Department of Homeland Security **intranet** website or application will receive an error if all four items are true. 
 
-You can mitigate the impact for government intranet websites for all government-managed equipment.  
+You can mitigate the impact for all government-furnished equipment.  
 
 ## What Should I Do?
 
