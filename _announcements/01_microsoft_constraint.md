@@ -34,7 +34,7 @@ You can mitigate the impact for all government-furnished equipment.
 
 {% include alert-info.html content="These instructions are for agency network and domain system administrators." %} 
 
-To limit the impact to your agency, you'll need to install the Federal Common Policy CA certificate in the **Enterprise Trust Store** or the **Trusted Roots Store** on all government-managed, Microsoft OS-based workstations and mobile devices.  Two options to install include:
+To limit the impact to your agency, you'll need to install the Federal Common Policy CA certificate in the **Enterprise Trust Store** or the **Trusted Roots Store** on all government-furnished, Microsoft OS-based workstations and mobile devices.  Two options to install include:
 
 - [Install using Group Policy Objects](#group-policy-object)
 - [Install at your Enterprise Domain](#enterprise-domain)
@@ -125,14 +125,14 @@ If you have an agreement with one of the Federal PKI Shared Service Providers (S
 
 You can also scan your intranet websites in coordination with your CISO teams.  You can use existing tools or the DHS NCATS "**pshtt**" tool, which will also check for cipher suites and mis-configurations on the intranet websites:  
 
-- [**pshtt**](https://github.com/dhs-ncats/pshtt){:target="_blank"} 
+- DHS NCATS [**pshtt**](https://github.com/dhs-ncats/pshtt){:target="_blank"} 
 
 **Note:** This tool will not look just for Federal PKI certificates.  Outputs will include all certificates and information.
 
 ### 3. How can I determine whether my agency users and government-furnished equipment will be impacted?  
 Check your enterprise trust store configurations in your Microsoft domain and devices.  If the Federal Common Policy CA certificate is already installed in the enterprise trust store, you don't need to reinstall or change its root store.  If it is not installed in the enterprise trust store, you should ensure that it is distributed in a group policy object to _Trusted Root Certificate Authorities_ or via the enterprise domain to the enterprise store for all your user devices.  
 
-View where and how a certificate is being installed using the certificates snap-in (certmgr.msc).  Under View **->** Options, click the Show _Physical certificate stores_ option.    
+View where and how a certificate is being installed using the certificates snap-in (certmgr.msc).  Under View -> Options, click the Show _Physical certificate stores_ option.    
 
 ### 4. Is PIV network login impacted?  
 No. 
