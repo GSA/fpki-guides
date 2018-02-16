@@ -2,7 +2,7 @@
 layout: default
 navtitle: Microsoft Trust Store Impact
 title: Microsoft Trusted Root Program Changes Set To Impact Federal Government
-pubDate: February 14, 2018
+pubDate: February 16, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
 description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust property for our U.S. Government Root CA (Federal Common Policy CA) from Microsoft's Trust Store.  The first impact is anticipated to occur in **April 2018**.<br><br>Windows users will receive errors when browsing to government intranet websites that use SSL/TLS certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for our federal enterprise devices.   
