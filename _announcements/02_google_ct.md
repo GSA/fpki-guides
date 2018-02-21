@@ -10,9 +10,9 @@
 -->
 
 
-In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all SSL/TLS certificates to appear in a CT log and serve proof of this inclusion when those TLS/SSL certificates validate to a Root CA certificate distributed globally by a trust store. The Microsoft and Apple Trust Stores currently distribute the COMMON Root CA certificate. 
+In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all SSL/TLS certificates to appear in a CT log and serve proof of this inclusion when those TLS/SSL certificates validate to a Root CA certificate distributed globally by an Operating Systems (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate. 
 
-If a TLS/SSL certificate issued by a Federal PKI CA doesn’t have a signed certificate timestamp, a Windows or Apple user will receive an error when browsing with Chrome to the intranet website using that certificate.
+If a TLS/SSL certificate issued by a Federal PKI CA doesn’t appear in a CT log and doesn't serve a signed certificate timestamp, an Federal PKI Windows or Apple user will receive an error when browsing with Chrome to the intranet website using that certificate.
 
 At this time, no Federal PKI CAs used by the majority of **federal agencies** support Certificate Transparency.  
 
@@ -28,11 +28,11 @@ To prevent these Chrome errors, please see [Disabling Errors for Government-Furn
 
 
 ### Google's Purpose for CT Change
+
 Google's CT change has been planned and incrementally implemented for over two years.  Certificate Transparency provides a benefit to the global public trust community by:
 
 1. Making it difficult for a CA to issue a TLS/SSL certificate that would not be visible to a domain owner.
 2. Allowing any CA or domain owner to identify mistakenly or maliciously issued certificates.
-
 
 ### Impacted Users and Certificates
 
@@ -44,7 +44,7 @@ Google's CT change has been planned and incrementally implemented for over two y
 Enterprise Chrome for government-furnished equipment will not check for a CT entry if you change the OS Registry settings and define an agency domain, such as "agency.gov." That means that certificates that would have been untrusted can continue being used. 
 **Note:** Make these configuration changes only for government-furnished equipment and explicit .gov or .mil domains in use for intranet websites.
 
-**a) Windows Registry location for Windows clients:**<br>
+**a.&nbsp;&nbsp;Windows Registry location for Windows clients:**<br>
 
 For Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls, add values:
 
@@ -53,7 +53,7 @@ For Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledFo
    Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.agency.gov"
    ```
 
-**b) Windows Registry location for Google Chrome OS clients:**<br>
+**b.&nbsp;&nbsp;Windows Registry location for Google Chrome OS clients:**<br>
 For Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls, add values:
 
    ```
@@ -61,7 +61,7 @@ For Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabled
    Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.agency.gov"
    ```
 
-**c) MacOS**<br>
+**c.&nbsp;&nbsp;MacOS**<br>
 For Preference Name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
 
    ```
@@ -71,7 +71,7 @@ For Preference Name, CertificateTransparencyEnforcementDisabledForUrls, add valu
    </array>
    ```
 
-**d) Android**<br>
+**d.&nbsp;&nbsp;Android**<br>
 For Restriction Name, CertificateTransparencyEnforcementDisabledForUrls, add values:<br>
 
    ```
@@ -80,6 +80,7 @@ For Restriction Name, CertificateTransparencyEnforcementDisabledForUrls, add val
    ```
 
 ### Frequently Asked Questions
+
 1. Will Google's use of CT impact my agency's internal, only locally trusted CA TLS/SSL certificates?
 
 There will be no impact if you use an agency's internal, only locally trusted CA to issue TLS/SSL certificates to intranet sites. Google's CT change will impact only those TLS/SSL certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores.<!--COMMON is not distributed through the Mozilla trust store. Delete?-->
