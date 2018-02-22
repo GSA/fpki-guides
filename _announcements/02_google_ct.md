@@ -10,9 +10,9 @@
 -->
 
 
-In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all TLS/SSL certificates to appear in a CT log and serve proof of this inclusion when those TLS/SSL certificates validate to a Root CA certificate distributed globally by an Operating Systems (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate. 
+In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all TLS/SSL certificates to appear in a CT log and serve proof of their inclusion when they validate to a Root CA certificate distributed globally by an Operating Systems (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate. 
 
-If a TLS/SSL certificate issued by a Federal PKI CA doesn’t appear in a CT log and doesn't serve a signed certificate timestamp, an Federal PKI Windows or Apple user will receive an error when browsing with Chrome to the intranet website using that certificate.
+If a TLS/SSL certificate issued by a Federal PKI CA doesn’t appear in a CT log and doesn't serve a signed certificate timestamp, then an Federal PKI Windows or Apple user will receive an error when browsing with Chrome to an intranet website using that certificate.
 
 At this time, no Federal PKI CAs used by the majority of **federal agencies** support Certificate Transparency.  
 
@@ -27,9 +27,9 @@ To prevent these Chrome errors, please see [Disabling Errors for Government-Furn
 **Chrome Error Screen Example**  
 
 
-### Google's Purpose for CT Change
+### Google's Purpose for Certificate Transparency Change
 
-Google's CT change has been planned and incrementally implemented for over two years.  Certificate Transparency provides a benefit to the global public trust community by:
+Google's Certificate Transparency change has been planned and incrementally implemented for over two years.  CT provides a benefit to the global public trust community by:
 
 1. Making it difficult for a CA to issue a TLS/SSL certificate that would not be visible to a domain owner.
 2. Allowing any CA or domain owner to identify mistakenly or maliciously issued certificates.
