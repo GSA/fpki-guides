@@ -30,6 +30,23 @@ This will also impact cross-agency users of the intranet websites.  For example,
 
 You can mitigate the impact for all government-furnished equipment.  
 
+## How Can I Test?
+
+{% include alert-info.html content="These instructions are for agency network and domain system administrators." %} 
+
+The test environment should reflect the production environment in variety of Windows platforms (Windows 7, 10, Server 2008 - 2016) and browsers (Google Chrome, Windows Internet Explorer and Edge). Take into account the following federal-wide restrictions and if they impact your agency:
+
+A) All versions from Windows 7 and Windows Server 2008R2 forward support the use of the CTL.
+B) The automatic root update settings can be controlled by group policy objects 
+C) The US Government Configuration Baseline (USGCB) templates for Windows 7 operating systems had requirements to turn off automatic root updates.
+D) If some agencies still disable automatic root updates, then those devices won't receive the CTL updates and are not impacted.
+E) Some end points are prevented from getting updates due to firewall restrictions.
+
+A few techniques to conduct in a test environment:
+1) Remove serverAuth as an allowable usage from the Federal Common Policy CA certificate(s) through the MMC Certificates snap-in. 
+2) Test brownser behavior before and after using a sample of web services that have FPKI SSL/TLS certificates.
+3) Distribute COMMON using either method below into the Enterprise Trust Store and testing if website access/error page.
+
 ## What Should I Do?
 
 {% include alert-info.html content="These instructions are for agency network and domain system administrators." %} 
