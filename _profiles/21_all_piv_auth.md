@@ -3,6 +3,8 @@ layout: default
 title: PIV, Derived PIV, and PIV-I Authentication Certificate Profile
 permalink: profiles/allpivauth/
 ---
+**PLEASE NOTE THAT THIS WAS A TEST FILE FOR INITIAL FORMATTING AND LAYOUT ONLY.  THE FINAL VERSION OF THIS PROFILE IS CONTAINED IN 23_all_piv_auth.md**
+
 
 This profile specifies the unique settings required for X.509 PIV Authentication and Derived PIV Authentication certificates issued under the _Common Policy CP_,<sup>[1](#1)</sup> as well as PIV-I Authentication certificates issued under the _FBCA CP_.<sup>[2](#2)</sup> (For standard, detailed certificate information, see the _ITU-T X.509 Recommendation_<sup>[3](#3)</sup> and RFC 5280<sup>[4](#4)</sup>.)
 
