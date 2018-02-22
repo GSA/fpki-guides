@@ -10,7 +10,7 @@
 -->
 
 
-In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all SSL/TLS certificates to appear in a CT log and serve proof of this inclusion when those TLS/SSL certificates validate to a Root CA certificate distributed globally by an Operating Systems (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate. 
+In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all TLS/SSL certificates to appear in a CT log and serve proof of this inclusion when those TLS/SSL certificates validate to a Root CA certificate distributed globally by an Operating Systems (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate. 
 
 If a TLS/SSL certificate issued by a Federal PKI CA doesn’t appear in a CT log and doesn't serve a signed certificate timestamp, an Federal PKI Windows or Apple user will receive an error when browsing with Chrome to the intranet website using that certificate.
 
@@ -38,6 +38,15 @@ Google's CT change has been planned and incrementally implemented for over two y
 
 1. Google Chrome users of Windows, Apple, Android, Apple iOS, and Windows Mobile.
 2. Any TLS/SSL certificate that validates to COMMON, provided that the COMMON Root CA certificate's TLS trust bit is still distributed through the Microsoft and Apple trust stores.
+
+### How Do I Check If My Website Is Compliant?
+1. Open Google Chrome and browse to the website.
+2. In Google Chrome, open the developer tools panel under the setting  -> more tools menu.
+   a. In Windows, push ctrl + shift + "i"
+   b. In Apple, push apple key + shift + "i"
+3. Select the security tab.
+4. Refresh the website page and click on the website under the "Main origin" column.
+5. If the certificate is compliant it will show the CT log details
 
 ### Disabling Errors for Government-Furnished Equipment
 
@@ -90,4 +99,6 @@ Extracted from [What is Certificate Transparency](https://www.certificate-transp
 See [Certificate Transparency--Resources for Site Owners](https://sites.google.com/site/certificatetransparency/resources-for-site-owners){:target="_blank"}  
 [Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}
 [How to Disable in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}  
-[Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}  
+[Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}
+[Example of Valid CT Certificate Record in Chrome](https://www.certificate-transparency.org/certificate-transparency-in-chrome)
+
