@@ -9,16 +9,17 @@
  description:  In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (i.e., COMMON) certificate. As a result, if a Federal PKI TLS/SSL certificate doesn’t appear in a CT log, then a Federal PKI Windows or Apple user will get an error when browsing with Chrome to intranet or internet websites.
 -->
 
+<!--Should CT be written out every time? Varying use of "CT" and "Certificate Transparency" will appear, well--inconsistent.-->
 
 In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all TLS/SSL certificates to appear in a CT log and serve proof of their inclusion when they validate to a Root CA certificate distributed globally by an Operating Systems (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate. 
 
-If a TLS/SSL certificate issued by a Federal PKI CA doesn’t appear in a CT log and doesn't serve a signed certificate timestamp, then an Federal PKI Windows or Apple user will receive an error when browsing with Chrome to an intranet website using that certificate.
+If a TLS/SSL certificate issued by a Federal PKI CA doesn’t appear in a Certificate Transparency log and doesn't serve a signed certificate timestamp, then an Federal PKI Windows or Apple user will receive an error when browsing with Chrome to an intranet website using that certificate.
 
 At this time, no Federal PKI CAs used by the majority of **federal agencies** support Certificate Transparency.  
 
-**Please send any questions about the Chrome CT change to _fpki@gsa.gov_**.
+**Please send any questions about the Chrome Certificate Transparency change to _fpki@gsa.gov_**.<!--We've been calling this Hot Topic "Google CT." We need to use the same term throughout.  If "Chrome CT" is better, then all instances should be changed including the main Announcement title, etc.-->
 
-{% include alert-info.html content="CT is an open framework that allows website owners and browser operators to monitor and log TLS/SSL certificates, detect issuance/mis-issuance, and identify rogue CAs." %}
+{% include alert-info.html content="Certificate Transparency is an open framework that allows website owners and browser operators to monitor and log TLS/SSL certificates, detect issuance/mis-issuance, and identify rogue CAs." %}
 
 To prevent these Chrome errors, please see [Disabling Errors for Government-Furnished Equipment](#disabling-errors-for-government-furnished-equipment).
 
