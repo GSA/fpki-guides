@@ -1,11 +1,11 @@
 ---
 layout: default
- navtitle: Chrome Certificate Transparency (CT) Impact
- title: Chrome Set To Enforce Certificate Transparency
- pubDate: February 28, 2018
- collection: announcements
- permalink: announcements/chromect/
- description:  In April 2018, Chrome will enforce Certificate Transparency (CT) requirements. This change requires all TLS/SSL certificates to appear in a CT log when the certificate validates to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA [COMMON] certificate. 
+navtitle: Chrome Certificate Transparency (CT) Impact
+title: Chrome Set To Enforce Certificate Transparency
+pubDate: February 28, 2018
+collection: announcements
+permalink: announcements/chromect/
+description:  In April 2018, Chrome will enforce Certificate Transparency (CT) requirements. This change requires all TLS/SSL certificates to appear in a CT log when the certificate validates to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA [COMMON] certificate. 
 ---
 
 {% include alert-info.html content="At this time, no Federal PKI CAs used by the majority of federal agencies for intranet TLS/SSL certificates support Certificate Transparency requirements. " %}
