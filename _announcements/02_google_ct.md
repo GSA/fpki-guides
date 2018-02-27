@@ -12,6 +12,12 @@ description:  In April 2018, Chrome will enforce Certificate Transparency (CT) r
 
 In April 2018, requirements for Certificate Transparency (CT) will begin to be enforced in Chrome. This change requires all TLS/SSL certificates which are issued after April 30, 2018, and which validate to a root certificate authority that is publicly trusted, to appear in a CT log and website operators to serve proof of the CT log inclusion. 
 
+- [What Will Be Impacted?](#what-will-be-impacted)
+- [What Should I Do?](#what-should-i-do)
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [Additional Resources](#additional-resources)
+
+## What Will Be Impacted?
 The Microsoft and Apple trust store programs currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate.  
 
 A user on Windows or Apple operating systems using a Chrome browser will receive an error when browsing to an intranet website using a TLS/SSL certificate issued from a Federal PKI CA. An error will be encountered by government users on government furnished equipment if all the following are true:
@@ -25,7 +31,9 @@ A user on Windows or Apple operating systems using a Chrome browser will receive
 
 **Chrome Error Screen Example**  
 
+## What Should I Do?
 To mitigate impact to the federal enterprise:  
+
 1. The Federal PKI community has notified the Microsoft trust store program to remove the trust for TLS/SSL from the U.S. Government's globally distributed Root CA [COMMON].
 2. You should distribute COMMON to government furnished equipment as an enterprise trusted root certificate.
 3. You can optionally disable CT checking for limited numbers of intranet websites. Please see [Disabling CT Checking for Government-Furnished Equipment](#disabling-ct-checking-for-government-furnished-equipment).
@@ -69,20 +77,20 @@ For Restriction Name, CertificateTransparencyEnforcementDisabledForUrls, add val
    CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.agency.gov"
    ```
 
-### Frequently Asked Questions
+## Frequently Asked Questions
 
-1. Will Chrome's use of CT impact my agency's internal, only locally trusted CA TLS/SSL certificates?
+### 1. Will Chrome's use of CT impact my agency's internal, only locally trusted CA TLS/SSL certificates?
 
 There will be no impact if you use your agency's internal, only locally trusted CA to issue TLS/SSL certificates to intranet sites. Chrome's CT change will impact only those TLS/SSL certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores.
 
-2.  Why is Certificate Transparency enforcement being deployed in Chrome?
+### 2.  Why is Certificate Transparency enforcement being deployed in Chrome?
 
 Chrome's Certificate Transparency change has been planned and incrementally implemented for over two years.  CT provides a benefit to the global community by:
 
-1. Increasing openness and transparency.
-2. Allowing domain owners to identify mistakenly or maliciously issued certificates.
+- Improving openness and transparency
+- Allowing domain owners to identify mistakenly or maliciously issued certificates 
 
-3. How do I check if my website is compliant?
+### 3. How do I check if my website is compliant?
 
 - Open Chrome and browse to the website.
 - In Chrome, open the developer tools panel under the setting  -> more tools menu.
@@ -92,7 +100,7 @@ Chrome's Certificate Transparency change has been planned and incrementally impl
 - Refresh the website page and click on the website under the "Main origin" column.
 - If the certificate is compliant it will show the CT log details
 
-#### Certificate Transparency Recommended Reading
+## Additional Resources
 [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}  
 [Certificate Transparency--Resources for Site Owners](https://sites.google.com/site/certificatetransparency/resources-for-site-owners){:target="_blank"}  
 [Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}
