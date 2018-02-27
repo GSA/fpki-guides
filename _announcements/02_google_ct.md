@@ -1,58 +1,38 @@
-<!--
 ---
- layout: default
- navtitle: Google Certificate Transparency (CT) Impact
- title: Google Set To Enforce Certificate Transparency
- pubDate: February 15, 2018
+layout: default
+ navtitle: Chrome Certificate Transparency (CT) Impact
+ title: Chrome Set To Enforce Certificate Transparency
+ pubDate: February 28, 2018
  collection: announcements
- permalink: announcements/googlect/
- description:  In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (i.e., COMMON) certificate. As a result, if a Federal PKI TLS/SSL certificate doesn’t appear in a CT log, then a Federal PKI Windows or Apple user will get an error when browsing with Chrome to intranet or internet websites.
--->
+ permalink: announcements/chromect/
+ description:  In April 2018, Chrome will enforce Certificate Transparency (CT) requirements. This change requires all TLS/SSL certificates to appear in a CT log when the certificate validates to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA [COMMON] certificate. 
+---
 
-<!--Should CT be written out every time? Varying use of "CT" and "Certificate Transparency" will appear, well--inconsistent.-->
+{% include alert-info.html content="At this time, no Federal PKI CAs used by the majority of federal agencies for intranet TLS/SSL certificates support Certificate Transparency requirements. " %}
 
-In April 2018, Google will enforce Certificate Transparency (CT) in Chrome. This change requires all TLS/SSL certificates to appear in a CT log and serve proof of their inclusion when they validate to a Root CA certificate distributed globally by an Operating Systems (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate. 
+In April 2018, requirements for Certificate Transparency (CT) will begin to be enforced in Chrome. This change requires all TLS/SSL certificates which are issued after April 30, 2018, and which validate to a root certificate authority that is publicly trusted, to appear in a CT log and website operators to serve proof of the CT log inclusion. 
 
-If a TLS/SSL certificate issued by a Federal PKI CA doesn’t appear in a Certificate Transparency log and doesn't serve a signed certificate timestamp, then an Federal PKI Windows or Apple user will receive an error when browsing with Chrome to an intranet website using that certificate.
+The Microsoft and Apple trust store programs currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate.  
 
-At this time, no Federal PKI CAs used by the majority of **federal agencies** support Certificate Transparency.  
+A user on Windows or Apple operating systems using a Chrome browser will receive an error when browsing to an intranet website using a TLS/SSL certificate issued from a Federal PKI CA. An error will be encountered by government users on government furnished equipment if all the following are true:
 
-**Please send any questions about the Chrome Certificate Transparency change to _fpki@gsa.gov_**.<!--We've been calling this Hot Topic "Google CT." We need to use the same term throughout.  If "Chrome CT" is better, then all instances should be changed including the main Announcement title, etc.-->
-
-{% include alert-info.html content="Certificate Transparency is an open framework that allows website owners and browser operators to monitor and log TLS/SSL certificates, detect issuance/mis-issuance, and identify rogue CAs." %}
-
-To prevent these Chrome errors, please see [Disabling Errors for Government-Furnished Equipment](#disabling-errors-for-government-furnished-equipment).
+1. Using Chrome 
+2. On an Window OS, MacOS, ChromeOS, Android, and Apple iOS device
+2. Browsing to an website with a TLS/SSL certificate that validates to COMMON
+3. The TLS/SSL certificate was issued after April 30, 2018
 
 ![Chrome Error Screen]({{site.baseurl}}/img/google_ct_hot_topic_error.png){:style="width:55%;float:center;"}
 
 **Chrome Error Screen Example**  
 
+To mitigate impact to the federal enterprise:  
+1. The Federal PKI community has notified the Microsoft trust store program to remove the trust for TLS/SSL from the U.S. Government's globally distributed Root CA [COMMON].
+2. You should distribute COMMON to government furnished equipment as an enterprise trusted root certificate.
+3. You can optionally disable CT checking for limited numbers of intranet websites. Please see [Disabling CT Checking for Government-Furnished Equipment](#disabling-ct-checking-for-government-furnished-equipment).
 
-### Google's Purpose for Certificate Transparency Change
+### Disabling CT checking for Government-Furnished Equipment
 
-Google's Certificate Transparency change has been planned and incrementally implemented for over two years.  CT provides a benefit to the global public trust community by:
-
-1. Making it difficult for a CA to issue a TLS/SSL certificate that would not be visible to a domain owner.
-2. Allowing any CA or domain owner to identify mistakenly or maliciously issued certificates.
-
-### Impacted Users and Certificates
-
-1. Google Chrome users of Windows, Apple, Android, Apple iOS, and Windows Mobile.
-2. Any TLS/SSL certificate that validates to COMMON, provided that the COMMON Root CA certificate's TLS trust bit is still distributed through the Microsoft and Apple trust stores.
-
-### How Do I Check If My Website Is Compliant?
-1. Open Google Chrome and browse to the website.
-2. In Google Chrome, open the developer tools panel under the setting  -> more tools menu.
-   a. In Windows, push ctrl + shift + "i"
-   b. In Apple, push apple key + shift + "i"
-3. Select the security tab.
-4. Refresh the website page and click on the website under the "Main origin" column.
-5. If the certificate is compliant it will show the CT log details
-
-### Disabling Errors for Government-Furnished Equipment
-
-Enterprise Chrome for government-furnished equipment will not check for a CT entry if you change the OS Registry settings and define an agency domain, such as "agency.gov." That means that certificates that would have been untrusted can continue being used. 
-**Note:** Make these configuration changes only for government-furnished equipment and explicit .gov or .mil domains in use for intranet websites.
+Enterprise Chrome for government-furnished equipment will not check for CT if you apply a policy rule and include an agency website sub-domain, such as "example.agency.gov."   You should only apply configuration changes for government-furnished equipment, and only include an explicit list of .gov or .mil sub-domains in use for intranet websites.
 
 **a.&nbsp;&nbsp;Windows Registry location for Windows clients:**<br>
 
@@ -91,13 +71,30 @@ For Restriction Name, CertificateTransparencyEnforcementDisabledForUrls, add val
 
 ### Frequently Asked Questions
 
-1. Will Google's use of CT impact my agency's internal, only locally trusted CA TLS/SSL certificates?
+1. Will Chrome's use of CT impact my agency's internal, only locally trusted CA TLS/SSL certificates?
 
-There will be no impact if you use an agency's internal, only locally trusted CA to issue TLS/SSL certificates to intranet sites. Google's CT change will impact only those TLS/SSL certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores.<!--COMMON is not distributed through the Mozilla trust store. Delete?-->
+There will be no impact if you use your agency's internal, only locally trusted CA to issue TLS/SSL certificates to intranet sites. Chrome's CT change will impact only those TLS/SSL certificates that validate to a Root CA whose certificate is distributed through the Microsoft, Apple, or Mozilla trust stores.
+
+2.  Why is Certificate Transparency enforcement being deployed in Chrome?
+
+Chrome's Certificate Transparency change has been planned and incrementally implemented for over two years.  CT provides a benefit to the global community by:
+
+1. Increasing openness and transparency.
+2. Allowing domain owners to identify mistakenly or maliciously issued certificates.
+
+3. How do I check if my website is compliant?
+
+- Open Chrome and browse to the website.
+- In Chrome, open the developer tools panel under the setting  -> more tools menu.
+   a. Windows OS shortcut: ctrl + shift + "i"
+   b. MacOSX shortcut: apple key + shift + "i"
+- Select the security tab.
+- Refresh the website page and click on the website under the "Main origin" column.
+- If the certificate is compliant it will show the CT log details
 
 #### Certificate Transparency Recommended Reading
-Extracted from [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}  
-See [Certificate Transparency--Resources for Site Owners](https://sites.google.com/site/certificatetransparency/resources-for-site-owners){:target="_blank"}  
+[What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}  
+[Certificate Transparency--Resources for Site Owners](https://sites.google.com/site/certificatetransparency/resources-for-site-owners){:target="_blank"}  
 [Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}
 [How to Disable in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}  
 [Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}
