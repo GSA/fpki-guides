@@ -249,7 +249,7 @@
   start_datetime: January 22, 2018 7:00:00 PM
   system: CertiPath Bridge
   change_description: Issuance of cross-certificate from CertiPath Bridge CA–G2 to NextgenID Root CA1.
-  contact: fpki@gsa.gov
+  contact: support@certipath.com
   ca_certificate_hash: 50a2bf7afe08edf3877854f6d0a6e59127f68a94
   ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
   ca_certificate_subject: CN = NextgenIDRootCA1, OU = Certification Authorities, O = NextgenID, C = US
@@ -257,6 +257,66 @@
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   sia_uri: http://www.nextgenidtrust.com/PKI/certs/IssuedByNextgenIDRootCA1.p7c
   ocsp_uri: N/A
+
+- notice_date: February 6th, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: End of February, 2017
+  end_datetime:
+  system: CertiPath Bridge
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Northrop Grumman Corporate Root CA-G2
+  contact: support@certipath.com
+  ca_certificate_hash:
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
+  ca_certificate_subject: Northrop Grumman Corporate Root CA-G2
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+  
+- notice_date: February 6th, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: End of February, 2017
+  end_datetime:
+  system: CertiPath Bridge
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Carillon Federal Services PIV-I CA1
+  contact: support@certipath.com
+  ca_certificate_hash:
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
+  ca_certificate_subject: Carillon Federal Services PIV-I CA1
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: February 6th, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: End of February, 2017
+  end_datetime:
+  system: CertiPath Bridge
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to CISRCA1
+  contact: support@certipath.com
+  ca_certificate_hash:
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
+  ca_certificate_subject: CISRCA1
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: February 6th, 2017
+  change_type: CA Certificate Issuance
+  start_datetime: End of February, 2017
+  end_datetime:
+  system: CertiPath Bridge
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Northrop Grumman Corporation Root CA
+  contact: support@certipath.com
+  ca_certificate_hash:
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
+  ca_certificate_subject: Northrop Grumman Corporation Root CA
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
 
 #- notice_date: 
 #  change_type: CA Certificate Issuance
