@@ -90,7 +90,7 @@ Chrome's Certificate Transparency change has been planned and incrementally impl
 1. Open Chrome and browse to your website.<!--Won't you know that the website is compliant because you won't get a 404 error when you browse to it anymore?-->
 2. In Chrome, go to **Settings->More Tools**.
 3. Open the **Developer Tools** panel:
-> Windows: `CTRL + Shift + "i"`
+> Windows: `CTRL + Shift + "i"`<br>
 > MacOS: `Apple key + Shift + "i"`
 3. Select the **Security** tab.
 4. Refresh the website page and click on the website under the **Main origin** column.
