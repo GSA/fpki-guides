@@ -1,14 +1,14 @@
 ---
 layout: default
 navtitle: Chrome Certificate Transparency (CT) Impact
-title: Google Set To Enforce Chrome Certificate Transparency
+title: Chrome Certificate Transparency Requirements
 pubDate: February 28, 2018
 collection: announcements
 permalink: announcements/chromect/
-description:  Upcoming changes to Google Chrome could affect your agency. This change requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA) certificate. This impact is expected to occur in **April 2018**.<br><br>
+description:  Upcoming changes to Chrome could affect your agency. This change requires all TLS/SSL certificates to appear in a CT log when the certificates validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA) certificate. This impact is expected to occur in **April 2018**.<br><br>
 ---
 
-{% include alert-info.html content="At this time, no Federal PKI Certificate Authorities used by most federal agencies for intranet TLS/SSL certificates support Certificate Transparency requirements. " %}
+{% include alert-info.html content="At this time, the Federal PKI Certification Authorities used by most federal agencies for intranet TLS/SSL certificates do not support Certificate Transparency logging requirements. " %}
 
 Upcoming changes to Google Chrome could impact your agency. In April 2018, Google will begin to enforce Certificate Transparency (CT) in Chrome. This change requires all TLS/SSL certificates that are issued after April 30, 2018, and that validate to a publicly trusted, Root Certificate Authority (CA) certificate to appear in a CT log. It also requires website operators to serve proof of the CT log inclusion (i.e., a signed timestamp).
 
