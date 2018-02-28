@@ -63,6 +63,7 @@ For _Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisable
 
 For _Preference Name_, _CertificateTransparencyEnforcementDisabledForUrls_, add values:<br>
 
+
    ```
    <array>
      <string>example.agency.gov</string>
@@ -104,4 +105,3 @@ These procedures apply to any government website, and any Federal PKI TLS/SSL ce
 [How to Disable CT in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}  
 [Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}
 [Example of Valid CT Certificate Record in Chrome](https://www.certificate-transparency.org/certificate-transparency-in-chrome)
-
