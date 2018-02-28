@@ -75,7 +75,7 @@ For _Preference Name_, _CertificateTransparencyEnforcementDisabledForUrls_, add 
 
 ### 1. Will Chrome's use of CT impact my agency's internal, only locally trusted CA TLS/SSL certificates?
 
-No. There will be no impact if you use your agency's internal, only locally trusted CA to issue TLS/SSL certificates to intranet sites. Chrome's CT change will impact only those TLS/SSL certificates that validate to a Root CA whose certificate is distributed through the Microsoft or Apple trust stores.
+No. There will be no impact if you use your agency's internal, only locally trusted CA to issue TLS/SSL certificates to intranet sites. Chrome's CT change will impact only those TLS/SSL certificates that validate to a COMMON, whose certificate is distributed through the Microsoft or Apple trust stores.
 
 ### 2. Why is Google enforcing CT in Chrome?
 
@@ -85,20 +85,20 @@ Chrome's CT change has been planned and incrementally implemented for over two y
 - Allowing domain owners to identify mistakenly or maliciously issued certificates 
 
 ### 3. How do I know whether my website is compliant with CT?
-<!--Won't you know that the website is compliant because you won't get a 404 error when you browse to it anymore?-->
-1. Open Chrome v64 and browse to your website.
+These procedures apply to any government website, and any Federal PKI TLS/SSL certificate or commercially sourced certificates. 
+
+1. Open Chrome and browse to your website.
 2. In Chrome, go to **Settings->More Tools**.
-3. Open the **DevTools** panel:<br>
+3. Open the **Developer Tools** panel:<br>
    ```
    Windows:  CTRL + Shift + "i"
    MacOS:  Apple key + Shift + "i"
    ```
-4. Select the **Security** tab.
+4. Select the **Security** tab in the Developer Tools.
 5. Refresh the website page and click on the website under the **Main origin** column.
 6. If the certificate is compliant, it will display the CT log details.
 
 ## Additional Resources
-<!--Reference also RFC 6962, "Certificate Transparency," June 2013?-->
 [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}  
 [Certificate Transparency--Resources for Site Owners](https://sites.google.com/site/certificatetransparency/resources-for-site-owners){:target="_blank"}  
 [Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}
