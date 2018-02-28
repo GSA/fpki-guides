@@ -18,12 +18,13 @@ Upcoming changes to Google Chrome could impact your agency. In April 2018, Googl
 - [Additional Resources](#additional-resources)
 
 ## What Will Be Impacted?
-<!--Shouldn't we say that when the FPKI removes the trust bit for COMMON from the Microsoft trust store, the Google CT problem will go away for Windows users?-->
+<!--Should we say that when the FPKI removes the trust bit for COMMON from the Microsoft trust store, the Google CT problem will go away for Windows users?-->
 The Microsoft and Apple trust stores currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate.  
 That means that a user of a Windows, Apple, or Chrome Operating System who also uses a Chrome browser will receive an error when browsing to an intranet website using an Federal PKI CA-issued, TLS/SSL certificate. A government user will receive an error on government-furnished equipment if all of the following are true: 
 
 1. Using a Chrome browser 
-2. Using Window OS, MacOS, Chrome OS, or Apple iOS device<!--Does Chrome OS also rely on MS and Apple trust store Root CA certificates to confirm the trustworthiness of SSL/TLS certificates that validate to COMMON?  Chromium Projects say "the root certificate policy for Chrome OS is forthcoming." Couldn't find anything published yet.--->
+2. Using Window OS, MacOS, Chrome OS, or Apple iOS device
+<!--Does Chrome OS also rely on MS and Apple trust store Root CA certificates to confirm the trustworthiness of SSL/TLS certificates that validate to COMMON?  Chromium Projects say the root certificate policy for Chrome OS is forthcoming but I couldn't find anything published yet.--->
 2. Browsing to an website with a TLS/SSL certificate that validates to COMMON
 3. The TLS/SSL certificate was issued after April 30, 2018
 
@@ -87,7 +88,7 @@ Chrome's Certificate Transparency change has been planned and incrementally impl
 <!--Will try to validate with Ken that this is what exactly appears. I couldn't find the "Settings->More Tools" option under Chrome Settings and so couldn't find the "Developer Tools"-->
 1. Open Chrome and browse to your website.<!--Won't you know that the website is compliant because you won't get a 404 error when you browse to it anymore?-->
 2. In Chrome, go to **Settings->More Tools**.
-3. Open the **Developer Tools** panel.&nbsp;&nbsp;For the Windows OS: `CTRL + Shift + "i"` or for MacOS X: `Apple key + Shift + "i"`
+3. Open the **Developer Tools**:&nbsp;&nbsp;`CTRL + Shift + "i"` for Windows or `Apple key + Shift + "i"` for MacOS.
 3. Select the **Security** tab.
 4. Refresh the website page and click on the website under the **Main origin** column.
 5. If the certificate is compliant, it will display the CT log details.
