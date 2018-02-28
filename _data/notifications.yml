@@ -258,9 +258,9 @@
   sia_uri: http://www.nextgenidtrust.com/PKI/certs/IssuedByNextgenIDRootCA1.p7c
   ocsp_uri: N/A
 
-- notice_date: February 28th, 2017
+- notice_date: February 6th, 2017
   change_type: CA Certificate Issuance
-  start_datetime: February ‎19, ‎2018 7:00:00 PM
+  start_datetime: February 19, 2018 7:00:00 PM
   system: CertiPath Bridge
   change_description: Issuance of cross-certificate from CertiPath Bridge CA to Northrop Grumman Corporate Root CA
   contact: support at certipath dot com
@@ -270,9 +270,9 @@
   cdp_uri: http://certipath-crl.symauth.com/CertiPathLLCCertiPathBridgeCA.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeRootCA.p7c
     
-- notice_date: February 28th, 2017
+- notice_date: February 6th, 2017
   change_type: CA Certificate Issuance
-  start_datetime: February ‎19, ‎2018 7:00:00 PM
+  start_datetime: February 19, 2018 7:00:00 PM
   system: CertiPath Bridge
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Carillon Federal Services PIV-I CA1
   contact: support at certipath dot com
@@ -282,9 +282,9 @@
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   
-- notice_date: February 28th, 2017
+- notice_date: February 6th, 2017
   change_type: CA Certificate Issuance
-  start_datetime: February ‎19, ‎2018 7:00:00 PM
+  start_datetime: February 19, 2018 7:00:00 PM
   system: CertiPath Bridge
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Northrop Grumman Corporation Root CA
   contact: support at certipath dot com
@@ -295,9 +295,9 @@
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   sia_uri: http://certdata.northropgrumman.com/certdata/p7c/IssuedByNorthropGrummanCorporateRootCA-G2.p7c
 
-- notice_date: February 28th, 2017
+- notice_date: February 6th, 2017
   change_type: CA Certificate Issuance
-  start_datetime: February ‎25, ‎2018 7:00:00 PM
+  start_datetime: February 25, 2018 7:00:00 PM
   system: CertiPath Bridge
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to CISRCA1
   contact: support at certipath dot com
