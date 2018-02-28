@@ -1,7 +1,7 @@
 ---
 layout: default
 navtitle: Chrome Certificate Transparency (CT) Impact
-title: Chrome Set To Enforce Certificate Transparency
+title: Google Set To Enforce Chrome Certificate Transparency
 pubDate: February 28, 2018
 collection: announcements
 permalink: announcements/chromect/
@@ -19,9 +19,7 @@ Upcoming changes to Google Chrome could impact your agency. In April 2018, Googl
 
 ## What Will Be Impacted?
 <!--Should we say that when the FPKI removes the trust bit for COMMON from the Microsoft trust store, the Google CT problem will go away for Windows users?-->
-The Microsoft and Apple trust stores currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate.  
-
-This means that a user of a Windows, Apple, or Chrome Operating System who also uses a Chrome browser will receive an error when browsing to an intranet website using an Federal PKI CA-issued, TLS/SSL certificate. A government user will receive an error on government-furnished equipment if all of the following are true: 
+The Microsoft and Apple trust stores currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate. This means that a user of a Windows, Apple, or Chrome Operating System who also uses a Chrome browser will receive an error when browsing to an intranet website using an Federal PKI CA-issued, TLS/SSL certificate. A government user will receive an error on government-furnished equipment if all of the following are true: 
 
 1. Using a Chrome browser 
 2. Using Window OS, MacOS, Chrome OS, or Apple iOS device
@@ -78,9 +76,9 @@ For _Preference Name_, _CertificateTransparencyEnforcementDisabledForUrls_, add 
 
 No. There will be no impact if you use your agency's internal, only locally trusted CA to issue TLS/SSL certificates to intranet sites. Chrome's CT change will impact only those TLS/SSL certificates that validate to a Root CA whose certificate is distributed through the Microsoft or Apple trust stores.
 
-### 2. Why is Google enforcing Certificate Transparency in Chrome?
+### 2. Why is Google enforcing CT in Chrome?
 
-Chrome's Certificate Transparency change has been planned and incrementally implemented for over two years.  CT provides a benefit to the global community by:
+Chrome's CT change has been planned and incrementally implemented for over two years.  CT provides a benefit to the global community by:
 
 - Improving openness and transparency
 - Allowing domain owners to identify mistakenly or maliciously issued certificates 
