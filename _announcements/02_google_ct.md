@@ -89,8 +89,8 @@ Chrome's CT change has been planned and incrementally implemented for over two y
 1. Open Chrome v64 and browse to your website.
 2. In Chrome, go to **Settings->More Tools**.
 3. Open the **DevTools** panel:
-> Windows:&nbsp;&nbsp;`CTRL + Shift + "i"`<br>
-> MacOS:&nbsp;&nbsp;`Apple key + Shift + "i"`<br>
+> `Windows:&nbsp;&nbsp;CTRL + Shift + "i"`<br>
+> `MacOS:&nbsp;&nbsp;Apple key + Shift + "i"`<br>
 4. Select the **Security** tab.
 5. Refresh the website page and click on the website under the **Main origin** column.
 6. If the certificate is compliant, it will display the CT log details.
