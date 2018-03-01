@@ -39,7 +39,7 @@ To mitigate the impact on the federal enterprise:
 
 ### Disabling CT Checking for Government-Furnished Equipment
 
-Enterprise Chrome for government-furnished equipment will not check for CT if you apply a policy rule<!--via group policy object?--> and include an **agency website sub-domain**, such as _example.agency.gov_. You should only apply configuration changes for government-furnished equipment and only include an explicit list of .gov or .mil sub-domains in use for intranet websites.
+Enterprise Chrome for government-furnished equipment will not check for CT if you apply a policy rule and include an **agency website sub-domain**, such as _example.agency.gov_. You should only apply configuration changes for government-furnished equipment and only include an explicit list of .gov or .mil sub-domains in use for intranet websites.
 
 **a.&nbsp;&nbsp;Windows Registry location for Windows clients:**<br>
 
