@@ -18,11 +18,11 @@ Upcoming changes to Google Chrome could impact your agency. In April 2018, Googl
 - [Additional Resources](#additional-resources)
 
 ## What Will Be Impacted?
-The Microsoft and Apple trust stores currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate. This means that a user of a Windows, Apple, or Chrome Operating System who also uses a Chrome browser will receive an error when browsing to an intranet website using an Federal PKI CA-issued, TLS/SSL certificate. A government user will receive an error on government-furnished equipment if all of the following are true: 
+The Microsoft and Apple trust stores currently distribute the U.S. Government Root CA (Federal Common Policy CA [COMMON]) certificate. This means that a user of a Windows, Apple, or Chrome Operating System who also uses a Chrome browser will receive an error when browsing to an intranet website using a Federal PKI CA-issued, TLS/SSL certificate. A government user will receive an error on government-furnished equipment if all of the following are true: 
 
 1. Using a Chrome browser 
 2. Using Window OS, MacOS, Chrome OS, or Apple iOS device
-3. Browsing to an website with a TLS/SSL certificate that validates to COMMON
+3. Browsing to a website with a TLS/SSL certificate that validates to COMMON
 4. The TLS/SSL certificate was issued after April 30, 2018
 
 ![Chrome Error Screen]({{site.baseurl}}/img/google_ct_hot_topic_error.png){:style="width:55%;float:center;"}
@@ -39,7 +39,7 @@ To mitigate the impact on the federal enterprise:
 
 ### Disabling CT Checking for Government-Furnished Equipment
 
-Enterprise Chrome for government-furnished equipment will not check for CT if you apply a policy rule<!--via group policy object?--> and include an **agency website sub-domain**, such as _example.agency.gov_. You should only apply configuration changes for government-furnished equipment, and only include an explicit list of .gov or .mil sub-domains in use for intranet websites.
+Enterprise Chrome for government-furnished equipment will not check for CT if you apply a policy rule and include an **agency website sub-domain**, such as _example.agency.gov_. You should only apply configuration changes for government-furnished equipment and only include an explicit list of .gov or .mil sub-domains in use for intranet websites.
 
 **a.&nbsp;&nbsp;Windows Registry location for Windows clients:**<br>
 
@@ -75,9 +75,9 @@ For _Preference Name_, _CertificateTransparencyEnforcementDisabledForUrls_, add 
 
 ### 1. Will Chrome's use of CT impact my agency's internal, only locally trusted CA TLS/SSL certificates?
 
-No. There will be no impact if you use your agency's internal, only locally trusted CA to issue TLS/SSL certificates to intranet sites. Chrome's CT change will impact only those TLS/SSL certificates that validate to a COMMON, whose certificate is distributed through the Microsoft or Apple trust stores.
+No. There will be no impact if you use your agency's internal, only locally trusted CA to issue TLS/SSL certificates to intranet sites. Chrome's CT change will impact only those TLS/SSL certificates that validate to COMMON, whose certificate is distributed through the Microsoft and Apple trust stores.
 
-### 2. Why is Chrome enforcing Certificate Transparency?
+### 2. Why is Google enforcing Chrome CT?
 
 Chrome's CT change has been planned and incrementally implemented for over two years.  CT provides a benefit to the global community by:
 
@@ -85,7 +85,7 @@ Chrome's CT change has been planned and incrementally implemented for over two y
 - Allowing domain owners to identify mistakenly or maliciously issued certificates 
 
 ### 3. How do I know whether my website is compliant with CT?
-These procedures apply to any government website, and any Federal PKI TLS/SSL certificate or commercially sourced certificates. 
+These procedures apply to any government website and any Federal PKI TLS/SSL certificate or commercially sourced certificate. 
 
 1. Open Chrome and browse to your website.
 2. In Chrome, go to **Settings->More Tools**.
@@ -94,7 +94,7 @@ These procedures apply to any government website, and any Federal PKI TLS/SSL ce
    Windows:  CTRL + Shift + "i"
    MacOS:  Apple key + Shift + "i"
    ```
-4. Select the **Security** tab in the Developer Tools.
+4. Select the **Security** tab in the **Developer Tools**.
 5. Refresh the website page and click on the website under the **Main origin** column.
 6. If the certificate is compliant, it will display the CT log details.
 
