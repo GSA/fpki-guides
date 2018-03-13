@@ -2,7 +2,7 @@
 layout: default
 navtitle: Chrome Certificate Transparency (CT) Impact
 title: Chrome Certificate Transparency Requirements
-pubDate: February 28, 2018
+pubDate: March 14, 2018
 collection: announcements
 permalink: announcements/chromect/
 description:  Upcoming changes to Chrome could affect your agency. This change requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA) certificate. This impact is expected to occur in **April 30, 2018** but will affect any TLS/SSL certificate issued after **April 30, 2015.**<br><br>
@@ -56,8 +56,8 @@ CT testing is available only through the latest build of Google Chrome Canary 67
 
 4. Watch the CT error page for your intranet/internet websites. Alternatively, you can use the test sites listed in Step 5.<!--What do the test sites give you that the CT error page doesn't?--> 
 5. If you don't see an error, reset Google Chrome Canary from the previous test and ensure that you are launching Chrome 67<!--Referring to Google Chrome Canary in multiple ways--3 names, 2 names, 1 name +/- "67"--is confusing. Canary and Chrome 67 are 2 different things?--> using the command line, as needed for your Operating System.
-- [FPKI Graph](https://fpki-graph.fpki-lab.gov){:target="_blank"}
-- [Joint Personnel Adjudication System](https://jpasapp.dmdc.osd.mil/JPAS/JPASDisclosureServlet){:target="_blank"}<!--You have to sign an agreement to use this site. Is this okay for any government engineer?-->
+* [FPKI Graph](https://fpki-graph.fpki-lab.gov){:target="_blank"}
+* [Joint Personnel Adjudication System](https://jpasapp.dmdc.osd.mil/JPAS/JPASDisclosureServlet){:target="_blank"}<!--You have to sign an agreement to use this site. Is this okay for any government engineer?-->
 6. Apply the registry fix given below in [Disable CT Checking for Government-Furnished Equipment](#disable-ct-checking-for-government-furnished-equipment).
 7. Re-launch Canary using the command line argument in Step 3.
 8. Observe the changes in CT errors and repeat as needed.
