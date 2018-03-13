@@ -42,7 +42,7 @@ To mitigate the impact on the federal enterprise:
 CT testing is available only through the latest build of Google Chrome Canary 67<!--I checked and the website doesn't say "67." We need to explain why we say "67" in 2 places but not the others--> through command line execution:
 
 1. Download the latest build: [Google Chrome Canary](https://www.google.com/chrome/browser/canary.html){:target="_blank"}.
-2. Find the directory path to the Canary executable.  
+2. Find the directory path to the Canary executable. Normally:  
 
    ```
    Windows: C:\Users\username\AppData\Local\Google\Chrome SxS\Application\chrome.exe
