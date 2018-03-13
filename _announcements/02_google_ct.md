@@ -10,6 +10,8 @@ description:  Upcoming changes to Chrome could affect your agency. This change r
 
 {% include alert-info.html content="At this time, the Federal PKI Certification Authorities used by most federal agencies for intranet TLS/SSL certificates do not support Certificate Transparency logging requirements. " %}
 
+{% include alert-info.html content="Google will implement Certificate Transprancey Enforcement starting April 30th, 2018, but is backdated to the Chrome 64 release in 2015. Certificate Transparency requirement will apply to any TLS Certificate issued after April 30, 2015 " %}
+
 Upcoming changes to Google Chrome could impact your agency. In April 2018, Google will begin to enforce Certificate Transparency (CT) in Chrome. This change requires all TLS/SSL certificates that are issued after April 30, 2018, and that validate to a publicly trusted, Root Certificate Authority (CA) certificate to appear in a CT log. It also requires website operators to serve proof of the CT log inclusion (i.e., a signed timestamp).
 
 - [What Will Be Impacted?](#what-will-be-impacted)
@@ -23,7 +25,7 @@ The Microsoft and Apple trust stores currently distribute the U.S. Government Ro
 1. Using a Chrome browser 
 2. Using Window OS, MacOS, Chrome OS, or Apple iOS device
 3. Browsing to a website with a TLS/SSL certificate that validates to COMMON
-4. The TLS/SSL certificate was issued after April 30, 2018
+4. The TLS/SSL certificate was issued after April 30, 2015
 
 ![Chrome Error Screen]({{site.baseurl}}/img/google_ct_hot_topic_error.png){:style="width:55%;float:center;"}
 
@@ -35,7 +37,28 @@ To mitigate the impact on the federal enterprise:
 
 1. The Federal PKI community has notified the Microsoft Trusted Root Program to remove the trust for TLS/SSL from the globally distributed U.S. Government Root CA (COMMON).
 2. You should distribute COMMON to government-furnished equipment as an "enterprise trusted root certificate."
-3. You can optionally disable CT checking for limited numbers of intranet websites. Please see [Disabling CT Checking for Government-Furnished Equipment](#disabling-ct-checking-for-government-furnished-equipment).
+3. You can test if your websites are impacted. Please see [Test CT Checking for Government-Furnished Equipment](#test-ct-checking-for-government-furnished-equipment).
+4. You can optionally disable CT checking for limited numbers of intranet websites. Please see [Disabling CT Checking for Government-Furnished Equipment](#disabling-ct-checking-for-government-furnished-equipment).
+
+### Test CT Checking for Government-Furnished Equipment
+
+Testing ("Field Trials") is available in the latest version of Google Chrome Canary 67 through command line execution.
+
+1. Download the latest Chrome build ("Google Chrome Canary") at https://www.google.com/chrome/browser/canary.html. CT testing is only possible in Canary.
+2. Find the directory path to the Canary executible (usually C:\Users\username\AppData\Local\Google\Chrome SxS\Application\chrome.exe on Windows).
+3. Open a command line in the Canary executive directory. This command line used to enable CT for any certificate at least three years old.
+4. Use the following command to open Chrome Canary. 
+
+   ```
+   chrome.exe --enable-features="EnforceCTForNewCerts<EnforceCTTrial" --force-fieldtrials="EnforceCTTrial/Group1" --force-fieldtrial-params="EnforceCTTrial.Group1:date/1420086400"
+   ```
+
+5. Observe the CT error page for either your intranet/internet sites or the below test sites (available below). If you did not see the error, be sure that you reset Canary from previous test and that you are launching Chrome 67 using the command line as needed for your operating system.
+- https://fpki-graph.fpki-lab.gov
+- https://https://jpasapp.dmdc.osd.mil/JPAS/JPASDisclosureServlet
+6. Apply registry fix to add CT exclusion. Please see [Disabling CT Checking for Government-Furnished Equipment](#disabling-ct-checking-for-government-furnished-equipment).
+7. Re-launch Chrome Canary using the command line argument in step 4.
+8. Observe changes in CT errors and repeat as needed.
 
 ### Disabling CT Checking for Government-Furnished Equipment
 
@@ -48,8 +71,10 @@ For _Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledF
    ```
    Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.agency.gov"
    Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.agency.gov"
+   Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\3 = "gov"
+   Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\4 = "mil"
    ```
-
+   
 **b.&nbsp;&nbsp;Windows Registry location for Chrome OS clients:**<br>
 
 For _Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls_, add values:
@@ -57,20 +82,23 @@ For _Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisable
    ```
    Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.agency.gov"
    Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.agency.gov"
+   Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\3 = "gov"
+   Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\4 = "mil"
    ```
-
+   
 **c.&nbsp;&nbsp;MacOS**<br>
 
 For _Preference Name_, _CertificateTransparencyEnforcementDisabledForUrls_, add values:<br>
-
 
    ```
    <array>
      <string>example.agency.gov</string>
      <string>.example.agency.gov</string>
+     <string>gov</string>
+     <string>mil</string>
    </array>
    ```
-
+   
 ## Frequently Asked Questions
 
 ### 1. Will Chrome's use of CT impact my agency's internal, only locally trusted CA TLS/SSL certificates?
@@ -101,7 +129,8 @@ These procedures apply to any government website and any Federal PKI TLS/SSL cer
 ## Additional Resources
 [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}  
 [Certificate Transparency--Resources for Site Owners](https://sites.google.com/site/certificatetransparency/resources-for-site-owners){:target="_blank"}    
-[Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}  
+[Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"} 
 [How to Disable CT in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}    
 [Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}  
 [Example of Valid CT Certificate Record in Chrome](https://www.certificate-transparency.org/certificate-transparency-in-chrome)
+[Command Line Flags for Certificate Transparency Testing](https://bugs.chromium.org/p/chromium/issues/detail?id=816543&can=2&q=816543&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified)
