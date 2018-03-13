@@ -42,16 +42,16 @@ To mitigate the impact on the federal enterprise:
 CT testing is available only through the latest build of Google Chrome Canary 67<!--I checked and the website doesn't say "67." We need to explain why we say "67" in 2 places but not the others--> through command line execution:
 
 1. Download the latest build: [Google Chrome Canary](https://www.google.com/chrome/browser/canary.html){:target="_blank"}.
-2. Find the directory path to the Canary executable. Normally: 
+2. Find the directory path to the Canary executable.  
 
    ```
-Windows: C:\Users\username\AppData\Local\Google\Chrome SxS\Application\chrome.exe
+   Windows: C:\Users\username\AppData\Local\Google\Chrome SxS\Application\chrome.exe
    ```
-
 3. Open a command line in the Google Chrome Canary executive directory to enable CT for any certificate at least three years old:
 
    ```
-   chrome.exe --enable-features="EnforceCTForNewCerts<EnforceCTTrial" --force-fieldtrials="EnforceCTTrial/Group1" --force-fieldtrial-params="EnforceCTTrial.Group1:date/1420086400"
+   chrome.exe --enable-features="EnforceCTForNewCerts<EnforceCTTrial" --force-fieldtrials="EnforceCTTrial/Group1" 
+   --force-fieldtrial-params="EnforceCTTrial.Group1:date/1420086400"
    ```
 
 4. Watch the CT error page for your intranet/internet websites. Alternatively, you can use the test sites listed in Step 5.<!--What do the test sites give you that the CT error page doesn't?--> 
