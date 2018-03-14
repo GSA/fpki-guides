@@ -10,7 +10,7 @@ description:  Upcoming changes to Chrome could affect your agency. This change r
 
 {% include alert-info.html content="At this time, the Federal PKI Certification Authorities used by most federal agencies for intranet TLS/SSL certificates do not support Certificate Transparency logging requirements." %}  
 
-Upcoming changes to Chrome could impact your agency. Chrome will enforce Certificate Transparency for all TLS/SSL certificates starting on April 30, 2018.  This means that all TLS/SSL certificates that are issued after April 30, 2018, and which validate to a publicly trusted Root Certificate Authority (CA) certificate must appear in a CT log. In addition, website operators must serve proof of the CT log inclusion (i.e., a signed certificate timestamp).
+Upcoming changes to Chrome could impact your agency. Chrome will enforce Certificate Transparency for all TLS/SSL certificates starting on April 30, 2018.  This means that all TLS/SSL certificates that are issued after April 30, 2018, and which validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log. In addition, website operators must serve proof of the CT log inclusion (i.e., a signed certificate timestamp).
 
 - [How Does This Work?](#how-does-this-work)
 - [What Will Be Impacted?](#what-will-be-impacted)
@@ -44,18 +44,18 @@ A government user will receive an error on government-furnished equipment if all
 
 
 ## What Should I Do?
+The Federal PKI community has notified the Microsoft Trusted Root Program to remove the trust for TLS/SSL from the globally distributed Federal Common Policy CA.
 
 To mitigate the impact on the federal enterprise:  
 
-1. The Federal PKI community has notified the Microsoft Trusted Root Program to remove the trust for TLS/SSL from the globally distributed Federal Common Policy CA.<!--This is a statement, not a step.--> 
 2. You should distribute Federal Common Policy CA to government-furnished equipment as an _enterprise trusted root certificate_. 
-3. You MUST disable CT checking for a limited number of intranet websites. 
+3. You must disable CT checking for a limited number of intranet websites. 
 
 Please see [Disable CT Checking for Government-Furnished Equipment](#disable-ct-checking-for-government-furnished-equipment).
 
 
 ### Disable CT Checking for Government-Furnished Equipment
-{% include alert-info.html content="One option is outlined in this section.  Additional options may be available in Chrome 67 or Chrome 68.  We will post more information as we update the procedures.  Please check the GitHub Issues in the GSA FPKI-Guides playbook repository for any in-progress discussions." %} 
+{% include alert-info.html content="One option is outlined in this section.  Additional options may be available in Chrome 67 or Chrome 68.  We will post more information as we update the procedures.  Please check the GitHub Issues in the GSA fpki-guides playbook repository for any in-progress discussions." %} 
 
 Enterprise Chrome for government-furnished equipment will not check for CT if you apply a policy rule and include a **.gov or .mil second-level domain**, such as _agency.gov_, or other **third-level sub-domains**, such as _example.agency.gov_. You should apply configuration changes for only government-furnished equipment and only include an explicit list of second-level or below sub-domains in use for intranet websites. In some instances, you may need to create a new registry key tree in the locations specified below. 
 
@@ -156,7 +156,7 @@ Chrome's CT change has been planned and incrementally implemented for over two y
 ### 3. How do I know whether my intranet website is compliant with CT?
 These procedures apply to any government internet or intranet website and any Federal PKI TLS/SSL certificate or commercially sourced certificate.
 
-**Note:**&nbsp;&nbsp;Signed certificate timestamps (SCTs) will only appear for certificates issued after April 30, 2018.
+**Note:**&nbsp;&nbsp;Signed certificate timestamps (SCTs) are only required for certificates issued after April 30, 2018.  Some certificates issued **before** this date may already be compliant.  
 
 1. Open Chrome and browse to your website.
 2. In Chrome, go to **Settings->More Tools**.
