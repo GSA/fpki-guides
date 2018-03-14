@@ -56,29 +56,30 @@ Please see [Disable CT Checking for Government-Furnished Equipment](#disable-ct-
 ### Disable CT Checking for Government-Furnished Equipment
 {% include alert-info.html content="One option is outlined and included in this section.  An additional option may be available in Chrome v67 or Chrome v68.  We will post more information as we update the procedures.  Please check the issues on this playbook repository for any in-progress discussions." %}
 
-Enterprise Chrome for government-furnished equipment will not check for CT if you apply a policy rule and include an **agency website sub-domain**, such as _example.agency.gov_. You should only apply configuration changes for government-furnished equipment and only include an explicit list of .gov or .mil sub-domains in use for intranet websites.
+Enterprise Chrome for government-furnished equipment will not check for CT if you apply a policy rule and include an **agency website sub-domain**, such as _example.agency.gov_. You should only apply configuration changes for government-furnished equipment and only include an explicit list of .gov or .mil sub-domains in use for intranet websites. In some instances, a new registry key tree may need to be created in the below locations.
 
 **a.&nbsp;&nbsp;Windows Registry location for Windows clients:**<br>
 
-For _Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls_, add values:
-<!--Add "." to gov and mil.  Is this correct?  Other examples use a "." somewhere in string-->
+For _HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls_, add new string value:
 
    ```
-   Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.agency.gov"
-   Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.agency.gov"
-   Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\3 = ".gov"
-   Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls\4 = ".mil"
+   Agency Domain example
+   Name = 1 | Data = example.agency.gov
+   Gov / Mil Top Level Domain example 
+   Name = 2 | Data = gov
+   Name = 3 | Data = mil
    ```
    
 **b.&nbsp;&nbsp;Windows Registry location for Chrome OS clients:**<br>
 
-For _Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls_, add values:
+For _HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls_, add new string value:
 
    ```
-   Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\1 = "example.agency.gov"
-   Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\2 = ".example.agency.gov"
-   Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\3 = ".gov"
-   Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls\4 = ".mil"
+   Agency domain example
+   Name = 1 | Data = example.agency.gov
+   Gov / Mil Top Level Domain example 
+   Name = 2 | Data = gov
+   Name = 3 | Data = mil
    ```
    
 **c.&nbsp;&nbsp;MacOS**<br>
@@ -97,15 +98,13 @@ For _Preference Name_, _CertificateTransparencyEnforcementDisabledForUrls_, add 
 ### How Can I Test
 {% include alert-info.html content="Thank you to NASA teams for the testing write-up.  Please check the issues on this playbook repository for any additional in-progress discussions." %}
 
-CT testing is available on [Chrome version 67](https://www.chromium.org/developers/calendar){:target="_blank"}.
+CT enforcement starts on [Chrome version 67](https://www.chromium.org/developers/calendar){:target="_blank"}.
 
-- Chrome version 67 is available for a limited time via the Canary channel (beta channel)
+- CT testing on Chrome version 67 is available for a limited time via the Chrome beta channel
 - You will use a special command line flag to execute the browser and [set CT testing parameters
 ](https://bugs.chromium.org/p/chromium/issues/detail?id=816543&can=2&q=816543&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified){:target="_blank"}
 
-
-The CT and certificate information is cached in Chrome. For valid tests, you need to reset Chrome settings and cache to default from within the Browser Advance settings after each test and before you start a new test. 
-
+The CT and certificate information is cached in Chrome. For valid tests, you need to clear Chrome browsing data from within the browser Advance settings (Ctrl + Shift + Del) after each test and before you start a new test. 
 
 1. Download the Chrome version 67 latest build: [Chrome Canary](https://www.google.com/chrome/browser/canary.html){:target="_blank"}.
 
@@ -114,15 +113,15 @@ The CT and certificate information is cached in Chrome. For valid tests, you nee
    ```
    Windows: C:\Users\/<username/>\AppData\Local\Google\Chrome SxS\Application\chrome.exe
    ```
-3. Open a command line in the Google Chrome Canary executable directory to enable CT for _a date in the past_. For example, this command will enable CT checking for any TLS/SSL certificate issued after January 1, 2015:
+   
+3. Open a command line in the Google Chrome Canary executable directory to enable CT for _a date in the past_ measured in seconds. For example, this command will enable CT checking for any TLS/SSL certificate issued after January 1, 2015 (1420086400 seconds):
    ```
-   chrome.exe --enable-features="EnforceCTForNewCerts<EnforceCTTrial" --force-fieldtrials="EnforceCTTrial/Group1" 
-   --force-fieldtrial-params="EnforceCTTrial.Group1:date/1420086400"
+   chrome.exe --enable-features="EnforceCTForNewCerts<EnforceCTTrial" --force-fieldtrials="EnforceCTTrial/Group1" --force-fieldtrial-params="EnforceCTTrial.Group1:date/1420086400"
    ```
 
 4. Watch the CT error page for your intranet/internet websites. Alternatively, you can use these test sites: [FPKI Graph](https://fpki-graph.fpki-lab.gov){:target="_blank"} or [Joint Personnel Adjudication System](https://jpasapp.dmdc.osd.mil/JPAS/JPASDisclosureServlet){:target="_blank"}.
 
-5. If you don't see an error, clear the cache from the previous test and ensure that you are launching Chrome using the command line with the CT flags.
+5. If you don't see an error, clear the cache from the previous test and ensure that you are launching Chrome using the command line with the CT flags enabled.
 
 6. Apply the registry settings in [Disable CT Checking for Government-Furnished Equipment](#disable-ct-checking-for-government-furnished-equipment) for your test sites.
 
