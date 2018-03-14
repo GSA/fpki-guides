@@ -95,7 +95,7 @@ For _Preference Name_, _CertificateTransparencyEnforcementDisabledForUrls_, add 
    </array>
    ```
    
-### How Can I Test
+## How Can I Test?
 {% include alert-info.html content="Thank you to NASA teams for the testing write-up.  Please check the issues on this playbook repository for any additional in-progress discussions." %}
 
 CT enforcement starts on [Chrome version 67](https://www.chromium.org/developers/calendar){:target="_blank"}.
