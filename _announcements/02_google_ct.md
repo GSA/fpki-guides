@@ -8,11 +8,11 @@ permalink: announcements/chromect/
 description:  Upcoming changes to Chrome could affect your agency. This change requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA) certificate. This changes will take effect on **April 30, 2018** and will affect any TLS/SSL certificate issued after **April 30, 2018.**<br><br>
 ---
 
-{% include alert-info.html content="At this time, the Federal PKI Certification Authorities used by most federal agencies for **intranet** TLS/SSL certificates do not support Certificate Transparency logging requirements. " %}  
+{% include alert-info.html content="At this time, the Federal PKI Certification Authorities used by most federal agencies for intranet TLS/SSL certificates do not support Certificate Transparency logging requirements." %}  
 
 Upcoming changes to Chrome could impact your agency. Chrome will enforce Certificate Transparency for all TLS/SSL certificates starting on April 30, 2018.  This means that all TLS/SSL certificates that are issued after April 30, 2018, and which validate to a publicly trusted Root Certificate Authority (CA) certificate must appear in a CT log. In addition, website operators must serve proof of the CT log inclusion (i.e., a signed certificate timestamp).
 
-{% include alert-info.html content="All popular browsers plan to deploy CT in their product roadmaps. A more complete timeline will be posted on this site as dates and deployment timelines become known. " %}
+{% include alert-info.html content="All popular browsers plan to deploy CT in their product roadmaps. A more complete timeline will be posted on this site as dates and deployment timelines become known." %}
 
 - [How Does This Work?](#how-does-this-work)
 - [What Will Be Impacted?](#what-will-be-impacted)
@@ -55,9 +55,9 @@ Please see [Disable CT Checking for Government-Furnished Equipment](#disable-ct-
 
 
 ### Disable CT Checking for Government-Furnished Equipment
-{% include alert-info.html content="One option is outlined in this section.  Additional options may be available in Chrome 67 or Chrome 68.  We will post more information as we update the procedures.  Please check the GitHub Issues in the GSA fpki-guides playbook repository for any in-progress discussions. " %} 
+{% include alert-info.html content="One option is outlined in this section.  Additional options may be available in Chrome 67 or Chrome 68.  We will post more information as we update the procedures.  Please check the GitHub Issues in the GSA FPKI-Guides playbook repository for any in-progress discussions." %} 
 
-Enterprise Chrome for government-furnished equipment will not check for CT if you apply a policy rule and include a **.gov or .mil top-level domain** or an **agency sub-domain**, such as _example.agency.gov_. You should apply configuration changes for only government-furnished equipment and only include an explicit list of top-level or sub-domains in use for intranet websites. In some instances, you may need to create a new registry key tree in the locations specified below. <!--We're mixing both "agency" and "gov" here and in examples below.-->
+Enterprise Chrome for government-furnished equipment will not check for CT if you apply a policy rule and include a **.gov or .mil top-level domain**, such as _agency.gov_, or an **agency sub-domain**, such as _example.agency.gov_. You should apply configuration changes for only government-furnished equipment and only include an explicit list of top-level or sub-domains in use for intranet websites. In some instances, you may need to create a new registry key tree in the locations specified below. <!--We're mixing both "agency" and "gov" here and in examples below.-->
 
 **a.&nbsp;&nbsp;Windows Registry location for Windows clients:**<br>
 
@@ -101,28 +101,27 @@ For _preference name_, _CertificateTransparencyEnforcementDisabledForUrls_, add 
 ## How Can I Test CT Compliance for My Intranet Website?
 {% include alert-info.html content="Thank you to NASA teams for these testing procedures.  Please check the GitHub Issues in the GSA fpki-guides playbook repository for any in-progress discussions." %}
 
-CT enforcement will start with [Chrome 67](https://www.chromium.org/developers/calendar){:target="_blank"}.
+* CT enforcement will start with [Chrome 67](https://www.chromium.org/developers/calendar){:target="_blank"}. 
+* CT testing on Chrome 67 is available for a limited time via the [Chrome Beta channel](https://www.google.com/chrome/browser/beta.html){:target="_blank"}.
+* You will use a special command line flag to execute the browser: [Add a command-line flag for CT testing](https://bugs.chromium.org/p/chromium/issues/detail?id=816543&can=2&q=816543&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified){:target="_blank"}.
 
-- CT testing on Chrome 67 is available for a limited time via the [Chrome Beta channel](https://www.google.com/chrome/browser/beta.html){:target="_blank"}.
-- You will use a special command line flag to execute the browser: [Add a command-line flag for CT testing](https://bugs.chromium.org/p/chromium/issues/detail?id=816543&can=2&q=816543&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified){:target="_blank"}.
-
-1. The CT and certificate information is cached in Chrome. Before you start a new test, ensure that you will receive valid results: clear the Chrome browsing data from within the browser:<br>
+1. The CT and certificate information is cached in Chrome. Before you start a new test, ensure that you will receive valid results. Clear the Chrome browsing data from within the browser:<br><br>
    ```
    Settings->Advanced
-   (Ctrl + Shift + Del)
+   Ctrl + Shift + Del)
    ```
 2. Download the Chrome 67 latest build: [Download Chrome Canary](https://www.google.com/chrome/browser/canary.html){:target="_blank"}.
 
 3. Find the directory path to the Canary executable. For example: 
 
    ```
-      Windows: C:\Users\<username>\AppData\Local\Google\Chrome SxS\Application\chrome.exe
+   Windows: C:\Users\<username>\AppData\Local\Google\Chrome SxS\Application\chrome.exe
    ```
    
 4. Open a command line in the Canary executable directory to enable CT for _a date in the past_, measured in seconds. For example, this command will enable CT checking for any TLS/SSL certificate issued after January 1, 2015 (1420086400 seconds):<!--Where is January 1, 2015 in this command? Should be in "EnforceCTTrial.Group1:date..."?-->
 
    ```
-      chrome.exe --enable-features="EnforceCTForNewCerts<EnforceCTTrial" --force-fieldtrials="EnforceCTTrial/Group1" --force-fieldtrial-params="EnforceCTTrial.Group1:date/1420086400"
+   chrome.exe --enable-features="EnforceCTForNewCerts<EnforceCTTrial" --force-fieldtrials="EnforceCTTrial/Group1" --force-fieldtrial-params="EnforceCTTrial.Group1:date/1420086400"
    ```
 
 5. Watch the CT error page for your intranet websites. Alternatively, you can use these test sites: [FPKI Graph](https://fpki-graph.fpki-lab.gov){:target="_blank"} or [Joint Personnel Adjudication System](https://jpasapp.dmdc.osd.mil/JPAS/JPASDisclosureServlet){:target="_blank"}.
