@@ -158,10 +158,10 @@ These procedures apply to any government website and any Federal PKI TLS/SSL cer
 6. If the certificate is compliant, it will display the CT log details.
 
 ## Additional Resources
-[What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}  
-[Certificate Transparency--Resources for Site Owners](https://sites.google.com/site/certificatetransparency/resources-for-site-owners){:target="_blank"}    
-[Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"} 
-[How to Disable CT in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}    
-[Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}  
-[Example of Valid CT Certificate Record in Chrome](https://www.certificate-transparency.org/certificate-transparency-in-chrome){:target="_blank"} 
-[Command Line Flags for Certificate Transparency Testing](https://bugs.chromium.org/p/chromium/issues/detail?id=816543&can=2&q=816543&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified){:target="_blank"} 
+1. [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}  
+2. [Certificate Transparency--Resources for Site Owners](https://sites.google.com/site/certificatetransparency/resources-for-site-owners){:target="_blank"}    
+3. [Certificate Transparency Announcement](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"} 
+4. [How to Disable CT in Enterprise Chrome](http://www.chromium.org/administrators/policy-list-3#CertificateTransparencyEnforcementDisabledForUrls){:target="_blank"}    
+5. [Chrome Policy Templates](https://www.chromium.org/administrators/policy-templates){:target="_blank"}  
+6. [Example of Valid CT Certificate Record in Chrome](https://www.certificate-transparency.org/certificate-transparency-in-chrome){:target="_blank"} 
+7. [Command Line Flags for Certificate Transparency Testing](https://bugs.chromium.org/p/chromium/issues/detail?id=816543&can=2&q=816543&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified){:target="_blank"} 
