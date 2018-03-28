@@ -59,9 +59,10 @@ h1 {
 #searchinput {
     background: #fff url(../img/search.gif) no-repeat right;
     border: 1px solid #DDD;
-    /*font-size: 14px; line-height: 14px, height: 14px;
-    left: 250px;*/
-    padding: 1px 4px; margin: 0;
+    font-size: 1.4rem; 
+    /*line-height: 14px, height: 14px;*/
+    /*left: 250px;
+    padding: 1px 4px; margin: 0;*/
     /*position: relative;
     top: 20px;*/
     width: 250px;
