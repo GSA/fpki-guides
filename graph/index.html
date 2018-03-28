@@ -1,11 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-        <title>Federal PKI: Management Authority - Enabling Trust</title>
+        <title>FPKI Graph | Federal Public Key Infrastructure Guides</title>		
+        
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="styles/graphstyle.css">
         <link rel="stylesheet" type="text/css" href="styles/gexfjs.css" />
         <link rel="stylesheet" type="text/css" href="styles/jquery-ui-1.10.3.custom.min.css" />
-	<link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="favicon.ico">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script type="text/javascript">
         // Fallback in case JQuery CDN isn't available
@@ -16,9 +18,45 @@
         <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
         <script type="text/javascript" src="js/gexfjs.js"></script>
-        <script type="text/javascript" src="config.js"></script>
+        <script type="text/javascript" src="config.js"></script>		
     </head>
     <body>
+            
+        <header class="usa-site-header" role="banner">
+          <div class="usa-disclaimer">
+            <span class="usa-disclaimer-official">
+              <img class="usa-flag_icon" alt="US flag signifying that this is a United States Federal Government website" src="/fpki-guides/assets/img/us_flag_small.png">
+              An official website of the United States Government
+            </span>
+            <span class="usa-disclaimer-stage"></span>
+          </div>
+          
+            <nav class="usa-site-navbar">
+              <a class="menu-btn" href="#">Menu</a>
+              <div class="logo" id="logo">
+                <h1>
+                  <a href="https://fpki.idmanagement.gov" accesskey="1" title="Home" aria-label="Home">
+                  Federal Public Key Infrastructure Guides</a>
+                </h1>
+              </div>		      
+            </nav>
+            <nav class="usa-site-navbar-secondary">
+              <ul class="usa-unstyled-list">
+                
+                  <li><a href="https://www.idmanagement.gov" title="IDmanagement.gov">IDmanagement.gov</a></li>
+                
+                  <li><a href="https://arch.idmanagement.gov" title="Federal ICAM Architecture">Federal ICAM Architecture</a></li>
+                
+                  <li><a href="https://piv.idmanagement.gov" title="PIV Guides">PIV Guides</a></li>
+                  
+              </ul>
+            </nav> 
+        </header>
+        
+        <div class="overlay"></div>
+        <ul id="autocomplete">
+        </ul>
+        
         <div id="zonecentre" class="gradient">
             <canvas id="carte" width="0" height="0"></canvas>
             <ul id="ctlzoom">
@@ -42,22 +80,17 @@
         <div id="overviewzone" class="gradient">
             <canvas id="overview" width="0" height="0"></canvas>
         </div>
+        <div id="searchbox">			
+            <form id="recherche">
+            <input id="searchinput" class="grey" autocomplete="off" />
+            <input id="searchsubmit" type="submit" />
+            </form>
+        </div>
         <div id="leftcolumn">
             <div id="unfold">
                 <a href="#" id="aUnfold" class="rightarrow"> </a>
             </div>
             <div id="leftcontent"></div>
         </div>
-        <div id="titlebar">
-            <div id="maintitle">
-                <h1><a href="https://fpki.idmanagement.gov/graph" target="_blank" title="Federal PKI Management Authority - Enabling Trust">Federal PKI Management Authority - Enabling Trust</a></h1>
-            </div>
-            <form id="recherche">
-                <input id="searchinput" class="grey" autocomplete="off" />
-                <input id="searchsubmit" type="submit" />
-            </form>
-        </div>
-        <ul id="autocomplete">
-        </ul>
     </body>
 </html>
