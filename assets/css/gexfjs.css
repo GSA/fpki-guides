@@ -46,7 +46,7 @@ h1 {
 }*/
 
 #searchbox {
-    position: relative; 
+    /*position: relative; */
     top: 5px; 
     bottom: 0px; 
     right: 5px; 
@@ -96,8 +96,8 @@ h1 {
 /* AU CENTRE */
 
 #zonecentre {
-    /*position: relative; */
-    top: 45px; 
+    position: relative;
+    top: 15px; 
     bottom: 0; 
     left: 0; 
     right: 0; 
@@ -115,7 +115,8 @@ h1 {
     /*position: absolute; */
     left: 5px; bottom: 5px; 
     list-style: none; 
-    padding: 0; margin: 0;
+    padding: 0; 
+    margin: 0;
 }
 
 #ctlzoom li {
@@ -126,11 +127,15 @@ h1 {
 }
 
 #zoomSliderzone {
-    height: 120px;
+    height: 520px;
 }
 
 #zoomMinusButton, #zoomPlusButton {
-    display: block; width: 24px; height: 24px; background:url(../img/plusmoins.png);  margin: 0 auto;
+    display: block; 
+    width: 24px; 
+    height: 24px; 
+    background:url(../img/plusmoins.png);  
+    margin: 0 auto;
 }
 
 #zoomMinusButton {
@@ -150,7 +155,11 @@ h1 {
 }
 
 #lensButton, #edgesButton {
-    display: block; width: 36px; height: 36px; background:url(../img/loupe-edges.png); margin: 0 auto;
+    display: block; 
+    width: 36px; 
+    height: 36px; 
+    background:url(../img/loupe-edges.png); 
+    margin: 0 auto;
 }
 
 #lensButton {
@@ -188,26 +197,28 @@ h1 {
 #zoomSlider {
     background:#fff;
     border:1px solid #aaa;
-    height: 120px; margin: 0 auto;
+    height: 520px; 
+    margin: 0 auto;
 }
 
 /* EN BAS A GAUCHE */
 
 #overviewzone {
-    display: hidden;
-    position: relative; 
+    display: none;
+    /*position: relative; 
     right: 0; 
     bottom: 0;
     border-style: solid none none solid; 
     border-width: 5px; 
-    border-color: #ffffff;
+    border-color: #ffffff;*/
 }
 
 /* COLONNE DE GAUCHE */
 
 #graphzone {
-    position: relative;
-    top: 0px;
+    /*position: relative;*/
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #leftcolumn {
@@ -222,7 +233,7 @@ h1 {
 }
 
 #rightcolumn {
-    position: relative; 
+    /*position: relative; */
     top: 60px; 
     bottom: 0px; 
     left: 250px; 
