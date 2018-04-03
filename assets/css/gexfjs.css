@@ -46,10 +46,11 @@ h1 {
 }*/
 
 #searchbox {
-    /*position: relative; */
-    top: 5px; 
+    position: absolute;
+    /*float: right;*/
+    top: 115px; 
     bottom: 0px; 
-    right: 5px; 
+    right: 85px; 
     /*
     width: 200px; 
     background-color: rgb(250, 250, 252); 
@@ -225,7 +226,7 @@ h1 {
     position: absolute; 
     top: 160px; 
     bottom: 0px; 
-    left: -250px; 
+    left: -550px; 
     width: 250px; 
     background-color: rgb(250, 250, 252); 
     box-shadow: 2px 0 2px #808090; 
@@ -233,10 +234,10 @@ h1 {
 }
 
 #rightcolumn {
-    /*position: relative; */
-    top: 60px; 
+    position: absolute;
+    top: 160px; 
     bottom: 0px; 
-    left: 250px; 
+    left: -250px; 
     width: 250px; 
     background-color: rgb(250, 250, 252); 
     box-shadow: 2px 0 2px #808090; 
@@ -308,6 +309,10 @@ h1 {
     margin: 0; 
     padding: 0; 
     border-top: 1px solid #cccccc;
+}
+
+#leftcontent ul {
+    list-style: none; 
 }
 
 div.largepill {

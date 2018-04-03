@@ -5,7 +5,7 @@
  *    Eduardo Ramos Ibáñez (Spanish)
  *    Jaakko Salonen (Finnish)
  *    Zeynep Akata (Turkish)
- *    Σωτήρης Φραγκίσκος (Greek)
+ *    Σωτή�$ης Φ�$αγκίσκος (Greek)
  * */
 
 // Namespace
@@ -36,18 +36,18 @@ var GexfJS = {
     i18n : {
         "el" : {
             "search" : "Αναζήτηση Κόμβων",
-            "nodeAttr" : "Χαρακτηριστικά",
+            "nodeAttr" : "Χα�$ακτη�$ιστικά",
             "nodes" : "Κόμβοι",
-            "inLinks" : "Εισερχόμενοι δεσμοί από",
-            "outLinks" : "Εξερχόμενοι δεσμοί προς",
-            "undirLinks" : "Ακατεύθυντοι δεσμοί με",
-            "lensOn" : "Ενεργοποίηση φακού",
-            "lensOff" : "Απενεργοποίηση φακού",
+            "inLinks" : "Εισε�$χόμενοι δεσμοί από",
+            "outLinks" : "Εξε�$χόμενοι δεσμοί π�$ος",
+            "undirLinks" : "Ακατε�$θυντοι δεσμοί με",
+            "lensOn" : "Ενε�$γοποίηση φακο�$",
+            "lensOff" : "Απενε�$γοποίηση φακο�$",
             "edgeOn" : "Εμφάνιση ακμών",
-            "edgeOff" : "Απόκρυψη ακμών",
+            "edgeOff" : "Απόκ�$υψη ακμών",
             "zoomIn" : "Μεγέθυνση",
-            "zoomOut" : "Σμίκρυνση",
-            "browserErr" : 'Ο περιηγητής σας δεν μπορεί να εμφανίσει σωστά αυτή τη σελίδα.<br />Σας προτείνουμε να χρησιμοποιήσετε την τελευταία έκδοση του <a href="http://www.mozilla.com/" target="_blank">Firefox</a> ή του <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>'
+            "zoomOut" : "Σμίκ�$υνση",
+            "browserErr" : 'Ο πε�$ιηγητής σας δεν μπο�$εί να εμφανίσει σωστά αυτή τη σελίδα.<br />Σας π�$οτείνουμε να χ�$ησιμοποιήσετε την τελευταία έκδοση του <a href="http://www.mozilla.com/" target="_blank">Firefox</a> ή του <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>'
         },
         "en" : {
             "search" : "Search nodes",
