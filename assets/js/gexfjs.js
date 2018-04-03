@@ -193,13 +193,15 @@ function displayNode(_nodeIndex, _recentre) {
         var _d = GexfJS.graph.nodeList[_nodeIndex],
             _b = _d.coords.base,
             _str = '',
-            _cG = $("#leftcolumn");
+            _cG = $("#leftcolumn");			
             _cG.animate({
-                "left" : "0px"
+                "left" : "630px"
+                //"right" : "85px"
+                
             }, function() {
                 $("#aUnfold").attr("class","leftarrow");
                 $("#zonecentre").css({
-                    left: _cG.width() + "px"
+                    //left: _cG.width() + "px"
                 });
             });
         _str += '<h3><div class="largepill" style="background: ' + _d.color.base +'"></div>' + _d.label + '</h3>';
@@ -923,7 +925,7 @@ $(document).ready(function() {
             }, function() {
                 $("#aUnfold").attr("class","leftarrow");
                 $("#zonecentre").css({
-                    left: _cG.width() + "px"
+                    //left: _cG.width() + "px"
                 });
             });
         } else {
