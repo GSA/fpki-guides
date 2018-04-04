@@ -25,7 +25,7 @@ The Graph uses information published in each CA certificate's AIA and SIA extens
 
 All CA and End Entity certificates that have a certificate path (trust chain) to COMMON will have an AIA extension in their public certificates. An AIA extension contains a URI where you can find the certificate(s) used to sign that CA or End Entity certificate.  
 
-Most CA certificates will also have an SIA extension with a URI to the CA certificates that have been issued **_by that CA_**. For example, you can find the SIA for COMMON at [caCertsIssuedByfcpca.p7c](http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c){:target="_blank"}. 
+Most CA certificates will also have an SIA extension with a URI to the CA certificates that have been issued **_by that CA_**. For example, you can find the SIA for COMMON at http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c. 
 
 - To use this SIA, retrieve the file (.p7c) using the link above and open it.   
 - You will find a dozen or more certificates that are issued by COMMON (Root) to other intermediate or issuing CAs.  
