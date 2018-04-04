@@ -1479,7 +1479,7 @@ a.usa-label, a.usa-label-big {
     border-bottom: none;
     color: #ffffff; }
 
-ul, ol {
+/* ul, ol {  
   margin-bottom: 2em;
   margin-top: 2em; }
   ul li, ol li {
@@ -1491,9 +1491,9 @@ h1 + ul, h1 + ol, h2 + ul, h2 + ol, h3 + ul, h3 + ol, h4 + ul, h4 + ol, h5 + ul,
   margin-top: 0; }
 
 ul, ol {
-  list-style: none;  
+  list-style: none;  */
   /* padding-left: 0; JP/LL 3-06-2017 */
-  margin: 0;
+/*  margin: 0;
   margin-bottom: 1em;
   display: table; }
   ul li:after, ol li:after {
@@ -1519,8 +1519,10 @@ ol li {
     text-align: right; }
 
 li {
-  margin-bottom: 0.5em; }
-
+  margin-bottom: 0.5em;
+  list-style-type: none;
+}
+*/
 .usa-unstyled-list {
   list-style-type: none;
   margin: 0;
@@ -1634,7 +1636,7 @@ p a,
 .usa-sans p, .usa-sans a, .usa-sans li, .usa-sans span {
   font-family: "Calibri", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
-.usa-serif p, .usa-serif a, .usa-serif li, .usa-serif span {
+.usa-serif p, .usa-serif a, .usa-serif li, .usa-serif span {  
   font-family: "Cambria", "Georgia", "Times New Roman", "Times", serif;
   font-weight:300;
 }

@@ -195,9 +195,8 @@ function displayNode(_nodeIndex, _recentre) {
             _str = '',
             _cG = $("#leftcolumn");			
             _cG.animate({
-                "left" : "630px"
-                //"right" : "85px"
-                
+                "left" : "0px"
+                //"right" : "85px"				
             }, function() {
                 $("#aUnfold").attr("class","leftarrow");
                 $("#zonecentre").css({
