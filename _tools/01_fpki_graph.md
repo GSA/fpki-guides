@@ -11,11 +11,11 @@ The FPKI Graph displays the relationships between the Certification Authorities 
 
 The Federal Common Policy Certificate Authority (CA) (_"COMMON"_) is shown at the center of the Graph, and the rings of dots represent the outbound CAs. 
 
-- Click on any dot in the Graph to see a CA's inbound and outbound _CA_ certificates
-- _Inbound_ means the CA certificate is signed by the _Inbound_ CA
-- _Outbound_ means the CA has signed the _Outbound_ CA certificate
-- See the upper left-hand of the FPKI Graph webpage for the _Search_ function. You can enter a CA name to quickly find it on the Graph.
-- In the lower left-hand corner of the webpage is a _Zoom_ scroll bar. You can zoom in for closer views and see the CA names.
+- Click on any dot in the Graph to see a CA's inbound and outbound _CA_ certificates.
+- _Inbound_ means the CA certificate is signed by the _Inbound_ CA.
+- _Outbound_ means the CA has signed the _Outbound_ CA certificate.
+- The _Search_ function is on the upper right-hand corner. 
+- The _Zoom_ scroll bar is in the upper left-hand corner.
 
 You cannot download the certificates from the Graph. To download the certificates, you need to retrieve the certificates from the Authority Information Access (AIA) or Subject Information Access (SIA) URIs. (See below for more information on AIAs and SIAs.)    
 
