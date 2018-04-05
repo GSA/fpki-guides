@@ -134,7 +134,17 @@ h1 {
 }
 
 #zoomSliderzone {
-    height: 520px;
+    text-align: right;
+    height: 720px;
+}
+
+#zoomSlider {
+    /*position: absolute;*/
+    background:#fff;
+    border:1px solid #aaa;
+    height: 120px; 
+    margin: 0 auto;
+    /*right: 20px;*/
 }
 
 #zoomMinusButton, #zoomPlusButton {
@@ -201,12 +211,6 @@ h1 {
     background-position: -108px -36px;
 }
 
-#zoomSlider {
-    background:#fff;
-    border:1px solid #aaa;
-    height: 120px; 
-    margin: 0 auto;
-}
 
 /* EN BAS A GAUCHE */
 
@@ -231,21 +235,10 @@ h1 {
 #leftcolumn {
     position: absolute; 
     /*display: none;*/
-    top: 160px; 
+    top: 260px; 
     bottom: 0px; 
     left: -660px;
     /*right: 85px;*/
-    width: 250px; 
-    background-color: rgb(250, 250, 252); 
-    box-shadow: 2px 0 2px #808090; 
-    padding: 0;
-}
-
-#rightcolumn {
-    position: absolute;
-    top: 160px; 
-    bottom: 0px; 
-    left: -250px; 
     width: 250px; 
     background-color: rgb(250, 250, 252); 
     box-shadow: 2px 0 2px #808090; 

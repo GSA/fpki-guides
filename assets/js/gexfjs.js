@@ -929,7 +929,8 @@ $(document).ready(function() {
             });
         } else {
             _cG.animate({
-                "left" : "-" + _cG.width() + "px"
+                //"left" : "-" + _cG.width() + "px"
+                "left" : "-500px"
             }, function() {
                 $("#aUnfold").attr("class","rightarrow");
                 $("#zonecentre").css({
