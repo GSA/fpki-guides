@@ -29,7 +29,6 @@ body {
     position: relative; left: 0; top: 0; width: 250px; text-align: center;
 }
 
-
 h1 {
     margin:0;
 }
@@ -46,22 +45,23 @@ h1 {
 }*/
 
 #searchbox {
-    position: absolute;
-    /*float: right;*/
+    text-align: right;
+    /*position: absolute;
+    float: right;
     top: 115px; 
     bottom: 0px; 
-    right: 85px; 
-    /*
-    width: 200px; 
+    right: 85px;
+    width: 400px;
     background-color: rgb(250, 250, 252); 
-    box-shadow: 2px 0 2px #808090; */
-    padding: 0px;
+    box-shadow: 2px 0 2px #808090;
+    padding: 0px;*/ 
 }
 
 #searchinput {
     background: #fff url(../img/search.gif) no-repeat right;
     border: 1px solid #DDD;
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
+    width: 700px; 
     /*line-height: 14px, height: 14px;*/
     /*left: 250px;
     padding: 1px 4px; margin: 0;*/
@@ -75,11 +75,11 @@ h1 {
 }
 
 #searchsubmit {
-    position: relative; 
+    /*position: relative;*/
     left: 560px; 
     top: 13px; 
     width: 20px; 
-    height: 20px; 
+    height: 0px; 
     margin: 0; 
     padding: 0; 
     height: 16px; 
@@ -91,14 +91,15 @@ h1 {
 }
 
 .grey {
-    color: #cccccc; font-style: italic;
+    color: #cccccc; 
+    font-style: italic;
 }
 
 /* AU CENTRE */
 
 #zonecentre {
     position: relative;
-    top: 15px; 
+    top: 0px; 
     bottom: 0; 
     left: 0; 
     right: 0; 
@@ -235,7 +236,7 @@ h1 {
 #leftcolumn {
     position: absolute; 
     /*display: none;*/
-    top: 260px; 
+    top: 300px; 
     bottom: 0px; 
     left: -660px;
     /*right: 85px;*/
