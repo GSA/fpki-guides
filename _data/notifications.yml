@@ -307,6 +307,13 @@
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   
+- notice_date: April 4, 2018
+  change_type: CA Certificate Revocation
+  start_datetime: 3/26/28 12:15PM EDT
+  system: SBCA Operational Authority
+  change_description: The cross-certificate from SBCA 02 to FBCA 2013 has been revoked (3/26/28 12:15PM EDT). The CRL was published shortly thereafter. We are updating repositories (SIA/AIA) today.
+  contact: Matthew dot Williams at exostar dot com
+  
 #- notice_date: 
 #  change_type: CA Certificate Issuance
 #  start_datetime:
