@@ -903,8 +903,9 @@ $(document).ready(function() {
         $("#autocomplete").slideUp();
     });
     $("#autocomplete").css({
-        top: ( $("#searchinput").offset().top + $("#searchinput").outerHeight() ) + "px",
-        left: $("#searchinput").offset().left + "px"
+        //top: ( $("#searchinput").offset().top + $("#searchinput").outerHeight() ) + "px",
+        //left: $("#searchinput").offset().left + "px"
+        
     });
     $("#lensButton").click(function () {
         GexfJS.params.useLens = !GexfJS.params.useLens;
