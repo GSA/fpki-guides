@@ -44,30 +44,29 @@ h1 {
     margin-left:-1px;
 }*/
 
-#searchbox {
-    text-align: right;
+#searchbox {	
     /*position: absolute;
-    float: right;
+    float: right;*/
     top: 115px; 
     bottom: 0px; 
     right: 85px;
-    width: 400px;
-    background-color: rgb(250, 250, 252); 
-    box-shadow: 2px 0 2px #808090;
-    padding: 0px;*/ 
+    width: 450px;
+    /*background-color: rgb(250, 250, 252); */
+    box-shadow: 0px 0 0px #808090;
+    padding: 0px; 
 }
 
 #searchinput {
     background: #fff url(../img/search.gif) no-repeat right;
     border: 1px solid #DDD;
     font-size: 1.4rem;
-    width: 700px; 
+    width: 400px; 
     /*line-height: 14px, height: 14px;*/
     /*left: 250px;
     padding: 1px 4px; margin: 0;*/
     /*position: relative;
-    top: 20px;*/
-    width: 250px;
+    top: 20px;
+    width: 250px;*/
 }
 
 #searchinput:focus, #searchinput:active {
@@ -240,7 +239,8 @@ h1 {
     bottom: 0px; 
     left: -660px;
     /*right: 85px;*/
-    width: 250px; 
+    width: 250px;
+    height: 600px;
     background-color: rgb(250, 250, 252); 
     box-shadow: 2px 0 2px #808090; 
     padding: 0;
@@ -293,20 +293,7 @@ h1 {
     top: 0; 
     bottom: 0; 
     right: 0; 
-    overflow: auto; 
-    list-style: none; 
-    margin: 0; 
-    padding: 0; 
-    border-top: 1px solid #cccccc;
-}
-
-#graphcontent {
-    position: relative; 
-    left: 0; 
-    top: 0; 
-    bottom: 0; 
-    right: 0; 
-    overflow: auto; 
+    overflow: auto;	
     list-style: none; 
     margin: 0; 
     padding: 0; 
