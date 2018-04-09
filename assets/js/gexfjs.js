@@ -387,8 +387,7 @@ function initializeMap() {
     loadGraph();
 }
 
-function loadGraph() {
-    
+function loadGraph() {    
     $.ajax({
         url: ( document.location.hash.length > 1 ? document.location.hash.substr(1) : GexfJS.params.graphFile ),
         dataType: "xml",
@@ -880,7 +879,7 @@ $(document).ready(function() {
             GexfJS.mousePosition = null;
             endMove();
         })
-        .mousewheel(onGraphScroll);
+        //.mousewheel(onGraphScroll);
     $("#overview")
         .mousemove(onOverviewMove)
         .mousedown(startMove)
