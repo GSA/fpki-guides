@@ -47,7 +47,7 @@ h1 {
 #searchbox {	
     position: absolute;
     /* float: right;*/
-    top: 115px; 
+    top: 150px; 
     bottom: 0px; 
     right: 85px;
     width: 300px;
@@ -228,14 +228,14 @@ h1 {
 
 #graphzone {
     /*position: relative;*/
-    padding-top: 25px;
+    padding-top: 0px;
     padding-bottom: 15px;
 }
 
 #leftcolumn {
     position: absolute; 
     /*display: none;*/
-    top: 260px; 
+    top: 280px; 
     bottom: 0px; 
     left: -660px;
     /*right: 85px;*/
