@@ -48,18 +48,22 @@ The Federal PKI community has notified the Microsoft Trusted Root Program to rem
 
 To mitigate the impact on the federal enterprise:  
 
-2. You should distribute the Federal Common Policy CA to government-furnished equipment as an _enterprise trusted root certificate_. 
-3. You must disable CT checking for the affected intranet websites. 
+1. You should distribute the Federal Common Policy CA to government-furnished equipment as an _enterprise trusted root certificate_. 
+2. You must disable CT enforcement for the affected intranet websites. 
 
-Please see [Disable CT Checking for Government-Furnished Equipment](#disable-ct-checking-for-government-furnished-equipment).
+Please see [Disable CT Enforcement for Government-Furnished Equipment](#disable-ct-enforcement-for-government-furnished-equipment).
 
 
-### Disable CT Checking for Government-Furnished Equipment
-{% include alert-info.html content="Two options are outlined in this section.  Additional options may be available in Chrome 67 or Chrome 68.  We will post more information as we update the procedures.  Please check the GitHub Issues in the GSA's fpki-guides Playbook repository for any in-progress discussions." %} 
+### Disable CT Enforcement for Government-Furnished Equipment
+{% include alert-info.html content="Two options are outlined in this section. Additional options may be available in Chrome 67 or Chrome 68. We will post more information as we update the procedures. Please check the GitHub Issues in the GSA's fpki-guides Playbook repository for any in-progress discussions." %} 
 
-#### Option 1:&nbsp;&nbsp;Disable CT Enforcement for "Legacy" CAs 
+#### Option 1:&nbsp;&nbsp;Disable CT Enforcement for "Legacy" CAs (RECOMMENDED CONFIGURATION)
 
-Google Chrome's "CertificateTransparencyEnforcementDisabledForLegacyCas" policy configuration allows you to disable CT enforcement for websites that chain to a user-specified "legacy" CA. (Google Chrome categorizes a CA as "legacy" if it has been publicly trusted by certain operating systems supported by Google Chrome, such as Windows or MacOS; but, it isn't currently trusted by the Android Open Source Project or Chrome OS.) The Federal Common Policy CA would be considered a "legacy CA," so you can disable CT enforcement for intranet websites that chain to it. In some cases, you'll need to create a new registry key tree in the locations specified below:
+Google Chrome's "CertificateTransparencyEnforcementDisabledForLegacyCas" policy configuration allows you to disable CT enforcement for websites that chain to a user-specified "legacy" CA. Google Chrome categorizes a CA as "legacy" if it meets the following criteria:
+1. The CA has been publicly trusted by default in one or more operating systems supported by Google Chrome, such as Windows or MacOS
+2. The CA isn't currently trusted by the Android Open Source Project or Chrome OS.
+
+The Federal Common Policy CA meets Google's criteria for a "legacy" CA, meaning you can disable CT enforcement for intranet websites that chain to it using the instructions below. In some cases, you'll need to create a new registry key tree in the locations specified below:
 
 **a.&nbsp;&nbsp;Windows Registry location for Windows clients:**<br>
 
@@ -137,40 +141,36 @@ For _preference name_, _CertificateTransparencyEnforcementDisabledForUrls_, add 
 ## How Can I Test CT Compliance for My Intranet Website?
 To test CT compliance, you'll need to use a pre-release version of Chrome. 
 
-- Google will start enforcing CT with [Chrome 67](https://www.chromium.org/developers/calendar){:target="_blank"}. Chrome 67 is available for a limited time <!--beta version to use for testing?-->at [Chrome Canary channel](https://www.google.com/chrome/browser/canary.html){:target="_blank"}.
+- Google will start enforcing CT with [Chrome 67](https://www.chromium.org/developers/calendar){:target="_blank"}. Chrome 67 is available for a limited time <!--beta version to use for testing?-->at [Chrome Canary channel](https://www.google.com/chrome/browser/canary.html){:target="_blank"}. Download and install Chrome 67 as recommended by Google.
 - You'll need to use a special command line flag to execute the browser: [Add a command-line flag for CT testing](https://bugs.chromium.org/p/chromium/issues/detail?id=816543&can=2&q=816543&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified){:target="_blank"}.
 
-
-The CT and certificate information is cached in Chrome. Before you start each test, clear the cached data from within the browser:<br><br>
+**Important Testing Note:** CT enforcement and website certificate chain information is cached in Chrome. Before you start each test, clear the cached data from within the browser:<br><br>
    ```
    Settings->Advanced
    Ctrl + Shift + Del)
    ```
-
    
-1. Download and install the Chrome 67 latest build from [Chrome Canary channel](https://www.google.com/chrome/browser/canary.html){:target="_blank"}.
-
-2. Find the directory path to the new Chrome executable. For example: 
+1. Find the directory path to the new Chrome executable. For example: 
 
    ```
    Windows: C:\Users\<username>\AppData\Local\Google\Chrome SxS\Application\chrome.exe
    ```
    
-3. Open a command line in the executable directory to enable CT for _a date in the past_, measured in seconds. For example, this command will enable CT checking for any TLS/SSL certificate issued after January 1, 2015 (1420086400 seconds):
+2. Open a command line in the executable directory to enable CT enforcement for _a date in the past_, measured in seconds. For example, this command will enable CT enforcement for any TLS/SSL certificate issued after January 1, 2015 (1420086400 seconds):
 
    ```
    chrome.exe --enable-features="EnforceCTForNewCerts<EnforceCTTrial" --force-fieldtrials="EnforceCTTrial/Group1" --force-fieldtrial-params="EnforceCTTrial.Group1:date/1420086400"
    ```
    
-4. Browse to one of your intranet websites with a TLS/SSL certificate issued from a Federal PKI CA.  Alternatively, you can use these test sites: [FPKI Graph](https://fpki.idmanagement.gov/tools/fpkigraph/){:target="_blank"} or [Joint Personnel Adjudication System](https://jpasapp.dmdc.osd.mil/JPAS/JPASDisclosureServlet){:target="_blank"}.
+3. Browse to one of your intranet websites protected by a TLS/SSL certificate issued from a Federal PKI CA to force the generation of a a CT enforcement error.  Alternatively, you can use these sites: [Treasury PKI Homepage](https://pki.treas.gov/){:target="_blank"} or [Joint Personnel Adjudication System](https://jpasapp.dmdc.osd.mil/JPAS/JPASDisclosureServlet){:target="_blank"}.
 
-5. If you don't see an error, clear the cache from the previous test and ensure that you launch Chrome using the command line with the CT flags enabled.
+4. If you don't see an error, clear the cache from the previous test and ensure that you launch Chrome using the command line with the CT enforcement flags enabled.
 
-6. Apply the registry settings given in [Disable CT Checking for Government-Furnished Equipment](#disable-ct-checking-for-government-furnished-equipment) for your intranet sites.
+5. Apply the registry settings given in [Disable CT Enforcement for Government-Furnished Equipment](#disable-ct-enforcement-for-government-furnished-equipment) for your intranet sites.
 
-7. Clear the cache again, and re-launch Chrome using the command line argument in Step 3.
+6. Clear the cache again, and re-launch Chrome using the command line argument in Step 2.
 
-8. Observe the changes in CT errors and repeat as needed.
+7. Observe the changes in CT enforcement errors and repeat as needed.
 
 {% include alert-info.html content="Thank you to NASA teams for these testing procedures.  Please check the GitHub Issues in the GSA's fpki-guides Playbook repository for any in-progress discussions." %}
 
