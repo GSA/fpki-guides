@@ -60,7 +60,7 @@ Please see [Disable CT Enforcement for Government-Furnished Equipment](#disable-
 #### Option 1:&nbsp;&nbsp;Disable CT Enforcement for "Legacy" CAs (Recommended Configuration)
 
 Google Chrome's "CertificateTransparencyEnforcementDisabledForLegacyCas" policy configuration allows you to disable CT enforcement for websites that chain to a user-specified "legacy" CA. Google Chrome categorizes a CA as "legacy" if it meets the following criteria:
-1. The CA has been publicly trusted by default in one or more operating systems supported by Google Chrome, such as Windows or MacOS
+1. The CA has been publicly trusted by default in one or more operating systems supported by Google Chrome, such as Windows or MacOS.
 2. The CA isn't currently trusted by the Android Open Source Project or Chrome OS.
 
 The Federal Common Policy CA meets Google's criteria for a "legacy" CA, so you can disable CT enforcement for intranet websites that chain to it. In some cases, you'll need to create a new registry key tree in the locations specified below:
