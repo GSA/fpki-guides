@@ -55,7 +55,42 @@ Please see [Disable CT Checking for Government-Furnished Equipment](#disable-ct-
 
 
 ### Disable CT Checking for Government-Furnished Equipment
-{% include alert-info.html content="One option is outlined in this section.  Additional options may be available in Chrome 67 or Chrome 68.  We will post more information as we update the procedures.  Please check the GitHub Issues in the GSA fpki-guides playbook repository for any in-progress discussions." %} 
+{% include alert-info.html content="Two options are outlined in this section.  Additional options may be available in Chrome 67 or Chrome 68.  We will post more information as we update the procedures.  Please check the GitHub Issues in the GSA fpki-guides playbook repository for any in-progress discussions." %} 
+
+#### Option 1: Disable CT Enforcement for "Legacy" CAs 
+
+The Chrome "CertificateTransparencyEnforcementDisabledForLegacyCas" policy configuration allows for the disablement of CT enforcement for websites that chain to a list of user specified "Legacy" Certification Authorities. Google Chrome categorizes a CA as "legacy" if it has been publicly trusted by default on one or more operating systems supported by Google Chrome, such as Windows or MacOS, but is not currently trusted by the Android Open Source Project or Google Chrome OS. The Federal Common Policy CA fits the criteria of a legacy CA, meaning CT enforcement can be disabled for intranet sites that chain to it. In some instances, you may need to create a new registry key tree in the locations specified below.
+
+**a.&nbsp;&nbsp;Windows Registry location for Windows clients:**<br>
+
+For HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForLegacyCas, add new string value:
+   
+   ```
+   Name = 1 | Data = sha256/jotW9ZGKJb2F3OdmY/2UzCNpDxDqlYZhMXHG+DeIkNU=
+   ```
+   
+**b.&nbsp;&nbsp;Windows Registry location for Google Chrome OS clients:**<br>
+
+For HKEY_LOCAL_MACHINE\Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForLegacyCas, add new string value:
+
+   ```
+   Name = 1 | Data = sha256/jotW9ZGKJb2F3OdmY/2UzCNpDxDqlYZhMXHG+DeIkNU=
+   ```
+   
+**c.&nbsp;&nbsp;MacOS**<br>
+
+For preference name, CertificateTransparencyEnforcementDisabledForLegacyCas, add values:
+
+   ```
+   <array>
+     <string>sha256/jotW9ZGKJb2F3OdmY/2UzCNpDxDqlYZhMXHG+DeIkNU=</string>
+   </array>
+   ```
+
+**Note:** In all instances above `jotW9ZGKJb2F3OdmY/2UzCNpDxDqlYZhMXHG+DeIkNU=` is a base64 encoding of a SHA-256 hash of the Federal Common Policy CA's Subject Public Key Information (SPKI) field.
+
+
+#### Option 2: Disable CT Enforcement for Domains and Sub-domains
 
 Enterprise Chrome for government-furnished equipment will not check for CT if you apply a policy rule and include a **.gov or .mil second-level domain**, such as _agency.gov_, or other **third-level sub-domains**, such as _example.agency.gov_. You should apply configuration changes for only government-furnished equipment and only include an explicit list of second-level or below sub-domains in use for intranet websites. In some instances, you may need to create a new registry key tree in the locations specified below. 
 
@@ -73,9 +108,9 @@ For _HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\CertificateTransparencyE
    Name = 3 | Data = mil
    ```
    
-**b.&nbsp;&nbsp;Windows Registry location for Chrome OS clients:**<br>
+**b.&nbsp;&nbsp;Windows Registry location for Google Chrome OS clients:**<br>
 
-For _HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls_, add new string value:
+For _HKEY_LOCAL_MACHINE\Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForUrls_, add new string value:
 
    ```
    Sub-Domain example:
@@ -128,7 +163,7 @@ The CT and certificate information is cached in Chrome. Before you start each te
    chrome.exe --enable-features="EnforceCTForNewCerts<EnforceCTTrial" --force-fieldtrials="EnforceCTTrial/Group1" --force-fieldtrial-params="EnforceCTTrial.Group1:date/1420086400"
    ```
 
-4. Browse to one of your intranet sites with a TLS/SSL certificate issued from a Federal PKI CA.  Alternatively, you can use these test sites: [FPKI Graph](https://fpki-graph.fpki-lab.gov){:target="_blank"} or [Joint Personnel Adjudication System](https://jpasapp.dmdc.osd.mil/JPAS/JPASDisclosureServlet){:target="_blank"}.
+4. Browse to one of your intranet sites with a TLS/SSL certificate issued from a Federal PKI CA.  Alternatively, you can use these test sites: [FPKI Graph](https://fpki.idmanagement.gov/tools/fpkigraph/){:target="_blank"} or [Joint Personnel Adjudication System](https://jpasapp.dmdc.osd.mil/JPAS/JPASDisclosureServlet){:target="_blank"}.
 
 5. If you don't see an error, clear the cache from the previous test and ensure that you launch Chrome using the command line with the CT flags enabled.
 
