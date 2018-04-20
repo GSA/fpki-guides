@@ -2,7 +2,7 @@
 layout: default
 navtitle: Chrome Certificate Transparency (CT) Impact
 title: Chrome Certificate Transparency Requirements
-pubDate: March 14, 2018
+pubDate: April 20, 2018
 collection: announcements
 permalink: announcements/chromect/
 description:  Upcoming changes to Chrome could affect your agency. This change requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA) certificate. This changes will take effect on **April 30, 2018** and will affect any TLS/SSL certificate issued after **April 30, 2018.**<br><br>
@@ -57,7 +57,7 @@ Please see [Disable CT Enforcement for Government-Furnished Equipment](#disable-
 ### Disable CT Enforcement for Government-Furnished Equipment
 {% include alert-info.html content="Two options are outlined in this section. Additional options may be available in Chrome 67 or Chrome 68. We will post more information as we update the procedures. Please check the GitHub Issues in the GSA's fpki-guides Playbook repository for any in-progress discussions." %} 
 
-#### Option 1:&nbsp;&nbsp;Disable CT Enforcement for "Legacy" CAs (RECOMMENDED CONFIGURATION)
+#### Option 1:&nbsp;&nbsp;Disable CT Enforcement for "Legacy" CAs (Recommended Configuration)
 
 Google Chrome's "CertificateTransparencyEnforcementDisabledForLegacyCas" policy configuration allows you to disable CT enforcement for websites that chain to a user-specified "legacy" CA. Google Chrome categorizes a CA as "legacy" if it meets the following criteria:
 1. The CA has been publicly trusted by default in one or more operating systems supported by Google Chrome, such as Windows or MacOS
@@ -67,7 +67,7 @@ The Federal Common Policy CA meets Google's criteria for a "legacy" CA, so you c
 
 **a.&nbsp;&nbsp;Windows Registry location for Windows clients:**<br>
 
-For HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForLegacyCas, add a new string value:
+For _HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForLegacyCas_, add a new string value:
    
    ```
    Name = 1 | Data = sha256/jotW9ZGKJb2F3OdmY/2UzCNpDxDqlYZhMXHG+DeIkNU=
@@ -75,7 +75,7 @@ For HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\CertificateTransparencyEn
    
 **b.&nbsp;&nbsp;Windows Registry location for Chrome OS clients:**<br>
 
-For HKEY_LOCAL_MACHINE\Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForLegacyCas, add new string value:
+For _HKEY_LOCAL_MACHINE\Software\Policies\Google\ChromeOS\CertificateTransparencyEnforcementDisabledForLegacyCas_, add new string value:
 
    ```
    Name = 1 | Data = sha256/jotW9ZGKJb2F3OdmY/2UzCNpDxDqlYZhMXHG+DeIkNU=
@@ -83,7 +83,7 @@ For HKEY_LOCAL_MACHINE\Software\Policies\Google\ChromeOS\CertificateTransparency
    
 **c.&nbsp;&nbsp;MacOS**<br>
 
-For preference name, CertificateTransparencyEnforcementDisabledForLegacyCas, add values:
+For preference name, _CertificateTransparencyEnforcementDisabledForLegacyCas_, add values:
 
    ```
    <array>
