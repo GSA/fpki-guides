@@ -15,7 +15,7 @@ Upcoming changes to Chrome could impact your agency. Chrome will enforce Certifi
 - [How Does This Work?](#how-does-this-work)
 - [What Will Be Impacted?](#what-will-be-impacted)
 - [What Should I Do?](#what-should-i-do)
-- [How Can I Test?](#how-can-i-test)
+- [How Can I Test?](#how-can-i-test-ct-compliance-for-my-intranet-website)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Additional Resources](#additional-resources)
 
