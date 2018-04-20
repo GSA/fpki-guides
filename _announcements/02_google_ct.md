@@ -96,7 +96,7 @@ For preference name, CertificateTransparencyEnforcementDisabledForLegacyCas, add
 
 #### Option 2:&nbsp;&nbsp;Disable CT Enforcement for Domains and Sub-Domains
 
-Enterprise Chrome for government-furnished equipment will not check for CT if you apply a policy rule and include a **.gov or .mil second-level domain**, such as _agency.gov_, or other **third-level sub-domains**, such as _example.agency.gov_. You should apply configuration changes for only government-furnished equipment and only include an explicit list of second-level or below sub-domains in use for intranet websites. In some instances, you may need to create a new registry key tree in the locations specified below: 
+Enterprise Chrome for government-furnished equipment will not enforce CT requirements if you apply a policy rule and include a **.gov or .mil second-level domain**, such as _agency.gov_, or other **third-level sub-domains**, such as _example.agency.gov_. You should apply configuration changes for only government-furnished equipment and only include an explicit list of second-level or below sub-domains in use for intranet websites. In some instances, you may need to create a new registry key tree in the locations specified below: 
 
 
 **a.&nbsp;&nbsp;Windows Registry location for Windows clients:**<br>
