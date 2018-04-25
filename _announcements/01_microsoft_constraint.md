@@ -25,7 +25,7 @@ Once this occurs, government and partner users of Windows devices may receive er
 1. Windows Operating System and Windows Mobile devices
 2. Microsoft Internet Explorer or Edge or Google Chrome
 3. The website uses SSL/TLS certificates that were issued by Federal PKI CAs
-4. These certificates validate to the Federal Common Policy CA (COMMON)<!--There are so many instances of Federal Common Policy CA that writing it as "COMMON"--the name everyone uses--or FCPCA---would be simpler--LaChelle?-->
+4. These certificates validate to the Federal Common Policy CA<!--There are so many instances of Federal Common Policy CA that writing it as "COMMON"--the name everyone uses--or FCPCA---would be simpler--LaChelle?-->
 
 This will also impact cross-agency users of the intranet websites.  For example, a Department of State user browsing to a Department of Homeland Security **intranet** website or application will receive an error if all four items are true. 
 
@@ -37,83 +37,88 @@ You can mitigate the impact for all government-furnished equipment.
 
 If your agency will be impacted, you can optionally test Federal Common Policy CA (COMMON) validation behavior with Microsoft Certificate Trust List (CTL) constraints by using the [test procedures](#how-can-i-test) below. These tests will confirm whether an enterprise Group Policy Object (GPO) can override a Microsoft CTL setting for 3 possible situations:<!--better word for "situations"?-->
 
-1. COMMON Server Auth Disallow,<!--Is Server Auth = one word?  serverAuth? Can we remove "COMMON" here to reduce number of uses?-->
-2. COMMON Server Auth notBefore, **OR**
-3. No CTL entry<!--No COMMON?-->
+1. Federal Common Policy CA _Server Auth Disallow_,<!--Is Server Auth = one word?  serverAuth? Can we remove "COMMON" here to reduce number of uses?-->
+2. Federal Common Policy CA _Server Auth notBefore_, **OR**
+3. _no CTL entry_<!--Not COMMON?-->
 
-If your agency plans to participate in testing, see the [phased testing schedule](#what-is-the-testing-schedule) below. If your agency would like to participate in testing, please email us at fpki@gsa.gov.
+If your agency plans to participate in testing, see the phased [Testing Schedule](#testing-schedule) below. If your agency would like to participate in testing, please email us at **fpki@gsa.gov**.
 
 ### Testing Schedule
 
 #### Phase 1&nbsp;&mdash;&nbsp;COMMON Server Auth Disallow Testing
-**Date?**&mdash;_Disallow_ initial testing completed.<!--Initial AND final testing done for all 3 tests? Other 2 don't say "initial"-->
-**April 26**&mdash;Report to Microsoft on initial _Disallow_ testing.<!--Who is reporting? Testing has already been done?-->
-**April 27-May 2**&mdash;Remediate _Disallow_ testing based on Microsoft's feedback. Microsoft prepares for Server Auth _notBefore_ testing with CTL. Determine alternative options to discuss with Microsoft.
-**May 2**&mdash;Status call/email with testers on _Disallow_ test results and/or questions.
-**May 3**&mdash;Report to Microsoft on final _Disallow_ testing.
+- **Date? -** _Disallow_ initial testing completed.<!--Initial AND final testing done for all 3 tests? Other 2 don't say "initial"-->
+- **April 26 -** Report to Microsoft on initial _Disallow_ testing.<!--Who is reporting? Testing has already been done?-->
+- **April 27-May 2 -** Remediate _Disallow_ testing based on Microsoft's feedback. Microsoft prepares for Server Auth _notBefore_ testing with CTL. Determine alternative options to discuss with Microsoft.
+- **May 2 -** Status call/email with testers on _Disallow_ test results and/or questions.
+- **May 3 -** Report to Microsoft on final _Disallow_ testing.
 
 #### Phase 2&nbsp;&mdash;&nbsp;COMMON Server notBefore Testing
-**May 3-16**&mdash;Conduct _notBefore_ testing. FPKI prepares for _no CTL entry_ testing.
-**May 9**&mdash;Status call/email with testers on _notBefore_ test results and/or questions.
-**May 17**&mdash;Report to Microsoft on final _notBefore_ testing.
+- **May 3-16 -** Conduct _notBefore_ testing. FPKI prepares for _no CTL entry_ testing.
+- **May 9 -** Status call/email with testers on _notBefore_ test results and/or questions.
+- **May 17 -** Report to Microsoft on final _notBefore_ testing.
 
 #### Phase 3&nbsp;&mdash;&nbsp;No CTL Entry Testing
-**May 18-30**&mdash;Conduct _notBefore_ testing. FPKI prepares for _no CTL entry_ testing.
-**May 30**&mdash;Status call/email with testers on _notBefore_ test results and/or questions.
-**May 31**&mdash;Report to Microsoft on final _no CTL entry_ testing. 
-**May 31**&mdash;Determine next steps.
+- **May 18-30 -** Conduct _notBefore_ testing. FPKI prepares for _no CTL entry_ testing.
+- **May 30 -** Status call/email with testers on _notBefore_ test results and/or questions.
+- **May 31 -** Report to Microsoft on final _no CTL entry_ testing. 
+- **May 31 -** Determine next steps.
 
 ### Test Procedures
 
-The test environment should consist of Windows 10 clients. Only the Windows 10 code base can process the advanced _Disallow_ or _notBefore_ CTL features. Report your testing results to fpki@gsa.gov or post as a "CTL Testing - Agency XXX Results" Issue in GSA's fpki-guides GitHub repository [FPKI Guides](https://github.com/GSA/fpki-guides/issues).
+Your test environment should consist of Windows 10 clients. Only Windows 10 can process the advanced _Disallow_ or _notBefore_ CTL features. Report your test results to **fpki@gsa.gov** or post them as an Issue to GSA's [FPKI Guides](https://github.com/GSA/fpki-guides/issues){:target="_blank"} GitHub repository as "CTL Testing - Agency XXX Results."
 
-1. On each Windows 10 test endpoint, modify the registry key to work with the new CTL:
+1. For each Windows 10 client endpoint, modify the registry key to work with the new CTL: <!--What is the "new CTL"? Explain "work with"-->
 ``` 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
 "RootDirUrl"=http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/USPKI
 ``` 
 
-2. Delete the following keys:
+2. Delete these keys:
 ``` 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\EncodedCtl]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\LastSyncTime]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
 ``` 
 
-3. Clear browser settings
-4. Restart endpoint
-5. Verify CTL settings on endpoint
+3. Clear browser settings.<!--Meaning? Clear cache?-->
+4. Restart the endpoint.
+5. Verify the CTL settings on the endpoint.
 
-<!--Should "Disable" on next line below be "Disallow"?-->
+<!--Should "Disable" on next line below be "Disallow"? The steps below would be easier to follow if not in a code block.  Viewing all third-party roots is for...? Hard to easily see the separate steps. Should Certutil be capitalized? When you find the root, how do you find the key items (in ALL CAPS)? The "third-party roots" command is missing?-->
 
 ``` 
-The notBefore or Disable status DOES NOT show up in the UI.
-i.      [View Certs on your machine] Certutil -store -v -gmt root\.authroot > c:\data\certdetail.txt
-ii.     [View all Third Party Roots]
-Create roots.sst file by executing the following command: Certutil -generatesstfromwu -v roots.sst
-Create text file of the certificate details by running the following command: Certutil -dump -gmt -v roots.sst > c:\data\certdetail.txt
-From c:\data\certdetail.txt you can search for your root by your SHA1 thumbprint (or other identifying information) and find the following information:
+The notBefore or Disable status DOES NOT show up in the user interface.
+
+i.      To view all certificates on your machine: certutil -store -v -gmt root\.authroot > c:\data\certdetail.txt
+ii.     To view all third-party roots: 
+Create a roots.sst file: Certutil -generatesstfromwu -v roots.sst
+Create a text file containing the certificate details: certutil -dump -gmt -v roots.sst > c:\data\certdetail.txt
+From c:\data\certdetail.txt, you can search for your root by using your SHA1 thumbprint (or other identifying information) and find the following information:
 CERT_DISALLOWED_FILETIME_PROP_ID(104)
 CERT_NOT_BEFORE_FILETIME_PROP_ID(126)
 ``` 
 
-6. Open a browser to website using FPKI certificates, record results. Suggested websites include:
-- https://pki.treasury.gov - Treasury Root CA-Issued (FCPCA-chained)
-- https://max.gov/     - Entrust-Issued (non-FCPCA-chained)
-- https://csrc.nist.gov/ - DigiCert-Issued (non-FCPCA-chained)
-- https://psa.dmdc.osd.mil/psawebdocs/ - DoD Root CA 3-Issued (FCPCA-chained)
+6. Open a browser; go to a website by using an FPKI certificate; and record results. Suggested websites:
 
-(% include alert-info.html content="Please pass along any other websites used for testing" %)
+- [PKI.Treasury.gov](https://pki.treasury.gov){:target="_blank"} - Treasury Root CA-issued (FCPCA-chained) <!--Use "COMMON"?-->
+- [MAX.gov](https://max.gov/){:target="_blank"} - Entrust Root CA-issued (non-FCPCA-chained)
+- [NIST.gov](https://csrc.nist.gov/){:target="_blank"} - DigiCert Root CA-issued (non-FCPCA-chained)
+- [psa.dmdc.osd.mil](https://psa.dmdc.osd.mil/psawebdocs/){:target="_blank"} - DoD Root CA 3-issued (FCPCA-chained)
 
-7. Conduct group policy object updates with COMMON by following steps in [How Can I Limit the Impact to My Agency](#how-can-i-limit-the-impact-to-my-agency). <!--Changed titles-->
-8. Repeat step 6.
-9. Once testing is done, to return the systems to their normal configuration:
+(% include alert-info.html content="Please send any other websites used for testing to fpki@gsa.gov." %)
+
+7. Install the Federal Common Policy Root CA certificate using the group policy object procedures: [How Can I Limit the Impact to My Agency](#how-can-i-limit-the-impact-to-my-agency). <!--Changed titles-->
+8. Repeat Step 6.
+9. Once testing is done, return the endpoints to their normal configurations:
 
 ``` 
 On each test system, modify following registry key to work with the default URL:
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
 "RootDirUrl"=http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en
-And delete these keys again:
+
+Delete these keys:
+
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\EncodedCtl]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\LastSyncTime]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
@@ -121,16 +126,16 @@ And delete these keys again:
 ``` 
 ## How Can I Limit the Impact to My Agency?
 
-{% include alert-info.html content="These instructions are for agency network and domain system administrators." %} 
+{% include alert-info.html content="The following instructions are for agency network and domain system administrators." %}  
 
-To limit the impact to your agency, you'll need to install the COMMON Root CA certificate by using a Group Policy Object (GPO) **OR** by installing it in the **Enterprise Trust Store** or the **Trusted Roots Store** on all government-furnished, Microsoft OS-based workstations and mobile devices. 
+To limit the impact to your agency, you'll need to install the Federal Common Policy Root CA certificate by using a group policy object (GPO) **OR** by installing it in the **Enterprise Trust Store** or **Trusted Roots Store** on all government-furnished, Microsoft OS-based workstations and mobile devices. 
 
 - [Install Using Group Policy Objects](#install-using-group-policy-objects)
 - [Install in Enterprise Trust Store](#install-in-enterprise-trust-store)
 
-The certificate details for COMMON are:  
+The certificate details for the Federal Common Policy CA are:  
 
-| **Federal Common Policy CA (COMMON)**  | **Certificate Details**                             |
+| **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
 | Federal Common Policy CA<br>(sometimes shown as _U.S. Government Common Policy_) | http://http.fpki.gov/fcpca/fcpca.crt |
 | Distinguished Name | cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US |
@@ -153,20 +158,20 @@ Then, use a utility (_certutil_ on Windows or _openssl_ or _sha1sum_ on UNIX pla
 ```
 
 
-### Install Using Group Policy Objects 
-You can add the COMMON Root CA certificate to the Trusted Root Certificate Authorities using group policy objects.  
+### Install Using Group Policy Objects
+You can add the Federal Common Policy Root CA certificate to the **Trusted Root Certificate Authorities** using group policy objects.  
 
 Microsoft TechNet articles and other online resources offer the procedures for setting up group policy objects.  Additional information:
 
 - You must have Enterprise Administrator privileges
-- You can set up the group policy object from a Domain Controller (or other approaches you use in your agency)
+- You can set up a group policy object from a Domain Controller (or other approaches you use in your agency)
 - You may need to use multiple group policy objects to apply the configurations to all workstations in all groups and containers
 - Settings are under `Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\`
 - Import the `fcpca.crt` into **Trusted Root Certification Authorities**
 
 
 ### Install Using Certutil in Enterprise Trust Store
-You can add the COMMON Root CA certificate to the **Enterprise Trust Store** or the **Trusted Roots Store** using _certutil_. Additional information:
+You can add the Federal Common Policy Root CA certificate to the **Enterprise Trust Store** or the **Trusted Roots Store** using _certutil_. Additional information:
 
 - You must have Enterprise Administrator privileges
 - You can run _certutil_ from a Domain Controller 
@@ -194,20 +199,19 @@ You can add the COMMON Root CA certificate to the **Enterprise Trust Store** or 
 The Federal PKI doesn't comply with the requirements for globally trusted SSL/TLS certificates.  These requirements include: 
 
 **a. Requirement for Fully-Qualified Domain Names (FQDNs)**<br>
-Microsoft planned to restrict SSL/TLS certificates to only certificates using FQDNs ending in .gov, .mil, or fed.us.  Some federal agencies issue SSL/TLS certificates to intranet websites.  These certificates don't have FQDNs; or these certificate contain intranet domains that don't end in .gov, .mil, or fed.us; or these use short names (aliases). Under the requirements, these agencies would need to reissue, re-install, and reconfigure all "non-compliant" certificates and applications.  The Federal PKI community has determined this would have a negative impact on mission applications on the intranets and has voted to remove this public trust for SSL/TLS certificates issued under the Federal Common Policy CA from the Microsoft Trusted Root Program. 
+Microsoft planned to restrict SSL/TLS certificates to only certificates using FQDNs ending in .gov, .mil, or fed.us.  Some federal agencies issue SSL/TLS certificates to intranet websites.  These certificates don't have FQDNs; or they contain intranet domains that don't end in .gov, .mil, or fed.us; or they use short names (aliases). Under the requirements, these agencies would need to reissue, re-install, and reconfigure all "non-compliant" certificates and applications.  The Federal PKI community has determined that this would have a negative impact on mission applications on the intranets; consequently the community has voted to remove the public trust for SSL/TLS certificates issued under the Federal Common Policy CA from the Microsoft Trusted Root Program. 
 
 **b. Requirement for public audit**<br>
-The Federal PKI follows a government auditing standard, and we have not restricted our issuance of SSL/TLS certificates to only the .gov and .mil domains. Under the requirements, all CAs in Federal PKI that could issue SSL/TLS certificates are required to submit a non-government audit or be technically constrained.  Federal PKI has **not** technically constrained our CAs.  
+The Federal PKI follows a government auditing standard, and we have not restricted our issuance of SSL/TLS certificates to only the .gov and .mil domains. Under the requirements, all CAs in the Federal PKI that could issue SSL/TLS certificates are required to submit a non-government audit or be technically constrained.  The Federal PKI has **not** technically constrained our CAs.  
 
 **c. Requirement to disclose Certificate Practice Statements and Incident Post-Mortem Reports**<br>
-Public trust requires public disclosure and transparency.  All Federal PKI CAs would be required to publicly post their Certificate Practice Statements and their Audit Letters.  The Federal PKI, federal agency community has attempted to disclose all Certificate Practice Statements for a number of years.  However, some federal agencies include sensitive information in these documents and cannot disclose the documents publicly.  
+Public trust requires public disclosure and transparency.  All Federal PKI CAs would be required to publicly post their Certificate Practice Statements and their Audit Letters.  The Federal PKI's federal agency community has attempted to disclose all Certificate Practice Statements for a number of years.  However, some federal agencies include sensitive information in these documents and cannot disclose the documents publicly.  
 
 **d. Requirement to create new issuing Certification Authorities (CAs)**<br>
 Any Federal PKI CA that issues SSL/TLS, code-signing, or email-signing certificates would have to establish a new CA for each type of certificate. This effort requires time, planning, and funding.   
 
-
 ### 2. How can I determine which of our intranet websites and applications will be impacted, including those used by cross-government users?  
-All intranet sites configured with a SSL/TLS certificate issued by a Federal PKI CA that validates to Federal Common Policy CA (COMMON) will be impacted.   
+All intranet sites configured with a SSL/TLS certificate issued by a Federal PKI CA that validates to Federal Common Policy CA will be impacted.   
 
 If you have an agreement with one of the Federal PKI Shared Service Providers (SSPs) for SSL/TLS certificates, run a report on all issued certificates or ask the SSP to deliver this report. 
 
@@ -218,7 +222,7 @@ You can also scan your intranet websites in coordination with your CISO teams.  
 **Note:** This tool will not look just for Federal PKI certificates.  Outputs will include all certificates and information.
 
 ### 3. How can I determine whether my agency users and government-furnished equipment will be impacted?  
-Check your Enterprise Trust Store configurations in your Microsoft domain and devices.  If the Federal Common Policy CA certificate is already installed in the Enterprise Trust Store, you don't need to reinstall or change its root store.  If it is not installed in the Enterprise Trust Store, you should ensure that it is distributed in a group policy object to _Trusted Root Certificate Authorities_ or via the enterprise domain to the Enterprise Trust Store for all your user devices.  
+Check your Enterprise Trust Store configurations in your Microsoft domain and devices.  If the Federal Common Policy CA certificate is already installed in the Enterprise Trust Store, you don't need to reinstall or change its root store.  If it's not installed in the Enterprise Trust Store, you should ensure that it's distributed in a group policy object to Trusted Root Certificate Authorities or via the enterprise domain to the Enterprise Trust Store for all your user devices.  
 
 View where and how a certificate is being installed using the certificates snap-in (certmgr.msc).  Under **View -> Options**, click the **Show _Physical certificate stores_** option.    
 
@@ -226,21 +230,21 @@ View where and how a certificate is being installed using the certificates snap-
 No. 
 
 ### 5. Do I need to remove the "baked-in" version of Federal Common Policy CA?  
-No, don't remove this certificate.  You may see two versions of the certificate in _Trusted Root Certificate Authorities_--one from the Microsoft distribution and one from your enterprise group policy or enterprise trust store.  Each version is being distributed differently and will have different properties set.  
+No, don't remove this certificate.  You may see two versions of the certificate in _Trusted Root Certificate Authorities_--one from the Microsoft distribution and one from your enterprise group policy or Enterprise Trust Store.  Each version is being distributed differently and will have a different properties set.  
 
 ### 6. Do I need to add Federal Common Policy CA certificate to the Trusted Root Certification Authorities store, or should I add it to the Enterprise Trust Store?
 Microsoft uses different physical containers and logical views of these containers for trust stores.  In addition, different tools will have different **names** for the same physical or logical view.  For example:
 
-| **Certificates snap-in (MMC)**  | **Enterprise PKI snap-in**  |  **certutil** | **Registry** | 
+| **Certificates snap-in (certmgr.msc)**  | **Enterprise PKI snap-in**  |  **certutil** | **Registry** | 
 | :--------  | :------------------------------- | :--------- | :----------- |
 | Trusted Root Certification Authorities | Certificate Authorities Container tab|  Root and RootCA | Root | 
 
-It can be confusing--the easiest way is to follow one of the two steps in [How Can I Limit the Impact to My Agency](#how-can-i-limit-the-impact-to-my-agency)
+It can be confusing--the easiest way is to follow one of the two methods in [How Can I Limit the Impact to My Agency](#how-can-i-limit-the-impact-to-my-agency)
 
 To read detailed information on certificate stores, logical views, physical views, and registry locations: [Managing Certificates with Certificate Stores](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386971(v=vs.85).aspx){:target="_blank"}
 
 ### 7. Do I need to change any trust property for the CA certificate managed by group policy objects?
-No, trust properties are not set by group policy objects. If your agency currently distributes Federal Common Policy CA through a group policy object, no change is needed.
+No, trust properties are not set by group policy objects. If your agency currently distributes the Federal Common Policy CA through a group policy object, no change is needed.
 
 ### 8. What Windows versions are affected?
 All Windows Operating System versions. 
