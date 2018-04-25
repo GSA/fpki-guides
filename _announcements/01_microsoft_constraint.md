@@ -13,6 +13,7 @@ description: Upcoming changes to Microsoft's Trusted Root Program could impact y
 Upcoming changes to Microsoft's Trusted Root Program could impact your agency. In April 2018, Microsoft will **remove** the trust for **SSL/TLS** from our U.S. Government Root CA (Federal Common Policy CA [COMMON]) from Microsoft's globally distributed Certificate Trust List. 
 
 - [What Will Be Impacted?](#what-will-be-impacted)
+- [What are the Test Instructions?](#what-is-the-test-timeline)
 - [What Should I Do?](#what-should-i-do)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Additional Resources](#additional-resources)
@@ -30,23 +31,89 @@ This will also impact cross-agency users of the intranet websites.  For example,
 
 You can mitigate the impact for all government-furnished equipment.  
 
+## What is the Test Timeline?
+
+The purpose of Microsoft CTL testing is to confirm Common Policy validation behavior with Microsoft CTL constraints. This testing will confirm if an Enterprise GPO can override a Microsoft CTL setting under three potential situations;
+1. Common Policy Server Auth Disallow;
+2. Common Policy Server Auth notBefore; or
+3. no CTL entry.
+
+We are taking a phased approach to testing.
+
+### Phase 1 - Disallow Testing
+4/26/18 - Report to Microsoft on initial Disallow Testing
+4/27/18 - 5/2/18 - Remediate Disallow Testing based on Microsoft Feedback Microsoft prep for Server Auth notBefore Testing CTL. Determine alternative options to discuss with Microsoft.
+5/2/18 - Status Call/Email with Testers on Disallow results and/or questions
+5/3/18 - Report to Microsoft on final Disallow testing.
+
+### Phase 2 - notBefore Testing
+5/3/18 - 5/16/18 - notBefore Testing. FPKI prep no CTL entry.
+5/9/18 - Status Call/Email with Testers on notBefore results and/or questions
+5/17/18 - Report to Microsoft on final notbefore testing.
+
+### Phase 3 - no CTL Entry Testing
+5/18/18 - 5/30/18 - notBefore Testing. FPKI prep no CTL entry.
+5/30/18 - Status Call/Email with Testers on notBefore results and/or questions
+5/31/18 - Report to Microsoft on no CTL entry. Determine next step.
+
 ## How Can I Test?
 
 {% include alert-info.html content="These instructions are for agency network and domain system administrators." %} 
 
-The test environment should reflect the production environment in variety of Windows platforms (Windows 7, 10, Server 2008 - 2016) and browsers (Google Chrome, Windows Internet Explorer and Edge). Take into account the following federal-wide restrictions and if they impact your agency:
+The test environment should be limited to Windows 10 clients because only the Windows 10 code base can process a the advanced Disallow or notBefore CTL features. Windows 8 code (including Server 2012 and 2016) and previous versions may still process a trusted or untrusted CTL, but not the advanced features. Report testing results to fpki@gsa.gov or post as an issue with the subject "CTL Testing - Agency XXX Results" on [FPKI Guides](https://github.com/GSA/fpki-guides/issues).
 
-A) All versions from Windows 7 and Windows Server 2008R2 forward support the use of the CTL.
-B) The automatic root update settings can be controlled by group policy objects 
-C) The US Government Configuration Baseline (USGCB) templates for Windows 7 operating systems had requirements to turn off automatic root updates.
-D) If some agencies still disable automatic root updates, then those devices won't receive the CTL updates and are not impacted.
-E) Some end points are prevented from getting updates due to firewall restrictions.
+Below steps can be used for testing:
 
-A few techniques to conduct in a test environment:
-1) Remove serverAuth as an allowable usage from the Federal Common Policy CA certificate(s) through the MMC Certificates snap-in. 
-2) Test brownser behavior before and after using a sample of web services that have FPKI SSL/TLS certificates.
-3) Distribute COMMON using either method below into the Enterprise Trust Store and testing if website access/error page.
+1. On each Windows 10 test endpoint, modify following registry key to work with the new CTL:
+``` 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
+"RootDirUrl"=http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/USPKI
+``` 
 
+2. Delete the following keys:
+``` 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\EncodedCtl]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\LastSyncTime]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
+``` 
+
+3. Clear browser settings
+4. Restart endpoint
+5. Verify CTL settings on endpoint
+
+``` 
+The NotBefore or Disable status DO NOT show up in the UI.
+i.      [View Certs on your machine] Certutil -store -v -gmt root\.authroot > c:\data\certdetail.txt
+ii.     [View all 3rd Party Roots]
+Create roots.sst file by executing the following command: Certutil -generatesstfromwu -v roots.sst
+Create text file of the certificate details by running the following command: Certutil -dump -gmt -v roots.sst > c:\data\certdetail.txt
+From c:\data\certdetail.txt you can search for your root by your SHA1 thumbprint (or other identifying information) and find the following information:
+CERT_DISALLOWED_FILETIME_PROP_ID(104)
+CERT_NOT_BEFORE_FILETIME_PROP_ID(126)
+``` 
+
+6. Open a browser to website using FPKI certificates, record results. Suggested websites include:
+- https://pki.treasury.gov - Treasury Root CA Issued (FCPCA chained)
+- https://max.gov/     - Entrust Issued (non-FCPCA chained)
+- https://csrc.nist.gov/ - DigiCert Issued (non-FCPCA chained)
+- https://psa.dmdc.osd.mil/psawebdocs/ - DoD Root CA 3 Issued (FCPCA chained)
+
+(% include alert-info.html content="Please pass along any other websites used for testing" %)
+
+7. Conduct GPO update with Common Policy following [What Should I Do?](#what-should-i-do)
+8. Repeat step 6.
+9. Once testing is done, to return the systems to their normal configuration:
+
+``` 
+On each test system, modify following registry key to work with the default URL:
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
+"RootDirUrl"=http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+And delete these keys again:
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\EncodedCtl]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\LastSyncTime]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
+
+``` 
 ## What Should I Do?
 
 {% include alert-info.html content="These instructions are for agency network and domain system administrators." %} 
