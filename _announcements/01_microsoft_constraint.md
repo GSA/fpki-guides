@@ -5,27 +5,36 @@ title: Microsoft Trusted Root Program Changes Set To Impact Federal Government
 pubDate: April 26, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
-description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust property for our U.S. Government Root CA (Federal Common Policy CA) from Microsoft's Trust Store.  The first impact is anticipated to occur in **April 2018**.<br><br>Windows users will receive errors when browsing to government intranet websites that use SSL/TLS certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for our federal devices.   
+description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust property for our U.S. Government Root CA (Federal Common Policy CA) from Microsoft's Trust Store.  The first impact is anticipated to occur in **June 2018**.<br><br>Windows users will receive errors when browsing to government intranet websites that use SSL/TLS certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for our federal devices.   
 ---
 
 {% include alert-info.html content="Your network smartcard logon using PIV and CAC is not impacted." %} 
 
-Upcoming changes to Microsoft's Trusted Root Program could impact your agency. In April 2018, Microsoft will **remove** the trust for **SSL/TLS** from our U.S. Government Root CA (Federal Common Policy CA [FCPCA/COMMON]) from Microsoft's globally distributed Certificate Trust List. 
+Upcoming changes to Microsoft's Trusted Root Program could impact your agency. In June 2018, Microsoft will **remove** the trust for **SSL/TLS** from our U.S. Government Root CA (Federal Common Policy CA [FCPCA/COMMON]) from Microsoft's globally distributed Certificate Trust List. 
 
+- [How Does this Work?](#how does this work)
 - [What Will Be Impacted?](#what-will-be-impacted)
+- [What Should I Do?](#how-can-i-limit-the-impact-to-my-agency)
 - [How Can I Test?](#how-can-i-test)
-- [How Can I Limit the Impact to My Agency?](#how-can-i-limit-the-impact-to-my-agency)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Additional Resources](#additional-resources)
 
+## How Does This Work?
+Microsoft uses a Certificate Trust List (CTL) to tell Windows endpoints (desktops, laptops, servers, mobile devices, etc running a Microsoft operating system) which PKI root certificates to trust. They distrubte a list of authorized root certificates (*authrootstl.cab*) and a list of untrusted root certificates (*disallowedcertstl.cab*).
+
+Microsoft deploys CTL to the following Windows versions.
+1. Windows 10 with additional capability of processing date based constraints.
+2. Windows 8 including Server 2016
+3. Windows 7 including Server 2012
+4. Windows Vists including Server 2008.
 
 ## What Will Be Impacted?
 Once this occurs, government and partner users of Windows devices may receive errors when **browsing** to internet or intranet websites.  These errors will appear if all of the following are true: 
 
-1. Windows Operating System and Windows Mobile devices
+1. Windows 10 Operating System (Note: Microsoft is implementing a date based constraint and only Windows 10 and later version can process this type of CTL).
 2. Microsoft Internet Explorer or Edge or Google Chrome
 3. The website uses SSL/TLS certificates that were issued by Federal PKI CAs
-4. These certificates validate to the Federal Common Policy CA
+4. These server is configured so certificates validate to the COMMON.
 
 This will also impact cross-agency users of the intranet websites.  For example, a Department of State user browsing to a Department of Homeland Security **intranet** website or application will receive an error if all four items are true. 
 
@@ -33,9 +42,78 @@ You can mitigate the impact for all government-furnished equipment.
 
 {% include alert-info.html content="The following instructions are for agency network and domain system administrators." %} 
 
+## How Can I Limit the Impact to My Agency?
+
+{% include alert-info.html content="The following instructions are for agency network and domain system administrators." %}  
+
+To limit the impact to your agency, you'll need to install the COMMON certificate by using a group policy object (GPO) **OR** by installing it in the **Enterprise Trust Store** or **Trusted Roots Store** on all government-furnished, Microsoft OS-based workstations and mobile devices. 
+
+- [Install Using Group Policy Objects](#install-using-group-policy-objects)
+- [Install Using Certutil](#install-using-certutil)
+
+The certificate details for the COMMON CA are:  
+
+| **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
+| :--------  | :-------------------------------     |
+| Federal Common Policy CA<br>(sometimes shown as _U.S. Government Common Policy_) | http://http.fpki.gov/fcpca/fcpca.crt |
+| Distinguished Name | cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US |
+| SHA-1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
+
+You should never install a root certificate without verifying it. To verify, download the certificate or email **fpki@gsa.gov** for an out-of-band copy.  
+
+Use a utility (_certutil_ on Windows or _openssl_ or _sha1sum_ on UNIX platforms) to verify that the SHA-1 thumbprint of the certificate file matches the SHA-1 value provided above.  
+
+``` 
+	certutil -hashfile fcpca.crt SHA1
+```
+
+```	
+	openssl dgst -sha1 fcpca.crt
+```
+
+```	
+	sha1sum fcpca.crt
+```
+
+
+### Install Using Group Policy Objects
+You can add COMMON to the **Trusted Root Certificate Authorities** using group policy objects.  
+
+Microsoft TechNet articles and other online resources offer the procedures for setting up group policy objects.  Additional information:
+
+- You must have Enterprise Administrator privileges
+- You can set up a group policy object from a Domain Controller (or other approaches you use in your agency)
+- You may need to use multiple group policy objects to apply the configurations to all workstations in all groups and containers
+- Settings are under `Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\`
+- Import the `fcpca.crt` into **Trusted Root Certification Authorities**
+
+
+### Install Using Certutil
+You can add COMMON to the **Enterprise Trust Store** or the **Trusted Roots Store** using _certutil_. Additional information:
+
+- You must have Enterprise Administrator privileges
+- You can run _certutil_ from a Domain Controller 
+- To publish/add a certificate to the Enterprise Trust Store:
+
+```
+	certutil –dspublish –f <certificate_to_publish.cer or fcpca.crt> RootCA
+```
+
+- To view all certificates in the Enterprise Trust Store:
+
+```
+	certutil –viewstore –enterprise RootCA
+```
+
+- To propagate from the Domain Controller(s) to the enterprise:
+
+```
+	gpupdate /force
+```
+
 ## How Can I Test?
 
-If your agency will be impacted, you can optionally test Federal Common Policy CA validation behavior with Microsoft Certificate Trust List (CTL) constraints by using the [test procedures](#how-can-i-test) below. Testing will confirm whether an enterprise Group Policy Object (GPO) can override a Microsoft CTL setting for 3 possible situations:<!--better word for "situations"?-->
+If your agency will be impacted, you can optionally test COMMON validation behavior with Microsoft Certificate Trust List (CTL) constraints by using the [test procedures](#how-can-i-test) below. Testing will confirm whether an enterprise Group Policy Object (GPO) can override a Microsoft CTL setting for 3 possible situations:<!--better word for "situations"?-->
 
 1. Federal Common Policy CA _Server Auth Disallow_,<!--Is Server Auth = one word?  serverAuth? Can we remove "COMMON" here to reduce number of uses?-->
 2. Federal Common Policy CA _Server Auth notBefore_, **OR**
@@ -46,7 +124,7 @@ If your agency plans to participate in testing, see the phased [Testing Schedule
 ### Testing Schedule
 
 #### Phase 1&nbsp;&mdash;&nbsp;Federal Common Policy CA _Server Auth Disallow_ Testing
-- **Date? -** _Disallow_ initial testing completed.<!--Initial AND final testing done for all 3 tests? Other 2 don't say "initial"-->
+- **April 13 -** Conduct _Disallow_ testing.
 - **April 26 -** Report to Microsoft on initial _Disallow_ testing.<!--Who is reporting? Testing has already been done?-->
 - **April 27-May 2 -** Remediate _Disallow_ testing based on Microsoft's feedback. Microsoft prepares for Server Auth _notBefore_ testing with CTL. Determine alternative options to discuss with Microsoft.
 - **May 2 -** Status call/email with testers on _Disallow_ test results and/or questions.
@@ -124,74 +202,6 @@ Delete these keys:
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
 
 ``` 
-## How Can I Limit the Impact to My Agency?
-
-{% include alert-info.html content="The following instructions are for agency network and domain system administrators." %}  
-
-To limit the impact to your agency, you'll need to install the Federal Common Policy Root CA certificate by using a group policy object (GPO) **OR** by installing it in the **Enterprise Trust Store** or **Trusted Roots Store** on all government-furnished, Microsoft OS-based workstations and mobile devices. 
-
-- [Install Using Group Policy Objects](#install-using-group-policy-objects)
-- [Install Using Certutil](#install-using-certutil)
-
-The certificate details for the Federal Common Policy CA are:  
-
-| **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
-| :--------  | :-------------------------------     |
-| Federal Common Policy CA<br>(sometimes shown as _U.S. Government Common Policy_) | http://http.fpki.gov/fcpca/fcpca.crt |
-| Distinguished Name | cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US |
-| SHA-1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
-
-You should never install a root certificate without verifying it. To verify, download the certificate or email **fpki@gsa.gov** for an out-of-band copy.  
-
-Use a utility (_certutil_ on Windows or _openssl_ or _sha1sum_ on UNIX platforms) to verify that the SHA-1 thumbprint of the certificate file matches the SHA-1 value provided above.  
-
-``` 
-	certutil -hashfile fcpca.crt SHA1
-```
-
-```	
-	openssl dgst -sha1 fcpca.crt
-```
-
-```	
-	sha1sum fcpca.crt
-```
-
-
-### Install Using Group Policy Objects
-You can add the Federal Common Policy Root CA certificate to the **Trusted Root Certificate Authorities** using group policy objects.  
-
-Microsoft TechNet articles and other online resources offer the procedures for setting up group policy objects.  Additional information:
-
-- You must have Enterprise Administrator privileges
-- You can set up a group policy object from a Domain Controller (or other approaches you use in your agency)
-- You may need to use multiple group policy objects to apply the configurations to all workstations in all groups and containers
-- Settings are under `Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\`
-- Import the `fcpca.crt` into **Trusted Root Certification Authorities**
-
-
-### Install Using Certutil
-You can add the Federal Common Policy Root CA certificate to the **Enterprise Trust Store** or the **Trusted Roots Store** using _certutil_. Additional information:
-
-- You must have Enterprise Administrator privileges
-- You can run _certutil_ from a Domain Controller 
-- To publish/add a certificate to the Enterprise Trust Store:
-
-```
-	certutil –dspublish –f <certificate_to_publish.cer or fcpca.crt> RootCA
-```
-
-- To view all certificates in the Enterprise Trust Store:
-
-```
-	certutil –viewstore –enterprise RootCA
-```
-
-- To propagate from the Domain Controller(s) to the enterprise:
-
-```
-	gpupdate /force
-```
 
 ## Frequently Asked Questions
 
