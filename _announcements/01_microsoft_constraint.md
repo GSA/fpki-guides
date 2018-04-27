@@ -165,8 +165,13 @@ If your agency plans to participate in testing, see the phased [Testing Schedule
 ```
 mkdir c:\ctltest
 ```
+3b. Run a CTL update command to update all certificates.
 
-3b. Create a text file containing the certificate details: 
+```
+certutil -generateSSTFromWU
+```
+
+3c. Create a text file containing the certificate details: 
 
 ```
 certutil -verifyCTL AuthRoot > c:\ctltest\certdetail.txt
