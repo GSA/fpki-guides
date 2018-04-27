@@ -5,12 +5,12 @@ title: Microsoft Trusted Root Program Changes Set To Impact Federal Government
 pubDate: April 26, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
-description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust property for our U.S. Government Root CA (Federal Common Policy CA) in Microsoft. Testing is ongoing on the best solutiont to meet Microsoft requiremetns.<br><br>Windows users will receive errors when browsing to government intranet websites that use SSL/TLS certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for our federal devices.   
+description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government has elected to remove the Transport Layer Security (TLS) trust property for our U.S. Government Root CA (Federal Common Policy CA [FCPCA/COMMON]) in Microsoft, but there is the potential to completely remove COMMON. Testing will determine the best course of action.<br><br> At a minimum, Windows users will receive errors when browsing to government intranet websites that use SSL/TLS certificates issued by Federal PKI CAs. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for our federal devices. This annoucement will be updated with the latest information on a regular basis.   
 ---
 
 {% include alert-info.html content="Your network smartcard logon using PIV and CAC is not impacted." %} 
 
-Upcoming changes to Microsoft's Trusted Root Program could impact your agency. Microsoft will **remove** the trust for **SSL/TLS** from our U.S. Government Root CA (Federal Common Policy CA [FCPCA/COMMON]) from Microsoft's globally distributed Certificate Trust List. 
+Upcoming changes to Microsoft's Trusted Root Program could impact your agency. Microsoft will **remove** the trust for **SSL/TLS** from our U.S. Government Root CA (Federal Common Policy CA [FCPCA/COMMON]) from Microsoft's globally distributed Certificate Trust List (CTL). Based on testing and potential impact, we may also elect to completely remove COMMON from Microsoft.
 
 - [How Does this Work?](#how does this work)
 - [What Will Be Impacted?](#what-will-be-impacted)
@@ -20,7 +20,7 @@ Upcoming changes to Microsoft's Trusted Root Program could impact your agency. M
 - [Additional Resources](#additional-resources)
 
 ## How Does This Work?
-Microsoft uses a Certificate Trust List (CTL) to tell Windows endpoints (desktops, laptops, servers, mobile devices, etc running a Microsoft operating system) which PKI root certificates to trust. They distrubte a list of authorized root certificates (*authrootstl.cab*) and a list of untrusted root certificates (*disallowedcertstl.cab*).
+Microsoft uses a CTL to tell Windows endpoints (desktops, laptops, servers, mobile devices, etc running a Microsoft operating system) which PKI root certificates to trust. They distrubte a list of authorized root certificates (*authrootstl.cab*) and a list of untrusted root certificates (*disallowedcertstl.cab*).
 
 Microsoft deploys CTL to the following Windows versions.
 1. Windows 10 with additional capability of processing date-based constraints.
@@ -28,10 +28,10 @@ Microsoft deploys CTL to the following Windows versions.
 3. Windows 7 including Server 2012
 4. Windows Vists including Server 2008
 
-Today, COMMON is distributed with hundreds of other root certificates on the trusted list. This change will place a date-based constraint on SSL/TLS certificates issued under COMMON. This is an undue risk to the government and we have elected to remove third party trust of COMMON SSL/TLS certificates. Keep reading to understand the scope of impact and how to mitigate the risk on intranet systems.
+Today, COMMON is distributed with hundreds of other root certificates on the trusted list. This change will place a date-based constraint on SSL/TLS certificates issued under COMMON. This is an undue risk to the government and we have elected to either remove third party trust of COMMON SSL/TLS certificates or completely remove COMMON from Microsoft. Keep reading to understand the scope of impact and how to mitigate the risk on intranet systems.
 
 ## What Will Be Impacted?
-When Microsoft removes TLS trust from COMMON, government and partner Window users will receive errors when **browsing** to internet or intranet websites.  These errors will appear if all of the following are true: 
+When Microsoft removes TLS trust from COMMON, government and partner users of Windows will receive errors when **browsing** to internet or intranet websites.  These errors will appear if all of the following are true: 
 
 1. Windows 10 Operating System (Note: Microsoft is implementing a date based constraint and only Windows 10 and later version can process this CTL type).
 2. Microsoft Internet Explorer/Edge or Google Chrome. Apple Safari and Mozilla Firefox is not impacted.
@@ -142,16 +142,16 @@ If your agency plans to participate in testing, see the phased [Testing Schedule
 - **May 31 -** Determine next steps.
 
 ### Test Procedures
-
-Your test environment should consist of Windows 10 clients. Only Windows 10 can process the advanced _Disallow_ or _notBefore_ CTL features. Report your test results to **fpki@gsa.gov** or post them as an issue to GSA's [FPKI Guides](https://github.com/GSA/fpki-guides/issues){:target="_blank"} GitHub repository as "CTL Testing - Agency XXX Results." 
-
 1. For each Windows 10 client endpoint, modify the registry key for the test CTL:
-``` 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
-"RootDirUrl"=http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/USPKI
-``` 
+
+1a. Windows Key + S to search for "regedit". Right click and "Run as administrator"
+
+1b. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
+
+1c. Right click and create "New String" with name "RootDirURL" with this value http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/USPKI
 
 2. Delete these keys:
+
 ``` 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\EncodedCtl]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\LastSyncTime]
@@ -159,23 +159,23 @@ Your test environment should consist of Windows 10 clients. Only Windows 10 can 
 ``` 
 
 3. Verify the CTL settings on the endpoint. The notBefore or disallow status **DOES NOT** show up in the user interface. The only way to check the CTL settings is an output of the CTL file.
-3a. Create a new test directory:
+
+3a. Open a command prompt as administrator and create a new test directory:
+
 ```
 mkdir c:\ctltest
 ```
 
-3b. Create a roots.sst file in the ctltest directory:
+3b. Create a text file containing the certificate details: 
+
 ```
-Certutil -generatesstfromwu -v roots.sst
+certutil -verifyCTL AuthRoot > c:\ctltest\certdetail.txt
 ```
 
-3c. Create a text file containing the certificate details: 
-```
-certutil -dump -gmt -v roots.sst > c:\ctltest\certdetail.txt
-```
+3c. From c:\ctltest\certdetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US"
 
-3d. From c:\ctltest\certdetail.txt, search for the COMMON thumbprint "894ebc0b23da2a50c0186b7f8f25ef1f6b2935af32a94584ef80aaf877a3a06e"
-3e. If the test CTL is loaded, it will have the following entry:
+3d. If the test CTL is loaded, it will have the following entry:
+
 ```
 [905f942fd9f28f679b378180fd4f846347f645c1]
 CertId = 1.3.6.1.4.1.311.10.11.3, "CERT_SHA1_HASH_PROP_ID"
@@ -202,39 +202,60 @@ PublicKeyLength = 2048
 PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 ``` 
 
-4. Open Internet Explorer/Edge or Chrome and clear cache.
+**NOTE - Either DisallowEKU = 1.3.6.1.5.5.7.3.1, "Server Authentication" or NotBeforeEKU = 1.3.6.1.5.5.7.3.3, "Server Authentication" confirm the test CTL is loaded.**
+
+4. Verify the Test CTL has updated
+
+4a. Windows Key + S to search for "regedit". Right click and "Run as administrator"
+
+4b. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
+
+4c. Confirm "EncodedCtl" and "LastSyncTime" attributes are populated.
+
+5. Open Internet Explorer/Edge or Chrome and clear cache.
+
 ```
    Ctrl + Shift + Del
 ```
 
-5. Go to a website by using an FPKI certificate; and record results. Suggested websites:
+6. Go to a website by using an FPKI certificate; and record results. Suggested websites:
+Websites Chained to COMMON
+
 - [PKI.Treasury.gov](https://pki.treasury.gov){:target="_blank"} - Treasury Root CA-issued (COMMON-chained)
+- [psa.dmdc.osd.mil](https://psa.dmdc.osd.mil/psawebdocs/){:target="_blank"} - DoD Root CA 3-issued (COMMON-chained)
+Websites Not-Chained to Common
 - [MAX.gov](https://max.gov/){:target="_blank"} - Entrust Root CA-issued (non-COMMON-chained)
 - [NIST.gov](https://csrc.nist.gov/){:target="_blank"} - DigiCert Root CA-issued (non-COMMOM-chained)
-- [psa.dmdc.osd.mil](https://psa.dmdc.osd.mil/psawebdocs/){:target="_blank"} - DoD Root CA 3-issued (COMMON-chained)
 
-(% include alert-info.html content="Verify the certificate details and if the website is validating to COMMON." %)
+(% include alert-info.html content="Verify the certificate details and note the validation path." %)
 
-6. Re-Install COMMON using the group policy object procedures: [Install Using Group Policy Objects](#install-using-group-policy-objects).
+7. Open Internet Explorer/Edge or Chrome and clear cache.
 
-7. Repeat Step 4.
-
-8. Once testing is done, return the endpoints to their normal configurations:
-
-9a. If you Microsoft autoupdate, modify following registry key to work with the default URL:
 ```
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
-"RootDirUrl"=http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+   Ctrl + Shift + Del
 ```
 
-9b. Delete these keys:
-```
+8. Re-Install COMMON using the group policy object procedures: [Install Using Group Policy Objects](#install-using-group-policy-objects).
+
+9. Repeat website tests from Step 6.
+
+10. Once testing is done, return the endpoints to their normal configurations. This step may not be necessary if the endpoint is just for testing:
+
+10a. Windows Key + S to search for "regedit". Right click and "Run as administrator"
+
+10b. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
+
+10c. Right click and update the "RootDirURL" with this value http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+
+10d. Delete these keys:
+
+``` 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\EncodedCtl]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\LastSyncTime]
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
 ``` 
 
-10. Report your test results to **fpki@gsa.gov** or post them as an issue to GSA's [FPKI Guides](https://github.com/GSA/fpki-guides/issues) GitHub repository as "CTL Testing - Agency XXX Results." Include:
+11. Report your test results to **fpki@gsa.gov** or post them as an issue to GSA's [FPKI Guides](https://github.com/GSA/fpki-guides/issues) GitHub repository as "CTL Testing - Agency XXX Results." Include:
 - OS version
 - Browser versions
 - Steps used to test
@@ -299,6 +320,9 @@ Windows 10. If COMMON is removed from Microsoft, all Windows versions are affect
 
 ### 9. Will the group policy object distribution affect IPSec certificates if the server authentication bit is enabled and used with Microsoft Operating Systems?
 No, group policy object distribution will not negatively impact IPSec certificates.
+
+### 10. Can an enterprise define a custom CTL?
+Yes, an enterprise can create a trusted or untrusted CTL. [Find more details in this Microsoft knowledge base](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379867(v=vs.85).aspx){:target="_blank"}
 
 ## Additional Resources
 
