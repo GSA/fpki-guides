@@ -10,7 +10,7 @@ description: Recent changes to Chrome could affect your agency. This change requ
 
 {% include alert-info.html content="Government end users may be receiving security untrusted certificate errors on some federal intranet websites and applications when using the Chrome browser. These errors may be caused by SSL/TLS certificates issued from Federal Government Certification Authorities in Federal PKI." %} 
 
-The Certification Authority/Browser (CA/B) Forum recently passed Ballot 193, to include establighing new requirements for the maximum lifetime of TLS certificates. Starting March 1st, 2018, newly issued TLS certificates are required to have a maximum validity of 825 days, or else they risk being presented as untrusted.
+The Certification Authority/Browser (CA/B) Forum recently passed Ballot 193, to include establishing new requirements for the maximum lifetime of TLS certificates. Starting March 1st, 2018, newly issued TLS certificates are required to have a maximum validity of 825 days, or else they risk being presented as untrusted.
 
 - [What Will Be Impacted?](#what-will-be-impacted)
 - [When Will This Start?](#when-will-this-start)
@@ -28,17 +28,17 @@ Errors will be shown as "untrusted" site errors.
 
 ### Symptoms: ###
 Users will be experiencing the errors if all the following is true:
-- The intranet website has a SSL/TLS certificate issued from a Federal Government Certification Authority in Federal PKI
-- The intranet website's SSL/TLS certificate was issued on or after March 1, 2018
+- The intranet website has an SSL/TLS certificate issued from a Federal Government Certification Authority in the Federal PKI
+- The intranet website's SSL/TLS certificate was issued on or after March 1, 2018 and has a validity greater than 825 days
 - The end user is using the Chrome browser
 
 ## When Will This Start?
-Chrome began enforcement on March 1, 2018. No other major browser vendors have indicated they will enforce the 825 day validity requirement. If additional browers release information or timelines associated with enforcement of CA/B Forum Ballot 193, we will post updates to this announcement. Also, please check the GitHub Issues in the GSA's fpki-guides Playbook repository for any in-progress discussions.
+Chrome began enforcement on March 1, 2018. No other major browser vendors have indicated they will enforce the 825-day validity requirement. If additional browsers release information or timelines associated with enforcement of CA/B Forum Ballot 193, we will post updates to this announcement. Also, please check the GitHub Issues in the GSA's fpki-guides Playbook repository for any in-progress discussions.
 
 ## What Should I Do?
 Please request your PKI team or Federal Shared Service Provider team update your certificate profiles for SSL/TLS device certificates in the Federal Government Certification Authorities.
 - The certificate profiles should be updated to have a lifetime of less than 825 days
-- After updating the certificate profiles, please issue and reinstall new SSL/TLS certificates on the impacted intranet websites and applications
+- After updating the certificate profiles, please issue and reinstall new SSL/TLS certificates on the impacted intranet websites and applications to prevent end-user browsing errors
 
 ## Additional Resources
 1. [CA/B Forum - Ballot 193](https://cabforum.org/2017/03/17/ballot-193-825-day-certificate-lifetimes/){:target="_blank"}
