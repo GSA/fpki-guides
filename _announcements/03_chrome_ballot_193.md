@@ -1,6 +1,6 @@
 ---
 layout: default
-navtitle: Chrome TLS Certificate Lifetime Updates
+navtitle: Chrome TLS Certificate Lifetime Enforcement Impact
 title: Updates to Chrome TLS Certificate Lifetime Requirements
 pubDate: May 10, 2018
 collection: announcements
