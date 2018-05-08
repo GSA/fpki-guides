@@ -20,14 +20,18 @@ This notice is for federal agency IT staff.
 ## What Will Be Impacted?
 Federal government users may be experiencing new errors when browsing to some government intranet websites and applications.
 Errors will be shown as "untrusted" site errors.
-Cause: A combination of our US Government root being distributed in commercially distributed Trust Stores and our federal government certificates not being updated to comply with required certificate policies.
+
+Cause: 
+- A combination of our US Government root being distributed in commercially distributed Trust Stores and our federal government certificates not being updated to comply with required certificate policies.
 
 Symptoms:
-
 Users will be experiencing the errors if all the following is true:
 - The intranet website has a SSL/TLS certificate issued from a Federal Government Certification Authority in Federal PKI
 - The intranet website's SSL/TLS certificate was issued on or after March 1, 2018
 - The end user is using the Chrome browser
+
+![Chrome Error Screen]({{site.baseurl}}/img/google_ballot193_hot_topic_error.png){:style="width:55%;float:center;"}
+
 
 ## When Will This Start?
 Chrome began enforcement on March 1, 2018. No other major browser vendors have indicated they will enforce the 825 day validity requirement. If additional browers release information or timelines associated with enforcement of CA|B Forum Ballot 193, we will post updates to this announcement. Please check the GitHub Issues in the GSA's fpki-guides Playbook repository for any in-progress discussions.
