@@ -23,7 +23,7 @@ A government user will receive an "untrusted site" error when browsing to an int
 2. The TLS/SSL certificate was issued on or after March 1, 2018, with a lifetime greater than 825 days
 3. Using the Chrome browser
 
-![Chrome Error Screen]({{site.baseurl}}/img/google_ballot193_hot_topic_error.png){:style="width:55%;float:center;"}
+![Chrome Error Screen]({{site.baseurl}}/img/google_ballot193_hot_topic_error.png){:style="width:70%;float:center;"}
 
 ### What Causes This Error?<!--I think we've already covered most of this above in What Will Be Impacted except the Trust Store issue. How does the distribution of COMMON from MS and Apple figure into the errors? Add to previous section?  Suggesting deleting this section.--> 
 A Chrome "untrusted site" error occurs because our U.S. Government Root CA (Federal Common Policy CA) is globally distributed through the Microsoft and Apple Trust Stores<!--Should we remove the COMMON and Trust Stores issue? When COMMON is removed, then what?--> and our TLS/SSL certificates don't currently meet the 825-day lifetime requirement.
