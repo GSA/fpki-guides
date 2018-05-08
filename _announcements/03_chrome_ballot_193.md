@@ -8,8 +8,6 @@ permalink: announcements/chrometlslifetime/
 description: Recent changes to Chrome could affect your agency. This change requires all TLS/SSL certificates issued on or after March 1, 2018 to have a maximum validity of 825 days.<br><br>
 ---
 
-This notice is for federal agency IT staff.
-
 {% include alert-info.html content="Government end users may be receiving security untrusted certificate errors on some federal intranet websites and applications when using the Chrome browser. These errors may be caused by SSL/TLS certificates issued from Federal Government Certification Authorities in Federal PKI." %} 
 
 - [What Will Be Impacted?](#what-will-be-impacted)
@@ -31,7 +29,7 @@ Users will be experiencing the errors if all the following is true:
 - The intranet website's SSL/TLS certificate was issued on or after March 1, 2018
 - The end user is using the Chrome browser
 
-![Chrome Error Screen]({{site.baseurl}}/img/google_ballot193_hot_topic_error.png){:style="width:55%;float:center;"}
+![Chrome Error Screen]({{site.baseurl}}/img/google_ballot193_hot_topic_error.png){:style="width:75%;float:center;"}
 
 
 ## When Will This Start?
