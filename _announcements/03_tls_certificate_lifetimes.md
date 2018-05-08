@@ -25,6 +25,7 @@ Cause:
 - A combination of our US Government root being distributed in commercially distributed Trust Stores and our federal government certificates not being updated to comply with required certificate policies.
 
 Symptoms:
+<br>
 Users will be experiencing the errors if all the following is true:
 - The intranet website has a SSL/TLS certificate issued from a Federal Government Certification Authority in Federal PKI
 - The intranet website's SSL/TLS certificate was issued on or after March 1, 2018
