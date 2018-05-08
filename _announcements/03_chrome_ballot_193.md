@@ -1,44 +1,40 @@
 ---
 layout: default
-navtitle: Chrome TLS Certificate Lifetime Enforcement Impact
-title: Updates to Chrome TLS Certificate Lifetime Requirements
+navtitle: Chrome TLS Certificate Lifetime Impact
+title: Chrome Enforces TLS Certificate Lifetime Requirement
 pubDate: May 10, 2018
 collection: announcements
 permalink: announcements/chrometlslifetime/
-description: Recent changes to Chrome could affect your agency. This change requires all TLS/SSL certificates issued on or after **March 1, 2018** to have a maximum lifetime of 825 days. Please review this announcement to learn what will be impacted and to identify actions you can take to prevent problems.<br><br>
+description: Recent changes to Chrome could affect your agency. Chrome users may receive errors when browsing to government intranet websites and applications. Starting **March 1, 2018**, Chrome requires all TLS/SSL certificates to have a maximum lifetime of 825 days. You can mitigate the impact for government intranets, applications, and government-furnished equipment by using these procedures.<br><br>
 ---
 
-{% include alert-info.html content="Government end users may be receiving security untrusted certificate errors on some federal intranet websites and applications when using the Chrome browser. These errors may be caused by SSL/TLS certificates issued from Federal Government Certification Authorities in Federal PKI." %} 
-
-The Certification Authority/Browser (CA/B) Forum recently passed Ballot 193, to include establishing new requirements for the maximum lifetime of TLS certificates. Starting March 1st, 2018, newly issued TLS certificates are required to have a maximum lifetime of 825 days, or else they risk being presented as untrusted.
+Recent changes to Chrome could affect your agency. Chrome now requires TLS/SSL certificates issued on or after **March 1, 2018** to have a maximum lifetime of 825 days. The recent Certification Authority/Browser (CA/B) Forum decision<sup>[1](#1)</sup> recommends this step to increase internet/intranet security.  
 
 - [What Will Be Impacted?](#what-will-be-impacted)
-- [When Will This Start?](#when-will-this-start)
+- [What Other Browsers Enforce This Requirement?](#what-other-browsers-enforce-this-requirement)
 - [What Should I Do?](#what-should-i-do)
 - [Additional Resources](#additional-resources)
 
 ## What Will Be Impacted?
-Federal government users may be experiencing new errors when browsing to some government intranet websites and applications.
-Errors will be shown as "untrusted" site errors.
+
+A government user will receive an "untrusted site" error when browsing to an intranet website or application on government-furnished equipment if all of the following are true: <!--Trying to follow LaChelle's style on the other Hot Topics--more or less-->
+
+1. The intranet website's TLS/SSL certificate was issued by a Certification Authority in the Federal PKI
+2. The TLS/SSL certificate was issued on or after March 1, 2018, with a lifetime greater than 825 days
+3. Using the Chrome browser
 
 ![Chrome Error Screen]({{site.baseurl}}/img/google_ballot193_hot_topic_error.png){:style="width:85%;float:center;"}
 
-### Cause: ### 
-- A combination of our US Government root being distributed in commercially distributed Trust Stores and our federal government certificates not being updated to comply with required certificate policies.
+### What Causes This Error?<!--I think we've already covered most of this above in What Will Be Impacted except the Trust Store issue. How does the distribution of COMMON from MS and Apple figure into the errors? Add to previous section?  Suggesting deleting this section.--> 
+A Chrome "untrusted site" error occurs because our U.S. Government Root CA (Federal Common Policy CA) is globally distributed through the Microsoft and Apple Trust Stores<!--Should we remove the COMMON and Trust Stores issue? When COMMON is removed, then what?--> and our TLS/SSL certificates don't currently meet the 825-day lifetime requirement.
 
-### Symptoms: ###
-Users will be experiencing the errors if all the following is true:
-- The intranet website has an SSL/TLS certificate issued from a Federal Government Certification Authority in the Federal PKI
-- The intranet website's SSL/TLS certificate was issued on or after March 1, 2018 and has a lifetime greater than 825 days
-- The end user is using the Chrome browser
-
-## When Will This Start?
-Chrome began enforcement on March 1, 2018. No other major browser vendors have indicated they will enforce the 825-day lifetime requirement. If additional browsers release information or timelines associated with enforcement of CA/B Forum Ballot 193, we will post updates to this announcement. Also, please check the GitHub Issues in the GSA's fpki-guides Playbook repository for any in-progress discussions.
+## Will Other Browsers Enforce This Requirement?
+Only Chrome is currently enforcing the 825-day lifetime requirement for TLS/SSL certificates. If other browser vendors decide to enforce this requirement, we will post updates to this announcement. Please also check the GSA FPKI-Guides' GitHub Issues for in-progress discussions.
 
 ## What Should I Do?
-Please request your PKI team or Federal Shared Service Provider team update your certificate profiles for SSL/TLS device certificates in the Federal Government Certification Authorities.
-- The certificate profiles should be updated to have a lifetime of less than 825 days
-- After updating the certificate profiles, please issue and reinstall new SSL/TLS certificates on the impacted intranet websites and applications to prevent end-user browsing errors
+To prevent Chrome browsing errors:
+1. Request that your PKI or Federal Shared Service Provider update the certificate profiles for TLS/SSL device certificates in the Federal PKI Certification Authorities, **OR**<!--In the CAs meaning?-->update the TLS/SSL certificate profiles to give certificates a lifetime of less than 825 days.
+3. Re-issue and re-install new TLS/SSL certificates for the impacted intranet websites and applications.<!--Can PKI team/SSP do this step also? Update client TLS certificates also?-->
 
 ## Additional Resources
-1. [CA/B Forum - Ballot 193](https://cabforum.org/2017/03/17/ballot-193-825-day-certificate-lifetimes/){:target="_blank"}
+<a name="1">1</a>. The [CA/B Forum - Ballot 193](https://cabforum.org/2017/03/17/ballot-193-825-day-certificate-lifetimes/){:target="_blank"} recently passed Ballot 193, which recommends implementing this change. 
