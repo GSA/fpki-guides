@@ -5,7 +5,7 @@ title: Updates to Chrome TLS Certificate Lifetime Requirements
 pubDate: May 10, 2018
 collection: announcements
 permalink: announcements/chrometlslifetime/
-description: Recent changes to Chrome could affect your agency. This change requires all TLS/SSL certificates issued on or after March 1, 2018 to have a maximum validity of 825 days. Please review this announcement to learn what will be impacted and to identify actions you can take to prevent problems.<br><br>
+description: Recent changes to Chrome could affect your agency. This change requires all TLS/SSL certificates issued on or after **March 1, 2018** to have a maximum validity of 825 days. Please review this announcement to learn what will be impacted and to identify actions you can take to prevent problems.<br><br>
 ---
 
 {% include alert-info.html content="Government end users may be receiving security untrusted certificate errors on some federal intranet websites and applications when using the Chrome browser. These errors may be caused by SSL/TLS certificates issued from Federal Government Certification Authorities in Federal PKI." %} 
@@ -31,9 +31,8 @@ Users will be experiencing the errors if all the following is true:
 - The intranet website's SSL/TLS certificate was issued on or after March 1, 2018
 - The end user is using the Chrome browser
 
-![Chrome Error Screen]({{site.baseurl}}/img/google_ballot193_hot_topic_error.png){:style="width:75%;float:center;"}
+![Chrome Error Screen]({{site.baseurl}}/img/google_ballot193_hot_topic_error.png){:style="width:85%;float:center;"}
 
-<br>
 
 ## When Will This Start?
 Chrome began enforcement on March 1, 2018. No other major browser vendors have indicated they will enforce the 825 day validity requirement. If additional browers release information or timelines associated with enforcement of CA/B Forum Ballot 193, we will post updates to this announcement. Also, please check the GitHub Issues in the GSA's fpki-guides Playbook repository for any in-progress discussions.
