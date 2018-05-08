@@ -2,7 +2,7 @@
 layout: default
 navtitle: Chrome Certificate Transparency (CT) Impact
 title: Chrome Certificate Transparency Requirements
-pubDate: May 20, 2018
+pubDate: May 10, 2018
 collection: announcements
 permalink: announcements/chromect/
 description:  Upcoming changes to Chrome could affect your agency. This change requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA) certificate. This change will take effect starting in **Chrome version 68** and will affect any TLS/SSL certificate issued after **April 30, 2018.**<br><br>
