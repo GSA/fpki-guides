@@ -43,4 +43,4 @@ Please request your PKI team or Federal Shared Service Provider team update your
 - After updating the certificate profiles, please issue and reinstall new SSL/TLS certificates on the impacted intranet websites and applications
 
 ## Additional Resources
-1. [CA|B Forum - Ballot 193](https://cabforum.org/2017/03/17/ballot-193-825-day-certificate-lifetimes/){:target="_blank"}
+1. [CAB Forum - Ballot 193](https://cabforum.org/2017/03/17/ballot-193-825-day-certificate-lifetimes/){:target="_blank"}
