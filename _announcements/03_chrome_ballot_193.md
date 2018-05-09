@@ -33,4 +33,4 @@ To prevent Chrome browsing errors:
 2. Re-issue and re-install new TLS/SSL certificates for the impacted intranet websites and applications.
 
 ## Additional Resources
-<a name="1">1</a>. The [CA/B Forum](https://cabforum.org/){:target="_blank"} recently passed [Ballot 193](https://cabforum.org/2017/03/17/ballot-193-825-day-certificate-lifetimes/){:target="_blank"}, which introduced the 825 day maximum lifetime requirement. 
+<a name="1">1</a>. In March 2017, the [CA/B Forum](https://cabforum.org/){:target="_blank"} passed [Ballot 193](https://cabforum.org/2017/03/17/ballot-193-825-day-certificate-lifetimes/){:target="_blank"}, which introduced the 825 day maximum lifetime requirement. 
