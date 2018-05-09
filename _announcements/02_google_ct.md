@@ -5,12 +5,12 @@ title: Chrome Certificate Transparency Requirements
 pubDate: May 10, 2018
 collection: announcements
 permalink: announcements/chromect/
-description:  Upcoming changes to Chrome could affect your agency. This change requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA) certificate. This change will take effect starting in **Chrome version 68** and will affect any TLS/SSL certificate issued after **April 30, 2018.**<br><br>
+description:  Upcoming changes to Chrome could affect your agency. This change requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an Operating System (OS) trust store. The Microsoft and Apple Trust Stores currently distribute the U.S. Government Root CA (Federal Common Policy CA) certificate. This change will take effect starting with **Chrome 68** and will affect any TLS/SSL certificate issued after **April 30, 2018.**<br><br>
 ---
 
 {% include alert-info.html content="At this time, the Federal PKI Certification Authorities used by most federal agencies for intranet TLS/SSL certificates do not support Certificate Transparency logging requirements." %}  
 
-Upcoming changes to Chrome could impact your agency. Chrome will enforce Certificate Transparency (CT) starting in **version 68** for all TLS/SSL certificates issued after April 30, 2018. This means that all TLS/SSL certificates issued after April 30, 2018, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log in order to be trusted in Chrome versions 68 and above. In addition, website operators must serve proof of the CT log inclusion (i.e., a signed certificate timestamp).
+Upcoming changes to Chrome could impact your agency. Google will start enforcing Certificate Transparency (CT) with **Chrome 68** for all TLS/SSL certificates issued after April 30, 2018. This means that all TLS/SSL certificates issued after April 30, 2018, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log in order to be trusted in Chrome 68 and above. In addition, website operators must serve proof of the CT log inclusion (i.e., a signed certificate timestamp).
 
 - [How Does This Work?](#how-does-this-work)
 - [What Will Be Impacted?](#what-will-be-impacted)
@@ -37,16 +37,16 @@ The Microsoft and Apple trust stores currently distribute the U.S. Government Ro
 
 A government user will receive an error on government-furnished equipment if all of the following are true: 
 
-1. Using the Chrome browser with a version number 68 or higher (additional browsers may be affected in the future)
+1. Using Chrome 68 or higher (Additional browsers may be affected in the future)
 2. Browsing to an intranet website with a TLS/SSL certificate that validates to the Federal Common Policy CA
 3. The TLS/SSL certificate was issued after **April 30, 2018**
 
 ![Chrome Error Screen]({{site.baseurl}}/img/google_ct_hot_topic_error.png){:style="width:55%;float:center;"}
 
 ## When Will This Start?
-Google has announced that enforcement will start in Chrome version 68. Estimated release dates are listed below.
-- Chrome 68 Beta, target release approximately June 7, 2018
-- Chrome 68 Stable, target release approximately July 24, 2018
+Google will enforce CT starting with Chrome 68. _Estimated_ release dates are:
+- Chrome 68 Beta:  June 7, 2018
+- Chrome 68 Stable:  July 24, 2018
 
 ## What Should I Do?
 The Federal PKI community has notified the Microsoft Trusted Root Program to remove the trust for TLS/SSL from the globally distributed Federal Common Policy CA.
@@ -60,7 +60,7 @@ Please see [Disable CT Enforcement for Government-Furnished Equipment](#disable-
 
 
 ### Disable CT Enforcement for Government-Furnished Equipment
-{% include alert-info.html content="Two options are outlined in this section. Additional options may become available in future releases of Chrome. We will post more information as we update the procedures. Please check the GitHub Issues in the GSA's fpki-guides Playbook repository for any in-progress discussions." %} 
+{% include alert-info.html content="Two options are outlined in this section. Additional options may become available in future releases of Chrome. We will post more information as we update the procedures. Please also check the GitHub Issues in the GSA FPKI-Guides repository for any in-progress discussions." %} 
 
 #### Option 1:&nbsp;&nbsp;Disable CT Enforcement for "Legacy" CAs (Recommended Configuration)
 
@@ -146,7 +146,7 @@ For _preference name_, _CertificateTransparencyEnforcementDisabledForUrls_, add 
 ## How Can I Test CT Compliance for My Intranet Website?
 To test CT compliance, you'll need to use a pre-release version of Chrome. 
 
-- Google will start enforcing CT with [Chrome 67](https://www.chromium.org/developers/calendar){:target="_blank"}. Chrome 67 is available for a limited time at [Chrome Canary channel](https://www.google.com/chrome/browser/canary.html){:target="_blank"}. Download and install it as recommended by Google.
+- Google will start enforcing CT with [Chrome 68](https://www.chromium.org/developers/calendar){:target="_blank"}. Chrome 68 is available for a limited time at [Chrome Canary channel](https://www.google.com/chrome/browser/canary.html){:target="_blank"}. Download and install it as recommended by Google.
 - You'll need to use a special command line flag to execute the browser: [Add a command-line flag for CT testing](https://bugs.chromium.org/p/chromium/issues/detail?id=816543&can=2&q=816543&colspec=ID%20Pri%20M%20Stars%20ReleaseBlock%20Component%20Status%20Owner%20Summary%20OS%20Modified){:target="_blank"}.
 
 **Important Testing Note:** CT enforcement and website certificate chain information is cached in Chrome. Before you start each test, clear the cached data from within the browser:<br>
