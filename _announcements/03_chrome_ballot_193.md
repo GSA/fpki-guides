@@ -16,7 +16,7 @@ Recent changes to Chrome could affect your agency. Chrome now requires that TLS/
 - [Additional Resources](#additional-resources)
 
 ## What Will Be Impacted?
-A government user will receive an "untrusted site" error when browsing to an intranet website or application on government-furnished equipment if all of the following are true: 
+A government user will receive an "untrusted site" error when browsing to an intranet website or application if all of the following are true: 
 
 1. The intranet website's TLS/SSL certificate was issued by a Certification Authority in the Federal PKI
 2. The TLS/SSL certificate was issued on or after March 1, 2018, with a lifetime greater than 825 days
@@ -33,4 +33,4 @@ To prevent Chrome browsing errors:
 2. Re-issue and re-install new TLS/SSL certificates for the impacted intranet websites and applications.
 
 ## Additional Resources
-<a name="1">1</a>. The [CA/B Forum](https://cabforum.org/){:target="_blank"} recently passed [Ballot 193](https://cabforum.org/2017/03/17/ballot-193-825-day-certificate-lifetimes/){:target="_blank"}, which introduced this change. 
+<a name="1">1</a>. The [CA/B Forum](https://cabforum.org/){:target="_blank"} recently passed [Ballot 193](https://cabforum.org/2017/03/17/ballot-193-825-day-certificate-lifetimes/){:target="_blank"}, which introduced the 825 day maximum lifetime requirement. 
