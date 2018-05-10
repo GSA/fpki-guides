@@ -2,15 +2,15 @@
 layout: default
 navtitle: Microsoft Trust Store Impact
 title: Microsoft Trusted Root Program Changes Set To Impact Federal Government
-pubDate: April 26, 2018
+pubDate: May 14, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
-description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government has elected to remove our U.S. Government Root CA (Federal Common Policy CA [FCPCA/COMMON]) in Microsoft. <br><br> Windows users will receive errors when encountering an FPKI certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for our federal devices as expalined in this annoucement. This annoucement will be updated with the latest information on a regular basis.   
+description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government<!--Federal PKI PA?--> has elected to remove our U.S. Government Root CA certficate (Federal Common Policy CA [FCPCA/COMMON]) from the Microsoft Trust Store. <br><br> This change will cause Windows users to receive errors when browsing to <!--?-->encountering an FPKI certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This annoucement will continue to be updated with new information and procedures as these become available.   
 ---
 
-{% include alert-info.html content="The Federal PKI Policy Authority is working with Microsoft on a timeline of when it will be removed. Updated information will be posted here as long as through the FPKI/ICAM list serves and with the ICAM Subcommittee." %} 
+Upcoming changes to Microsoft's Trusted Root Program could impact your agency. Microsoft will **remove** our U.S. Government Root CA certificate (Federal Common Policy CA [FCPCA/COMMON]) from Microsoft's globally distributed Certificate Trust List (CTL).
 
-Upcoming changes to Microsoft's Trusted Root Program could impact your agency. Microsoft will **remove** our U.S. Government Root CA (Federal Common Policy CA [FCPCA/COMMON]) from Microsoft's globally distributed Certificate Trust List (CTL).
+{% include alert-info.html content="The Federal PKI Policy Authority is working with Microsoft on a timeline for removing the U.S. Government Root CA certificate from Microsoft's Trust store. This page will be updated with new information and procedures, as soon as they are available, through the FPKI/ICAM listservs, and through the ICAM Subcommittee." %} 
 
 - [How Does this Work?](#how does this work)
 - [What Will Be Impacted?](#what-will-be-impacted)
