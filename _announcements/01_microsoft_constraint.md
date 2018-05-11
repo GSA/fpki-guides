@@ -5,12 +5,12 @@ title: Microsoft Trusted Root Program Changes Set To Impact Federal Government
 pubDate: May 14, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
-description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government<!--Federal PKI PA?--> has elected to remove our U.S. Government Root CA certficate (Federal Common Policy CA [FCPCA/COMMON]) from the Microsoft Trust Store. <br><br> This change will cause Windows users to receive errors when browsing to <!--?-->encountering an FPKI certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This annoucement will continue to be updated with new information and procedures as these become available.   
+description: Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The U.S. Government<!--Federal PKI PA?--> has elected to remove our U.S. Government Root CA certficate (Federal Common Policy CA [FCPCA/COMMON]) from the Microsoft Trust Store. <br><br> This change will cause Windows users to receive errors when encountering instances of an FPKI certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This annoucement will be updated with new information and procedures, as soon as they are available.   
 ---
 
-Upcoming changes to Microsoft's Trusted Root Program could impact your agency. Microsoft will **remove** our U.S. Government Root CA certificate (Federal Common Policy CA [FCPCA/COMMON]) from Microsoft's globally distributed Certificate Trust List (CTL).
+Upcoming changes to Microsoft's Trusted Root Program could impact your agency. The Federal PKI Policy Authority<!--Correct?--> has requested that Microsoft **remove** our U.S. Government Root CA certificate (Federal Common Policy CA [FCPCA/COMMON]) from Microsoft's globally distributed Certificate Trust List (CTL) (aka "Microsoft Trust Store").
 
-{% include alert-info.html content="The Federal PKI Policy Authority is working with Microsoft on a timeline for removing the U.S. Government Root CA certificate from Microsoft's Trust store. This page will be updated with new information and procedures, as soon as they are available, through the FPKI/ICAM listservs, and through the ICAM Subcommittee." %} 
+{% include alert-info.html content="The Federal PKI Policy Authority is working with Microsoft on the timeline for removing COMMON. As additional information and procedures become available, this announcement will be updated. Watch also for updated information from the FPKI ICAM listservs and ICAM Subcommittee." %} 
 
 - [How Does this Work?](#how does this work)
 - [What Will Be Impacted?](#what-will-be-impacted)
@@ -20,28 +20,32 @@ Upcoming changes to Microsoft's Trusted Root Program could impact your agency. M
 - [Additional Resources](#additional-resources)
 
 ## How Does This Work?
-Microsoft uses a CTL to tell Windows endpoints (desktops, laptops, servers, mobile devices, etc running a Microsoft operating system) which PKI root certificates to trust. They distrubte a list of authorized root certificates (*authrootstl.cab*) and a list of untrusted root certificates (*disallowedcertstl.cab*).
+Today, Microsoft distributes hundreds of root CA certificates, including COMMON. Microsoft does this through a Certificate Trust List (CTL) that tells Windows servers, computers, and devices which roots are authorized (*authrootstl.cab*) or untrusted (*disallowedcertstl.cab*).<!--Correct way to say this?  Are there 2 CTLs--trusted and untrusted--or just one CTL with all of both group?--> This change will remove COMMON from the Microsoft distributed CTL's authorized roots list. 
 
-Microsoft deploys CTL to the following Windows versions.
-1. Windows 10 with additional capability of processing date-based constraints.
-2. Windows 8 including Server 2016
-3. Windows 7 including Server 2012
-4. Windows Vista including Server 2008R2
+Microsoft distributes the CTL to the following Windows Operating System (OS) versions and Windows Server editions<!--Unclear what this Windows 10 added capability below is about. Should Windows 10 be paired with Windows Server 2012 R2 and 2016? -->:
 
-Today, COMMON is distributed with hundreds of other root certificates on the trusted list. This change will remove COMMON from the Microsoft distributed CTL. Keep reading to understand the scope of impact and how to mitigate the risk on intranet systems.
+| **Operating System** | **Server Version and Release**                 |
+| :-------- | :-------------------------------     |
+| Windows 10  | With an added capability of processing date-based constraints    |
+| Windows 8.1   | Windows Server 2012 R2 |
+| Windows 8   | Windows Server 2016 |
+| Windows Vista   | Windows Server 2008 R2 |
+
+The impact of this change on the Federal PKI and ways to can mitigate the risk to government intranets are described below.
 
 ## What Will Be Impacted?
-When Microsoft removes COMMON, government and partner users of Windows will receive errors when encountering an FPKI Certificate. These errors will appear if all of the following are true: 
+When Microsoft removes COMMON, government and partner users of Windows will receive errors when encountering instances of FPKI certificates. Errors will occur if all of the following are true: 
 
-1. Any Windows Operating System on Desktop or Mobile
-2. Websites accessed in Microsoft Internet Explorer/Edge and uses an SSL/TLS certificates that were issued by Federal PKI CAs under COMMMON or the Federal Bridge. (Note: Apple Safari and Mozilla Firefox is not impacted.) 
-4. Microsoft Outlook email signed with a certificate issued by Federal PKI CAS under COMMON or the Federal Bridge.
-5. Microsoft Office documents signed with a certificate issued by Federal PKI CAS under COMMON or the Federal Bridge.
-6. Applications that rely on the Microsoft Trust Store.
+1. Windows Operating System (OS) (e.g., computer, mobile device)<!--What about Windows Server?-->
+2. Browsing with Microsoft Internet Explorer/Edge to an intranet website using an TLS/SSL certificate issued by a Federal PKI CA that chains to COMMMON or the Federal Bridge Certification Authority (FBCA). 
+> _(**Note:**&nbsp;&nbsp;Apple Safari and Mozilla Firefox are **not** impacted.)_ 
+4. <!--Receiving?-->Opening a Microsoft Outlook email that was digitally signed using a certificate issued by a Federal PKI CA that chains to COMMON or the FBCA.
+5. Opening a Microsoft Office document attachment that was digitally signed with a certificate issued by a Federal PKI CA that chains to COMMON or the FBCA.
+6. Using an application that relies on the Microsoft Trust Store (for example, smartcard login).<!--Network admin says this is an application that relies on MS Trust Store.  This is pretty signicant. Should be 2nd item above. Other examples?-->
 
-{% include alert-info.html content="If you're unsure if your applications fall with-in the error scope, email **FPKI@gsa.gov**." %} 
+{% include alert-info.html content="If you're unsure whether your applications will be affected, email us at: **FPKI@gsa.gov**." %} 
 
-This will also impact cross-agency or partner users that rely on COMMON.  For example, a Department of State user browsing to a Department of Homeland Security website or a Department of Defense employee sending a digitally signed email to a business partner.
+This change will also impact cross-agency or partner users that rely on COMMON.  For example, a Department of State user browsing to a Department of Homeland Security website or a Department of Defense employee sending a digitally signed email to a business partner.
 
 You can mitigate the impact for all government-furnished equipment.
 
@@ -49,7 +53,7 @@ You can mitigate the impact for all government-furnished equipment.
 
 ## What Should I Do?
 
-To limit the impact to your agency, you'll need to install COMMON by using a group policy object (GPO) **OR** by installing it in the **Enterprise Trust** or **Trusted Root Certification Authorities** certificate store on all government-furnished, Microsoft OS-based workstations and mobile devices. 
+To limit the impact to your agency, you'll need to install COMMON by using a group policy object (GPO) **OR** by installing it in the **Enterprise Trust** or **Trusted Root Certification Authorities** certificate store on all government-furnished, Microsoft OS-based computers and mobile devices. 
 
 - [Install Using Group Policy Objects](#install-using-group-policy-objects)
 - [Install Using Certutil](#install-using-certutil)
@@ -62,7 +66,7 @@ The certificate details for COMMON are:
 | Distinguished Name | cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US |
 | SHA-1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
 
-You should never install a root certificate without verifying it. To verify, download the certificate or email **fpki@gsa.gov** for an out-of-band copy.  
+**You should never install a root certificate without verifying it.** To verify, download the certificate or email **fpki@gsa.gov** for an out-of-band copy.  
 
 Use a utility (_certutil_ on Windows or _openssl_ or _sha1sum_ on UNIX platforms) to verify that the SHA-1 thumbprint of the certificate file matches the SHA-1 value provided above.  
 
@@ -92,11 +96,11 @@ Microsoft TechNet articles and other online resources offer the procedures for s
 
 ### Install Using Certutil
 
-You can add COMMON to the **Enterprise Trust Store** or the **Trusted Root Certificate Authorities** certificate store using _certutil_. Additional information:
+You can add COMMON to the **Enterprise Trust Store** or the **Trusted Root Certificate Authorities** certificate store by using _certutil_. Additional information:
 
 - You must have Enterprise Administrator privileges
 - You can run _certutil_ from a Domain Controller 
-- To publish/add a certificate to the Enterprise Trust Store:
+- To publish/add a certificate to the **Enterprise Trust Store**:
 
 ```
 	certutil –dspublish –f fcpca.crt RootCA
@@ -116,14 +120,17 @@ You can add COMMON to the **Enterprise Trust Store** or the **Trusted Root Certi
 
 ## How Can I Test?
 
-{% include alert-info.html content="Based on Disallow Testing results not overriding local trust decisions, no further testing will take place." %} 
+{% include alert-info.html content="Test results for _serverAuth Disallow_ did not allow local trust decisions to be overridden, so no further testing will be done." %} 
 
-If your agency is impacted, you can test COMMON validation behavior. Testing will confirm whether an enterprise GPO can override a Microsoft CTL setting for three possible conditions:
+** DELETE DELETE FROM HERE? ***
+<!--Local trust decisions are good then? Was this testing for serverAuth Disallow?  Add serverAuth above for clarity.-->
+If your agency is impacted, you can test COMMON validation behavior. This test will confirm whether an enterprise GPO can override a Microsoft CTL setting for three possible conditions:
 
 1. _serverAuth Disallow_,
 2. _serverAuth notBefore_, **OR**
-2. _no CTL entry_
+3. _no CTL entry_
 
+<!--Above says no further testing will be done.  This text and testing schedule and procedures should be deleted then--or explain that they may do their own testing...?  Then, delete testing schedule.-->
 If your agency plans to participate in testing, see the phased [Testing Schedule](#testing-schedule) below. If your agency would like to participate in testing, please email us at **fpki@gsa.gov**.
 
 ### Testing Schedule
@@ -275,13 +282,15 @@ Websites Not-Chained to Common
 ## Frequently Asked Questions
 
 ### 1. Why is COMMMON being removed? 
-COMMON Certificate Policy doesn't comply with the requirements for globally trusted SSL/TLS certificates which is impacting overall use of COMMON on intranets.  These requirements include: 
+The _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ doesn't comply with <!--We mean Microsoft's requriements, correct?-->Microsoft's requirements for globally trusted TLS/SSL certificates. This will impact the agencies' use of Federal PKI CA-issued TLS/SSL certificates for intranets and more.<!--Further statement needed about those operating via FBCA?-->  Microsoft's requirements include: 
 
 **a. Requirement for Fully-Qualified Domain Names (FQDNs)**<br>
-Microsoft planned to restrict SSL/TLS certificates to only certificates using FQDNs ending in .gov, .mil, or fed.us.  Some federal agencies issue SSL/TLS certificates to intranet websites.  These certificates don't have FQDNs; or they contain intranet domains that don't end in .gov, .mil, or fed.us; or they use short names (aliases). Under the requirements, these agencies would need to reissue, re-install, and reconfigure all "non-compliant" certificates and applications.  The Federal PKI community has determined that this would have a negative impact on mission applications on the intranets; consequently the community has voted to remove third party trust for SSL/TLS certificates issued under COMMON. 
+Microsoft plans to restrict TLS/SSL certificates to only certificates using FQDNs ending in .gov, .mil, or fed.us.  Some agencies issue TLS/SSL certificates to intranet websites.  These certificates either:&nbsp;&nbsp;don't have FQDNs; contain intranet domains that don't end in .gov, .mil, or fed.us; or use short names (aliases). Under the requirements, these agencies would need to reissue, re-install, and reconfigure all "non-compliant" certificates and applications.  The Federal PKI community has determined that this would have a negative impact on mission applications on the intranets; consequently, the community has voted to remove COMMON from the Microsoft Trust Store. 
+
+&&&& **CELESTE STOPPPED** &&&&
 
 **b. Requirement for public audit**<br>
-The Federal PKI follows a government auditing standard, and we have not restricted our issuance of SSL/TLS certificates to only the .gov and .mil domains. Under the requirements, all CAs in the Federal PKI that could issue SSL/TLS certificates are required to submit a non-government audit or be technically constrained.  The Federal PKI has **not** technically constrained our CAs.  
+The Federal PKI follows a government auditing standard, and we have not restricted our issuance of TLS/SSL certificates to only the .gov and .mil domains. Under the requirements, all CAs in the Federal PKI that could issue TLS/SSL certificates are required to submit a non-government audit or be technically constrained.  The Federal PKI has **not** technically constrained our CAs.  
 
 **c. Requirement to disclose Certificate Practice Statements and Incident Post-Mortem Reports**<br>
 Public trust requires public disclosure and transparency.  All Federal PKI CAs would be required to publicly post their Certificate Practice Statements and their Audit Letters.  The Federal PKI's federal agency community has attempted to disclose all Certificate Practice Statements for a number of years.  However, some federal agencies include sensitive information in these documents and cannot disclose the documents publicly.  
@@ -290,9 +299,9 @@ Public trust requires public disclosure and transparency.  All Federal PKI CAs w
 Any Federal PKI CA that issue SSL/TLS, code-signing, or email-signing certificates would have to establish a new CA for each type of certificate. This effort requires time, planning, and funding.   
 
 ### 2. How can I determine which of our intranet websites and applications will be impacted, including those used by cross-agency users?  
-All Windows based applications configured with an SSL/TLS or relying on a certificate (email, VPN, digital signature, etc) issued by a Federal PKI CA that validates to COMMON are impacted. Agencies and mission partners who are cross-certified with the Federal Bridge, it could impact your external users if COMMON is used instead of your root.
+All Windows-based applications configured with an TLS/SSL or relying on a certificate (email, VPN, digital signature, etc) issued by a Federal PKI CA that validates to COMMON are impacted. Agencies and mission partners who are cross-certified with the FBCA, it could impact your external users if COMMON is used instead of your root.
 
-If your Agency has an agreement with one of the Federal PKI Shared Service Providers (SSPs) for SSL/TLS certificates, run a report on all issued certificates or ask the SSP to deliver this report.
+If your agency has an agreement with one of the Federal PKI Shared Service Providers (SSPs) for SSL/TLS certificates, run a report on all issued certificates or ask the SSP to deliver this report.
 
 You can also scan your intranet websites in coordination with your CISO teams.  You can use existing tools or the DHS NCATS "**pshtt**" tool, which will also check for cipher suites and mis-configurations on the intranet websites:  
 
