@@ -5,7 +5,7 @@ title: Federal Common Policy CA Removal from Microsoft Trust Store Impact
 pubDate: May 14, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
-description: Upcoming changes regarding Microsoft's Trusted Root Program could impact your agency.  The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certficate (Federal Common Policy CA [FCPCA/COMMON]) from the Microsoft Trust Store. <br><br> This change will cause Windows users to receive errors when encountering instances of an Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This annoucement will be updated with new information and procedures as soon as they are available.   
+description: Upcoming changes regarding Microsoft's Trusted Root Program could impact your agency.  The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA [FCPCA/COMMON]) from the Microsoft Trust Store. <br><br> This change will cause Windows users to receive errors when encountering instances of an Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This announcement will be updated with new information and procedures as soon as they are available.   
 ---
 <!--Should we just say "Microsoft Trusted Root Program" every time and NOT "Microsoft Trust Store"?-->
 Upcoming changes regarding Microsoft's Trusted Root Program could impact your agency. The Federal PKI Policy Authority<!--Correct?--> has requested that Microsoft **remove** our U.S. Government Root CA certificate (Federal Common Policy CA [FCPCA/COMMON]) from Microsoft's globally distributed Certificate Trust List (CTL) (aka "Microsoft Trust Store").
@@ -122,14 +122,14 @@ You can add COMMON to the **Enterprise Trust Store** or the **Trusted Root Certi
 
 ## How Can I Test?
 
-{% include alert-info.html content="Test results for _serverAuth Disallow_ did not allow local trust decisions to be overridden, so no further testing will be done." %} 
-<!--Is serverAuth Disallow correct?-->
-To review the previous testing procedures: **[Add link here](add link here){:target="_blank"}.**
+{% include alert-info.html content="Test results for _Disallow_ did not allow local trust decisions to be overridden, so no further testing will be done." %} 
+<!--Should above say "serverAuth Disallow"?-->
+To review the previous testing procedures: [CTL Testing](https://github.com/GSA/fpki-guides/blob/ms-hot-topic-test-procedures/_announcements/04_ms_constraint_test_procedures.md){:target="_blank"}.
 
 ## Frequently Asked Questions
 
 ### 1. Why is COMMMON being removed? 
-The _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ doesn't comply with <!--We mean Microsoft's requriements, correct?-->Microsoft's requirements for globally trusted TLS/SSL certificates. <!--Took out removal of COMMON statement.  Redundant. This has been covered already.--> Microsoft's requirements include: 
+The _X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework_ doesn't comply with <!--We mean Microsoft's requirements, correct?-->Microsoft's requirements for globally trusted TLS/SSL certificates. <!--Took out removal of COMMON statement.  Redundant. This has been covered already.--> Microsoft's requirements include: 
 
 **a. Requirement for Fully-Qualified Domain Names (FQDNs)**<br>
 Microsoft plans to restrict TLS/SSL certificates to only those certificates using FQDNs ending in .gov, .mil, or fed.us.  Some Federal PKI agencies issue TLS/SSL certificates to intranet websites.  These certificates either:&nbsp;&nbsp;don't have FQDNs; contain intranet domains that don't end in .gov, .mil, or fed.us; or use short names (aliases). Under Microsoft's requirements, these agencies would need to reissue, re-install, and reconfigure all "non-compliant" certificates and applications.  The Federal PKI community has determined that this would have a negative impact on mission applications on the intranets.<!--Took out repeated "removal of COMMON" statement. This has been covered already.--> 
