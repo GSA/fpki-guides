@@ -28,7 +28,7 @@ The US Federal Government has also established Trust with other Certification Au
 
 For the US Federal Government Executive branch agencies, there is one Root Certification Authority named _Federal Common Policy Certification Authority (COMMON)_, and dozens of Intermediate Certification Authorities, and Bridged Certification Authorities.  
 
-*  [A graph of the federal public key infrastructure, including the business communities](https://fpki-graph.fpki-lab.gov/){:target="_blank"}
+*  [A graph of the federal public key infrastructure, including the business communities](https://fpki.idmanagement.gov/tools/fpkigraph/){:target="_blank"}
 
 
 
