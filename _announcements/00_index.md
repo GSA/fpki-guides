@@ -5,7 +5,7 @@ collection: announcements
 permalink: /announcements/
 ---
 
-These announcements and hot topics concern Federal Public Key Infrastucture changes that may affect your agency's operations.
+These announcements and hot topics concern Federal Public Key Infrastructure changes that may affect your agency's operations.
 
 {% for item in site.announcements reversed %}
   {% assign link = item.permalink | remove: '/' %}
