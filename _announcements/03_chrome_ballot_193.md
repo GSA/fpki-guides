@@ -1,14 +1,14 @@
 ---
 layout: default
-navtitle: Chrome TLS Certificate Lifetime Impact
-title: Chrome Enforces TLS Certificate Lifetime Requirement
+navtitle: TLS Certificate Lifetime Impact
+title: TLS Certificate Lifetime Requirement
 pubDate: May 10, 2018
 collection: announcements
-permalink: announcements/chrometlslifetime/
+permalink: announcements/tlslifetime/
 description: Recent changes to Chrome could affect your agency. Chrome users may receive errors when browsing to government intranet websites and applications. Starting **March 1, 2018**, Chrome requires all TLS/SSL certificates to have a maximum lifetime of 825 days. You can mitigate the impact for government intranets, applications, and government-furnished equipment by using these procedures.<br><br>
 ---
 
-Recent changes to Chrome could affect your agency. Chrome now requires that TLS/SSL certificates issued on or after **March 1, 2018**, have a maximum lifetime (i.e., validity) of 825 days. Google is enforcing this change for Chrome as a result of the Certification Authority/Browser (CA/B) Forum's Ballot 193 decision (Passed) to promote increased web security.<sup>[1](#1)</sup>  
+Recent changes to Chrome could affect your agency. Chrome now requires that TLS/SSL certificates issued on or after **March 1, 2018**, have a maximum lifetime of 825 days. Google is enforcing this change for Chrome as a result of the Certification Authority/Browser (CA/B) Forum's Ballot 193 to promote increased web security.<sup>[1](#1)</sup>  
 
 - [What Will Be Impacted?](#what-will-be-impacted)
 - [What Other Browsers Enforce This Requirement?](#what-other-browsers-enforce-this-requirement)
