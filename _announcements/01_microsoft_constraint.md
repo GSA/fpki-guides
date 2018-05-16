@@ -129,7 +129,7 @@ You can add COMMON to the **Enterprise Trust Store** or the **Trusted Root Certi
 
 {% include alert-info.html content="Test results for serverAuth Disallow did not allow local trust decisions to override the CTL configuration, so no further testing will be conducted." %} 
 
-To review the previous testing procedures:&nbsp;&nbsp;[CTL Testing](https://github.com/GSA/fpki-guides/blob/ms-hot-topic-test-procedures/_announcements/04_ms_constraint_test_procedures.md){:target="_blank"}.
+To review the previous testing procedures:&nbsp;&nbsp;[CTL Testing]({{ site.baseurl }}/ctltestprocedures/){:target="_blank"}.
 
 ## Frequently Asked Questions
 
