@@ -88,7 +88,7 @@ Use a utility (_certutil_ on Windows or _openssl_ or _sha1sum_ on UNIX platforms
 
 You can add COMMON to the **Trusted Root Certificate Authorities** certificate store by using group policy objects.  
 
-Microsoft TechNet articles and other online resources offer the procedures for setting up group policy objects.<br>Additional information:
+Microsoft TechNet articles and other online resources offer the procedures for setting up group policy objects.<br><br>Additional information:
 
 - You must have Enterprise Administrator privileges
 - You can set up a group policy object from a Domain Controller (or other approaches you use in your agency)
@@ -96,14 +96,14 @@ Microsoft TechNet articles and other online resources offer the procedures for s
 - Settings are under:
 
 ```
-Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\
+	Computer Configuration\Policies\Windows Settings\Security Settings\Public Key Policies\
 ```
 
 - Import the `fcpca.crt` into **Trusted Root Certification Authorities**
 
 ### Install Using Certutil
 
-You can add COMMON to the **Enterprise Trust Store** or the **Trusted Root Certificate Authorities** certificate store by using _certutil_.<br>Additional information:
+You can add COMMON to the **Enterprise Trust Store** or the **Trusted Root Certificate Authorities** certificate store by using _certutil_.<br><br>Additional information:
 
 - You must have Enterprise Administrator privileges
 - You can run _certutil_ from a Domain Controller 
@@ -157,7 +157,7 @@ You can scan your intranet websites in coordination with your CISO teams.  There
 
 - DHS NCATS [**pshtt**](https://github.com/dhs-ncats/pshtt){:target="_blank"} 
 
-**Note:** This tool will look for not just Federal PKI certificates.  Its outputs will include all certificates and information.
+**Note:**&nbsp;&nbsp;This tool will look for not just Federal PKI certificates.  Its outputs will include all certificates and information.
 
 ### 3.&nbsp;&nbsp;How can I determine whether my agency users and government-furnished equipment will be impacted?  
 Check your Enterprise Trust Store configurations in your Microsoft domain and devices.  If COMMON is already installed in the Enterprise Trust Store, you don't need to reinstall or change its root store.  If it's not installed in the Enterprise Trust Store, you should distribute it in a group policy object to **Trusted Root Certificate Authorities** or via the enterprise domain to the **Enterprise Trust Store** for all your user devices. See [Install Using Group Policy Objects](#install-using-group-policy-objects).
