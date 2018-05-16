@@ -6,7 +6,7 @@ permalink: /ctltestprocedures/
 
 ## How Can I Test?
 
-{% include alert-info.html content="Test results for _Disallow_ did not allow local trust decisions to be overridden, so no further testing will be done." %} 
+{% include alert-info.html content="Test results for _ServerAuth Disallow_ did not allow local trust decisions to be overridden, so no further testing will be conducted." %} 
 
 If your agency is impacted, you can test COMMON validation behavior. This test will confirm whether an enterprise GPO can override a Microsoft CTL setting for three possible conditions:
 
