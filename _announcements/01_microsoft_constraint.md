@@ -10,7 +10,7 @@ description: Upcoming changes regarding Microsoft's Trusted Root Program could i
 
 Upcoming changes regarding Microsoft's Trusted Root Program could impact your agency. The Federal PKI Policy Authority<!--Correct?--> has requested that Microsoft **remove** our U.S. Government Root CA certificate (Federal Common Policy CA [FCPCA/COMMON]) from Microsoft's globally distributed Certificate Trust List (CTL) (aka "Microsoft Trust Store").
 
-{% include alert-info.html content="The Federal PKI Policy Authority is working with Microsoft on the timeline for removing COMMON. As more information and additional procedures become available, this announcement will be updated. Watch for updated information from the FPKI ICAM listservs and ICAM Subcommittee as well." %} 
+{% include alert-info.html content="The Federal PKI Policy Authority is working with Microsoft on the timeline for removing COMMON. As more information and additional procedures become available, this announcement will be updated. Please also watch for updated information from the FPKI ICAM listservs and ICAM Subcommittee as well." %} 
 
 - [How Does this Work?](#how-does-this-work)
 - [What Will Be Impacted?](#what-will-be-impacted)
@@ -22,7 +22,7 @@ Upcoming changes regarding Microsoft's Trusted Root Program could impact your ag
 ## How Does This Work?
 Today, Microsoft distributes hundreds of root CA certificates, including the Federal Common Policy CA (FCPCA/COMMON). Microsoft does this through a _Certificate Trust List (CTL)_ that tells Windows servers, workstations, and devices which roots are trusted (*authrootstl.cab*) and which are untrusted (*disallowedcertstl.cab*). Removing COMMON from the Microsoft Trust Store will remove it from the Microsoft distributed CTL's authorized roots list.<!--Correct way to say this? Is there 1 CTL or 2? First sentence sounds like 1; this sentence sounds like 2.--> 
 
-Microsoft distributes the CTL<!--1 list?--> to the following Windows Operating System (OS) versions and Windows Server editions<!--Unclear what the "added capability..." below is about. Explain? Should Windows 10 be paired with Windows Server 2012 R2 and 2016? -->:
+Microsoft distributes the CTL<!--1 list?--> to the following Windows Operating System (OS) versions and Windows Server editions<!--Explain what the "added capability..." below is about. Also, should Windows 10 be paired with Windows Server 2012 R2 and 2016? -->:
 
 | **Operating System** | **Server Version and Release**                 |
 | :-------- | :-------------------------------     |
@@ -39,9 +39,9 @@ When Microsoft removes COMMON, government and partner users of Windows will rece
 1. Windows Operating System (OS) (e.g., computer, mobile device): Vista and forward<!--includes Windows Servers?-->
 2. Browsing with Microsoft IE/Edge to an intranet website using an TLS/SSL certificate issued by a Federal PKI CA that validates to COMMMON or the Federal Bridge Certification Authority (FBCA). 
 > _(**Note:**&nbsp;&nbsp;Apple Safari and Mozilla Firefox are **not** impacted.)_ 
-4. <!--Receiving?-->Opening a Microsoft Outlook email that was digitally signed using a certificate issued by a Federal PKI CA that validates to COMMON or the FBCA.
+4. Opening a Microsoft Outlook email that was digitally signed using a certificate issued by a Federal PKI CA that validates to COMMON or the FBCA.
 5. Opening a Microsoft Office document that was digitally signed with a certificate issued by a Federal PKI CA that validates to COMMON or the FBCA.
-6. Using an application that relies on the Microsoft Trust Store (for example, smartcard login).<!--This is pretty significant! Our Network Admin says smartcard login is an application that relies on MS Trust Store. Should be 2nd item above?? Other application examples?-->
+6. Using an application that relies on the Microsoft Trust Store (for example, smartcard login).<!--This is pretty significant. Our Network Admin says smartcard login is an application that relies on MS Trust Store. Should be 2nd item above?? Other application examples?-->
 
 {% include alert-info.html content="If you're unsure whether your applications will be affected, email us at: **FPKI@gsa.gov**." %} 
 
@@ -123,7 +123,7 @@ You can add COMMON to the **Enterprise Trust Store** or the **Trusted Root Certi
 ## How Can I Test?
 
 {% include alert-info.html content="Test results for _Disallow_ did not allow local trust decisions to be overridden, so no further testing will be done." %} 
-<!--Should above say "serverAuth Disallow"?-->
+<!--Should above say "serverAuth Disallow" for completeness?-->
 To review the previous testing procedures: [CTL Testing](https://github.com/GSA/fpki-guides/blob/ms-hot-topic-test-procedures/_announcements/04_ms_constraint_test_procedures.md){:target="_blank"}.
 
 ## Frequently Asked Questions
@@ -144,7 +144,7 @@ Public trust requires public disclosure and transparency.  All Federal PKI CAs w
 Any Federal PKI CA that issues TLS/SSL, code-signing, or email-signing certificates would have to establish a new CA for each type of certificate. This effort requires time, planning, and funding.   
 
 ### 2. How can I determine which of our intranet websites and applications will be impacted, including those used by cross-agency users?  
-All Windows-based websites and applications configured with TLS/SSL<!--configured with?--> or that rely on a TLS/SSL certificate (email, Virtual Private Network, digital signature, etc.) issued by a Federal PKI CA that validates to COMMON will be impacted. For agencies and mission partners that are cross-certified with the FBCA, external users could also be impacted if COMMON is used instead of your root.<!--"Your" not best. Agency root?-->
+All Windows-based websites and applications configured with TLS/SSL<!--configured with?--> or that rely on a TLS/SSL certificate (email, Virtual Private Network, digital signature, etc.) issued by a Federal PKI CA that validates to COMMON will be impacted. For agencies and mission partners that are cross-certified with the FBCA, external users could also be impacted if COMMON is used instead of your root.
 
 You can run a report on all issued certificates or, if your agency has an agreement with a Federal PKI Shared Service Provider (SSP), you can request that the SSP run the report.
 
