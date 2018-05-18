@@ -5,10 +5,10 @@ title: Federal Common Policy CA Removal from Microsoft Trust Store Impact
 pubDate: May 17, 2018
 collection: announcements
 permalink: announcements/mspkichanges/
-description: Upcoming changes regarding Microsoft's Trusted Root Program could impact your agency.  The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA [FCPCA/COMMON]) from the Microsoft Trust Store. <br><br> This change will cause Windows users to receive errors when encountering instances of an Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This announcement will be updated with new information and procedures as soon as they are available.   
+description: Upcoming changes regarding Microsoft's Trusted Root Program could impact your agency.  The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Microsoft Trust Store. <br><br> This change will cause Windows users to receive errors when encountering instances of an Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This announcement will be updated with new information and procedures as soon as they are available.   
 ---
 
-Upcoming changes regarding Microsoft's Trusted Root Program could impact your agency. The Federal PKI Policy Authority has requested that Microsoft **remove** our U.S. Government Root CA certificate (Federal Common Policy CA [FCPCA/COMMON]) from Microsoft's globally distributed Certificate Trust List (CTL).
+Upcoming changes regarding Microsoft's Trusted Root Program could impact your agency. The Federal PKI Policy Authority has requested that Microsoft **remove** our U.S. Government Root CA certificate (Federal Common Policy CA [COMMON]) from Microsoft's globally distributed Certificate Trust List (CTL).
 
 {% include alert-info.html content="The Federal PKI Policy Authority is working with Microsoft on the timeline for removing COMMON. As more information and additional procedures become available, this announcement will be updated. Please watch for updates from the Federal PKI listserves, ICAM listservs, and the ICAM Sub-committee." %} 
 
@@ -20,7 +20,9 @@ Upcoming changes regarding Microsoft's Trusted Root Program could impact your ag
 - [Additional Resources](#additional-resources)
 
 ## How Does This Work?
-Today, Microsoft distributes hundreds of trusted root CA certificates, including COMMON, through its _Trusted Certificate Trust List (CTL)_. Microsoft distributes two CTLs for Windows operating systems for which roots are trusted and which are untrusted. The _Trusted CTL_ (*authrootstl.cab*) adds certificates to the Microsoft Trusted Root CA directory, and the _Untrusted CTL_ (*disallowedcertstl.cab*) removes certificates. For Windows 10 and above only, Microsoft may also include date-based CTL entries.  For example, a date based CTL entry will stop trusting code-signing or server authentication certificates issued after a specific date. 
+Today, Microsoft distributes hundreds of trusted root CA certificates, including COMMON, through its _Certificate Trust List (CTL)_. Microsoft distributes two CTLs for Windows operating systems: which root CAs are trusted, and which CAs are untrusted. The _Trusted CTL_ (*authrootstl.cab*) adds certificates to the Microsoft Trusted Root Certification Authorities certificate store, and the _Untrusted CTL_ (*disallowedcertstl.cab*) adds certificates to the Untrusted Certificates store. 
+
+Starting in Windows 10 and Server 2016, Microsoft may also include date-based CTL entries.  For example, a date based CTL entry will disallow trusting code-signing or server authentication certificates issued after a specific date. 
 
 Microsoft distributes the Trusted and Untrusted CTLs to the following Windows Operating Systems: 
 
@@ -44,13 +46,11 @@ When Microsoft removes COMMON, government users of Windows will receive errors. 
 4. Opening an email in Microsoft Outlook that was digitally signed using a certificate issued by a Federal PKI CA that validates to COMMON.
 5. Opening a Microsoft Office document that was digitally signed with a certificate issued by a Federal PKI CA that validates to COMMON.
 
-{% include alert-info.html content="If you are unsure whether your applications will be affected, email us at: FPKI@gsa.gov." %} 
+{% include alert-info.html content="If you are unsure whether your applications will be affected, email us at: fpki@gsa.gov." %} 
 
-This change will also impact cross-agency or partner users that rely on COMMON (for example, a Department of State user browsing to a Department of Homeland Security website or a Department of Defense employee sending a digitally signed email to a business partner).
+This change will also impact partner users that rely on COMMON (for example, a Department of Defense employee sending a digitally signed email to a business partner).
 
 You can mitigate the risk to government missions, intranets, applications, and government-furnished equipment.
-
-{% include alert-info.html content="The following instructions are for agency network and domain system administrators." %} 
 
 ## What Should I Do?
 
@@ -87,7 +87,7 @@ Use a utility (_certutil_ on Windows or _openssl_ or _sha1sum_ on UNIX platforms
 
 ### Install Using Group Policy Objects
 
-You can add COMMON to the **Trusted Root Certificate Authorities** certificate store by using group policy objects.  
+You can add COMMON to the **Trusted Root Certification Authorities** certificate store by using group policy objects.  
 
 Microsoft TechNet articles and other online resources outline the general procedures for setting up group policy objects.  Specific to the installation of COMMON: 
 
@@ -104,17 +104,17 @@ Microsoft TechNet articles and other online resources outline the general proced
 
 ### Install Using Certutil
 
-You can add COMMON to the **Enterprise Trust Store** certificate store by using _certutil_.
+You can add COMMON to the **Enterprise Trust** certificate store by using _certutil_.
 
 - You must have Enterprise Administrator privileges
 - You can run _certutil_ from a Domain Controller 
-- To publish/add a certificate to the **Enterprise Trust Store**:
+- To publish/add a certificate to the **Enterprise Trust** certificate store:
 
 ```
 	certutil –dspublish –f fcpca.crt RootCA
 ```
 
-- To view all certificates in the **Enterprise Trust Store**:
+- To view all certificates in the **Enterprise Trust** certificate store:
 
 ```
 	certutil –viewstore –enterprise RootCA
@@ -165,7 +165,7 @@ Check your enterprise trust store configurations in your Microsoft domain and de
 
 View where and how a certificate is being installed using the certificates snap-in (certmgr.msc).  Under **View -> Options**, click the **Show _Physical certificate stores_** option.   
 
-If COMMON is already in the Trusted Root Certification Authorities store and the _source_ is a group policy object or the enterprise trust domain, you don't need to reinstall or change. 
+If COMMON is already in the Trusted Root Certification Authorities or Enterprise Trust store and the _source_ is a group policy object or the enterprise trust domain, you don't need to reinstall or change. 
 
 ### 4.&nbsp;&nbsp;Is PIV network login impacted?  
 
@@ -185,7 +185,7 @@ Microsoft Operating Systems use different physical containers and logical views 
 | :--------  | :------------------------------- | :--------- | :----------- |
 | Trusted Root Certification Authorities | Certificate Authorities Container tab|  Root and RootCA | Root | 
 
-It can be confusing--the easiest way is to follow one of the two methods in [What Should I Do?](#what-should-i-do)
+It can be confusing--the easiest model is to follow one of the two methods in [What Should I Do?](#what-should-i-do)
 
 To read detailed information on certificate stores, logical views, physical views, and registry locations: [Managing Certificates with Certificate Stores](https://msdn.microsoft.com/en-us/library/windows/desktop/aa386971(v=vs.85).aspx){:target="_blank"}
 
@@ -198,7 +198,7 @@ All Windows versions from Vista forward are affected.
 ### 9.&nbsp;&nbsp;Can I create a custom CTL for our enterprise?
 Yes, a trusted or untrusted, custom CTL can be created for your agency enterprise: [Creating, Signing, and Storing a CTL](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379867(v=vs.85).aspx){:target="_blank"}.
 
-However, we don't recommend this. Simplicity can help security, and it's simpler to manage a group policy object than a custom CTL.
+However, we don't recommend this. Simplicity can help security, and it can be simpler to manage a group policy object than a custom CTL.
 
 ## Additional Resources
 
