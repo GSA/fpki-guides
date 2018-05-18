@@ -48,7 +48,7 @@ When Microsoft removes COMMON, government users of Windows will receive errors. 
 
 {% include alert-info.html content="If you are unsure whether your applications will be affected, email us at: fpki@gsa.gov." %} 
 
-This change will also impact partner users that rely on COMMON (for example, a Department of Defense employee sending a digitally signed email to a business partner).
+This change will also impact partner users that rely on COMMON. For example, a Department of Defense employee sending a digitally signed email to a business partner.
 
 You can mitigate the risk to government missions, intranets, applications, and government-furnished equipment.
 
