@@ -53,7 +53,7 @@ You can mitigate the risk to government missions, intranets, applications, and g
 
 To limit the impact to your agency, you'll need to install COMMON as a trusted root certificate on all government-furnished, Apple devices. This announcement will be updated as additional methods of redistributing COMMON are identified. 
 
-{% include alert-warning.html content="You should never install a root certificate without verifying it. The attributes below will be referenced in the installation guidance to follow to help verify the authenticity of your local version of COMMON." %} 
+{% include alert-warning.html content="You should never install a root certificate without verifying it. The attributes below will be referenced in the installation guidance to follow to help verify the authenticity of your downloaded copy of COMMON." %} 
 
 | **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
