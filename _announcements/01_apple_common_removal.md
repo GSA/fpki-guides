@@ -24,23 +24,26 @@ Today, Apple distributes hundreds of trusted root CA certificates, including COM
  - **Always Ask** certificates are untrusted but not blocked. When one of these certificates is used, you'll be prompted to choose whether or not to trust it.
  - **Blocked** certificates are believed to be compromised and will never be trusted.
 
-**macOS Versions**
-- High Sierra (10.13)	
-- Sierra (10.12)
-- El Capitan (10.11)
-- Yosemite (10.10)
-- Mavericks (10.9) 
+|**macOS Versions**|
+| :-------- |
+| High Sierra (10.13) |	
+| Sierra (10.12) |
+| El Capitan (10.11) |
+| Yosemite (10.10) |
+| Mavericks (10.9) |
 	
-**iOS Versions**
-- iOS11
-- iOS10
-- iOS9
-- iOS8
-- iOS7
+|**iOS Versions**|
+| :-------- |
+| iOS11 |
+| iOS10 |
+| iOS9 |
+| iOS8 |
+| iOS7 |
 
-**tvOS Versions**
-- tvOS11
-- tvOS10
+| **tvOS Versions** |
+| :-------- |
+| tvOS11 |
+| tvOS10 |
 
 ## What Will Be Impacted?
 When Apple removes COMMON, government users of iOS, macOS, and tvOS will receive errors. Errors will occur in the following scenarios:
@@ -83,15 +86,18 @@ The following guidance can be used to redistribute COMMON into the macOS Trust S
 - Double-click the *Terminal* icon. A terminal window will open.
 
 2. Download a copy of the Federal Common Policy CA by entering the following command.
-```curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt" ```
+<br>
+```$ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt" ```
 
 3. Verify the hash of the downloaded certificate by entering the following command.
-```shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt ```
+<br>
+```$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt ```
 
 Verify the hash matches the SHA-256 Thumprint listed [above](#what-should-i-do).  
 
 4. Install COMMON as a Trusted Root by entering the following command.
-```sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt ```
+<br>
+```$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt ```
 
 #### Using Apple Keychain (Graphical User Interface Based Instructions)
 [STEPS TBD]
