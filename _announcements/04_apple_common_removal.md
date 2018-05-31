@@ -5,7 +5,7 @@ title: Federal Common Policy CA Removal from Apple Trust Stores Impact
 pubDate: June 04, 2018
 collection: announcements
 permalink: announcements/applepkichanges/
-description: The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Trust Stores, to include iOS, macOS, and tvOS. <br><br> This change will cause Apple device users to receive errors when encountering instances of a Federal PKI CA-issued certificate. The expected removal timeline is in the Apple release cycle between September and October of 2018. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This announcement will be updated with new information and procedures as soon as they are available.   
+description: The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Trust Stores, to include iOS, macOS, and tvOS. <br><br> This change will cause Apple device users to receive errors when encountering instances of a Federal PKI CA-issued certificate. The expected removal timeline is in the Apple release cycle between September and October of 2018. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This announcement will be updated with new information and procedures as soon as they are available.
 ---
 
 The Federal PKI Policy Authority has requested that Apple **remove** our U.S. Government Root certification authority (CA) certificate (Federal Common Policy CA [COMMON]) from Apple's globally distributed, preinstalled operating system Trust Stores. This is similar to the effort to remove COMMON from the [Microsoft Certificate Trust List (CTL)](https://fpki.idmanagement.gov/announcements/mspkichanges/){:target="_blank"}. This announcement will describe background, impact, and mitigating actions agencies can take to prevent degredation of user capabilities upon the removal of COMMON. 
@@ -19,7 +19,7 @@ The Federal PKI Policy Authority has requested that Apple **remove** our U.S. Go
 - [Additional Resources](#additional-resources)
 
 ## How Does This Work?
-Today, Apple distributes hundreds of trusted root CA certificates, including COMMON, in the default operating system Trust Store for iOS, macOS, and tvOS. Apple's Trust Stores contains three categories of certificates:
+Today, Apple distributes hundreds of trusted root CA certificates, including COMMON, in the default operating system Trust Store for iOS, macOS, and tvOS. Apple's Trust Stores contain three categories of certificates:
  - **Trusted certificates** establish a chain of trust that verifies other certificates signed by the trusted roots—for example, to establish a secure connection to a web server. 
  - **Always Ask** certificates are untrusted but not blocked. When one of these certificates is used, you'll be prompted to choose whether or not to trust it.
  - **Blocked** certificates are believed to be compromised and will never be trusted.
@@ -43,7 +43,7 @@ Today, Apple distributes hundreds of trusted root CA certificates, including COM
 - tvOS10
 
 ## What Will Be Impacted?
-When Apple removes COMMON, government users of iOS, macOS, and tvOS will receive errors. Errors will occur in the following scenarios:  
+When Apple removes COMMON, government users of iOS, macOS, and tvOS will receive errors. Errors will occur in the following scenarios:
 1. Performing smartcard logon to the government networks using PIV credentials 
 2. Authenticating to the government virtual private network endpoints (VPNs) using PIV credentials 
 3. Authenticating to the government internet facing authentication and collaboration portals
@@ -70,7 +70,7 @@ The following guidance can be used to redistribute COMMON into the macOS Trust S
 #### Using Apple Keychain
 [STEPS TBD]
 
-### iOS ###  
+### iOS ###
 The following guidance can be used to redistribute COMMON into the iOS Trust Store.
 
 #### Using Safari ####
@@ -82,36 +82,33 @@ The following guidance can be used to redistribute COMMON into the iOS Trust Sto
 The Federal PKI CAs don't comply with Apple's requirements for globally trusted TLS/SSL certificates. Apple's requirements include: 
 
 **a.&nbsp;&nbsp;Requirement for Fully-Qualified Domain Names (FQDNs)**<br>
-Apple plans to restrict TLS/SSL certificates to only those certificates using FQDNs ending in .gov, .mil, or fed.us.  Some Federal agencies issue TLS/SSL certificates to intranet assets.  These certificates either:&nbsp;&nbsp;don't have FQDNs; contain intranet domains that don't end in .gov, .mil, or fed.us; or use short names (aliases). Under Apple's requirements, these agencies would need to reissue, re-install, and reconfigure all "non-compliant" certificates and applications.  The Federal PKI community has determined that this would have a negative impact on mission applications on the intranets.
+Apple plans to restrict TLS/SSL certificates to only those certificates using FQDNs ending in .gov, .mil, or fed.us. Some Federal agencies issue TLS/SSL certificates to intranet assets. These certificates either:&nbsp;&nbsp;don't have FQDNs; contain intranet domains that don't end in .gov, .mil, or fed.us; or use short names (aliases). Under Apple's requirements, these agencies would need to reissue, re-install, and reconfigure all "non-compliant" certificates and applications. The Federal PKI community has determined that this would have a negative impact on mission applications on the intranets.
 
 **b.&nbsp;&nbsp;Requirement for public audit**<br>
-The Federal PKI follows a government auditing standard, and we have not restricted our issuance of TLS/SSL certificates to only the .gov and .mil domains. Under the requirements, all CAs in Federal PKI that could issue TLS/SSL certificates are required to submit a non-government audit or be technically constrained.  Federal PKI has **not** technically constrained our CAs.  
+The Federal PKI follows a government auditing standard, and we have not restricted our issuance of TLS/SSL certificates to only the .gov and .mil domains. Under the requirements, all CAs in Federal PKI that could issue TLS/SSL certificates are required to submit a non-government audit or be technically constrained. Federal PKI has **not** technically constrained our CAs.
 
 **c.&nbsp;&nbsp;Requirement to disclose Certificate Practice Statements and Incident Post-Mortem Reports**<br>
-Public trust requires public disclosure and transparency.  All Federal PKI CAs would be required to publicly post their Certificate Practice Statements and their Audit Letters.  The Federal PKI community has attempted to disclose all Certificate Practice Statements for a number of years.  However, some federal agencies include sensitive information in these documents and cannot disclose the documents publicly.  
+Public trust requires public disclosure and transparency. All Federal PKI CAs would be required to publicly post their Certificate Practice Statements and their Audit Letters. The Federal PKI community has attempted to disclose all Certificate Practice Statements for a number of years. However, some federal agencies include sensitive information in these documents and cannot disclose the documents publicly.
 
 **d.&nbsp;&nbsp;Requirement to create new issuing Certification Authorities (CAs)**<br>
-Any Federal PKI CA that issues TLS/SSL, code-signing, or email-signing certificates would have to establish a new CA for each type of certificate. This effort requires time, planning, and funding.   
+Any Federal PKI CA that issues TLS/SSL, code-signing, or email-signing certificates would have to establish a new CA for each type of certificate. This effort requires time, planning, and funding.
 
-### 2.&nbsp;&nbsp;How can I determine which of our intranet websites and applications will be impacted, including those used by cross-agency users?  
+### 2.&nbsp;&nbsp;How can I determine which of our intranet websites and applications will be impacted, including those used by cross-agency users?
 All Apple-based resources and applications configured with certificates (email, Virtual Private Network, digital signature, MDM profiles, etc.) issued by a Federal PKI CA that validates to COMMON will be impacted. For agencies and mission partners that are cross-certified with the FBCA, external users could also be impacted if COMMON is used instead of your root.
 
 You can run a report on all issued certificates or, if your agency has an agreement with a Federal PKI Shared Service Provider (SSP), you can request that the SSP run the report.
 
-You can scan your intranet websites in coordination with your CISO teams.  There are existing tools to use, or you can use the DHS NCATS "**pshtt**" tool, which will also check for cipher suites and mis-configurations on the intranet websites:  
+You can scan your intranet websites in coordination with your CISO teams. There are existing tools to use, or you can use the DHS NCATS "**pshtt**" tool, which will also check for cipher suites and mis-configurations on the intranet websites:
 
 - DHS NCATS [**pshtt**](https://github.com/dhs-ncats/pshtt){:target="_blank"} 
 
-**Note:**&nbsp;&nbsp;This tool will look for not just Federal PKI certificates.  Its outputs will include all certificates and information.
+**Note:**&nbsp;&nbsp;This tool will look for not just Federal PKI certificates. Its outputs will include all certificates and information.
 
-### 3.&nbsp;&nbsp;Is PIV network login impacted?  
+### 3.&nbsp;&nbsp;Is PIV network login impacted?
 Yes. 
 
-### 4.&nbsp;&nbsp;Do I need to remove the "baked-in" version of COMMON?  
-No, don't remove COMMON.  When Apple does the update for the Trust Store, it will be removed during normal patching cycles. 
-
-### 5.&nbsp;&nbsp;What versions are affected?
-All Windows versions from Vista forward are affected. 
+### 4.&nbsp;&nbsp;What versions are affected?
+Please see [above](#how-does-this-work). 
 
 ## Additional Resources
 1. [List of available trusted root certificates in macOS](https://support.apple.com/en-us/HT202858){:target="_blank"}
