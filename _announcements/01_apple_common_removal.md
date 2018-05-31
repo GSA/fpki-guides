@@ -10,7 +10,7 @@ description: The Federal PKI Policy Authority has elected to remove our U.S. Gov
 
 The Federal PKI Policy Authority has requested that Apple **remove** our U.S. Government Root certification authority (CA) certificate (Federal Common Policy CA [COMMON]) from Apple's globally distributed, preinstalled Operating System Trust Stores. This is similar to the effort to remove COMMON from the [Microsoft Certificate Trust List (CTL)](https://fpki.idmanagement.gov/announcements/mspkichanges/){:target="_blank"}. This announcement will describe background, impact, and mitigating actions agencies can take to prevent degredation of user capabilities upon the removal of COMMON. 
 
-{% include alert-info.html content="The Federal PKI Policy Authority has requested the removal of COMMON from the preinstalled Apple device Trust Stores to include iOS, macOS, and tvOS, with an expected timeframe between September and October of 2018. This announcement will be updated as more information is made available. Please watch for updates from the Federal PKI listserves, ICAM listservs, and the ICAM Sub-committee." %}
+{% include alert-info.html content="The Federal PKI Policy Authority has requested the removal of COMMON from the preinstalled Apple device Trust Stores to include iOS, macOS, and tvOS, with an expected timeframe between September and October of 2018. This announcement will be updated as more information is made available. Please watch for additional updates from the Federal PKI listserves, ICAM listservs, and the ICAM Sub-committee." %}
 
 - [How Does this Work?](#how-does-this-work)
 - [What Will Be Impacted?](#what-will-be-impacted)
@@ -19,10 +19,10 @@ The Federal PKI Policy Authority has requested that Apple **remove** our U.S. Go
 - [Additional Resources](#additional-resources)
 
 ## How Does This Work?
-Today, Apple distributes hundreds of trusted root CA certificates, including COMMON, in the default operating system Trust Store for iOS, macOS, and tvOS. Apple's Trust Stores contain three categories of certificates:
- - **Trusted certificates** establish a chain of trust that verifies other certificates signed by the trusted roots—for example, to establish a secure connection to a web server. 
+Today, Apple distributes over two hundred trusted root CA certificates, including COMMON, in the default operating system Trust Store for iOS, macOS, and tvOS. Apple's Trust Stores contain three categories of certificates:
+ - **Trusted certificates** establish a chain of trust that verifies other certificates signed by the trusted roots — for example, to establish a secure connection to a web server. 
  - **Always Ask** certificates are untrusted but not blocked. When one of these certificates is used, you'll be prompted to choose whether or not to trust it.
- - **Blocked** certificates are believed to be compromised and will never be trusted.
+ - **Blocked** certificates that are believed to be compromised and will never be trusted.
 
 COMMON is preinstalled in the following Apple Operating System Trust Stores:
 
@@ -47,13 +47,12 @@ When Apple removes COMMON, government users of iOS, macOS, and tvOS will receive
 
 This change will also impact partner users that rely on COMMON. For example, a Department of Defense employee sending a digitally signed email to a business partner.
 
-You can mitigate the risk to government missions, intranets, applications, and government-furnished equipment.
+You can mitigate the risk to government missions, intranets, applications, and government-furnished equipment by following the guidance in this announcement.
 
 ## What Should I Do?
+To limit the impact to your agency, you'll need to install COMMON as a trusted root certificate on all government-furnished, Apple devices. Several, but not all methods are presented below. This announcement will be updated as additional methods of redistributing COMMON are identified. 
 
-To limit the impact to your agency, you'll need to install COMMON as a trusted root certificate on all government-furnished, Apple devices. This announcement will be updated as additional methods of redistributing COMMON are identified. 
-
-{% include alert-warning.html content="You should never install a root certificate without verifying it. The attributes below will be referenced in the installation guidance to follow to help verify the authenticity of your downloaded copy of COMMON." %} 
+{% include alert-warning.html content="You should never install a root certificate without verifying it. The attributes below will be referenced in the following installation guidance to help verify the authenticity of your downloaded copy of COMMON." %} 
 
 | **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
@@ -66,12 +65,12 @@ To limit the impact to your agency, you'll need to install COMMON as a trusted r
 ### macOS
 The following guidance can be used to redistribute COMMON into the macOS Trust Store. 
 
-*Note:* In all instances below, replace {DOWNLOAD_LOCATION} with your preferred file download location.
+*Note:* In all instances below, replace {DOWNLOAD_LOCATION} with your preferred file download location (e.g., /Users/Sam Jackson/Downloads).
 
 #### Using Terminal (Command Line Based Instructions)
 1. Open Terminal.
 - Click the *Spotlight* icon. It's the magnifying glass in the upper-right corner of the screen.
-- Start typing `terminal` in the search field. Do so until the Terminal icon appears.
+- Start typing `terminal` in the search field. Do so until the Terminal icon appears. It is a black icon with a white "greater than" and underscore symbol (e.g., ">_") in the top left corner.
 - Double-click the *Terminal* icon. A terminal window will open.
 
 2. Download a copy of the Federal Common Policy CA by entering the following command.
@@ -176,17 +175,15 @@ The sample Configuration Profile listed below will install COMMON as a trusted r
 ```
 The Configuration Profile above was created using Apple's free Configurator 2 Application. High-level steps to recreate the profile can be followed below:
 
-1) Download and Install Apple Configurator 2
+1. Download and Install Apple Configurator 2
+2. Open Configurator and click *File* -> *New Profile*
+3. Under *General* enter a unique profile *Name*. In the example above, "Federal Common Policy Certification Authority Profile" was used.
+4. Enter a unique *Identifier* for the profile. In the example above, "FCPCA-0001" was used.
+5. Select the *Certificates* you'd like to add to the profile by browsing to local copies stored on your workstation. In the example above, a copy of the Federal Common Policy CA certificate was used.
+6. Click *File* -> *Save* and save the Profile to a known file location.
+7. Close Apple Configurator 2
 
-2) Open Configurator and click *File* -> *New Profile*
-<br>
-3) Under *General* enter a unique profile *Name*. In the example above, "Federal Common Policy Certification Authority Profile" was used.
-4) Enter a unique *Identifier* for the profile. In the example above, "FCPCA-0001" was used.
-5) Select the *Certificates* you'd like to add to the profile by browsing to local copies stored on your workstation. In the example above, a copy of the Federal Common Policy CA certificate was used.
-
-6) Click *File* -> *Save* and save the Profile to a known file location.
-
-7) Close Apple Configurator 2
+Profiles can be installed manually by double clicking on the file, or through automated means via Apple workstation/mobile device configuration management applications. 
 
 ### iOS 
 The following guidance can be used to redistribute COMMON into the iOS Trust Store.
@@ -195,8 +192,7 @@ The following guidance can be used to redistribute COMMON into the iOS Trust Sto
 [STEPS TBD]
 
 #### Using Apple Configuration Profile (Graphical User Interface Based Instructions)
-
-[STEPS TBD]
+Please see macOS instructions above.
 
 ## Frequently Asked Questions
 
