@@ -76,17 +76,17 @@ The following guidance can be used to redistribute COMMON into the macOS Trust S
 
 2. Download a copy of the Federal Common Policy CA by entering the following command.
 <br>
-```$ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt" ```
+``` $ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt" ```
 
 3. Verify the hash of the downloaded certificate by entering the following command.
 <br>
-```$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt ```
+``` $ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt ```
 
 Verify the hash matches the SHA-256 Thumprint listed [above](#what-should-i-do).  
 
 4. Install COMMON as a Trusted Root by entering the following command.
 <br>
-```$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt ```
+``` $ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt ```
 
 #### Using Apple Keychain (Graphical User Interface Based Instructions)
 [STEPS TBD]
