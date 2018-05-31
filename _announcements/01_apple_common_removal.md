@@ -61,13 +61,39 @@ You can mitigate the risk to government missions, intranets, applications, and g
 
 To limit the impact to your agency, you'll need to install COMMON as a trusted root certificate on all government-furnished, Apple devices. This announcement will be updated as additional methods of redistributing COMMON are identified. 
 
+{% include alert-warning.html content="You should never install a root certificate without verifying it. The attributes below will be referenced in the installation guidance to follow to help verify the authenticity of your local version of COMMON." %} 
+
+| **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
+| :--------  | :-------------------------------     |
+| Federal Common Policy CA<br>(sometimes shown as _U.S. Government Common Policy_) | http://http.fpki.gov/fcpca/fcpca.crt |
+| Distinguished Name | cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US |
+| SHA-1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
+| SHA-256 Thumbprint | 89 4e bc 0b 23 da 2a 50 c0 18 6b 7f 8f 25 ef 1f 6b 29 35 af 32 a9 45 84 ef 80 aa f8 77 a3 a0 6e |
+
 ### macOS ###
-The following guidance can be used to redistribute COMMON into the macOS Trust Store.
+The following guidance can be used to redistribute COMMON into the macOS Trust Store. 
 
-#### Using Terminal ####
-[STEPS TBD]
+*Note:* In all instances below, replace {DOWNLOAD_LOCATION} with your preferred file download location.
 
-#### Using Apple Keychain
+#### Using Terminal (Command Line Based Instructions) ####
+
+1. Open Terminal.
+- Click the *Spotlight* icon. It's the magnifying glass in the upper-right corner of the screen.
+- Start typing `terminal` in the search field. Do so until the Terminal icon appears.
+- Double-click the *Terminal* icon. A terminal window will open.
+
+2. Download a copy of the Federal Common Policy CA by entering the following command.
+```curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt" ```
+
+3. Verify the hash of the downloaded certificate by entering the following command.
+```shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt ```
+
+Verify the hash matches the SHA-256 Thumprint listed [above](#what-should-i-do).  
+
+4. Install COMMON as a Trusted Root by entering the following command.
+```sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt ```
+
+#### Using Apple Keychain (Graphical User Interface Based Instructions)
 [STEPS TBD]
 
 ### iOS ###
