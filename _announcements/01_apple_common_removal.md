@@ -69,34 +69,133 @@ The following guidance can be used to redistribute COMMON into the macOS Trust S
 *Note:* In all instances below, replace {DOWNLOAD_LOCATION} with your preferred file download location.
 
 #### Using Terminal (Command Line Based Instructions)
-
 1. Open Terminal.
 - Click the *Spotlight* icon. It's the magnifying glass in the upper-right corner of the screen.
 - Start typing `terminal` in the search field. Do so until the Terminal icon appears.
 - Double-click the *Terminal* icon. A terminal window will open.
 
 2. Download a copy of the Federal Common Policy CA by entering the following command.
-<br>
-*$ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt"*
+```
+$ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt"
+```
 
 3. Verify the hash of the downloaded certificate matches the SHA-256 Thumprint listed [above](#what-should-i-do) by entering the following command.
-<br>
-*$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt*
+```
+$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
+```
 
 4. Install COMMON as a Trusted Root by entering the following command.
-<br>
-*$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt*
+```
+$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
+```
 
 #### Using Apple Keychain (Graphical User Interface Based Instructions)
 [STEPS TBD]
 
-#### Using Apple Mobile Configuration Profile (Graphical User Interface Based Instructions)
-[STEPS TBD]
+#### Using Apple Configuration Profile (Graphical User Interface Based Instructions)
+An Apple Configuration Profile is an XML file that allows you to distribute configuration information across an Enterprise. This is a common method for distributing trusted root certificates to macOS and iOS devices. 
+
+There are five ways to deploy configuration profiles to devices:
+- Using Apple Configurator 2 with the device connected via USB
+- In an email message
+- On a webpage
+- Using over-the-air configuration as described in Over-the-Air Profile Delivery and Configuration
+- Over the air using a Mobile Device Management Server
+
+The sample Configuration Profile listed below will install COMMON as a trusted root certification authority on both macOS and iOS. To repurpose the Profile below after verifying its suitability for your agency, save it with a .plist extension.  
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadCertificateFileName</key>
+			<string>fcpca.crt</string>
+			<key>PayloadContent</key>
+			<data>
+			MIIEYDCCA0igAwIBAgICATAwDQYJKoZIhvcNAQELBQAwWTELMAkG
+			A1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsG
+			A1UECxMERlBLSTEhMB8GA1UEAxMYRmVkZXJhbCBDb21tb24gUG9s
+			aWN5IENBMB4XDTEwMTIwMTE2NDUyN1oXDTMwMTIwMTE2NDUyN1ow
+			WTELMAkGA1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVu
+			dDENMAsGA1UECxMERlBLSTEhMB8GA1UEAxMYRmVkZXJhbCBDb21t
+			b24gUG9saWN5IENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+			CgKCAQEA2HX7NRY0WkG/Wq9cMAQUHK14RLXqJup1YcfNNnn4fNi9
+			KVFmWSHjeavUeL6wLbCh1bI1FiPQzB6+Duir3MPJ1hLXp3JoGDG4
+			FyKyPn66CG3G/dFYLGmgA/Aqo/Y/ISU937cyxY4nsyOl4FKzXZbp
+			sLjFxZ+7xaBugkC7xScFNknWJidpDDSPzyd6KgqjQV+NHQOGgxXg
+			VcHFmCye7Bpy3EjBPvmE0oSCwRvDdDa3ucc2Mnr4MrbQNq4iGDGM
+			UHMhnv6DOzCIJOPpwX7e7ZjHH5IQip9bYi+dpLzVhW86/clTpyBL
+			qtsgqyFOHQ1O5piF5asRR12dP8QjwOMUBm7+nQIDAQABo4IBMDCC
+			ASwwDwYDVR0TAQH/BAUwAwEB/zCB6QYIKwYBBQUHAQsEgdwwgdkw
+			PwYIKwYBBQUHMAWGM2h0dHA6Ly9odHRwLmZwa2kuZ292L2ZjcGNh
+			L2NhQ2VydHNJc3N1ZWRCeWZjcGNhLnA3YzCBlQYIKwYBBQUHMAWG
+			gYhsZGFwOi8vbGRhcC5mcGtpLmdvdi9jbj1GZWRlcmFsJTIwQ29t
+			bW9uJTIwUG9saWN5JTIwQ0Esb3U9RlBLSSxvPVUuUy4lMjBHb3Zl
+			cm5tZW50LGM9VVM/Y0FDZXJ0aWZpY2F0ZTtiaW5hcnksY3Jvc3ND
+			ZXJ0aWZpY2F0ZVBhaXI7YmluYXJ5MA4GA1UdDwEB/wQEAwIBBjAd
+			BgNVHQ4EFgQUrQx6dVzl85jEeZgOrCj9l/TnAvwwDQYJKoZIhvcN
+			AQELBQADggEBAI9z2uF/gLGH9uwsz9GEYx728Yi3mvIRte9UrYpu
+			GDco71wb5O9Qt2wmGCMiTR0mRyDpCZzicGJxqxHPkYnos/UqoEfA
+			FMtOQsHdDA4b8Idb7OV316rgVNdF9IU+7LQd3nyKf1tNnJaK0KIy
+			n9psMQz4pO9+c+iR3Ah6cFqgr2KBWfgAdKLI3VTKQVZHvenAT+0g
+			3eOlCd+uKML80cgX2BLHb94u6b2akfI8WpQukSKAiaGMWMyDeiYZ
+			dQKlDn0KJnNR6obLB6jI/WNaNZvSr79PMUjBhHDbNXuaGQ/lj/Rq
+			DG8z2esccKIN47lQA2EC/0rskqTcLe4qNJMHtyznGI8=
+			</data>
+			<key>PayloadDescription</key>
+			<string>Adds a CA root certificate</string>
+			<key>PayloadDisplayName</key>
+			<string>Federal Common Policy CA</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.security.root.1EB75E7D-C3BC-46C2-AF42-51D80A2E12FC</string>
+			<key>PayloadType</key>
+			<string>com.apple.security.root</string>
+			<key>PayloadUUID</key>
+			<string>1EB75E7D-C3BC-46C2-AF42-51D80A2E12FC</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>Federal Common Policy Certification Authority Profile</string>
+	<key>PayloadIdentifier</key>
+	<string>FCPCA-0001</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>AAD17D9A-DA41-4197-9F0F-3C3C6B4512F9</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
+```
+The Configuration Profile above was created using Apple's free Configurator 2 Application. High-level steps to recreate the profile can be followed below:
+
+1) Download and Install Apple Configurator 2
+
+2) Open Configurator and click *File* -> *New Profile*
+<br>
+3) Under *General* enter a unique profile *Name*. In the example above, "Federal Common Policy Certification Authority Profile" was used.
+4) Enter a unique *Identifier* for the profile. In the example above, "FCPCA-0001" was used.
+5) Select the *Certificates* you'd like to add to the profile by browsing to local copies stored on your workstation. In the example above, a copy of the Federal Common Policy CA certificate was used.
+
+6) Click *File* -> *Save* and save the Profile to a known file location.
+
+7) Close Apple Configurator 2
 
 ### iOS 
 The following guidance can be used to redistribute COMMON into the iOS Trust Store.
 
 #### Using Safari 
+[STEPS TBD]
+
+#### Using Apple Configuration Profile (Graphical User Interface Based Instructions)
+
 [STEPS TBD]
 
 ## Frequently Asked Questions
@@ -137,3 +236,4 @@ Please see [above](#how-does-this-work).
 1. [List of available trusted root certificates in macOS](https://support.apple.com/en-us/HT202858){:target="_blank"}
 1. [List of available trusted root certificates in iOS](https://support.apple.com/en-us/HT204132){:target="_blank"}
 1. [List of available trusted root certificates in tvOS](https://support.apple.com/en-us/HT207231){:target="_blank"}
+1. [Apple Configuration Profile Reference](https://developer.apple.com/library/content/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html){:target="_blank"}
