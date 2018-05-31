@@ -24,27 +24,16 @@ Today, Apple distributes hundreds of trusted root CA certificates, including COM
  - **Always Ask** certificates are untrusted but not blocked. When one of these certificates is used, you'll be prompted to choose whether or not to trust it.
  - **Blocked** certificates are believed to be compromised and will never be trusted.
 
-|**macOS Versions**|
-| :-------- |
-| High Sierra (10.13) |	
-| Sierra (10.12) |
-| El Capitan (10.11) |
-| Yosemite (10.10) |
-| Mavericks (10.9) |
+COMMON is preinstalled in the following Apple Operating System Trust Stores:
+
+|**macOS Versions**|**iOS Versions**|**tvOS Versions**|
+| :-------- |:-------- |:-------- |
+| High Sierra (10.13) |	 iOS11 | tvOS11 |
+| Sierra (10.12) | iOS10 | tvOS10 |
+| El Capitan (10.11) | iOS9 | |
+| Yosemite (10.10) |  iOS8 | |
+| Mavericks (10.9) |  iOS7 | |
 	
-|**iOS Versions**|
-| :-------- |
-| iOS11 |
-| iOS10 |
-| iOS9 |
-| iOS8 |
-| iOS7 |
-
-| **tvOS Versions** |
-| :-------- |
-| tvOS11 |
-| tvOS10 |
-
 ## What Will Be Impacted?
 When Apple removes COMMON, government users of iOS, macOS, and tvOS will receive errors. Errors will occur in the following scenarios:
 1. Performing smartcard logon to the government networks using PIV credentials 
