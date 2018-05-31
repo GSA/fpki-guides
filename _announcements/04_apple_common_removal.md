@@ -7,8 +7,8 @@ collection: announcements
 permalink: announcements/applepkichanges/
 description: The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Trust Stores, to include iOS, macOS, and tvOS. <br><br> This change will cause Apple device users to receive errors when encountering instances of a Federal PKI CA-issued certificate. The expected removal timeline is in the Apple release cycle between September and October of 2018. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This announcement will be updated with new information and procedures as soon as they are available.   
 ---
-<br>
-The Federal PKI Policy Authority has requested that Apple **remove** our U.S. Government Root certification authority (CA) certificate (Federal Common Policy CA [COMMON]) from Apple's globally distributed, preinstalled operating system Trust Stores. This is similar to the effort to remove COMMON from the [Microsoft](https://fpki.idmanagement.gov/announcements/mspkichanges/){:target="_blank"} Certificate Trust List (CTL). This announcement will describe background, impact, and mitigating actions agencies can take to prevent degredation of user capabilities upon the removal of COMMON. 
+
+The Federal PKI Policy Authority has requested that Apple **remove** our U.S. Government Root certification authority (CA) certificate (Federal Common Policy CA [COMMON]) from Apple's globally distributed, preinstalled operating system Trust Stores. This is similar to the effort to remove COMMON from the [Microsoft Certificate Trust List (CTL)](https://fpki.idmanagement.gov/announcements/mspkichanges/){:target="_blank"}. This announcement will describe background, impact, and mitigating actions agencies can take to prevent degredation of user capabilities upon the removal of COMMON. 
 
 {% include alert-info.html content="The Federal PKI Policy Authority has requested the removal of COMMON from the preinstalled Apple device Trust Stores to include iOS, macOS, and tvOS, with an expected timeframe between September and October of 2018. This announcement will be updated as more information is made available. Please watch for updates from the Federal PKI listserves, ICAM listservs, and the ICAM Sub-committee." %}
 
@@ -20,37 +20,36 @@ The Federal PKI Policy Authority has requested that Apple **remove** our U.S. Go
 
 ## How Does This Work?
 Today, Apple distributes hundreds of trusted root CA certificates, including COMMON, in the default operating system Trust Store for iOS, macOS, and tvOS. Apple's Trust Stores contains three categories of certificates:
- - ** Trusted certificates ** establish a chain of trust that verifies other certificates signed by the trusted roots—for example, to establish a secure connection to a web server. 
- - ** Always Ask ** certificates are untrusted but not blocked. When one of these certificates is used, you'll be prompted to choose whether or not to trust it.
- - ** Blocked ** certificates are believed to be compromised and will never be trusted.
+ - **Trusted certificates** establish a chain of trust that verifies other certificates signed by the trusted roots—for example, to establish a secure connection to a web server. 
+ - **Always Ask** certificates are untrusted but not blocked. When one of these certificates is used, you'll be prompted to choose whether or not to trust it.
+ - **Blocked** certificates are believed to be compromised and will never be trusted.
 
- ** macOS Versions **
-	- High Sierra (10.13)	
-	- Sierra (10.12)
-	- El Capitan (10.11)
-	- Yosemite (10.10)
-	- Mavericks (10.9) 
+**macOS Versions**
+- High Sierra (10.13)	
+- Sierra (10.12)
+- El Capitan (10.11)
+- Yosemite (10.10)
+- Mavericks (10.9) 
 	
- ** iOS Versions **
-	- iOS11
-	- iOS10
-	- iOS9
-	- iOS8
-	- iOS7
+**iOS Versions**
+- iOS11
+- iOS10
+- iOS9
+- iOS8
+- iOS7
 
- ** tvOS Versions **
-    - tvOS11
-	- tvOS10
+**tvOS Versions**
+- tvOS11
+- tvOS10
 
 ## What Will Be Impacted?
 When Apple removes COMMON, government users of iOS, macOS, and tvOS will receive errors. Errors will occur in the following scenarios:  
-
-2. Performing smartcard logon to the government networks using PIV credentials 
+1. Performing smartcard logon to the government networks using PIV credentials 
 2. Authenticating to the government virtual private network endpoints (VPNs) using PIV credentials 
-2. Authenticating to the government internet facing authentication and collaboration portals
-3. Browsing with Safari, Chrome, Edge, or Internet Explorer browsers to a government **intranet** website that has a TLS/SSL certificate issued by a Federal PKI CA that validates to COMMMON. 
-4. Opening an email in Apple Mail or Microsoft Outlook that was digitally signed using a certificate issued by a Federal PKI CA that validates to COMMON.
-5. Opening a Microsoft Office document that was digitally signed with a certificate issued by a Federal PKI CA that validates to COMMON.
+3. Authenticating to the government internet facing authentication and collaboration portals
+4. Browsing with Safari, Chrome, Edge, or Internet Explorer browsers to a government **intranet** website that has a TLS/SSL certificate issued by a Federal PKI CA that validates to COMMMON. 
+5. Opening an email in Apple Mail or Microsoft Outlook that was digitally signed using a certificate issued by a Federal PKI CA that validates to COMMON.
+6. Opening a Microsoft Office document that was digitally signed with a certificate issued by a Federal PKI CA that validates to COMMON.
 
 {% include alert-info.html content="If you are unsure whether your applications will be affected, email us at: fpki@gsa.gov." %} 
 
@@ -63,15 +62,19 @@ You can mitigate the risk to government missions, intranets, applications, and g
 To limit the impact to your agency, you'll need to install COMMON as a trusted root certificate on all government-furnished, Apple devices. This announcement will be updated as additional methods of redistributing COMMON are identified. 
 
 ### macOS ###
+The following guidance can be used to redistribute COMMON into the macOS Trust Store.
 
 #### Using Terminal ####
+[STEPS TBD]
 
 #### Using Apple Keychain
+[STEPS TBD]
 
 ### iOS ###  
+The following guidance can be used to redistribute COMMON into the iOS Trust Store.
 
 #### Using Safari ####
-
+[STEPS TBD]
 
 ## Frequently Asked Questions
 
@@ -91,7 +94,7 @@ Public trust requires public disclosure and transparency.  All Federal PKI CAs w
 Any Federal PKI CA that issues TLS/SSL, code-signing, or email-signing certificates would have to establish a new CA for each type of certificate. This effort requires time, planning, and funding.   
 
 ### 2.&nbsp;&nbsp;How can I determine which of our intranet websites and applications will be impacted, including those used by cross-agency users?  
-All Apple-based websites and applications configured with certificates (email, Virtual Private Network, digital signature, etc.) issued by a Federal PKI CA that validates to COMMON will be impacted. For agencies and mission partners that are cross-certified with the FBCA, external users could also be impacted if COMMON is used instead of your root.
+All Apple-based resources and applications configured with certificates (email, Virtual Private Network, digital signature, MDM profiles, etc.) issued by a Federal PKI CA that validates to COMMON will be impacted. For agencies and mission partners that are cross-certified with the FBCA, external users could also be impacted if COMMON is used instead of your root.
 
 You can run a report on all issued certificates or, if your agency has an agreement with a Federal PKI Shared Service Provider (SSP), you can request that the SSP run the report.
 
