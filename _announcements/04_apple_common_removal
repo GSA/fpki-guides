@@ -7,10 +7,10 @@ collection: announcements
 permalink: announcements/applepkichanges/
 description: The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Trust Stores, to include iOS, macOS, and tvOS. <br><br> This change will cause Apple device users to receive errors when encountering instances of a Federal PKI CA-issued certificate. The expected removal timeline is in the Apple release cycle between September and October of 2018. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This announcement will be updated with new information and procedures as soon as they are available.   
 ---
-
+<br>
 The Federal PKI Policy Authority has requested that Apple **remove** our U.S. Government Root certification authority (CA) certificate (Federal Common Policy CA [COMMON]) from Apple's globally distributed, preinstalled operating system Trust Stores. This is similar to the effort to remove COMMON from the [Microsoft](https://fpki.idmanagement.gov/announcements/mspkichanges/){:target="_blank"} Certificate Trust List (CTL). This announcement will describe background, impact, and mitigating actions agencies can take to prevent degredation of user capabilities upon the removal of COMMON. 
 
-{% include alert-info.html content="The Federal PKI Policy Authority has requested the removal of COMMON from the preinstalled Apple device Trust Stores to include iOS, macOS, and tvOS, with an expected timeframe between September and October of 2018. This announcement will be updated as more information is made available. Please watch for updates from the Federal PKI listserves, ICAM listservs, and the ICAM Sub-committee." %} 
+{% include alert-info.html content="The Federal PKI Policy Authority has requested the removal of COMMON from the preinstalled Apple device Trust Stores to include iOS, macOS, and tvOS, with an expected timeframe between September and October of 2018. This announcement will be updated as more information is made available. Please watch for updates from the Federal PKI listserves, ICAM listservs, and the ICAM Sub-committee." %}
 
 - [How Does this Work?](#how-does-this-work)
 - [What Will Be Impacted?](#what-will-be-impacted)
@@ -20,9 +20,9 @@ The Federal PKI Policy Authority has requested that Apple **remove** our U.S. Go
 
 ## How Does This Work?
 Today, Apple distributes hundreds of trusted root CA certificates, including COMMON, in the default operating system Trust Store for iOS, macOS, and tvOS. Apple's Trust Stores contains three categories of certificates:
- - **Trusted certificates** establish a chain of trust that verifies other certificates signed by the trusted roots—for example, to establish a secure connection to a web server. 
- - **Always Ask** certificates are untrusted but not blocked. When one of these certificates is used, you'll be prompted to choose whether or not to trust it.
- - **Blocked** certificates are believed to be compromised and will never be trusted.
+ - ** Trusted certificates ** establish a chain of trust that verifies other certificates signed by the trusted roots—for example, to establish a secure connection to a web server. 
+ - ** Always Ask ** certificates are untrusted but not blocked. When one of these certificates is used, you'll be prompted to choose whether or not to trust it.
+ - ** Blocked ** certificates are believed to be compromised and will never be trusted.
 
  ** macOS Versions **
 	- High Sierra (10.13)	
