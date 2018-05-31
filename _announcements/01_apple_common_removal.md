@@ -62,12 +62,13 @@ To limit the impact to your agency, you'll need to install COMMON as a trusted r
 | SHA-1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
 | SHA-256 Thumbprint | 89 4e bc 0b 23 da 2a 50 c0 18 6b 7f 8f 25 ef 1f 6b 29 35 af 32 a9 45 84 ef 80 aa f8 77 a3 a0 6e |
 
-### macOS ###
+
+### macOS
 The following guidance can be used to redistribute COMMON into the macOS Trust Store. 
 
 *Note:* In all instances below, replace {DOWNLOAD_LOCATION} with your preferred file download location.
 
-#### Using Terminal (Command Line Based Instructions) ####
+#### Using Terminal (Command Line Based Instructions)
 
 1. Open Terminal.
 - Click the *Spotlight* icon. It's the magnifying glass in the upper-right corner of the screen.
@@ -76,23 +77,26 @@ The following guidance can be used to redistribute COMMON into the macOS Trust S
 
 2. Download a copy of the Federal Common Policy CA by entering the following command.
 <br>
-```$ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt" ```
+*$ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt"*
 
 3. Verify the hash of the downloaded certificate matches the SHA-256 Thumprint listed [above](#what-should-i-do) by entering the following command.
 <br>
-```$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt ```
+*$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt*
 
 4. Install COMMON as a Trusted Root by entering the following command.
 <br>
-```$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt ```
+*$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt*
 
 #### Using Apple Keychain (Graphical User Interface Based Instructions)
 [STEPS TBD]
 
-### iOS ###
+#### Using Apple Mobile Configuration Profile (Graphical User Interface Based Instructions)
+[STEPS TBD]
+
+### iOS 
 The following guidance can be used to redistribute COMMON into the iOS Trust Store.
 
-#### Using Safari ####
+#### Using Safari 
 [STEPS TBD]
 
 ## Frequently Asked Questions
