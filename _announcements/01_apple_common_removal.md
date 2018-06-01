@@ -63,11 +63,19 @@ To limit the impact to your agency, you'll need to install COMMON as a trusted r
 
 
 ### macOS
-The following guidance can be used to redistribute COMMON into the macOS Trust Store. 
+The following guidance can be used by administrators to redistribute COMMON into the macOS Trust Store's "System" Keychain. The System Keychain is comparable to the Microsoft Windows "Local Machine" certificate store. 
 
-*Note:* In all instances below, replace {DOWNLOAD_LOCATION} with your preferred file download location (e.g., /Users/Sam Jackson/Downloads).
+*Note:* In all instances below, replace {DOWNLOAD_LOCATION} with your preferred file download location (e.g., /Users/Sam.Jackson/Downloads).
 
-#### Using Terminal (Command Line Based Instructions)
+#### Download and verify a copy of COMMON's certificate.
+Three options for obtaining COMMON's certificate file are presented below:
+
+##### Download option #1 - Using a web browser
+1. Open the web browser of your choice
+2. Navigate to http://http.fpki.gov/fcpca/fcpca.crt
+3. When prompted, save the certificate file to your preferred download location.
+
+##### Download option #2 - Using Terminal
 1. Open Terminal.
 - Click the *Spotlight* icon. It's the magnifying glass in the upper-right corner of the screen.
 - Start typing `terminal` in the search field. Do so until the Terminal icon appears. It is a black icon with a white "greater than" and underscore symbol (e.g., ">_") in the top left corner.
@@ -78,20 +86,39 @@ The following guidance can be used to redistribute COMMON into the macOS Trust S
 $ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt"
 ```
 
-3. Verify the hash of the downloaded certificate matches the SHA-256 Thumprint listed [above](#what-should-i-do) by entering the following command.
+##### Download option #3 - Email fpki@gsa.gov
+1. Email fpki@gsa.gov requesting an out-of-band copy of COMMON's certificate.
+
+##### Verify downloaded certificate file hash
+1. Open Terminal.
+- Click the *Spotlight* icon. It's the magnifying glass in the upper-right corner of the screen.
+- Start typing `terminal` in the search field. Do so until the Terminal icon appears. It is a black icon with a white "greater than" and underscore symbol (e.g., ">_") in the top left corner.
+- Double-click the *Terminal* icon. A terminal window will open.
+
+2. Verify the hash of the downloaded certificate matches the SHA-256 Thumprint listed [above](#what-should-i-do) by entering the following command.
 ```
 $ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
 ```
 
-4. Install COMMON as a Trusted Root by entering the following command.
+
+#### Install COMMON's certificate.
+Three installation options are presented below for installing COMMON's certificate in macOS.
+##### Installation Option #1 - Using Terminal (Command Line Based Instructions)
+1. Install COMMON as a Trusted Root by entering the following command.
 ```
 $ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
 ```
 
-#### Using Apple Keychain (Graphical User Interface Based Instructions)
-[STEPS TBD]
+##### Installation Option #2 - Using Apple Keychain (Graphical User Interface Based Instructions)
+1. Browse to the location on your workstation where the verified copy of COMMON's certificate was downloaded.
 
-#### Using Apple Configuration Profile (Graphical User Interface Based Instructions)
+2. Double click on the certificate file.
+
+3. When prompted, enter your password.
+
+Note: Non-administrator users can follow the same steps above to install the certificate into the "Login" Keychain. The Login Keychain is specific to the user's account, and will not impact other user's on the workstation.
+
+##### Installation Option #3 - Using Apple Configuration Profile (Graphical User Interface Based Instructions)
 An Apple Configuration Profile is an XML file that allows you to distribute configuration information across an Enterprise. This is a common method for distributing trusted root certificates to macOS and iOS devices. 
 
 There are five ways to deploy configuration profiles to devices:
@@ -189,10 +216,22 @@ Profiles can be installed manually by double clicking on the file, or through au
 The following guidance can be used to redistribute COMMON into the iOS Trust Store.
 
 #### Using Safari 
-[STEPS TBD]
+1. Open the Safari web browser.
+2. Navigate to http://http.fpki.gov/fcpca/fcpca.crt
+3. A message will appear indicating "The website is trying to open Settings to show you a configuratino profile. Do you want to allow this?" Click allow.
+4. The COMMON installation profile will appear. Click "More Details" to view additional information about the profile. Click on COMMON's certificate entry and scroll down to verify the SHA-256 file hash of the certificate beneath the "Fingerprints" heading.
+5. After verifying the has, click "Back" (top left corner of screen), "Install Profile" (top left corner of screen), and then "Install (top right corner of screen).
+6. When prompted, enter your passcode.
+7. Click "Install" (top right corner of screen), and then "Install" once more.
+8. Click "Done".
+
+To enable SSL trust for COMMON, perform the following steps.
+1. From the Home Screen navigate to "Settings", "General", "About", "Certificate Trust Settings".
+2. Beneath the "Enable Full Trust for Root Certificates" heading, toggle ON the entry for "Federal Common Policy CA". Click "Continue" when presented to enable trust.
+3. You should now be able to successffuly navigate to an intranet site whose TLS certificate was issued from a CA that chains to COMMON.
 
 #### Using Apple Configuration Profile (Graphical User Interface Based Instructions)
-Please see macOS instructions above.
+Please see macOS instructions above for creating and installing Profiles.
 
 ## Frequently Asked Questions
 
