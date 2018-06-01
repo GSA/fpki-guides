@@ -218,16 +218,16 @@ The following guidance can be used to redistribute COMMON into the iOS Trust Sto
 #### Using Safari 
 1. Open the Safari web browser.
 2. Navigate to http://http.fpki.gov/fcpca/fcpca.crt
-3. A message will appear indicating "The website is trying to open Settings to show you a configuratino profile. Do you want to allow this?" Click allow.
-4. The COMMON installation profile will appear. Click "More Details" to view additional information about the profile. Click on COMMON's certificate entry and scroll down to verify the SHA-256 file hash of the certificate beneath the "Fingerprints" heading.
-5. After verifying the has, click "Back" (top left corner of screen), "Install Profile" (top left corner of screen), and then "Install (top right corner of screen).
+3. A message will appear indicating *The website is trying to open Settings to show you a configuratino profile. Do you want to allow this?* Click *Allow*.
+4. The COMMON installation profile will appear. Click *More Details* to view additional information about the profile. Click on COMMON's certificate entry and scroll down to verify the SHA-256 file hash of the certificate beneath the *Fingerprints* heading.
+5. After verifying the has, click *Back* (top left corner of screen), *Install Profile* (top left corner of screen), and then *Install* (top right corner of screen).
 6. When prompted, enter your passcode.
-7. Click "Install" (top right corner of screen), and then "Install" once more.
-8. Click "Done".
+7. Click *Install* (top right corner of screen), and then *Install* once more.
+8. Click *Done*.
 
-To enable SSL trust for COMMON, perform the following steps.
-1. From the Home Screen navigate to "Settings", "General", "About", "Certificate Trust Settings".
-2. Beneath the "Enable Full Trust for Root Certificates" heading, toggle ON the entry for "Federal Common Policy CA". Click "Continue" when presented to enable trust.
+To enable full trust for COMMON, perform the following steps.
+1. From the Home Screen navigate to *Settings*, *General*, *About*, *Certificate Trust Settings*.
+2. Beneath the *Enable Full Trust for Root Certificates* heading, toggle ON the entry for Federal Common Policy CA. Click *Continue* when presented to enable trust.
 3. You should now be able to successffuly navigate to an intranet site whose TLS certificate was issued from a CA that chains to COMMON.
 
 #### Using Apple Configuration Profile (Graphical User Interface Based Instructions)
