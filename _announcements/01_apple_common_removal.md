@@ -5,7 +5,7 @@ title: Federal Common Policy CA Removal from Apple Trust Stores Impact
 pubDate: June 6, 2018
 collection: announcements
 permalink: announcements/applepkichanges/
-description: Upcoming changes regarding Apple's Root Certificate Program could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Operating System Trust Stores.  Tghis change will impact government users of Apple iOS, macOS, and tvOS, starting in **September-October 2018**. <br><br> This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices.
+description: Upcoming changes regarding Apple's Root Certificate Program could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Operating System Trust Stores.  This change will impact government users of Apple iOS, macOS, and tvOS, starting in **September-October 2018**. <br><br> This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices.
 ---
 
 Upcoming changes regarding Apple's Root Certificate Program could impact your agency. The Federal PKI Policy Authority (FPKIPA) has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA [FCPCA/COMMON]) from Apple's pre-installed Operating System Trust Stores. 
@@ -57,13 +57,13 @@ Government users will receive errors on government-furnished equipment if any of
 3. Authenticating to an internet-facing, government collaboration portal <!--"Authenticating to an...authentication portal" (two authentications)? With a PIV credential?-->
 4. Browsing with Safari, Chrome, Edge, or Internet Explorer to a government **intranet** website that uses a Federal PKI CA-issued TLS/SSL certificate
 5. Opening an Apple Mail or Microsoft Outlook email that was digitally signed using a Federal PKI CA-issued certificate
-6. Opening a Microsoft Office document that was digitally signed with a Federal PKI CA-issued certificate<br></br>
+6. Opening a Microsoft Office document that was digitally signed with a Federal PKI CA-issued certificate
 
 This change will also impact Federal Government partners that rely on COMMON&mdash;for example, a Department of Defense employee sending a digitally signed email to a business partner. 
 
-{% include alert-info.html content="If you are unsure whether your applications will be affected, email us at: fpki@gsa.gov." %} 
-
 You can mitigate the risk to government missions, intranets, applications, and government-furnished equipment.
+
+{% include alert-info.html content="If you are unsure whether your applications will be affected, email us at: fpki@gsa.gov." %} 
 
 ## What Should I Do?
 
@@ -93,16 +93,16 @@ You can download COMMON to your macOS device by using Options 1, 2, or 3.
 1. Open your web browser.
 2. Navigate to [COMMON root CA certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}.
 3. When prompted, save the certificate file to your download location.
-4. Click the *Spotlight* icon (Search tool) and seach for _terminal_. 
+4. Click the *Spotlight* icon (Search tool) and search for _terminal_. 
 5. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
 6. Verify that the certificate's hash matches the SHA-256 Thumbprint in the [certificate details](#what-should-i-do):
 
-```
-$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
-```
+    ```
+	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
+    ```
 
 #### Option 2:&nbsp;&nbsp;Download COMMON Using Terminal
-1. Click the *Spotlight* icon (Search tool) and seach for _terminal_.
+1. Click the *Spotlight* icon (Search tool) and search for _terminal_.
 2. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
 3. Download a copy of the COMMON root CA certificate:
 
@@ -252,7 +252,7 @@ You can install COMMON in your iOS device's Trust Store by using the options bel
 #### Option 1:&nbsp;&nbsp;Install COMMON Using Safari Web Browser
 1. Open the Safari web browser.
 2. Navigate to [COMMON root CA certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}
-> System message appears: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?* <!--
+> System message appears: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?* 
 3. Click *Allow*.
 > The COMMON installation profile appears.<!--Is "Installation profile" the same thing as configuration profile?--> 
 4. Click *More Details* to see the profile details and then click the COMMON certificate entry.
