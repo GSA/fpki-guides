@@ -106,15 +106,15 @@ You can download COMMON to your macOS device by using Options 1, 2, or 3.
 2. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
 3. Download a copy of the COMMON root CA certificate:
 
-```
-$ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt"
-```
+    ```
+	$ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt"
+    ```
 
 4. Verify that the certificate's hash matches the SHA-256 Thumbprint in the [certificate details](#what-should-i-do):
 
-```
-$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
-```
+    ```
+	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
+    ```
 
 #### Option 3:&nbsp;&nbsp;Email Us
 - To request an out-of-band copy of the COMMON root CA certificate to download, email us at: fpki@gsa.gov.
@@ -126,16 +126,16 @@ You can install COMMON in your macOS device's Trust Store by using Options 1, 2,
 #### Option 1:&nbsp;&nbsp;Install COMMON Using Command Line
 1. Install the COMMON root CA certificate as a Trusted Root:
 
-```
-$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
-```
+    ```
+	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
+    ```
 
 #### Option 2:&nbsp;&nbsp;Install COMMON Using Apple Keychain
 <!--Don't think GUI is necessary here. If macOS, it will be understood...?-->
 1. Browse to your downloaded copy of the COMMON root CA certificate.
 2. Double-click on the certificate file.
 3. When prompted, enter your password.
-<!--Does entering your password install COMMON in Apple System Keychain? If so, add to #3: "to install COMMON in the System Keychain" (if correct) or add explanation.
+<!--Does entering your password install COMMON in Apple System Keychain? If so, add to #3: "to install COMMON in the System Keychain" (if correct) or add explanation.-->
 
 <!--I suspect that network engineers/administrators would normally do root CA certificate install for agency users... General users, if authorized, would need more detailed steps.-->
 Non-administrative users may follow the steps above to install COMMON in the Login Keychain, which is specific to their accounts. This will not impact other user accounts on a workstation. 
@@ -311,11 +311,11 @@ Yes.
 Please see [What Will Be Impacted?](#what-will-be-impacted). 
 
 ## Additional Resources
-1. [COMMON Removal from the Microsoft Certificate Trust List)](https://fpki.idmanagement.gov/announcements/mspkichanges/){:target="_blank"}.
+1. [COMMON Removal from Microsoft Certificate Trust List)](https://fpki.idmanagement.gov/announcements/mspkichanges/){:target="_blank"}.
 1. [List of available trusted root certificates in macOS](https://support.apple.com/en-us/HT202858){:target="_blank"}
 1. [List of available trusted root certificates in iOS](https://support.apple.com/en-us/HT204132){:target="_blank"}
 1. [List of available trusted root certificates in tvOS](https://support.apple.com/en-us/HT207231){:target="_blank"}
-1. [Apple Keychains](https://developer.apple.com/documentation/security/keychain_services){:target="_blank"}<!--Does this work for useful, general Keychains info link?-->
+1. [Apple Keychains](https://developer.apple.com/documentation/security/keychain_services){:target="_blank"}
 1. [Apple Configuration Profile Reference](https://developer.apple.com/library/content/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html){:target="_blank"}
 1. [Over-the-Air Profile Delivery and Configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}
 1. [Mobile Device Management Best Practices](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}
