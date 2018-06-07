@@ -132,11 +132,11 @@ Configuration profiles can be distributed to devices using one of these options:
 2. In an email message 
 3. On a webpage 
 4. [Over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}
-5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. 
+5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"} 
 
 The example configuration profile below (created with Configurator 2) will install COMMON as a trusted root CA for _both macOS and iOS_. Prior to use, you should verify the profile's suitability for your agency. (To repurpose the profile, save it with a `.mobileconfig` extension.) 
 
-For more information about configuration profiles, see: [Apple Configuration Profile Reference](https://developer.apple.com/library/content/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html){:target="_blank"}
+For more information, see: [Apple Configuration Profile Reference](https://developer.apple.com/library/content/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html){:target="_blank"}
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -220,8 +220,8 @@ You can use Apple's free Configurator 2 to recreate the example configuration pr
 5. Browse to local *certificate* copies on your device. Select those that you'd like to add to the profile. (For the above example, a copy of the Federal Common Policy CA root certificate was used.)
 6. Click *File* -> *Save* to save your profile to a preferred file location.
 7. Close Configurator 2.
-8. Double-click on the profile to manually install it.
-_OR_
+8. Double-click on the profile to manually install it.<br>
+_OR_<br>
 8. To automate profile installation, use device configuration management applications (e.g., COTS solutions). 
 
 #### Option 2:&nbsp;&nbsp;Install COMMON Using Command Line
