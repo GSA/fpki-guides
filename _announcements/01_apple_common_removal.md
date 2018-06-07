@@ -9,7 +9,7 @@ description: Upcoming changes regarding Apple's Root Certificate Program could i
 ---
 
 Upcoming changes regarding Apple's Root Certificate Program could impact your agency. The Federal PKI Policy Authority (FPKIPA) has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA [FCPCA/COMMON]) from Apple's pre-installed Operating System Trust Stores. 
-<!--No hyphen in ICAMSC's "Subcommittee," acc. to IDManagement.gov. No extra "e" in Listservs.-->
+
 {% include alert-info.html content="This announcement will be updated as more information and additional procedures become available. Please watch for additional updates from the Federal PKI listservs, ICAM listservs, and the ICAM Subcommittee." %}
 
 Starting in **September-October 2018**, government users of Apple iOS, macOS, and tvOS devices will receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices.
@@ -28,14 +28,14 @@ Apple currently distributes Federal Common Policy CA (FCPCA/COMMON) through its 
 
 Three root CA _certificate types_ reside in Apple's Trust Stores:
 
-- _Trusted Certificates_ &mdash; Trusted certificates that establish a chain of trust. <!--Don't think we need to explain "chain of trust"--> 
-- _Always Ask_ &mdash; Untrusted certificates that are not blocked. If one of these certificates is used<!--"encountered"?-->, the Apple Operating System will ask you to choose whether or not to trust it.
+- _Trusted Certificates_ &mdash; Trusted certificates that establish a chain of trust.  
+- _Always Ask_ &mdash; Untrusted certificates that are not blocked. If a resource (e.g., website or signed email) chains to one of these certificates, the Apple Operating System will ask you to choose whether or not to trust it.
 - _Blocked_ &mdash; Potentially compromised certificates that will never be trusted.
 
 These certificate types are stored within Apple _Keychains_:
 
-- _Login Keychain_ &mdash; Certificates associated with a user account logged into a workstation.<!--Can we say "device" vs. workstation? For most instances, we say "device"-->
-- _System Keychain_ &mdash; Certificates associated with all user accounts on a workstation (similar to the Microsoft Windows' _Local Machine_ certificate store). <!--Multiple users using one workstation? Change to "device"?-->
+- _Login Keychain_ &mdash; Certificates associated with a user account logged into a device.
+- _System Keychain_ &mdash; Certificates associated with all user accounts on a device (similar to the Microsoft Windows' _Local Machine_ certificate store). 
 - _System Roots Keychain_ &mdash; Includes Apple's _pre-installed_, trusted root CA certificates. COMMON will be removed from this Keychain.
  
 ## What Will Be Impacted?
@@ -54,7 +54,7 @@ Government users will receive errors on government-furnished equipment if any of
 
 1. Logging into a government network with a PIV credential 
 2. Authenticating to a government Virtual Private Network (VPN) endpoint with a PIV credential
-3. Authenticating to an internet-facing, government collaboration portal <!--"Authenticating to an...authentication portal" (two authentications)? With a PIV credential?-->
+3. Authenticating to an internet-facing, government collaboration portal with a PIV credential 
 4. Browsing with Safari, Chrome, Edge, or Internet Explorer to a government **intranet** website that uses a Federal PKI CA-issued TLS/SSL certificate
 5. Opening an Apple Mail or Microsoft Outlook email that was digitally signed using a Federal PKI CA-issued certificate
 6. Opening a Microsoft Office document that was digitally signed with a Federal PKI CA-issued certificate
@@ -87,8 +87,6 @@ When downloading the COMMON root CA certificate by using the options below, you'
 You can download COMMON to your macOS device by using Options 1, 2, or 3. 
 
 **Note:**&nbsp;&nbsp;For all options, replace _{DOWNLOAD_LOCATION}_ with your preferred file download location (e.g., `/Users/Sam.Jackson/Downloads`).
-<!--Removed major heading here so the subheadings will be level 4.  Level 5 looks too small on Federalist.-->
-<!--Moved verification steps to be shown as continuations of Options 1 and 2.-->
 #### Option 1:&nbsp;&nbsp;Download COMMON Using a Web Browser
 1. Open your web browser.
 2. Navigate to [COMMON root CA certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}.
@@ -123,40 +121,19 @@ You can download COMMON to your macOS device by using Options 1, 2, or 3.
 
 You can install COMMON in your macOS device's Trust Store by using Options 1, 2, or 3. 
 
-#### Option 1:&nbsp;&nbsp;Install COMMON Using Command Line
-1. Install the COMMON root CA certificate as a Trusted Root:
-
-    ```
-	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
-    ```
-
-#### Option 2:&nbsp;&nbsp;Install COMMON Using Apple Keychain
-<!--Don't think GUI is necessary here. If macOS, it will be understood...?-->
-1. Browse to your downloaded copy of the COMMON root CA certificate.
-2. Double-click on the certificate file.
-3. When prompted, enter your password.
-<!--Does entering your password install COMMON in Apple System Keychain? If so, add to #3: "to install COMMON in the System Keychain" (if correct) or add explanation.-->
-
-<!--I suspect that network engineers/administrators would normally do root CA certificate install for agency users... General users, if authorized, would need more detailed steps.-->
-Non-administrative users may follow the steps above to install COMMON in the Login Keychain, which is specific to their accounts. This will not impact other user accounts on a workstation. 
-
-<!--LaChelle usually stresses the need for an Enterprise solution. Because of this, Option 3 should become Option 1.-->
-#### Option 3:&nbsp;&nbsp;Install COMMON Using an Apple Configuration Profile
-<!--Don't think GUI is necessary here. If macOS, it will be understood...?-->
-<!--This Option is missing some needed details (comments below).-->
+#### Option 1:&nbsp;&nbsp;Install COMMON Using an Apple Configuration Profile
 The following procedures are intended for enterprise administrators. 
 
-An Apple Configuration Profile is an XML file that allows you to distribute trusted root certificates (and other configuration information) across an Enterprise&mdash;in this case to _both macOS and iOS_ devices. 
+An Apple Configuration Profile is an XML file that allows you to distribute trusted root certificates (and other configuration information) across an Enterprise's Apple devices. 
 
-You can create Configuration Profiles to install COMMON as follows:
-<!--Is Configurator 2 used to create profiles for Steps 1-5?  If so, best organizationally to mention it before the steps, not in Step 1.  Options #2-#5 are not explained. I found links for #4 and maybe #5 but couldn't find an Apple link for #2 or #3.  Suggest that if Apple has no info and we don't provide steps, then we should remove 2, 3, and maybe 5. Consider value added.-->
-1. Use the free Apple _Configurator 2_ and connect devices via USB <!--Mention connecting devices via USB in detailed configuration profile steps below?-->
-2. In an email message <!--How is profile is created and how is email used? Add info or link.-->
-3. On a webpage <!--How is profile is created and how is webpage used? Add info or link.-->
+Configuration Profiles can be distributed to devices using one of the following methods:
+1. Use the free Apple _Configurator 2_ and connect devices via USB 
+2. In an email message 
+3. On a webpage 
 4. [Over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}
-5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. <!--Will this link work? Or need explanation/steps--> 
+5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. 
 
-This example Configuration Profile (created with Apple's Configurator 2) will install COMMON as a trusted root CA for _both macOS and iOS_. Prior to use, you should verify the profile's suitability for your agency. (To repurpose the profile, save it with a `.plist` extension.) 
+This example Configuration Profile (created with Apple's Configurator 2) will install COMMON as a trusted root CA for _both macOS and iOS_. Prior to use, you should verify the profile's suitability for your agency. (To repurpose the profile, save it with a `.mobileconfig` extension.) 
 
 For more information about configuration profiles, see: [Apple Configuration Profile Reference](https://developer.apple.com/library/content/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html){:target="_blank"}
 
@@ -231,8 +208,7 @@ For more information about configuration profiles, see: [Apple Configuration Pro
 </dict>
 </plist>
 ```
-#### Additional Configuration Profile Tips:
-<!--Are these steps general info for creating configuration profiles--not necessarily to do with installing COMMON? Can these steps be used to create the profile for iOS procedures? This is all good information but, since there's no mention of using for macOS or iOS, these steps seem tangential to our Apple Hot Topic purpose.  If not directly related to the COMMON needs at hand, these steps could be moved to a separate Markdown file and a link added here to that file as an "additional resource." I did this with the MS Hot Topic for CTL testing procedures. I'd be glad to do that. Let me know.-->
+#### Creating Configuration Profiles for macOS, iOS, and tvOS:
 You can use Apple Configurator 2 to recreate the example Configuration Profile for additional purposes:
 
 1. Download and Install Apple Configurator 2.
@@ -244,17 +220,30 @@ You can use Apple Configurator 2 to recreate the example Configuration Profile f
 7. Close Apple Configurator 2.
 8. To manually install a profile, double-click on it.
 _OR_
-8. To automate profile installation, use Apple workstation/mobile device configuration management applications: <!--Searched Apple Developers for a link to "configuration management applications" and couldn't find one. Do you have a link?-->  
+8. To automate profile installation, use Apple workstation/mobile device configuration management applications (e.g., COTS solutions) 
+
+#### Option 2:&nbsp;&nbsp;Install COMMON Using Command Line
+1. Install the COMMON root CA certificate as a Trusted Root:
+
+    ```
+	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
+    ```
+
+#### Option 3:&nbsp;&nbsp;Install COMMON Using Apple Keychain
+1. Browse to your downloaded copy of the COMMON root CA certificate.
+2. Double-click on the certificate file.
+3. When prompted, enter your password to authorize certificate installation.
+
+Non-administrative users may follow the steps above to install COMMON in the Login Keychain, which is specific to their accounts. This will not impact other user accounts on a workstation. 
 
 ### iOS&nbsp;&mdash;&nbsp;Install COMMON Options
 You can install COMMON in your iOS device's Trust Store by using the options below. 
-<!--These steps cover only "install." How is download of COMMON for iOS accomplished--through the configuration profile mentioned in Step 2 system message? Need brief explanation, unless all network engineers are absolutely clear about this.-->
 #### Option 1:&nbsp;&nbsp;Install COMMON Using Safari Web Browser
 1. Open the Safari web browser.
 2. Navigate to [COMMON root CA certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}
 > System message appears: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?* 
 3. Click *Allow*.
-> The COMMON installation profile appears.<!--Is "Installation profile" the same thing as configuration profile?--> 
+> The COMMON Configuration Profile appears. 
 4. Click *More Details* to see the profile details and then click the COMMON certificate entry.
 5. Scroll down to *Fingerprints* and verify the SHA-256 file hash of the certificate.
 6. Click *Back* (top left corner of screen); *Install Profile* (top left corner of screen); and then *Install* (top right corner of screen).
@@ -271,10 +260,7 @@ Next, you'll need to enable full trust for COMMON:
 
 
 #### Option 2:&nbsp;&nbsp;Install COMMON Using Apple Configuration Profile
-<!--Don't think GUI is needed in title-->
 You can use the macOS configuration profile procedures above to install COMMON on iOS devices: [Apple Configuration Profiles](#install-using-an-apple-configuration-profile).<!--Correct? If this type of link will work...?-->
-
-<!--If tvOS is not used by agencies, suggest removing tvOS from affected OSs table.-->
 
 ## Frequently Asked Questions
 
