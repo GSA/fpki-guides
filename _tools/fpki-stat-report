@@ -63,7 +63,7 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 | --------- | ---------- | ---------- | ------ | ------ |
 | No Activity |
 
-The following certificates are expiring in the next four months.
+The following certificates are expiring in the next four months and may be re-issued.
 | Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ---------- |
 | SAFE BioPharma | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 9 C6 EB AD 66 1E 5B 89 92 84 4D C9 58 57 7E 94 4C DC EF 52 | 06/23/2018 |
@@ -73,7 +73,7 @@ The following certificates are expiring in the next four months.
 | IdenTrust NFI | IdenTrust Global Common Root CA 1 | Federal Bridge CA 2016 | 66 FC 51 BF 22 5B D8 C4 E6 11 E1 56 E7 30 A4 83 FF 99 90 C3 | 09/25/2018 |
 
 ### Repository Availability Reporting
-The following information represenats the uptime of FPKIMA and FPKI Affiliate HTTP repositories by monthly percentage.
+The following information represents the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly percentage (e.g. 100 is 100% or no downtwime for that month).
 
 | FPKI Entity                                | 06/17 | 07/17 | 08/17 | 09/17 | 10/17 | 11/17 | 12/17 | 01/18 | 02/18 | 03/18 | 04/18 | 05/18 | 12-Month Average |
 | ------------------------------------------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ---------------- |
