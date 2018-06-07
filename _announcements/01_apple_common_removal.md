@@ -28,7 +28,7 @@ Apple currently distributes Federal Common Policy CA (FCPCA/COMMON) through its 
 
 Three root CA _certificate types_ reside in Apple's Trust Stores:
 
-- _Trusted Certificates_ &mdash; Trusted certificates that establish a chain of trust.  
+- _Trusted Certificates_ &mdash; Trusted certificates that establish a chain of trust.
 - _Always Ask_ &mdash; Untrusted certificates that are not blocked. If a resource (e.g., website or signed email) chains to one of these certificates, the Apple Operating System will ask you to choose whether or not to trust it.
 - _Blocked_ &mdash; Potentially compromised certificates that will never be trusted.
 
@@ -47,8 +47,8 @@ These Apple Operating System versions will be impacted:
 | High Sierra (10.13) |	 iOS11 | tvOS11 |
 | Sierra (10.12) | iOS10 | tvOS10 |
 | El Capitan (10.11) | iOS9 | |
-| Yosemite (10.10) |  iOS8 | |
-| Mavericks (10.9) |  iOS7 | |
+| Yosemite (10.10) | iOS8 | |
+| Mavericks (10.9) | iOS7 | |
 
 Government users will receive errors on government-furnished equipment if any of the following are true:
 
@@ -67,9 +67,9 @@ You can mitigate the risk to government missions, intranets, applications, and g
 
 ## What Should I Do?
 
-The following procedures are intended for network engineers. 
+The following procedures are intended for system administrators and/or network engineers. 
 
-You will need to download the COMMON root CA certificate and install it on government-furnished, macOS and iOS devices.  
+You will need to download the COMMON root CA certificate and install it on government-furnished Apple devices.
 
 When downloading the COMMON root CA certificate by using the options below, you'll need to verify that it contains these details:
 
@@ -127,7 +127,7 @@ The following procedures are intended for enterprise administrators.
 An Apple Configuration Profile is an XML file that allows you to distribute trusted root certificates (and other configuration information) across an Enterprise's Apple devices. 
 
 Configuration Profiles can be distributed to devices using one of the following methods:
-1. Use the free Apple _Configurator 2_ and connect devices via USB 
+1. Use the free Apple _Configurator 2_ application with devices connected via USB 
 2. In an email message 
 3. On a webpage 
 4. [Over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}
@@ -209,18 +209,18 @@ For more information about configuration profiles, see: [Apple Configuration Pro
 </plist>
 ```
 #### Creating Configuration Profiles for macOS, iOS, and tvOS:
-You can use Apple Configurator 2 to recreate the example Configuration Profile for additional purposes:
+You can use Apple Configurator 2 to recreate the example Configuration Profile using the steps below:
 
-1. Download and Install Apple Configurator 2.
+1. Download and Install Apple Configurator 2 from the Apple App Store.
 2. Open Configurator and click *File* -> *New Profile*.
 3. Under *General*, enter a unique profile *Name*. (In the example profile, "Federal Common Policy Certification Authority Profile" was used.)
 4. Enter a unique *Identifier* for the profile. (In the example profile, "FCPCA-0001" was used.)
-5. Browse to local *certificate* copies on your workstation or device. Select those that you'd like to add to the profile. (In the example profile, a copy of the Federal Common Policy CA root certificate was used.)
+5. Browse to local *certificate* copies on your device. Select those that you'd like to add to the profile. (In the example profile, a copy of the Federal Common Policy CA root certificate was used.)
 6. Click *File* -> *Save* and save the profile to a preferred file location.
 7. Close Apple Configurator 2.
 8. To manually install a profile, double-click on it.
 _OR_
-8. To automate profile installation, use Apple workstation/mobile device configuration management applications (e.g., COTS solutions) 
+8. To automate profile installation, use device configuration management applications (e.g., COTS solutions) 
 
 #### Option 2:&nbsp;&nbsp;Install COMMON Using Command Line
 1. Install the COMMON root CA certificate as a Trusted Root:
@@ -234,10 +234,11 @@ _OR_
 2. Double-click on the certificate file.
 3. When prompted, enter your password to authorize certificate installation.
 
-Non-administrative users may follow the steps above to install COMMON in the Login Keychain, which is specific to their accounts. This will not impact other user accounts on a workstation. 
+Non-administrative users may follow the steps above to install COMMON in the Login Keychain, which is specific to their accounts. This will not impact other user accounts on a device. 
 
 ### iOS&nbsp;&mdash;&nbsp;Install COMMON Options
-You can install COMMON in your iOS device's Trust Store by using the options below. 
+You can install COMMON in your iOS device's Trust Store by using the options below.
+
 #### Option 1:&nbsp;&nbsp;Install COMMON Using Safari Web Browser
 1. Open the Safari web browser.
 2. Navigate to [COMMON root CA certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}
@@ -247,7 +248,7 @@ You can install COMMON in your iOS device's Trust Store by using the options bel
 4. Click *More Details* to see the profile details and then click the COMMON certificate entry.
 5. Scroll down to *Fingerprints* and verify the SHA-256 file hash of the certificate.
 6. Click *Back* (top left corner of screen); *Install Profile* (top left corner of screen); and then *Install* (top right corner of screen).
-7. When prompted, enter your passcode.
+7. When prompted, enter your device's passcode.
 8. Click *Install* (top right corner of screen), and then *Install* once more.
 9. Click *Done*.
 
@@ -260,7 +261,11 @@ Next, you'll need to enable full trust for COMMON:
 
 
 #### Option 2:&nbsp;&nbsp;Install COMMON Using Apple Configuration Profile
-You can use the macOS configuration profile procedures above to install COMMON on iOS devices: [Apple Configuration Profiles](#install-using-an-apple-configuration-profile).<!--Correct? If this type of link will work...?-->
+You can use the macOS configuration profile procedures above to install COMMON on iOS devices: [Apple Configuration Profiles](#install-using-an-apple-configuration-profile).
+
+
+### tvOS&nbsp;&mdash;&nbsp;Install COMMON Options
+If your agency uses tvOS and you would like help with installing COMMON, please email us at fpki@gsa.gov.
 
 ## Frequently Asked Questions
 
