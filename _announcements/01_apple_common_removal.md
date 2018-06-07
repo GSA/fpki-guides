@@ -2,7 +2,7 @@
 layout: default
 navtitle: Federal Common Policy CA Removal from Apple Trust Stores Impact
 title: Federal Common Policy CA Removal from Apple Trust Stores Impact
-pubDate: June 6, 2018
+pubDate: June 11, 2018
 collection: announcements
 permalink: announcements/applepkichanges/
 description: Upcoming changes regarding Apple's Root Certificate Program could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Operating System Trust Stores.  This change will impact government users of Apple iOS, macOS, and tvOS, starting in **September-October 2018**. <br><br> This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices.
@@ -24,7 +24,7 @@ Starting in **September-October 2018**, government users of Apple iOS, macOS, an
 
 ## How Does This Work?
 
-Apple currently distributes Federal Common Policy CA (FCPCA/COMMON) through its pre-installed Operating Systems Trust Stores for iOS, macOS, and tvOS. 
+Apple currently distributes Federal Common Policy CA (FCPCA/COMMON) through its pre-installed Operating System Trust Stores for iOS, macOS, and tvOS. 
 
 Three root CA _certificate types_ reside in Apple's Trust Stores:
 
@@ -67,7 +67,7 @@ You can mitigate the risk to government missions, intranets, applications, and g
 
 ## What Should I Do?
 
-The following procedures are intended for system administrators and/or network engineers. 
+The following procedures are intended for enterprise administrators and/or network engineers. 
 
 You will need to download the COMMON root CA certificate and install it on government-furnished Apple devices.
 
@@ -89,7 +89,7 @@ You can download COMMON to your macOS device by using Options 1, 2, or 3.
 **Note:**&nbsp;&nbsp;For all options, replace _{DOWNLOAD_LOCATION}_ with your preferred file download location (e.g., `/Users/Sam.Jackson/Downloads`).
 #### Option 1:&nbsp;&nbsp;Download COMMON Using a Web Browser
 1. Open your web browser.
-2. Navigate to [COMMON root CA certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}.
+2. Navigate to the [COMMON root CA certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}.
 3. When prompted, save the certificate file to your download location.
 4. Click the *Spotlight* icon (Search tool) and search for _terminal_. 
 5. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
@@ -127,7 +127,7 @@ The following procedures are intended for enterprise administrators.
 An Apple Configuration Profile is an XML file that allows you to distribute trusted root certificates (and other configuration information) across an Enterprise's Apple devices. 
 
 Configuration Profiles can be distributed to devices using one of the following methods:
-1. Use the free Apple _Configurator 2_ application with devices connected via USB 
+1. Using the free Apple _Configurator 2_ application with devices connected via USB 
 2. In an email message 
 3. On a webpage 
 4. [Over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}
@@ -241,7 +241,7 @@ You can install COMMON in your iOS device's Trust Store by using the options bel
 
 #### Option 1:&nbsp;&nbsp;Install COMMON Using Safari Web Browser
 1. Open the Safari web browser.
-2. Navigate to [COMMON root CA certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}
+2. Navigate to the [COMMON root CA certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}
 > System message appears: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?* 
 3. Click *Allow*.
 > The COMMON Configuration Profile appears. 
