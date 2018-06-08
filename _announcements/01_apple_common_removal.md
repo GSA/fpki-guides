@@ -47,7 +47,7 @@ These Apple Operating System versions will be impacted:
 | High Sierra (10.13) |	 iOS11 | tvOS11 |
 
 
-Government users will receive errors on government-furnished equipment if any of these are true:
+Government users will receive errors on government - Apple devices if any of these are true:
 
 1. Logging into a government network with a PIV credential 
 2. Authenticating to a government Virtual Private Network (VPN) endpoint with a PIV credential
@@ -64,17 +64,12 @@ You can mitigate the risk to government missions, intranets, applications, and g
 
 ## What Should I Do?
 
-These procedures are intended for Enterprise Administrators and/or Network Engineers.
+You will need to download the COMMON root CA certificate **and** install the root certificate on government furnished Apple devices.  Installations should use enterprise configuration management tools, and these steps should only be completed by the agency enterprise administrators or network engineers.  
 
-### macOS&nbsp;&mdash;&nbsp;Download COMMON Options
+* [Download Options](#download-options)
+* [Install Options](#install-options)
 
-You will need to download the COMMON root CA certificate and install it on government-furnished Apple devices by using one of these options:
-
-* [Option 1. Download COMMON Using a Web Browser](#option-1-download-common-using-a-web-browser)
-* [Option 2. Download COMMON Using Terminal](#option-2-download-common-using-terminal)
-* [Option 3. Email Us](#option-3-email-us)
-
-When downloading the COMMON root CA certificate by using the options below, you'll need to verify that it contains these details:
+When downloading the COMMON root CA certificate, you'll need to verify that the certificate contains these details:
 
 | **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
@@ -85,12 +80,21 @@ When downloading the COMMON root CA certificate by using the options below, you'
 
 {% include alert-warning.html content="You should never install a root certificate without verifying it." %} 
 
+
+### Download Options
+You will need to download the COMMON root CA certificate and install it on government-furnished Apple devices using one of these options:
+
+* [Option 1. Download Using a Web Browser](#option-1-download-using-a-web-browser)
+* [Option 2. Download Using Terminal](#option-2-download-using-terminal)
+* [Option 3. Email Us](#option-3-email-us)
+
+
 **Note:**&nbsp;&nbsp;For all options, replace _{DOWNLOAD_LOCATION}_ with your preferred file download location (e.g., `/Users/Sam.Jackson/Downloads`).
 
-#### Option 1. Download COMMON Using a Web Browser
+#### Option 1. Download Using a Web Browser
 
 1. Open your web browser.
-2. Navigate to the [COMMON root CA certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}.
+2. Navigate to the COMMON root CA certificate located at this URL:  http://http.fpki.gov/fcpca/fcpca.crt
 3. When prompted, save the certificate file to your download location.
 4. Click the *Spotlight* icon and search for _terminal_. 
 5. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
@@ -99,8 +103,8 @@ When downloading the COMMON root CA certificate by using the options below, you'
     ```
 	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
     ```
-
-#### Option 2. Download COMMON Using Terminal
+    
+#### Option 2. Download Using Terminal
 
 1. Click the *Spotlight* icon and search for _terminal_.
 2. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
@@ -118,45 +122,32 @@ When downloading the COMMON root CA certificate by using the options below, you'
 
 #### Option 3. Email Us
 
-To request an out-of-band copy of the COMMON root CA certificate to download, email us at fpki@gsa.gov.
+To request an out-of-band copy of the COMMON root CA certificate, email us at fpki@gsa.gov.
 
-### macOS&nbsp;&mdash;&nbsp;Install COMMON Options
+### Installation Options
 
-You can install COMMON in your macOS device's Trust Store by using one of these options: 
+You can install COMMON in your agency enterprise Apple devices Trust Stores using these options: 
 
-* [Option 1. Install COMMON Using an Apple Configuration Profile](#option-install-common-using-an-apple-configuration-profile)
-* [Option 2. Install COMMON Using Command Line](#option-2-install-common-using-command-line)
-* [Option 3. Install COMMON Using Apple Keychain](#option-3-install-common-using-apple-keychain)
+* [Option 1. Install Using an Apple Configuration Profile](#option-1-install-using-an-apple-configuration-profile)
+* [Option 2. Install Using Command Line](#option-2-install-using-command-line)
+* [Option 3. Install Using Apple Keychain](#option-3-install-using-apple-keychain)
+* [Option 4. Install Using Safari Web Browser](#option-4-install-using-safari-web-browser)
 
-#### Option 1. Install COMMON Using an Apple Configuration Profile
 
-These procedures are intended for Enterprise Administrators. 
+#### Option 1:&nbsp;&nbsp;Install Using an Apple Configuration Profile
+This option works for both MacOS and iOS devices.
 
-You can create Apple Configuration Profiles (XML files) to distribute trusted root certificates across an Enterprise's Apple devices. An example "Ready-To-Use" Apple Configuration Profile to install COMMON is presented beneath the configuration creation instructions.
-
-* [Create Configuration Profiles to Install COMMON for macOS, iOS, and tvOS](#create-configuration-profiles-to-install-common-for-macOS- iOS-and-tvOS)
-* [Ready-To-Use Configuration Profile To Install COMMON](#ready-to-use-configuration-profile-to-install-common)
-* [Distribute Configuration Profiles To Install COMMON](#distribute-configuration-profiles-to-install-common)
-
-##### Create Configuration Profiles to Install COMMON for macOS, iOS, and tvOS
-
-One way you can create a Configuration Profile is by using Apple's free Configurator 2 application:
+Apple Configuration Profiles (XML files) can be used to distribute trusted root certificates to your agency's enterprise Apple devices.  Create a Configuration Profile by using Apple's Configurator 2 application. An example configuration profile is included beneath the configuration creation instructions:
 
 1. Download and install Configurator 2 from the Apple App Store.
 2. Open Configurator and click *File* -> *New Profile*.
-3. Under *General*, enter a unique profile *Name*. ("Federal Common Policy Certification Authority Profile" was used for the below example.)
-4. Enter a unique profile *Identifier*. ("FCPCA-0001" was used for the below example.)
-5. Browse to local *certificate* copies on your device. Select those that you'd like to add to the profile. (For the below example, a copy of the Federal Common Policy CA root certificate was used.)
+3. Under *General*, enter a unique profile *Name*. ("Federal Common Policy Certification Authority Profile" was used for this example.)
+4. Enter a unique profile *Identifier*. ("FCPCA-0001" was used for this example.)
+5. Browse to local *certificate* copies on your device. Select those that you'd like to add to the profile. (For this example, a copy of the Federal Common Policy CA root certificate was used.)
 6. Click *File* -> *Save* to save your profile to a preferred file location.
-7. Close Configurator 2.
 
-##### Ready-To-Use Configuration Profile To Install COMMON
+This example configuration profile will install COMMON as a trusted root CA for _both macOS and iOS_ devices. Before using the profile, you should verify its suitability for your agency. To use the profile, copy the XML information and save it to a file with a `.mobileconfig` extension. 
 
-The example configuration profile below (created with Configurator 2) will install COMMON as a trusted root CA for _both macOS and iOS_. Before using the profile, you should verify its suitability for your agency. 
-
-To repurpose the profile, save it with a `.mobileconfig` extension. 
-
-For more information, see: [Apple Configuration Profile Reference](https://developer.apple.com/library/content/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html){:target="_blank"}
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -229,40 +220,40 @@ For more information, see: [Apple Configuration Profile Reference](https://devel
 </dict>
 </plist>
 ``` 
-##### Distribute Apple Configuration Profiles To Install COMMON
 
-Use any of these options to distribute your configuration profiles: 
+##### Distribute Configuration Profiles 
+The configuration profile can be distributed: 
 
-1. Via Apple's free _Configurator 2_ application with devices connected via USB 
-2. In an email message 
-3. On a webpage 
+1. Using Apple's _Configurator 2_ application with devices connected via USB 
+2. In an email message to select agency users.  Email messages should never be used outside your agency domain.
+3. On an agency intranet webpage 
 4. [Over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}
 5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"} 
 
-#### Option 2. Install COMMON Using Command Line
+
+#### Option 2:&nbsp;&nbsp;Install Using Command Line
+This option is for MacOS devices only. 
 1. Install the COMMON root CA certificate as a Trusted Root:
 
     ```
 	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
     ```
 
-#### Option 3. Install COMMON Using Apple Keychain
+#### Option 3:&nbsp;&nbsp;Install Using Apple Keychain
+This option is for MacOS devices only. 
+
 1. Browse to your downloaded copy of the COMMON root CA certificate.
 2. Double-click on the file.
 3. When prompted, enter your password to install the certificate.
 
-Non-administrative users may follow the steps above to install COMMON in the Login Keychain, which is specific to their accounts. This will not impact other user accounts on a device. 
+Non-administrative users may follow the steps above to install COMMON in the Login Keychain specific to their account. This will not impact other user accounts on a device. 
 
-### iOS&nbsp;&mdash;&nbsp;Install COMMON Options
 
-You can install COMMON in your iOS device's Trust Store by using one of these options:
+#### Option 4:&nbsp;&nbsp;Install Using Safari Web Browser
+This option is for iOS devices only. 
 
-* [Option 1. Install COMMON Using Safari Web Browser](#option-1-install-common-using-safari-web-browser)
-* [Option 2. Install COMMON Using Apple Configuration Profile](#option-2-install-common-using-apple-configuration-profile)
-
-#### Option 1. Install COMMON Using Safari Web Browser
-1. Open Safari.
-2. Navigate to the [COMMON root CA certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}<br>
+1. Launch Safari.
+2. Navigate to the COMMON root CA certificate located at this URL: http://http.fpki.gov/fcpca/fcpca.crt<br>
 > System message appears: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*<br>
 3. Click *Allow*.<br>
 > The COMMON Configuration Profile appears.<br> 
@@ -279,14 +270,6 @@ Next, you'll need to enable full trust for COMMON:
 2. Beneath *Enable Full Trust for Root Certificates*, toggle _ON_ for the Federal Common Policy CA entry. 
 3. When certificate appears, click *Continue*.
 4. You can now successfully navigate to an intranet site whose TLS certificate was issued by a Federal PKI CA.
-
-
-#### Option 2. Install COMMON Using Apple Configuration Profile
-You can use the macOS configuration profile procedures above to install COMMON on iOS devices: [Apple Configuration Profiles](#install-using-an-apple-configuration-profile).
-
-
-### tvOS&nbsp;&mdash;&nbsp;Install COMMON Options
-If you would like to install COMMON on tvOS government-furnished equipment, email us at fpki@gsa.gov.
 
 ## Frequently Asked Questions
 
