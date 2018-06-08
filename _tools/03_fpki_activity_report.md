@@ -2,7 +2,7 @@
 layout: default 
 title: Federal PKI Activity Report
 collection: tools
-permalink: tools/fpki_activity_report
+permalink: tools/fpkiactivityreport
 ---
 # The Federal PKI Activity Report
 
