@@ -281,7 +281,7 @@ Yes.
 Please see [What Will Be Impacted?](#what-will-be-impacted). 
 
 ## Additional Resources
-1. [COMMON Removal from Microsoft Certificate Trust List)](https://fpki.idmanagement.gov/announcements/mspkichanges/){:target="_blank"}.
+1. [COMMON Removal from Microsoft Certificate Trust List](https://fpki.idmanagement.gov/announcements/mspkichanges/){:target="_blank"}.
 1. [macOS Available Trusted Root Certificates List](https://support.apple.com/en-us/HT202858){:target="_blank"}
 1. [iOS Available Trusted Root Certificates List](https://support.apple.com/en-us/HT204132){:target="_blank"}
 1. [tvOS Available Trusted Root Certificates](https://support.apple.com/en-us/HT207231){:target="_blank"}
