@@ -128,7 +128,7 @@ These procedures are intended for Enterprise Administrators.
 
 You can create Apple Configuration Profiles (XML files) to distribute trusted root certificates across an Enterprise's Apple devices. 
 
-##### Create Configuration Profiles for macOS, iOS, and tvOS To Install COMMON
+##### Create Configuration Profiles to Install COMMON for macOS, iOS, and tvOS
 
 You can create a configuration profile by using Apple's free Configurator 2:
 
