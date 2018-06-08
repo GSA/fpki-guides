@@ -1,6 +1,10 @@
-# The Federal PKI Management Authority Statisical Report
-
-![FPKIMA Logo]
+---
+layout: default 
+title: Federal PKI Activity Report
+collection: tools
+permalink: tools/fpki_activity_report
+---
+# The Federal PKI Activity Report
 
 ## Purpose
 
@@ -8,7 +12,9 @@ This report provides a technical and policy compliance status for each Federal P
 
 ## FPKI Affiliate Scorecard
 
-The operational status for each FPKI Affiliate is summarized in the FPKI Affiliate Status Summary below.  An overall operational status include both issues that affect technical interoperability and non-compliance with applicable Certificate Policy (CP). Scorecards are not used for any other purpose such as ranking or rating. Affiliates can:
+The operational status for each FPKI Affiliate is summarized in the FPKI Affiliate Status Summary below.  
+An overall operational status include both issues that affect technical interoperability and non-compliance with 
+applicable Certificate Policy (CP). Scorecards are not used for any other purpose such as ranking or rating. Affiliates can:
 
 - Resolve technical issues by contacting the [FPKIMA Team](fpkipa-ma@listserv.gsa.gov). 
 - Resolve Certificate Policy issues by contacting the [Certificate Policy Working Group (CPWG)](fpkipa_cpwg@listserv.gsa.gov).  
@@ -22,17 +28,17 @@ The operational status for each FPKI Affiliate is summarized in the FPKI Affilia
 
 ## FPKI Affiliate Status Summary
 
-The following table summarizes the Scorecard status of each connected CA to Federal Common Policy or Federal Bridge.
+The following table summarizes the Scorecard status of each connected affiliate to Federal Common Policy or Federal Bridge.
 
 | Federal Agency or Affiliate CA | FPKIMA CA | Status |
 | ------------------------------ | --------- | ------ |
-| CertiPath Bridge SHA-2 | FBCA | No Issues |
-| Department of Defense SHA-2 | FBCA | No Issues |
+| CertiPath Bridge | FBCA | No Issues |
+| Department of Defense | FBCA | No Issues |
 | DigiCert NFI | FBCA | No Issues |
 | Entrust Managed Services NFI | FBCA | No Issues |
 | Exostar NFI | FBCA | No Issues |
 | Government Printing Office | FBCA | No Issues |
-| GSA Access Certificate for Electronic Services (ACES) | FBCA | No Issues |
+| GSA Access Certificate for Electronic Services (GSA ACES) | FBCA | No Issues |
 | IdenTrust NFI | FBCA | No Issues |
 | WidePoint/ORC NFI | FBCA | No Issues |
 | SAFE BioPharma Bridge | FBCA | No Issues |
@@ -40,8 +46,6 @@ The following table summarizes the Scorecard status of each connected CA to Fede
 | TSCP Bridge | FBCA | No Issues |
 | US Patent and Trademark Office (PTO) | FBCA | No Issues |
 | Verizon Business NFI | FBCA | No Issues |
-| CertiPath Bridge SHA-1 | SHA1FRCA | No Issues |
-| Department of Defense SHA-1 | SHA1FRCA | No Issues |
 | Department of State | FCPCA | No Issues |
 | DigiCert/Symantec/Verisign SSP | FCPCA | No Issues |
 | Entrust Managed Services SSP | FCPCA | No Issues |
@@ -53,17 +57,22 @@ The following table summarizes the Scorecard status of each connected CA to Fede
 
 ### FPKIMA Certificate Activity
 
+The activity listed in this section is limited to the certificates issued BY or TO the Federal Bridge or Federal Common Policy CA.
+
 The following certificates were issued **BY** or **TO** the FPKI Trust Infrastructure in the last 30 days.
+
 | Affiliate | Subject CA | Issuing CA | Serial | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
 | No Activity |
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
+
 | Affiliate | Subject CA | Issuing CA | Serial | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
 | No Activity |
 
 The following certificates are expiring in the next four months and may be re-issued.
+
 | Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ---------- |
 | SAFE BioPharma | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 9 C6 EB AD 66 1E 5B 89 92 84 4D C9 58 57 7E 94 4C DC EF 52 | 06/23/2018 |
