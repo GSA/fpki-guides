@@ -68,7 +68,7 @@ These procedures are intended for Enterprise Administrators and/or Network Engin
 
 ### macOS&nbsp;&mdash;&nbsp;Download COMMON Options
 
-You will need to download the COMMON root CA certificate and install it on government-furnished Apple devices using one of these options:
+You will need to download the COMMON root CA certificate and install it on government-furnished Apple devices by using one of these options:
 
 * [Option 1. Download COMMON Using a Web Browser](#option-1-download-common-using-a-web-browser)
 * [Option 2. Download COMMON Using Terminal](#option-2-download-common-using-terminal)
@@ -122,9 +122,13 @@ To request an out-of-band copy of the COMMON root CA certificate to download, em
 
 ### macOS&nbsp;&mdash;&nbsp;Install COMMON Options
 
-You can install COMMON in your macOS device's Trust Store by one of these options: 
+You can install COMMON in your macOS device's Trust Store by using one of these options: 
 
-#### Option 1:&nbsp;&nbsp;Install COMMON Using an Apple Configuration Profile
+* [Option 1. Install COMMON Using an Apple Configuration Profile](#option-install-common-using-an-apple-configuration-profile)
+* [Option 2. Install COMMON Using Command Line](#option-2-install-common-using-command-line)
+* [Option 3. Install COMMON Using Apple Keychain](#option-3-install-common-using-apple-keychain)
+
+#### Option 1. Install COMMON Using an Apple Configuration Profile
 
 These procedures are intended for Enterprise Administrators. 
 
@@ -231,14 +235,14 @@ Use any of these options to distribute your configuration profiles:
 4. [Over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}
 5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"} 
 
-#### Option 2:&nbsp;&nbsp;Install COMMON Using Command Line
+#### Option 2. Install COMMON Using Command Line
 1. Install the COMMON root CA certificate as a Trusted Root:
 
     ```
 	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
     ```
 
-#### Option 3:&nbsp;&nbsp;Install COMMON Using Apple Keychain
+#### Option 3. Install COMMON Using Apple Keychain
 1. Browse to your downloaded copy of the COMMON root CA certificate.
 2. Double-click on the file.
 3. When prompted, enter your password to install the certificate.
