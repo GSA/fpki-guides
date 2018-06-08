@@ -45,17 +45,14 @@ These Apple Operating System versions will be impacted:
 |**macOS**|**iOS**|**tvOS**|
 | :-------- |:-------- |:-------- |
 | High Sierra (10.13) |	 iOS11 | tvOS11 |
-| Sierra (10.12) | iOS10 | tvOS10 |
-| El Capitan (10.11) | iOS9 | |
-| Yosemite (10.10) | iOS8 | |
-| Mavericks (10.9) | iOS7 | |
+
 
 Government users will receive errors on government-furnished equipment if any of these are true:
 
 1. Logging into a government network with a PIV credential 
 2. Authenticating to a government Virtual Private Network (VPN) endpoint with a PIV credential
 3. Authenticating to an internet-facing, government collaboration portal with a PIV credential 
-4. Browsing with Safari, Chrome, or Edge/IE to a government **intranet** website that uses a Federal PKI CA-issued TLS/SSL certificate
+4. Browsing with Safari, Chrome, or Edge (iOS) to a government **intranet** website that uses a Federal PKI CA-issued TLS/SSL certificate
 5. Opening an Apple Mail or Microsoft Outlook email that was digitally signed using a Federal PKI CA-issued certificate
 6. Opening a Microsoft Office document that was digitally signed with a Federal PKI CA-issued certificate
 
@@ -276,36 +273,10 @@ If you would like to install COMMON on tvOS government-furnished equipment, emai
 
 ## Frequently Asked Questions
 
-### 1.&nbsp;&nbsp;Why is COMMON being removed? 
-The Federal PKI CAs don't comply with Apple's requirements for globally trusted TLS/SSL certificates. Apple's requirements include: 
-
-**a.&nbsp;&nbsp;Requirement for Fully-Qualified Domain Names (FQDNs)**<br>
-Apple plans to restrict TLS/SSL certificates to only those certificates using FQDNs ending in .gov, .mil, or fed.us. Some federal agencies issue TLS/SSL certificates to intranet assets. These certificates either:&nbsp;&nbsp;don't have FQDNs; contain intranet domains that don't end in .gov, .mil, or fed.us; or use short names (aliases). Under Apple's requirements, these agencies would need to reissue, re-install, and reconfigure all "non-compliant" certificates and applications. The Federal PKI community has determined that this would have a negative impact on mission applications on the intranets.
-
-**b.&nbsp;&nbsp;Requirement for public audit**<br>
-The Federal PKI follows a government auditing standard, and we have not restricted our issuance of TLS/SSL certificates to only the .gov and .mil domains. Under the requirements, all CAs in Federal PKI that could issue TLS/SSL certificates are required to submit a non-government audit or be technically constrained. Federal PKI has **not** technically constrained our CAs.
-
-**c.&nbsp;&nbsp;Requirement to disclose Certificate Practice Statements and Incident Post-Mortem Reports**<br>
-Public trust requires public disclosure and transparency. All Federal PKI CAs would be required to publicly post their Certificate Practice Statements and their Audit Letters. The Federal PKI community has attempted to disclose all Certificate Practice Statements for a number of years. However, some federal agencies include sensitive information in these documents and cannot disclose the documents publicly.
-
-**d.&nbsp;&nbsp;Requirement to create new issuing Certification Authorities (CAs)**<br>
-Any Federal PKI CA that issues TLS/SSL, code-signing, or email-signing certificates would have to establish a new CA for each type of certificate. This effort requires time, planning, and funding.
-
-### 2.&nbsp;&nbsp;How can I determine which of our intranet websites and applications will be impacted, including those used by cross-agency users?
-All Apple-based resources and applications configured with certificates (email, Virtual Private Network, digital signature, MDM profiles, etc.) issued by a Federal PKI CA that validates to COMMON will be impacted. For agencies and mission partners that are cross-certified with the FBCA, external users could also be impacted if COMMON is used instead of your root.
-
-You can run a report on all issued certificates or, if your agency has an agreement with a Federal PKI Shared Service Provider (SSP), you can request that the SSP run the report.
-
-You can scan your intranet websites in coordination with your CISO teams. There are existing tools to use, or you can use the DHS NCATS "**pshtt**" tool, which will also check for cipher suites and mis-configurations on the intranet websites:
-
-- DHS NCATS [**pshtt**](https://github.com/dhs-ncats/pshtt){:target="_blank"} 
-
-**Note:**&nbsp;&nbsp;This tool will look for not just Federal PKI certificates. Its outputs will include all certificates and information.
-
-### 3.&nbsp;&nbsp;Is PIV network login impacted?
+### 1.&nbsp;&nbsp;Is PIV network login impacted?
 Yes. 
 
-### 4.&nbsp;&nbsp;What versions are affected?
+### 2.&nbsp;&nbsp;What versions are affected?
 Please see [What Will Be Impacted?](#what-will-be-impacted). 
 
 ## Additional Resources
