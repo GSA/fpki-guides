@@ -126,17 +126,17 @@ You can install COMMON in your macOS device's Trust Store by one of these option
 
 These procedures are intended for Enterprise Administrators. 
 
-You can create Apple Configuration Profiles (XML files) to distribute trusted root certificates across an Enterprise's Apple devices. 
+You can create Apple Configuration Profiles (XML files) to distribute trusted root certificates across an Enterprise's Apple devices. An example, "Ready-To-Use" Apple Configuration Profile to install COMMON is presented beneath the configuration creation instructions.
 
 ##### Create Configuration Profiles to Install COMMON for macOS, iOS, and tvOS
 
-You can create a configuration profile by using Apple's free Configurator 2:
+One way you can create a configuration profile is by using Apple's free Configurator 2:
 
 1. Download and install Configurator 2 from the Apple App Store.
 2. Open Configurator and click *File* -> *New Profile*.
-3. Under *General*, enter a unique profile *Name*. ("Federal Common Policy Certification Authority Profile" was used for the above example.)
-4. Enter a unique profile *Identifier*. ("FCPCA-0001" was used for the above example.)
-5. Browse to local *certificate* copies on your device. Select those that you'd like to add to the profile. (For the above example, a copy of the Federal Common Policy CA root certificate was used.)
+3. Under *General*, enter a unique profile *Name*. ("Federal Common Policy Certification Authority Profile" was used for the below example.)
+4. Enter a unique profile *Identifier*. ("FCPCA-0001" was used for the below example.)
+5. Browse to local *certificate* copies on your device. Select those that you'd like to add to the profile. (For the below example, a copy of the Federal Common Policy CA root certificate was used.)
 6. Click *File* -> *Save* to save your profile to a preferred file location.
 7. Close Configurator 2.
 8. Double-click on the profile to manually install it.<br>
@@ -145,7 +145,7 @@ _OR_<br>
 
 ##### Ready-To-Use Apple Configuration Profile To Install COMMON
 
-The configuration profile below (created with Configurator 2) will install COMMON as a trusted root CA for _both macOS and iOS_. Before using the profile, you should verify its suitability for your agency. 
+The example configuration profile below (created with Configurator 2) will install COMMON as a trusted root CA for _both macOS and iOS_. Before using the profile, you should verify its suitability for your agency. 
 
 To repurpose the profile, save it with a `.mobileconfig` extension. 
 
