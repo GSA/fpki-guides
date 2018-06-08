@@ -67,7 +67,7 @@ You can mitigate the risk to government missions, intranets, applications, and g
 You will need to download the COMMON root CA certificate **and** install the root certificate on government-furnished Apple devices.  Installations should use enterprise configuration management tools.  These steps should only be completed by the agency enterprise administrators or network engineers.  
 
 * [Download Options](#download-options)
-* [Install Options](#install-options)
+* [Installation Options](#installation-options)
 
 When downloading the COMMON root CA certificate, you'll need to verify that the certificate contains these details:
 
