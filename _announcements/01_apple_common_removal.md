@@ -5,16 +5,16 @@ title: Federal Common Policy CA Removal from Apple Trust Stores Impact
 pubDate: June 8, 2018
 collection: announcements
 permalink: announcements/applepkichanges/
-description: Upcoming changes regarding Apple's Root Certificate Program could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Operating System Trust Stores.  This change will impact government users of Apple iOS, macOS, and tvOS, starting in **September-October 2018**. <br><br> This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and government-furnished equipment by using configuration management tools for federal devices.
+description: Upcoming changes regarding Apple devices and operating systems could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Operating System Trust Stores.  This change will impact government users of Apple iOS, macOS, and tvOS, starting in **September-October 2018**. <br><br> This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and government-furnished equipment.
 ---
 
-Upcoming changes regarding Apple's Root Certificate Program could impact your agency. The Federal PKI Policy Authority (FPKIPA) has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA [FCPCA/COMMON]) from Apple's pre-installed Operating System Trust Stores. 
+Upcoming changes regarding Apple devices and operating systems could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA [COMMON]) from Apple's pre-installed Operating System Trust Stores. 
 
 {% include alert-info.html content="This announcement will be updated as more information and additional procedures become available. Please watch for additional updates from the Federal PKI listservs, ICAM listservs, and the ICAM Subcommittee." %}
 
-Starting in **September-October 2018**, government users of Apple iOS, macOS, and tvOS devices will receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and government-furnished equipment by using configuration management tools for federal devices.
+Starting in **September-October 2018**, government users of Apple iOS, macOS, and tvOS devices will receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and the government-furnished Apple devices.
 
-{% include alert-info.html content="The FPKIPA has also elected to remove the Federal Common Policy CA root certificate from Microsoft's Certificate Trust List." %}
+{% include alert-info.html content="The FPKIPA has also elected to remove the Federal Common Policy CA root certificate from Microsoft's Trust Store." %}
 
 - [How Does this Work?](#how-does-this-work)
 - [What Will Be Impacted?](#what-will-be-impacted)
@@ -24,12 +24,12 @@ Starting in **September-October 2018**, government users of Apple iOS, macOS, an
 
 ## How Does This Work?
 
-Apple currently distributes the Federal Common Policy CA (FCPCA/COMMON) through its pre-installed Operating System Trust Stores for iOS, macOS, and tvOS. 
+Apple currently distributes the Federal Common Policy CA (COMMON) through its pre-installed operating system Trust Stores for iOS, macOS, and tvOS. 
 
 Three root CA certificate _types_ reside in Apple's Trust Stores:
 
 - _Trusted Certificates_ &mdash; Trusted certificates that establish a chain of trust.
-- _Always Ask_ &mdash; Untrusted certificates that are not blocked. If a resource (e.g., website or signed email) chains to one of these certificates, the Apple Operating System will ask you to choose whether or not to trust it.
+- _Always Ask_ &mdash; Untrusted certificates that are not blocked. If a resource (e.g., website or signed email) chains to one of these certificates, the Apple operating system will ask you to choose whether or not to trust it.
 - _Blocked_ &mdash; Potentially compromised certificates that will never be trusted.
 
 These certificate types are stored within Apple _Keychains_:
@@ -40,7 +40,7 @@ These certificate types are stored within Apple _Keychains_:
  
 ## What Will Be Impacted?
 
-These Apple Operating System versions will be impacted:
+These Apple operating system versions will be impacted:
 
 |**macOS**|**iOS**|**tvOS**|
 | :-------- |:-------- |:-------- |
@@ -64,7 +64,7 @@ You can mitigate the risk to government missions, intranets, applications, and g
 
 ## What Should I Do?
 
-You will need to download the COMMON root CA certificate **and** install the root certificate on government-furnished Apple devices.  Installations should use enterprise configuration management tools, and these steps should only be completed by the agency enterprise administrators or network engineers.  
+You will need to download the COMMON root CA certificate **and** install the root certificate on government-furnished Apple devices.  Installations should use enterprise configuration management tools.  These steps should only be completed by the agency enterprise administrators or network engineers.  
 
 * [Download Options](#download-options)
 * [Install Options](#install-options)
@@ -122,11 +122,11 @@ You will need to download the COMMON root CA certificate and install it on gover
 
 #### Option 3. Email Us
 
-To request an out-of-band copy of the COMMON root CA certificate, email us at fpki@gsa.gov.
+Email us at fpki@gsa.gov to request an out-of-band copy of the COMMON root CA certificate.
 
 ### Installation Options
 
-You can install COMMON in your agency enterprise Apple devices Trust Stores using these options: 
+Install COMMON in your agency government-furnished Apple devices using these options: 
 
 * [Option 1. Install Using an Apple Configuration Profile](#option-1-install-using-an-apple-configuration-profile)
 * [Option 2. Install Using Command Line](#option-2-install-using-command-line)
@@ -233,7 +233,8 @@ The configuration profile can be distributed:
 
 #### Option 2. Install Using Command Line
 This option is for MacOS devices only. 
-1. Install the COMMON root CA certificate as a Trusted Root:
+
+1. Command line:
 
     ```
 	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
