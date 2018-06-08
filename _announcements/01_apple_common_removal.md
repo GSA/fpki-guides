@@ -134,6 +134,10 @@ These procedures are intended for Enterprise Administrators.
 
 You can create Apple Configuration Profiles (XML files) to distribute trusted root certificates across an Enterprise's Apple devices. An example "Ready-To-Use" Apple Configuration Profile to install COMMON is presented beneath the configuration creation instructions.
 
+* [Create Configuration Profiles to Install COMMON for macOS, iOS, and tvOS](#create-configuration-profiles-to-install-common-for-macOS- iOS-and-tvOS)
+* [Ready-To-Use Configuration Profile To Install COMMON](#ready-to-use-configuration-profile-to-install-common)
+* [Distribute Configuration Profiles To Install COMMON](#distribute-configuration-profiles-to-install-common)
+
 ##### Create Configuration Profiles to Install COMMON for macOS, iOS, and tvOS
 
 One way you can create a Configuration Profile is by using Apple's free Configurator 2 application:
@@ -146,7 +150,7 @@ One way you can create a Configuration Profile is by using Apple's free Configur
 6. Click *File* -> *Save* to save your profile to a preferred file location.
 7. Close Configurator 2.
 
-##### Ready-To-Use Apple Configuration Profile To Install COMMON
+##### Ready-To-Use Configuration Profile To Install COMMON
 
 The example configuration profile below (created with Configurator 2) will install COMMON as a trusted root CA for _both macOS and iOS_. Before using the profile, you should verify its suitability for your agency. 
 
@@ -250,10 +254,14 @@ Use any of these options to distribute your configuration profiles:
 Non-administrative users may follow the steps above to install COMMON in the Login Keychain, which is specific to their accounts. This will not impact other user accounts on a device. 
 
 ### iOS&nbsp;&mdash;&nbsp;Install COMMON Options
+
 You can install COMMON in your iOS device's Trust Store by using one of these options:
 
-#### Option 1:&nbsp;&nbsp;Install COMMON Using Safari Web Browser
-1. Launch Safari.
+* [Option 1. Install COMMON Using Safari Web Browser](#option-1-install-common-using-safari-web-browser)
+* [Option 2. Install COMMON Using Apple Configuration Profile](#option-2-install-common-using-apple-configuration-profile)
+
+#### Option 1. Install COMMON Using Safari Web Browser
+1. Open Safari.
 2. Navigate to the [COMMON root CA certificate](http://http.fpki.gov/fcpca/fcpca.crt){:target="_blank"}<br>
 > System message appears: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*<br>
 3. Click *Allow*.<br>
@@ -273,7 +281,7 @@ Next, you'll need to enable full trust for COMMON:
 4. You can now successfully navigate to an intranet site whose TLS certificate was issued by a Federal PKI CA.
 
 
-#### Option 2:&nbsp;&nbsp;Install COMMON Using Apple Configuration Profile
+#### Option 2. Install COMMON Using Apple Configuration Profile
 You can use the macOS configuration profile procedures above to install COMMON on iOS devices: [Apple Configuration Profiles](#install-using-an-apple-configuration-profile).
 
 
