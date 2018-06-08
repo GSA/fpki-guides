@@ -24,7 +24,7 @@ Starting in **September-October 2018**, government users of Apple iOS, macOS, an
 
 ## How Does This Work?
 
-Apple currently distributes Federal Common Policy CA (FCPCA/COMMON) through its pre-installed Operating System Trust Stores for iOS, macOS, and tvOS. 
+Apple currently distributes the Federal Common Policy CA (FCPCA/COMMON) through its pre-installed Operating System Trust Stores for iOS, macOS, and tvOS. 
 
 Three root CA certificate _types_ reside in Apple's Trust Stores:
 
@@ -126,11 +126,11 @@ You can install COMMON in your macOS device's Trust Store by one of these option
 
 These procedures are intended for Enterprise Administrators. 
 
-You can create Apple Configuration Profiles (XML files) to distribute trusted root certificates across an Enterprise's Apple devices. An example, "Ready-To-Use" Apple Configuration Profile to install COMMON is presented beneath the configuration creation instructions.
+You can create Apple Configuration Profiles (XML files) to distribute trusted root certificates across an Enterprise's Apple devices. An example "Ready-To-Use" Apple Configuration Profile to install COMMON is presented beneath the configuration creation instructions.
 
 ##### Create Configuration Profiles to Install COMMON for macOS, iOS, and tvOS
 
-One way you can create a configuration profile is by using Apple's free Configurator 2:
+One way you can create a Configuration Profile is by using Apple's free Configurator 2 application:
 
 1. Download and install Configurator 2 from the Apple App Store.
 2. Open Configurator and click *File* -> *New Profile*.
@@ -139,9 +139,6 @@ One way you can create a configuration profile is by using Apple's free Configur
 5. Browse to local *certificate* copies on your device. Select those that you'd like to add to the profile. (For the below example, a copy of the Federal Common Policy CA root certificate was used.)
 6. Click *File* -> *Save* to save your profile to a preferred file location.
 7. Close Configurator 2.
-8. Double-click on the profile to manually install it.<br>
-_OR_<br>
-8. To automate profile installation, use device configuration management applications (e.g., COTS solutions).
 
 ##### Ready-To-Use Apple Configuration Profile To Install COMMON
 
