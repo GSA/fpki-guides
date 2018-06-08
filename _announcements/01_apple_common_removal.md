@@ -47,7 +47,7 @@ These Apple Operating System versions will be impacted:
 | High Sierra (10.13) |	 iOS11 | tvOS11 |
 
 
-Government users will receive errors on government - Apple devices if any of these are true:
+Government users will receive errors on government-furnished Apple devices if any of these are true:
 
 1. Logging into a government network with a PIV credential 
 2. Authenticating to a government Virtual Private Network (VPN) endpoint with a PIV credential
@@ -64,7 +64,7 @@ You can mitigate the risk to government missions, intranets, applications, and g
 
 ## What Should I Do?
 
-You will need to download the COMMON root CA certificate **and** install the root certificate on government furnished Apple devices.  Installations should use enterprise configuration management tools, and these steps should only be completed by the agency enterprise administrators or network engineers.  
+You will need to download the COMMON root CA certificate **and** install the root certificate on government-furnished Apple devices.  Installations should use enterprise configuration management tools, and these steps should only be completed by the agency enterprise administrators or network engineers.  
 
 * [Download Options](#download-options)
 * [Install Options](#install-options)
@@ -134,7 +134,7 @@ You can install COMMON in your agency enterprise Apple devices Trust Stores usin
 * [Option 4. Install Using Safari Web Browser](#option-4-install-using-safari-web-browser)
 
 
-#### Option 1:&nbsp;&nbsp;Install Using an Apple Configuration Profile
+#### Option 1. Install Using an Apple Configuration Profile
 This option works for both MacOS and iOS devices.
 
 Apple Configuration Profiles (XML files) can be used to distribute trusted root certificates to your agency's enterprise Apple devices.  Create a Configuration Profile by using Apple's Configurator 2 application. An example configuration profile is included beneath the configuration creation instructions:
@@ -231,7 +231,7 @@ The configuration profile can be distributed:
 5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"} 
 
 
-#### Option 2:&nbsp;&nbsp;Install Using Command Line
+#### Option 2. Install Using Command Line
 This option is for MacOS devices only. 
 1. Install the COMMON root CA certificate as a Trusted Root:
 
@@ -239,7 +239,7 @@ This option is for MacOS devices only.
 	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
     ```
 
-#### Option 3:&nbsp;&nbsp;Install Using Apple Keychain
+#### Option 3. Install Using Apple Keychain
 This option is for MacOS devices only. 
 
 1. Browse to your downloaded copy of the COMMON root CA certificate.
@@ -249,7 +249,7 @@ This option is for MacOS devices only.
 Non-administrative users may follow the steps above to install COMMON in the Login Keychain specific to their account. This will not impact other user accounts on a device. 
 
 
-#### Option 4:&nbsp;&nbsp;Install Using Safari Web Browser
+#### Option 4. Install Using Safari Web Browser
 This option is for iOS devices only. 
 
 1. Launch Safari.
