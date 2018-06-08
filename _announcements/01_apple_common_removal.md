@@ -135,7 +135,7 @@ Install COMMON in your agency government-furnished Apple devices using these opt
 
 
 #### Option 1. Install Using an Apple Configuration Profile
-This option works for both MacOS and iOS devices.
+This option works for both macOS and iOS devices.
 
 Apple Configuration Profiles (XML files) can be used to distribute trusted root certificates to your agency's enterprise Apple devices.  Create a Configuration Profile by using Apple's Configurator 2 application. An example configuration profile is included beneath the configuration creation instructions:
 
@@ -232,7 +232,7 @@ The configuration profile can be distributed:
 
 
 #### Option 2. Install Using Command Line
-This option is for MacOS devices only. 
+This option is for macOS devices only. 
 
 1. Command line:
 
@@ -241,7 +241,7 @@ This option is for MacOS devices only.
     ```
 
 #### Option 3. Install Using Apple Keychain
-This option is for MacOS devices only. 
+This option is for macOS devices only. 
 
 1. Browse to your downloaded copy of the COMMON root CA certificate.
 2. Double-click on the file.
