@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: FPKI Graph
+title: Federal PKI Graph
 collection: tools
 permalink: tools/fpkigraph/
 ---
