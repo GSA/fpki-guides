@@ -4,31 +4,20 @@ title: Federal PKI Activity Report
 collection: tools
 permalink: tools/fpkiactivityreport/
 ---
-# The Federal PKI Activity Report
-
-## Purpose
-
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
-## FPKI Affiliate Scorecard
+- [FPKI Affiliate Status Summary](#fpki-affiliate-status-summary)
+- [FPKI Management Authority Certificate Activity](#fpkima-certificate-activity)
+- [FPKI Repository Availability](#repository-availability)
 
-The operational status for each FPKI Affiliate is summarized in the FPKI Affiliate Status Summary below.  
-An overall operational status include both issues that affect technical interoperability and non-compliance with 
-applicable Certificate Policy (CP). Scorecards are not used for any other purpose such as ranking or rating. Affiliates can:
+Resolve issues by contacting one of the teams:  
 
-- Resolve technical issues by contacting the [FPKIMA Team](fpkipa-ma@listserv.gsa.gov). 
-- Resolve Certificate Policy issues by contacting the [Certificate Policy Working Group (CPWG)](fpkipa_cpwg@listserv.gsa.gov).  
+- Technical issues contact the [FPKIMA Team](mailto:fpkipa-ma@listserv.gsa.gov) 
+- Certificate Policy issues contact the [Certificate Policy Working Group (CPWG)](mailto:fpkipa_cpwg@listserv.gsa.gov)  
 
-## FPKI Affiliate Scorecard Legend
-
-**_Significant_** – Technical and/or policy issues that WILL adversely affect interoperability. </br> 
-**_Moderate_** – Technical and/or policy issues that MAY or MAY NOT adversely affect interoperability. </br>
-**_No Impact_** – Technical and/or policy issues that WILL NOT adversely affect interoperability. </br> 
-**_No Issues_** – No technical or policy issues were found in the last thirty days. </br>
 
 ## FPKI Affiliate Status Summary
-
-The following table summarizes the Scorecard status of each connected affiliate to Federal Common Policy or Federal Bridge.
+The operational status for each FPKI Affiliate is summarized for each affiliate connected to the Federal Common Policy CA (FCPCA) or the Federal Bridge CA (FBCA). The overall operational status identifies issues that affect technical interoperability and non-compliance with applicable Certificate Policies (CP). The status is not used for any other purpose such as ranking or rating. 
 
 | Federal Agency or Affiliate CA | FPKIMA CA | Status |
 | ------------------------------ | --------- | ------ |
@@ -53,10 +42,15 @@ The following table summarizes the Scorecard status of each connected affiliate 
 | US Treasury SSP | FCPCA | No Issues |
 | Verizon Business SSP | FCPCA | No Issues |
 
-## FPKI Trust Infrastructure Details
+**FPKI Affiliate Status Legend**
 
-### FPKIMA Certificate Activity
+- _Significant_: Technical and/or policy issues that will adversely affect interoperability   
+- _Moderate_: Technical and/or policy issues that may or may not adversely affect interoperability  
+- _No Impact_: Technical and/or policy issues that will not adversely affect interoperability   
+- _No Issues_: No technical or policy issues were found in the last thirty days  
 
+
+## FPKIMA Certificate Activity
 The activity listed in this section is limited to the certificates issued BY or TO the Federal Bridge or Federal Common Policy CA.
 
 The following certificates were issued **BY** or **TO** the FPKI Trust Infrastructure in the last 30 days.
@@ -81,8 +75,8 @@ The following certificates are expiring in the next four months and may be re-is
 | GSA ACES | IdenTrust ACES CA 2 | Federal Bridge CA 2016 | 46 68 3C 1B 51 B5 1C B9 1F 73 97 74 35 E4 3C F8 2B E9 CC 74 | 09/01/2018 |
 | IdenTrust NFI | IdenTrust Global Common Root CA 1 | Federal Bridge CA 2016 | 66 FC 51 BF 22 5B D8 C4 E6 11 E1 56 E7 30 A4 83 FF 99 90 C3 | 09/25/2018 |
 
-### Repository Availability Reporting
-The following information represents the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly percentage (e.g. 100 is 100% or no downtwime for that month).
+## Repository Availability 
+This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly percentage.  For example, 100 is 100% or no downtwime for that month.
 
 | FPKI Entity                                | 06/17 | 07/17 | 08/17 | 09/17 | 10/17 | 11/17 | 12/17 | 01/18 | 02/18 | 03/18 | 04/18 | 05/18 | 12-Month Average |
 | ------------------------------------------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ---------------- |
