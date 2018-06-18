@@ -70,7 +70,8 @@ navigation:
 - text: Trust Stores
   url: truststores
   internal: true
-  coll: false
+  coll: true
+  collname: trust-stores
 - text: Useful Tools
   url: tools/
   internal: true
