@@ -5,7 +5,6 @@ title: Microsoft Removal Solutions
 collection: trust-stores
 permalink: trust-stores/microsoft-removal-solutions/
 ---
-## Background 
 In FY 2019, the U.S. Government is removing the Federal Public Key Infrastructure (FPKI) root certificate from the Microsoft certificate store. This change will affect all federal agencies and may have impact on the following services: 
 - personal identity verification (PIV) authentication to the government networks
 - agency web applications implementing client authentication (e.g. PIV authentication)
