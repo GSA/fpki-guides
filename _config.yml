@@ -68,7 +68,7 @@ navigation:
   # internal: true
   # coll: false
 - text: Trust Stores
-  url: truststores/
+  url: trust-stores/
   internal: true
   coll: true
   collname: trust-stores
