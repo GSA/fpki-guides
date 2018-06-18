@@ -29,14 +29,14 @@ Here is a table of common trust stores, and whether the Federal Common Policy CA
 Trust Store|Includes FCPCA?|Trust Store Manager|Platforms serviced|Program Information Location
 ---|---|---|---|---
 Microsoft Root Certificate Program|Yes|Microsoft Management Console|Windows OS, Internet Explorer Browser, Outlook|http://aka.ms/RootCert
-Apple Root Certificate Program|Yes|Keychain Access utility|iOS, WatchOS, OS X, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
+Apple Root Certificate Program|Yes|Keychain Access utility|iOS, tvOS, WatchOS, macOS, Safari Browser|https://www.apple.com/certificateauthority/ca_program.html
 Mozilla Network Security Services (NSS)|No (application in progress)|Browser Trust Store|Firefox, Thunderbird, Linux Operating Systems|https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/
 Adobe Approved Trust List|Yes|Application Trust Store|Adobe Acrobat|https://helpx.adobe.com/acrobat/kb/approved-trust-list2.html
 Java Root Certificate Program|No (pending application)|Java Applet|Java Distributions|http://www.oracle.com/technetwork/java/javase/javasecarootcertsprogram-1876540.html
 Google|No|Google Admin Console|Chrome Browser, Android, and ChromiumOS|https://www.chromium.org/Home/chromium-security/root-ca-policy
 Opera|No longer operates its own program and relies upon Mozilla.
 
-{% include alert-info.html content="Google Chrome uses the underlying trust library of the operating system on Windows or Apple OS X systems. Linux-based systems distribute the Mozilla NSS Library which may be modified by each version of Linux." %}
+{% include alert-info.html content="Google Chrome uses the underlying trust library of the operating system on Windows or Apple macOS systems. Linux-based systems distribute the Mozilla NSS Library which may be modified by each version of Linux." %}
 
 {% include alert-info.html content="In Microsoft, the Federal Common Policy CA is called: U.S. Government Common Policy." %}
 
