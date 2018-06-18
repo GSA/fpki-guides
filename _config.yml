@@ -127,6 +127,10 @@ collections:
     label: "FAQ"
     permalink: /faq/:path/
     output: true
+  trust-stores:
+    label: "Trust Stores"
+    permalink: /trust-stores/:path/
+    output: true
   tools:
     label: "Useful Tools"
     permalink: /tools/:path/
