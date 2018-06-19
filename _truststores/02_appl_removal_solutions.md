@@ -7,7 +7,7 @@ permalink: truststores/apple/
 ---
 In FY 2019, the U.S. Government is removing the Federal Public Key Infrastructure (FPKI) root certificate from the Apple operating system certificate stores (macOS, iOS, and tvOS). This change will affect all federal agency devices using Apple operating systems and may have an impact on the following services:  
 
-- Personal Identity Verification (PIV) authentication to government networks
+- Personal Identity Verification (PIV) credential authentication to government networks
 - Agency web applications implementing client authentication (e.g., PIV authentication)
 - Validation of digital signatures
 - Other applications leveraging the Apple certificate store
