@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Trust Stores
-collection: trust-stores
-permalink: /trust-stores/
+collection: truststores
+permalink: /truststores/
 ---
 
 This is a high-level overview of what application trust stores are and a list of commonly used application trust stores and settings.  

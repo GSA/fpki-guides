@@ -68,10 +68,10 @@ navigation:
   # internal: true
   # coll: false
 - text: Trust Stores
-  url: trust-stores/
+  url: truststores/
   internal: true
   coll: true
-  collname: trust-stores
+  collname: truststores
 - text: Useful Tools
   url: tools/
   internal: true
@@ -127,9 +127,9 @@ collections:
     label: "FAQ"
     permalink: /faq/:path/
     output: true
-  trust-stores:
+  truststores:
     label: "Trust Stores"
-    permalink: /trust-stores/:path/
+    permalink: /truststores/:path/
     output: true
   tools:
     label: "Useful Tools"
