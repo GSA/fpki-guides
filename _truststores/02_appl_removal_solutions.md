@@ -2,8 +2,8 @@
 layout: default
 navtitle: Apple Removal Solutions
 title: Apple Removal Solutions
-collection: trust-stores
-permalink: trust-stores/apple/
+collection: truststores
+permalink: truststores/apple/
 ---
 In FY 2019, the U.S. Government is removing the Federal Public Key Infrastructure (FPKI) root certificate from the Apple operating system certificate stores (macOS, iOS, and tvOS). This change will affect all federal agency devices using Apple operating systems and may have impact on the following services:  
 
