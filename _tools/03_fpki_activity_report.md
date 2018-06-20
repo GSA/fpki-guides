@@ -24,7 +24,7 @@ The operational status for each FPKI Affiliate is summarized for each affiliate 
 <details open>
 <summary> Affiliates with *Issue* status </summary>
 
-No Affiliate issues reported.
+**No Affiliate issues reported.**
 </details>
 
 <details>
