@@ -10,7 +10,7 @@ In FY 2019, the U.S. Government is removing the Federal Public Key Infrastructur
 - Personal Identity Verification (PIV) credential authentication to government networks
 - Agency web applications implementing client authentication (e.g., PIV authentication)
 - Validation of digital signatures
-- Other applications leveraging the Apple certificate Trust Store
+- Other applications leveraging the Apple certificate store
 
 To mitigate any impact this change may have, agencies will have to manually retrieve the U.S. Government root CA certificate, import this certificate into agency enterprise certificate stores, and ensure that this change is propagated throughout the networks. The root certificate is available immediately and will remain unchanged. 
 
