@@ -32,7 +32,7 @@ The operational status for each FPKI Affiliate is summarized for each affiliate 
 
 <details>
 <summary> Affiliates with *No Issue* status </summary>
-
+ 
 | Federal Agency or Affiliate | FPKIMA CA | Status |
 | --------------------------- | --------- | ------ |
 | CertiPath Bridge | FBCA & SHA1FRCA | No Issues |
@@ -55,6 +55,7 @@ The operational status for each FPKI Affiliate is summarized for each affiliate 
 | WidePoint/ORC SSP | FCPCA | No Issues |
 | US Treasury SSP | FCPCA | No Issues |
 | Verizon Business SSP | FCPCA | No Issues |
+
 </details><br>
 
 **FPKI Affiliate Status Legend**
@@ -112,6 +113,7 @@ This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly p
 | Symantec SSP G4                            | 100   | 100   | 99.90 | 99.93 | 99.98 | 99.68 | 99.98 | 99.86 | 99.80 | 99.89 | 99.98 | 99.98 | 99.91 |
 | TSCP SHA-256 Bridge CA                     | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.92 | 99.98 | 100   | 100   | 99.99 |
 | USPTO                                      | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 99.95 | 99.98 | 100   | 99.95 |
+
 </details>
 
 <details>
@@ -139,4 +141,5 @@ This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly p
 | Verizon NFI CT-CSSP-CA                     |
 | Verizon SSP Betrusted Production CA        |
 | Verizon SSP CA 2                           |
+
 </details>
