@@ -24,15 +24,17 @@ The operational status for each FPKI Affiliate is summarized for each affiliate 
 
 <details open>
 <summary> Affiliates with _Issue_ status </summary>
+
 No Affiliate issues reported.
 </details>
 
 <details>
 <summary> Affiliates with _No Issue_ status </summary>
-| Federal Agency or Affiliate CA | FPKIMA CA | Status |
-| ------------------------------ | --------- | ------ |
-| CertiPath Bridge | FBCA | No Issues |
-| Department of Defense | FBCA | No Issues |
+
+| Federal Agency or Affiliate | FPKIMA CA | Status |
+| --------------------------- | --------- | ------ |
+| CertiPath Bridge | FBCA & SHA1FRCA | No Issues |
+| Department of Defense | FBCA & SHA1FRCA | No Issues |
 | DigiCert NFI | FBCA | No Issues |
 | Entrust Managed Services NFI | FBCA | No Issues |
 | Exostar NFI | FBCA | No Issues |
