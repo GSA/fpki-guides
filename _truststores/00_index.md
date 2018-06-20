@@ -56,7 +56,7 @@ All registry settings for managed Federal Government computers should use group 
 
 ### How do I see which Federal PKI certificate policies are trusted by Adobe?
 
-Federal PKI certificates may be used for digitally signing documents between federal agencies, and with business partners.  Adobe is just one option used for digital signatures and a common question is which certificate policies are trusted. 
+Federal PKI certificates may be used for digitally signing documents between federal agencies and with business partners.  Adobe is just one option used for digital signatures, and a common question is "which certificate policies are trusted?" 
 
 You can view which certificate policies are trusted in Adobe Acrobat:
 
