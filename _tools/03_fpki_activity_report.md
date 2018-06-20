@@ -18,7 +18,6 @@ Resolve issues by contacting one of the teams:
 - Technical issues contact the [FPKIMA Team](mailto:fpkipa-ma@listserv.gsa.gov) 
 - Certificate Policy issues contact the [Certificate Policy Working Group (CPWG)](mailto:fpkipa_cpwg@listserv.gsa.gov)  
 
-
 ## FPKI Affiliate Status Summary
 The operational status for each FPKI Affiliate is summarized for each affiliate connected to the Federal Common Policy CA (FCPCA) or the Federal Bridge CA (FBCA). The overall operational status identifies issues that affect technical interoperability and non-compliance with applicable Certificate Policies (CP). The status is not used for any other purpose such as ranking or rating. 
 
@@ -26,7 +25,6 @@ The operational status for each FPKI Affiliate is summarized for each affiliate 
 <summary> Affiliates with *Issue* status </summary>
 
 No Affiliate issues reported.
-
 </details>
 
 <details>
@@ -54,8 +52,7 @@ No Affiliate issues reported.
 | WidePoint/ORC SSP | FCPCA | No Issues |
 | US Treasury SSP | FCPCA | No Issues |
 | Verizon Business SSP | FCPCA | No Issues |
-
-</details>
+</details><br>
 
 **FPKI Affiliate Status Legend**
 
