@@ -15,7 +15,7 @@ This report provides a technical and policy compliance status for each Federal P
 
 Resolve issues by contacting one of the teams:  
 
-- Technical issues contact the [FPKIMA Team](mailto:fpkipa-ma@listserv.gsa.gov) 
+- Technical issues contact the [FPKIMA Team](mailto:fpki-help@gsa.gov) 
 - Certificate Policy issues contact the [Certificate Policy Working Group (CPWG)](mailto:fpkipa_cpwg@listserv.gsa.gov)  
 
 ## FPKI Affiliate Status Summary
@@ -89,24 +89,13 @@ The following certificates are expiring in the next four months and may be re-is
 ## Repository Availability 
 This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly percentage.  For example, 100 is 100% or no downtwime for that month.
 
+<details open>
+<summary> Affiliates with less than 100% availability </summary>
+
 | FPKI Entity                                | 06/17 | 07/17 | 08/17 | 09/17 | 10/17 | 11/17 | 12/17 | 01/18 | 02/18 | 03/18 | 04/18 | 05/18 | 12-Month Average |
 | ------------------------------------------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| CertiPath Bridge CA                        | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| CertiPath Bridge CA - G2                   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| Department of State AD Root CA             | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| DigiCert Federated ID CA-1 CRL3            | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| DigiCert Federated ID CA-1 CRL4            | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | DoD Interoperability Root 1                | 100   | 100   | 99.80 | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.98 |
 | DoD Interoperability Root 2                | 100   | 100   | 99.80 | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.98 |
-| Entrust NFI Root CA                        | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| Entrust NFI Root CA 2                      | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| Entrust Managed Services Root CA           | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| Exostar Federated Identity Service Root CA | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| FPKI EGTSCA 2014                           | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| FPKI FBCA2013                              | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| FPKI FBCA2016                              | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| FPKI FCPCA                                 | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| FPKI SHA1FRCA G2                           | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | GPO PCA                                    | 100   | 100   | 100   | 100   | 100   | 96.81 | 100   | 100   | 100   | 100   | 100   | 100   | 99.73 |
 | IdenTrust ACES 2                           | 100   | 100   | 100   | 100   | 100   | 99.59 | 100   | 100   | 100   | 100   | 100   | 99.96 | 99.96 |
 | IdenTrust Global Common Root CA            | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.22 | 99.87 |
@@ -115,13 +104,35 @@ This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly p
 | ORC NFI 3 CA                               | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 100   | 100   | 99.98 |
 | ORC SSP 3                                  | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 100   | 100   | 99.98 |
 | ORC SSP 4                                  | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 100   | 100   | 99.98 |
-| SAFE Bridge CA 2                           | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |  
 | STRAC Bridge CA                            | 99.80 | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.98 | 99.98 | 100   | 99.98 |
-| Symantec Class 3 NFI CA                    | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | Symantec SSP G4                            | 100   | 100   | 99.90 | 99.93 | 99.98 | 99.68 | 99.98 | 99.86 | 99.80 | 99.89 | 99.98 | 99.98 | 99.91 |
 | TSCP SHA-256 Bridge CA                     | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.92 | 99.98 | 100   | 100   | 99.99 |
-| US Treasury Root CA                        | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | USPTO                                      | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 99.95 | 99.98 | 100   | 99.95 |
-| Verizon NFI CT-CSSP-CA                     | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| Verizon SSP Betrusted Production CA        | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| Verizon SSP CA 2                           | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
+</details>
+
+<details>
+<summary> Affiliates with 100% availability </summary>
+
+| FPKI Entity                                | 
+| ------------------------------------------ |
+| CertiPath Bridge CA                        |
+| CertiPath Bridge CA - G2                   |
+| Department of State AD Root CA             |
+| DigiCert Federated ID CA-1 CRL3            |
+| DigiCert Federated ID CA-1 CRL4            |
+| Entrust NFI Root CA                        |
+| Entrust NFI Root CA 2                      |
+| Entrust Managed Services Root CA           |
+| Exostar Federated Identity Service Root CA |
+| FPKI EGTSCA 2014 (long-term CRL)           |
+| FPKI FBCA2013 (long-term CRL)              |
+| FPKI FBCA2016                              |
+| FPKI FCPCA                                 |
+| FPKI SHA1FRCA G2                           |
+| SAFE Bridge CA 2                           |
+| Symantec Class 3 NFI CA                    |
+| US Treasury Root CA                        |
+| Verizon NFI CT-CSSP-CA                     |
+| Verizon SSP Betrusted Production CA        |
+| Verizon SSP CA 2                           |
+<details>
