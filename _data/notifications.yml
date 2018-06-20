@@ -311,7 +311,7 @@
   change_type: CA Certificate Issuance
   start_datetime: April 23, 2018
   end_datetime: December 15, 2019
-  system: FPKI Trust Infrastructure (Federal Bridge 2016)
+  system: FPKI Trust Infrastructure
   change_description: Issuance of cross-certificate from Federal Bridge 2016 to US Patent and Trademark CA due to PTO Re-Key
   contact: FPKI at GSA.gov
   ca_certificate_hash: ‎07 04 ea 96 33 a4 5a 9a 39 12 3b ac 28 be 01 07 8c 6b fd 3a
@@ -348,11 +348,11 @@
   sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c
   ocsp_uri: N/A
   
-- notice_date: Jun 7, 2018
+- notice_date: June 7, 2018
   change_type: CA Certificate Issuance
   start_datetime: 6/7/2018
   end_datetime: 6/7/2021
-  system: FPKI Trust Infrastructure - Federal Bridge 2016
+  system: FPKI Trust Infrastructure
   change_description: New issuance to the SAFE BioPharma Bridge CA 02
   contact: FPKI-help@gsa.gov
   ca_certificate_hash: ‎5c 65 42 19 97 2b ac 88 7b ea 9f 13 09 eb 9e 05 2f b7 75 7e
