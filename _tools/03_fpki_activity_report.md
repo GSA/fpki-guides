@@ -19,6 +19,29 @@ Resolve issues by contacting one of the teams:
 ## FPKI Affiliate Status Summary
 The operational status for each FPKI Affiliate is summarized for each affiliate connected to the Federal Common Policy CA (FCPCA) or the Federal Bridge CA (FBCA). The overall operational status identifies issues that affect technical interoperability and non-compliance with applicable Certificate Policies (CP). The status is not used for any other purpose such as ranking or rating. 
 
+<details>
+<summary> Affiliates with _Significant_ status </summary>
+| Federal Agency or Affiliate CA | FPKIMA CA | Status |
+| ------------------------------ | --------- | ------ |
+|N/A | | |
+ </detials>
+ 
+<details>
+<summary> Affiliates with _Moderate_ status </summary>
+| Federal Agency or Affiliate CA | FPKIMA CA | Status |
+| ------------------------------ | --------- | ------ |
+|N/A | | |
+ </detials>
+ 
+<details>
+<summary> Affiliates with _No Impact_ status </summary>
+| Federal Agency or Affiliate CA | FPKIMA CA | Status |
+| ------------------------------ | --------- | ------ |
+|N/A | | |
+ </detials>
+
+<details>
+<summary> Affiliates with _No Issue_ status </summary>
 | Federal Agency or Affiliate CA | FPKIMA CA | Status |
 | ------------------------------ | --------- | ------ |
 | CertiPath Bridge | FBCA | No Issues |
@@ -41,6 +64,7 @@ The operational status for each FPKI Affiliate is summarized for each affiliate 
 | WidePoint/ORC SSP | FCPCA | No Issues |
 | US Treasury SSP | FCPCA | No Issues |
 | Verizon Business SSP | FCPCA | No Issues |
+ </detials>
 
 **FPKI Affiliate Status Legend**
 
