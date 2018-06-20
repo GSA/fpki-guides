@@ -4,6 +4,9 @@ title: Federal PKI Activity Report
 collection: tools
 permalink: tools/fpkiactivityreport/
 ---
+
+**Last Update: June 20, 2018**
+
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
 - [FPKI Affiliate Status Summary](#fpki-affiliate-status-summary)
@@ -19,10 +22,19 @@ Resolve issues by contacting one of the teams:
 ## FPKI Affiliate Status Summary
 The operational status for each FPKI Affiliate is summarized for each affiliate connected to the Federal Common Policy CA (FCPCA) or the Federal Bridge CA (FBCA). The overall operational status identifies issues that affect technical interoperability and non-compliance with applicable Certificate Policies (CP). The status is not used for any other purpose such as ranking or rating. 
 
-| Federal Agency or Affiliate CA | FPKIMA CA | Status |
-| ------------------------------ | --------- | ------ |
-| CertiPath Bridge | FBCA | No Issues |
-| Department of Defense | FBCA | No Issues |
+<details open>
+<summary> Affiliates with _Issue_ status </summary>
+
+No Affiliate issues reported.
+</details>
+
+<details>
+<summary> Affiliates with _No Issue_ status </summary>
+
+| Federal Agency or Affiliate | FPKIMA CA | Status |
+| --------------------------- | --------- | ------ |
+| CertiPath Bridge | FBCA & SHA1FRCA | No Issues |
+| Department of Defense | FBCA & SHA1FRCA | No Issues |
 | DigiCert NFI | FBCA | No Issues |
 | Entrust Managed Services NFI | FBCA | No Issues |
 | Exostar NFI | FBCA | No Issues |
@@ -41,6 +53,7 @@ The operational status for each FPKI Affiliate is summarized for each affiliate 
 | WidePoint/ORC SSP | FCPCA | No Issues |
 | US Treasury SSP | FCPCA | No Issues |
 | Verizon Business SSP | FCPCA | No Issues |
+</details>
 
 **FPKI Affiliate Status Legend**
 
@@ -57,19 +70,18 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 
 | Affiliate | Subject CA | Issuing CA | Serial | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| No Activity |
+| SAFE BioPharma | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 5c 65 42 19 97 2b ac 88 7b ea 9f 13 09 eb 9e 05 2f b7 75 7e | 06/07/2021 |
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
-| Affiliate | Subject CA | Issuing CA | Serial | Issued Date |
+| Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| No Activity |
+| SAFE BioPharma | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 9 C6 EB AD 66 1E 5B 89 92 84 4D C9 58 57 7E 94 4C DC EF 52 | 06/23/2018 |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
 | Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ---------- |
-| SAFE BioPharma | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 9 C6 EB AD 66 1E 5B 89 92 84 4D C9 58 57 7E 94 4C DC EF 52 | 06/23/2018 |
 | ORC/WidePoint NFI | ORC NFI CA 3 | Federal Bridge CA 2016 | 3E 67 09 5D 45 33 A2 C9 89 FA 67 3F AB 81 7E D5 58 41 74 22 | 07/31/2018 |
 | SAFE BioPharma | Federal Bridge CA 2016 | SAFE Bridge CA 02 | 74 00 00 00 09 B0 8D 11 8B 00 3E 66 74 00 00 00 00 00 09 | 08/23/2018 |
 | GSA ACES | IdenTrust ACES CA 2 | Federal Bridge CA 2016 | 46 68 3C 1B 51 B5 1C B9 1F 73 97 74 35 E4 3C F8 2B E9 CC 74 | 09/01/2018 |
@@ -79,7 +91,7 @@ The following certificates are expiring in the next four months and may be re-is
 This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly percentage.  For example, 100 is 100% or no downtwime for that month.
 
 | FPKI Entity                                | 06/17 | 07/17 | 08/17 | 09/17 | 10/17 | 11/17 | 12/17 | 01/18 | 02/18 | 03/18 | 04/18 | 05/18 | 12-Month Average |
-| ------------------------------------------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ---------------- |
+| ------------------------------------------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | CertiPath Bridge CA                        | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | CertiPath Bridge CA - G2                   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | Department of State AD Root CA             | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
