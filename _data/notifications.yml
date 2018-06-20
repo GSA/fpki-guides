@@ -307,6 +307,62 @@
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   
+- notice_date: April 25, 2018
+  change_type: CA Certificate Issuance
+  start_datetime: April 23, 2018
+  end_datetime: December 15, 2019
+  system: FPKI Trust Infrastructure (Federal Bridge 2016)
+  change_description: Issuance of cross-certificate from Federal Bridge 2016 to US Patent and Trademark CA due to PTO Re-Key
+  contact: FPKI at GSA.gov
+  ca_certificate_hash: ‎07 04 ea 96 33 a4 5a 9a 39 12 3b ac 28 be 01 07 8c 6b fd 3a
+  ca_certificate_issuer: CN = Federal Bridge CA 2016 OU = FPKI O = U.S. Government C = US
+  ca_certificate_subject: CN = USPTO_INTR_CA1 CN = AIA CN = Public Key Services CN = Services CN = Configuration DC = uspto DC = gov
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
+  ocsp_uri: N/A
+
+- notice_date: May 16, 2018
+  change_type: CA Certificate Revocation
+  start_datetime: 5/18/2018
+  end_datetime:
+  system: Digicert / Verisign / Symantec federal shared service provider
+  change_description: The Railroad Retirement Board CA was decommissioned and a long-term CRL issued on May 18, 2018
+  contact: fpki@gsa.gov
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=VeriSign SSP Intermediate CA - G3,O=VeriSign,Inc.,C=US
+  ca_certificate_subject: CN=RRB Device CA,OU=U.S. Railroad Retirement Board,OU=U.S. Railroad Retirement Board,O=U.S. Government,C=US
+  
+- notice_date: June 6, 2018
+  change_type: CA Decommission
+  start_datetime: N/A
+  end_datetime: N/A
+  system: FPKIMA Trust Infrastructure
+  change_description: Decommission the Federal Bridge CA 2013
+  contact: fpki@gsa.gov
+  ca_certificate_hash: 80 39 c3 23 4c 27 2c 80 c6 de 3b 13 0f 72 cc 4f be e1 38 18
+  ca_certificate_issuer: cn= Federal Bridge 2013, ou= FPKI, o=U.S. Government, c=US
+  ca_certificate_subject: cn= Federal Bridge 2013, ou= FPKI, o=U.S. Government, c=US
+  cdp_uri: http://http.fpki.gov/fbca2013.crl
+  aia_uri: N/A
+  sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c
+  ocsp_uri: N/A
+  
+- notice_date: Jun 7, 2018
+  change_type: CA Certificate Issuance
+  start_datetime: 6/7/2018
+  end_datetime: 6/7/2021
+  system: FPKI Trust Infrastructure - Federal Bridge 2016
+  change_description: New issuance to the SAFE BioPharma Bridge CA 02
+  contact: FPKI-help@gsa.gov
+  ca_certificate_hash: ‎5c 65 42 19 97 2b ac 88 7b ea 9f 13 09 eb 9e 05 2f b7 75 7e
+  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN = SAFE Bridge CA 02, OU = Certification Authorities, O = SAFE-Biopharma, C = US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://sbca2.safe-biopharma.org/sbca/issuedbySBCA02.p7c
+  ocsp_uri: N/A  
+  
 #- notice_date: 
 #  change_type: CA Certificate Issuance
 #  start_datetime:
