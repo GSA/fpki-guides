@@ -10,7 +10,7 @@ This is a high-level overview of what application trust stores are and a list of
 * [What is a Trust Store?](#what-is-a-trust-store)
 * [What are the most commonly used Trust Stores?](#what-are-the-most-commonly-used-trust-stores)
 * [How do I set dynamic path validation for the Trust Store in Windows operating systems?](#how-do-i-set-dynamic-path-validation-for-the-trust-store-in-windows-operating-systems)
-* [How do I check which Federal PKI certificate policies are trusted by Adobe?](#how-do-i-check-which-federal-pki-certificate-policies-are-trusted-by-adobe)
+* [How do I check for which Federal PKI certificate policies are trusted by Adobe?](#how-do-i-check-which-federal-pki-certificate-policies-are-trusted-by-adobe)
 
 
 ### What is a Trust Store?
@@ -23,7 +23,7 @@ Operating systems, browsers, and some commercial software use trust stores to ve
 
 Here are some common trust stores, and whether the Federal Common Policy CA (COMMON) root certificate is included and distributed by _default_.
 
-{% include alert-info.html content="The Federal Common Policy CA root certificate will be removed from both the Microsoft and Apple trust stores.  Please see the Announcements section for more information. " %} 
+{% include alert-info.html content="The Federal Common Policy CA root certificate will be removed from both the Microsoft and Apple Trust Stores.  Please see the Announcements section for more information. " %} 
 
 Trust Store|Includes FCPCA?<br>(COMMON)|Trust Store Manager|Platforms Serviced|Program Information Location
 ---|---|---|---|---
@@ -35,7 +35,7 @@ Java Root Certificate Program|No (pending application)|Java Applet|Java Distribu
 Google|No|Google Admin Console|Chrome Browser, Android OS, Chromium OS|https://www.chromium.org/Home/chromium-security/root-ca-policy
 Opera|No longer operates its own program and relies on Mozilla
 
-{% include alert-info.html content="Google Chrome uses the trust store of the operating system on Microsoft, Apple, and Android systems. Linux-based systems distribute the Mozilla NSS Library, which may be modified by each version of Linux." %}
+{% include alert-info.html content="Google Chrome uses the Trust Store of the operating system on Microsoft, Apple, and Android systems. Linux-based systems distribute the Mozilla NSS Library, which may be modified by each version of Linux." %}
 
 
 ### How do I set dynamic path validation for the Trust Store in Windows operating systems?
@@ -66,7 +66,7 @@ A common question is "which certificate policies are trusted?" You can view the 
   4. In _Certificate Policies_, you will see a comma-separated list of policy Object Identifiers (OIDs).
 
 
-The current policy OID list for the Federal Common Policy CA is:
+The current policy OIDs list for the Federal Common Policy CA is:
 
 | Common Policy                                 | Common OID                | Certificate Use                                                                   |
 |-----------------------------------------------|---------------------------|-----------------------------------------------------------------------------------|
