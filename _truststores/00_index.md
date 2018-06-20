@@ -68,7 +68,7 @@ A common question is "which certificate policies are trusted?" You can view the 
 
 The current policy OIDs list for the Federal Common Policy CA is:
 
-| Common Policy                                 | Common OID                | Certificate Use                                                                   |
+| Common Policy                                 | Common OID                | Certificate Use                                          |
 |-----------------------------------------------|---------------------------|-----------------------------------------------------------------------------------|
 | Common Hardware                               | 2.16.840.1.101.3.2.1.3.7  | PIV and Federal Bridge Medium Hardware Token                                      |
 | Federal Bridge Medium Hardware Commercial Best Practice* | 2.16.840.1.101.3.2.1.3.15 | Federal Bridge Medium Hardware Token (PKI Trusted Roles may not be U.S. citizens) |
