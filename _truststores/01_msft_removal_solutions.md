@@ -13,7 +13,7 @@ In FY 2019, the U.S. Government is removing the Federal Public Key Infrastructur
 - Validation of digital signatures
 - Other applications leveraging the Microsoft certificate store
 
-To mitigate any impact this change may have on your agency network and applications, you will need to manually retrieve the U.S. Government root CA certificate, import this certificate into agency enterprise certificate stores, and ensure this change is propagated throughout the networks. 
+To mitigate any impact this change may have on agency network and applications, you will need to manually retrieve the U.S. Government root CA certificate, import this certificate into agency enterprise certificate stores, and ensure that this change is propagated throughout the networks. 
 
 The root certificate is available immediately and will remain unchanged. 
 
