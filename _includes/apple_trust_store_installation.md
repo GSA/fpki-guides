@@ -32,7 +32,7 @@ You will need to download the COMMON root CA certificate and install it on gover
 3. When prompted, save the certificate file to your download location.
 4. Click the *Spotlight* icon and search for _terminal_. 
 5. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
-6. Verify that the certificate's hash matches the SHA-256 Thumbprint in the [certificate details](#what-should-i-do):
+6. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details above.
 
     ```
 	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
@@ -48,7 +48,7 @@ You will need to download the COMMON root CA certificate and install it on gover
 	$ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt"
     ```
 
-4. Verify that the certificate's hash matches the SHA-256 Thumbprint in the [certificate details](#what-should-i-do):
+4. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details above.
 
     ```
 	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
