@@ -61,7 +61,7 @@ You can add COMMON to the **Enterprise Trust** certificate store by using _certu
 - To view all certificates in the **Enterprise Trust** certificate store:
 
 ```
-	certutil –viewstore –enterprise RootCA
+	certutil –viewstore –enterprise Root
 ```
 
 - To propagate from the Domain Controller(s) to the enterprise:
