@@ -4,6 +4,9 @@ title: Federal PKI Activity Report
 collection: tools
 permalink: tools/fpkiactivityreport/
 ---
+
+Updated: July 9,2018
+
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
 - [FPKI Affiliate Status Summary](#fpki-affiliate-status-summary)
@@ -57,19 +60,18 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 
 | Affiliate | Subject CA | Issuing CA | Serial | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| No Activity |
+| SAFE BioPharma | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 5c 65 42 19 97 2b ac 88 7b ea 9f 13 09 eb 9e 05 2f b7 75 7e | 06/07/2021 |
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
-| Affiliate | Subject CA | Issuing CA | Serial | Issued Date |
+| Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| No Activity |
+| SAFE BioPharma | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 9 C6 EB AD 66 1E 5B 89 92 84 4D C9 58 57 7E 94 4C DC EF 52 | 06/23/2018 |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
 | Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ---------- |
-| SAFE BioPharma | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 9 C6 EB AD 66 1E 5B 89 92 84 4D C9 58 57 7E 94 4C DC EF 52 | 06/23/2018 |
 | ORC/WidePoint NFI | ORC NFI CA 3 | Federal Bridge CA 2016 | 3E 67 09 5D 45 33 A2 C9 89 FA 67 3F AB 81 7E D5 58 41 74 22 | 07/31/2018 |
 | SAFE BioPharma | Federal Bridge CA 2016 | SAFE Bridge CA 02 | 74 00 00 00 09 B0 8D 11 8B 00 3E 66 74 00 00 00 00 00 09 | 08/23/2018 |
 | GSA ACES | IdenTrust ACES CA 2 | Federal Bridge CA 2016 | 46 68 3C 1B 51 B5 1C B9 1F 73 97 74 35 E4 3C F8 2B E9 CC 74 | 09/01/2018 |
@@ -78,15 +80,18 @@ The following certificates are expiring in the next four months and may be re-is
 ## Repository Availability 
 This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly percentage.  For example, 100 is 100% or no downtwime for that month.
 
-| FPKI Entity                                | 06/17 | 07/17 | 08/17 | 09/17 | 10/17 | 11/17 | 12/17 | 01/18 | 02/18 | 03/18 | 04/18 | 05/18 | 12-Month Average |
+| FPKI Entity                                | 07/17 | 08/17 | 09/17 | 10/17 | 11/17 | 12/17 | 01/18 | 02/18 | 03/18 | 04/18 | 05/18 | 06/18 | 12-Month Average |
 | ------------------------------------------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ---------------- |
 | CertiPath Bridge CA                        | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | CertiPath Bridge CA - G2                   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | Department of State AD Root CA             | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | DigiCert Federated ID CA-1 CRL3            | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | DigiCert Federated ID CA-1 CRL4            | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| DoD Interoperability Root 1                | 100   | 100   | 99.80 | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.98 |
-| DoD Interoperability Root 2                | 100   | 100   | 99.80 | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.98 |
+| DigiCert - Symantec Class 3 NFI CA         | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
+| DigiCert - Symantec SSP G4                 | 100   | 99.90 | 99.93 | 99.98 | 99.68 | 99.98 | 99.86 | 99.80 | 99.89 | 99.98 | 99.98 | 100   | 99.91 |
+| DigiCert - Verisign SSP G3                 | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
+| DoD Interoperability Root 1                | 100   | 99.80 | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.98 |
+| DoD Interoperability Root 2                | 100   | 99.80 | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.98 |
 | Entrust NFI Root CA                        | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | Entrust NFI Root CA 2                      | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | Entrust Managed Services Root CA           | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
@@ -96,21 +101,19 @@ This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly p
 | FPKI FBCA2016                              | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | FPKI FCPCA                                 | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | FPKI SHA1FRCA G2                           | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| GPO PCA                                    | 100   | 100   | 100   | 100   | 100   | 96.81 | 100   | 100   | 100   | 100   | 100   | 100   | 99.73 |
-| IdenTrust ACES 2                           | 100   | 100   | 100   | 100   | 100   | 99.59 | 100   | 100   | 100   | 100   | 100   | 99.96 | 99.96 |
-| IdenTrust Global Common Root CA            | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.22 | 99.87 |
-| ORC ACES 4 CA                              | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.78 | 100   | 100   | 99.98 |
-| ORC NFI 2 CA                               | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 100   | 100   | 99.98 |
-| ORC NFI 3 CA                               | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 100   | 100   | 99.98 |
-| ORC SSP 3                                  | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 100   | 100   | 99.98 |
-| ORC SSP 4                                  | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 100   | 100   | 99.98 |
+| GPO PCA                                    | 100   | 100   | 100   | 100   | 96.81 | 100   | 100   | 100   | 100   | 100   | 100   | 99.89 | 99.72 |
+| IdenTrust ACES 2                           | 100   | 100   | 100   | 100   | 99.59 | 100   | 100   | 100   | 100   | 100   | 99.96 | 100   | 99.96 |
+| IdenTrust Global Common Root CA            | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.22 | 99.24 | 99.87 |
+| ORC ACES 4 CA                              | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.78 | 100   | 100   | 100   | 99.98 | 
+| ORC NFI 2 CA                               | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 100   | 100   | 100   | 99.98 |
+| ORC NFI 3 CA                               | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 100   | 100   | 100   | 99.98 |
+| ORC SSP 3                                  | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 100   | 100   | 100   | 99.98 |
+| ORC SSP 4                                  | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 100   | 100   | 100   | 99.98 |
 | SAFE Bridge CA 2                           | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |  
-| STRAC Bridge CA                            | 99.80 | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.98 | 99.98 | 100   | 99.98 |
-| Symantec Class 3 NFI CA                    | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| Symantec SSP G4                            | 100   | 100   | 99.90 | 99.93 | 99.98 | 99.68 | 99.98 | 99.86 | 99.80 | 99.89 | 99.98 | 99.98 | 99.91 |
-| TSCP SHA-256 Bridge CA                     | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.92 | 99.98 | 100   | 100   | 99.99 |
+| STRAC Bridge CA                            | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.98 | 99.98 | 100   | 100   | 99.99 |
+| TSCP SHA-256 Bridge CA                     | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.92 | 99.98 | 100   | 100   | 100   | 99.99 |
 | US Treasury Root CA                        | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
-| USPTO                                      | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 99.95 | 99.98 | 100   | 99.95 |
+| USPTO                                      | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 99.76 | 99.95 | 99.98 | 100   | 99.98 | 99.95 |
 | Verizon NFI CT-CSSP-CA                     | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | Verizon SSP Betrusted Production CA        | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | Verizon SSP CA 2                           | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
