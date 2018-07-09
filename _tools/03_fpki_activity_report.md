@@ -58,7 +58,7 @@ The activity listed in this section is limited to the certificates issued BY or 
 
 The following certificates were issued **BY** or **TO** the FPKI Trust Infrastructure in the last 30 days.
 
-| Affiliate | Subject CA | Issuing CA | Serial | Issued Date |
+| Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
 | SAFE BioPharma | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 5c 65 42 19 97 2b ac 88 7b ea 9f 13 09 eb 9e 05 2f b7 75 7e | 06/07/2021 |
 
