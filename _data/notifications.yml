@@ -354,7 +354,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 7, 2018
   system: Federal PKI Trust Infrastructure
-  change_description: A new cross-certificate was issued from teh Federal Bridge CA 2016 to the SAFE BioPharma Bridge CA 02
+  change_description: A new cross-certificate was issued from the Federal Bridge CA 2016 to the SAFE BioPharma Bridge CA 02
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 5c 65 42 19 97 2b ac 88 7b ea 9f 13 09 eb 9e 05 2f b7 75 7e
   ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
@@ -372,9 +372,8 @@
 - notice_date: July 19, 2018
   change_type: CA Certificate Issuance
   start_datetime: July 17, 2018
-  end_datetime: July 17, 2021
-  system: Federal Bridge CA 2016
-  change_description: Issue new CA certificate to ORC NFI CA 3
+  system: Federal PKI Trust Infrastructure
+  change_description: A new cross-certificate was issued from the Federal Bridge CA 2016 to the ORC NFI CA 3
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: b6 25 da 07 30 20 16 d2 83 70 23 ba b9 4b 6e 0d 76 fc 2e 45
   ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
