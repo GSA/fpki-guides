@@ -28,14 +28,19 @@ A PDF version of the webinar briefing can be found <a target="_blank" href="{{si
 ### Can you provide an example of what errors might look like if I do not redistribute COMMON?
 
 *Sample error in Chrome while navigating to an intranet site whose SSL/TLS certificate does not chain to a trusted root CA:*
-![error_navigation]({{site.baseurl}}/img/error_navigation.png)
+<p align="center">
+  ![error_navigation]({{site.baseurl}}/img/error_navigation.png)
+</p>
 
 *Sample error in Chrome where client (PIV) authentication fails due to a user’s certificate not chaining to a trusted root CA:*
-![error_piv_auth]({{site.baseurl}}/img/error_piv_auth.png)
+<p align="center">
+  ![error_piv_auth]({{site.baseurl}}/img/error_piv_auth.png)
+</p>
 
 *Sample error in Outlook where a signed email does not chain to a trusted root CA:*
-![error_sig_val]({{site.baseurl}}/img/error_sig_val.png)
-
+<p align="center">
+  ![error_sig_val]({{site.baseurl}}/img/error_sig_val.png)
+</p>
 
 ### Which Microsoft products will be affected?
 The table below presents Windows versions affected by this change:
