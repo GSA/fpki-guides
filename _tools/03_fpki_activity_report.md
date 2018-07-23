@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: July 9,2018
+Updated: July 19,2018
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -60,19 +60,19 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 
 | Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| SAFE BioPharma | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 5c 65 42 19 97 2b ac 88 7b ea 9f 13 09 eb 9e 05 2f b7 75 7e | 06/07/2021 |
+| WidePoint/ORC NFI | ORC NFI CA 3 | Federal Bridge CA 2016 | 2C 3B 16 DE 61 32 CF 08 93 C5 55 BB 86 63 20 0E 01 6E 62 04 | 07/17/2021 |
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
 | SAFE BioPharma | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 9 C6 EB AD 66 1E 5B 89 92 84 4D C9 58 57 7E 94 4C DC EF 52 | 06/23/2018 |
+| ORC/WidePoint NFI | ORC NFI CA 3 | Federal Bridge CA 2016 | 3E 67 09 5D 45 33 A2 C9 89 FA 67 3F AB 81 7E D5 58 41 74 22 | 07/31/2018 |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
 | Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ---------- |
-| ORC/WidePoint NFI | ORC NFI CA 3 | Federal Bridge CA 2016 | 3E 67 09 5D 45 33 A2 C9 89 FA 67 3F AB 81 7E D5 58 41 74 22 | 07/31/2018 |
 | SAFE BioPharma | Federal Bridge CA 2016 | SAFE Bridge CA 02 | 74 00 00 00 09 B0 8D 11 8B 00 3E 66 74 00 00 00 00 00 09 | 08/23/2018 |
 | GSA ACES | IdenTrust ACES CA 2 | Federal Bridge CA 2016 | 46 68 3C 1B 51 B5 1C B9 1F 73 97 74 35 E4 3C F8 2B E9 CC 74 | 09/01/2018 |
 | IdenTrust NFI | IdenTrust Global Common Root CA 1 | Federal Bridge CA 2016 | 66 FC 51 BF 22 5B D8 C4 E6 11 E1 56 E7 30 A4 83 FF 99 90 C3 | 09/25/2018 |
