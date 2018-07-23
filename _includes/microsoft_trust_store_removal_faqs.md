@@ -1,7 +1,8 @@
 <br>
 
 ### Where can I find a copy of the FNR webinar briefing slides?
-A PDF version of the webinar briefing can be found here.
+A PDF version of the webinar briefing can be found <a target="_blank" href="{{site.baseurl}}/docs/FPKI_Trust_Removal_-_FNR_Webinar_07182018.pdf">here</a>.
+
 
 ### Can you explain this change to me in a different way?
 - Current State: With our current distribution of COMMON within Microsoft’s certificate store, certificates issued from the Federal PKI can be validated to a known root certification authority.
