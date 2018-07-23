@@ -59,19 +59,6 @@
   sia_uri: http://validation.identrust.com/roots/IssuedbyIGCRootCA1.p7c
   ocsp_uri: N/A
 
-- notice_date: July 5, 2018
-  change_type: CA Certificate Issuance
-  start_datetime: July 17, 2018
-  system: CertiPath Bridge
-  change_description: A cross-certificate was issued from Certipath Bridge CA-G2 to Air Canada Enterprise Root CA1
-  contact: support at certipath dot com
-  ca_certificate_hash:
-  ca_certificate_issuer: C=US, O=CertiPath LLC, OU=Certification Authorities, CN=CertiPath Bridge CA - G2
-  ca_certificate_subject: C=CA, O=Air Canada, OU=Certification Authorities, CN=Air Canada Enterprise Root CA1
-  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
-  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
-  ocsp_uri: 
-
 - notice_date: July 12, 2017
   change_type: CA Certificate Issuance
   start_datetime: July 12, 2017 10:59:26 AM
@@ -381,7 +368,20 @@
   system: CertiPath Bridge
   change_description: CerithPath Bridge intends to renew the cross certificates from the CertiPath Bridge G1 and G2 to Raytheon prior to the end of this month. No changes are being made to certificate policies or policy mappings.
   contact: support at certipath dot com
-  
+
+- notice_date: July 5, 2018
+  change_type: CA Certificate Issuance
+  start_datetime: July 17, 2018
+  system: CertiPath Bridge
+  change_description: A cross-certificate was issued from Certipath Bridge CA-G2 to Air Canada Enterprise Root CA1
+  contact: support at certipath dot com
+  ca_certificate_hash:
+  ca_certificate_issuer: C=US, O=CertiPath LLC, OU=Certification Authorities, CN=CertiPath Bridge CA - G2
+  ca_certificate_subject: C=CA, O=Air Canada, OU=Certification Authorities, CN=Air Canada Enterprise Root CA1
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
+  ocsp_uri: 
+
 - notice_date: July 19, 2018
   change_type: CA Certificate Issuance
   start_datetime: July 17, 2018
