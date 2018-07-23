@@ -58,7 +58,20 @@
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://validation.identrust.com/roots/IssuedbyIGCRootCA1.p7c
   ocsp_uri: N/A
-  
+
+- notice_date: July 5, 2018
+  change_type: CA Certificate Issuance
+  start_datetime: July 17, 2018
+  system: CertiPath Bridge
+  change_description: A cross-certificate was issued from Certipath Bridge CA-G2 to Air Canada Enterprise Root CA1
+  contact: support at certipath dot com
+  ca_certificate_hash:
+  ca_certificate_issuer: C=US, O=CertiPath LLC, OU=Certification Authorities, CN=CertiPath Bridge CA - G2
+  ca_certificate_subject: C=CA, O=Air Canada, OU=Certification Authorities, CN=Air Canada Enterprise Root CA1
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
+  ocsp_uri: 
+
 - notice_date: July 12, 2017
   change_type: CA Certificate Issuance
   start_datetime: July 12, 2017 10:59:26 AM
@@ -354,7 +367,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 7, 2018
   system: Federal PKI Trust Infrastructure
-  change_description: A new cross-certificate was issued from teh Federal Bridge CA 2016 to the SAFE BioPharma Bridge CA 02
+  change_description: A new cross-certificate was issued from the Federal Bridge CA 2016 to the SAFE BioPharma Bridge CA 02
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 5c 65 42 19 97 2b ac 88 7b ea 9f 13 09 eb 9e 05 2f b7 75 7e
   ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
@@ -368,6 +381,19 @@
   system: CertiPath Bridge
   change_description: CerithPath Bridge intends to renew the cross certificates from the CertiPath Bridge G1 and G2 to Raytheon prior to the end of this month. No changes are being made to certificate policies or policy mappings.
   contact: support at certipath dot com
+  
+- notice_date: July 19, 2018
+  change_type: CA Certificate Issuance
+  start_datetime: July 17, 2018
+  system: Federal PKI Trust Infrastructure
+  change_description: A new cross-certificate was issued from the Federal Bridge CA 2016 to the ORC NFI CA 3
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: b6 25 da 07 30 20 16 d2 83 70 23 ba b9 4b 6e 0d 76 fc 2e 45
+  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN = ORC NFI CA 3, O = ORC PKI, C = US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/ORCNFI3_SIA.p7c
   
 #- notice_date: 
 #  change_type: CA Certificate Issuance
