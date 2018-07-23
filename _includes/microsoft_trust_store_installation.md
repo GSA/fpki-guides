@@ -154,5 +154,8 @@ For unmanaged devices, the following manual procedures will be required:
 1. Verify that the target **Certificate Store** presents **Trusted Root Certification Authorities**, and select *Next*
 1. Select *Finish* to complete the import. A confirmation message will display stating *the import was successful*.
 
+Note: If multiple users share a device, running **certlm.msc** instead of **certmgr.msc** will allow administrators to update all user account certificate stores at once, rather than requiring a separate import for each individual user account.
+
+
 
 
