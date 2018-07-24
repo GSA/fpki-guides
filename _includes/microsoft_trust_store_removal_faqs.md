@@ -75,9 +75,9 @@ No. COMMON will not change. The only change will be in how COMMON is distributed
 
 2. Navigate to **Trusted Root Certification Authorities** -> **Certificates**. 
 
-3. You may see two (or more) copies of COMMON, depending on how they were distributed. In the screenshot below, you'll see three entries for COMMON:<br></br>
-o The first entry (“dashed” border) was populated by the Microsoft Certificate Trust List (CTL) (i.e., certificate store). Microsoft-distributed copies show multiple **Intended Purposes** values and a **Friendly Name** of *U.S. Government Common Policy*.<br></br>
-o The remaining two entries (examples of enterprise-distributed copies) result from following the procedures in this Playbook. Enterprise-distributed copies show an **Intended Purposes** value of *ALL* and a **Friendly Name** of *None*.<br>
+3. You may see two (or more) copies of COMMON, depending on how they were distributed. In the screenshot below, you'll see three entries for COMMON:
+* The first entry (“dashed” border) was populated by the Microsoft Certificate Trust List (CTL) (i.e., certificate store). Microsoft-distributed copies show multiple **Intended Purposes** values and a **Friendly Name** of *U.S. Government Common Policy*.
+* The remaining two entries (examples of enterprise-distributed copies) result from following the procedures in this Playbook. Enterprise-distributed copies show an **Intended Purposes** value of *ALL* and a **Friendly Name** of *None*.
 
 ![Sample Steps]({{site.baseurl}}/img/verify_trust.png){:style="width:85%;"}
 
