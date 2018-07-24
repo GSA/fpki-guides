@@ -77,7 +77,7 @@ Use one of these options to redistribute COMMON:
 
 #### Use Microsoft certutil 
 
-{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
+{% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
 
 1. Click **Start**, type **cmd**, and press **Enter**.
 1. Run command:
@@ -103,7 +103,7 @@ Use one of these options to redistribute COMMON:
 
 #### Use Microsoft Group Policy Object
 
-{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
+{% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
 
 1. Navigate to **Server Manager**.
 1. Select **Tools**.
@@ -131,7 +131,7 @@ Use one of these options to redistribute COMMON:
 
 #### Use third-party configuration management tools
 
-{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
+{% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
 
 You can use third-party configuration management tools, such as BigFix.
 
