@@ -1,7 +1,5 @@
 To limit the impact to your agency, you'll need to redistribute COMMON as a trusted root certificate on all government-furnished Windows workstations and devices. 
 
-{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures." %}
-
 To redistribute COMMON, follow these procedures:
 1. [Download a Copy of COMMON](#download-a-copy-of-common)
 1. [Verify Your Copy of COMMON](#verify-your-copy-of-common)
@@ -38,7 +36,6 @@ Use one of these options to verify your copy of COMMON. Your certificate details
 
 
 #### Microsoft command line via certutil 
-
 1. Click **Start**, type **cmd**, and press **Enter**
 1. Run command:
 
@@ -80,7 +77,7 @@ Use one of these options to redistribute COMMON:
 
 #### Use Microsoft certutil 
 
-To redistribute COMMON via certutil, you must have Enterprise Administrator privileges.
+{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures." %}
 
 From an agency Domain Controller:
 1. Click **Start**, type **cmd**, and press **Enter**.
@@ -106,6 +103,8 @@ From an agency Domain Controller:
 
 
 #### Use Microsoft Group Policy Object
+
+{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures." %}
 
 From an agency Domain Controller:
 1. Navigate to **Server Manager**.
