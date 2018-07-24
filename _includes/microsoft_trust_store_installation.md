@@ -61,7 +61,7 @@ Use one of these options to verify your copy of COMMON. Your certificate details
         Get-FileHash [PATH\]fcpca.crt | Format-List
     ```
 
-*Sample steps run on Microsoft Server 2012 are shown below:*
+*Sample steps run on Microsoft Server 2012:*
 ![Sample Steps]({{site.baseurl}}/img/verify.gif){:style="width:85%;"}
 
 
@@ -97,7 +97,7 @@ Use one of these options to redistribute COMMON:
 1. [OPTIONAL] Verify the certificate details against [expected values](#verify-your-copy-of-common) shown above (e.g., Serial Number).
 
 
-*Sample steps run on Microsoft Server 2012 are shown below:*
+*Sample steps run on Microsoft Server 2012:*
 ![Sample Steps]({{site.baseurl}}/img/certutil.gif){:style="width:85%;"}
 
 
@@ -125,7 +125,7 @@ Use one of these options to redistribute COMMON:
           gpupdate /force
     ```
 
-*Sample steps run on Microsoft Server 2012 are shown below:*
+*Sample steps run on Microsoft Server 2012:*
 ![Sample Steps]({{site.baseurl}}/img/gpo.gif){:style="width:85%;"}
 
 
