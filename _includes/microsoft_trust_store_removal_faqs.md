@@ -34,15 +34,15 @@ Additional webinars may be scheduled if needed.
 
 ### What kinds of errors or messages would I see?
 
-*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain to a trusted root CA:*
+*Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
      ![error_navigation]({{site.baseurl}}/img/error_navigation.png)
 
-*Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain to a trusted root CA:*
+*Sample Chrome error when PIV authentication fails because the user’s certificate doesn't chain<br>to a trusted root CA:*
      <br>
      ![error_piv_auth]({{site.baseurl}}/img/error_piv_auth.png)
 
-*Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain to a trusted root CA:*
+*Sample Microsoft Outlook error when a digital signature certificate for an email doesn't chain<br>to a trusted root CA:*
      <br>
      <br>
      ![error_sig_val]({{site.baseurl}}/img/error_sig_val.png)
@@ -75,9 +75,9 @@ No. COMMON will not change. The only change will be in how COMMON is distributed
 
 2. Navigate to **Trusted Root Certification Authorities** -> **Certificates**. 
 
-3. You may see two (or more) copies of COMMON, depending on how they were distributed. In the screenshot below, you'll see three entries for COMMON:
-- The first entry (“dashed” border) was populated by the Microsoft Certificate Trust List (CTL) (i.e., certificate store). Microsoft-distributed copies show multiple **Intended Purposes** values and a **Friendly Name** of *U.S. Government Common Policy*.
-- The remaining two entries (examples of enterprise-distributed copies) result from following the procedures in this Playbook. Enterprise-distributed copies show an **Intended Purposes** value of *ALL* and a **Friendly Name** of *None*.
+3. You may see two (or more) copies of COMMON, depending on how they were distributed. In the screenshot below, you'll see three entries for COMMON:<br>
+o The first entry (“dashed” border) was populated by the Microsoft Certificate Trust List (CTL) (i.e., certificate store). Microsoft-distributed copies show multiple **Intended Purposes** values and a **Friendly Name** of *U.S. Government Common Policy*.<br>
+o The remaining two entries (examples of enterprise-distributed copies) result from following the procedures in this Playbook. Enterprise-distributed copies show an **Intended Purposes** value of *ALL* and a **Friendly Name** of *None*.<br>
 
 ![Sample Steps]({{site.baseurl}}/img/verify_trust.png){:style="width:85%;"}
 
