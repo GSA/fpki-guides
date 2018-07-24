@@ -77,7 +77,7 @@ In the screenshot above, we see three entries for COMMON.
 - The first entry (surrounded by a “dashed” line) is being populated from the Microsoft CTL. Note the values associated with Intended Purposes and Friendly Name.
 - The remaining two entries result from following the procedures in this Playbook.
 
-Note: Select **View** -> **Options** -> and ensure the Physical certificate stores entry is *checked* to display a more detailed view of the Trusted Root Certification Authorities certificate store. This will present sub-directories within the certificate store to depict *Registry*, *Third Party*, *Group Policy*, *Enterprise*, and *Smart Card* directories. If COMMON is redistributed via GPO, administrators will be able to verify its presence within the *Group Policy* sub-directory.
+Note: Select **View** -> **Options** -> and ensure the Physical certificate stores entry is *checked* to display a more detailed view of the Trusted Root Certification Authorities certificate store. This will present sub-directories within the certificate store to depict *Registry*, *Third Party*, *Group Policy*, *Enterprise*, and *Smart Card* directories. The increased level of detail can help administrators verify COMMON's succesful redistribution. For example, if COMMON is redistributed via GPO, administrators will be able to verify its presence within the *Group Policy* sub-directory.
 
 
 ### Can multiple copies of COMMON coexist in my certificate store?
