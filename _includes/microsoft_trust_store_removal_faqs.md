@@ -37,6 +37,7 @@ A PDF version of the webinar briefing can be found <a target="_blank" href="{{si
 
 *Sample error in Outlook where a signed email does not chain to a trusted root CA:*
      <br>
+     <br>
      ![error_sig_val]({{site.baseurl}}/img/error_sig_val.png)
 
 ### Which Microsoft products will be affected?
