@@ -32,7 +32,7 @@ Use one of these options to verify your copy of COMMON. Your certificate details
 | SHA-256 Thumbprint | 89 4e bc 0b 23 da 2a 50 c0 18 6b 7f 8f 25 ef 1f 6b 29 35 af 32 a9 45 84 ef 80 aa f8 77 a3 a0 6e |
 
 
-**Note:** Replace *[PATH/]* with the path to your copy of COMMON for all procedures.
+**Note:** Replace *[PATH\]* with the path to your copy of COMMON for all procedures.
 
 
 #### Microsoft command line via certutil 
