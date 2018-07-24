@@ -5,22 +5,22 @@ To redistribute COMMON, follow these procedures:
 1. [Verify Your Copy of COMMON](#verify-your-copy-of-common)
 1. [Redistribute COMMON](#redistribute-common)
 
-### Download a copy of COMMON
+### Download a Copy of COMMON
 
 To download a copy of COMMON, use one of the recommended options:
 1. Download from http://http.fpki.gov/fcpca/fcpca.crt. 
-1. Email fpki@gsa.gov to request an out-of-band copy.
+1. Email fpki@gsa.gov to request an out-of-band copy for download.
 
-{% include alert-warning.html content="You should never install a root certificate without verifying it. Follow the instructions below to verify the authenticity of your copy of COMMON." %} 
+{% include alert-warning.html content="You should never install a root certificate without verifying it. Follow the procedures below to verify the authenticity of your copy of COMMON." %} 
 
 
 ### Verify Your Copy of COMMON
 
 Use one of these options to verify your copy of COMMON. Your certificate details and hash must match the expected values shown below. 
 
-1. [Microsoft command line via certutil](#microsoft-command-line-via-certutil)
-1. [Microsoft command line via OpenSSL](#microsoft-command-line-via-openssl)
-1. [Microsoft PowerShell](#microsoft-powershell)
+1. [Use Microsoft command line via certutil](#use-microsoft-command-line-via-certutil)
+1. [Use Microsoft command line via OpenSSL](#use-microsoft-command-line-via-openssl)
+1. [Use Microsoft PowerShell](#use-microsoft-powershell)
 
 
 | **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
@@ -32,11 +32,11 @@ Use one of these options to verify your copy of COMMON. Your certificate details
 | SHA-256 Thumbprint | 89 4e bc 0b 23 da 2a 50 c0 18 6b 7f 8f 25 ef 1f 6b 29 35 af 32 a9 45 84 ef 80 aa f8 77 a3 a0 6e |
 
 
-**Note:** Replace *[PATH\]* with the path to your copy of COMMON for all procedures.
+**Note:** For the following procedures, replace *[PATH\]* with the path to your copy of COMMON.
 
 
-#### Microsoft command line via certutil 
-1. Click **Start**, type **cmd**, and press **Enter**
+#### Use Microsoft command line via certutil 
+1. Click **Start**, type **cmd**, and press **Enter**.
 1. Run command:
 
     ```
@@ -44,8 +44,8 @@ Use one of these options to verify your copy of COMMON. Your certificate details
     ```
 
 
-#### Microsoft command line via OpenSSL
-1. Click **Start**, type **cmd**, and press **Enter**
+#### Use Microsoft command line via OpenSSL
+1. Click **Start**, type **cmd**, and press **Enter**.
 1. Run command:
 
     ```
@@ -53,15 +53,15 @@ Use one of these options to verify your copy of COMMON. Your certificate details
     ```
 
 
-#### Microsoft PowerShell
-1. Click **Start**, type **cmd**, and press **Enter**
+#### Use Microsoft PowerShell
+1. Click **Start**, type **cmd**, and press **Enter**.
 1. Run command:
 
     ```
         Get-FileHash [PATH\]fcpca.crt | Format-List
     ```
 
-*Sample steps run on Microsoft Server 2012 presented below:*
+*Sample steps run on Microsoft Server 2012 are shown below:*
 ![Sample Steps]({{site.baseurl}}/img/verify.gif){:style="width:85%;"}
 
 
@@ -77,7 +77,7 @@ Use one of these options to redistribute COMMON:
 
 #### Use Microsoft certutil 
 
-{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. These commands must be run from an agency Domain Controller." %}
+{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
 
 1. Click **Start**, type **cmd**, and press **Enter**.
 1. Run command:
@@ -97,13 +97,13 @@ Use one of these options to redistribute COMMON:
 1. [OPTIONAL] Verify the certificate details against [expected values](#verify-your-copy-of-common) shown above (e.g., Serial Number).
 
 
-*Sample steps run on Microsoft Server 2012 presented below:*
+*Sample steps run on Microsoft Server 2012 are shown below:*
 ![Sample Steps]({{site.baseurl}}/img/certutil.gif){:style="width:85%;"}
 
 
 #### Use Microsoft Group Policy Object
 
-{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. These commands must be run from an agency Domain Controller." %}
+{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
 
 1. Navigate to **Server Manager**.
 1. Select **Tools**.
@@ -115,7 +115,7 @@ Use one of these options to redistribute COMMON:
 1. Right-click **Trusted Root Certification Authorities**, and select **Import**. *The Certificate Import Wizard will open*. 
 1. Browse to and select your copy of COMMON.
 1. Verify that the target **Certificate Store** presents **Trusted Root Certification Authorities**, and select **Next**.
-1. Select **Finish** to complete the import.  You'll see the message, *the import was successful*.
+1. Select **Finish** to complete the import.  You'll see the message, *The import was successful*.
 1. Close the **Group Policy Management** window.
 1. [OPTIONAL] Wait for clients to consume the new policy or force consumption:
 - Click **Start**, type **cmd**, and then press **Enter**.
@@ -125,13 +125,15 @@ Use one of these options to redistribute COMMON:
           gpupdate /force
     ```
 
-*Sample steps run on Microsoft Server 2012 presented below:*
+*Sample steps run on Microsoft Server 2012 are shown below:*
 ![Sample Steps]({{site.baseurl}}/img/gpo.gif){:style="width:85%;"}
 
 
-#### Use Third Party Configuration Management Tools
+#### Use third-party configuration management tools
 
-You can use third-party configuration management tools, such as BigFix
+{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
+
+You can use third-party configuration management tools, such as BigFix.
 
 1. Using BigFix, schedule a task and push the certificate file.
 - Command (example): 
@@ -142,12 +144,12 @@ You can use third-party configuration management tools, such as BigFix
 
 
 #### Manually use Microsoft Certificate Manager
-For unmanaged devices, the following manual procedures will be required:
-1. Click **Start**, type **certmgr.msc**, and then press **Enter**
-1. Right click **Trusted Root Certification Authorities** and select **All Tasks** -> **Import**. *The Certificate Import Wizard will open*. 
-1. Browse to and select your copy of COMMON
-1. Verify that the target **Certificate Store** presents **Trusted Root Certification Authorities**, and select *Next*
-1. Select *Finish* to complete the import. A confirmation message will display stating *the import was successful*.
+For unmanaged devices, use the following manual procedures:
+1. Click **Start**, type **certmgr.msc**, and then press **Enter**.
+1. Right-click **Trusted Root Certification Authorities** and select **All Tasks** -> **Import**. *The Certificate Import Wizard will open*. 
+1. Browse to and select your copy of COMMON.
+1. Verify that the desired **Certificate Store** presents **Trusted Root Certification Authorities**, and select *Next*.
+1. Select *Finish* to complete the import. You'll see the message, *the import was successful*.
 
-Note: If multiple users share a device, running **certlm.msc** instead of **certmgr.msc** will allow administrators to update all user account certificate stores at once, rather than requiring a separate import for each individual user account.
+**Note:** If multiple users share a device, administrators should run **certlm.msc** to concurrently update the certificate stores of those accounts vs. updating each account separately.
 
