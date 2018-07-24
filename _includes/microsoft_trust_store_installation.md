@@ -144,7 +144,7 @@ You can use third-party configuration management tools, such as BigFix
     ```
 
 
-#### Manually using Microsoft Certificate Manager
+#### Manually use Microsoft Certificate Manager
 For unmanaged devices, the following manual procedures will be required:
 1. Click **Start**, type **certmgr.msc**, and then press **Enter**
 1. Right click **Trusted Root Certification Authorities** and select **All Tasks** -> **Import**. *The Certificate Import Wizard will open*. 
