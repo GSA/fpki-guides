@@ -77,9 +77,8 @@ Use one of these options to redistribute COMMON:
 
 #### Use Microsoft certutil 
 
-{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures." %}
+{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. These commands must be run from an agency Domain Controller." %}
 
-From an agency Domain Controller:
 1. Click **Start**, type **cmd**, and press **Enter**.
 1. Run command:
 
@@ -104,9 +103,8 @@ From an agency Domain Controller:
 
 #### Use Microsoft Group Policy Object
 
-{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures." %}
+{% include alert-info.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. These commands must be run from an agency Domain Controller." %}
 
-From an agency Domain Controller:
 1. Navigate to **Server Manager**.
 1. Select **Tools**.
 1. Select **Group Policy Management** from the drop-down list.
