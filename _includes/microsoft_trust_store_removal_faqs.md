@@ -81,7 +81,7 @@ No. COMMON will not change. The only change will be in how COMMON is distributed
 
 ![Sample Steps]({{site.baseurl}}/img/verify_trust.png){:style="width:85%;"}
 
-#### As an Enterprise Administrator, how do I verify that COMMON has been successfully redistributed to my agency's workstations and devices?
+### As an Enterprise Administrator, how do I verify that COMMON has been successfully redistributed to my agency's workstations and devices?
 
 You can verify redistribution through the **Trusted Root Certification Authorities** certificate store by viewing additional certificate details:  
 
@@ -97,9 +97,9 @@ Yes! But don't worry - an enterprise-distributed copy of COMMON won't conflict w
 
 ### My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?
 
-Incorrect. Your PIV credential issuer and how credentials are generated or issued will not be impacted by this change. COMMON removal from the Microsoft certificate store will impact federal agencies' workstations, devices, etc. (See [What happens if I don’t redistribute COMMON?](#what-happens-if-i-dont-redistribute-common).)   
+Incorrect. Your PIV credential issuer and how credentials are generated or issued will not be impacted by this change. COMMON removal from the Microsoft certificate store will impact federal agencies' workstations, devices, etc. (See [What happens if I don’t redistribute COMMON?](#what-happens-if-i-dont-redistribute-common))   
 
-### Will my PIV credentials break or need to be updated or replaced when this change happens?
+### Will my PIV credentials break or need to be updated or replaced when this change occurs?
 
 No. Our PIV credentials will *not* be affected by this change. 
 
