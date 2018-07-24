@@ -5,8 +5,8 @@ A PDF version of the webinar briefing can be found <a target="_blank" href="{{si
 
 
 ### Can you explain this change to me in a different way?
-- Current State: With our current distribution of COMMON within Microsoft’s certificate store, certificates issued from the Federal PKI can be validated to a known root certification authority.
-- Future State: Upon our removal of COMMON from Microsoft’s certificate store, certificates issued from the Federal PKI will no longer be validated to a known root certification authority. Failure to successfully validate a certificate’s chain will prevent authentication and digital signature validation. We can prevent errors by redistributing COMMON.
+- **Current State**: With our current distribution of COMMON within Microsoft’s certificate store, certificates issued from the Federal PKI can be validated to a known root certification authority.
+- **Future State**: Upon our removal of COMMON from Microsoft’s certificate store, certificates issued from the Federal PKI will no longer be validated to a known root certification authority. Failure to successfully validate a certificate’s chain will prevent authentication and digital signature validation. **We can prevent errors by redistributing COMMON.**
 
 
 ### What happens if I don’t distribute COMMON?
@@ -28,19 +28,13 @@ A PDF version of the webinar briefing can be found <a target="_blank" href="{{si
 ### Can you provide an example of what errors might look like if I do not redistribute COMMON?
 
 *Sample error in Chrome while navigating to an intranet site whose SSL/TLS certificate does not chain to a trusted root CA:*
-<p align="center">
-  ![error_navigation]({{site.baseurl}}/img/error_navigation.png)
-</p>
+     ![error_navigation]({{site.baseurl}}/img/error_navigation.png)
 
 *Sample error in Chrome where client (PIV) authentication fails due to a user’s certificate not chaining to a trusted root CA:*
-<p align="center">
-  ![error_piv_auth]({{site.baseurl}}/img/error_piv_auth.png)
-</p>
+     ![error_piv_auth]({{site.baseurl}}/img/error_piv_auth.png)
 
 *Sample error in Outlook where a signed email does not chain to a trusted root CA:*
-<p align="center">
-  ![error_sig_val]({{site.baseurl}}/img/error_sig_val.png)
-</p>
+     ![error_sig_val]({{site.baseurl}}/img/error_sig_val.png)
 
 ### Which Microsoft products will be affected?
 The table below presents Windows versions affected by this change:
@@ -79,12 +73,7 @@ In the screenshot above, we see three entries for COMMON.
 - The first entry (surrounded by a “dashed” line) is being populated from the Microsoft CTL. Note the values associated with Intended Purposes and Friendly Name.
 - The remaining two entries result from following the procedures in this Playbook.
 
-
-****
-2. Display physical certificate stores 
-
-     **View** -> **Options** -> ensure the Physical certificate stores entry is *checked*
-****
+Note: Select **View** -> **Options** -> and ensure the Physical certificate stores entry is *checked* to display a more detailed view of the Trusted Root Certification Authorities certificate store. This will present sub-directories within the certificate store to depict *Registry*, *Third Party*, *Group Policy*, *Enterprise*, and *Smart Card* directories. If COMMON is redistributed via GPO, administrators will be able to verify its presence within the *Group Policy* sub-directory.
 
 
 ### Can multiple copies of COMMON coexist in my certificate store?
@@ -107,10 +96,8 @@ It is possible to simulate the Microsoft certificate store’s future state.  It
 
 
 ### Should I be concerned with “Bring Your Own Device” (BYOD) program devices?
+
 If BYOD program users are performing any of the following activities, redistributing COMMON is required to avoid issues:
 - PIV smart card logon (to VPNs or intranet sites) 
 - Validate PIV digital signatures (emails or documents)
 - Navigate to intranet pages whose SSL/TLS certificates chain to COMMON
-
-
-Yes, COMMON will need to be redistributed to BYOD resources to prevent issues.
