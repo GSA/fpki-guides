@@ -68,10 +68,9 @@ The Federal PKI community's target date for mitigation actions is *December 31, 
 
 No. COMMON will not change. The only change will be in how COMMON is distributed to workstations and devices.
 
+### How can I verify that COMMON has been redistributed to my workstation or device?
 
-### As an agency user, how can I verify that COMMON has been redistributed to my workstation or device?
-
-1. Open Microsoft Certificate Viewer:  **Start**, type **certmgr.msc**, and then press **Enter**.
+1. Open Microsoft Certificate Manager:  **Start**, type **certmgr.msc**, and then press **Enter**.
 
 2. Navigate to **Trusted Root Certification Authorities** -> **Certificates**. 
 
@@ -81,14 +80,14 @@ No. COMMON will not change. The only change will be in how COMMON is distributed
 
 ![Sample Steps]({{site.baseurl}}/img/verify_trust.png){:style="width:85%;"}
 
-### As an Enterprise Administrator, how do I verify that COMMON has been successfully redistributed to my agency's workstations and devices?
-
-You can verify redistribution through the **Trusted Root Certification Authorities** certificate store by viewing additional certificate details:  
+Note: Additional detail can be presented by enabling a view of the Physical certificate stores by following the steps below.
 
 1. Select **View** -> **Options**.
 2. *Check* the **Physical certificate stores** checkbox. 
 
-The certificate store's sub-directories will display: *Registry*, *Third Party*, *Group Policy*, *Enterprise*, and *Smart Card*. (For example, if you redistribute COMMON via a Group Policy Object, you can verify COMMON's presence in the *Group Policy* sub-directory.) 
+The certificate store's sub-directories will then display to include *Registry*, *Third Party*, *Group Policy*, *Enterprise*, and *Smart Card*. For example, if you redistribute COMMON via the [certutil](#use-microsoft-certutil) commands presented above, you can verify COMMON's presence in the *Enterprise* sub-directory.
+
+
 
 ### Can multiple copies of COMMON coexist in my workstation's or device's certificate store?
 
