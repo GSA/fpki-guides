@@ -94,7 +94,7 @@ Use one of these options to redistribute COMMON:
     ```
 
 1. Confirm that COMMON is contained in the output details.
-1. [OPTIONAL] Verify the certificate details against [expected values](#verify-your-copy-of-common) shown above (e.g., Serial Number).
+1. [OPTIONAL] Verify the certificate details against the [expected values](#verify-your-copy-of-common) shown above (e.g., Serial Number).
 
 
 *Sample steps run on Microsoft Server 2012:*
@@ -117,7 +117,7 @@ Use one of these options to redistribute COMMON:
 1. Verify that the target **Certificate Store** presents **Trusted Root Certification Authorities**, and select **Next**.
 1. Select **Finish** to complete the import.  You'll see the message, *The import was successful*.
 1. Close the **Group Policy Management** window.
-1. [OPTIONAL] Wait for clients to consume the new policy or force consumption:
+1. [OPTIONAL] Wait for clients to consume the new policy or you can force consumption:
 - Click **Start**, type **cmd**, and then press **Enter**.
 - Run command:
 
@@ -135,7 +135,7 @@ Use one of these options to redistribute COMMON:
 
 You can use third-party configuration management tools, such as BigFix.
 
-1. Using BigFix, schedule a task and push the certificate file.
+1. Using BigFix, schedule a task and push the certificate file:
 - Command (example): 
 	
     ```
