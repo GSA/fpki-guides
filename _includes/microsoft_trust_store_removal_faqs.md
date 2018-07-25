@@ -74,20 +74,18 @@ No. COMMON will not change. The only change will be in how COMMON is distributed
 
 2. Navigate to **Trusted Root Certification Authorities** -> **Certificates**. 
 
-3. You may see two (or more) copies of COMMON, depending on how they were distributed. In the screenshot below, you'll see three entries for COMMON:
-* The first entry (“dashed” border) was populated by the Microsoft Certificate Trust List (CTL) (i.e., certificate store). Microsoft-distributed copies show multiple **Intended Purposes** values and a **Friendly Name** of *U.S. Government Common Policy*.
+3. You may see 2 (or more) copies of COMMON, depending on how they were distributed. The screenshot below lists 3 entries for COMMON:
+* The first entry (“dashed” border) is from the Microsoft Certificate Trust List (CTL) (i.e., certificate store). Microsoft-distributed copies show multiple **Intended Purposes** values and a **Friendly Name** of *U.S. Government Common Policy*.
 * The remaining two entries (examples of enterprise-distributed copies) result from following the procedures in this Playbook. Enterprise-distributed copies show an **Intended Purposes** value of *ALL* and a **Friendly Name** of *None*.
 
 ![Sample Steps]({{site.baseurl}}/img/verify_trust.png){:style="width:85%;"}
 
-**Note:** Additional detail can be presented by enabling a view of the Physical certificate stores by following the steps below.
+*Optionally, you can use this method:* 
 
-1. Select **View** -> **Options**.
-2. *Check* the **Physical certificate stores** checkbox. 
-
-The certificate store's sub-directories will then display to include *Registry*, *Third Party*, *Group Policy*, *Enterprise*, and *Smart Card*. For example, if you redistribute COMMON via the [certutil](#use-microsoft-certutil) commands presented above, you can verify COMMON's presence in the *Enterprise* sub-directory.
-
-
+1. From the **Trusted Root Certification Authorities** screen, select **View** -> **Options**.
+2. In the **View Options** box, *check* the **Physical certificate stores** checkbox. 
+3. At the main screen's side panel, click the **>** next to **Trusted Root Certification Authorities** to see a list of sub-directories: *Registry*, *Third Party*, *Group Policy*, *Enterprise*, and *Smart Card*.&nbps;
+> If you redistributed COMMON via _certutil_ (for example), COMMON will be listed in the *Enterprise* sub-directory.
 
 ### Can multiple copies of COMMON coexist in my workstation's or device's certificate store?
 
