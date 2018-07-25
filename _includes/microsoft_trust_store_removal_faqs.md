@@ -80,7 +80,7 @@ No. COMMON will not change. The only change will be in how COMMON is distributed
 
 ![Sample Steps]({{site.baseurl}}/img/verify_trust.png){:style="width:85%;"}
 
-Note: Additional detail can be presented by enabling a view of the Physical certificate stores by following the steps below.
+**Note:** Additional detail can be presented by enabling a view of the Physical certificate stores by following the steps below.
 
 1. Select **View** -> **Options**.
 2. *Check* the **Physical certificate stores** checkbox. 
