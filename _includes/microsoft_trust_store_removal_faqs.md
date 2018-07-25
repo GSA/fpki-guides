@@ -84,8 +84,9 @@ No. COMMON will not change. The only change will be in how COMMON is distributed
 
 1. From the **Trusted Root Certification Authorities** screen, select **View** -> **Options**.
 2. In the **View Options** box, *check* the **Physical certificate stores** checkbox. 
-3. At the main screen's side panel, click the **>** next to **Trusted Root Certification Authorities** to see a list of sub-directories: *Registry*, *Third Party*, *Group Policy*, *Enterprise*, and *Smart Card*.&nbps;
-> If you redistributed COMMON via _certutil_ (for example), COMMON will be listed in the *Enterprise* sub-directory.
+3. At the main screen's side panel, click the **>** next to **Trusted Root Certification Authorities** to see a list of sub-directories: *Registry*, *Third Party*, *Group Policy*, *Enterprise*, and *Smart Card*
+
+If you redistributed COMMON via _certutil_ (for example), COMMON will be listed in the *Enterprise* sub-directory.
 
 ### Can multiple copies of COMMON coexist in my workstation's or device's certificate store?
 
