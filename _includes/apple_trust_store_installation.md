@@ -164,7 +164,7 @@ The configuration profile can be distributed:
 4. [Over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}
 5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"} 
 
-**Note:** In **iOS**, you must manually enable trust for SSL when you install a profile that is sent to you via email or downloaded from an intranet site. Certificates installed with Configurator, MDM, or as part of an MDM enrollment profile are automatically trusted for SSL. Instructions for enabling full trust of certificates distributed by email or downloaded from an intranet site are listed [here](#enable-full-trust-for-COMMON-in-iOS).
+**Note:** In **iOS**, you must manually enable trust for SSL when you install a profile that is sent to you via email or downloaded from an intranet site. Certificates installed with Configurator, MDM, or as part of an MDM enrollment profile are automatically trusted for SSL. Instructions for enabling full trust of certificates distributed by email or downloaded from an intranet site are listed [here](#enable-full-trust-for-common-in-ios).
 
 
 #### Option 2. Install Using Command Line
