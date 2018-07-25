@@ -164,6 +164,8 @@ The configuration profile can be distributed:
 4. [Over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}
 5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"} 
 
+**Note:** In **iOS**, you must manually enable trust for SSL when you install a profile that is sent to you via email or downloaded from an intranet site. Certificates installed with Configurator, MDM, or as part of an MDM enrollment profile are automatically trusted for SSL. Instructions on enabling full trust for certificates distributed by email or downloaded from an intranet site are listed [here](#enable-full-trust-for-COMMON-in-iOS).
+
 
 #### Option 2. Install Using Command Line
 This option is for macOS devices only. 
@@ -199,7 +201,8 @@ This option is for iOS devices only.
 8. Click *Install* (top right), and *Install* again.
 9. Click *Done*.
 
-Next, you'll need to enable full trust for COMMON:
+#### Enable full trust for COMMON 
+These instructions are specific to iOS.
 
 1. From the iOS device's *Home* screen, go to *Settings* -> *General* -> *About* -> *Certificate Trust Settings*.
 2. Beneath *Enable Full Trust for Root Certificates*, toggle _ON_ for the Federal Common Policy CA entry. 
