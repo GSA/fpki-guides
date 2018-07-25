@@ -136,7 +136,7 @@ Use one of these options to redistribute COMMON:
 You can use third-party configuration management tools, such as BigFix.
 
 1. Using BigFix, schedule a task and push the certificate file:
-- Command (example): 
+- Run command (example): 
 	
     ```
         certutil -f -addstore root “fcpca.crt”
