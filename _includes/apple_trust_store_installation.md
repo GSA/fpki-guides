@@ -35,7 +35,7 @@ This option works for **macOS** and **iOS**.
 3. When prompted, download a copy of COMMON to your _{DOWNLOAD_LOCATION}_.
 4. Click the *Spotlight* icon and search for _terminal_. 
 5. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
-6. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details above: 
+6. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details above:<br /> 
 
     ```
 	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
@@ -67,10 +67,10 @@ Email us at fpki@gsa.gov to request an out-of-band copy of COMMON for download.
 
 Install COMMON on your agency's government-furnished Apple devices using any of these options: 
 
-* [Install using an Apple Configuration Profile - macOS and iOS](#option-1-install-using-an-apple-configuration-profile-macOS-and-iOS)
-* [Install using command line](#option-2-install-using-command-line)
-* [Install using Apple Keychain](#option-3-install-using-apple-keychain)
-* [Install using Safari web browser](#option-4-install-using-safari-web-browser)
+* [Install using an Apple Configuration Profile](#install-using-an-apple-configuration-profile)
+* [Install using command line](#install-using-command-line)
+* [Install using Apple Keychain](#install-using-apple-keychain)
+* [Install using Safari web browser](#install-using-safari-web-browser)
 
 
 #### Install using an Apple Configuration Profile
