@@ -16,6 +16,6 @@ To mitigate any impact this change may have, agencies will have to manually retr
 
 {% include alert-warning.html content="All agencies are encouraged to complete this action by August 31, 2018." %} 
 
-
+<br>
 ## Solutions ##
 {% include apple_trust_store_installation.md %}
