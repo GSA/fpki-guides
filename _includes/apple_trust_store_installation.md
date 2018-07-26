@@ -1,24 +1,28 @@
-<br>
-You'll need to download the COMMON root CA certificate and install it on government-furnished Apple devices using enterprise configuration management tools. 
+
+To mitigate any impact this change may have, agencies will have to manually retrieve the U.S. Government root CA certificate, import this certificate into agency enterprise certificate stores, and ensure that this change is propagated throughout the networks. The root certificate is available immediately and will remain unchanged.
+
+You'll need to download the COMMON root CA certificate and install it on government-furnished Apple devices. 
 <!--Are all our procedures here actually "enterprise" solutions as we say "enterprise configuration management tools" above? Some procedures sound like they are just for a device.-->
-{% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %} 
+{% include alert-warning.html content="You must have administrator privileges to run these procedures." %} 
 
 * [Download Options](#download-options)
 * [Install Options](#install-options)
 
 
 ### Download Options
-You'll need to download COMMON and install it on government-furnished Apple devices using one of these options:
+Use one of these options to verify your copy of COMMON. Your certificate details and hash must match the expected values shown below.
 
-* [Option 1. Download Using a Web Browser](#option-1-download-using-a-web-browser)
-* [Option 2. Download Using Terminal](#option-2-download-using-terminal)
-* [Option 3. Email Us](#option-3-email-us)
+You can download COMMON and install it on government-furnished Apple devices using one of these options:
+
+* [Download using a web browser](#download-using-a-web-browser)
+* [Download using Apple Terminal](#download-using-apple-terminal)
+* [Email us for a downloadable copy](#email-us-for-a-downloadable-copy)
 
 **Note:**&nbsp;&nbsp;For all options, replace _{DOWNLOAD_LOCATION}_ with your preferred file download location (e.g., `/Users/Sam.Jackson/Downloads`).
 
 {% include alert-warning.html content="You should never install a root certificate without verifying it." %} 
 
-When downloading the COMMON root CA certificate, verify that your certificate details and hash match the expected values shown below.
+When downloading a copy of COMMON, you'll need to verify that the certificate details and hash match the expected values shown below.
 
 | **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
@@ -27,11 +31,11 @@ When downloading the COMMON root CA certificate, verify that your certificate de
 | SHA-1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
 | SHA-256 Thumbprint | 89 4e bc 0b 23 da 2a 50 c0 18 6b 7f 8f 25 ef 1f 6b 29 35 af 32 a9 45 84 ef 80 aa f8 77 a3 a0 6e |
 
-#### Option 1. Download Using a Web Browser
+#### Download using a web browser
 
 1. Open your web browser.
 2. Navigate to the COMMON root CA certificate:  http://http.fpki.gov/fcpca/fcpca.crt.
-3. When prompted, download a copy of COMMON to your download location.
+3. When prompted, download a copy of COMMON to your _{DOWNLOAD_LOCATION}_.
 4. Click the *Spotlight* icon and search for _terminal_. 
 5. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
 6. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details above: 
@@ -40,7 +44,7 @@ When downloading the COMMON root CA certificate, verify that your certificate de
 	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
     ```
     
-#### Option 2. Download Using Terminal
+#### Download using Apple Terminal
 
 1. Click the *Spotlight* icon and search for _terminal_.
 2. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
@@ -50,28 +54,28 @@ When downloading the COMMON root CA certificate, verify that your certificate de
 	$ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt"
     ```
 
-4. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details above.
+4. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details above:
 
     ```
 	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
     ```
 
-#### Option 3. Email Us
+#### Email Us for a downloadable copy
 
-Email us at fpki@gsa.gov to request an out-of-band copy of the COMMON for download.
+Email us at fpki@gsa.gov to request an out-of-band copy of COMMON to download.
 
 ### Install Options
 
 Install COMMON on your agency's government-furnished Apple devices using any of these options: 
 
-* [Option 1. Install Using an Apple Configuration Profile](#option-1-install-using-an-apple-configuration-profile)
-* [Option 2. Install Using Command Line](#option-2-install-using-command-line)
-* [Option 3. Install Using Apple Keychain](#option-3-install-using-apple-keychain)
-* [Option 4. Install Using Safari Web Browser](#option-4-install-using-safari-web-browser)
+* [Install using an Apple Configuration Profile - macOS and iOS](#option-1-install-using-an-apple-configuration-profile-macOS-and-iOS)
+* [Install using command line](#option-2-install-using-command-line)
+* [Install using Apple Keychain](#option-3-install-using-apple-keychain)
+* [Install using Safari web browser](#option-4-install-using-safari-web-browser)
 
 
-#### Option 1. Install Using an Apple Configuration Profile
-<!--Real confusion with fresh reading. Meaning of "Distribute and Install?" "Profiles distribute," then "profiles install," then profiles are being distributed (next section header). May need to discuss to clarify terms and what is actually happening.-->
+#### Install using an Apple Configuration Profile - macOS and iOS
+
 This option works for both **macOS and iOS** devices.
 
 Apple Configuration Profiles (XML files) can be used to distribute trusted root certificates to your agency's government-furnished Apple devices.<!--Does "distribute" mean that the profile "installs" COMMON?-->  Create a Configuration Profile by using Apple's *Configurator 2* application. An example configuration profile is included beneath these steps:
@@ -174,7 +178,7 @@ You can use any of these options to distribute configuration profiles to **macOS
 ***Note:** For **iOS only**, if you install COMMON on an iOS device from an email<!--profile?--> or download it<!--from a profile?--> onto an iOS device from an intranet site, you'll need to manually enable SSL trust for COMMON. You don't need to do this when using Configurator, MDM, or an MDM enrollment profile to install COMMON. COMMON will automatically be enabled for SSL trust. To enable full trust for COMMON when received by email or downloaded from an intranet site, see [Enable Full Trust for COMMON](#enable-full-trust-for-common).
 
 
-#### Option 2. Install Using Command Line
+#### Install using command line
 This option is for **macOS** devices only. 
 
 1. Command line:
@@ -183,7 +187,7 @@ This option is for **macOS** devices only.
 	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
     ```
 
-#### Option 3. Install Using Apple Keychain
+#### Install using Apple Keychain
 This option is for **macOS** devices only. 
 
 1. Browse to your downloaded copy of the COMMON root CA certificate.
@@ -193,7 +197,7 @@ This option is for **macOS** devices only.
 Non-administrative users may follow the steps above to install COMMON in the Login Keychain specific to their account. This will not impact other user accounts on a device. 
 
 
-#### Option 4. Install Using Safari Web Browser
+#### Install Using Safari web browser
 This option is for **iOS** devices only. 
 
 1. Launch Safari.
