@@ -180,7 +180,7 @@ These options work for both **macOS and iOS** devices.
 4. [Over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}.
 5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. (Third-party applications are available to assist with this process.) 
 
-***Note:** For **iOS only**&nbsp;&mdash;&nbsp;If you download and install COMMON from an email or an intranet website, **you'll need to manually enable SSL trust for COMMON**. This isn't needed when you use Configurator, MDM, or an MDM enrollment profile to install COMMON. COMMON will automatically be enabled for SSL trust. You can enable full trust for COMMON when received by email or downloaded from an intranet site. (See [Enable Full Trust for COMMON](#enable-full-trust-for-common).)
+***Note:** For **iOS only**&nbsp;&mdash;&nbsp;If you download and install COMMON from an email or an intranet website, **you'll need to manually enable SSL trust for COMMON**. This isn't needed when you use Configurator, MDM, or an MDM enrollment profile to install COMMON. (See [Enable Full Trust for COMMON](#enable-full-trust-for-common).)
 
 
 #### Install using command line
@@ -196,11 +196,11 @@ This option works for **macOS** devices only.
 #### Install using Apple Keychain
 This option works for **macOS** devices only. 
 
-1. Browse to your downloaded copy of the COMMON.
+1. Browse to your downloaded copy of COMMON.
 2. Double-click on the file.
 3. When prompted, enter your password to install the certificate.
 
-General users may use these steps to install COMMON in the _Login Keychain_ specific to their accounts. This will not impact other user accounts on a device. 
+General users may use these steps to install COMMON in the _Login Keychain_ specific to their accounts. This will not impact other user accounts on the device. 
 
 
 #### Install Using Safari web browser
@@ -219,7 +219,7 @@ This option works for **iOS** devices only.
 9. Click *Done*.
 
 #### Enable full trust for COMMON 
-This option works for **iOS** devices only.
+This procedure is for **iOS** devices only.
 
 1. From the iOS device's *Home* screen, go to *Settings* -> *General* -> *About* -> *Certificate Trust Settings*.
 2. Beneath *Enable Full Trust for Root Certificates*, toggle _ON_ for the COMMON root CA certificate entry. 
