@@ -1,9 +1,9 @@
+To limit the impact to your agency, you'll need to redistribute the COMMON root CA certificate as a _trusted root certificate_ to all government-furnished Apple devices.
 
-To mitigate any impact this change may have, agencies will need to download the COMMON root CA certificate and install it on government-furnished Apple devices. The root certificate is available immediately and will remain unchanged.
+To redistribute COMMON, follow these procedures:
 
 * [Download Options](#download-options)
 * [Install Options](#install-options)
-
 
 ### Download Options
 
@@ -47,13 +47,13 @@ This option works for **macOS** only.
 
 1. Click the *Spotlight* icon and search for _terminal_.
 2. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
-3. Download a copy of COMMON:
+3. Download a copy of COMMON:<br />
 
     ```
 	$ curl -o {DOWNLOAD_LOCATION}/fcpca.crt "http://http.fpki.gov/fcpca/fcpca.crt"
     ```
 
-4. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details above:
+4. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details above:<br />
 
     ```
 	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
