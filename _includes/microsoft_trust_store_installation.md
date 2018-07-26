@@ -1,4 +1,4 @@
-To limit the impact to your agency, you'll need to redistribute COMMON as a trusted root certificate on all government-furnished Windows workstations and devices. 
+To limit the impact to your agency, you'll need to redistribute the COMMON root CA certificate as a _trusted root certificate_ to all government-furnished Windows workstations and devices.
 
 To redistribute COMMON, follow these procedures:
 1. [Download a Copy of COMMON](#download-a-copy-of-common)
