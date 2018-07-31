@@ -12,7 +12,7 @@ Upcoming changes regarding Apple devices and operating systems could impact your
 
 {% include alert-info.html content="This announcement will be updated as more information and additional procedures become available. Please watch for additional updates from the Federal PKI listservs, ICAM listservs, and the ICAM Subcommittee." %}
 
-Starting in **September-October 2018**, government users of Apple iOS, macOS, and tvOS devices will receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and the government-furnished Apple devices.
+Starting in the release of macOS Mojave, iOS 12, and tvOS 12 (estimated release timeline of **September-October 2018**), government users of Apple devices will receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and the government-furnished Apple devices.
 
 {% include alert-info.html content="The FPKIPA has also elected to remove the Federal Common Policy CA root certificate from Microsoft's Trust Store." %}
 
@@ -40,11 +40,11 @@ These certificate types are stored within Apple _Keychains_:
  
 ## What Will Be Impacted?
 
-These Apple operating system versions will be impacted:
+These Apple operating system versions (and all subsequent versions) will be impacted:
 
 |**macOS**|**iOS**|**tvOS**|
 | :-------- |:-------- |:-------- |
-| High Sierra (10.13) |	 iOS11 | tvOS11 |
+| Mojave (10.14) |	 iOS12 | tvOS12 |
 
 
 Government users will receive errors on government-furnished Apple devices if any of these are true:
