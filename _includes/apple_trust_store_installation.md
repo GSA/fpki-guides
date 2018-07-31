@@ -39,6 +39,7 @@ Verify that your downloaded certificate's details and hash match the expected va
 <video width="600" controls>
   <source src="{{site.baseurl}}/video/download_and_verify.mp4" type="video/mp4">
 </video>
+<br>
 
 ### macOS Solutions
 Install COMMON on your agency's government-furnished Apple macOS devices using any of these options: 
@@ -68,6 +69,7 @@ You can create Apple Configuration Profiles (XML files) to redistribute and auto
 <video width="600" controls>
   <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
 </video>
+<br>
 
 ##### Example Apple Configuration Profile
 
@@ -176,6 +178,7 @@ Manual (e.g., user clicking on the distributed profile)
 <video width="600" controls>
   <source src="{{site.baseurl}}/video/manual_install_profile.mp4" type="video/mp4">
 </video>
+<br>
 
 
 #### Install using command line
@@ -195,6 +198,7 @@ Manual (e.g., user clicking on the distributed profile)
 <video width="600" controls>
   <source src="{{site.baseurl}}/video/install_command_line.mp4" type="video/mp4">
 </video>
+<br>
 
 #### Install using Apple Keychain Access
 
@@ -213,6 +217,7 @@ Manual (e.g., user clicking on the distributed profile)
 <video width="600" controls>
   <source src="{{site.baseurl}}/video/keychain_gui_admin.mp4" type="video/mp4">
 </video>
+<br>
 
 
 {% include alert-info.html content="The following steps will redistribute COMMON to the login keychain, and do not require administrator rights." %}
@@ -226,6 +231,7 @@ Manual (e.g., user clicking on the distributed profile)
 <video width="600" controls>
   <source src="{{site.baseurl}}/video/keychain_gui_non_admin.mp4" type="video/mp4">
 </video>
+<br>
 
 
 ### iOS Solutions
