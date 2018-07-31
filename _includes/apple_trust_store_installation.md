@@ -1,6 +1,3 @@
-* [TEST]({{site.baseurl}}/truststores/apple_solutions/test), 
-
-
 To limit the impact to your agency, you'll need to redistribute the COMMON root CA certificate as a _trusted root certificate_ to all government-furnished Apple devices.
 
 To redistribute COMMON, follow these procedures:
@@ -51,8 +48,167 @@ Install COMMON on your agency's government-furnished Apple macOS devices using a
 * [Install using command line](#install-using-command-line)
 * [Install using Apple Keychain](#install-using-apple-keychain)
 
+#### Install using an Apple Configuration Profile
+
+This option works for both **macOS and iOS** devices.
+
+{% include alert-warning.html content="It is recommended that only administrators run these procedures." %} 
+
+You can create Apple Configuration Profiles (XML files) to redistribute and automatically install COMMON on your agency's government-furnished Apple devices. (An example Configuration Profile is provided below that you can reuse.)
+
+1. As an administrator, you'll need to _first download a copy of COMMON to your own device_ before creating a Configuration Profile.   
+2. Then, download and install *Configurator 2* from the Apple App Store.
+3. Open Configurator 2 and click *File* -> *New Profile*.
+4. Under *General*, enter a unique profile *Name*. ("Federal Common Policy Certification Authority Profile" was used for the example.)
+5. Enter a unique profile *Identifier*. ("FCPCA-0001" was used for the example.)
+6. Browse to local *certificate* copies on your device. Select COMMON and add it to the profile. 
+7. Click *File* -> *Save* to save your profile to a preferred file location. 
+9. Follow the steps to [distribute configuration profiles](#distribute-apple-configuration-profiles).
+
+The example Configuration Profile below can be used to redistribute and automatically install COMMON as a trusted root CA for both **macOS and iOS**, government-furnished devices. To use the example profile, copy the XML information and save it as a `.mobileconfig` file. 
+
+{% include alert-warning.html content="Before using the example profile, you should verify its suitability for your agency." %} 
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadCertificateFileName</key>
+			<string>fcpca.crt</string>
+			<key>PayloadContent</key>
+			<data>
+			MIIEYDCCA0igAwIBAgICATAwDQYJKoZIhvcNAQELBQAwWTELMAkG
+			A1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVudDENMAsG
+			A1UECxMERlBLSTEhMB8GA1UEAxMYRmVkZXJhbCBDb21tb24gUG9s
+			aWN5IENBMB4XDTEwMTIwMTE2NDUyN1oXDTMwMTIwMTE2NDUyN1ow
+			WTELMAkGA1UEBhMCVVMxGDAWBgNVBAoTD1UuUy4gR292ZXJubWVu
+			dDENMAsGA1UECxMERlBLSTEhMB8GA1UEAxMYRmVkZXJhbCBDb21t
+			b24gUG9saWN5IENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+			CgKCAQEA2HX7NRY0WkG/Wq9cMAQUHK14RLXqJup1YcfNNnn4fNi9
+			KVFmWSHjeavUeL6wLbCh1bI1FiPQzB6+Duir3MPJ1hLXp3JoGDG4
+			FyKyPn66CG3G/dFYLGmgA/Aqo/Y/ISU937cyxY4nsyOl4FKzXZbp
+			sLjFxZ+7xaBugkC7xScFNknWJidpDDSPzyd6KgqjQV+NHQOGgxXg
+			VcHFmCye7Bpy3EjBPvmE0oSCwRvDdDa3ucc2Mnr4MrbQNq4iGDGM
+			UHMhnv6DOzCIJOPpwX7e7ZjHH5IQip9bYi+dpLzVhW86/clTpyBL
+			qtsgqyFOHQ1O5piF5asRR12dP8QjwOMUBm7+nQIDAQABo4IBMDCC
+			ASwwDwYDVR0TAQH/BAUwAwEB/zCB6QYIKwYBBQUHAQsEgdwwgdkw
+			PwYIKwYBBQUHMAWGM2h0dHA6Ly9odHRwLmZwa2kuZ292L2ZjcGNh
+			L2NhQ2VydHNJc3N1ZWRCeWZjcGNhLnA3YzCBlQYIKwYBBQUHMAWG
+			gYhsZGFwOi8vbGRhcC5mcGtpLmdvdi9jbj1GZWRlcmFsJTIwQ29t
+			bW9uJTIwUG9saWN5JTIwQ0Esb3U9RlBLSSxvPVUuUy4lMjBHb3Zl
+			cm5tZW50LGM9VVM/Y0FDZXJ0aWZpY2F0ZTtiaW5hcnksY3Jvc3ND
+			ZXJ0aWZpY2F0ZVBhaXI7YmluYXJ5MA4GA1UdDwEB/wQEAwIBBjAd
+			BgNVHQ4EFgQUrQx6dVzl85jEeZgOrCj9l/TnAvwwDQYJKoZIhvcN
+			AQELBQADggEBAI9z2uF/gLGH9uwsz9GEYx728Yi3mvIRte9UrYpu
+			GDco71wb5O9Qt2wmGCMiTR0mRyDpCZzicGJxqxHPkYnos/UqoEfA
+			FMtOQsHdDA4b8Idb7OV316rgVNdF9IU+7LQd3nyKf1tNnJaK0KIy
+			n9psMQz4pO9+c+iR3Ah6cFqgr2KBWfgAdKLI3VTKQVZHvenAT+0g
+			3eOlCd+uKML80cgX2BLHb94u6b2akfI8WpQukSKAiaGMWMyDeiYZ
+			dQKlDn0KJnNR6obLB6jI/WNaNZvSr79PMUjBhHDbNXuaGQ/lj/Rq
+			DG8z2esccKIN47lQA2EC/0rskqTcLe4qNJMHtyznGI8=
+			</data>
+			<key>PayloadDescription</key>
+			<string>Adds a CA root certificate</string>
+			<key>PayloadDisplayName</key>
+			<string>Federal Common Policy CA</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.security.root.1EB75E7D-C3BC-46C2-AF42-51D80A2E12FC</string>
+			<key>PayloadType</key>
+			<string>com.apple.security.root</string>
+			<key>PayloadUUID</key>
+			<string>1EB75E7D-C3BC-46C2-AF42-51D80A2E12FC</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>Federal Common Policy Certification Authority Profile</string>
+	<key>PayloadIdentifier</key>
+	<string>FCPCA-0001</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>AAD17D9A-DA41-4197-9F0F-3C3C6B4512F9</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
+``` 
+
+##### Distribute Apple configuration profiles
+
+These options work for both **macOS and iOS** devices. 
+
+{% include alert-warning.html content="It is recommended that only administrators run these procedures. You should never email a Configuration Profile to someone outside your agency domain." %} 
+
+{% include alert-info.html content="If you download and install COMMON from an email or an intranet website to an iOS device, you must manually enable SSL trust for COMMON." %}
+
+1. Use Apple's _Configurator 2_ to distribute your Configuration Profile to government-furnished devices connected via USB.
+2. Email a profile to select agency users.  
+3. Share a profile on an agency intranet webpage.
+4. [Over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}.
+5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. (Third-party applications are available to assist with this process.) 
+
+***Note:** For **iOS only**&nbsp;&mdash;&nbsp;If you download and install COMMON from an email or an intranet website, **you'll need to manually enable SSL trust for COMMON**. This isn't needed when you use Configurator, MDM, or an MDM enrollment profile to install COMMON. (See [Enable Full Trust for COMMON](#enable-full-trust-for-common).)
+
+
+#### Install using command line
+
+This option works for **macOS** devices only. 
+
+1. Command line:
+
+    ```
+	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
+    ```
+
+#### Install using Apple Keychain
+This option works for **macOS** devices only. 
+
+1. Browse to your downloaded copy of COMMON.
+2. Double-click on the file.
+3. When prompted, enter your password to install the certificate.
+
+General users may use these steps to install COMMON in the _Login Keychain_ specific to their accounts. This will not impact other user accounts on the device. 
+
+
+
+
 ### iOS Solutions
 Install COMMON on your agency's government-furnished Apple iOS devices using any of these options: 
-* [Install using an Apple Configuration Profile](#install-using-an-apple-configuration-profile)
+* [Install using an Apple Configuration Profile in iOS](#install-using-an-apple-configuration-profile-in-ios)
 * [Install using Safari web browser](#install-using-safari-web-browser)
+
+#### Install Using an Apple Configuration Profile in iOS
+Apple Configuration Profiles can be used to install COMMON in both macOS and iOS. Please review guidance on [Apple Configuration Profiles](#install-using-an-apple-configuration-profile)
+
+
+#### Install Using Safari web browser
+This option works for **iOS** devices only. 
+
+1. Launch Safari.
+2. Navigate to the COMMON root CA certificate: http://http.fpki.gov/fcpca/fcpca.crt.<br>
+> System message appears: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*<br>
+3. Click *Allow*.<br>
+> The COMMON Configuration Profile appears.<br> 
+4. Click *More Details* and then the COMMON certificate entry.
+5. Scroll down to *Fingerprints* and verify the certificate's SHA-256 hash.
+6. At the top left of screen, click *Back* and *Install Profile*. Then, click *Install* (top right).
+7. When prompted, enter your device *passcode*.
+8. Click *Install* (top right), and *Install* again.
+9. Click *Done*.
+
+#### Enable full trust for COMMON 
+This procedure is for **iOS** devices only.
+
+1. From the iOS device's *Home* screen, go to *Settings* -> *General* -> *About* -> *Certificate Trust Settings*.
+2. Beneath *Enable Full Trust for Root Certificates*, toggle _ON_ for the COMMON root CA certificate entry. 
+3. When the certificate appears, click *Continue*.
+4. You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal PKI CA.
 
