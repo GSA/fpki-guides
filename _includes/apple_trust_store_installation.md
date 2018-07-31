@@ -2,10 +2,6 @@
 
 ######################################
 
-<video width="600" controls>
-  <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
-</video>
-######################################
 
 
 
@@ -48,6 +44,11 @@ Verify that your downloaded certificate's details and hash match the expected va
 | SHA-1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
 | SHA-256 Thumbprint | 89 4e bc 0b 23 da 2a 50 c0 18 6b 7f 8f 25 ef 1f 6b 29 35 af 32 a9 45 84 ef 80 aa f8 77 a3 a0 6e |
 
+**Note:** These steps are seen in the video below:
+<br>
+<video width="600" controls>
+  <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
+</video>
 
 ### macOS Solutions
 Install COMMON on your agency's government-furnished Apple macOS devices using any of these options: 
