@@ -54,9 +54,10 @@ Install COMMON on your agency's government-furnished Apple iOS devices using any
 * [Install using an Apple Configuration Profile](#install-using-an-apple-configuration-profile)
 * [Install using Safari web browser](#install-using-safari-web-browser)
 
+<br>
+--------------------------------------------------------------------------------
+<br>
 
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
 #### Install using an Apple Configuration Profile
 
 This option works for both **macOS and iOS** devices.
@@ -150,6 +151,7 @@ The example Configuration Profile below can be used to redistribute and automati
 </plist>
 ``` 
 
+
 ##### Distribute Apple configuration profiles
 
 These options work for both **macOS and iOS** devices. 
@@ -167,6 +169,11 @@ These options work for both **macOS and iOS** devices.
 ***Note:** For **iOS only**&nbsp;&mdash;&nbsp;If you download and install COMMON from an email or an intranet website, **you'll need to manually enable SSL trust for COMMON**. This isn't needed when you use Configurator, MDM, or an MDM enrollment profile to install COMMON. (See [Enable Full Trust for COMMON](#enable-full-trust-for-common).)
 
 
+<br>
+--------------------------------------------------------------------------------
+<br>
+
+
 #### Install using command line
 
 This option works for **macOS** devices only. 
@@ -176,6 +183,11 @@ This option works for **macOS** devices only.
     ```
 	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
     ```
+    
+<br>
+--------------------------------------------------------------------------------
+<br>
+
 
 #### Install using Apple Keychain
 This option works for **macOS** devices only. 
@@ -185,6 +197,10 @@ This option works for **macOS** devices only.
 3. When prompted, enter your password to install the certificate.
 
 General users may use these steps to install COMMON in the _Login Keychain_ specific to their accounts. This will not impact other user accounts on the device. 
+
+<br>
+--------------------------------------------------------------------------------
+<br>
 
 
 #### Install Using Safari web browser
@@ -202,6 +218,11 @@ This option works for **iOS** devices only.
 8. Click *Install* (top right), and *Install* again.
 9. Click *Done*.
 10. Follow the instructions below to [Enable Full Trust for COMMON](#enable-full-trust-for-common) 
+
+<br>
+--------------------------------------------------------------------------------
+<br>
+
 
 #### Enable full trust for COMMON 
 This procedure is for **iOS** devices only.
