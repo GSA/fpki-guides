@@ -1,6 +1,6 @@
 ######################################
 
-<video width="400" controls>
+<video width="600" controls>
   <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
 </video>
 
