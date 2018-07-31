@@ -17,15 +17,13 @@ To download a copy of COMMON, use one of the recommended options:
 The following instructions are intended to be run on **macOS**.
 1. Click the *Spotlight* icon and search for _terminal_.
 2. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
-3. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details above:<br />
+3. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details below:<br />
 
     ```
 	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
     ```
     
     **Note:**&nbsp;&nbsp;Replace _{DOWNLOAD_LOCATION}_ with your preferred file download location (e.g., `/Users/Sam.Jackson/Downloads`).
-
-Verify that your downloaded certificate's details and hash match the expected values shown below:
 
 | **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
@@ -42,7 +40,7 @@ Verify that your downloaded certificate's details and hash match the expected va
 <br>
 
 ### macOS Solutions
-Install COMMON on your agency's government-furnished Apple macOS devices using any of these options: 
+Install COMMON on your agency's government-furnished macOS devices using any of these options: 
 * [Install using an Apple Configuration Profile](#install-using-an-apple-configuration-profile)
 * [Install using command line](#install-using-command-line)
 * [Install using Apple Keychain Access](#install-using-apple-keychain-access)
@@ -53,7 +51,7 @@ This option works for both **macOS and iOS** devices.
 
 {% include alert-warning.html content="It is recommended that only system or mobile device management (MDM) administrators create Configuration Profiles." %} 
 
-You can create Apple Configuration Profiles (XML files) to redistribute and automatically install COMMON on your agency's government-furnished Apple devices.  The steps below detail one method for creating a Configuration Profile using Apple’s free Configurator 2 application. Numerous third-party applications can also be used to create, distribute, and  automatically install profiles to managed Apple devices.
+You can create Apple Configuration Profiles (XML files) to redistribute and automatically install COMMON on your agency's government-furnished Apple devices.  The steps below detail one method for creating a Configuration Profile using Apple’s free Configurator 2 application. Numerous third-party applications can also be used to create, distribute, and automatically install Configuration Profiles to managed Apple devices.
 
 1. As an administrator, you'll need to _first [download](#download-a-copy-of-common) and [verify](#verify-your-copy-of-common) a copy of COMMON to your own device_ before creating a Configuration Profile.   
 2. Then, download and install *Configurator 2* from the Apple App Store.
@@ -73,9 +71,9 @@ You can create Apple Configuration Profiles (XML files) to redistribute and auto
 
 ##### Example Apple Configuration Profile
 
-The example Configuration Profile below can be used to redistribute and automatically install COMMON as a trusted root CA for both **macOS and iOS**, government-furnished devices. To use the example profile, copy the XML information and save it as a `.mobileconfig` file. 
+The example Configuration Profile below can be used to redistribute and automatically install COMMON as a trusted root CA for both **macOS and iOS**, government-furnished devices. To use the example Configuration Profile, copy the XML information and save it as a `.mobileconfig` file. 
 
-{% include alert-warning.html content="Before using the example profile, you should verify its suitability for your agency." %} 
+{% include alert-warning.html content="Before using the example Configuration Profile, you should verify its suitability for your agency." %} 
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -155,7 +153,6 @@ These options work for both **macOS and iOS** devices.
 
 {% include alert-warning.html content="It is recommended that only administrators run these procedures. You should never email a Configuration Profile to someone outside your agency domain." %} 
 
-{% include alert-info.html content="If you download and install COMMON from an email or an intranet website to an iOS device, you must manually enable SSL trust for COMMON." %}
 
 1. Use Apple's _Configurator 2_ to distribute your Configuration Profile to government-furnished devices connected via USB.
 2. Email a profile to select agency users.  
@@ -261,7 +258,7 @@ This option works for **iOS** devices only.
 7. When prompted, enter your device *passcode*.
 8. Click *Install* (top right), and *Install* again.
 9. Click *Done*.
-10. Follow the instructions below to enable [full trust for COMMON](#enable-full-trust-for-common) for COMMON.
+10. Follow the instructions below to enable [full trust for COMMON](#enable-full-trust-for-common).
 
 #### Enable full trust for COMMON 
 This procedure is for **iOS** devices only.
