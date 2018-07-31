@@ -1,4 +1,4 @@
-[Test Link]({{site.baseurl}}/_pages/test.md){:target="_blank"}.
+[Test Link]({{site.baseurl}}/pages/contribute.md){:target="_blank"}.
 
 ######################################
 
