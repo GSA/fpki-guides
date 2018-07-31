@@ -248,7 +248,7 @@ This option works for **iOS** devices only.
 3. Click *Allow*.<br>
 > The COMMON Configuration Profile appears.<br> 
 4. Click *More Details* and then the COMMON certificate entry.
-5. Scroll down to *Fingerprints* and verify the certificate's SHA-256 hash.
+5. Scroll down to *Fingerprints* and [verify](#verify-your-copy-of-common) the certificate's SHA-256 hash.
 6. At the top left of screen, click *Back* and *Install Profile*. Then, click *Install* (top right).
 7. When prompted, enter your device *passcode*.
 8. Click *Install* (top right), and *Install* again.
