@@ -45,7 +45,7 @@ Verify that your downloaded certificate's details and hash match the expected va
 Install COMMON on your agency's government-furnished Apple macOS devices using any of these options: 
 * [Install using an Apple Configuration Profile](#install-using-an-apple-configuration-profile)
 * [Install using command line](#install-using-command-line)
-* [Install using Apple Keychain](#install-using-apple-keychain)
+* [Install using Apple Keychain Access](#install-using-apple-keychain-access)
 
 #### Install using an Apple Configuration Profile
 
@@ -259,6 +259,7 @@ This option works for **iOS** devices only.
 7. When prompted, enter your device *passcode*.
 8. Click *Install* (top right), and *Install* again.
 9. Click *Done*.
+10. Follow the instructions below to enable [full trust for COMMON](#enable-full-trust-for-common) for COMMON.
 
 #### Enable full trust for COMMON 
 This procedure is for **iOS** devices only.
