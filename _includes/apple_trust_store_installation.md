@@ -37,7 +37,7 @@ Verify that your downloaded certificate's details and hash match the expected va
 **Note:**&nbsp;&nbsp;The video below presents the steps to download and verify a copy of COMMON.
 <br>
 <video width="600" controls>
-  <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
+  <source src="{{site.baseurl}}/video/download_and_verify.mp4" type="video/mp4">
 </video>
 
 ### macOS Solutions
@@ -62,6 +62,12 @@ You can create Apple Configuration Profiles (XML files) to redistribute and auto
 6. *Optional*: Add additional agency specific configurations or customizations. 
 7. Click *File* -> *Save* to save your profile to a preferred file location. 
 8. Follow the steps to [distribute](#distribute-apple-configuration-profiles) the configuration profile across your enterprise.
+
+**Note:**&nbsp;&nbsp;The video below presents the generation of a Configuration Profile.
+<br>
+<video width="600" controls>
+  <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
+</video>
 
 ##### Example Apple Configuration Profile
 
@@ -165,6 +171,12 @@ These options work for both **macOS and iOS** devices.
 Automatic (e.g., MDM automates installation without user intervention)
 Manual (e.g., user clicking on the distributed profile)
 
+**Note:**&nbsp;&nbsp;The video below presents the manual installation of a Configuration Profile on macOS.
+<br>
+<video width="600" controls>
+  <source src="{{site.baseurl}}/video/manual_install_profile.mp4" type="video/mp4">
+</video>
+
 
 #### Install using command line
 
@@ -177,6 +189,12 @@ Manual (e.g., user clicking on the distributed profile)
     ```
 	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpca.crt
     ```
+    
+**Note:**&nbsp;&nbsp;The video below presents the command line installation process.
+<br>
+<video width="600" controls>
+  <source src="{{site.baseurl}}/video/install_command_line.mp4" type="video/mp4">
+</video>
 
 #### Install using Apple Keychain Access
 
@@ -190,6 +208,11 @@ Manual (e.g., user clicking on the distributed profile)
 6. When prompted, enter your *administrator* username and password.
 7. Keychain Access will present the installed certificate.
 
+**Note:**&nbsp;&nbsp;The video below presents the the administrator Keychain Access import process.
+<br>
+<video width="600" controls>
+  <source src="{{site.baseurl}}/video/keychain_gui_admin.mp4" type="video/mp4">
+</video>
 
 General users may use these steps to install COMMON in the _Login Keychain_ specific to their accounts. This will not impact other user accounts on the device. 
 
@@ -199,7 +222,11 @@ General users may use these steps to install COMMON in the _Login Keychain_ spec
 2. Double-click on the file.
 3. Keychain Access will open and present the installed certificate.
 
-
+**Note:**&nbsp;&nbsp;The video below presents the the non-administrator Keychain Access import process.
+<br>
+<video width="600" controls>
+  <source src="{{site.baseurl}}/video/keychain_gui_non-admin.mp4" type="video/mp4">
+</video>
 
 
 ### iOS Solutions
