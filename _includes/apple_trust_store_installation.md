@@ -51,7 +51,7 @@ Install COMMON on your agency's government-furnished Apple macOS devices using a
 
 This option works for both **macOS and iOS** devices.
 
-{% include alert-warning.html content="It is recommended that only system or mobile device management (MDM) administrators run these procedures." %} 
+{% include alert-warning.html content="It is recommended that only system or mobile device management (MDM) administrators create Configuration Profiles." %} 
 
 You can create Apple Configuration Profiles (XML files) to redistribute and automatically install COMMON on your agency's government-furnished Apple devices.  The steps below detail one method for creating a Configuration Profile using Apple’s free Configurator 2 application. Numerous third-party applications can also be used to create, distribute, and  automatically install profiles to managed Apple devices.
 
@@ -248,6 +248,8 @@ Please review guidance on Apple Configuration Profiles [here](#install-using-an-
 #### Install Using Safari web browser
 This option works for **iOS** devices only. 
 
+{% include alert-info.html content="The following steps will install COMMON as a trusted root certificate, and can be run by administrators or non-administrators." %}
+
 1. Launch Safari.
 2. Navigate to the COMMON root CA certificate: http://http.fpki.gov/fcpca/fcpca.crt.<br>
 > System message appears: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*<br>
@@ -263,6 +265,8 @@ This option works for **iOS** devices only.
 
 #### Enable full trust for COMMON 
 This procedure is for **iOS** devices only.
+
+{% include alert-info.html content="The following steps will enable “full trust” for certificates chaining to COMMON, and can be run by administrators or non-administrators." %}
 
 1. From the iOS device's *Home* screen, go to *Settings* -> *General* -> *About* -> *Certificate Trust Settings*.
 2. Beneath *Enable Full Trust for Root Certificates*, toggle _ON_ for the COMMON root CA certificate entry. 
