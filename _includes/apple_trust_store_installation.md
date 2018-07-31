@@ -1,10 +1,3 @@
-[Test Link]({{site.baseurl}}/contribute.md){:target="_blank"}.
-
-######################################
-
-
-
-
 
 To limit the impact to your agency, you'll need to redistribute the COMMON root CA certificate as a _trusted root certificate_ to all government-furnished Apple devices.
 
