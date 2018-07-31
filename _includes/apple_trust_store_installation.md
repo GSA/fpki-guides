@@ -1,8 +1,7 @@
 ######################################
 
 <video width="400" controls>
-  <source src="{{site.baseurl}}/video/create_profile.mov" type="video/mov">
-  Your browser does not support HTML5 video.
+  <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
 </video>
 
 
