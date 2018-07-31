@@ -1,3 +1,14 @@
+######################################
+
+<video width="400" controls>
+  <source src="{{site.baseurl}}/video/create_profile.mov" type="video/mov">
+  Your browser does not support HTML5 video.
+</video>
+
+
+
+######################################
+
 To limit the impact to your agency, you'll need to redistribute the COMMON root CA certificate as a _trusted root certificate_ to all government-furnished Apple devices.
 
 To redistribute COMMON, follow these procedures:
