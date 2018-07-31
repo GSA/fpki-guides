@@ -214,7 +214,6 @@ Manual (e.g., user clicking on the distributed profile)
   <source src="{{site.baseurl}}/video/keychain_gui_admin.mp4" type="video/mp4">
 </video>
 
-General users may use these steps to install COMMON in the _Login Keychain_ specific to their accounts. This will not impact other user accounts on the device. 
 
 {% include alert-info.html content="The following steps will redistribute COMMON to the login keychain, and do not require administrator rights." %}
 
@@ -225,7 +224,7 @@ General users may use these steps to install COMMON in the _Login Keychain_ spec
 **Note:**&nbsp;&nbsp;The video below presents the the non-administrator Keychain Access import process.
 <br>
 <video width="600" controls>
-  <source src="{{site.baseurl}}/video/keychain_gui_non-admin.mp4" type="video/mp4">
+  <source src="{{site.baseurl}}/video/keychain_gui_non_admin.mp4" type="video/mp4">
 </video>
 
 
