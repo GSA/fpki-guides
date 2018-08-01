@@ -15,7 +15,7 @@ To download a copy of COMMON, use one of the recommended options:
 
 ### Verify Your Copy of COMMON
 The following instructions are intended to be run on **macOS**.
-1. Click the *Spotlight* icon and search for _terminal_.
+1. Click the **Spotlight** icon and search for _terminal_.
 2. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
 3. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details below:<br />
 
@@ -55,11 +55,11 @@ You can create Apple Configuration Profiles (XML files) to redistribute and auto
 
 1. As an administrator, you'll need to _first [download](#download-a-copy-of-common) and [verify](#verify-your-copy-of-common) a copy of COMMON to your own device_ before creating a Configuration Profile.   
 2. Then, download and install *Configurator 2* from the Apple App Store.
-3. Open *Configurator 2* and click *File* -> *New Profile*.
-4. Under the *General* tab, enter a unique profile *Name* ("Federal Common Policy Certification Authority Profile" was used for the example) and *Identifier* ("FCPCA-0001" was used for the example).
-5. Under the *Certificates* tab, click *Configure*, then browse to and select your verified copy of COMMON.
+3. Open *Configurator 2* and click **File** -> **New Profile**.
+4. Under the **General** tab, enter a unique profile **Name** ("Federal Common Policy Certification Authority Profile" was used for the example) and **Identifier** ("FCPCA-0001" was used for the example).
+5. Under the **Certificates** tab, click **Configure**, then browse to and select your verified copy of COMMON.
 6. *Optional*: Add additional agency specific configurations or customizations. 
-7. Click *File* -> *Save* to save your profile to a preferred file location. 
+7. Click **File** -> **Save** to save your profile to a preferred file location. 
 8. Follow the steps to [distribute](#distribute-apple-configuration-profiles) the configuration profile across your enterprise.
 
 **Note:**&nbsp;&nbsp;The video below presents the generation of an Apple Configuration Profile.
