@@ -17,13 +17,15 @@ To download a copy of COMMON, use one of the recommended options:
 The following instructions are intended to be run on **macOS**.
 1. Click the **Spotlight** icon and search for _terminal_.
 2. Double-click the **Terminal** icon (black monitor icon with white ">_") to open a window.
-3. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details below:<br />
+3. Run command:
 
     ```
 	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
     ```
     
     **Note:**&nbsp;&nbsp;Replace _{DOWNLOAD_LOCATION}_ with your preferred file download location (e.g., `/Users/Sam.Jackson/Downloads`).
+    
+Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details below:<br />
 
 | **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
