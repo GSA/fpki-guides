@@ -22,5 +22,6 @@ The root certificate is available immediately and will remain unchanged. Please 
 ## Solutions ##
 {% include apple_trust_store_installation.md %}
 
+<br>
 ## Frequently Asked Questions 
 {% include apple_trust_store_removal_faqs.md %}
