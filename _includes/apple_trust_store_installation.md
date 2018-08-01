@@ -208,7 +208,7 @@ Manual procedures, such as those presented in the video below, can also be used.
 6. When prompted, enter your *administrator* username and password.
 7. Keychain Access will present the installed certificate.
 
-**Note:**&nbsp;&nbsp;The video below presents the the administrator Keychain Access import process.
+**Note:**&nbsp;&nbsp;The video below presents the administrator Keychain Access import process.
 <br>
 <video width="600" controls>
   <source src="{{site.baseurl}}/video/keychain_gui_admin.mp4" type="video/mp4">
@@ -222,7 +222,7 @@ Manual procedures, such as those presented in the video below, can also be used.
 2. Double-click on the file.
 3. Keychain Access will open and present the installed certificate.
 
-**Note:**&nbsp;&nbsp;The video below presents the the non-administrator Keychain Access import process.
+**Note:**&nbsp;&nbsp;The video below presents the non-administrator Keychain Access import process.
 <br>
 <video width="600" controls>
   <source src="{{site.baseurl}}/video/keychain_gui_non_admin.mp4" type="video/mp4">
