@@ -74,7 +74,7 @@ If you use other Apple operating system versions in your environment, please let
 
 ### When will this change occur?
 
-The Federal PKI community's target date for mitigation actions is *August 31, 2018*.  COMMON will be removed from the Apple certificate stores in the release of macOS Mojave and iOS 12 (anticpated September to October 2018).
+The Federal PKI community's target date for mitigation actions is *August 31, 2018*.  COMMON will be removed from the Apple certificate stores in the release of macOS Mojave and iOS 12 (anticipated September to October 2018).
 
 ### Is COMMON changing?
 
