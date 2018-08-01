@@ -12,7 +12,7 @@ In FY 2019, the U.S. Government is removing the Federal Common Policy Certificat
 - Validation of digital signatures
 - Other applications that leverage the Apple certificate stores
 
-The root certificate is available immediately and will remain unchanged. Please use one of the options under [Solutions](#solutions) to mitigate negative impacts. 
+The root certificate is available immediately and will remain unchanged. Please use one of the [Solutions](#solutions) to mitigate negative impacts. 
 - [Solutions](#solutions)
 - [Frequently Asked Questions](#frequently-asked-questions)
 
