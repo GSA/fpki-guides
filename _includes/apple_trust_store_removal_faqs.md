@@ -125,6 +125,6 @@ As a BYOD program device user, if you perform one of these activities, you'll ne
 - Navigating to intranet pages whose SSL/TLS certificates chain to COMMON
 
 
-### How can I test the impact of the Federal	Common Policy CA’s (COMMON) removal??
+### How can I test the impact of the Federal	Common Policy CA's removal?
 
 If interested in learning more about Apple’s public beta test program, please contact us at fpki@gsa.gov.
