@@ -38,30 +38,30 @@ Correct. We have verified this on both macOS and iOS.
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![safari_untrusted_ssl]({{site.baseurl}}/img/safari_untrusted_ssl.png)
+     ![safari_untrusted_ssl]({{site.baseurl}}/img/safari_untrusted_ssl.png){:style="width:85%;"}
     
 *Sample Safari error where client (PIV) authentication fails due to a user’s certificate not chaining to a trusted root CA:*
      <br>
-     ![safari_untrusted_auth]({{site.baseurl}}/img/safari_untrusted_auth.png)
+     ![safari_untrusted_auth]({{site.baseurl}}/img/safari_untrusted_auth.png){:style="width:85%;"}
    
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![chrome_untrusted_ssl]({{site.baseurl}}/img/chrome_untrusted_ssl.png)
+     ![chrome_untrusted_ssl]({{site.baseurl}}/img/chrome_untrusted_ssl.png){:style="width:85%;"}
 
 *Sample Chrome error where client (PIV) authentication fails due to a user’s certificate not chaining to a trusted root CA:*
      <br>
-     ![chrome_untrusted_auth]({{site.baseurl}}/img/chrome_untrusted_auth.png)
+     ![chrome_untrusted_auth]({{site.baseurl}}/img/chrome_untrusted_auth.png){:style="width:85%;"}
 
 
 ### What kinds of errors or messages would I see (iOS)?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![ios_safari_untrusted_ssl]({{site.baseurl}}/img/ios_safari_untrusted_ssl.png)
+     ![ios_safari_untrusted_ssl]({{site.baseurl}}/img/ios_safari_untrusted_ssl.png){:style="width:30%;"}
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
-     ![ios_chrome_untrusted_ssl]({{site.baseurl}}/img/ios_chrome_untrusted_ssl.png)
+     ![ios_chrome_untrusted_ssl]({{site.baseurl}}/img/ios_chrome_untrusted_ssl.png){:style="width:30%;"}
 
 
 ### Which Apple product operating systems will be affected?
