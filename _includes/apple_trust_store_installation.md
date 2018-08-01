@@ -51,18 +51,18 @@ This option works for both **macOS and iOS** devices.
 
 {% include alert-warning.html content="It is recommended that only system or mobile device management (MDM) administrators create Configuration Profiles." %} 
 
-You can create Apple Configuration Profiles (XML files) to redistribute and automatically install COMMON on your agency's government-furnished Apple devices.  The steps below detail one method for creating a Configuration Profile using Apple’s free Configurator 2 application. Numerous third-party applications can also be used to create, distribute, and automatically install Configuration Profiles to managed Apple devices.
+You can create Apple Configuration Profiles (XML files) to redistribute and automatically install COMMON on your agency's government-furnished Apple devices.  The steps below detail one method for creating a Configuration Profile using Apple’s free *Configurator 2* application. Numerous third-party applications can also be used to create, distribute, and automatically install Configuration Profiles to managed Apple devices.
 
 1. As an administrator, you'll need to _first [download](#download-a-copy-of-common) and [verify](#verify-your-copy-of-common) a copy of COMMON to your own device_ before creating a Configuration Profile.   
 2. Then, download and install *Configurator 2* from the Apple App Store.
-3. Open Configurator 2 and click *File* -> *New Profile*.
+3. Open *Configurator 2* and click *File* -> *New Profile*.
 4. Under the *General* tab, enter a unique profile *Name* ("Federal Common Policy Certification Authority Profile" was used for the example) and *Identifier* ("FCPCA-0001" was used for the example).
 5. Under the *Certificates* tab, click *Configure*, then browse to and select your verified copy of COMMON.
 6. *Optional*: Add additional agency specific configurations or customizations. 
 7. Click *File* -> *Save* to save your profile to a preferred file location. 
 8. Follow the steps to [distribute](#distribute-apple-configuration-profiles) the configuration profile across your enterprise.
 
-**Note:**&nbsp;&nbsp;The video below presents the generation of a Configuration Profile.
+**Note:**&nbsp;&nbsp;The video below presents the generation of an Apple Configuration Profile.
 <br>
 <video width="600" controls>
   <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
@@ -71,7 +71,7 @@ You can create Apple Configuration Profiles (XML files) to redistribute and auto
 
 ##### Example Apple Configuration Profile
 
-The example Configuration Profile below can be used to redistribute and automatically install COMMON as a trusted root CA for both **macOS and iOS**, government-furnished devices. To use the example Configuration Profile, copy the XML information and save it as a `.mobileconfig` file. 
+The example Configuration Profile below can be used to redistribute and automatically install COMMON as a trusted root CA for both **macOS and iOS** government-furnished devices. To use the example Configuration Profile, copy the XML information below and save it as a `.mobileconfig` file. 
 
 {% include alert-warning.html content="Before using the example Configuration Profile, you should verify its suitability for your agency." %} 
 
@@ -153,22 +153,21 @@ These options work for both **macOS and iOS** devices.
 
 {% include alert-warning.html content="It is recommended that only administrators run these procedures. You should never email a Configuration Profile to someone outside your agency domain." %} 
 
-
 1. Use Apple's _Configurator 2_ to distribute your Configuration Profile to government-furnished devices connected via USB.
 2. Email a profile to select agency users.  
 3. Share a profile on an agency intranet webpage.
 4. [Over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}.
 5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. (Third-party applications are available to assist with this process.) 
 
-***Note:** For **iOS only**&nbsp;&mdash;&nbsp;If you download and install COMMON from an email or an intranet website, **you'll need to manually enable SSL trust for COMMON**. This isn't needed when you use Configurator, MDM, or an MDM enrollment profile to install COMMON. (See [Enable Full Trust for COMMON](#enable-full-trust-for-common).)
+***Note:** For **iOS only**&nbsp;&mdash;&nbsp;If you download and install COMMON from an email or an intranet website, **you'll need to manually enable SSL trust for COMMON**. This isn't needed when you use Configurator, OTA, or an MDM enrollment profile to install COMMON. (See [Enable Full Trust for COMMON](#enable-full-trust-for-common).)
 
 
 
 ##### Install Apple Configuration Profiles
-*** RCD - TO WRITE!
 
-Automatic (e.g., MDM automates installation without user intervention)
-Manual (e.g., user clicking on the distributed profile)
+We recommend using a desktop configuration management or mobile device management tool to automatically install Configuration Profiles on your agency's managed Apple devices.  If you have any questions regarding procedures for a specific vendor or product, please contact fpki@gsa.gov and we will attempt to provide support.
+  
+Manual procedures, such as those presented in the video below, can also be used.
 
 **Note:**&nbsp;&nbsp;The video below presents the manual installation of a Configuration Profile on macOS.
 <br>
