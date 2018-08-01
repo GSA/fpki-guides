@@ -99,7 +99,7 @@ No. COMMON will not change. The only change will be in how COMMON is distributed
      
 2. Then, verify that the Federal Common Policy CA is listed with “full trust”.
 
-![verify_common_iOS]({{site.baseurl}}/img/verify_common_iOS.png){:style="width:85%;"}
+![verify_common_iOS]({{site.baseurl}}/img/verify_common_iOS.png){:style="width:30%;"}
 
 
 
