@@ -1,8 +1,7 @@
 <br>
-
 ### Where can I get the DHS Federal Network Resilience (FNR) Webinar slides?
 The FNR Webinar slides (.pdf) can be found <a target="_blank" href="{{site.baseurl}}/docs/FPKI_Trust_Removal_-_FNR_Webinar_08022018.pdf">here</a>. Upcoming FNR Webinar dates are:
-* Wednesday, September 5 - 1:00 pm – 2:30 pm (Eastern time)
+* Wednesday, September 5, 2018 - 1:00 pm – 2:30 pm (Eastern time)
 
 Adobe Connect Webinar:
 https://dhsconnect.connectsolutions.com/FPKICertificateStore/
@@ -23,7 +22,7 @@ Correct. We have verified this on both macOS and iOS.
 #### 1. (High Impact) Authentication failures
 - Workstations 
 - Websites  
-- Applications (internal or cross-agency)
+- Applications (internal and cross-agency)
 - Virtual Private Networks (VPNs)
 
 #### 2. (Medium Impact) Error fatigue
@@ -31,7 +30,7 @@ Correct. We have verified this on both macOS and iOS.
 
 #### 3. (Low Impact) Digital-signature validation failures
 - Email
-- Documents and files (e.g., Word)
+- Documents and files (e.g., Microsoft Word)
 
 
 ### What kinds of errors or messages would I see (macOS)?
@@ -70,11 +69,11 @@ Correct. We have verified this on both macOS and iOS.
 | :-------- |  :-------- | :-------- | 
 | Mojave (10.14)  | iOS 12 | tvOS 12 |
 
-If you use other Apple operating system versions in your environment, please let us know (fpki@gsa.gov)!
+If you use other Apple operating system versions (e.g., tvOS, watchOS) in your environment, please let us know (fpki@gsa.gov)!
 
 ### When will this change occur?
 
-The Federal PKI community's target date for mitigation actions is *August 31, 2018*.  COMMON will be removed from the Apple certificate stores in the release of macOS Mojave and iOS 12 (anticipated September to October 2018).
+The Federal PKI community's target date for mitigation actions is *August 31, 2018*.  COMMON will be removed from the Apple certificate stores in the releases of _macOS Mojave_ and _iOS 12_ (anticipated September-October 2018).
 
 ### Is COMMON changing?
 
@@ -86,7 +85,7 @@ No. COMMON will not change. The only change will be in how COMMON is distributed
 
 2. Double-click the **Keychain Access** icon.
 
-3. Ensure an entry for COMMON exists in either the **login** or **System** keychain Certificates repository.
+3. Ensure an entry for COMMON exists in either the **login** or **System** Keychain Certificates repository.
 
 ![verify_common_macOS]({{site.baseurl}}/img/verify_common_macOS.png){:style="width:85%;"}
 
@@ -97,7 +96,7 @@ No. COMMON will not change. The only change will be in how COMMON is distributed
      - **About**  
      - **Certificate Trust Settings**
      
-2. Then, verify that the Federal Common Policy CA is listed with “full trust”.
+2. Then, verify that the Federal Common Policy CA is listed with “full trust.”
 
 ![verify_common_iOS]({{site.baseurl}}/img/verify_common_iOS.png){:style="width:30%;"}
 
@@ -111,7 +110,7 @@ Yes! But don't worry - an enterprise-distributed copy of COMMON won't conflict w
 ### My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?
 
 Incorrect.  Your PIV credential issuer has no impact on whether your agency is affected by this change. 
-The impact is related to how COMMON is distributed to federal enterprise devices by agency-specific configuration management practices.  It is not related to how credentials are generated or issued.  (See [What happens if I don’t redistribute COMMON?](#what-happens-if-i-dont-redistribute-common))   
+The impact is related to how COMMON is distributed to federal enterprise devices by agency-specific configuration management practices.  It is not related to how credentials are generated or issued.  (See [What happens if I don’t redistribute COMMON?](#what-happens-if-i-dont-redistribute-common).)   
 
 ### Will my PIV credentials break or need to be updated or replaced when this change occurs?
 
@@ -127,4 +126,4 @@ As a BYOD program device user, if you perform one of these activities, you'll ne
 
 ### How can I test the impact of the Federal	Common Policy CA's removal?
 
-If interested in learning more about Apple’s public beta test program, please contact us at fpki@gsa.gov.
+If interested in learning more about Apple’s public Beta test program, please contact us at fpki@gsa.gov.
