@@ -75,6 +75,8 @@ You can create Apple Configuration Profiles (XML files) to redistribute and auto
 
 ###### Example Apple Configuration Profile
 
+|:-------------:|
+|**Example Apple Configuration Profile**|
 The example Apple Configuration Profile below can be used to redistribute and automatically install COMMON as a trusted root CA for both **macOS and iOS** government-furnished devices. To use the example profile, copy the XML information below and save it as a `.mobileconfig` file. 
 
 {% include alert-warning.html content="Before using the example profile, you should verify its suitability for your agency." %} 
@@ -155,14 +157,14 @@ The example Apple Configuration Profile below can be used to redistribute and au
 
 These options work for both **macOS and iOS** devices. 
 
-{% include alert-warning.html content="It is recommended that only **administrators** run these procedures. You should never email an Apple Configuration Profile to someone outside your agency domain." %} 
+{% include alert-warning.html content="It is recommended that only system or MDM administrators run these procedures. You should never email an Apple Configuration Profile to someone outside your agency domain." %} 
 
 1. Use Apple's _Configurator 2_ to distribute your Configuration Profile to government-furnished devices connected via USB.
-2. Email a profile to select agency users.*  
-3. Share a profile on an agency intranet webpage.*
-> ***Note: For iOS only**&nbsp;&mdash;&nbsp;If you download and install COMMON from an email or an intranet website, **you'll need to manually enable SSL trust for COMMON**. This isn't needed when you use Configurator, OTA, or an MDM enrollment profile to install COMMON. (See [Enable Full Trust for COMMON](#enable-full-trust-for-common).)
+2. Email a profile to select agency users.*****  
+3. Share a profile on an agency intranet webpage.*****
 4. [Over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}.
-5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. (Third-party applications are available to assist with this process.) 
+5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. (Third-party applications are available to assist with this process.)
+> ***Note: For iOS only**&nbsp;&mdash;&nbsp;If you download and install COMMON from an email or an intranet website, **you'll need to manually enable SSL trust for COMMON**. This isn't needed when you use Configurator, OTA, or an MDM enrollment profile to install COMMON. (See [Enable Full Trust for COMMON](#enable-full-trust-for-common).)
 
 ##### Install Apple Configuration Profiles
 
