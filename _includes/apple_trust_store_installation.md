@@ -23,7 +23,8 @@ These steps work for **macOS** only.
 	$ shasum -a 256 {DOWNLOAD_LOCATION}/fcpca.crt
     ```
     
-> **Note:**&nbsp;&nbsp;Replace _{DOWNLOAD_LOCATION}_ with your preferred file download location (e.g., `/Users/Sam.Jackson/Downloads`)<br> 
+> **Note:**&nbsp;&nbsp;Replace _{DOWNLOAD_LOCATION}_ with your preferred file download location (e.g., `/Users/Sam.Jackson/Downloads`) 
+
 4. Verify that the certificate hash matches the SHA-256 Thumbprint in the certificate details below:<br />
 
 | **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
@@ -66,7 +67,7 @@ You can use Apple Configuration Profiles (XML files) to redistribute and automat
 7. Click **File** -> **Save** to save your profile to a preferred file location. 
 8. Follow the steps to [distribute](#distribute-an-apple-configuration-profile) the profile across your enterprise.
 
-**Note:**&nbsp;&nbsp;This video shows you how to create an Apple Configuration Profile.&nbsp;&nbsp;Also see the **Example Apple Configuration Profile** shown below the video. This profile can be reused.
+**Note:**&nbsp;&nbsp;This video shows you how to create an Apple Configuration Profile.<br>Also see the **Example Apple Configuration Profile** shown below the video.<br>This profile can be reused.
 <br>
 <video width="600" controls>
   <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
