@@ -75,8 +75,11 @@ You can create Apple Configuration Profiles (XML files) to redistribute and auto
 
 ###### Example Apple Configuration Profile
 
-|:-------------:|
-|**Example Apple Configuration Profile**|
+|                                                                |
+| :-----------------------------------------------------------: |
+| **EXAMPLE APPLE CONFIGURATION PROFILE**                                |<br>
+
+
 The example Apple Configuration Profile below can be used to redistribute and automatically install COMMON as a trusted root CA for both **macOS and iOS** government-furnished devices. To use the example profile, copy the XML information below and save it as a `.mobileconfig` file. 
 
 {% include alert-warning.html content="Before using the example profile, you should verify its suitability for your agency." %} 
