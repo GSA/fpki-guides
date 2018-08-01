@@ -88,7 +88,7 @@ No. COMMON will not change. The only change will be in how COMMON is distributed
 
 3. Ensure an entry for COMMON exists in either the **login** or **System** keychain Certificates repository.
 
-![Sample Steps]({{site.baseurl}}/img/verify_trust.png){:style="width:85%;"}
+![verify_common_macOS]({{site.baseurl}}/img/verify_common_macOS.png){:style="width:85%;"}
 
 ### How can I verify that COMMON has been redistributed to my system (iOS)?
 
@@ -99,7 +99,7 @@ No. COMMON will not change. The only change will be in how COMMON is distributed
      
 2. Then, verify that the Federal Common Policy CA is listed with “full trust”.
 
-![Sample Steps]({{site.baseurl}}/img/verify_trust.png){:style="width:85%;"}
+![verify_common_iOS]({{site.baseurl}}/img/verify_common_iOS.png){:style="width:85%;"}
 
 
 
