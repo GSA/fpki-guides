@@ -269,3 +269,10 @@ This procedure is for **iOS** devices only.
 3. When the certificate appears, click *Continue*.
 4. You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal PKI CA.
 
+**Note:**&nbsp;&nbsp;The video below presents installing COMMON using Safari and enabling full trust.
+<br>
+<video width="300" controls>
+  <source src="{{site.baseurl}}/video/ios_safari_configuration.mp4" type="video/mp4">
+</video>
+<br>
+
