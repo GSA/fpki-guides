@@ -25,7 +25,7 @@ These steps work for **macOS** only.
     
 > **Note:**&nbsp;&nbsp;Replace _{DOWNLOAD_LOCATION}_ with your preferred file download location (e.g., `/Users/Sam.Jackson/Downloads`) 
 
-4. Verify that the certificate hash matches the SHA-256 Thumbprint in the certificate details below:<br />
+Verify that the certificate hash matches the SHA-256 Thumbprint in the certificate details below:<br />
 
 | **Federal Common Policy CA (FCPCA/COMMON)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
@@ -218,7 +218,7 @@ We recommend using an automated method, such as a desktop configuration manageme
 <br>
 ##### Login Keychain
 
-{% include alert-info.html content="These steps will install COMMON in the Login Keychain. Both system administrators and non-administrators can use these steps." %}
+{% include alert-info.html content="These steps will install COMMON in the login Keychain. Both system administrators and non-administrators can use these steps." %}
 
 1. Browse to your downloaded, verified copy of COMMON.
 2. Double-click on the file.
