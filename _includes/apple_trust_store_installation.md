@@ -46,18 +46,18 @@ Install COMMON on your agency's government-furnished macOS devices using one of 
 
 **&& CB: FIX HEADING LINKS &&**
 * [Create, Distribute, and Install an Apple Configuration Profile](#create-distribute-and-install-an-apple-configuration-profile)
-* [Install Using Command Line](#install-using-command-line)
-* [Install Using Apple Keychain Access](#install-using-apple-keychain-access)
+* [Install COMMON Using Command Line](#install-common-using-command-line)
+* [Install COMMON Using Apple Keychain Access](#install-common-using-apple-keychain-access)
 
 #### Create, Distribute, and Install an Apple Configuration Profile
 
 This option works for both **macOS and iOS** devices.
 
-{% include alert-warning.html content="It is recommended that only system or mobile device management (MDM) administrators create, distribute, and install Configuration Profiles." %} 
+{% include alert-warning.html content="Only system or mobile device management (MDM) administrators should create, distribute, and install Configuration Profiles." %} 
 
 You can use Apple Configuration Profiles (XML files) to redistribute and automatically install COMMON on your agency's government-furnished Apple devices.  These steps walk you through how to create, distribute, and install Configuration Profiles using Apple’s free *Configurator 2* application. Numerous third-party applications can also be used to create, distribute, and automatically install Configuration Profiles to managed Apple devices.
 
-##### Create an Apple Configuration Profile
+#### Create an Apple Configuration Profile
 
 1. As an administrator, you'll need to _first [download](#download-a-copy-of-common) a copy of COMMON to your device_ and [verify](#verify-your-copy-of-common) it.   
 2. Then, download and install *Configurator 2* from the Apple App Store.
@@ -74,9 +74,10 @@ You can use Apple Configuration Profiles (XML files) to redistribute and automat
   <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
 </video>
 <br>
-__
 
+<p align="center">
 ## Example Apple Configuration Profile
+</p>
 
 The example Apple Configuration Profile below can be used to redistribute and automatically install COMMON as a trusted root CA for both **macOS and iOS** government-furnished devices. To use the example profile, copy the XML information below and save it as a `.mobileconfig` file. 
 
@@ -153,13 +154,12 @@ The example Apple Configuration Profile below can be used to redistribute and au
 </dict>
 </plist>
 ``` 
-__
 
-##### Distribute an Apple Configuration Profile
+#### Distribute an Apple Configuration Profile
 
 These options work for both **macOS and iOS** devices. 
 
-{% include alert-warning.html content="It is recommended that only system or MDM administrators run these procedures. You should never email an Apple Configuration Profile to someone outside your agency domain." %} 
+{% include alert-warning.html content="Only system or MDM administrators should use these steps. You should never email an Apple Configuration Profile to someone outside your agency domain." %} 
 
 1. Use Apple's _Configurator 2_ to distribute your Configuration Profile to government-furnished devices connected via USB.
 2. Email a profile to select agency users.*****  
@@ -168,11 +168,11 @@ These options work for both **macOS and iOS** devices.
 5. [Over-the-air using a Mobile Device Management server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. (Third-party applications are available to assist with this process.)
 > ***Note: For iOS only**&nbsp;&mdash;&nbsp;If you download and install COMMON from an email or an intranet website, **you'll need to manually enable SSL trust for COMMON**. This isn't needed when you use Configurator, OTA, or an MDM enrollment profile to install COMMON. (See [Enable Full Trust for COMMON](#enable-full-trust-for-common).)
 
-##### Install an Apple Configuration Profile
+#### Install an Apple Configuration Profile
 
-We recommend using an automated method, such as a desktop configuration management or MDM tool, to install Apple Configuration Profiles on your agency's managed Apple devices. If you have questions about vendors or products, email us at fpki@gsa.gov.
+We recommend using an automated method, such as a desktop configuration management or MDM tool, to install Apple Configuration Profiles on your agency's managed Apple devices. (If you have questions about third-party products, email us at fpki@gsa.gov.)
   
-You can also use manual procedures. 
+You can also use the manual procedures show in the video below. 
 
 **Note:**&nbsp;&nbsp;This video shows you how to manually install an Apple Configuration Profile on macOS.
 <br>
@@ -184,7 +184,7 @@ You can also use manual procedures.
 
 #### Install Using Command Line
 
-{% include alert-info.html content="These steps will redistribute COMMON to the System Keychain. It is recommended that only system administrators use these steps. Non-administrators will encounter permission errors." %}
+{% include alert-info.html content="These steps will install COMMON in the System Keychain. Only system administrators should use these steps. Non-administrators will encounter permission errors." %}
 
 1. Click the **Spotlight** icon and search for *terminal*.
 2. Double-click the **Terminal** icon (black monitor icon with white “>_”) to open a window.
@@ -201,9 +201,10 @@ You can also use manual procedures.
 </video>
 <br>
 
-#### Install Using Apple Keychain Access
+#### Install COMMON Using Apple Keychain Access
 
-{% include alert-info.html content="These steps will redistribute COMMON to the System Keychain. It is recommended that only system administrators use these steps. Non-administrators will encounter permission errors." %}
+##### System Keychain
+{% include alert-info.html content="These steps will install COMMON in the System Keychain. Only system administrators should use these steps.  Non-administrators will encounter permission errors." %}
 
 1. Click the **Spotlight** icon and search for *Keychain Access*.
 2. Double-click the **Keychain Access** icon to open the application.
@@ -220,8 +221,9 @@ You can also use manual procedures.
 </video>
 <br>
 
+##### Login Keychain
 
-{% include alert-info.html content="These steps will redistribute COMMON to the Login Keychain. They can be run by administrators or non-administrators." %}
+{% include alert-info.html content="These steps will install COMMON in the Login Keychain. System administrators or non-administrators can use these steps." %}
 
 1. Browse to your downloaded and verified copy of COMMON.
 2. Double-click on the file.
@@ -237,19 +239,21 @@ You can also use manual procedures.
 
 ### iOS Solutions
 Install COMMON on your agency's government-furnished Apple iOS devices using one of these options: 
-* [Install using an Apple Configuration Profile in iOS](#install-using-an-apple-configuration-profile-in-ios)
-* [Install using Safari web browser](#install-using-safari-web-browser)
+* [Install Using an Apple Configuration Profile in iOS](#install-using-an-apple-configuration-profile-in-ios)
+* [Install Using Safari Web Browser](#install-using-safari-web-browser)
 
-#### Install Using an Apple Configuration Profile in iOS
-Apple Configuration Profiles can be used to install COMMON in both macOS and iOS. 
+Enable full trust for COMMON on Apple iOS devices using this option:
+* [Enable Full Trust for COMMON](#enable-full-trust-for-common)
 
-Please review guidance on [Apple Configuration Profiles](#install-using-an-apple-configuration-profile).
+#### Install COMMON Using an Apple Configuration Profile in iOS
+Apple Configuration Profiles can be used to install COMMON for both macOS and iOS. 
 
+Please review the guidance above on [Apple Configuration Profiles](#install-an-apple-configuration-profile).
 
 #### Install Using Safari Web Browser
 This option works for **iOS** devices only. 
 
-{% include alert-info.html content="These steps will install COMMON as a trusted root certificate. They can be run by administrators or non-administrators." %}
+{% include alert-info.html content="These steps will install COMMON as a trusted root certificate. System administrators or non-administrators can use these steps." %}
 
 1. Launch **Safari**.
 2. Navigate to the COMMON root CA certificate: http://http.fpki.gov/fcpca/fcpca.crt.<br>
@@ -276,7 +280,7 @@ This option works for **iOS** devices only.
 #### Enable Full Trust for COMMON 
 This procedure is for **iOS** devices only.
 
-{% include alert-info.html content="These steps will enable “full trust” for certificates that chain to COMMON. They can be run by administrators or non-administrators." %}
+{% include alert-info.html content="These steps will enable “full trust” for certificates that chain to COMMON. System administrators or non-administrators can use these steps." %}
 
 1. From the iOS device's **Home** screen, go to **Settings** -> **General** -> **About** -> **Certificate Trust Settings**.
 2. Beneath **Enable Full Trust for Root Certificates**, toggle _ON_ for the COMMON root CA certificate entry. 
