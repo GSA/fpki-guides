@@ -246,17 +246,17 @@ This option works for **iOS** devices only.
 
 {% include alert-info.html content="The following steps will install COMMON as a trusted root certificate, and can be run by administrators or non-administrators." %}
 
-1. Launch Safari.
+1. Launch **Safari**.
 2. Navigate to the COMMON root CA certificate: http://http.fpki.gov/fcpca/fcpca.crt.<br>
 > System message appears: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*<br>
-3. Click *Allow*.<br>
+3. Click **Allow**.<br>
 > The COMMON Configuration Profile appears.<br> 
-4. Click *More Details* and then the COMMON certificate entry.
-5. Scroll down to *Fingerprints* and [verify](#verify-your-copy-of-common) the certificate's SHA-256 hash.
-6. At the top left of screen, click *Back* and *Install Profile*. Then, click *Install* (top right).
-7. When prompted, enter your device *passcode*.
-8. Click *Install* (top right), and *Install* again.
-9. Click *Done*.
+4. Click **More Details** and then the COMMON certificate entry.
+5. Scroll down to **Fingerprints** and [verify](#verify-your-copy-of-common) the certificate's SHA-256 hash.
+6. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
+7. When prompted, enter your device **passcode**.
+8. Click **Install** (top right), and **Install** again.
+9. Click **Done**.
 10. Follow the instructions below to enable [full trust for COMMON](#enable-full-trust-for-common).
 
 **Note:**&nbsp;&nbsp;The video below presents installing COMMON using Safari.
@@ -273,8 +273,8 @@ This procedure is for **iOS** devices only.
 
 {% include alert-info.html content="The following steps will enable “full trust” for certificates chaining to COMMON, and can be run by administrators or non-administrators." %}
 
-1. From the iOS device's *Home* screen, go to *Settings* -> *General* -> *About* -> *Certificate Trust Settings*.
-2. Beneath *Enable Full Trust for Root Certificates*, toggle _ON_ for the COMMON root CA certificate entry. 
-3. When the certificate appears, click *Continue*.
+1. From the iOS device's **Home** screen, go to **Settings** -> **General** -> **About** -> **Certificate Trust Settings**.
+2. Beneath **Enable Full Trust for Root Certificates**, toggle _ON_ for the COMMON root CA certificate entry. 
+3. When the certificate appears, click **Continue**.
 4. You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal PKI CA.
 
