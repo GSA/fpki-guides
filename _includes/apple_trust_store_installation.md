@@ -259,6 +259,15 @@ This option works for **iOS** devices only.
 9. Click *Done*.
 10. Follow the instructions below to enable [full trust for COMMON](#enable-full-trust-for-common).
 
+**Note:**&nbsp;&nbsp;The video below presents installing COMMON using Safari.
+<br>
+<video width="300" controls>
+  <source src="{{site.baseurl}}/video/ios_safari_configuration.mp4" type="video/mp4">
+</video>
+<br>
+
+
+
 #### Enable full trust for COMMON 
 This procedure is for **iOS** devices only.
 
@@ -268,11 +277,4 @@ This procedure is for **iOS** devices only.
 2. Beneath *Enable Full Trust for Root Certificates*, toggle _ON_ for the COMMON root CA certificate entry. 
 3. When the certificate appears, click *Continue*.
 4. You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal PKI CA.
-
-**Note:**&nbsp;&nbsp;The video below presents installing COMMON using Safari and enabling full trust.
-<br>
-<video width="300" controls>
-  <source src="{{site.baseurl}}/video/ios_safari_configuration.mp4" type="video/mp4">
-</video>
-<br>
 
