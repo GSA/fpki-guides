@@ -16,7 +16,7 @@ To download a copy of COMMON, use one of the recommended options:
 ### Verify Your Copy of COMMON
 The following instructions are intended to be run on **macOS**.
 1. Click the **Spotlight** icon and search for _terminal_.
-2. Double-click the Terminal icon (black monitor icon with white ">_") to open a window.
+2. Double-click the **Terminal** icon (black monitor icon with white ">_") to open a window.
 3. Verify that the certificate's hash matches the SHA-256 Thumbprint in the certificate details below:<br />
 
     ```
