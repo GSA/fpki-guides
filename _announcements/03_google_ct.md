@@ -2,7 +2,7 @@
 layout: default
 navtitle: Chrome Certificate Transparency (CT) Impact
 title: Chrome Certificate Transparency Requirements
-pubDate: August 10, 2018
+pubDate: August 9, 2018
 collection: announcements
 permalink: announcements/chromect/
 description:  As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This change could affect your agency. CT requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an operating system (OS) trust store. This change will affect any TLS/SSL certificate issued after **April 30, 2018.**<br><br>
@@ -103,9 +103,11 @@ For _HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\CertificateTransparencyE
 
    ```
    Agency Sub-Domain example:
+   
    Name = 1 | Data = example.agency.gov
    
-   Gov/Mil Top-Level Domain example: 
+   Gov/Mil Top-Level Domain example:
+   
    Name = 2 | Data = gov
    Name = 3 | Data = mil
    ```
@@ -116,9 +118,11 @@ For _HKEY_LOCAL_MACHINE\Software\Policies\Google\ChromeOS\CertificateTransparenc
 
    ```
    Sub-Domain example:
+   
    Name = 1 | Data = example.agency.gov
    
-   Gov/Mil Top-Level Domain example: 
+   Gov/Mil Top-Level Domain example:
+   
    Name = 2 | Data = gov
    Name = 3 | Data = mil
    ```
@@ -166,7 +170,7 @@ These procedures apply to any government internet or intranet website and any Fe
 6. If the certificate is compliant, it will display the CT log details.
 
 ## Additional Resources
-1. [What is Certificate Transparency](https://www.certificate-transparency.org/){:target="_blank"}
+1. [What is Certificate Transparency?](https://www.certificate-transparency.org/){:target="_blank"}
 2. [Certificate Transparency Background](https://groups.google.com/a/chromium.org/forum/#!topic/ct-policy/78N3SMcqUGw){:target="_blank"}
 3. [Certificate Transparency in Chrome--Detailed Information](http://www.certificate-transparency.org/certificate-transparency-in-chrome){:target="_blank"} 
 3. [Certificate Transparency--Resources for Site Owners](https://sites.google.com/site/certificatetransparency/resources-for-site-owners){:target="_blank"}
