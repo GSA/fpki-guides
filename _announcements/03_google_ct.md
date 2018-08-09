@@ -2,7 +2,7 @@
 layout: default
 navtitle: Chrome Certificate Transparency (CT) Impact
 title: Chrome Certificate Transparency Requirements
-pubDate: August 9, 2018
+pubDate: August 10, 2018
 collection: announcements
 permalink: announcements/chromect/
 description:  As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This change could affect your agency. CT requires all TLS/SSL certificates to appear in a CT log when they validate to a Root CA certificate distributed through an operating system (OS) trust store. This change will affect any TLS/SSL certificate issued after **April 30, 2018.**<br><br>
