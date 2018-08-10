@@ -5,7 +5,7 @@ title: Chrome Certificate Transparency Requirements
 pubDate: August 10, 2018
 collection: announcements
 permalink: announcements/chromect/
-description:  As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This change could affect your agency. CT requires all TLS/SSL connections with digital certificates chaining to a publicly trusted Root CA issued after **April 30, 2018** to present a Signed Certificate Timestamp (SCT) during the Transport Layer Security (TLS) handshake. SCTs prove the incorporation of a digital certificate into a CT log, which are cryptographically verifiable records of certificate issuance. Users browsing to a non-CT compliant site will face connection errors.<br><br>
+description:  As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This change could affect your agency. CT requires all TLS/SSL connections using digital certificates that chain to a publicly trusted Root CA issued after **April 30, 2018** to present a Signed Certificate Timestamp (SCT) during the Transport Layer Security (TLS) handshake. SCTs prove the incorporation of a digital certificate into a CT log, which are cryptographically verifiable records of certificate issuance. Users browsing to a non-CT compliant site will face connection errors.<br><br>
 ---
 
 
@@ -143,7 +143,7 @@ For _preference name_, _CertificateTransparencyEnforcementDisabledForUrls_, add 
 
 ### 1. Will Google's use of CT in Chrome impact my agency's internal, only locally trusted CA TLS/SSL certificates?
 
-No. There will be no impact if you use your agency's internal, only locally trusted CA to issue TLS/SSL certificates to intranet sites. Chrome's CT enforcement will impact only intranet sites whose TLS/SSL certificates validate to Federal Common Policy CA, whose certificate is currently distributed through operating system trust stores.
+No. There will be no impact if you use your agency's internal, only locally trusted CA to issue TLS/SSL certificates to intranet sites. Chrome's CT enforcement will impact only federal intranet sites whose TLS/SSL certificates validate to Federal Common Policy CA, whose certificate is currently distributed through operating system trust stores.
 
 ### 2. Why is Google enforcing CT in Chrome?
 
@@ -153,7 +153,7 @@ Chrome's CT change has been planned and incrementally implemented for over two y
 - Allowing domain owners to identify mistakenly or maliciously issued certificates 
 
 ### 3. How do I know whether my intranet website is compliant with CT?
-These procedures apply to any government internet or intranet website and any Federal PKI TLS/SSL certificate or commercially sourced certificate.
+These procedures apply to any federal internet or intranet website and any Federal PKI TLS/SSL certificate or commercially sourced certificate.
 
 **Note:**&nbsp;&nbsp;Signed certificate timestamps (SCTs) are only required for certificates issued after April 30, 2018.  Some certificates issued **before** this date may already be compliant. To check: 
 
