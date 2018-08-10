@@ -5,11 +5,11 @@ title: Chrome Certificate Transparency Requirements
 pubDate: August 10, 2018
 collection: announcements
 permalink: announcements/chromect/
-description:  As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This change could affect your agency. CT requires all TLS/SSL connections using digital certificates that chain to a publicly trusted Root CA issued after **April 30, 2018** to present a Signed Certificate Timestamp (SCT) during the Transport Layer Security (TLS) handshake. SCTs prove the incorporation of a digital certificate into a CT log, which are cryptographically verifiable records of certificate issuance. Users browsing to a non-CT compliant site will face connection errors.<br><br>
+description:  As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This change could affect your agency. This means that all TLS/SSL certificates issued after **April 30, 2018**, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log in order to be trusted by Chrome 68 and above. Users browsing to non-CT compliant, federal intranet websites will encounter connection errors.<br><br>
 ---
 
 
-As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This means that all TLS/SSL certificates issued after **April 30, 2018**, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log in order to be trusted in Chrome 68 and above. In addition, website operators must serve proof of the CT log inclusion (i.e., a signed certificate timestamp).
+As of **July 24, 2018**, Google is now enforcing Certificate Transparency (CT) for Chrome 68 and above. This means that all TLS/SSL certificates issued after **April 30, 2018**, that validate to a publicly trusted Root Certification Authority (CA) certificate must appear in a CT log in order to be trusted by Chrome 68 and above. In addition, websites must serve proof of certificate inclusion in the CT log through a Signed Certificate Timestamp (SCT). Users browsing to non-CT compliant, federal intranet websites will encounter connection errors.
 
 - [How Does This Work?](#how-does-this-work)
 - [What Will Be Impacted?](#what-will-be-impacted)
@@ -88,7 +88,7 @@ For preference name, _CertificateTransparencyEnforcementDisabledForLegacyCas_, a
    </array>
    ```
 
-**Note:**&nbsp;&nbsp;In all cases above, `jotW9ZGKJb2F3OdmY/2UzCNpDxDqlYZhMXHG+DeIkNU=` is a base64 encoding of a SHA-256 hash of the Federal Common Policy CA's Subject Public Key Information (SPKI) field.
+**Note:**&nbsp;&nbsp;In all cases above, `jotW9ZGKJb2F3OdmY/2UzCNpDxDqlYZhMXHG+DeIkNU=` is a Base64 encoding of a SHA-256 hash of the Federal Common Policy CA's Subject Public Key Information (SPKI) field.
 
 
 #### Option 2:&nbsp;&nbsp;Disable CT Enforcement for Domains and Sub-Domains
@@ -153,9 +153,9 @@ Chrome's CT change has been planned and incrementally implemented for over two y
 - Allowing domain owners to identify mistakenly or maliciously issued certificates 
 
 ### 3. How do I know whether my intranet website is compliant with CT?
-These procedures apply to any federal internet or intranet website and any Federal PKI TLS/SSL certificate or commercially sourced certificate.
+You can check for CT compliance by using the steps below to verify the presence of an SCT. These steps apply to any Federal PKI TLS/SSL certificate or commercially sourced certificate. 
 
-**Note:**&nbsp;&nbsp;Signed certificate timestamps (SCTs) are only required for certificates issued after April 30, 2018.  Some certificates issued **before** this date may already be compliant. To check: 
+**Note:**&nbsp;&nbsp;SCTs are only required for certificates issued after April 30, 2018.  Some certificates issued **before** this date may already be compliant. To check compliance: 
 
 1. Open Chrome and browse to your website.
 2. In Chrome, go to **Settings->More Tools**.
@@ -166,7 +166,7 @@ These procedures apply to any federal internet or intranet website and any Feder
    ```
 4. Select the **Security** tab in the **Developer Tools**.
 5. Refresh the website page and click on the website under the **Main origin** column.
-6. If the certificate is compliant, it will display the CT log details under the **Certificate Transparency** heading.
+6. If the certificate is compliant, it will display the CT log details under the **Certificate Transparency** heading. 
 
 ## Additional Resources
 1. [What is Certificate Transparency?](https://www.certificate-transparency.org/){:target="_blank"}
