@@ -51,7 +51,7 @@ Please see [Disable CT Enforcement for Government-Furnished Equipment](#disable-
 
 
 ### Disable CT Enforcement for Government-Furnished Equipment
-{% include alert-info.html content="Two options are outlined in this section. Additional options may become available for future releases of Chrome. We will continue to update these procedures and post additional information as they become available. Please also check the GitHub Issues in the GSA FPKI-Guides repository for in-progress discussions." %} 
+{% include alert-info.html content="Two options are outlined in this section. Additional options may become available for future releases of Chrome. We will continue to update these procedures and post additional information as it becomes available. Please also check the GitHub Issues in the GSA FPKI-Guides repository for in-progress discussions." %} 
 
 #### Option 1:&nbsp;&nbsp;Disable CT Enforcement for "Legacy" CAs (Recommended Configuration)
 
