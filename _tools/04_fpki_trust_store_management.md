@@ -26,14 +26,12 @@ The Trust Store Management Script (TSMS) is a convenient way to update your agen
 <br>
 
 ## How Does This Work?
-The Trust Store Management Script (TSMS) will help you easily select and bundle CA certificates for all known PIV/CAC issuers. By default, the script will produce a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) containing all PIV issuer CA certificates. Administrators can use the included configuration file (targets.json) to exclude specific certification authority certificates from being included in the output file. 
+The Trust Store Management Script (TSMS) will help you easily select and bundle CA certificates for all known PIV/CAC issuers. By default, the script will produce a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) containing all PIV issuer CA certificates. You can use the included configuration file (targets.json) to exclude specific CA certificates from being included in the output file. 
 
 The script package contains three artifacts:
 
 **1. targets.json**
 * This is a JavaScript Object Notation (JSON) formatted configuration file. Eligible CAs for installation are presented in this file, along with several attributes (e.g., subject, issuer, validity dates, serial number, etc.). Any entry with an install status of "TRUE" will be bundled in the output file. 
-
-The example below shows a sample CA entry.
 
 <p align="center">
 <b>
@@ -60,7 +58,7 @@ TARGETS.JSON - EXAMPLE OF CA CERTIFICATE ATTRIBUTES
 
 
 **3. id-fpki-common-auth** 
-* This directory contains the actual CA certificates eligible for installation. These CAs assert the id-fpki-common-auth (2.16.840.1.101.3.2.1.3.13) policy object identifier (OID), required for PIV authentication. See detailed CA certificate information [here]({{ site.baseurl }}/tsmseligiblecacerts/){:target="_blank"}. (**Note:** This is not a configuration file.) 
+* This directory contains the actual CA certificates eligible for installation. These CAs assert the id-fpki-common-auth (2.16.840.1.101.3.2.1.3.13) policy object identifier (OID), required for PIV authentication. See detailed CA certificate information [here]({{ site.baseurl }}/tsmseligiblecacerts/){:target="_blank"}.
 
 
 ## Application Requirements
@@ -97,7 +95,7 @@ Verify that the SHA-256 hash of the .zip package matches this one:
 
 ### Unpack and Verify Script Package Contents
 
-1. Double-click the .zip package to reveal the **Trust_Store_Mangagement_Script_V1** directory.
+1. Double-click the .zip package to see the **Trust_Store_Mangagement_Script_V1** directory.
 
 1. Unpack the directory to your Desktop. (Update paths in **certLoader.py** if you select a different directory.)
 
