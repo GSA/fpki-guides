@@ -56,7 +56,6 @@ These certificates all assert the _id-fpki-common-auth (2.16.840.1.101.3.2.1.3.1
 | 00042 | USPTO_INTR_CA1                                           | USPTO_INTR_CA1                        | 4/7/2018 12:16   | 12/7/2029 12:46  | 4C296F47                                 |
 | 00043 | Verizon SSP CA A2                                        | Federal Common Policy CA            | 12/6/2016 16:12  | 12/6/2026 16:09  | 403C                                     |
 | 00044 | Veterans Affairs CA   B3                                 | Verizon SSP CA A2                     | 12/15/2017 17:56 | 12/15/2027 17:56 | 5ECB874A1B24B1113848E40E76DC3EA4449624FE |
-| 00045 | Veterans Affairs User   CA B1                            | Betrusted Production SSP CA A1      | 8/7/2008 15:08   | 8/7/2018 15:04   | 1C5E                                     |
 | 00046 | Veterans Affairs User   CA B1                            | Verizon SSP CA A2                     | 1/25/2017 4:59   | 1/25/2027 4:59   | 251EA36536CFEBB0E9D1334D0CB96102BAB16589 |
 
 {% include alert-info.html content="If you feel this list should be updated, please email us at fpki@gsa.gov." %}
