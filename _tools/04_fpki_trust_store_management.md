@@ -7,7 +7,7 @@ permalink: tools/trust_store_management/
 
 {% include alert-info.html content="Did you know the Federal Common Policy Root CA, often referred to as \"COMMON,\" is being removed from the Microsoft and Apple operating system trust stores? This change will impact PIV authentication processes. See the FPKI Guides' Announcements and Trust Stores pages for additional details and solutions." %} 
 
-The Trust Store Management Script (TSMS) is a convenient way to update your agency's Microsoft and Apple trust stores (also called _certificate stores_) with the Certification Authority (CA) certificates for all known PIV/CAC issuers (both Federal PKI and DoD PKI). 
+The Trust Store Management Script (TSMS) is a convenient way to update your agency's Microsoft and Apple trust stores (also known as _certificate stores_) with the Certification Authority (CA) certificates for all known PIV/CAC issuers (both Federal PKI and DoD PKI). 
 
 - [How Does This Work?](#how-does-this-work)
 - [Application Requirements](#application-requirements)
@@ -33,7 +33,7 @@ The script package contains three artifacts:
 **1. targets.json**
 * The **targets.json** configuration file lists all eligible CA certificates and a short list of attributes (e.g., subject, issuer, validity dates, serial number, install, etc.) for each.<!--I really don't think we need to define "JSON."--> 
 
-* All CA certificates with an **INSTALL** attribute status of **TRUE** will be bundled into the output file. You can exclude a certificate from the output file by simply setting its **INSTALL** status to **FALSE.** 
+* All CA certificates with an _INSTALL_ attribute status of _TRUE_ will be bundled into the output file. You can exclude a certificate from the output by setting its _INSTALL_ status to _FALSE_. 
 
 <p align="center">
 <b>
@@ -56,7 +56,7 @@ TARGETS.JSON - EXAMPLE OF CA CERTIFICATE ATTRIBUTES
 ```
 
 **2. certLoader.py**
-* The **certLoader.py** script reads the **targets.json** file and bundles all selected CA certificates.<!--We're explaining the FALSE/TRUE issue too many times. Described already twice above. Deleted those details given here. We explain this again below at "Run the Script." Trying to cut down on the real estate for the same info.-->
+* The **certLoader.py** script reads the **targets.json** file and bundles the selected CA certificates.<!--We're explaining the FALSE/TRUE issue too many times. Described already twice above. Deleted those details given here. We explain this again below at "Run the Script." Trying to cut down on the real estate for the same info.-->
 
 **3. id-fpki-common-auth** 
 * This directory contains the actual CA certificates eligible for installation. These certificates assert the **id-fpki-common-auth** (2.16.840.1.101.3.2.1.3.13) policy object identifier (OID) needed for PIV authentication. (You can see detailed CA certificate information [here]({{ site.baseurl }}/tsmseligiblecacerts/){:target="_blank"}.)
@@ -102,7 +102,7 @@ Verify that the SHA-256 hash of the .zip package matches this one:
 
 ### Run the Script
 
-1. In the **targets.json** file, view the default set of CA certificates. To exclude any certificates from the output file, change their **INSTALL** statuses to **FALSE**.
+1. In the **targets.json** file, view the default set of CA certificates. To exclude any certificates from the output file, change their _INSTALL_ statuses to _FALSE_.
 
 1. Run the script:
 
