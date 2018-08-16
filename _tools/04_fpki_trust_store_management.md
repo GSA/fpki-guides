@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/trust_store_management/
 ---
 
-{% include alert-info.html content="Did you know the Federal Common Policy Root CA, often referred to as \"COMMON,\" is being removed from the Microsoft and Apple operating system trust stores? This change will impact PIV authentication processes. See the Announcements and Trust Stores pages on the left navigation for details and solutions." %} 
+{% include alert-info.html content="Did you know the Federal Common Policy Root CA, often referred to as \"COMMON,\" is being removed from the Microsoft and Apple operating system trust stores? This change will impact PIV authentication processes. See the FPKI Guides' Announcements and Trust Stores pages for additional details and solutions." %} 
 
 The Trust Store Management Script (TSMS) is a convenient way to update your agency's Microsoft and Apple trust stores (also called _certificate stores_) with the Certification Authority (CA) certificates for all known PIV/CAC issuers (both Federal PKI and DoD PKI). 
 
@@ -26,12 +26,16 @@ The Trust Store Management Script (TSMS) is a convenient way to update your agen
 <br>
 
 ## How Does This Work?
-The Trust Store Management Script (TSMS) will help you easily select and bundle CA certificates for all known PIV/CAC issuers. By default, the script will produce a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) containing all PIV issuer CA certificates. You can use the included configuration file (targets.json) to exclude specific CA certificates from being included in the output file. 
+The Trust Store Management Script (TSMS) will help you easily select and bundle CA certificates for all known PIV/CAC issuers. The script outputs the bundled certificates to a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) file. To exclude specific certificates from the output, you can [change the **INSTALL** settings](#run-the-script) in the **targets.json** configuration file. 
 
 The script package contains three artifacts:
 
 **1. targets.json**
-* This is a JavaScript Object Notation (JSON) formatted configuration file. Eligible CAs for installation are presented in this file, along with several attributes (e.g., subject, issuer, validity dates, serial number, etc.). Any entry with an install status of "TRUE" will be bundled in the output file. 
+* This JavaScript Object Notation (JSON)-formatted configuration file lists all eligible CA certificates, along with limited attribute sets (e.g., subject, issuer, validity dates, serial number, install, etc.). 
+
+* All CA certificates with an **INSTALL** attribute status of **TRUE** will be bundled into the output file. 
+
+* To exclude a certificate from the output file, set its **INSTALL** status to **FALSE.** 
 
 <p align="center">
 <b>
@@ -54,17 +58,17 @@ TARGETS.JSON - EXAMPLE OF CA CERTIFICATE ATTRIBUTES
 ```
 
 **2. certLoader.py**
-* The **certLoader.py** script reads the _targets.json_ file and bundles all CA certificates with an **INSTALL** status set to **TRUE** into the output file.
+* The **certLoader.py** script reads the **targets.json** file and bundles all CA certificates with an **INSTALL** status set to **TRUE** into the output file.
 
 
 **3. id-fpki-common-auth** 
-* This directory contains the actual CA certificates eligible for installation. These CAs assert the id-fpki-common-auth (2.16.840.1.101.3.2.1.3.13) policy object identifier (OID), required for PIV authentication. See detailed CA certificate information [here]({{ site.baseurl }}/tsmseligiblecacerts/){:target="_blank"}.
+* This directory contains the actual CA certificates eligible for installation. These CAs assert the **id-fpki-common-auth** (2.16.840.1.101.3.2.1.3.13) policy object identifier (OID) required for PIV authentication. (See detailed CA certificate information [here]({{ site.baseurl }}/tsmseligiblecacerts/){:target="_blank"}.)
 
 
 ## Application Requirements
-
-* **Microsoft Windows:** _Python v3.x_ and _OpenSSL_ (**Note:** You'll need to set an OpenSSL environment path variable for the script to work properly.)<br> 
-* **Apple macOS:** _Python v3.x_
+<!--Logically, it seems that "Application Requirements" section should come before the "How Does This Work?" section. If someone can't meet the application requirements, then there's be no point in moving on to "How Does This Work?" unless the user is just curious or wondering if he/she could rewrite the script in some other scripting language or devise another method once he/she sees the concepts...?-->
+* _Microsoft Windows_: _Python v3.x_ and _OpenSSL_ (**Note:** You'll need to set an OpenSSL environment path variable for the script to work properly.)<br> 
+* _Apple macOS_: _Python v3.x_
 
 ## Using the Script 
 
@@ -105,13 +109,13 @@ Verify that the SHA-256 hash of the .zip package matches this one:
 
 1. Run the script:
 
-     - **Microsoft Windows**:
+     - _Microsoft Windows_:
 
          ```
          > cd Desktop\Trust_Store_Mangagement_Script_V1
          > certLoader.py
          ```
-     - **Apple macOS**:
+     - _Apple macOS_:
 
          ```
          $ cd Desktop/Trust_Store_Mangagement_Script_V1
@@ -128,8 +132,8 @@ Verify that the SHA-256 hash of the .zip package matches this one:
 ### Distribute or Install Script Output         
 Use your agency's network configuration procedures to distribute or install your selected CA certificates bundle.
 
-- **Microsoft Windows**&nbsp;&mdash;&nbsp;Use _certutil_ or a Group Policy Object to distribute the .p7b file to agency Microsoft domain controllers or share it via an agency intranet website.                     
-- **Apple macOS and iOS**&nbsp;&mdash;&nbsp;Use your agency's configuration procedures to distribute the .mobileconfig file to agency Apple devices or share it via an agency intranet website. 
+- _Microsoft Windows_&nbsp;&mdash;&nbsp;Use _certutil_ or a Group Policy Object to distribute the .p7b file to agency Microsoft domain controllers or share it via an agency intranet website.                     
+- _Apple macOS and iOS_&nbsp;&mdash;&nbsp;Use your agency's configuration procedures to distribute the .mobileconfig file to agency Apple devices or share it via an agency intranet website.<!--Should we be including "iOS" here?-->
 
 ## FAQs
 
