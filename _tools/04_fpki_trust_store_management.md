@@ -26,7 +26,7 @@ The Trust Store Management Script (TSMS) is a convenient way to update your agen
 <br>
 
 ## How Does This Work?
-The Trust Store Management Script (TSMS) will help you easily select and bundle CA certificates for all known PIV/CAC issuers. The script outputs the bundled certificates to a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) file. To exclude specific certificates from the output, you can [change the **INSTALL** settings](#run-the-script) in the **targets.json** configuration file. 
+The Trust Store Management Script (TSMS) will help you to select and bundle CA certificates for all known PIV/CAC issuers. You can [exclude specific certificates from the output](#run-the-script). The script outputs the selected certificates to a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) file.  
 
 The script package contains three artifacts:
 
@@ -58,8 +58,7 @@ TARGETS.JSON - EXAMPLE OF CA CERTIFICATE ATTRIBUTES
 ```
 
 **2. certLoader.py**
-* The **certLoader.py** script reads the **targets.json** file and bundles all CA certificates with an **INSTALL** status set to **TRUE** into the output file.
-
+* The **certLoader.py** script reads the **targets.json** file and bundles all selected CA certificates.<!--We're explaining the FALSE/TRUE issue too many times. Described already twice above. Deleted those details for this paragraph. We explain again below at "Run the Script." Trying to cut down on the real estate for the same info.-->
 
 **3. id-fpki-common-auth** 
 * This directory contains the actual CA certificates eligible for installation. These CAs assert the **id-fpki-common-auth** (2.16.840.1.101.3.2.1.3.13) policy object identifier (OID) required for PIV authentication. (See detailed CA certificate information [here]({{ site.baseurl }}/tsmseligiblecacerts/){:target="_blank"}.)
@@ -101,7 +100,7 @@ Verify that the SHA-256 hash of the .zip package matches this one:
 
 1. Double-click the .zip package to see the **Trust_Store_Mangagement_Script_V1** directory.
 
-1. Unpack the directory to your Desktop. (Update paths in **certLoader.py** if you select a different directory.)
+1. Unpack the directory to your Desktop. (If you select a different directory, update the path in **certLoader.py**.)
 
 ### Run the Script
 
