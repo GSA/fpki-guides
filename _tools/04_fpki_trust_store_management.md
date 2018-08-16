@@ -26,12 +26,12 @@ The Trust Store Management Script (TSMS) is a convenient way to update your agen
 <br>
 
 ## How Does This Work?
-The Trust Store Management Script (TSMS) will help you to select and bundle CA certificates for all known PIV/CAC issuers. You can also [exclude specific certificates from the output](#run-the-script). The script outputs the selected certificates to a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) file.  
+The Trust Store Management Script (TSMS) will help you to bundle CA certificates for all known PIV/CAC issuers. You can [exclude specific certificates from the output](#run-the-script). The script outputs the selected certificates to a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) file.  
 
 The script package contains three artifacts:
 
 **1. targets.json**
-* The **targets.json** configuration file lists all eligible CA certificates and a short list of attributes (e.g., subject, issuer, validity dates, serial number, install, etc.) for each.<!--I really don't think we need to define "JSON."--> 
+* The **targets.json** configuration file lists all eligible CA certificates and a short list of attributes (e.g., subject, issuer, validity dates, serial number, install) for each.<!--I really don't think we need to define "JSON."--> 
 
 * All CA certificates with an _INSTALL_ attribute status of _TRUE_ will be bundled into the output file. You can exclude a certificate from the output by setting its _INSTALL_ status to _FALSE_. 
 
@@ -59,13 +59,13 @@ TARGETS.JSON - EXAMPLE OF CA CERTIFICATE ATTRIBUTES
 * The **certLoader.py** script reads the **targets.json** file and bundles the selected CA certificates.<!--We're explaining the FALSE/TRUE issue too many times. Described already twice above. Deleted those details given here. We explain this again below at "Run the Script." Trying to cut down on the real estate for the same info.-->
 
 **3. id-fpki-common-auth** 
-* This directory contains the actual CA certificates eligible for installation. These certificates assert the **id-fpki-common-auth** (2.16.840.1.101.3.2.1.3.13) policy object identifier (OID) needed for PIV authentication. (You can see detailed CA certificate information [here]({{ site.baseurl }}/tsmseligiblecacerts/){:target="_blank"}.)
+* This directory contains the actual CA certificates that are eligible for installation. These certificates assert the **id-fpki-common-auth** (2.16.840.1.101.3.2.1.3.13) policy object identifier (OID) needed for PIV authentication. (You can see detailed CA certificate information [here]({{ site.baseurl }}/tsmseligiblecacerts/){:target="_blank"}.)
 
 
 ## Application Requirements
-<!--Logically, it seems that "Application Requirements" section should come before the "How Does This Work?" section. If someone can't use Python, then there's be no point in moving on to "How Does This Work?" unless out of curiousity or wondering if he/she could rewrite the script in another scripting language once he/she sees the concepts...?-->
-* _Microsoft Windows_: _Python v3.x_ and _OpenSSL_ (**Note:** You'll need to set an OpenSSL environment path variable for the script to work properly.)<br> 
-* _Apple macOS_: _Python v3.x_
+<!--Logically, it seems that "Application Requirements" section should come before the "How Does This Work?" section. If someone can't use Python, then there's be no point in moving on to "How Does This Work?" unless out of curiosity or wondering if he/she could rewrite the script in another scripting language once he/she sees the concepts...?-->
+* _Microsoft Windows_: Python v3.x and OpenSSL (**Note:** You'll need to set an OpenSSL environment path variable for the script to work properly.)<br> 
+* _Apple macOS_: Python v3.x
 
 ## Using the Script 
 
