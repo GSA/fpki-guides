@@ -26,16 +26,14 @@ The Trust Store Management Script (TSMS) is a convenient way to update your agen
 <br>
 
 ## How Does This Work?
-The Trust Store Management Script (TSMS) will help you to select and bundle CA certificates for all known PIV/CAC issuers. You can [exclude specific certificates from the output](#run-the-script). The script outputs the selected certificates to a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) file.  
+The Trust Store Management Script (TSMS) will help you to select and bundle CA certificates for all known PIV/CAC issuers. You can also [exclude specific certificates from the output](#run-the-script). The script outputs the selected certificates to a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) file.  
 
 The script package contains three artifacts:
 
 **1. targets.json**
-* This JavaScript Object Notation (JSON)-formatted configuration file lists all eligible CA certificates, along with limited attribute sets (e.g., subject, issuer, validity dates, serial number, install, etc.). 
+* The **targets.json** configuration file lists all eligible CA certificates and a short list of attributes (e.g., subject, issuer, validity dates, serial number, install, etc.) for each.<!--I really don't think we need to define "JSON."--> 
 
-* All CA certificates with an **INSTALL** attribute status of **TRUE** will be bundled into the output file. 
-
-* To exclude a certificate from the output file, set its **INSTALL** status to **FALSE.** 
+* All CA certificates with an **INSTALL** attribute status of **TRUE** will be bundled into the output file. You can exclude a certificate from the output file by simply setting its **INSTALL** status to **FALSE.** 
 
 <p align="center">
 <b>
@@ -58,14 +56,14 @@ TARGETS.JSON - EXAMPLE OF CA CERTIFICATE ATTRIBUTES
 ```
 
 **2. certLoader.py**
-* The **certLoader.py** script reads the **targets.json** file and bundles all selected CA certificates.<!--We're explaining the FALSE/TRUE issue too many times. Described already twice above. Deleted those details for this paragraph. We explain again below at "Run the Script." Trying to cut down on the real estate for the same info.-->
+* The **certLoader.py** script reads the **targets.json** file and bundles all selected CA certificates.<!--We're explaining the FALSE/TRUE issue too many times. Described already twice above. Deleted those details given here. We explain this again below at "Run the Script." Trying to cut down on the real estate for the same info.-->
 
 **3. id-fpki-common-auth** 
-* This directory contains the actual CA certificates eligible for installation. These CAs assert the **id-fpki-common-auth** (2.16.840.1.101.3.2.1.3.13) policy object identifier (OID) required for PIV authentication. (See detailed CA certificate information [here]({{ site.baseurl }}/tsmseligiblecacerts/){:target="_blank"}.)
+* This directory contains the actual CA certificates eligible for installation. These certificates assert the **id-fpki-common-auth** (2.16.840.1.101.3.2.1.3.13) policy object identifier (OID) needed for PIV authentication. (You can see detailed CA certificate information [here]({{ site.baseurl }}/tsmseligiblecacerts/){:target="_blank"}.)
 
 
 ## Application Requirements
-<!--Logically, it seems that "Application Requirements" section should come before the "How Does This Work?" section. If someone can't meet the application requirements, then there's be no point in moving on to "How Does This Work?" unless the user is just curious or wondering if he/she could rewrite the script in some other scripting language or devise another method once he/she sees the concepts...?-->
+<!--Logically, it seems that "Application Requirements" section should come before the "How Does This Work?" section. If someone can't use Python, then there's be no point in moving on to "How Does This Work?" unless out of curiousity or wondering if he/she could rewrite the script in another scripting language once he/she sees the concepts...?-->
 * _Microsoft Windows_: _Python v3.x_ and _OpenSSL_ (**Note:** You'll need to set an OpenSSL environment path variable for the script to work properly.)<br> 
 * _Apple macOS_: _Python v3.x_
 
@@ -100,11 +98,11 @@ Verify that the SHA-256 hash of the .zip package matches this one:
 
 1. Double-click the .zip package to see the **Trust_Store_Mangagement_Script_V1** directory.
 
-1. Unpack the directory to your Desktop. (If you select a different directory, update the path in **certLoader.py**.)
+1. Unpack the directory to your Desktop. (If you selected another directory, update the path in **certLoader.py**.)
 
 ### Run the Script
 
-1. View and optionally edit CA certificate **INSTALL** statuses in the **targets.json** file.
+1. In the **targets.json** file, view the default set of CA certificates. To exclude any certificates from the output file, change their **INSTALL** statuses to **FALSE**.
 
 1. Run the script:
 
@@ -129,7 +127,7 @@ Verify that the SHA-256 hash of the .zip package matches this one:
      * [Sample .mobileconfig output file](../../tools/TSMS-V1/sample-tsmt-output.mobileconfig){:target="_blank"}
 
 ### Distribute or Install Script Output         
-Use your agency's network configuration procedures to distribute or install your selected CA certificates bundle.
+Use your agency's network configuration procedures to distribute or install your CA certificates bundle.
 
 - _Microsoft Windows_&nbsp;&mdash;&nbsp;Use _certutil_ or a Group Policy Object to distribute the .p7b file to agency Microsoft domain controllers or share it via an agency intranet website.                     
 - _Apple macOS and iOS_&nbsp;&mdash;&nbsp;Use your agency's configuration procedures to distribute the .mobileconfig file to agency Apple devices or share it via an agency intranet website.<!--Should we be including "iOS" here?-->
