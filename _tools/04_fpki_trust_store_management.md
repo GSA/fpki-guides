@@ -30,7 +30,7 @@ The Trust Store Management Script (TSMS) is a convenient way to update your agen
 * _Apple macOS_: Python v3.x
 
 ## How Does This Work?
-The Trust Store Management Script (TSMS) will help you to bundle CA certificates for all known PIV/CAC issuers. You can [exclude specific certificates from the output](#run-the-script). The script outputs the certificate bundle to a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) file that you can distribute or install.  
+The TSMS will help you to bundle CA certificates for all known PIV/CAC issuers. You can [exclude specific certificates from the output](#run-the-script). The script outputs the certificate bundle to a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) file that you can distribute or install.  
 
 The script package contains three artifacts:
 
