@@ -81,7 +81,7 @@ Download the script installation package (.zip)&nbsp;&mdash;&nbsp;[Trust Store M
 Verify that the SHA-256 hash of the .zip package matches this one:
 
    ```
-    EC2A7159E42CCA958190E50B18C6B35009234FD23B160731245239A09B36751A
+    4031441d08e6b0490febfd03281831c589f33b2e75a1e8093b3ed94d86671cc3
    ```
 
 * **Microsoft Windows**:
