@@ -30,7 +30,7 @@ The Trust Store Management Script (TSMS) is a convenient way to update your agen
 * _Apple macOS_: Python v3.x
 
 ## How Does This Work?
-The Trust Store Management Script (TSMS) will help you to bundle CA certificates for all known PIV/CAC issuers. You can [exclude specific certificates from the output](#run-the-script). The script outputs the certificates bundle to a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) file that you can distribute or install.  
+The Trust Store Management Script (TSMS) will help you to bundle CA certificates for all known PIV/CAC issuers. You can [exclude specific certificates from the output](#run-the-script). The script outputs the certificate bundle to a .p7b (Windows) or .mobileconfig Apple Configuration Profile (macOS) file that you can distribute or install.  
 
 The script package contains three artifacts:
 
@@ -96,7 +96,7 @@ Verify that the SHA-256 hash of the .zip package matches this one:
 
 1. Double-click the .zip package to see the **Trust_Store_Mangagement_Script_V1** directory.
 
-1. Unpack the directory to your Desktop. (If you selected a different directory, update the path in **certLoader.py**.)
+1. Unpack the directory to your Desktop. (If you selected a different directory, update the paths in **certLoader.py**.)
 
 ### Run the Script
 
@@ -125,7 +125,7 @@ Verify that the SHA-256 hash of the .zip package matches this one:
      * [Sample .mobileconfig output file](../../tools/TSMS-V1/sample-tsmt-output.mobileconfig){:target="_blank"}
 
 ### Distribute or Install Script Output         
-Use your agency's network configuration procedures to distribute or install your CA certificates bundle.
+Use your agency's network configuration procedures to distribute or install your CA certificate bundle.
 
 - _Microsoft Windows_&nbsp;&mdash;&nbsp;Use _certutil_ or a Group Policy Object to distribute the .p7b file to agency Microsoft domain controllers or share it via an agency intranet website.                     
 - _Apple macOS and iOS_&nbsp;&mdash;&nbsp;Use your agency's configuration procedures to distribute the .mobileconfig file to agency Apple devices or share it via an agency intranet website.
