@@ -4,7 +4,7 @@ title:  Certification Authority Certificates Eligible for Install
 permalink: /tsmseligiblecacerts/
 ---
 
-The default set of eligible CA certificates is below. (**Note:**&nbsp;&nbsp;This is _not_ a configuration file.)
+The default set of eligible CA certificates is below.
 
 These certificates all assert the _id-fpki-common-auth (2.16.840.1.101.3.2.1.3.13)_ policy object identifier (OID). 
 
