@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/trust_store_management/
 ---
 
-{% include alert-info.html content="Did you know the Federal Common Policy Root CA, often referred to as \"COMMON,\" is being removed from the Microsoft and Apple operating system trust stores? This change will impact PIV authentication processes. See the FPKI Guides' Announcements and Trust Stores pages for additional details and solutions." %} 
+{% include alert-info.html content="Did you know that the Federal Common Policy Root CA, often referred to as \"COMMON,\" is being removed from the Microsoft and Apple operating system trust stores? This change will impact PIV authentication processes. See the FPKI Guides' Announcements and Trust Stores pages for additional details and solutions." %} 
 
 The Trust Store Management Script (TSMS) is a convenient way to update your agency's Microsoft and Apple trust stores (also known as _certificate stores_) with the Certification Authority (CA) certificates for all known PIV/CAC issuers (both Federal PKI and DoD PKI). 
 
@@ -35,9 +35,9 @@ The Trust Store Management Script (TSMS) will help you to bundle CA certificates
 The script package contains three artifacts:
 
 **1. targets.json**
-* The **targets.json** configuration file lists all eligible CA certificates and a short list of attributes (e.g., subject, issuer, validity dates, serial number, install) for each.
+* The **targets.json** configuration file lists all eligible CA certificates and a short list of attributes (e.g., subject, issuer, validity dates, serial number, install) for each. (See an example of CA certificate attributes below.) 
 
-* All CA certificates with an _INSTALL_ attribute status of _TRUE_ will be bundled into the output file. You can exclude a certificate from the output by setting its _INSTALL_ status to _FALSE_. 
+* All certificates with an _INSTALL_ attribute status of _TRUE_ will be bundled into the output file. You can exclude any certificate from the output by setting its _INSTALL_ status to _FALSE_. 
 
 <p align="center">
 <b>
@@ -60,13 +60,10 @@ TARGETS.JSON - EXAMPLE OF CA CERTIFICATE ATTRIBUTES
 ```
 
 **2. certLoader.py**
-* The **certLoader.py** script reads the **targets.json** file and bundles the selected CA certificates.
+* The **certLoader.py** script reads the **targets.json** file and bundles your selected CA certificates.
 
 **3. id-fpki-common-auth** 
-* This directory contains the actual CA certificates that are eligible for installation. These certificates assert the **id-fpki-common-auth** (2.16.840.1.101.3.2.1.3.13) policy object identifier (OID) needed for PIV authentication. (You can see detailed CA certificate information [here]({{ site.baseurl }}/tsmseligiblecacerts/){:target="_blank"}.)
-
-
-
+* This directory contains the actual CA certificates. These certificates assert the **id-fpki-common-auth** (2.16.840.1.101.3.2.1.3.13) policy object identifier (OID) needed for PIV authentication. (You can see detailed CA certificate information [here]({{ site.baseurl }}/tsmseligiblecacerts/){:target="_blank"}.)
 
 ## Using the Script 
 
@@ -84,12 +81,12 @@ Verify that the SHA-256 hash of the .zip package matches this one:
     4031441d08e6b0490febfd03281831c589f33b2e75a1e8093b3ed94d86671cc3
    ```
 
-* **Microsoft Windows**:
+* _Microsoft Windows_:
 
     ```
     > certutil -hashfile [DOWNLOAD_LOCATION]\Trust_Store_Mangagement_Script_V1.zip SHA256
     ```
-* **Apple macOS**:
+* _Apple macOS_:
     
     ```
     $ shasum -a 256 [DOWNLOAD_LOCATION]/Trust_Store_Mangagement_Script_V1.zip
@@ -99,11 +96,11 @@ Verify that the SHA-256 hash of the .zip package matches this one:
 
 1. Double-click the .zip package to see the **Trust_Store_Mangagement_Script_V1** directory.
 
-1. Unpack the directory to your Desktop. (If you selected another directory, update the path in **certLoader.py**.)
+1. Unpack the directory to your Desktop. (If you selected a different directory, update the path in **certLoader.py**.)
 
 ### Run the Script
 
-1. In the **targets.json** file, view the default set of CA certificates. To exclude any certificates from the output file, change their _INSTALL_ statuses to _FALSE_.
+1. In the **targets.json** file, view the eligible CA certificates. To exclude any certificates from the output file, change their _INSTALL_ statuses to _FALSE_.
 
 1. Run the script:
 
