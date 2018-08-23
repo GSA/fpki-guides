@@ -400,7 +400,7 @@
   start_datetime: August 21, 2018
   end_datetime: August 21, 2021
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description:A new cross-certificate was issued from the Federal Bridge 2016 to the IdenTrust IGC Root CA 1
+  change_description: A new cross-certificate was issued from the Federal Bridge 2016 to the IdenTrust IGC Root CA 1
   contact: FPKI dash help at GSA dot Gov
   ca_certificate_hash: 05 24 54 75 3d 53 ff 23 76 73 7f a7 79 8e c7 2f ab 82 83 3c
   ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
@@ -414,7 +414,7 @@
   start_datetime: August 21, 2018
   end_datetime: August 21, 2021
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description:A new cross-certificate was issued from the Federal Bridge 2016 to the IdenTrust ACES CA 2
+  change_description: A new cross-certificate was issued from the Federal Bridge 2016 to the IdenTrust ACES CA 2
   contact: FPKI dash help at GSA dot Gov
   ca_certificate_hash: ab 97 3a 75 fa 59 4f 5a 97 c5 3e 3c 50 24 4a e0 6c a6 10 a8
   ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
