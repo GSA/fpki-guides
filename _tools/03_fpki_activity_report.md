@@ -67,13 +67,12 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| No New Activity | -- | -- | -- | -- |
+| SAFE BioPharma | Federal Bridge CA 2016 | SAFE Bridge CA 02 | df 46 c9 ce 19 ab ce d8 4d 2f 83 4e b7 d0 46 2c 82 33 9f cd | 08/23/2018 |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ---------- |
-| SAFE BioPharma | Federal Bridge CA 2016 | SAFE Bridge CA 02 | df 46 c9 ce 19 ab ce d8 4d 2f 83 4e b7 d0 46 2c 82 33 9f cd | 08/23/2018 |
 | GSA ACES | IdenTrust ACES CA 2 | Federal Bridge CA 2016 | f2 82 e5 05 30 11 13 e7 36 8a 26 2e 4e 3d fe 23 ed 39 c9 54 | 09/01/2018 |
 | IdenTrust NFI | IdenTrust Global Common Root CA 1 | Federal Bridge CA 2016 | 8f 0c 18 76 9e 9e 6d 48 c5 8e 41 8e 9b d5 79 84 a7 ae 49 f4 | 09/25/2018 |
 
