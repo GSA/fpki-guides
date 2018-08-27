@@ -58,24 +58,23 @@ The activity listed in this section is limited to the certificates issued BY or 
 
 The following certificates were issued **BY** or **TO** the FPKI Trust Infrastructure in the last 30 days.
 
-| Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
+| Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| WidePoint/ORC NFI | ORC NFI CA 3 | Federal Bridge CA 2016 | 2C 3B 16 DE 61 32 CF 08 93 C5 55 BB 86 63 20 0E 01 6E 62 04 | 07/17/2021 |
+| IdenTrust | IdenTrust Global Common Root CA 1 | Federal Bridge CA 2016 |  05 24 54 75 3d 53 ff 23 76 73 7f a7 79 8e c7 2f ab 82 83 3 | 08/21/2021 |
+| GSA ACES | IdenTrust ACES CA 2 | Federal Bridge CA 2016 | ab 97 3a 75 fa 59 4f 5a 97 c5 3e 3c 50 24 4a e0 6c a6 10 a8 | 08/21/2021
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
-| Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
+| Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| SAFE BioPharma | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 9 C6 EB AD 66 1E 5B 89 92 84 4D C9 58 57 7E 94 4C DC EF 52 | 06/23/2018 |
-| ORC/WidePoint NFI | ORC NFI CA 3 | Federal Bridge CA 2016 | 3E 67 09 5D 45 33 A2 C9 89 FA 67 3F AB 81 7E D5 58 41 74 22 | 07/31/2018 |
+| SAFE BioPharma | Federal Bridge CA 2016 | SAFE Bridge CA 02 | df 46 c9 ce 19 ab ce d8 4d 2f 83 4e b7 d0 46 2c 82 33 9f cd | 08/23/2018 |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
-| Affiliate | Subject CA | Issuing CA | Serial | Expiration Date |
+| Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ---------- |
-| SAFE BioPharma | Federal Bridge CA 2016 | SAFE Bridge CA 02 | 74 00 00 00 09 B0 8D 11 8B 00 3E 66 74 00 00 00 00 00 09 | 08/23/2018 |
-| GSA ACES | IdenTrust ACES CA 2 | Federal Bridge CA 2016 | 46 68 3C 1B 51 B5 1C B9 1F 73 97 74 35 E4 3C F8 2B E9 CC 74 | 09/01/2018 |
-| IdenTrust NFI | IdenTrust Global Common Root CA 1 | Federal Bridge CA 2016 | 66 FC 51 BF 22 5B D8 C4 E6 11 E1 56 E7 30 A4 83 FF 99 90 C3 | 09/25/2018 |
+| GSA ACES | IdenTrust ACES CA 2 | Federal Bridge CA 2016 | f2 82 e5 05 30 11 13 e7 36 8a 26 2e 4e 3d fe 23 ed 39 c9 54 | 09/01/2018 |
+| IdenTrust NFI | IdenTrust Global Common Root CA 1 | Federal Bridge CA 2016 | 8f 0c 18 76 9e 9e 6d 48 c5 8e 41 8e 9b d5 79 84 a7 ae 49 f4 | 09/25/2018 |
 
 ## Repository Availability 
 This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly percentage.  For example, 100 is 100% or no downtwime for that month.
