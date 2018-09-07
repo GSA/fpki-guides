@@ -63,6 +63,7 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 | IdenTrust | IdenTrust Global Common Root CA 1 | Federal Bridge CA 2016 |  05 24 54 75 3d 53 ff 23 76 73 7f a7 79 8e c7 2f ab 82 83 3 | 08/21/2018 |
 | GSA ACES | IdenTrust ACES CA 2 | Federal Bridge CA 2016 | ab 97 3a 75 fa 59 4f 5a 97 c5 3e 3c 50 24 4a e0 6c a6 10 a8 | 08/21/2018 |
 | SAFE BioPharma | Federal Bridge CA 2016 | SAFE Bridge CA 02 | 54 0c 2a c5 9f 8b 5b ab 1b 6a df 42 1a 7c 50 f0 90 1e 3d 54 | 08/23/2018 |
+| US Treasury | US Treasury Root CA | Federal Common Policy CA | 5a 87 92 2b 5e af 1d 63 19 8a 95 1b 2a b6 f5 9b 2f 16 c1 31 | 08/29/2018 |
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
@@ -71,6 +72,7 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 | SAFE BioPharma | Federal Bridge CA 2016 | SAFE Bridge CA 02 | df 46 c9 ce 19 ab ce d8 4d 2f 83 4e b7 d0 46 2c 82 33 9f cd | 08/23/2018 |
 | GSA ACES | IdenTrust ACES CA 2 | Federal Bridge CA 2016 | f2 82 e5 05 30 11 13 e7 36 8a 26 2e 4e 3d fe 23 ed 39 c9 54 | 09/01/2018 |
 | IdenTrust NFI | IdenTrust Global Common Root CA 1 | Federal Bridge CA 2016 | 8f 0c 18 76 9e 9e 6d 48 c5 8e 41 8e 9b d5 79 84 a7 ae 49 f4 | 09/25/2018 |
+| US Treasury | US Treasury Root CA | Federal Common Policy CA | 08 06 df cc EAea a0 2d da 83 60 Aac 0d 2c 81 7e 3c 5c f5 dd 05 | 04/18/2019 |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
