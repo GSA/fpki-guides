@@ -83,7 +83,7 @@ The following certificates are expiring in the next four months and may be re-is
 ## Repository Availability 
 This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly percentage.  For example, 100 is 100% or no downtwime for that month.
 
-| FPKI Entity                                | 09/17 | 09/17 | 10/17 | 11/17 | 12/17 | 01/18 | 02/18 | 03/18 | 04/18 | 05/18 | 06/18 | 08/18 | 12-Month Average |
+| FPKI Entity                                | 09/17 | 10/17 | 11/17 | 12/17 | 01/18 | 02/18 | 03/18 | 04/18 | 05/18 | 06/18 | 07/18 | 08/18 | 12-Month Average |
 | ------------------------------------------ | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ---------------- |
 | CertiPath Bridge CA                        | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
 | CertiPath Bridge CA - G2                   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   | 100   |
