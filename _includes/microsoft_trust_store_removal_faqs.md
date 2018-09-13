@@ -1,15 +1,8 @@
 <br>
 
 ### Where can I get the DHS Federal Network Resilience (FNR) Webinar slides?
-The FNR Webinar slides (.pdf) can be found <a target="_blank" href="{{site.baseurl}}/docs/FPKI_Trust_Removal_-_FNR_Webinar_07182018.pdf">here</a>. Upcoming FNR Webinar dates are:
-* Thursday, August 2, 2018 – 1:00 pm – 2:30 pm (Eastern time)
-* Wednesday, September 5 - 1:00 pm – 2:30 pm (Eastern time)
+The FNR Webinar slides (.pdf) can be found <a target="_blank" href="{{site.baseurl}}/docs/FPKI_Trust_Removal_-_FNR_Webinar_07182018.pdf">here</a>.
 
-Adobe Connect Webinar:
-https://dhsconnect.connectsolutions.com/FPKICertificateStore/
-Dial-in:  1-855-852-7677, Access code: 9999 2977 3169#
-
-Additional webinars may be scheduled if needed.
 
 ### I'm still not sure I get it. Can you explain this change to me in a different way?
 - **Current State**: Microsoft distributes COMMON from its certificate store to all Microsoft workstations and devices. This means that Microsoft *trusts* COMMON as a *known root certification authority*. Because Microsoft *trusts* COMMON, it trusts all Federal PKI CA-issued certificates because they validate to COMMON.
