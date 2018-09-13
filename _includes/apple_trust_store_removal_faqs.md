@@ -1,7 +1,7 @@
 <br>
 
 ### Where can I get the DHS Federal Network Resilience (FNR) Webinar slides?
-The FNR Webinar slides (.pdf) can be found [here.]({{site.baseurl}}/docs/FPKI_Trust_Removal_-_FNR_Webinar_08022018.pdf){:target="blank"}. 
+The FNR Webinar slides (.pdf) can be found [here.]({{site.baseurl}}/docs/FPKI_Trust_Removal_-_FNR_Webinar_08022018.pdf){:target="blank"} 
 
 ### If I redistribute COMMON today, it won’t get erased when I update to the next major release of my Apple device’s operating system, right?
 Correct. We have verified this on both macOS and iOS. 
