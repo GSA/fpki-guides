@@ -2,17 +2,22 @@
 layout: default
 navtitle: Federal Common Policy CA Removal from Apple Trust Stores Impact
 title: Federal Common Policy CA Removal from Apple Trust Stores Impact
-pubDate: June 8, 2018
+pubDate: September 13, 2018
 collection: announcements
 permalink: announcements/applepkichanges/
-description: Upcoming changes regarding Apple devices and operating systems could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Operating System Trust Stores.  This change will impact government users of Apple iOS, macOS, and tvOS, starting in **September-October 2018**. <br><br> This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and government-furnished equipment.
+description: Upcoming changes regarding Apple devices and operating systems could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Operating System Trust Stores.  This change will impact government users of Apple iOS, macOS, and tvOS, starting in September 2018**. <br><br> This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and government-furnished equipment.
 ---
 
 Upcoming changes regarding Apple devices and operating systems could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA [COMMON]) from Apple's pre-installed Operating System Trust Stores. 
 
 {% include alert-info.html content="This announcement will be updated as more information and additional procedures become available. Please watch for additional updates from the Federal PKI listservs, ICAM listservs, and the ICAM Subcommittee." %}
 
-Starting in the release of macOS Mojave, iOS 12, and tvOS 12 (estimated release timeline of **September-October 2018**), government users of Apple devices will receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and the government-furnished Apple devices.
+Starting in the release of macOS Mojave, iOS 12, and tvOS 12, government users of Apple devices will receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and the government-furnished Apple devices.
+
+**Apple Operating System Release Dates**
+- iOS 12: September 17, 2018
+- tvOS 12: September 17, 2018
+- macOS Mojave: September 24, 2018
 
 {% include alert-info.html content="The FPKIPA has also elected to remove the Federal Common Policy CA root certificate from Microsoft's Trust Store." %}
 
