@@ -49,7 +49,7 @@ These Apple operating system versions (and all subsequent versions) will be impa
 
 |**macOS**|**iOS**|**tvOS**|
 | :-------- |:-------- |:-------- |
-| Mojave (10.14) |	 iOS 12 | tvOS 12 |
+| Mojave (10.14), Release 9/24/18 |	 iOS 12, Release 9/17/18 | tvOS 12, Release 9/17/18 |
 
 
 Government users will receive errors on government-furnished Apple devices if any of these are true:
