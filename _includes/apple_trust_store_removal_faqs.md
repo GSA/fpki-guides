@@ -1,7 +1,7 @@
 <br>
 
 ### Where can I get the DHS Federal Network Resilience (FNR) Webinar slides?
-The FNR Webinar slides (.pdf) can be found <a target="_blank" href="{{site.baseurl}}/docs/FPKI_Trust_Removal_-_FNR_Webinar_08022018.pdf">here</a>. 
+The FNR Webinar slides (.pdf) can be found [here]({{site.baseurl}}/docs/FPKI_Trust_Removal_-_FNR_Webinar_08022018.pdf){:target="blank"}. 
 
 ### If I redistribute COMMON today, it won’t get erased when I update to the next major release of my Apple device’s operating system, right?
 Correct. We have verified this on both macOS and iOS. 
@@ -67,7 +67,7 @@ If you use other Apple operating system versions (e.g., tvOS, watchOS) in your e
 
 ### When will this change occur?
 
-The Federal PKI community's target date for mitigation actions was *August 31, 2018*.  Apple operating system release dates below:
+The Federal community's target date for mitigation actions was *August 31, 2018*.  Apple operating system release dates below:
 
 | **macOS** |  **iOS** | **tvOS** | 
 | :-------- |  :-------- | :-------- | 
