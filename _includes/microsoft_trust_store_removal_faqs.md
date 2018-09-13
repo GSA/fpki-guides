@@ -1,7 +1,7 @@
 <br>
 
 ### Where can I get the DHS Federal Network Resilience (FNR) Webinar slides?
-The FNR Webinar slides (.pdf) can be found <a target="_blank" href="{{site.baseurl}}/docs/FPKI_Trust_Removal_-_FNR_Webinar_07182018.pdf">here</a>.
+The FNR Webinar slides (.pdf) can be found [here]({{site.baseurl}}/docs/FPKI_Trust_Removal_-_FNR_Webinar_07182018.pdf"){:target="blank"}
 
 
 ### I'm still not sure I get it. Can you explain this change to me in a different way?
