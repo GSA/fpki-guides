@@ -67,7 +67,7 @@ If you use other Apple operating system versions (e.g., tvOS, watchOS) in your e
 
 ### When will this change occur?
 
-The Federal PKI community's target date for mitigation actions is *August 31, 2018*.  Apple operating system release dates below:
+The Federal PKI community's target date for mitigation actions was *August 31, 2018*.  Apple operating system release dates below:
 
 | **macOS** |  **iOS** | **tvOS** | 
 | :-------- |  :-------- | :-------- | 
