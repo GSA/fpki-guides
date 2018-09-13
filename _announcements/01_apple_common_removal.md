@@ -5,7 +5,7 @@ title: Federal Common Policy CA Removal from Apple Trust Stores Impact
 pubDate: September 13, 2018
 collection: announcements
 permalink: announcements/applepkichanges/
-description: Upcoming changes regarding Apple devices and operating systems could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Operating System Trust Stores.  This change will impact government users of Apple iOS, macOS, and tvOS, starting in September 2018**. <br><br> This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and government-furnished equipment.
+description: Upcoming changes regarding Apple devices and operating systems could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Apple Operating System Trust Stores.  This change will impact government users of Apple iOS, macOS, and tvOS, starting in **September 2018**. <br><br> This change will cause government users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for government intranets and government-furnished equipment.
 ---
 
 Upcoming changes regarding Apple devices and operating systems could impact your agency. The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA [COMMON]) from Apple's pre-installed Operating System Trust Stores. 
