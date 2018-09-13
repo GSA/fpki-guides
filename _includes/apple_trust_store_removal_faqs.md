@@ -1,14 +1,7 @@
 <br>
 
 ### Where can I get the DHS Federal Network Resilience (FNR) Webinar slides?
-The FNR Webinar slides (.pdf) can be found <a target="_blank" href="{{site.baseurl}}/docs/FPKI_Trust_Removal_-_FNR_Webinar_08022018.pdf">here</a>. Upcoming FNR Webinar dates are:
-* Wednesday, September 5, 2018 - 1:00 pm – 2:30 pm (Eastern time)
-
-Adobe Connect Webinar:
-https://dhsconnect.connectsolutions.com/FPKICertificateStore/
-Dial-in:  1-855-852-7677, Access code: 9999 2977 3169#
-
-Additional webinars may be scheduled if needed.
+The FNR Webinar slides (.pdf) can be found <a target="_blank" href="{{site.baseurl}}/docs/FPKI_Trust_Removal_-_FNR_Webinar_08022018.pdf">here</a>. 
 
 ### If I redistribute COMMON today, it won’t get erased when I update to the next major release of my Apple device’s operating system, right?
 Correct. We have verified this on both macOS and iOS. 
@@ -68,13 +61,17 @@ Correct. We have verified this on both macOS and iOS.
 
 | **macOS** |  **iOS** | **tvOS** | 
 | :-------- |  :-------- | :-------- | 
-| Mojave (10.14)  | iOS 12 | tvOS 12 |
+| Mojave (10.14) | iOS 12 | tvOS 12 |
 
 If you use other Apple operating system versions (e.g., tvOS, watchOS) in your environment, please let us know (fpki@gsa.gov)!
 
 ### When will this change occur?
 
-The Federal PKI community's target date for mitigation actions is *August 31, 2018*.  COMMON will be removed from the Apple certificate stores in the releases of _macOS Mojave_ and _iOS 12_ (anticipated September-October 2018).
+The Federal PKI community's target date for mitigation actions is *August 31, 2018*.  Apple operating system release dates below:
+
+| **macOS** |  **iOS** | **tvOS** | 
+| :-------- |  :-------- | :-------- | 
+| Release 9/24/2018  | Release 9/17/2018  | Release 9/17/2018  |
 
 ### Is COMMON changing?
 
