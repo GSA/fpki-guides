@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Community Interoperability Test Environment (CITE) Participation Guideance for Federal PKI Affiliates
+title: CITE Participation Guide
 collection: tools
-permalink: /tools/
+permalink: /tools/citeguide
 ---
 
 # Community Interoperability Test Environment (CITE) Participation Guidance For Federal PKI Affiliates
