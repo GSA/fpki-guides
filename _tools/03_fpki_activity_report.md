@@ -24,14 +24,6 @@ The operational status for each FPKI Affiliate is summarized for each affiliate 
 
 {% include fpkiar-status-table.html %}
 
-**FPKI Affiliate Status Legend**
-
-- _Significant_: Technical and/or policy issues that will adversely affect interoperability   
-- _Moderate_: Technical and/or policy issues that may or may not adversely affect interoperability  
-- _No Impact_: Technical and/or policy issues that will not adversely affect interoperability   
-- _No Issues_: No technical or policy issues were found in the last thirty days  
-
-
 ## FPKIMA Certificate Activity
 The activity listed in this section is limited to the certificates issued BY or TO the Federal Bridge or Federal Common Policy CA.
 
