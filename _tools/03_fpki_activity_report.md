@@ -20,7 +20,8 @@ Resolve issues by contacting one of the teams:
 
 
 ## FPKI Affiliate Status Summary
-The operational status for each FPKI Affiliate is summarized for each affiliate connected to the Federal Common Policy CA (FCPCA) or the Federal Bridge CA (FBCA). The overall operational status identifies issues that affect technical interoperability and non-compliance with applicable Certificate Policies (CP). The status is not used for any other purpose such as ranking or rating. {% include fpkiar-status-table.html %}
+The operational status for each FPKI Affiliate is summarized for each affiliate connected to the Federal Common Policy CA (FCPCA) or the Federal Bridge CA (FBCA). The overall operational status identifies issues that affect technical interoperability and non-compliance with applicable Certificate Policies (CP). The status is not used for any other purpose such as ranking or rating. 
+{% include fpkiar-status-table.html %}
 
 **FPKI Affiliate Status Legend**
 
