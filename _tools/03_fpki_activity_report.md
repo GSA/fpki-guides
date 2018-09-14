@@ -22,28 +22,7 @@ Resolve issues by contacting one of the teams:
 ## FPKI Affiliate Status Summary
 The operational status for each FPKI Affiliate is summarized for each affiliate connected to the Federal Common Policy CA (FCPCA) or the Federal Bridge CA (FBCA). The overall operational status identifies issues that affect technical interoperability and non-compliance with applicable Certificate Policies (CP). The status is not used for any other purpose such as ranking or rating. 
 
-| Federal Agency or Affiliate CA | FPKIMA CA | Status |
-| ------------------------------ | --------- | ------ |
-| CertiPath Bridge | FBCA | No Issues |
-| Department of Defense | FBCA | No Issues |
-| DigiCert NFI | FBCA | No Issues |
-| Entrust Managed Services NFI | FBCA | No Issues |
-| Exostar NFI | FBCA | No Issues |
-| Government Printing Office | FBCA | No Issues |
-| GSA Access Certificate for Electronic Services (GSA ACES) | FBCA | No Issues |
-| IdenTrust NFI | FBCA | No Issues |
-| WidePoint/ORC NFI | FBCA | No Issues |
-| SAFE BioPharma Bridge | FBCA | No Issues |
-| STRAC Bridge | FBCA | No Issues |
-| TSCP Bridge | FBCA | No Issues |
-| US Patent and Trademark Office (PTO) | FBCA | No Issues |
-| Verizon Business NFI | FBCA | No Issues |
-| Department of State | FCPCA | No Issues |
-| DigiCert/Symantec/Verisign SSP | FCPCA | No Issues |
-| Entrust Managed Services SSP | FCPCA | No Issues |
-| WidePoint/ORC SSP | FCPCA | No Issues |
-| US Treasury SSP | FCPCA | No Issues |
-| Verizon Business SSP | FCPCA | No Issues |
+{% include fpkiar-status-table.html %}
 
 **FPKI Affiliate Status Legend**
 
