@@ -1,3 +1,10 @@
+---
+layout: default
+title: Community Interoperability Test Environment (CITE) Participation Guideance for Federal PKI Affiliates
+collection: tools
+permalink: /tools/
+---
+
 # Community Interoperability Test Environment (CITE) Participation Guidance For Federal PKI Affiliates
 
 Prepared By: The FPKI Technical Working Group (TWG)  <br>
@@ -125,7 +132,6 @@ This section details the CITE technical specifications, which apply to all parti
     2. The CITE CRLs may have a significantly-longer validation period than is required in production.
     3. The CITE CA certificates and cross-certificates must depict the same trust relationships as in the production environment.
     4. Participating FPKI Affiliates are strongly encouraged to use certificates that assert test certificate policy Object Identifiers (OIDs), when testing with CITE (see Appendix A for test certificate policy OIDs).
-
         - If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs (see Appendix A for test certificate policy OIDs).
 7. Resource references (such as CRL Distribution Points and Authority Information Access points in the CITE certificates must correspond to appropriately functional repositories (during the 12x5 potential scheduled testing hours as detailed in Section 3.1).
 
@@ -133,9 +139,9 @@ This section details the CITE technical specifications, which apply to all parti
 
 The table below lists the current Production OIDs used by FPKI Affiliates, and their corresponding test OIDs that should be used in the test environment.
 
-### Federal PKI Test OIDs
-<details>
-<summary> Federal PKI Federal Bridge</summary>
+### Federal PKI Trust Infrastructure Test OIDs
+Federal PKI Federal Bridge
+
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
 | 2.16.840.1.101.3.2.1.48.1 | FBCA Rudimentary       | 2.16.840.1.101.3.2.1.3.1 |
@@ -150,10 +156,9 @@ The table below lists the current Production OIDs used by FPKI Affiliates, and t
 | 2.16.840.1.101.3.2.1.48.80 | id-fpki-certpcy-pivi-contentSigning | 2.16.840.1.101.3.2.1.3.20 |
 | 2.16.840.1.101.3.2.1.48.99 | FBCA devices | 2.16.840.1.101.3.2.1.3.37 |
 | 2.16.840.1.101.3.2.1.48.100 | FBCA devices Hardware | 2.16.840.1.101.3.2.1.3.38 |
-</details>
 
-<details>
-<summary> Federal PKI Federal Common Policy</summary>
+Federal PKI Federal Common Policy
+
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
 | 2.16.840.1.101.3.2.1.48.8 | id-fpki-common-policy | 2.16.840.1.101.3.2.1.3.6 |
@@ -166,11 +171,10 @@ The table below lists the current Production OIDs used by FPKI Affiliates, and t
 | 2.16.840.1.101.3.2.1.48.98 | id-fpki-common-devicesHardware | 2.16.840.1.101.3.2.1.3.36 |
 | 2.16.840.1.101.3.2.1.48.109 | id-fpki-common-pivAuth-derived | 2.16.840.1.101.3.2.1.3.40 |
 | 2.16.840.1.101.3.2.1.48.110 | id-fpki-common-pivAuth-derived-hardware | (2.16.840.1.101.3.2.1.3.41 |
-</details>
 
 ### Federal Agency PKI Test OIDs
-<details>
-<summary> Department of Defense (DoD)</summary>
+Department of Defense (DoD)
+
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
 | 2.16.840.1.101.3.2.1.48.68 | id-US-dod-basic | 2.16.840.1.101.2.1.11.2 |
@@ -188,7 +192,6 @@ The table below lists the current Production OIDs used by FPKI Affiliates, and t
 | N/A | id-US-dod-mediumHardware-112 | 2.16.840.1.101.2.1.11.42 |
 | N/A | id-US-dod-mediumHardware-128 | 2.16.840.1.101.2.1.11.43 |
 | N/A | id-US-dod-mediumHardware-192 | 2.16.840.1.101.2.1.11.44 |
-</details>
 
 <details>
 <summary> Department of Defense External CA (DoD ECA)</summary>
