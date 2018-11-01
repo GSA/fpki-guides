@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: October 2, 2018
+Updated: November 1, 2018
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -66,14 +66,14 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| IdenTrust NFI | IdenTrust Global Common Root CA 1 | Federal Bridge CA 2016 | 8f 0c 18 76 9e 9e 6d 48 c5 8e 41 8e 9b d5 79 84 a7 ae 49 f4 | 09/25/2018 |
 | US Treasury | US Treasury Root CA | Federal Common Policy CA | 08 06 df cc EAea a0 2d da 83 60 Aac 0d 2c 81 7e 3c 5c f5 dd 05 | 04/18/2019 |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ---------- |
-| No Activity | | | | |
+| STRAC Bridge | Federal Bridge CA 2016 | STRAC Bridge Root CA | 05B522AD82D4E1781BAB378E838AF4FFBAE0D7C9 | 02/21/2019 |
+| STRAC Bridge | STRAC Bridge Root CA | Fedearl Bridge CA 2016 | E4F6FBD50205A9645037FEF31EFCC83B78F9D68D | 02/21/2019 |
 
 ## Repository Availability 
 This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly percentage.  For example, 100 is 100% or no downtwime for that month.
