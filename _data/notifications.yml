@@ -422,10 +422,23 @@
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://validation.identrust.com/certs/issuedbyacesca2.p7c
-  
-- notice_date: 9/7/2018
+
+- notice_date: August 23, 2018
   change_type: CA Certificate Issuance
-  start_datetime: 8/29/2018
+  start_datetime: August 30, 2018
+  system: SAFE Biopharma Bridge CA
+  change_description: A new cross-certificate was issued from the SAFE Biopharma Bridge CA to the Federal Bridge 2016 CA
+  contact: 
+  ca_certificate_hash: 54 0c 2a c5 9f 8b 5b ab 1b 6a df 42 1a 7c 50 f0 90 1e 3d 54
+  ca_certificate_issuer: CN = SAFE Bridge CA 02, OU = Certification Authorities, O = SAFE-Biopharma, C = US
+  ca_certificate_subject: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
+  cdp_uri: http://sbca2.safe-biopharma.org/sbca/SBCA02.crl
+  aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c
+  sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
+
+- notice_date: September 7, 2018
+  change_type: CA Certificate Issuance
+  start_datetime: August 29, 2018
   system: FPKI Trust Infrastructure - Federal Common Policy CA
   change_description: Issuance of a cross-certificate from the Federal Common Policy CA to the US Treasury Root CA.
   contact: fpki dash help at GSA dot gov
