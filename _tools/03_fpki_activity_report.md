@@ -73,7 +73,7 @@ The following certificates are expiring in the next four months and may be re-is
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ---------- |
 | STRAC Bridge | Federal Bridge CA 2016 | STRAC Bridge Root CA | 05B522AD82D4E1781BAB378E838AF4FFBAE0D7C9 | 02/21/2019 |
-| STRAC Bridge | STRAC Bridge Root CA | Fedearl Bridge CA 2016 | E4F6FBD50205A9645037FEF31EFCC83B78F9D68D | 02/21/2019 |
+| STRAC Bridge | STRAC Bridge Root CA | Federal Bridge CA 2016 | E4F6FBD50205A9645037FEF31EFCC83B78F9D68D | 02/21/2019 |
 
 ## Repository Availability 
 This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly percentage.  For example, 100 is 100% or no downtwime for that month.
