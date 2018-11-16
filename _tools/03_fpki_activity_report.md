@@ -76,6 +76,6 @@ The following certificates are expiring in the next four months and may be re-is
 | STRAC Bridge | STRAC Bridge Root CA | Federal Bridge CA 2016 | E4F6FBD50205A9645037FEF31EFCC83B78F9D68D | 02/21/2019 |
 
 ## Repository Availability 
-The table below outlines the monthly availability of HTTP-based Certificate Revocation List for Federal Agency or Affiliate Certification Authorities. For example, 100 means the HTTP artifact was 100% available for the given month. The total in the last column is the 12-Month average.
+Respository availability is an uptime metric for Certificate Revocation List availability. The table only contains Certification Authorities directly certified with the FPKIMA. A metric of "99" in the table below means the Certificate Revocation List was available for 99% of the given month, in other words, the file was not available for 1% of the month (18 minutes depending on the month). The last column is the 12-Month average.
 
 {% include fpkiar-repo-table.html %}
