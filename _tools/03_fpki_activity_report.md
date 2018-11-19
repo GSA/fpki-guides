@@ -18,40 +18,10 @@ Resolve issues by contacting one of the teams:
 - Technical issues contact the [FPKIMA Team](mailto:fpkipa-ma@listserv.gsa.gov) 
 - Certificate Policy issues contact the [Certificate Policy Working Group (CPWG)](mailto:fpkipa_cpwg@listserv.gsa.gov)  
 
+## Federal Agency and Affiliate PKI Status Summary
+The operational status for each Federal Agency or affiliate connected to the Federal Common Policy CA (FCPCA) or the Federal Bridge CA (FBCA) is summarized below. The overall operational status identifies issues that affect technical interoperability and non-compliance with applicable Certificate Policies (CP). The status is not used for any other purpose such as ranking or rating.
 
-## FPKI Affiliate Status Summary
-The operational status for each FPKI Affiliate is summarized for each affiliate connected to the Federal Common Policy CA (FCPCA) or the Federal Bridge CA (FBCA). The overall operational status identifies issues that affect technical interoperability and non-compliance with applicable Certificate Policies (CP). The status is not used for any other purpose such as ranking or rating. 
-
-| Federal Agency or Affiliate CA | FPKIMA CA | Status |
-| ------------------------------ | --------- | ------ |
-| CertiPath Bridge | FBCA | No Issues |
-| Department of Defense | FBCA | No Issues |
-| DigiCert/Symantec/Verisign NFI | FBCA | No Issues |
-| Entrust Managed Services NFI | FBCA | No Issues |
-| Exostar NFI | FBCA | No Issues |
-| Government Printing Office | FBCA | No Issues |
-| GSA Access Certificate for Electronic Services (GSA ACES) | FBCA | No Issues |
-| IdenTrust NFI | FBCA | No Issues |
-| WidePoint/ORC NFI | FBCA | No Issues |
-| SAFE BioPharma Bridge | FBCA | No Issues |
-| STRAC Bridge | FBCA | No Issues |
-| TSCP Bridge | FBCA | No Issues |
-| US Patent and Trademark Office (PTO) | FBCA | No Issues |
-| Verizon Business NFI | FBCA | No Issues |
-| Department of State | FCPCA | No Issues |
-| DigiCert/Symantec/Verisign SSP | FCPCA | No Issues |
-| Entrust Managed Services SSP | FCPCA | No Issues |
-| WidePoint/ORC SSP | FCPCA | No Issues |
-| US Treasury SSP | FCPCA | No Issues |
-| Verizon Business SSP | FCPCA | No Issues |
-
-**FPKI Affiliate Status Legend**
-
-- _Significant_: Technical and/or policy issues that will adversely affect interoperability   
-- _Moderate_: Technical and/or policy issues that may or may not adversely affect interoperability  
-- _No Impact_: Technical and/or policy issues that will not adversely affect interoperability   
-- _No Issues_: No technical or policy issues were found in the last thirty days  
-
+{% include fpkiar-status-table.html %}
 
 ## FPKIMA Certificate Activity
 The activity listed in this section is limited to the certificates issued BY or TO the Federal Bridge or Federal Common Policy CA.
