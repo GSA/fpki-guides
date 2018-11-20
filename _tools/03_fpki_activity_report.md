@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: October 2, 2018
+Updated: November 1, 2018
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -36,52 +36,16 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| IdenTrust NFI | IdenTrust Global Common Root CA 1 | Federal Bridge CA 2016 | 8f 0c 18 76 9e 9e 6d 48 c5 8e 41 8e 9b d5 79 84 a7 ae 49 f4 | 09/25/2018 |
 | US Treasury | US Treasury Root CA | Federal Common Policy CA | 08 06 df cc EAea a0 2d da 83 60 Aac 0d 2c 81 7e 3c 5c f5 dd 05 | 04/18/2019 |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ---------- |
-| No Activity | | | | |
+| STRAC Bridge | Federal Bridge CA 2016 | STRAC Bridge Root CA | 05B522AD82D4E1781BAB378E838AF4FFBAE0D7C9 | 02/21/2019 |
+| STRAC Bridge | STRAC Bridge Root CA | Federal Bridge CA 2016 | E4F6FBD50205A9645037FEF31EFCC83B78F9D68D | 02/21/2019 |
 
 ## Repository Availability 
-This is the uptime of FPKIMA and FPKI Affiliate HTTP repositories by a monthly percentage.  For example, 100 is 100% or no downtwime for that month.
+Respository availability is an uptime metric for Certificate Revocation List availability. The table only contains Certification Authorities directly certified with the FPKIMA. A metric of "99" in the table below means the Certificate Revocation List was available for 99% of the given month, in other words, the file was not available for 1% of the month (18 minutes depending on the month). The last column is the 12-Month average.
 
-FPKI Entity|10/17|11/17|12/17|01/18|02/18|03/18|04/18|05/18|06/18|07/18|08/18|09/18|12-Month Average
-:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
-CertiPath Bridge CA|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-CertiPath Bridge CA - G2|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-Department of State AD Root CA|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-DigiCert - Symantec Class 3 NFI CA|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|99.98|100.00|99.99
-DigiCert - Symantec SSP G4|99.98|99.68|99.98|99.86|99.80|99.89|99.98|99.98|100.00|100.00|100.00|100.00|99.93
-DigiCert - Verisign SSP G3|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-DigiCert Federated ID CA-1 CRL3|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|99.94|100.00|99.99
-DigiCert Federated ID CA-1 CRL4|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-DoD Interoperability Root 1|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-DoD Interoperability Root 2|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-Entrust Managed Services NFI Root CA|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-Entrust Managed Services NFI Root CA 2|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-Entrust Managed Services Root CA|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-Exostar Federated Identity Service Root CA|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|99.98|100.00|99.99
-FPKI EGTSCA 2014|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-FPKI FBCA2013|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-FPKI FBCA2016|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-FPKI FCPCA|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-FPKI SHA1FRCA G2|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-GPO PCA|100.00|96.81|100.00|100.00|100.00|100.00|100.00|100.00|99.89|98.40|100.00|100.00|99.59
-GSA ACES - IdenTrust ACES 2|100.00|99.59|100.00|100.00|100.00|100.00|100.00|99.96|100.00|100.00|100.00|100.00|99.96
-GSA ACES - ORC ACES 4 CA|100.00|100.00|100.00|100.00|100.00|99.78|100.00|100.00|100.00|100.00|100.00|100.00|99.98
-IdenTrust Global Common Root CA|100.00|100.00|100.00|100.00|100.00|100.00|100.00|99.22|99.24|100.00|100.00|100.00|99.87
-ORC NFI 2 CA|100.00|100.00|100.00|100.00|100.00|99.76|100.00|100.00|100.00|100.00|100.00|100.00|99.98
-ORC NFI 3 CA|100.00|100.00|100.00|100.00|100.00|99.76|100.00|100.00|100.00|100.00|100.00|100.00|99.98
-ORC SSP 3|100.00|100.00|100.00|100.00|100.00|99.76|100.00|100.00|100.00|100.00|100.00|100.00|99.98
-ORC SSP 4|100.00|100.00|100.00|100.00|100.00|99.76|100.00|100.00|100.00|100.00|100.00|100.00|99.98
-SAFE Bridge CA 2|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-STRAC Bridge CA|100.00|100.00|100.00|100.00|100.00|99.98|99.98|100.00|100.00|99.92|99.88|100.00|99.98
-TSCP SHA-256 Bridge CA|100.00|100.00|100.00|100.00|99.92|99.98|100.00|100.00|100.00|100.00|100.00|100.00|99.99
-US Treasury Root CA|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-USPTO|100.00|100.00|100.00|100.00|99.76|99.95|99.98|100.00|99.98|100.00|100.00|100.00|99.97
-Verizon NFI CT-CSSP-CA|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-Verizon SSP Betrusted Production CA|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
-Verizon SSP CA 2|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00|100.00
+{% include fpkiar-repo-table.html %}
