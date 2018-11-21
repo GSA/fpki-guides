@@ -3,7 +3,7 @@ layout: default
 title: Introduction
 permalink: /
 ---
-Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for leveraging the FPKI (or _"Federal PKI"_).  
+Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for leveraging the FPKI (also _Federal PKI_).  
 
 These guides are [open source](https://github.com/gsa/fpki-guides){:target="_blank"} and a _work in progress_ and we [welcome contributions]({{ site.baseurl }}/contribute/) from our colleagues.  We encourage you to contribute and share information you think is helpful for the Federal PKI community.
 
