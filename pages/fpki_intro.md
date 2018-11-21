@@ -3,7 +3,7 @@ layout: default
 title: Introduction
 permalink: /
 ---
-Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for leveraging the Federal PKI.  
+Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for leveraging the FPKI (or _"Federal PKI"_).  
 
 These guides are [open source](https://github.com/gsa/fpki-guides){:target="_blank"} and a _work in progress_ and we [welcome contributions]({{ site.baseurl }}/contribute/) from our colleagues.  We encourage you to contribute and share information you think is helpful for the Federal PKI community.
 
@@ -18,7 +18,7 @@ This page provides introductory information that answers the following questions
 
 ### What is the Federal PKI?
 ![Image of the Federal PKI Certification Authorities](img/Intro-image3.png){:style="width:40%;float:right;"}
-*High-level Illustration of the FPKI Certification Authorities*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
+*High-level Illustration of the Federal PKI Certification Authorities*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
 The Federal PKI is a network of hundreds of Certification Authorities (CAs) that issue:
 
@@ -27,7 +27,7 @@ The Federal PKI is a network of hundreds of Certification Authorities (CAs) that
 - Other person identity certificates
 - Enterprise device identity certificates
 
-The participating Certification Authorities and the policies, processes, and auditing of all the participants are collectively referred to as the _Federal Public Key Infrastructure (FPKI)_.
+The participating Certification Authorities and the policies, processes, and auditing of all the participants are collectively referred to as the _Federal Public Key Infrastructure (FPKI_ or _Federal PKI)_.
 
 The Federal PKI includes U.S. Federal, State, Local, Tribal, Territorial, and International Governments, as well as commercial organizations, that work together to provide services for the benefit of the Federal Government.
 
