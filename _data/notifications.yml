@@ -457,6 +457,20 @@
   contact: fpki at gsa dot gov
   ocsp_uri: ocsp.managed.entrust.com, ocspproofs.managed.entrust.com, nfiocsp.managed.entrust.com, doesspocsp.managed.entrust.com, hhspkiocsp.managed.entrust.com, feddcsocsp.managed.entrust.com
 
+- notice_date: December 12, 2018
+  change_type: CA Certificate Issuance
+  start_datetime: December 5, 2018
+  end_datetime: December 6, 2026
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: Certificate issuance from the Federal Common Policy CA to the Verizon SSP CA A2 to add the Derived PIV OID
+  contact: fpki dash help at GSA dot gov
+  ca_certificate_hash: 47 7b f4 01 7d 25 cd e2 76 cd dd f7 56 d4 0c a5 91 d7 6f 6d
+  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN = Verizon SSP CA A2, OU = SSP, O = Verizon, C = US
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
+  sia_uri: http://sia1.ssp-strong-id.net/CA/VZ-SSP-CA-A2-SIA.p7c
+
 #- notice_date: 
 #  change_type: CA Certificate Issuance
 #  start_datetime:
