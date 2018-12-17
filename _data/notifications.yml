@@ -471,9 +471,9 @@
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
   sia_uri: http://sia1.ssp-strong-id.net/CA/VZ-SSP-CA-A2-SIA.p7c
   
-- notice_date: December 13, 2018
+- notice_date: December 11, 2018
   change_type: CA Certificate Issuance
-  start_datetime: December 17, 2018
+  start_datetime: December 13, 2018
   system: FPKI Trust Infrastructure - Federal Common Policy CA
   change_description: Issuance of a new CA certificate from the Federal Common Policy CA to Digicert Federal SSP Intermediate CA - G5. This CA certificate is new but intended as a rekey for the Symantec SSP Intermediate CA – G4 CA certificate.
   contact: fpki dash help at GSA dot gov
