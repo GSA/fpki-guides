@@ -485,7 +485,7 @@
   sia_uri: http://ssp-sia.digicert.com/SSP/Certs_issued_by_SSPCAG5.p7c
 
 
-- notice_date: August 30, 2018
+- notice_date: December 19, 2018
   change_type: CA Certificate Issuance
   start_datetime: December 19, 2018
   system: SAFE-BioPharma Bridge CA
