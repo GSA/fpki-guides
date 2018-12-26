@@ -11,41 +11,24 @@ Prepared By: The FPKI Technical Working Group (TWG)  <br>
 An FPKI Policy Authority Working Group
  
 ## 1 OVERVIEW
-The Federal Public Key Infrastructure (FPKI) has been the subject of various transitions and evolutions during its years of existence.  This includes hardware and software upgrades, configuration and architecture changes, implementation of higher complexity keys and algorithms, and implementation of new application capabilities.  The impacts on continued interoperability throughout these transitions have made it apparent that the FPKI community would benefit greatly from an integrated test environment. 
+The Federal Public Key Infrastructure (FPKI) has been the subject of various transitions and evolutions during its years of existence.  This includes hardware and software upgrades, configuration and architecture changes, implementation of higher complexity keys and algorithms, and implementation of new application capabilities.  The impact on continued interoperability throughout these transitions has highlighted the need for an integrated test environment. 
 
-The Community Interoperability Test Environment (CITE) has been established to provide the FPKI community with a test environment to: (1) identify and resolve technical issues across Affiliates PKIs, and (2) ensure proper functionality of respective system changes prior to deploying them in a  production environment.  Specifically, the FPKI Management Authority (FPKIMA), FPKI Affiliates, and Relying Parties (RPs) can use the CITE to evaluate the functionality, interoperability, and potential impacts of deploying software, hardware, upgrades, patches, configuration changes, infrastructure changes, and application capabilities. 
+The Community Interoperability Test Environment (CITE) was established as the FPKI integrated test environment. CITE provides the FPKI community with a production-like test environment that mimics the production FPKI hiearchy. It is operated by the Federal PKI Managment Authority (FPKIMA) and contains a Test Federal Common Policy and Test Federal Bridge. The FPKIMA operated Test COMMON and Federal Bridge issue test CA certificates to participating Shared Service Providers, Federal Agency PKI, and Non-Federal Affiliates to perform interoperability and other forms of testing outlined in this document. CITE has two main purposes.
 
-The use of the CITE minimizes the risk of introducing problems into each respective production environment.  
+1) identify and resolve technical issues across Affiliates PKIs, and
+2) ensure proper functionality of respective system changes prior to deploying them in a  production environment.
 
-The CITE is comprised of participating Affiliates’ test environments cross-certified with a test instantiation of the FPKI Trust Infrastructure, mirroring the production FPKI environment.
-
-Figure 1.1 depicts the CITE architecture, which includes the test FPKI Trust Infrastructure and two fictitious Affiliate test PKIs.  It also demonstrates RPs’ accessibility to the CITE repositories.
-
-### 1.1 PARTICIPATION IN CITE
-
-Any organization seeking to become an FPKI Affiliate must undergo the cross-certification process. As part of the cross-certification process, the FPKIMA performs interoperability testing.  The FPKI Affiliate has the option of retaining their test environment integration with CITE, to begin their participation in the CITE.
+The FPKI Community can use CITE to evaluate PKI or application changes in a production-like envionrment and test potential interoperability issues before those changes are deployed to the FPKI.
 
 ## 2 SCOPE
 
-This document serves as the CITE participation guidelines, which provides the terms and conditions of CITE participation.  Participation in the CITE, for the purposes of this guidance document, refers to the establishment of a continuous test environment integrated with the CITE after becoming an FPKI Affiliate – not the temporary relationship established with the CITE during interoperability testing.  
+This document serves as the CITE participation guidelines, which provides the terms and conditions of CITE participation.  Participation in CITE refers to the establishment of a continuous test environment integrated with the CITE. CITE Participants are certified or cross-certified FPKI Partners such as PKI Bridges, Non-Federal Affiliates, Shared Service Providers, and Federal Agency PKIs.
 
-Modifications to this document and any waivers that may ensue are controlled by the FPKI Technical Working Group (TWG).
- 
-FIGURE 2.1 – FPKI CITE ARCHITECTURE
+Modifications to this document and any waivers are controlled by the FPKI Technical Working Group (TWG).
 
-<Insert Figure 2.1>
+## 3 TYPES OF CITE TESTING
 
-## 3 THE CITE VALUE
-
-Participation in CITE is not a condition of retaining cross-certification with the production FPKI.  However, the FPKI TWG encourages all FPKI Affiliates to maintain CITE participation, as there are significant benefits to the individual FPKI Affiliate and to the overall FPKI Community:
-
-1. Each FPKI Affiliate minimizes the risk of interoperability issues in their production environment because of their PKI being available for the community to test against.
-2. The more PKI environments that are readily available in the CITE, the more the CITE emulates production, which makes testing in the CITE more representative of production FPKI and therefore more valuable.
-3. There are many reasons for an FPKI Affiliate to use the CITE after initial interoperability testing.  An FPKI Affiliate can use the CITE to test subsequent modifications to its PKI, as well as testing RP applications (or modifications to RP applications) before deployment into production. 
-
-## 4 TYPES OF CITE TESTING
-
-The CITE is available for testing infrastructure components and RP applications.  Additional types of testing may be identified and conducted as necessary and to the extent supported by the CITE.  However, testing should be undertaken in a manner that provides maximum resource availability for all parties. The CITE should not be used for system stress testing.
+CITE is available for testing infrastructure components and RP applications.  Additional types of testing may be identified and conducted as necessary and to the extent supported by CITE. CITE should not be used for system stress testing.
 
 Infrastructure testing ensures that upgrades, patches, policy changes, new products, and any other changes within the FPKI do not adversely affect interoperability. 
 
@@ -54,23 +37,23 @@ RP application testing ensures that application modules operate as intended.  In
 Some examples of testing conducted in the CITE are:
 
 - Interoperability testing between cross-certified Certification Authorities (CAs);
-- Interoperability testing of chaining between directories;
 - Transition testing to new algorithms (e.g., SHA-2, ECC);
-- PIV-I card interoperability testing;
-- Path discovery testing for a particular application; and
+- PIV and PIV-I card interoperability testing;
+- Repository access testing when using content delivery networks, load balancers, or other networking configurations;
+- Path discovery testing for a particular application, and
 - Path validation testing for a particular application.
 
-When testing is successful in the CITE, assurance is gained that the proposed change(s) will operate in a production environment as intended.  When tests fail in the CITE, issues are identified and addressed without impacting the FPKI.
+When testing is successful in CITE, assurance is gained that the proposed change(s) will operate in the FPKI as intended.  When tests fail in the CITE, issues are identified and addressed without FPKI impact.
 
-## 5 TERMS AND CONDITIONS
+## 4 TERMS AND CONDITIONS
 
-To ensure the CITE provides effective services and comprehensive test results, each participating FPKI Affiliate should emulate its production environment as closely as possible in the CITE.  To the extent possible, the test environment should include the same products, logical architecture, and community integration relationships as in the production environment. 
+To ensure the CITE provides effective services and comprehensive test results, each participating FPKI Partner should emulate its production environment as closely as possible in the CITE.  To the extent possible, the test environment should include the same products, logical architecture, and community integration relationships as in the production environment. 
 
 The more similar the test environment is to the production environment, the more likely issues can be discovered and resolved earlier in the development and testing process; thus reducing operational issues in the production environment.  For example, if a FPKI Affiliate includes both HTTP and LDAP URIs in its production certificates, both types of URIs should be included in its CITE test certificates, along with operational repositories corresponding to those URIs. Therefore, both methods available in production can be tested in the CITE.
 
 ### 5.1	REPOSITORY AVAILABILITY
 
-The repository is the key PKI component with respect to system availability, whether in a production environment or test environment.  The CITE repository services must be internet accessible, operational, and available 12 hours a day, 5 days a week (Mon – Fri, 8:00am – 8:00pm Eastern Time, except Federal holidays), with the exception of scheduled downtime.  Scheduled downtime of repository services during these 12x5 business hours is limited to sixteen hours per month. 
+The CITE repository services are internet accessible, operational, and available up to 24 hours a day, 7 days a week with the exception of scheduled downtime. The FPKI Partners will be notified in advance to the extent possible of any downtime and its scheduled duration. Any downtime notices will be posted to the System notification page on the FPKI Guides website.
 
 Each participating FPKI Affiliate is strongly encouraged to leave its CITE repository services operational and available 24 hours a day, 7 days a week.  However, this is not required and there is no limitation on scheduled downtime during off hours. Table 5.1 depicts the repository availability requirements as they apply to the timeframes.
 
