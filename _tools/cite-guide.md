@@ -206,11 +206,11 @@ The table below lists the current test to production OID equivalent used by the 
 
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.23 | id-doj-Class1 (2.16.840.1.101.3.2.1.16.1)
-| 2.16.840.1.101.3.2.1.48.24 | id-doj-Class2 (2.16.840.1.101.3.2.1.16.2)
-| 2.16.840.1.101.3.2.1.48.25 | id-doj-Class3 (2.16.840.1.101.3.2.1.16.3)
-| 2.16.840.1.101.3.2.1.48.26 | id-doj-Class4 (2.16.840.1.101.3.2.1.16.4)
-| 2.16.840.1.101.3.2.1.48.27 | id-doj-Class5 (2.16.840.1.101.3.2.1.16.5)
+| 2.16.840.1.101.3.2.1.48.23 | id-doj-Class1 | 2.16.840.1.101.3.2.1.16.1
+| 2.16.840.1.101.3.2.1.48.24 | id-doj-Class2 | 2.16.840.1.101.3.2.1.16.2
+| 2.16.840.1.101.3.2.1.48.25 | id-doj-Class3 | 2.16.840.1.101.3.2.1.16.3
+| 2.16.840.1.101.3.2.1.48.26 | id-doj-Class4 | 2.16.840.1.101.3.2.1.16.4
+| 2.16.840.1.101.3.2.1.48.27 | id-doj-Class5 | 2.16.840.1.101.3.2.1.16.5
 
 #### Department of State (DOS)
 
@@ -288,7 +288,7 @@ The table below lists the current test to production OID equivalent used by the 
 
 ### Federal Share Service Provider (SSP) Test OIDs
 
-See [Federal PKI Federal Common Policy](####federal-pki-federal-common-policy)
+See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 
 ### Non-Federal Issuer (NFI) Test OIDs
 
@@ -297,14 +297,14 @@ See [Federal PKI Federal Common Policy](####federal-pki-federal-common-policy)
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
 | 2.16.840.1.114027.200.3.10.10.1.8 | id-emspki-nfssp-rudimentary-policy | 2.16.840.1 .114027.200.3.10.7.8 |
-| 2.16.840.1.114027.200.3.10.10.1.7 | id-emspki-nfssp-basic-policy | 2.16.840.1 .114027.200.3. 10.7.7 |
-| 2.16.840.1.114027.200.3.10.10.1.3 | id-emspki-nfssp-medium-policy | 2.16.840.1 .114027.200.3. 10.7.1 |
-| N/A | id-emspki-nfssp-medium-devices | 2.16.840.1 .114027.200.3. 10.7.3 |
-| 2.16.840.1.114027.200.3.10.10.1.4 | id-emspki-nfssp-medium-hardware| 2.16.840.1 .114027.200.3. 10.7.2 |
-| 2.16.840.1.114027.200.3.10.10.1.6 | id-emspki-nfssp-medium-authentication | 2.16.840.1 .114027.200.3. 10.7.4 |
-| 2.16.840.1.114027.200.3.10.10.1.6 | id-emspki-nfssp-pivi-hardware | 2.16.840.1 .114027.200.3. 10.7.6 |
-| 2.16.840.1.114027.200.3.10.10.1.5 | id-emspki-nfssp-medium-cardAuth | 2.16.840.1 .114027.200.3. 10.7.5 |
-| 2.16.840.1.114027.200.3.10.10.1.9 | id-emspki-nfssp-pivi-contentSigning | 2.16.840.1 .114027.200.3. 10.7.9 |
+| 2.16.840.1.114027.200.3.10.10.1.7 | id-emspki-nfssp-basic-policy | 2.16.840.1.114027.200.3.10.7.7 |
+| 2.16.840.1.114027.200.3.10.10.1.3 | id-emspki-nfssp-medium-policy | 2.16.840.1.114027.200.3.10.7.1 |
+| N/A | id-emspki-nfssp-medium-devices | 2.16.840.1.114027.200.3.10.7.3 |
+| 2.16.840.1.114027.200.3.10.10.1.4 | id-emspki-nfssp-medium-hardware| 2.16.840.1.114027.200.3.10.7.2 |
+| 2.16.840.1.114027.200.3.10.10.1.6 | id-emspki-nfssp-medium-authentication | 2.16.840.1.114027.200.3.10.7.4 |
+| 2.16.840.1.114027.200.3.10.10.1.6 | id-emspki-nfssp-pivi-hardware | 2.16.840.1.114027.200.3.10.7.6 |
+| 2.16.840.1.114027.200.3.10.10.1.5 | id-emspki-nfssp-medium-cardAuth | 2.16.840.1.114027.200.3.10.7.5 |
+| 2.16.840.1.114027.200.3.10.10.1.9 | id-emspki-nfssp-pivi-contentSigning | 2.16.840.1.114027.200.3.10.7.9 |
 
 #### DigiCert (and former Symantec and VeriSign)
 
@@ -433,9 +433,9 @@ See [Federal PKI Federal Common Policy](####federal-pki-federal-common-policy)
 
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.46 | nfc-basicAssurance (2.16.840.1.101.3.2.1.8.1 |
-| 2.16.840.1.101.3.2.1.48.47 | nfc-mediumAssurance (2.16.840.1.101.3.2.1.8.2 |
-| 2.16.840.1.101.3.2.1.48.48 | nfc-highAssurance (2.16.840.1.101.3.2.1.8.3 |
+| 2.16.840.1.101.3.2.1.48.46 | nfc-basicAssurance | 2.16.840.1.101.3.2.1.8.1 |
+| 2.16.840.1.101.3.2.1.48.47 | nfc-mediumAssurance | 2.16.840.1.101.3.2.1.8.2 |
+| 2.16.840.1.101.3.2.1.48.48 | nfc-highAssurance | 2.16.840.1.101.3.2.1.8.3 |
 
 #### United State Postal Service (USPS)
 
