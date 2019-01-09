@@ -108,7 +108,9 @@ Participating FPKI Partners shall provide the FPKI TWG with email and phone info
 | -------------| ------------ |
 | No test websites established at this time | |
 
-## Appendix A – Policy Object Identifiers (OIDS) and Mapping Table
+## Appendix A 
+
+### Policy Object Identifiers (OIDS) and Mapping Table
 
 The table below lists the current test to production OID equivalent used by the FPKIMA and FPKI Partners.
 
