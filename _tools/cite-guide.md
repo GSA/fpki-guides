@@ -75,7 +75,7 @@ This section details the CITE technical specifications, which apply to all parti
 
 ### Scheduled and Unscheduled Testing
 
-The CITE testing and support requests (to include certificate issuance and management requests) should be scheduled and coordinated in order to receive technical support from the relevant participating FPKI Partners.
+Testing and support requests (to include certificate issuance and management requests) should be scheduled and coordinated in order to receive technical support from the relevant participating FPKI Partners.
 
 {% include alert-info.html heading="Testing requests can be submitted to the [Federal PKI Technical Working Group](mailto:fpki-ttips@listserv.gsa.gov){:target="_blank"}. All testing requests should be submitted ten business days in advance." %}
 
@@ -83,8 +83,6 @@ For unscheduled testing, the CITE and FPKI Partner repositories are internet acc
 
 1) all parties involved agree to provide the necessary support; or 
 2) the testing party does not need support from any other participating FPKI Partner (in which case, the testing party is willing to accept that services may or may not be available).
-
-{% include alert-warning.html content="FPKIMA and FPKI Partner technical support is only available for scheduled testing " %}
 
 ### Repository Availability
 
@@ -100,20 +98,15 @@ Each FPKI Partner is encouraged to leave its repository services operational and
 
 ### Technical Support Availability
 
-Participating FPKI Partners are obligated to provide the FPKI TWG with email and phone information for at least two technical points of contact (POCs) – one primary and one backup – to provide technical support when necessary. In lieu of providing individual names for technical POCs, participating FPKI Affiliates may establish group or other organizational-based email addresses for communications with the appropriate technical POCs. This information will only be made available (in a controlled manner) to FPKI Partners, FPKI Applicants (if applicable), and vendors supporting the FPKI as needed during testing or troubleshooting. FPKI Partners invovled in scheduled testing are expected to provide the issuance, management, and troubleshooting necessary to help resolve any issues.
+Participating FPKI Partners shall provide the FPKI TWG with email and phone information for at least two technical points of contact (POCs) – one primary and one backup – to provide technical support when necessary. In lieu of providing individual names for technical POCs, participating FPKI Partners may establish a group or other organizational-based email addresses for communications with the appropriate technical POCs. This information will only be made available (in a controlled manner) to FPKI Partners, FPKI Applicants (if applicable), and vendors supporting the FPKI as needed during testing or troubleshooting. FPKI Partners invovled in testing are expected to provide the issuance, management, and troubleshooting necessary to help resolve any issues.
 
-When unscheduled service disruptions occur, participating FPKI Affiliates shall attempt to resolve issues with their respective PKIs in a timely manner.  Flexibility to the test response times is anticipated as production issues will take precedence. The participating FPKI Partner should respond within the severity level timeframes specified below.  Severity levels are initially determined by the testing organization affected by the issue.  After initial assessment, the severity level may be adjusted after the impacted organizations discuss the issue in more detail.
-
-| Severity Level | Description | Initial Response Time |
-| -------------- | ----------- | --------------------- |
-| 1	| Critical failure that prevents productive testing (e.g., unavailable directory services, non-operational network) | 1 business day |
-| 2	| Urgent, high-impact problem where testing is proceeding, but in a significantly impaired fashion	| 2 business days |
-| 3 | Important issue that does not have a significant impact on current testing | 5 business days |
-| 4 | Informational/non-critical:  Either a request for information or issues not impeding testing for follow-up if needed | No requirement |
+{% include alert-warning.html content="FPKIMA and FPKI Partner technical support is only available for scheduled testing " %}
 
 ### Test Websites
 
-No test websites established at this time.
+| FPKI Partner | Website URL |
+| -------------| ------------ |
+| No test websites established at this time | |
 
 ## Appendix A – Policy Object Identifiers (OIDS) and Mapping Table
 
