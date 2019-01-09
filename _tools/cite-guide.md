@@ -71,13 +71,13 @@ This section details the CITE technical specifications, which apply to all parti
     4. Participating FPKI Affiliates are strongly encouraged to use certificates that assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See [Appendix A](#appendix-a) for test OIDs and their production equivalent.
     5. Resource references (such as CRL Distribution Points and Authority Information Access (AIA) points in the CITE certificates must correspond to appropriately functional repositories.
 
-{% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs (see Appendix A for test certificate policy OIDs)." %}
+{% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs (see [Appendix A](#appendix-a) for test certificate policy OIDs)." %}
 
 ### Scheduled and Unscheduled Testing
 
 Testing and support requests (to include certificate issuance and management requests) should be scheduled and coordinated in order to receive technical support from the relevant participating FPKI Partners.
 
-{% include alert-info.html heading="Testing requests can be submitted to the [Federal PKI Technical Working Group](mailto:fpki-ttips@listserv.gsa.gov){:target="_blank"}. All testing requests should be submitted ten business days in advance." %}
+{% include alert-info.html heading="Testing requests can be submitted to the Federal PKI Technical Working Group at fpki-ttips@listserv.gsa.gov . All testing requests should be submitted ten business days in advance." %}
 
 For unscheduled testing, the CITE and FPKI Partner repositories are internet accessible and available for testing (including vendors and other Relying Parties) . Tests that do not comply with the terms and conditions to types of CITE testing may be conducted if:  
 
