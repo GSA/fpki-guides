@@ -340,7 +340,7 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | --------------------------- | ---------------------- | ------------------ |
 | N/A | Safe basic | 1.3.6.1.4.1.23165.1.1 |
 | N/A | Safe med software | 1.3.6.1.4.1.23165.1.2 |
-| N/A | Safe med HW 1.3.6.1.4.1.23165.1.3 |
+| N/A | Safe med HW | 1.3.6.1.4.1.23165.1.3 |
 
 #### CertiPath Bridge
 
@@ -426,7 +426,7 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | 2.16.840.1.101.3.2.1.48.41 | State of Illinois Level II (hardware) | 2.16.840.114273.1.1.1.4 |
 | 2.16.840.1.101.3.2.1.48.42 | State of Illinois Level III (software) | 2.16.840.114273.1.1.1.5 |
 | 2.16.840.1.101.3.2.1.48.43 | State of Illinois Level III (hardware) | 2.16.840.114273.1.1.1.6 |
-| 2.16.840.1.101.3.2.1.48.44 | State of Illinois Level IV (hardware only) 2.16.840.114273.1.1.1.7 |
+| 2.16.840.1.101.3.2.1.48.44 | State of Illinois Level IV (hardware only) | 2.16.840.114273.1.1.1.7 |
 | 2.16.840.1.101.3.2.1.48.45 | State of Illinois MEDI Single-Use Certificate | 2.16.840.114273.1.1.2.1 |
 
 #### National Finance Center (NFC)
