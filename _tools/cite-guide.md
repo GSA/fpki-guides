@@ -36,11 +36,11 @@ CITE is available for testing infrastructure components and Relying Party applic
 Relying Party application testing ensures that application modules operate as intended. In addition, application testing ensures that the system as a whole performs adequately on the platform onto which the application will be deployed, and that it interoperates properly within the FPKI environment (i.e., no adverse affect within the FPKI environment).
 
 Some examples of testing conducted in the CITE are:
-- Interoperability testing between cross-certified Certification Authorities (CAs);
-- Transition testing to new algorithms (e.g., SHA-2, ECC);
-- PIV and PIV-I card interoperability testing;
-- Repository access testing when using content delivery networks, load balancers, or other networking configurations; and
-- Path discovery and/or validation testing for a particular application
+1. Interoperability testing between cross-certified Certification Authorities (CAs);
+2. Transition testing to new algorithms (e.g., SHA-2, ECC);
+3. PIV and PIV-I card interoperability testing;
+4. Repository access testing when using content delivery networks, load balancers, or other networking configurations; and
+5. Path discovery and/or validation testing for a particular application
 
 When testing is successful in CITE, assurance is gained that the proposed change(s) will operate in the FPKI as intended. When tests fail in the CITE, issues are identified and addressed without FPKI impact.
 
@@ -57,19 +57,19 @@ This section details the CITE technical specifications, which apply to all parti
 1. The CITE services shall be internet accessible.
 2. Repository availability and technical support should be maintained as detailed in the Repository Availability and Technical Support Availability sections.
 3. Test environments should emulate the corresponding production environment as closely as possible
-- Each FPKI Partner CA hierarchy must mimic their production environment. An FPKI Partner may limit the number of included Test CAs to one certified or cross-certified CA and either an intermediate and/or issuing CA.
-- All CAs must have the name "Test" somewhere in the Distinguished Names (DNs).
-- Internal CA components (e.g. hardware security modules, network zones, or other non-internet accessible components) are not required to be replicated in the test environment.
-- The CITE repositories should match those in the corresponding production environment as accurately as possible, including operating system versions and patch levels, protocols, and product version and patch levels.
-- All CITE CA certificates, Certificate Revocation Lists (CRLs), and cross-certificates must be publicly accessible in the associated repository.
-- Certificate revocation information should, when applicable, be made available using the same mechanism(s) as in the production environment (e.g., OCSP, CRLs).
+a. Each FPKI Partner CA hierarchy must mimic their production environment. An FPKI Partner may limit the number of included Test CAs to one certified or cross-certified CA and either an intermediate and/or issuing CA.
+b. All CAs must have the name "Test" somewhere in the Distinguished Names (DNs).
+c. Internal CA components (e.g. hardware security modules, network zones, or other non-internet accessible components) are not required to be replicated in the test environment.
+d. The CITE repositories should match those in the corresponding production environment as accurately as possible, including operating system versions and patch levels, protocols, and product version and patch levels.
+e. All CITE CA certificates, Certificate Revocation Lists (CRLs), and cross-certificates must be publicly accessible in the associated repository.
+f. Certificate revocation information should, when applicable, be made available using the same mechanism(s) as in the production environment (e.g., OCSP, CRLs).
 4. Participating FPKI Partners should provide expired, revoked, and valid test end-entity certificates, including private keys, for application and relying party tests. The sample certificates should represent each of the certificate policies and certificate types they issue from the corresponding production environment. The sample certificates should be hosted on a publicly accessible directory or website and shared with the FPKI TWG. The website or directory address will be made available through this guide.
 5. All CITE CA, cross-certificate, and end-entity certificates should match their production counterparts, as applicable.
-- Test certificates and CRL profiles (including version, key length, extensions, and syntax) must match that of the production environment.
-- The CITE CRLs may have a significantly longer validation period than is required in production.
-- The CITE CA certificates and cross-certificates must depict the same trust relationships as in the production environment.
-- Participating FPKI Partners are strongly encouraged to use certificates that assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See Appendix A for test OIDs and their production equivalent.
-- Resource references (such as CRL Distribution Points and Authority Information Access (AIA) points in the CITE certificates must correspond to appropriately functional repositories.
+a. Test certificates and CRL profiles (including version, key length, extensions, and syntax) must match that of the production environment.
+b. The CITE CRLs may have a significantly longer validation period than is required in production.
+c. The CITE CA certificates and cross-certificates must depict the same trust relationships as in the production environment.
+d. Participating FPKI Partners are strongly encouraged to use certificates that assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See Appendix A for test OIDs and their production equivalent.
+e. Resource references (such as CRL Distribution Points and Authority Information Access (AIA) points in the CITE certificates must correspond to appropriately functional repositories.
 
 {% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs (see Appendix A for test certificate policy OIDs)." %}
 
