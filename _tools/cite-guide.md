@@ -57,19 +57,20 @@ This section details the CITE technical specifications, which apply to all parti
 1. The CITE services shall be internet accessible.
 2. Repository availability and technical support should be maintained as detailed in the Repository Availability and Technical Support Availability sections.
 3. Test environments should emulate the corresponding production environment as closely as possible
-a. Each FPKI Partner CA hierarchy must mimic their production environment. An FPKI Partner may limit the number of included Test CAs to one certified or cross-certified CA and either an intermediate and/or issuing CA.
-b. All CAs must have the name "Test" in the Distinguished Names (DNs).
-c. Internal CA components (e.g. hardware security modules, network zones, or other non-internet accessible components) may not be replicated in the test environment.
-d. The CITE repositories should match those in the corresponding production environment as accurately as possible, including operating system versions and patch levels, protocols, and product version and patch levels.
-e. All CITE CA certificates, Certificate Revocation Lists (CRLs), and cross-certificates must be publicly accessible in the associated repository.
-f. Certificate revocation information should, when applicable, be made available using the same mechanism(s) as in the production environment (e.g., OCSP, CRLs).
+    1. Each FPKI Partner CA hierarchy must mimic their production environment. An FPKI Partner may limit the number of included Test CAs to one certified or cross-certified CA and either an intermediate and/or issuing CA.
+    2. All CAs must be distincly marked to denote it is a test CA. The word "Test" or "Development" should be used in the Distinguished Names (DNs).
+    3. Internal CA components (e.g. hardware security modules, network zones, or other non-internet accessible components) may not be replicated in the test environment.
+    4. The CITE repositories should match those in the corresponding production environment as accurately as possible, including operating system versions and patch levels, protocols, and product version and patch levels.
+    5. All CITE CA certificates, Certificate Revocation Lists (CRLs), and cross-certificates must be publicly accessible in the associated repository.
+    6. Certificate revocation information should, when applicable, be made available using the same mechanism(s) as in the production environment (e.g., OCSP, CRLs).
+
 4. Participating FPKI Partners should provide expired, revoked, and valid test end-entity certificates, including private keys, for application and relying party tests. The sample certificates should represent each of the certificate policies and certificate types they issue from the corresponding production environment. The sample certificates should be hosted on a publicly accessible directory or website and shared with the FPKI TWG. The website or directory address may be made available through this guide.
 5. All CITE CA, cross-certificate, and end-entity certificates should match their production counterparts, as applicable.
-a. Test certificates and CRL profiles (including version, key length, extensions, and syntax) shall match that of the production environment.
-b. The CITE CRLs may have a significantly longer validation period than is required in production.
-c. The CITE CA certificates and cross-certificates shall depict the same trust relationships as in the production environment.
-d. Participating FPKI Partners are strongly encouraged to use certificates that assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See Appendix A for test OIDs and their production equivalent.
-e. Resource references (such as CRL Distribution Points and Authority Information Access (AIA) points in the CITE certificates must correspond to appropriately functional repositories.
+    1. Test certificates and CRL profiles (including version, key length, extensions, and syntax) shall match that of the production environment.
+    2. The CITE CRLs may have a significantly longer validation period than is required in production.
+    3. The CITE CA certificates and cross-certificates shall depict the same trust relationships as in the production environment.
+    4. Participating FPKI Partners are strongly encouraged to use certificates that assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See Appendix A for test OIDs and their production equivalent.
+    5. Resource references (such as CRL Distribution Points and Authority Information Access (AIA) points in the CITE certificates must correspond to appropriately functional repositories.
 
 {% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs (see [Appendix A](#Appendix-A) for test certificate policy OIDs)." %}
 
@@ -93,13 +94,13 @@ Each FPKI Partner is encouraged to leave its repository services operational and
 
 | Days | Time | Description | Repository Availability Requirement |
 | ---- | ---- | ----------- | ----------------------------------- |
-| Mon - Fri | 0900 – 1700 EST | Business Hours (excluding federal holidays) | CITE and FPKI Partner Repository services should be operational and available, except for scheduled downtime |
-| Mon - Fri | 1700 – 0900 EST | Non-Business hours | No requirement |
+| Mon - Fri | 0900 - 1700 EST | Business Hours (excluding federal holidays) | CITE and FPKI Partner Repository services should be operational and available, except for scheduled downtime |
+| Mon - Fri | 1700 - 0900 EST | Non-Business hours | No requirement |
 | Sat - Sun | 0001 - 0000 EST | Non-Business hours | No requirement |
 
 ## Technical Support Availability
 
-Participating FPKI Partners shall provide the FPKI TWG with email and phone information for at least two technical points of contact (POCs) – one primary and one backup – to provide technical support when necessary. In lieu of providing individual names for technical POCs, participating FPKI Partners may establish a group or other organizational-based email addresses for communications with the appropriate technical POCs. This information will only be made available (in a controlled manner) to FPKI Partners, FPKI Applicants (if applicable), and vendors supporting the FPKI as needed during testing or troubleshooting. FPKI Partners involved in testing shall provide the issuance, management, and troubleshooting necessary to help resolve any issues.
+Participating FPKI Partners shall provide the FPKI TWG with email and phone information for at least two technical points of contact (POCs), one primary and one backup, to provide technical support when necessary. In lieu of providing individual names for technical POCs, participating FPKI Partners may establish a group or other organizational-based email addresses for communications with the appropriate technical POCs. This information will only be made available (in a controlled manner) to FPKI Partners, FPKI Applicants (if applicable), and vendors supporting the FPKI as needed during testing or troubleshooting. FPKI Partners involved in testing shall provide the issuance, management, and troubleshooting necessary to help resolve any issues.
 
 {% include alert-warning.html content="FPKIMA and FPKI Partner technical support is only available for scheduled testing with any outage resolved on a best effort basis. " %}
 
@@ -114,6 +115,7 @@ Participating FPKI Partners shall provide the FPKI TWG with email and phone info
 ### Policy Object Identifiers (OIDS) and Mapping Table
 
 The table below lists the current test to production OID equivalent used by the FPKIMA and FPKI Partners.
+
 1. [Federal PKI Trust Infrascture Test OIDs](#federal-pki-trust-infrastructure-test-oids)
 2. [Federal Agency PKI Test OIDs](#federal-agency-pki-test-oids)
 3. [Federal Shared Service Provider (SSP) Test OIDs](#federal-shared-service-provider-ssp-test-oids)
@@ -251,11 +253,11 @@ The table below lists the current test to production OID equivalent used by the 
 
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.248 | APL test lab – Golden PIV-I Authentication | N/A |
-| 2.16.840.1.101.3.2.1.48.249 | APL test lab – Golden PIV-I CardAuth | N/A |
-| 2.16.840.1.101.3.2.1.48.250 | APL test lab – Golden PIV-I Key Management | N/A |
-| 2.16.840.1.101.3.2.1.48.251 | APL test lab – Golden PIV-I Digital Signature | N/A |
-| 2.16.840.1.101.3.2.1.48.252 | APL test lab – Golden PIV-I Content Signing | N/A |
+| 2.16.840.1.101.3.2.1.48.248 | APL test lab Golden PIV-I Authentication | N/A |
+| 2.16.840.1.101.3.2.1.48.249 | APL test lab Golden PIV-I CardAuth | N/A |
+| 2.16.840.1.101.3.2.1.48.250 | APL test lab Golden PIV-I Key Management | N/A |
+| 2.16.840.1.101.3.2.1.48.251 | APL test lab Golden PIV-I Digital Signature | N/A |
+| 2.16.840.1.101.3.2.1.48.252 | APL test lab Golden PIV-I Content Signing | N/A |
 
 #### Government Printing Office (GPO)
 
@@ -315,13 +317,13 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | 2.16.840.1.114412.99.4.1.1 | DigiCert Level 1 Client Certificate - Personal | 2.16.840.1.114412.4.1.1 |
 | 2.16.840.1.114412.99.4.1.2 | DigiCert Level 1 Client Certificate - Enterprise | 2.16.840.1.114412.4.1.2 |
 | 2.16.840.1.114412.99.4.2 | DigiCert Level 2 Client Certificate - Basic | 2.16.840.1.114412.4.2 |
-| 2.16.840.1.114412.99.4.3.1 | DigiCert Level 3 Client Certificate – US -Medium | 2.16.840.1.114412.4.3.1 |  
-| 2.16.840.1.114412.99.4.3.2 | DigiCert Level 3 Client Certificate – CBP -Medium | 2.16.840.1.114412.4.3.2 |
-| 2.16.840.1.114412.99.4.4.1 | Digicert Level 4 Client Certificate – US - Hardware | 2.16.840.1.114412.4.4.1 |
-| 2.16.840.1.114412.99.4.4.2 | Digicert Level 4 Client Certificate –CBP -  Hardware | 2.16.840.1.114412.4.4.2 |
+| 2.16.840.1.114412.99.4.3.1 | DigiCert Level 3 Client Certificate - US -Medium | 2.16.840.1.114412.4.3.1 |  
+| 2.16.840.1.114412.99.4.3.2 | DigiCert Level 3 Client Certificate - CBP -Medium | 2.16.840.1.114412.4.3.2 |
+| 2.16.840.1.114412.99.4.4.1 | Digicert Level 4 Client Certificate - US - Hardware | 2.16.840.1.114412.4.4.1 |
+| 2.16.840.1.114412.99.4.4.2 | Digicert Level 4 Client Certificate - CBP -  Hardware | 2.16.840.1.114412.4.4.2 |
 | 2.16.840.1.114412.99.4.5.1 | Level 4 PIV-I - Hardware | 2.16.840.1.114412.4.5.1 |
-| 2.16.840.1.114412.99.4.5.2 | DigiCert Level 4 PIV-I – Card Authentication | 2.16.840.1.114412.4.5.2 |
-| 2.16.840.1.114412.99.4.5.3 | DigiCert Level 4 PIV-I – Content Signing | 2.16.840.1.114412.4.5.3 |
+| 2.16.840.1.114412.99.4.5.2 | DigiCert Level 4 PIV-I - Card Authentication | 2.16.840.1.114412.4.5.2 |
+| 2.16.840.1.114412.99.4.5.3 | DigiCert Level 4 PIV-I - Content Signing | 2.16.840.1.114412.4.5.3 |
 | 2.16.840.1.114412.99.1.11 | DigiCert OV SSL | 2.16.840.1.114412.1.11 |
 | 2.16.840.1.113733.1.7.21.1.1 | Class -1-VTN SSP-rudimentary | 2.16.840.1.113733.1.7.23.1.1.1 |
 | 2.16.840.1.113733.1.7.21.2.1 | Class 2-VTN SSP-basic | 2.16.840.1.113733.1.7.23.2.1.1 |
