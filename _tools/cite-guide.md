@@ -2,7 +2,7 @@
 layout: default
 title: CITE Participation Guide
 collection: tools
-permalink: /tools/citeguide
+permalink: /tools/citeguide/
 ---
 
 # Community Interoperability Test Environment (CITE) Participation Guidance
