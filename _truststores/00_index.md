@@ -33,7 +33,7 @@ Mozilla Network Security Services (NSS)|No |Browser trust store|Firefox, Thunder
 Adobe Approved Trust List|Yes|Application trust store|Adobe Acrobat|https://helpx.adobe.com/acrobat/kb/approved-trust-list2.html
 Java Root Certificate Program|No|Java Applet|Java Distributions|http://www.oracle.com/technetwork/java/javase/javasecarootcertsprogram-1876540.html
 Google|No|Google Admin Console|Android OS, Chromium OS|https://www.chromium.org/Home/chromium-security/root-ca-policy
-Opera|No longer operates its own trust store program but relies on Mozilla
+Opera|Uses Mozilla
 
 {% include alert-info.html content="Google Chrome uses the trust store of the operating system on Microsoft, Apple, and Android systems. Linux-based systems distribute the Mozilla NSS Library, which may be modified by each version of Linux." %}
 
