@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: January 1, 2019
+Updated: February 5, 2019
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -30,14 +30,13 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| Verizon | Verizon SSP CA A2 | Federal Common Policy CA | 477BF4017D25CDE276CDDDF756D40CA591D76F6D | 12/05/2018 |
-| DigiCert | DigiCert Federated SSP Intermediate CA - G5 | Federal Common Policy CA | 98B58247AC8A2BC6F348F03E8D22884D8345FC0F | 12/13/2018 |
+| No Activity | | | | |
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| Verizon | Verizon SSP CA A2 | Federal Common Policy CA | a9d3a8ac016dba9fa12685bf59dcc39f5dcaf781 | 12/06/2026 |
+| No Activity | | | | |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
