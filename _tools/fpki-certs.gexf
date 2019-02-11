@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
-  <meta lastmodifieddate="2019-02-04">
+  <meta lastmodifieddate="2019-02-11">
     <creator>Gephi 0.8.1</creator>
     <description></description>
   </meta>
@@ -9,169 +9,169 @@
       <node id="CN=AAMC Direct Intermediate CA,OU=AAMC Direct Messaging,O=Anne Arundel Medical Center,C=US" label="AAMC Direct Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-399.9714" y="9.37233E-13" z="0.0"></viz:position>
+        <viz:position x="-157.20883" y="-367.7743" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Air Canada Enterprise Root CA1,OU=Certification Authorities,O=Air Canada,C=CA" label="Air Canada Enterprise Root CA1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-246.24677" y="171.37454" z="0.0"></viz:position>
+        <viz:position x="-262.28177" y="145.58633" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Alexion Pharmaceuticals Issue 2 CA,OU=CAs,O=Alexion Pharmaceuticals,C=US" label="Alexion Pharmaceuticals Issue 2 CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-298.4971" y="30.348501" z="0.0"></viz:position>
+        <viz:position x="286.28967" y="89.819984" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Alexion Pharmaceuticals Root CA,OU=CAs,O=Alexion Pharmaceuticals,C=US" label="Alexion Pharmaceuticals Root CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="499.9706" y="4.0156247E-24" z="0.0"></viz:position>
+        <viz:position x="499.9706" y="8.350332E-25" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Allina Health Connect HIE Intermediate CA,OU=Information Services,O=Allina Health System,C=US" label="Allina Health Connect HIE Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-327.64236" y="229.46155" z="0.0"></viz:position>
+        <viz:position x="-276.42203" y="289.08725" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Axesson Direct CA,OU=www.axesson.com,O=Axesson Inc.,C=US" label="Axesson Direct CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="136.81224" y="375.86172" z="0.0"></viz:position>
+        <viz:position x="301.19293" y="263.14645" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Betrusted Production SSP CA A1,OU=Betrusted Production SSP CA A1,OU=SSP,O=Betrusted US Inc,C=US" label="Betrusted Production SSP CA A1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="99.99285" y="-3.356721E-24" z="0.0"></viz:position>
+        <viz:position x="100.00556" y="3.310107E-24" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Boeing PCA G2,OU=certservers,O=Boeing,C=US" label="Boeing PCA G2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-298.44626" y="-30.351679" z="0.0"></viz:position>
+        <viz:position x="15.194914" y="-299.667" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Boeing PCA G3,OU=certservers,O=Boeing,C=US" label="Boeing PCA G3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="293.9193" y="60.385456" z="0.0"></viz:position>
+        <viz:position x="246.24677" y="-171.37454" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Booz Allen Hamilton Device CA 02,OU=Certification Authorities,O=Booz Allen Hamilton,C=US" label="Booz Allen Hamilton Device CA 02">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="15.196503" y="-299.667" z="0.0"></viz:position>
+        <viz:position x="-183.65825" y="-237.21837" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Booz Allen Hamilton PIVi CA 01,OU=IdenTrust Global Common,O=IdenTrust,C=US" label="Booz Allen Hamilton PIVi CA 01">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="104.189156" y="-281.305" z="0.0"></viz:position>
+        <viz:position x="-275.7099" y="118.304" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Bureau of the Census Agency CA,OU=Department of Commerce,O=U.S. Government,C=US" label="Bureau of the Census Agency CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-66.98192" y="188.43951" z="0.0"></viz:position>
+        <viz:position x="198.15457" y="27.233063" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Care360 Direct Intermediate CA,OU=Care360 Direct Messaging,O=Quest Diagnostics Care360,C=US" label="Care360 Direct Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-346.41132" y="199.9857" z="0.0"></viz:position>
+        <viz:position x="-385.5768" y="106.42718" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Carillon Federal Services PIV-I CA1,OU=Certification Authorities,O=Carillon Federal Services Inc.,C=US" label="Carillon Federal Services PIV-I CA1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-75.20921" y="-290.4097" z="0.0"></viz:position>
+        <viz:position x="158.6839" y="-254.58852" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Cerner Corporation Direct Intermediate CA,OU=Cerner Direct,O=Cerner Corporation,C=US" label="Cerner Corporation Direct Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="169.0602" y="-362.4844" z="0.0"></viz:position>
+        <viz:position x="-385.5768" y="-106.42718" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Cerner Corporation Resonance Intermediate CA,OU=Cerner Resonance,O=Cerner Corporation,C=US" label="Cerner Corporation Resonance Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-398.44547" y="-34.85794" z="0.0"></viz:position>
+        <viz:position x="123.6066" y="-380.38864" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=CertiPath Bridge CA - G2,OU=Certification Authorities,O=CertiPath LLC,C=US" label="CertiPath Bridge CA - G2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-136.50706" y="146.17128" z="0.0"></viz:position>
+        <viz:position x="13.648321" y="199.52792" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=CertiPath Bridge CA,OU=Certification Authorities,O=CertiPath LLC,C=US" label="CertiPath Bridge CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="192.61037" y="-53.963837" z="0.0"></viz:position>
+        <viz:position x="66.96921" y="-188.43951" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=CertiPath Common Policy Root Certification Authority - G2,OU=Certification Authorities,O=CertiPath LLC,C=US" label="CertiPath Common Policy Root Certification Authority - G2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="45.424995" y="296.51343" z="0.0"></viz:position>
+        <viz:position x="-286.28967" y="-89.807274" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=CertiPath Common Policy Root Certification Authority,OU=Certification Authorities,O=CertiPath LLC,C=US" label="CertiPath Common Policy Root Certification Authority">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="75.19651" y="-290.4097" z="0.0"></viz:position>
+        <viz:position x="246.22134" y="171.37454" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=CISRCA1,OU=Certification Authorities,O=Carillon Information Security Inc.,C=CA" label="CISRCA1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-158.7093" y="-254.61394" z="0.0"></viz:position>
+        <viz:position x="-15.194914" y="299.61615" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=CompuGroup Medical Certificate Authority,OU=IT,O=Compugroup Medical,Inc,C=US" label="CompuGroup Medical Certificate Authority">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="346.41132" y="-200.01112" z="0.0"></viz:position>
+        <viz:position x="323.57324" y="235.13292" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Corepoint Direct Intermediate CA,O=Corepoint Health,C=US" label="Corepoint Direct Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="282.83093" y="282.88177" z="0.0"></viz:position>
+        <viz:position x="-323.57324" y="-235.1075" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=CSC CA - 2,OU=NPS,O=Computer Sciences Corporation,C=US" label="CSC CA - 2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="15.196503" y="299.61615" z="0.0"></viz:position>
+        <viz:position x="183.63283" y="237.21837" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=CSRA FBCA C3 CA,OU=CSRA FBCA MedHW,O=CSC Government Solutions LLC,C=US" label="CSRA FBCA C3 CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-45.424995" y="-296.56427" z="0.0"></viz:position>
+        <viz:position x="-298.44626" y="-30.351679" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=CSRA FBCA C3 Device CA,OU=CSRA FBCA Devices,O=CSC Government Solutions LLC,C=US" label="CSRA FBCA C3 Device CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="246.22134" y="-171.39995" z="0.0"></viz:position>
+        <viz:position x="-45.43135" y="296.51343" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=CSRA FBCA C4 CA,OU=CSRA FBCA MedHW2,O=CSRA LLC,C=US" label="CSRA FBCA C4 CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-262.33258" y="145.58633" z="0.0"></viz:position>
+        <viz:position x="293.9193" y="60.385456" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=CSRA FBCA C4 Device CA,OU=CSRA FBCA Devices,O=CSRA LLC,C=US" label="CSRA FBCA C4 Device CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="158.6839" y="254.61394" z="0.0"></viz:position>
+        <viz:position x="300.02304" y="-1.1066895E-24" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=CT-CSSP-CA-A1,OU=PKI,OU=Services,O=Cybertrust,C=US" label="CT-CSSP-CA-A1">
@@ -183,841 +183,829 @@
       <node id="CN=DigiCert Accredited Direct Med CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Accredited Direct Med CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-200.01112" y="-346.41132" z="0.0"></viz:position>
+        <viz:position x="249.40036" y="312.73914" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Assured ID Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Assured ID Root CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="383.0336" y="321.38608" z="0.0"></viz:position>
+        <viz:position x="311.72186" y="390.91757" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Direct Non-Provider CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Direct Non-Provider CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-257.0936" y="306.3811" z="0.0"></viz:position>
+        <viz:position x="-398.39462" y="35.862507" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Federal SSP Intermediate CA - G5,O=DigiCert,Inc.,C=US" label="DigiCert Federal SSP Intermediate CA - G5">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="86.60283" y="50.00278" z="0.0"></viz:position>
+        <viz:position x="86.60283" y="49.996426" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Federated Healthcare CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Federated Healthcare CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="327.64236" y="229.43613" z="0.0"></viz:position>
+        <viz:position x="343.41028" y="-205.14842" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Federated ID CA-1,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Federated ID CA-1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-13.64991" y="-199.52792" z="0.0"></viz:position>
+        <viz:position x="115.32844" y="-163.38884" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Federated ID L1 CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Federated ID L1 CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-158.6839" y="254.58852" z="0.0"></viz:position>
+        <viz:position x="-246.22134" y="171.39995" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Federated ID L2 CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Federated ID L2 CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-227.63045" y="195.40791" z="0.0"></viz:position>
+        <viz:position x="293.86847" y="-60.39181" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Federated ID L3 CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Federated ID L3 CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="293.9193" y="-60.385456" z="0.0"></viz:position>
+        <viz:position x="-132.13272" y="-269.30103" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Federated ID L4 CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Federated ID L4 CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-293.86847" y="60.385456" z="0.0"></viz:position>
+        <viz:position x="132.1073" y="-269.30103" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Federated ID US L3 CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Federated ID US L3 CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-104.189156" y="-281.305" z="0.0"></viz:position>
+        <viz:position x="-104.189156" y="281.305" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Federated ID US L4 CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Federated ID US L4 CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-15.196503" y="299.61615" z="0.0"></viz:position>
+        <viz:position x="158.6839" y="254.61394" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Federated Trust CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Federated Trust CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="158.7093" y="-254.58852" z="0.0"></viz:position>
+        <viz:position x="286.23883" y="-89.819984" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Federated Trust CA-1,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Federated Trust CA-1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-206.67436" y="217.45757" z="0.0"></viz:position>
+        <viz:position x="-262.28177" y="-145.58633" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Governmental Direct CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Governmental Direct CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-362.4844" y="169.03477" z="0.0"></viz:position>
+        <viz:position x="-399.9714" y="4.898552E-14" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DigiCert Provisional Direct Med CA,OU=www.digicert.com,O=DigiCert Inc,C=US" label="DigiCert Provisional Direct Med CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-393.91855" y="-69.44885" z="0.0"></viz:position>
-        <viz:color r="153" g="0" b="153"></viz:color>
-      </node>
-      <node id="CN=DOD CA-32,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD CA-32">
-        <attvalues></attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="103.54063" y="-386.33978" z="0.0"></viz:position>
-        <viz:color r="153" g="0" b="153"></viz:color>
-      </node>
-      <node id="CN=DOD EMAIL CA-32,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-32">
-        <attvalues></attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="386.33978" y="103.527916" z="0.0"></viz:position>
+        <viz:position x="-53.6968" y="-396.36005" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD EMAIL CA-33,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-33">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-136.81224" y="-375.86172" z="0.0"></viz:position>
+        <viz:position x="-17.943972" y="399.56448" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD EMAIL CA-34,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-34">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-229.43613" y="-327.64236" z="0.0"></viz:position>
+        <viz:position x="385.62766" y="-106.41447" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD EMAIL CA-39,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-39">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="386.33978" y="-103.54063" z="0.0"></viz:position>
+        <viz:position x="-343.35944" y="205.17384" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD EMAIL CA-40,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-40">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-375.91257" y="-136.81224" z="0.0"></viz:position>
+        <viz:position x="-17.947147" y="-399.61533" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD EMAIL CA-41,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-41">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-69.47426" y="393.91855" z="0.0"></viz:position>
+        <viz:position x="-393.5625" y="71.43254" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD EMAIL CA-42,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-42">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-306.3811" y="-257.14444" z="0.0"></viz:position>
+        <viz:position x="53.6968" y="-396.36005" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD EMAIL CA-43,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-43">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="69.47426" y="393.91855" z="0.0"></viz:position>
+        <viz:position x="-249.40036" y="-312.73914" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD EMAIL CA-44,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-44">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="393.91855" y="-69.44885" z="0.0"></viz:position>
+        <viz:position x="343.35944" y="205.17384" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD EMAIL CA-49,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-49">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-306.3811" y="257.0936" z="0.0"></viz:position>
+        <viz:position x="-249.42578" y="312.73914" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD EMAIL CA-50,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-50">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-393.91855" y="69.47426" z="0.0"></viz:position>
+        <viz:position x="249.42578" y="-312.73914" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD EMAIL CA-51,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-51">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="393.91855" y="69.44885" z="0.0"></viz:position>
+        <viz:position x="157.23425" y="-367.7743" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD EMAIL CA-52,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-52">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="69.44885" y="-393.91855" z="0.0"></viz:position>
+        <viz:position x="374.4884" y="140.57619" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID CA-33,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID CA-33">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="34.85794" y="398.44547" z="0.0"></viz:position>
+        <viz:position x="220.38226" y="333.79697" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID CA-34,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID CA-34">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="400.02225" y="2.0083437E-25" z="0.0"></viz:position>
+        <viz:position x="89.006165" y="-389.95114" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID CA-39,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID CA-39">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-34.864292" y="-398.44547" z="0.0"></viz:position>
+        <viz:position x="89.018875" y="389.95114" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID CA-40,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID CA-40">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-282.83093" y="282.88177" z="0.0"></viz:position>
+        <viz:position x="393.5625" y="71.43254" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID CA-41,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID CA-41">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="257.0936" y="-306.3811" z="0.0"></viz:position>
+        <viz:position x="-89.006165" y="-389.95114" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID CA-42,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID CA-42">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="169.03477" y="362.4844" z="0.0"></viz:position>
+        <viz:position x="-189.5331" y="-352.26065" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID CA-43,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID CA-43">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="398.44547" y="-34.864292" z="0.0"></viz:position>
+        <viz:position x="393.5625" y="-71.41983" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID CA-44,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID CA-44">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-257.0936" y="-306.3811" z="0.0"></viz:position>
+        <viz:position x="-360.399" y="-173.53627" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID CA-49,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID CA-49">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="229.43613" y="327.64236" z="0.0"></viz:position>
+        <viz:position x="17.943972" y="399.56448" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID CA-50,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID CA-50">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-199.9857" y="346.41132" z="0.0"></viz:position>
+        <viz:position x="399.9714" y="4.1712787E-24" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID CA-51,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID CA-51">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-69.44885" y="-393.91855" z="0.0"></viz:position>
+        <viz:position x="17.943972" y="-399.56448" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID CA-52,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID CA-52">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="136.81224" y="-375.86172" z="0.0"></viz:position>
+        <viz:position x="-301.19293" y="263.14645" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID SW CA-35,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID SW CA-35">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-136.83766" y="375.86172" z="0.0"></viz:position>
+        <viz:position x="374.4884" y="-140.55077" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID SW CA-36,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID SW CA-36">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="398.44547" y="34.864292" z="0.0"></viz:position>
+        <viz:position x="385.5768" y="106.42718" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID SW CA-37,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID SW CA-37">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-1.4945314E-12" y="-399.9714" z="0.0"></viz:position>
+        <viz:position x="-189.5585" y="352.20984" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID SW CA-38,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID SW CA-38">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="306.3811" y="257.0936" z="0.0"></viz:position>
+        <viz:position x="398.39462" y="35.862507" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID SW CA-45,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID SW CA-45">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="362.4844" y="169.0602" z="0.0"></viz:position>
+        <viz:position x="360.399" y="173.56169" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD ID SW CA-46,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD ID SW CA-46">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="306.43195" y="-257.0936" z="0.0"></viz:position>
+        <viz:position x="-343.35944" y="-205.14842" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DoD Interoperability Root CA 1,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DoD Interoperability Root CA 1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="40.694614" y="195.81483" z="0.0"></viz:position>
+        <viz:position x="-115.32844" y="-163.38884" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DoD Interoperability Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DoD Interoperability Root CA 2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-136.50706" y="-146.17128" z="0.0"></viz:position>
+        <viz:position x="-192.58495" y="53.95748" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DoD Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DoD Root CA 2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-286.23883" y="89.807274" z="0.0"></viz:position>
+        <viz:position x="15.196503" y="299.61615" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DoD Root CA 3,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DoD Root CA 3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="275.65906" y="-118.304" z="0.0"></viz:position>
+        <viz:position x="-75.19651" y="290.4097" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD SW CA-53,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD SW CA-53">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-375.86172" y="136.81224" z="0.0"></viz:position>
+        <viz:position x="-157.23425" y="367.7743" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOD SW CA-54,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD SW CA-54">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="103.54063" y="386.33978" z="0.0"></viz:position>
+        <viz:position x="301.19293" y="-263.14645" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=DOE SSP CA,OU=Certification Authorities,OU=Department of Energy,O=U.S. Government,C=US" label="DOE SSP CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="13.648321" y="-199.52792" z="0.0"></viz:position>
+        <viz:position x="-192.61037" y="-53.95748" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=ECA Root CA 2,OU=ECA,O=U.S. Government,C=US" label="ECA Root CA 2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="262.28177" y="-145.58633" z="0.0"></viz:position>
+        <viz:position x="-158.6839" y="254.61394" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=ECA Root CA 4,OU=ECA,O=U.S. Government,C=US" label="ECA Root CA 4">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-246.24677" y="-171.39995" z="0.0"></viz:position>
+        <viz:position x="-227.63045" y="-195.40791" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Eid Passport LRA 2 CA,OU=Eid Passport PIV-I LRA Network,O=Eid Passport,Inc.,C=US" label="Eid Passport LRA 2 CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-183.63283" y="237.24379" z="0.0"></viz:position>
+        <viz:position x="75.20921" y="-290.4097" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Eid Passport LRA CA 3,OU=RAPIDGate PIV Interoperable LRA,O=Eid Passport,Inc.,C=US" label="Eid Passport LRA CA 3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-227.65587" y="-195.40791" z="0.0"></viz:position>
+        <viz:position x="-275.65906" y="-118.304" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Eid Passport LRA Content Signer CA 3,OU=RAPIDGate PIV Interoperable LRA,O=Eid Passport,Inc.,C=US" label="Eid Passport LRA Content Signer CA 3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-299.9722" y="3.6737025E-14" z="0.0"></viz:position>
+        <viz:position x="104.189156" y="-281.305" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Eid Passport LRA Device 2 CA,OU=Eid Passport PIV-I LRA Network,O=Eid Passport,Inc.,C=US" label="Eid Passport LRA Device 2 CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="246.22134" y="171.37454" z="0.0"></viz:position>
+        <viz:position x="-45.424995" y="-296.51343" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Entrust Derived Credential SSP CA,OU=Certification Authorities,O=Entrust,C=US" label="Entrust Derived Credential SSP CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-155.1234" y="-126.226105" z="0.0"></viz:position>
+        <viz:position x="-170.89131" y="-103.9094" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Exostar Digital Certificate Service Signing CA 1,O=Exostar UK Limited,C=GB" label="Exostar Digital Certificate Service Signing CA 1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="75.20921" y="290.4097" z="0.0"></viz:position>
+        <viz:position x="-104.189156" y="-281.35583" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Exostar Federated Identity Service Root CA 2,OU=Certification Authorities,O=Exostar LLC,C=US" label="Exostar Federated Identity Service Root CA 2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="198.12915" y="27.23624" z="0.0"></viz:position>
+        <viz:position x="13.648321" y="-199.52792" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Exostar Federated Identity Service Signing CA 3,DC=evincible,DC=com" label="Exostar Federated Identity Service Signing CA 3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="183.65825" y="237.24379" z="0.0"></viz:position>
+        <viz:position x="75.20921" y="290.46054" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Federal Bridge CA 2016,OU=FPKI,O=U.S. Government,C=US" label="Federal Bridge CA 2016">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="50.00278" y="86.61553" z="0.0"></viz:position>
+        <viz:position x="50.00278" y="86.60283" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Federal Common Policy CA,OU=FPKI,O=U.S. Government,C=US" label="Federal Common Policy CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-1.927228E-24" y="-1.7677174E-24" z="0.0"></viz:position>
+        <viz:position x="-1.6021987E-24" y="2.7718874E-24" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=FTI Certification Authority,OU=FTI PKI Trust Infrastructure,O=Foundation for Trusted Identity,C=US" label="FTI Certification Authority">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-104.201866" y="281.305" z="0.0"></viz:position>
+        <viz:position x="206.67436" y="-217.45757" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=HHS-FPKI-Intermediate-CA-E1,OU=Certification Authorities,OU=HHS,O=U.S. Government,C=US" label="HHS-FPKI-Intermediate-CA-E1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="170.86589" y="103.9094" z="0.0"></viz:position>
+        <viz:position x="155.1234" y="-126.226105" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=IdenTrust ACES CA 2,OU=IdenTrust Public Sector,O=IdenTrust,C=US" label="IdenTrust ACES CA 2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="199.9857" y="7.1774795E-25" z="0.0"></viz:position>
+        <viz:position x="155.1234" y="126.213394" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=IdenTrust ECA 4,OU=Certification Authorities,OU=ECA,O=U.S. Government,C=US" label="IdenTrust ECA 4">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="199.9857" y="-346.41132" z="0.0"></viz:position>
+        <viz:position x="-398.39462" y="-35.862507" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=IdenTrust ECA 5,OU=Certification Authorities,OU=ECA,O=U.S. Government,C=US" label="IdenTrust ECA 5">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="375.91257" y="-136.83766" z="0.0"></viz:position>
+        <viz:position x="-360.44983" y="173.56169" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=IdenTrust ECA Component S21,OU=Certification Authorities,OU=ECA,O=U.S. Government,C=US" label="IdenTrust ECA Component S21">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="375.86172" y="136.81224" z="0.0"></viz:position>
+        <viz:position x="189.5331" y="-352.26065" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=IdenTrust ECA S21,OU=Certification Authorities,OU=ECA,O=U.S. Government,C=US" label="IdenTrust ECA S21">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-362.4844" y="-169.0602" z="0.0"></viz:position>
+        <viz:position x="-393.5625" y="-71.41983" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=IdenTrust Global Common Root CA 1,O=IdenTrust,C=US" label="IdenTrust Global Common Root CA 1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-155.1234" y="126.213394" z="0.0"></viz:position>
+        <viz:position x="-13.64991" y="199.52792" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=IdenTrust SAFE-BioPharma CA 1,OU=IdenTrust Global Common,O=IdenTrust,C=US" label="IdenTrust SAFE-BioPharma CA 1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="286.28967" y="89.819984" z="0.0"></viz:position>
+        <viz:position x="-286.23883" y="89.819984" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=IGC CA 1,OU=IdenTrust Global Common,O=IdenTrust,C=US" label="IGC CA 1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-262.28177" y="-145.58633" z="0.0"></viz:position>
+        <viz:position x="298.4971" y="30.351679" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=IGC Server CA 1,OU=IdenTrust Global Common,O=IdenTrust,C=US" label="IGC Server CA 1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="132.13272" y="-269.30103" z="0.0"></viz:position>
+        <viz:position x="132.1073" y="269.30103" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Indian Health Service-RPMS DIRECT Messaging CA,OU=directihs.net,O=Indian Health Service,C=US" label="Indian Health Service-RPMS DIRECT Messaging CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="34.85794" y="-398.44547" z="0.0"></viz:position>
+        <viz:position x="-53.690445" y="396.41086" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Inpriva Direct Federated CA,O=Inpriva Inc,C=US" label="Inpriva Direct Federated CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="346.46213" y="199.9857" z="0.0"></viz:position>
+        <viz:position x="-220.35686" y="333.79697" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=INTEGRIS Direct Intermediate CA,OU=INTEGRIS DIRECT Messaging HISP,O=INTEGRIS,C=US" label="INTEGRIS Direct Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-346.41132" y="-199.9857" z="0.0"></viz:position>
+        <viz:position x="276.47287" y="-289.08725" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=iShare Medical Direct Intermediate CA,O=iShare Medical,C=US" label="iShare Medical Direct Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="257.0936" y="306.3811" z="0.0"></viz:position>
+        <viz:position x="-123.6066" y="-380.38864" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Leidos FBCA Cloud PKI CA-1,O=Leidos" label="Leidos FBCA Cloud PKI CA-1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-15.194914" y="-299.667" z="0.0"></viz:position>
+        <viz:position x="227.65587" y="195.43333" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Lockheed Martin Root Certification Authority 2,OU=Certification Authorities,O=Lockheed Martin Corporation,L=Denver,ST=Colorado,C=US" label="Lockheed Martin Root Certification Authority 2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="132.1073" y="269.30103" z="0.0"></viz:position>
+        <viz:position x="-206.67436" y="-217.45757" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Lockheed Martin US Certification Authority-2,OU=Certification Authorities,O=Lockheed Martin Corporation,L=Denver,ST=Colorado,C=US" label="Lockheed Martin US Certification Authority-2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-183.63283" y="-237.21837" z="0.0"></viz:position>
+        <viz:position x="-299.9722" y="3.6737025E-14" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=MedicaSoft Direct Intermediate CA,OU=MedicaSoft Direct Messaging,O=MedicaSoft LLC,C=US" label="MedicaSoft Direct Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-386.33978" y="103.527916" z="0.0"></viz:position>
+        <viz:position x="189.5331" y="352.20984" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Medicity Direct CA,OU=www.medicity.com,O=Medicity Inc.,C=US" label="Medicity Direct CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="362.4844" y="-169.0602" z="0.0"></viz:position>
+        <viz:position x="-89.006165" y="389.95114" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=MHIN Direct CA,OU=www.mhin.com,O=Michiana Health Information Network,C=US" label="MHIN Direct CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-398.44547" y="34.864292" z="0.0"></viz:position>
+        <viz:position x="-220.35686" y="-333.79697" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Ministerie van Defensie Certificatie Autoriteit - G2,O=Ministerie van Defensie,C=NL" label="Ministerie van Defensie Certificatie Autoriteit - G2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-286.23883" y="-89.807274" z="0.0"></viz:position>
+        <viz:position x="45.424995" y="-296.51343" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Mirth Direct Intermediate CA,OU=NextGen Share,O=Mirth,C=US" label="Mirth Direct Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-103.54063" y="-386.33978" z="0.0"></viz:position>
+        <viz:position x="220.35686" y="-333.84778" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=MobileMD Direct Intermediate CA,OU=MobileMD,O=MobileMD Health Services,C=US" label="MobileMD Direct Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="2.9091454E-13" y="399.9714" z="0.0"></viz:position>
+        <viz:position x="360.399" y="-173.53627" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=MRO Direct Intermediate CA,OU=MRO HIE Solutions,O=MRO Corporation,C=US" label="MRO Direct Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-169.0602" y="362.4844" z="0.0"></viz:position>
+        <viz:position x="-301.19293" y="-263.14645" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Naval Reactors SSP Agency CA G3,OU=U.S. Department of Energy,O=U.S. Government,C=US" label="Naval Reactors SSP Agency CA G3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-198.12915" y="27.23624" z="0.0"></viz:position>
+        <viz:position x="199.9857" y="3.3369215E-24" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Naval Reactors SSP Device CA G3,OU=U.S. Department of Energy,O=U.S. Government,C=US" label="Naval Reactors SSP Device CA G3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-183.42937" y="-79.67256" z="0.0"></viz:position>
+        <viz:position x="-199.9857" y="2.0213128E-13" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=NextgenIDRootCA1,OU=Certification Authorities,O=NextgenID,C=US" label="NextgenIDRootCA1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-75.19651" y="290.4097" z="0.0"></viz:position>
+        <viz:position x="298.44626" y="-30.351679" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=NGIDTrustCA1,OU=Certification Authorities,O=NextgenID,C=US" label="NGIDTrustCA1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="229.46155" y="-327.64236" z="0.0"></viz:position>
+        <viz:position x="-323.57324" y="235.1075" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Northrop Grumman Corporate Root CA-G2,OU=Northrop Grumman Information Technology,O=Northrop Grumman Corporation,C=US" label="Northrop Grumman Corporate Root CA-G2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="298.44626" y="30.348501" z="0.0"></viz:position>
+        <viz:position x="104.189156" y="281.305" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Northrop Grumman Corporate Signing CA-G2,OU=Northrop Grumman Information Technology,O=Northrop Grumman Corporation,C=US" label="Northrop Grumman Corporate Signing CA-G2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-229.43613" y="327.6932" z="0.0"></viz:position>
+        <viz:position x="123.6066" y="380.38864" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=NRC SSP Agency CA G3,OU=U.S. Nuclear Regulatory Commission,O=U.S. Government,C=US" label="NRC SSP Agency CA G3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="115.32844" y="-163.38884" z="0.0"></viz:position>
+        <viz:position x="-183.45479" y="79.68527" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=NRC SSP Device CA G2,OU=U.S. Nuclear Regulatory Commission,O=U.S. Government,C=US" label="NRC SSP Device CA G2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="66.96921" y="-188.43951" z="0.0"></viz:position>
+        <viz:position x="-115.34115" y="163.41426" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=NRC SSP Device CA G3,OU=U.S. Nuclear Regulatory Commission,O=U.S. Government,C=US" label="NRC SSP Device CA G3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="92.01987" y="-177.6054" z="0.0"></viz:position>
+        <viz:position x="-92.00716" y="-177.57999" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=ORC ACES 4,O=ORC PKI,C=US" label="ORC ACES 4">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-115.32844" y="163.38884" z="0.0"></viz:position>
+        <viz:position x="183.42937" y="79.67256" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=ORC ECA 6,OU=Certification Authorities,OU=ECA,O=U.S. Government,C=US" label="ORC ECA 6">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-103.527916" y="386.33978" z="0.0"></viz:position>
+        <viz:position x="323.57324" y="-235.1075" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=ORC ECA HW 5,OU=Certification Authorities,OU=ECA,O=U.S. Government,C=US" label="ORC ECA HW 5">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-327.64236" y="-229.43613" z="0.0"></viz:position>
+        <viz:position x="157.20883" y="367.7743" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=ORC ECA SW 5,OU=Certification Authorities,OU=ECA,O=U.S. Government,C=US" label="ORC ECA SW 5">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-386.33978" y="-103.54063" z="0.0"></viz:position>
+        <viz:position x="-374.4884" y="140.55077" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=ORC NFI CA 2,O=ORC PKI,C=US" label="ORC NFI CA 2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-115.32844" y="-163.38884" z="0.0"></viz:position>
+        <viz:position x="170.86589" y="-103.92211" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=ORC NFI CA 3,O=ORC PKI,C=US" label="ORC NFI CA 3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="66.98192" y="188.46492" z="0.0"></viz:position>
+        <viz:position x="-40.68826" y="195.81483" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=ORC SSP 3,O=ORC PKI,C=US" label="ORC SSP 3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="6.12319E-15" y="100.00556" z="0.0"></viz:position>
+        <viz:position x="6.12319E-15" y="99.99285" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=ORC SSP 4,O=ORC PKI,C=US" label="ORC SSP 4">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-49.996426" y="86.61553" z="0.0"></viz:position>
+        <viz:position x="-50.00278" y="86.60283" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Oregon Health Authority Direct CA,O=Oregon Health Authority,C=US" label="Oregon Health Authority Direct CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="282.83093" y="-282.83093" z="0.0"></viz:position>
+        <viz:position x="-374.4884" y="-140.55077" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Orion Health Direct Secure Messaging CA,OU=Orion Health Direct Secure Messaging,O=Orion Health Inc.,C=US" label="Orion Health Direct Secure Messaging CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-169.0602" y="-362.4844" z="0.0"></viz:position>
+        <viz:position x="-123.61931" y="380.38864" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=RAPIDGate PIV-I Agency CA,O=Eid Passport,Inc.,C=US" label="RAPIDGate PIV-I Agency CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="45.43135" y="-296.56427" z="0.0"></viz:position>
+        <viz:position x="-293.86847" y="60.385456" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=RAPIDGate PIV-I Device CA,O=Eid Passport,Inc.,C=US" label="RAPIDGate PIV-I Device CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="227.65587" y="195.43333" z="0.0"></viz:position>
+        <viz:position x="-15.194914" y="-299.61615" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=RAPIDGate-Premier CA,O=Eid Passport,Inc.,C=US" label="RAPIDGate-Premier CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-293.86847" y="-60.385456" z="0.0"></viz:position>
+        <viz:position x="45.424995" y="296.51343" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=RAPIDGate-Premier Device CA,O=Eid Passport,Inc.,C=US" label="RAPIDGate-Premier Device CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-275.65906" y="-118.3167" z="0.0"></viz:position>
+        <viz:position x="-75.20921" y="-290.46054" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Raytheon Root CA,OU=RaytheonRoot-g2,O=CAs,DC=raytheon,DC=com" label="Raytheon Root CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="299.9722" y="2.4201038E-24" z="0.0"></viz:position>
+        <viz:position x="275.65906" y="-118.3167" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=RelayHealth Direct CA,O=RelayHealth,C=US" label="RelayHealth Direct CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="199.9857" y="346.41132" z="0.0"></viz:position>
+        <viz:position x="-276.42203" y="-289.08725" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Rochester RHIO Intermediate CA,OU=Rochester RHIO HISP,O=Rochester RHIO,C=US" label="Rochester RHIO Intermediate CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-34.864292" y="398.44547" z="0.0"></viz:position>
+        <viz:position x="53.6968" y="396.36005" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=SAFE Bridge CA 02,OU=Certification Authorities,O=SAFE-Biopharma,C=US" label="SAFE Bridge CA 02">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="170.89131" y="-103.9094" z="0.0"></viz:position>
+        <viz:position x="-155.1234" y="-126.226105" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=SCHIEx Direct CA,OU=SCHIEx Direct Messaging,O=SCHIEx,ST=SC,C=US" label="SCHIEx Direct CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-282.83093" y="-282.88177" z="0.0"></viz:position>
+        <viz:position x="398.39462" y="-35.862507" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Senate PIV-I CA G4,OU=Office of the Sergeant at Arms,OU=U.S. Senate,O=U.S. Government,C=US" label="Senate PIV-I CA G4">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="227.65587" y="-195.40791" z="0.0"></viz:position>
+        <viz:position x="227.63045" y="-195.40791" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Senate PIV-I Device CA G2,OU=Office of the Sergeant at Arms,OU=U.S. Senate,O=U.S. Government,C=US" label="Senate PIV-I Device CA G2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-275.7099" y="118.304" z="0.0"></viz:position>
+        <viz:position x="-227.63045" y="195.40791" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Senate PIV-I Device CA G4,OU=Office of the Sergeant at Arms,OU=U.S. Senate,O=U.S. Government,C=US" label="Senate PIV-I Device CA G4">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="298.4971" y="-30.351679" z="0.0"></viz:position>
+        <viz:position x="206.67436" y="217.43216" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=SHA-1 Federal Root CA G2,OU=FPKI,O=U.S. Government,C=US" label="SHA-1 Federal Root CA G2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-86.61553" y="50.00278" z="0.0"></viz:position>
+        <viz:position x="-86.60283" y="50.00278" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=STRAC Bridge Root Certification Authority,OU=STRAC PKI Trust Infrastructure,O=STRAC,C=US" label="STRAC Bridge Root Certification Authority">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="136.50706" y="146.17128" z="0.0"></viz:position>
+        <viz:position x="92.00716" y="-177.6054" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=SureID Inc. CA1,OU=SureID PIV-I,O=SureID,Inc.,C=US" label="SureID Inc. CA1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-132.1073" y="-269.35187" z="0.0"></viz:position>
+        <viz:position x="-132.13272" y="269.35187" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=SureID Inc. CA2,O=SureID,Inc.,C=US" label="SureID Inc. CA2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="183.63283" y="-237.21837" z="0.0"></viz:position>
+        <viz:position x="-246.22134" y="-171.39995" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=SureID Inc. Device CA1,OU=SureID PIV-I,O=SureID,Inc.,C=US" label="SureID Inc. Device CA1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-132.13272" y="269.30103" z="0.0"></viz:position>
+        <viz:position x="-298.44626" y="30.348501" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=SureID Inc. Device CA2,O=SureID,Inc.,C=US" label="SureID Inc. Device CA2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="104.189156" y="281.35583" z="0.0"></viz:position>
+        <viz:position x="262.33258" y="145.58633" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Symantec Class 3 SSP Intermediate CA - G3,OU=Symantec Trust Network,O=Symantec Corporation,C=US" label="Symantec Class 3 SSP Intermediate CA - G3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-170.89131" y="-103.9094" z="0.0"></viz:position>
+        <viz:position x="40.68826" y="-195.84024" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Symantec SSP Intermediate CA - G4,O=Symantec Corporation,C=US" label="Symantec SSP Intermediate CA - G4">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-99.99285" y="5.6659887E-14" z="0.0"></viz:position>
+        <viz:position x="-100.00556" y="5.6654243E-14" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Trans Sped Mobile eIDAS QCA G2,OU=Individual Subscriber CA,O=Trans Sped SRL,C=RO" label="Trans Sped Mobile eIDAS QCA G2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="286.23883" y="-89.807274" z="0.0"></viz:position>
+        <viz:position x="262.28177" y="-145.58633" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Trans Sped Mobile QCA,OU=Individual Subscriber CA,O=Trans Sped SRL,C=RO" label="Trans Sped Mobile QCA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-206.69977" y="-217.43216" z="0.0"></viz:position>
+        <viz:position x="-206.67436" y="217.43216" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Trans Sped Root CA G2,OU=Trans Sped CA,O=Trans Sped SRL,C=RO" label="Trans Sped Root CA G2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="86.8317" y="492.3918" z="0.0"></viz:position>
+        <viz:position x="-111.25929" y="487.458" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Trans Sped SAFE CA III,OU=Individual Subscriber CA,O=Trans Sped SRL,C=RO" label="Trans Sped SAFE CA III">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="275.65906" y="118.3167" z="0.0"></viz:position>
+        <viz:position x="183.63283" y="-237.21837" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=TSCP SHA256 Bridge CA,OU=CAs,O=TSCP Inc.,C=US" label="TSCP SHA256 Bridge CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-170.86589" y="103.92211" z="0.0"></viz:position>
+        <viz:position x="-40.68826" y="-195.81483" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=U.S. Department of Education Agency CA - G4,OU=U.S. Department of Education,O=U.S. Government,C=US" label="U.S. Department of Education Agency CA - G4">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="183.42937" y="79.67256" z="0.0"></viz:position>
+        <viz:position x="40.68826" y="195.81483" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=U.S. Department of Education Device CA - G3,OU=U.S. Department of Education,O=U.S. Government,C=US" label="U.S. Department of Education Device CA - G3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-40.694614" y="-195.84024" z="0.0"></viz:position>
+        <viz:position x="198.12915" y="-27.233063" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=U.S. Department of Education Device CA - G4,OU=U.S. Department of Education,O=U.S. Government,C=US" label="U.S. Department of Education Device CA - G4">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-92.01987" y="-177.6054" z="0.0"></viz:position>
+        <viz:position x="183.45479" y="-79.67256" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=U.S. Department of State AD High Assurance CA,CN=AIA,CN=Public Key Services,CN=Services,CN=Configuration,DC=state,DC=sbu" label="U.S. Department of State AD High Assurance CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-199.9857" y="2.0215385E-13" z="0.0"></viz:position>
+        <viz:position x="-198.12915" y="-27.23624" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=U.S. Department of State AD Root CA,CN=AIA,CN=Public Key Services,CN=Services,CN=Configuration,DC=state,DC=sbu" label="U.S. Department of State AD Root CA">
@@ -1029,193 +1017,181 @@
       <node id="CN=U.S. Department of State PIV CA,CN=AIA,CN=Public Key Services,CN=Services,CN=Configuration,DC=state,DC=sbu" label="U.S. Department of State PIV CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-66.96921" y="-188.43951" z="0.0"></viz:position>
+        <viz:position x="-136.50706" y="146.17128" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=U.S. Department of Transportation Agency CA G4,OU=U.S. Department of Transportation,O=U.S. Government,C=US" label="U.S. Department of Transportation Agency CA G4">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="183.42937" y="-79.67256" z="0.0"></viz:position>
+        <viz:position x="136.50706" y="146.17128" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=U.S. Department of Transportation Device CA G4,OU=U.S. Department of Transportation,O=U.S. Government,C=US" label="U.S. Department of Transportation Device CA G4">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="155.1488" y="126.213394" z="0.0"></viz:position>
-        <viz:color r="153" g="0" b="153"></viz:color>
-      </node>
-      <node id="CN=US DoD CCEB Interoperability Root CA 1,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="US DoD CCEB Interoperability Root CA 1">
-        <attvalues></attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-249.9853" y="432.98233" z="0.0"></viz:position>
-        <viz:color r="153" g="0" b="153"></viz:color>
-      </node>
-      <node id="CN=US DoD CCEB Interoperability Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="US DoD CCEB Interoperability Root CA 2">
-        <attvalues></attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-469.85895" y="171.01846" z="0.0"></viz:position>
+        <viz:position x="-136.50706" y="-146.1967" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=USPTO_INTR_CA1,CN=AIA,CN=Public Key Services,CN=Services,CN=Configuration,DC=uspto,DC=gov" label="USPTO_INTR_CA1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-13.64991" y="199.52792" z="0.0"></viz:position>
+        <viz:position x="-92.00716" y="177.57999" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=VeriSign SSP Intermediate CA - G3,O=VeriSign,Inc.,C=US" label="VeriSign SSP Intermediate CA - G3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-49.996426" y="-86.60283" z="0.0"></viz:position>
+        <viz:position x="-50.00278" y="-86.61553" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Verizon SSP CA A2,OU=SSP,O=Verizon,C=US" label="Verizon SSP CA A2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-1.8368513E-14" y="-100.00556" z="0.0"></viz:position>
+        <viz:position x="-1.8371333E-14" y="-100.00556" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Veterans Affairs CA B3,OU=PKI,OU=Services,DC=va,DC=gov" label="Veterans Affairs CA B3">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-192.58495" y="53.963837" z="0.0"></viz:position>
+        <viz:position x="-66.96921" y="188.43951" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Veterans Affairs User CA B1,OU=PKI,OU=Services,DC=va,DC=gov" label="Veterans Affairs User CA B1">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="136.50706" y="-146.17128" z="0.0"></viz:position>
+        <viz:position x="-170.89131" y="103.92211" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=VZ-SMC-CA-B2,OU=PKI,OU=Services,O=Cybertrust,C=US" label="VZ-SMC-CA-B2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="262.28177" y="145.58633" z="0.0"></viz:position>
+        <viz:position x="-183.63283" y="237.21837" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=WidePoint ORC ECA 7,OU=Certification Authorities,OU=ECA,O=U.S. Government,C=US" label="WidePoint ORC ECA 7">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="327.64236" y="-229.43613" z="0.0"></viz:position>
+        <viz:position x="276.47287" y="289.08725" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=Department of Veterans Affairs CA,OU=Certification Authorities,OU=Department of Veterans Affairs,O=U.S. Government,C=US" label="Department of Veterans Affairs CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-92.00716" y="177.57999" z="0.0"></viz:position>
+        <viz:position x="192.58495" y="53.963837" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=DHS CA4,OU=Certification Authorities,OU=Department of Homeland Security,O=U.S. Government,C=US" label="DHS CA4">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-192.58495" y="-53.95748" z="0.0"></viz:position>
+        <viz:position x="-66.96921" y="-188.46492" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=Entrust Managed Services NFI Root CA,OU=Certification Authorities,O=Entrust,C=US" label="Entrust Managed Services NFI Root CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-40.68826" y="195.81483" z="0.0"></viz:position>
+        <viz:position x="-198.12915" y="27.233063" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=Entrust Managed Services Root CA,OU=Certification Authorities,O=Entrust,C=US" label="Entrust Managed Services Root CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="50.00278" y="-86.60283" z="0.0"></viz:position>
+        <viz:position x="50.00278" y="-86.61553" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=Entrust Managed Services SSP CA,OU=Certification Authorities,O=Entrust,C=US" label="Entrust Managed Services SSP CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-198.12915" y="-27.233063" z="0.0"></viz:position>
+        <viz:position x="136.53247" y="-146.17128" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=Entrust NFI Medium Assurance SSP CA,OU=Certification Authorities,O=Entrust,C=US" label="Entrust NFI Medium Assurance SSP CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-45.424995" y="296.51343" z="0.0"></viz:position>
+        <viz:position x="275.65906" y="118.304" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=Fiscal Service,OU=Department of the Treasury,O=U.S. Government,C=US" label="US Treasury Fiscal Service">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="198.12915" y="-27.23624" z="0.0"></viz:position>
+        <viz:position x="192.58495" y="-53.963837" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=GPO PCA,OU=Certification Authorities,OU=Government Printing Office,O=U.S. Government,C=US" label="GPO PCA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="13.64991" y="199.52792" z="0.0"></viz:position>
+        <viz:position x="66.96921" y="188.43951" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=GPO SCA,OU=Certification Authorities,OU=Government Printing Office,O=U.S. Government,C=US" label="GPO SCA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="206.67436" y="-217.45757" z="0.0"></viz:position>
+        <viz:position x="-158.7093" y="-254.58852" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=NASA Operational CA,OU=Certification Authorities,OU=NASA,O=U.S. Government,C=US" label="NASA Operational CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-183.42937" y="79.67256" z="0.0"></viz:position>
+        <viz:position x="170.86589" y="103.92211" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=OCIO CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" label="US Treasury OCIO CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="40.68826" y="-195.84024" z="0.0"></viz:position>
+        <viz:position x="-183.42937" y="-79.68527" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=RaytheonRoot,O=CAs,DC=raytheon,DC=com" label="RaytheonRoot">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="206.67436" y="217.43216" z="0.0"></viz:position>
+        <viz:position x="-293.86847" y="-60.385456" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=Social Security Administration Certification Authority,OU=SSA,O=U.S. Government,C=US" label="Social Security Administration Certification Authority">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="155.1234" y="-126.213394" z="0.0"></viz:position>
+        <viz:position x="-13.64991" y="-199.52792" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=U.S. Department of State PIV CA2,OU=Certification Authorities,OU=PIV,OU=Department of State,O=U.S. Government,C=US" label="U.S. Department of State PIV CA2">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="115.32844" y="163.41426" z="0.0"></viz:position>
+        <viz:position x="-155.1234" y="126.213394" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=US Treasury Public CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" label="US Treasury Public CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="192.58495" y="53.963837" z="0.0"></viz:position>
+        <viz:position x="115.32844" y="163.41426" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="OU=US Treasury Root CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" label="US Treasury Root CA">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="86.61553" y="-49.996426" z="0.0"></viz:position>
+        <viz:position x="86.60283" y="-49.996426" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Carillon Federal Services NFI Root CA1,OU=Certification Authorities,O=Carillon Federal Services Inc.,C=US">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-469.85895" y="-171.01846" z="0.0"></viz:position>
+        <viz:position x="-450.5305" y="216.97437" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
       <node id="CN=Northrop Grumman Corporation Root CA,O=Northrop Grumman Corporation,C=US">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="-250.01073" y="-432.98233" z="0.0"></viz:position>
+        <viz:position x="-450.47964" y="-216.97437" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
-      <node id="CN=ADOCA03,OU=CAs,OU=PKI,OU=DoD,O=GOV,C=AU">
+      <node id="CN=US DoD CCEB Interoperability Root CA 1,OU=PKI,OU=DoD,O=U.S. Government,C=US">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="86.8317" y="-492.3918" z="0.0"></viz:position>
+        <viz:position x="-111.272" y="-487.458" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
-      <node id="CN=Australian Defence Interoperability CA,OU=CAs,OU=PKI,OU=DoD,O=GOV,C=AU">
+      <node id="CN=US DoD CCEB Interoperability Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US">
         <attvalues></attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:position x="383.0336" y="-321.38608" z="0.0"></viz:position>
+        <viz:position x="311.72186" y="-390.96838" z="0.0"></viz:position>
         <viz:color r="153" g="0" b="153"></viz:color>
       </node>
     </nodes>
@@ -1509,14 +1485,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="CN=Federal Bridge CA 2016,OU=FPKI,O=U.S. Government,C=US" source="CN=DoD Interoperability Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" target="CN=Federal Bridge CA 2016,OU=FPKI,O=U.S. Government,C=US" label="Federal Bridge CA 2016">
-        <viz:color r="153" g="0" b="153"></viz:color>
-        <attvalues></attvalues>
-      </edge>
-      <edge id="CN=DOD CA-32,OU=PKI,OU=DoD,O=U.S. Government,C=US" source="CN=DoD Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" target="CN=DOD CA-32,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD CA-32">
-        <viz:color r="153" g="0" b="153"></viz:color>
-        <attvalues></attvalues>
-      </edge>
-      <edge id="CN=DOD EMAIL CA-32,OU=PKI,OU=DoD,O=U.S. Government,C=US" source="CN=DoD Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" target="CN=DOD EMAIL CA-32,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DOD EMAIL CA-32">
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
@@ -1816,7 +1784,7 @@
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
-      <edge id="OU=US Treasury Root CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" source="CN=Federal Common Policy CA,OU=FPKI,O=U.S. Government,C=US" target="OU=US Treasury Root CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" label="US Treasury Root CA" weight="2.0">
+      <edge id="OU=US Treasury Root CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" source="CN=Federal Common Policy CA,OU=FPKI,O=U.S. Government,C=US" target="OU=US Treasury Root CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" label="US Treasury Root CA">
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
@@ -2064,14 +2032,6 @@
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
-      <edge id="CN=DoD Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" source="CN=US DoD CCEB Interoperability Root CA 1,OU=PKI,OU=DoD,O=U.S. Government,C=US" target="CN=DoD Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DoD Root CA 2">
-        <viz:color r="153" g="0" b="153"></viz:color>
-        <attvalues></attvalues>
-      </edge>
-      <edge id="CN=DoD Root CA 3,OU=PKI,OU=DoD,O=U.S. Government,C=US" source="CN=US DoD CCEB Interoperability Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" target="CN=DoD Root CA 3,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DoD Root CA 3">
-        <viz:color r="153" g="0" b="153"></viz:color>
-        <attvalues></attvalues>
-      </edge>
       <edge id="CN=Federal Bridge CA 2016,OU=FPKI,O=U.S. Government,C=US" source="CN=USPTO_INTR_CA1,CN=AIA,CN=Public Key Services,CN=Services,CN=Configuration,DC=uspto,DC=gov" target="CN=Federal Bridge CA 2016,OU=FPKI,O=U.S. Government,C=US" label="Federal Bridge CA 2016">
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
@@ -2148,7 +2108,7 @@
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
-      <edge id="OU=Fiscal Service,OU=Department of the Treasury,O=U.S. Government,C=US" source="OU=US Treasury Root CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" target="OU=Fiscal Service,OU=Department of the Treasury,O=U.S. Government,C=US" label="US Treasury Fiscal Service" weight="4.0">
+      <edge id="OU=Fiscal Service,OU=Department of the Treasury,O=U.S. Government,C=US" source="OU=US Treasury Root CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" target="OU=Fiscal Service,OU=Department of the Treasury,O=U.S. Government,C=US" label="US Treasury Fiscal Service" weight="3.0">
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
@@ -2168,7 +2128,7 @@
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
-      <edge source="OU=US Treasury Root CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" target="OU=US Treasury Root CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" label="US Treasury Root CA" weight="4.0">
+      <edge source="OU=US Treasury Root CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" target="OU=US Treasury Root CA,OU=Certification Authorities,OU=Department of the Treasury,O=U.S. Government,C=US" label="US Treasury Root CA" weight="2.0">
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
@@ -2180,11 +2140,11 @@
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
-      <edge id="CN=US DoD CCEB Interoperability Root CA 1,OU=PKI,OU=DoD,O=U.S. Government,C=US" source="CN=ADOCA03,OU=CAs,OU=PKI,OU=DoD,O=GOV,C=AU" target="CN=US DoD CCEB Interoperability Root CA 1,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="US DoD CCEB Interoperability Root CA 1">
+      <edge id="CN=DoD Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" source="CN=US DoD CCEB Interoperability Root CA 1,OU=PKI,OU=DoD,O=U.S. Government,C=US" target="CN=DoD Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DoD Root CA 2">
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
-      <edge id="CN=US DoD CCEB Interoperability Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" source="CN=Australian Defence Interoperability CA,OU=CAs,OU=PKI,OU=DoD,O=GOV,C=AU" target="CN=US DoD CCEB Interoperability Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="US DoD CCEB Interoperability Root CA 2">
+      <edge id="CN=DoD Root CA 3,OU=PKI,OU=DoD,O=U.S. Government,C=US" source="CN=US DoD CCEB Interoperability Root CA 2,OU=PKI,OU=DoD,O=U.S. Government,C=US" target="CN=DoD Root CA 3,OU=PKI,OU=DoD,O=U.S. Government,C=US" label="DoD Root CA 3">
         <viz:color r="153" g="0" b="153"></viz:color>
         <attvalues></attvalues>
       </edge>
