@@ -497,6 +497,17 @@
   cdp_uri: http://sbca2.safe-biopharma.org/sbca/SBCA02.crl
   aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c
   
+- notice_date: February 12, 2019
+  change_type: CA Certificate Revocation
+  start_datetime: December 9, 2010
+  end_datetime: December 9, 2020
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: Revocation of the Verizon Betrusted Production SSP CA A1
+  contact: FPKI dash help at gsa dot gov
+  ca_certificate_hash: 06 01 bb da d5 a2 82 31 bc 94 36 75 0b 4f 3a 48 4b ab 06 c3
+  ca_certificate_issuer: Federal Common Policy CA
+  ca_certificate_subject: Betrusted Production SSP CA A1
+  
 #- notice_date: 
 #  change_type: CA Certificate Issuance
 #  start_datetime:
