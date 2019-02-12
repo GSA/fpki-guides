@@ -10,7 +10,7 @@ permalink: /tools/citeguide/
 Prepared By: The FPKI Technical Working Group (TWG)  <br>
 An FPKI Policy Authority Working Group
 
-Last Update: February 12th, 2019
+Last Update: February 12th, 2019 <br>
 
 ## Overview
 
@@ -21,7 +21,7 @@ The Community Interoperability Test Environment (CITE) was established as the FP
 1. Ensure proper functionality of respective system changes prior to deploying them in a production environment.
 2. Identify and resolve technical issues across FPKI Partners, and
 
-The FPKI Community can use CITE to evaluate PKI or application changes in a test environment that mimics the production FPKI hierarchy and test potential interoperability issues before those changes are deployed to the FPKI.
+The FPKI Community can use CITE to evaluate PKI or application changes in a test environment that mimics the production FPKI hierarchy and test potential interoperability issues before those changes are deployed to the FPKI. <br>
 
 ## Document Scope
 
@@ -29,7 +29,7 @@ This document serves as the CITE participation guidelines, which provides the te
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
 
-Modifications to this document and any waivers are controlled by the FPKI TWG.
+Modifications to this document and any waivers are controlled by the FPKI TWG. <br>
 
 ## Testing Use Cases
 
@@ -44,13 +44,13 @@ Some examples of testing conducted in the CITE are:
 4. Repository access testing when using content delivery networks, load balancers, or other networking configurations; and
 5. Path discovery and/or validation testing for a particular application
 
-When testing is successful in CITE, assurance is gained that the proposed change(s) will operate in the FPKI as intended. When tests fail in the CITE, issues are identified and addressed without FPKI impact.
+When testing is successful in CITE, assurance is gained that the proposed change(s) will operate in the FPKI as intended. When tests fail in the CITE, issues are identified and addressed without FPKI impact. <br>
 
 ## Terms and Conditions
 
 To ensure the CITE provides effective services and comprehensive test results, each participating FPKI Partner should emulate its production environment as closely as possible in the CITE. To the extent possible, the test environment should include the same products, logical architecture, and community integration relationships as in the production environment.
 
-The closer the test environment is to the production, the more likely issues can be discovered and resolved early in the development and testing process; thus reducing operational issues in the production environment. For example, if a Federal Agency PKI includes both HTTP and LDAP URIs in its production certificates, both types of URIs should be included in its CITE test certificates, along with operational repositories corresponding to those URIs. Therefore, both methods available in production can be tested in the CITE.
+The closer the test environment is to the production, the more likely issues can be discovered and resolved early in the development and testing process; thus reducing operational issues in the production environment. For example, if a Federal Agency PKI includes both HTTP and LDAP URIs in its production certificates, both types of URIs should be included in its CITE test certificates, along with operational repositories corresponding to those URIs. Therefore, both methods available in production can be tested in the CITE. <br>
 
 ## Technical Specifications
 
@@ -65,13 +65,12 @@ CITE participants shall follow the below technical specifications.
     4. The CITE repositories should match those in the corresponding production environment as accurately as possible, including operating system versions and patch levels, protocols, and product version and patch levels.
     5. All CITE CA certificates, Certificate Revocation Lists (CRLs), and cross-certificates shall be publicly accessible in the associated repository.
     6. Certificate revocation information should, when applicable, be made available using the same mechanism(s) as in the production environment (e.g., OCSP, CRLs).
-4. CITE Participants should provide expired, revoked, and valid test end-entity certificates, including private keys, for application and relying party tests. The sample certificates should be hosted on a publicly accessible directory or website and shared with the FPKI TWG. The website or directory address may be made available through this guide.
+4. CITE Participants should provide expired, revoked, and valid test end-entity certificates, including private keys, for application and relying party tests. The sample certificates should be hosted on a publicly accessible directory or website and shared with the FPKI TWG. The website or directory address may be made available through this guide. CITE Participatns should have test certificates representing each of the certificate policies and certificate types that are issued from the corresponding production environment.
 5. All CITE CA, cross-certificate, and end-entity certificates should match their production counterparts, as applicable.
     1. Test certificates and CRL profiles (including version, key length, extensions, and syntax) shall match that of the production environment.
     2. The CITE CRLs may have a longer validation period than is required in production.
     3. The CITE CA certificates and cross-certificates shall depict the same trust relationships as in the production environment.
     4. CITE Participants should assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See [Appendix A](#Appendix-A) for test OIDs and their production equivalent.
-    5. The sample certificates shall represent each of the certificate policies and certificate types that are issued from the corresponding production environment.
     5. Resource references (such as CRL Distribution Points and Authority Information Access (AIA) points in the CITE certificates must correspond to appropriately functional repositories.
 
 {% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs (see [Appendix A](#Appendix-A) for test certificate policy OIDs)." %} <br>
@@ -84,7 +83,7 @@ Testing and support requests (to include certificate issuance and management req
 
 For unscheduled testing, the CITE and FPKI Partner repositories are internet accessible and available for testing (including vendors and other Relying Parties). Unscheduled testing may be conducted at any time if the below is true.
 1. All parties involved agree to provide the necessary support; or
-2. The testing party does not need support from any other participating FPKI Partner (in which case, the testing party is willing to accept that services may or may not be available).
+2. The testing party does not need support from any other participating FPKI Partner (in which case, the testing party is willing to accept that services may or may not be available). <br>
 
 ## Repository Availability
 
@@ -98,21 +97,19 @@ Each FPKI Partner should leave its repository services operational and available
 | ---- | ---- | ----------- | ----------------------------------- |
 | Mon - Fri | 0900 - 1700 EST | Business Hours (excluding federal holidays) | CITE and FPKI Partner Repository services should be operational and available, except for scheduled downtime |
 | Mon - Fri | 1700 - 0900 EST | Non-Business hours | No requirement |
-| Sat - Sun | 0001 - 0000 EST | Non-Business hours | No requirement |
+| Sat - Sun | 0001 - 0000 EST | Non-Business hours | No requirement | <br>
 
 ## Technical Support Availability
 
 CITE Participants shall provide the FPKI TWG with email and phone information for at least two technical points of contact (POCs), one primary and one backup, to provide technical support when necessary. In lieu of providing individual names for technical POCs, CITE Partcipants may establish a group or other organizational-based email addresses for communications with the appropriate technical POCs. This information will only be made available (in a controlled manner) to CITE Participants, FPKI Applicants (if applicable), and vendors supporting the FPKI as needed during testing or troubleshooting. CITE Participants involved in testing shall provide the issuance, management, and troubleshooting necessary to help resolve any issues.
 
-{% include alert-warning.html content="FPKIMA and FPKI Partner technical support is only available for scheduled testing with any outage resolved on a best effort basis. " %}
-
+{% include alert-warning.html content="FPKIMA and FPKI Partner technical support is only available for scheduled testing with any outage resolved on a best effort basis. " %} <br>
 
 ## Test Websites
 
 | FPKI Partner | Website URL |
 | ------------ | ----------- |
-| No test websites established at this time | |
-
+| No test websites established at this time | | <br>
 
 ## Appendix A 
 
@@ -339,6 +336,12 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | 2.16.840.1.113733.1.7.21.3.15 | Class 3-VTN SSP-Medium Hardware CBP | 2.16.840.1.113733.1.7.23.3.1.15 |
 | 2.16.840.1.113733.1.7.21.3.17 | Class 3-VTN SSP-PIV-I CardAuth | 2.16.840.1.113733.1.7.23.3.1.17 |
 | 2.16.840.1.113733.1.7.21.3.20 | Class 3-VTN SSP-PIV-I ContentSigning | 2.16.840.1.113733.1.7.23.3.1.20 |
+
+#### IdenTrust
+
+| Test OID                    | Policy                 | Production OID     |
+| --------------------------- | ---------------------- | ------------------ |
+| TBA | | |
 
 ### Commercial PKI Bridge Test OIDs
 
