@@ -36,7 +36,7 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| No Activity | | | | |
+| Verizon | Verizon Betrusted Production SSP CA A1 | Federal Common Policy CA | 0601BBDAD5A28231BC9436750B4F3A484BAB06C3 | 12/09/2020 |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
