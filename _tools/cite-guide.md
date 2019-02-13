@@ -33,16 +33,16 @@ Modifications to this document and any waivers are controlled by the FPKI Techni
 
 ## Testing Use Cases
 
-The main purpose of CITE is interoperability and infrastrcuture testing of PKI components and Relying Party applications. Additional types of testing may be identified and conducted as necessary and to the extent supported by CITE Participants. CITE should not be used for system stress testing. Infrastructure testing ensures that upgrades, patches, policy changes, new products, and any other changes to the production FPKI do not adversely affect interoperability.
+The main purpose of CITE is interoperability and infrastructure testing of PKI components and Relying Party applications. Additional types of testing may be identified and conducted as necessary and to the extent supported by CITE Participants. CITE should not be used for system stress testing. Infrastructure testing ensures that upgrades, patches, policy changes, new products, and any other changes to the production FPKI do not adversely affect interoperability.
 
-Relying Party application testing ensures that application modules operate as intended. In addition, application testing ensures that the system as a whole performs adequately on the platform onto which the application will be deployed, and that it interoperates properly within the FPKI environment (i.e., no adverse affect within the FPKI environment).
+Relying Party application testing ensures that application modules operate as intended. In addition, application testing ensures that the system performs as expected and can properly process transactions that rely on FPKI certificates.
 
 Some examples of testing conducted in CITE include:
 1. Interoperability testing between cross-certified Certification Authorities (CAs);
 2. Transition testing to new algorithms (e.g., SHA-2, ECC);
 3. PIV and PIV-I card interoperability testing;
 4. Repository access testing when using content delivery networks, load balancers, or other networking configurations; and
-5. Path discovery and/or validation testing for a particular application
+5. Path discovery and/or validation testing for an application
 
 When testing is successful in CITE, assurance is gained that the proposed change(s) will operate in the production FPKI as intended. When tests fail in the CITE, issues are identified and addressed without production FPKI impact. <br>
 
@@ -60,7 +60,7 @@ CITE participants shall follow the below technical specifications.
 2. Repository availability and technical support should be maintained as detailed in the [Repository Availability](#repository-availability) and [Technical Support Availability](#technical-support-availability) sections.
 3. Test environments should emulate the corresponding production environment as closely as possible
     1. Each CITE Participant CA hierarchy shall mimic their production environment. A CITE Participant may limit the number of included Test CAs to one certified or cross-certified CA and either an intermediate and/or issuing CA.
-    2. All CAs shall be distincly marked to denote it is a test CA. The word "Test" or "Development" should be used in the Distinguished Names (DNs).
+    2. All CAs shall be distinctly marked to denote it is a test CA. The word "Test" or "Development" should be used in the Distinguished Names (DNs).
     3. An exact production replica of all internal CA components (e.g. hardware security modules, network zones, or other non-internet accessible components) is not required.
     4. The CITE Participant repositories should match those in the corresponding production environment as accurately as possible, including operating system versions and patch levels, protocols, and product version and patch levels.
     5. All CITE Participant CA certificates, Certificate Revocation Lists (CRLs), and cross-certificates shall be publicly accessible in the associated repository.
@@ -99,7 +99,7 @@ CITE Participant repositories should be available during regular business hours 
 
 ## Technical Support Availability
 
-CITE Participants shall provide the FPKI Technical Working Group with email and phone information for at least two technical points of contact, one primary and one backup, to provide technical support when necessary. In lieu of providing individual names for technical POCs, CITE Partcipants may establish a group or other organizational-based email addresses for communications with the appropriate technical contacts. This information will only be made available (in a controlled manner) to CITE Participants, FPKI Applicants (if applicable), and vendors supporting the FPKI as needed during testing or troubleshooting. CITE Participants involved in scheduled testing shall provide the issuance, management, and troubleshooting necessary to help resolve any issues.
+CITE Participants shall provide the FPKI Technical Working Group with email and phone information for at least two technical contactsto help coordinate any technical service issues. In lieu of providing individual names for technical POCs, CITE Participants may establish a group or other organizational-based email addresses for communications with the appropriate technical contacts. This information will only be made available (in a controlled manner) to CITE Participants, FPKI Applicants (if applicable), and vendors supporting the FPKI as needed during testing or troubleshooting. CITE Participants involved in scheduled testing shall provide the issuance, management, and troubleshooting necessary to help resolve any issues.
 
 {% include alert-warning.html content="CITE Participant technical support is only available for scheduled testing with any outage resolved on a best effort basis. " %} <br>
 
