@@ -18,80 +18,76 @@ The Federal Public Key Infrastructure (FPKI) has been the subject of various tra
 
 The Community Interoperability Test Environment (CITE) was established as the FPKI integrated test environment. CITE provides the FPKI community with a test environment that mimics the production FPKI hierarchy. It is operated by the Federal PKI Management Authority (FPKIMA) and contains a Test Federal Common Policy and Test Federal Bridge. The FPKIMA operated Test Common and Federal Bridge issue test CA certificates to participating Shared Service Providers, Federal Agency PKI, and Non-Federal Affiliates (referred to as FPKI Partners) to perform interoperability and other forms of testing outlined in this document. CITE has two main purposes:
 
-1. Ensure proper functionality of respective system changes prior to deploying them in a production environment.
-2. Identify and resolve technical issues across FPKI Partners, and
+1. Ensure proper functionality of system changes prior to production deployment, and
+2. Identify and resolve technical issues across FPKI Partners.
 
 The FPKI Community can use CITE to evaluate PKI or application changes in a test environment that mimics the production FPKI hierarchy and test potential interoperability issues before those changes are deployed to the FPKI. <br>
 
 ## Document Scope
 
-This document serves as the CITE participation guidelines, which provides the terms and conditions of CITE participation. Participation in CITE refers to the establishment of a continuous test environment integrated with the CITE. CITE Participants are certified or cross-certified FPKI Partners. This document shall not define how CITE Participants conduct testing.
+This document provides guidelines and specifications for an FPKI Partner to participate in CITE. CITE Participants refer to an FPKI Partner establishing a test PKI certified or cross-certified with the Test Common Policy or Test Bridge CA. This document shall not define how CITE Participants conduct testing.
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
 
-Modifications to this document and any waivers are controlled by the FPKI TWG. <br>
+Modifications to this document and any waivers are controlled by the FPKI Technical Working Group. <br>
 
 ## Testing Use Cases
 
-CITE is available for testing infrastructure components and Relying Party applications. Additional types of testing may be identified and conducted as necessary and to the extent supported by CITE. CITE should not be used for system stress testing. Infrastructure testing ensures that upgrades, patches, policy changes, new products, and any other changes within the FPKI do not adversely affect interoperability.
+The main purpose of CITE is interoperability and infrastrcuture testing of PKI components and Relying Party applications. Additional types of testing may be identified and conducted as necessary and to the extent supported by CITE Participants. CITE should not be used for system stress testing. Infrastructure testing ensures that upgrades, patches, policy changes, new products, and any other changes to the production FPKI do not adversely affect interoperability.
 
 Relying Party application testing ensures that application modules operate as intended. In addition, application testing ensures that the system as a whole performs adequately on the platform onto which the application will be deployed, and that it interoperates properly within the FPKI environment (i.e., no adverse affect within the FPKI environment).
 
-Some examples of testing conducted in the CITE are:
+Some examples of testing conducted in CITE include:
 1. Interoperability testing between cross-certified Certification Authorities (CAs);
 2. Transition testing to new algorithms (e.g., SHA-2, ECC);
 3. PIV and PIV-I card interoperability testing;
 4. Repository access testing when using content delivery networks, load balancers, or other networking configurations; and
 5. Path discovery and/or validation testing for a particular application
 
-When testing is successful in CITE, assurance is gained that the proposed change(s) will operate in the FPKI as intended. When tests fail in the CITE, issues are identified and addressed without FPKI impact. <br>
+When testing is successful in CITE, assurance is gained that the proposed change(s) will operate in the production FPKI as intended. When tests fail in the CITE, issues are identified and addressed without production FPKI impact. <br>
 
 ## Terms and Conditions
 
-To ensure the CITE provides effective services and comprehensive test results, each participating FPKI Partner should emulate its production environment as closely as possible in the CITE. To the extent possible, the test environment should include the same products, logical architecture, and community integration relationships as in the production environment.
+To ensure CITE provides effective services and comprehensive test results, each CITE participant should emulate its production environment as closely as possible in CITE. To the extent possible, the test environment should include the same products, logical architecture, and community integration relationships as in the production environment.
 
-The closer the test environment is to the production, the more likely issues can be discovered and resolved early in the development and testing process; thus reducing operational issues in the production environment. For example, if a Federal Agency PKI includes both HTTP and LDAP URIs in its production certificates, both types of URIs should be included in its CITE test certificates, along with operational repositories corresponding to those URIs. Therefore, both methods available in production can be tested in the CITE. <br>
+The closer the test environment is to the production, the more likely issues can be discovered and resolved early in the development and testing process. For example, if a Federal Agency PKI includes both HTTP and LDAP URIs in its production certificates, both types of URIs should be included in its CITE test certificates, along with operational repositories corresponding to those URIs. Therefore, both methods available in production can be tested in the CITE. <br>
 
 ## Technical Specifications
 
 CITE participants shall follow the below technical specifications.
 
-1. The CITE services shall be internet accessible.
-2. Repository availability and technical support should be maintained as detailed in the Repository Availability and Technical Support Availability sections.
+1. The CITE Participant services shall be internet accessible.
+2. Repository availability and technical support should be maintained as detailed in the [Repository Availability](#repository-availability) and [Technical Support Availability](#technical-support-availability) sections.
 3. Test environments should emulate the corresponding production environment as closely as possible
-    1. Each FPKI Partner CA hierarchy shall mimic their production environment. An FPKI Partner may limit the number of included Test CAs to one certified or cross-certified CA and either an intermediate and/or issuing CA.
+    1. Each CITE Participant CA hierarchy shall mimic their production environment. A CITE Participant may limit the number of included Test CAs to one certified or cross-certified CA and either an intermediate and/or issuing CA.
     2. All CAs shall be distincly marked to denote it is a test CA. The word "Test" or "Development" should be used in the Distinguished Names (DNs).
-    3. All internal CA components (e.g. hardware security modules, network zones, or other non-internet accessible components) are not required to be replicated in the test environment.
-    4. The CITE repositories should match those in the corresponding production environment as accurately as possible, including operating system versions and patch levels, protocols, and product version and patch levels.
-    5. All CITE CA certificates, Certificate Revocation Lists (CRLs), and cross-certificates shall be publicly accessible in the associated repository.
+    3. An exact production replica of all internal CA components (e.g. hardware security modules, network zones, or other non-internet accessible components) is not required.
+    4. The CITE Participant repositories should match those in the corresponding production environment as accurately as possible, including operating system versions and patch levels, protocols, and product version and patch levels.
+    5. All CITE Participant CA certificates, Certificate Revocation Lists (CRLs), and cross-certificates shall be publicly accessible in the associated repository.
     6. Certificate revocation information should, when applicable, be made available using the same mechanism(s) as in the production environment (e.g., OCSP, CRLs).
-4. CITE Participants should provide expired, revoked, and valid test end-entity certificates, including private keys, for application and relying party tests. The sample certificates should be hosted on a publicly accessible directory or website and shared with the FPKI TWG. The website or directory address may be made available through this guide. CITE Participatns should have test certificates representing each of the certificate policies and certificate types that are issued from the corresponding production environment.
-5. All CITE CA, cross-certificate, and end-entity certificates should match their production counterparts, as applicable.
+4. CITE Participants should provide expired, revoked, and valid test end-entity certificates, including private keys, for application and relying party tests. The sample certificates should be hosted on a publicly accessible directory or website and shared with the FPKI Technical Working Group. The website or directory address may be made available through this guide. CITE Participants should have test certificates representing each of the certificate policies and certificate types that are issued from the corresponding production environment.
+5. All CITE Participant CAs and end-entity certificates should match their production counterparts, as applicable.
     1. Test certificates and CRL profiles (including version, key length, extensions, and syntax) shall match that of the production environment.
     2. The CITE CRLs may have a longer validation period than is required in production.
     3. The CITE CA certificates and cross-certificates shall depict the same trust relationships as in the production environment.
-    4. CITE Participants should assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See [Appendix A](#Appendix-A) for test OIDs and their production equivalent.
-    5. Resource references (such as CRL Distribution Points and Authority Information Access (AIA) points in the CITE certificates must correspond to appropriately functional repositories.
+    4. CITE Participants should assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See [Appendix A](#appendix-a) for test OIDs and their production equivalent.
+    5. Resource references (such as CRL Distribution Points and Authority Information Access (AIA) points in the CITE certificates shall correspond to appropriately functional repositories.
 
-{% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs (see [Appendix A](#Appendix-A) for test certificate policy OIDs)." %} <br>
+{% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs (see [Appendix A](#appendix-a) for test certificate policy OIDs)." %} <br>
 
 ## Scheduled and Unscheduled Testing
 
-Testing and support requests (to include certificate issuance and management requests) shall be scheduled and coordinated. This will allow CITE Participants to appropriately plan and schedule any technical support needed for successful testing.
+Testing and support requests (to include certificate issuance and management requests) shall be scheduled and coordinated in advance. This will allow CITE Participants to appropriately plan and schedule any technical support needed for successful testing.
 
-{% include alert-info.html heading="Testing requests can be submitted to the FPKI TWG at fpki-ttips@listserv.gsa.gov. All testing requests should be submitted ten business days in advance." %} <br>
+{% include alert-info.html heading="Testing requests can be submitted to the FPKI Technical Working Group at fpki-ttips@listserv.gsa.gov. All testing requests should be submitted ten business days in advance." %} <br>
 
 For unscheduled testing, the CITE and FPKI Partner repositories are internet accessible and available for testing (including vendors and other Relying Parties). Unscheduled testing may be conducted at any time if the below is true.
 1. All parties involved agree to provide the necessary support; or
-2. The testing party does not need support from any other participating FPKI Partner (in which case, the testing party is willing to accept that services may or may not be available). <br>
+2. The testing party does not need support from any other CITE Participant (in which case, the testing party is willing to accept that services may or may not be available). <br>
 
 ## Repository Availability
 
-CITE and FPKI Partner repositories should be available during regular business hours for scheduled and unscheduled testing. The CITE repository services operated by the FPKIMA are internet accessible, operational, and may be available up to 24 hours a day, 7 days a week with the exception of scheduled downtime, non-business hours, and federal holidays. The CITE Participants will be notified in advance to the extent possible of any downtime and its scheduled duration. Any downtime notices may be posted to the FPKI Guides system notification page at https://fpki.idmanagement.gov/notifications/.
-
-{% include alert-warning.html content="CITE, at a minimum, will provide 20% availability per month. CITE should not be used or relied upon for near-production availability." %} <br>
-
-Each FPKI Partner should leave its repository services operational and available 24 hours a day, 7 days a week. CITE Participants should follow the below table on repository availability requirements.
+CITE Participant repositories should be available during regular business hours for scheduled and unscheduled testing. Each CITE Participant should leave its repository services operational and available 24 hours a day, 7 days a week. CITE Participants should follow the below table on repository availability requirements.
 
 | Days | Time | Description | Repository Availability Requirement |
 | ---- | ---- | ----------- | ----------------------------------- |
@@ -99,11 +95,13 @@ Each FPKI Partner should leave its repository services operational and available
 | Mon - Fri | 1700 - 0900 EST | Non-Business hours | No requirement |
 | Sat - Sun | 0001 - 0000 EST | Non-Business hours | No requirement | <br>
 
+{% include alert-warning.html content="CITE Test Common Policy and Test Federal Bridge, at a minimum, will provide 20% availability per month. CITE should not be used or relied upon for near-production availability." %} <br>
+
 ## Technical Support Availability
 
-CITE Participants shall provide the FPKI TWG with email and phone information for at least two technical points of contact (POCs), one primary and one backup, to provide technical support when necessary. In lieu of providing individual names for technical POCs, CITE Partcipants may establish a group or other organizational-based email addresses for communications with the appropriate technical POCs. This information will only be made available (in a controlled manner) to CITE Participants, FPKI Applicants (if applicable), and vendors supporting the FPKI as needed during testing or troubleshooting. CITE Participants involved in testing shall provide the issuance, management, and troubleshooting necessary to help resolve any issues.
+CITE Participants shall provide the FPKI Technical Working Group with email and phone information for at least two technical points of contact, one primary and one backup, to provide technical support when necessary. In lieu of providing individual names for technical POCs, CITE Partcipants may establish a group or other organizational-based email addresses for communications with the appropriate technical contacts. This information will only be made available (in a controlled manner) to CITE Participants, FPKI Applicants (if applicable), and vendors supporting the FPKI as needed during testing or troubleshooting. CITE Participants involved in scheduled testing shall provide the issuance, management, and troubleshooting necessary to help resolve any issues.
 
-{% include alert-warning.html content="FPKIMA and FPKI Partner technical support is only available for scheduled testing with any outage resolved on a best effort basis. " %} <br>
+{% include alert-warning.html content="CITE Participant technical support is only available for scheduled testing with any outage resolved on a best effort basis. " %} <br>
 
 ## Test Websites
 
