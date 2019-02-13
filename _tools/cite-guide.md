@@ -90,10 +90,10 @@ For unscheduled testing, the CITE and FPKI Partner repositories are internet acc
 CITE Participant repositories should be available during regular business hours for scheduled and unscheduled testing. Each CITE Participant should leave its repository services operational and available 24 hours a day, 7 days a week. CITE Participants should follow the below table on repository availability requirements.
 
 | Days | Time | Description | Repository Availability Requirement |
-| ---- | ---- | ----------- | ----------------------------------- |
-| Mon - Fri | 0900 - 1700 EST | Business Hours (excluding federal holidays) | CITE and FPKI Partner Repository services should be operational and available, except for scheduled downtime |
+| --------- | --------------- | ------------------ | ----------------------------------- |
+| Mon - Fri | 0900 - 1700 EST | Business Hours     | CITE Participant repository services should be operational and available, except for scheduled downtime and federal holidays. |
 | Mon - Fri | 1700 - 0900 EST | Non-Business hours | No requirement |
-| Sat - Sun | 0001 - 0000 EST | Non-Business hours | No requirement | <br>
+| Sat - Sun | 0001 - 0000 EST | Non-Business hours | No requirement |
 
 {% include alert-warning.html content="CITE Test Common Policy and Test Federal Bridge, at a minimum, will provide 20% availability per month. CITE should not be used or relied upon for near-production availability." %} <br>
 
@@ -107,7 +107,7 @@ CITE Participants shall provide the FPKI Technical Working Group with email and 
 
 | FPKI Partner | Website URL |
 | ------------ | ----------- |
-| No test websites established at this time | | <br>
+| No test websites established at this time | |
 
 ## Appendix A 
 
