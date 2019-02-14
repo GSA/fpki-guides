@@ -498,7 +498,7 @@
   
 - notice_date: January 3, 2019
   change_type: CA Certificate Issuance
-  start_datetime: Monday, February 11, 2019 7:00:00 PM
+  start_datetime: February 11, 2019
   system: TSCP SHA256 Bridge CA
   change_description: Issuance of a cross-certificate to Fortior Solutions, Inc.
   contact: steve.race at tscp dot org
@@ -510,7 +510,7 @@
 
 - notice_date: January 3, 2019
   change_type: CA Certificate Issuance
-  start_datetime: Monday, February 11, 2019 7:00:00 PM
+  start_datetime: February 11, 2019
   system: Fortior Solutions Intermediate CA 2018
   change_description: Issuance of a cross-certificate to TSCP Bridge
   contact: steve.race at tscp dot org
@@ -522,7 +522,7 @@
   
 - notice_date: February 4, 2019
   change_type: CA Certificate Issuance
-  start_datetime: Wednesday, January 23, 2019 7:00:00 PM
+  start_datetime: January 23, 2019
   system: TSCP SHA256 Bridge CA
   change_description: Issuance of a cross-certificate to Alexion Pharmaceuticals, Inc
   contact: steve.race at tscp dot org
