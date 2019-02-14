@@ -555,8 +555,8 @@
 
 - notice_date: February 12, 2019
   change_type: Intent to Perform CA Certificate Revocation
-  start_datetime: December 9, 2010
-  end_datetime: December 9, 2020
+  start_datetime:  
+  end_datetime:  
   system: FPKI Trust Infrastructure - Federal Common Policy CA
   change_description: Revocation planned for the certificate issued from the Federal Bridge CA 2016 to the Verizon Betrusted Production SSP CA A1
   contact: FPKI dash help at gsa dot gov
