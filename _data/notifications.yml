@@ -533,13 +533,13 @@
   aia_uri: http://cacer.symauth.com/mpki/AlexionIssuingCA2.p7c
 
 - notice_date: February 11, 2019
-  change_type: CA Certificate Issuance
+  change_type: Intent to Perform CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge 2016
   change_description: New cross-certificate issued from Federal Bridge CA 2016 to STRAC Bridge Root Certification Authority
   contact: fpki at gsa dot gov
 
 - notice_date: February 11, 2019
-  change_type: CA Certificate Revocation
+  change_type: Intent to Perform CA Certificate Revocation
   system: FPKI Trust Infrastructure - Federal Bridge 2016
   change_description: Revocation of the certificate issued from the Federal Bridge CA 2016 to the DigiCert Federated ID CA-1
   contact: fpki at gsa dot gov
@@ -548,13 +548,13 @@
   ca_certificate_subject: DigiCert Federated ID CA-1  
   
 - notice_date: February 11, 2019
-  change_type: CA Certificate Issuance
+  change_type: Intent to Perform CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge 2016
   change_description: New cross-certificate issued from Federal Bridge CA 2016 to DigiCert Federated ID L3 CA
   contact: fpki at gsa dot gov
 
 - notice_date: February 12, 2019
-  change_type: CA Certificate Revocation
+  change_type: Intent to Perform CA Certificate Revocation
   start_datetime: December 9, 2010
   end_datetime: December 9, 2020
   system: FPKI Trust Infrastructure - Federal Common Policy CA
