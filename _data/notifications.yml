@@ -497,6 +497,92 @@
   cdp_uri: http://sbca2.safe-biopharma.org/sbca/SBCA02.crl
   aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c
   
+  
+- notice_date: January 3, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: Monday, February 11, 2019 7:00:00 PM
+  system: TSCP SHA256 Bridge CA
+  change_description: Issuance of a cross-certificate to Fortior Solutions, Inc.
+  contact: steve.race at tscp dot org
+  ca_certificate_hash: aebdf407b44afd431d8364012e096aea2a32a55d
+  ca_certificate_issuer: CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US
+  ca_certificate_subject: CN = Fortior Solutions Intermediate CA 2018, OU = Certificate Authorities, O = Fortior Solutions, C = US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+
+- notice_date: January 3, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: Monday, February 11, 2019 7:00:00 PM
+  system: Fortior Solutions Intermediate CA 2018
+  change_description: Issuance of a cross-certificate to TSCP Bridge
+  contact: steve.race at tscp dot org
+  ca_certificate_hash: dc4b77d79b815187f5e0e73d13f6fe41cab86fab
+  ca_certificate_issuer: CN = Fortior Solutions Intermediate CA 2018, OU = Certificate Authorities, O = Fortior Solutions, C = US
+  ca_certificate_subject: CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US
+  cdp_uri: http://pki-crl.symauth.com/FortiorSolutions/FortiorSolutionsICA2018.crl
+  aia_uri: http://cacer.symauth.com/mpki/FortiorSolutionsICA2018.p7c  
+  
+- notice_date: February 4, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: Wednesday, January 23, 2019 7:00:00 PM
+  system: TSCP SHA256 Bridge CA
+  change_description: Issuance of a cross-certificate to Alexion Pharmaceuticals, Inc
+  contact: steve.race at tscp dot org
+  ca_certificate_hash: 692a53fa725e5581a5b1db1c3d7b27e6feb9cae8
+  ca_certificate_issuer: CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US
+  ca_certificate_subject: CN = Alexion Pharmaceuticals Issue 2 CA, OU = CAs, O = Alexion Pharmaceuticals, C = US
+  cdp_uri: http://pki-crl.symauth.com/ca_1e66febad947306a6a338bb6f7971bca/LatestCRL.crl
+  aia_uri: http://cacer.symauth.com/mpki/AlexionIssuingCA2.p7c
+
+- notice_date: February 11, 2019
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge 2016
+  change_description: New cross-certificate issued from Federal Bridge CA 2016 to STRAC Bridge Root Certification Authority
+  contact: fpki at gsa dot gov
+  ca_certificate_hash:
+  ca_certificate_issuer:
+  ca_certificate_subject:
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+  
+- notice_date: February 11, 2019
+  change_type: CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Bridge 2016
+  change_description: Revocation of the certificate issued from the Federal Bridge CA 2016 to the DigiCert Federated ID CA-1
+  contact: fpki at gsa dot gov
+  ca_certificate_hash: e8 0b dd c6 1e d8 c4 3a d0 95 fc 94 62 17 be 45 bd d3 47 c1
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: DigiCert Federated ID CA-1  
+  
+- notice_date: February 11, 2019
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge 2016
+  change_description: New cross-certificate issued from Federal Bridge CA 2016 to DigiCert Federated ID L3 CA
+  contact: fpki at gsa dot gov
+  ca_certificate_hash:
+  ca_certificate_issuer:
+  ca_certificate_subject:
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+  
+- notice_date: February 12, 2019
+  change_type: CA Certificate Revocation
+  start_datetime: December 9, 2010
+  end_datetime: December 9, 2020
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: Revocation of the Verizon Betrusted Production SSP CA A1
+  contact: FPKI dash help at gsa dot gov
+  ca_certificate_hash: 06 01 bb da d5 a2 82 31 bc 94 36 75 0b 4f 3a 48 4b ab 06 c3
+  ca_certificate_issuer: Federal Common Policy CA
+  ca_certificate_subject: Betrusted Production SSP CA A1
+
+
 #- notice_date: 
 #  change_type: CA Certificate Issuance
 #  start_datetime:
