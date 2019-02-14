@@ -535,13 +535,13 @@
 - notice_date: February 11, 2019
   change_type: Intent to Perform CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: New cross-certificate issued from Federal Bridge CA 2016 to STRAC Bridge Root Certification Authority
+  change_description: New cross-certificate planned for issuance from Federal Bridge CA 2016 to STRAC Bridge Root Certification Authority
   contact: fpki at gsa dot gov
 
 - notice_date: February 11, 2019
   change_type: Intent to Perform CA Certificate Revocation
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: Revocation of the certificate issued from the Federal Bridge CA 2016 to the DigiCert Federated ID CA-1
+  change_description: Revocation planned for the certificate issued from the Federal Bridge CA 2016 to DigiCert Federated ID CA-1
   contact: fpki at gsa dot gov
   ca_certificate_hash: e8 0b dd c6 1e d8 c4 3a d0 95 fc 94 62 17 be 45 bd d3 47 c1
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -550,7 +550,7 @@
 - notice_date: February 11, 2019
   change_type: Intent to Perform CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: New cross-certificate issued from Federal Bridge CA 2016 to DigiCert Federated ID L3 CA
+  change_description: New cross-certificate planned for issuance from Federal Bridge CA 2016 to DigiCert Federated ID L3 CA
   contact: fpki at gsa dot gov
 
 - notice_date: February 12, 2019
@@ -558,7 +558,7 @@
   start_datetime: December 9, 2010
   end_datetime: December 9, 2020
   system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: Revocation of the Verizon Betrusted Production SSP CA A1
+  change_description: Revocation planned for the certificate issued from the Federal Bridge CA 2016 to the Verizon Betrusted Production SSP CA A1
   contact: FPKI dash help at gsa dot gov
   ca_certificate_hash: 06 01 bb da d5 a2 82 31 bc 94 36 75 0b 4f 3a 48 4b ab 06 c3
   ca_certificate_issuer: Federal Common Policy CA
