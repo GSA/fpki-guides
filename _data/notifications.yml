@@ -484,7 +484,6 @@
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
   sia_uri: http://ssp-sia.digicert.com/SSP/Certs_issued_by_SSPCAG5.p7c
 
-
 - notice_date: December 19, 2018
   change_type: CA Certificate Issuance
   start_datetime: December 19, 2018
@@ -496,7 +495,6 @@
   ca_certificate_subject: CN = IdenTrust SAFE-BioPharma CA 1, OU = IdenTrust Global Common, O = IdenTrust, C = US
   cdp_uri: http://sbca2.safe-biopharma.org/sbca/SBCA02.crl
   aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c
-  
   
 - notice_date: January 3, 2019
   change_type: CA Certificate Issuance
@@ -536,18 +534,10 @@
 
 - notice_date: February 11, 2019
   change_type: CA Certificate Issuance
-  start_datetime:
   system: FPKI Trust Infrastructure - Federal Bridge 2016
   change_description: New cross-certificate issued from Federal Bridge CA 2016 to STRAC Bridge Root Certification Authority
   contact: fpki at gsa dot gov
-  ca_certificate_hash:
-  ca_certificate_issuer:
-  ca_certificate_subject:
-  cdp_uri:
-  aia_uri:
-  sia_uri:
-  ocsp_uri:
-  
+
 - notice_date: February 11, 2019
   change_type: CA Certificate Revocation
   system: FPKI Trust Infrastructure - Federal Bridge 2016
@@ -559,18 +549,10 @@
   
 - notice_date: February 11, 2019
   change_type: CA Certificate Issuance
-  start_datetime:
   system: FPKI Trust Infrastructure - Federal Bridge 2016
   change_description: New cross-certificate issued from Federal Bridge CA 2016 to DigiCert Federated ID L3 CA
   contact: fpki at gsa dot gov
-  ca_certificate_hash:
-  ca_certificate_issuer:
-  ca_certificate_subject:
-  cdp_uri:
-  aia_uri:
-  sia_uri:
-  ocsp_uri:
-  
+
 - notice_date: February 12, 2019
   change_type: CA Certificate Revocation
   start_datetime: December 9, 2010
@@ -582,7 +564,7 @@
   ca_certificate_issuer: Federal Common Policy CA
   ca_certificate_subject: Betrusted Production SSP CA A1
 
- - notice_date: February 13, 2019
+- notice_date: February 13, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 18, 2018
   system: DigiCert Federal SSP Intermediate CA - G5
@@ -595,7 +577,7 @@
   aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
   ocsp_uri: http://ssp-ocsp.digicert.com
   
- - notice_date: February 13, 2019
+- notice_date: February 13, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 18, 2018
   system: DigiCert Federal SSP Intermediate CA - G5
