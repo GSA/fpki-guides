@@ -582,6 +582,32 @@
   ca_certificate_issuer: Federal Common Policy CA
   ca_certificate_subject: Betrusted Production SSP CA A1
 
+ - notice_date: February 13, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: December 18, 2018
+  system: DigiCert Federal SSP Intermediate CA - G5
+  change_description: Certificate issuance to NRC SSP Agency CA G4
+  contact: steve dot medin at digicert dot com
+  ca_certificate_hash: 1a03581dcf159d206accd7bdd176c788a0862353
+  ca_certificate_issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
+  ca_certificate_subject: CN = NRC SSP Agency CA G4, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
+  cdp_uri: http://ssp-crl.digicert.com/SSP/SSPG5.crl
+  aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
+  ocsp_uri: http://ssp-ocsp.digicert.com
+  
+ - notice_date: February 13, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: December 18, 2018
+  system: DigiCert Federal SSP Intermediate CA - G5
+  change_description: Certificate issuance to NRC SSP Device CA G4
+  contact: steve dot medin at digicert dot com
+  ca_certificate_hash: 81f4fdb9f5dca2940416d483f011111984116ba9
+  ca_certificate_issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
+  ca_certificate_subject: CN = NRC SSP Device CA G4, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
+  cdp_uri: http://ssp-crl.digicert.com/SSP/SSPG5.crl
+  aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
+  ocsp_uri: http://ssp-ocsp.digicert.com
+  
 
 #- notice_date: 
 #  change_type: CA Certificate Issuance
