@@ -186,15 +186,6 @@ The table below lists the current test to production OID equivalent used by the 
 | N/A | ECA Medium Hardware | 2.16.840.1.101.3.2.1.12.2 |
 | N/A | ECA Medium Token | 2.16.840.1.101.3.2.1.12.3 |
 
-#### Department of Energy (DOE)
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.19 | doe-basic | 2.16.840.1.101.3.2.1.10.1 |
-| 2.16.840.1.101.3.2.1.48.20 | doe-medium | 2.16.840.1.101.3.2.1.10.2 |
-| 2.16.840.1.101.3.2.1.48.21 | doe-high | 2.16.840.1.101.3.2.1.10.3 |
-| 2.16.840.1.101.3.2.1.48.22 | doe-medium-v2 | 2.16.840.1.101.3.2.1.10.4 |
-
 #### Department of Homeland Security (DHS)
 
 | Test OID                    | Policy                 | Production OID     |
@@ -204,16 +195,6 @@ The table below lists the current test to production OID equivalent used by the 
 | 2.16.840.1.101.3.2.1.15.33 | id-dhs-certpcy-medium | 2.16.840.1.101.3.2.1.15.3 |
 | 2.16.840.1.101.3.2.1.15.34 | id-dhs-certpcy-high | 2.16.840.1.101.3.2.1.15.4 |
 | 2.16.840.1.101.3.2.1.15.35 | id-dhs-certpcy-mediumHardware | 2.16.840.1.101.3.2.1.15.5 |
-
-#### Department of Justice (DOJ)
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.23 | id-doj-Class1 | 2.16.840.1.101.3.2.1.16.1
-| 2.16.840.1.101.3.2.1.48.24 | id-doj-Class2 | 2.16.840.1.101.3.2.1.16.2
-| 2.16.840.1.101.3.2.1.48.25 | id-doj-Class3 | 2.16.840.1.101.3.2.1.16.3
-| 2.16.840.1.101.3.2.1.48.26 | id-doj-Class4 | 2.16.840.1.101.3.2.1.16.4
-| 2.16.840.1.101.3.2.1.48.27 | id-doj-Class5 | 2.16.840.1.101.3.2.1.16.5
 
 #### Department of State (DOS)
 
@@ -241,13 +222,6 @@ The table below lists the current test to production OID equivalent used by the 
 | 2.16.840.1.101.3.2.1.48.112 | treasury-pivi-cardAuth | 2.16.840.1.101.3.2.1.5.11 |
 | 2.16.840.1.101.3.2.1.48.113 | treasury-pivi-contentSigning | 2.16.840.1.101.3.2.1.5.12 |
 
-#### Federal Bureau of Investigation (FBI)
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.28 | id-fbi-mediumAssurance | 2.16.840.1.101.3.2.1.16.6.1 |
-| 2.16.840.1.101.3.2.1.48.29 | id-fbi-highAssurance | 2.16.840.1.101.3.2.1.16.6.2 |
-
 #### GSA FIPS 201 Approved Product List (APL)
 
 | Test OID                    | Policy                 | Production OID     |
@@ -263,12 +237,6 @@ The table below lists the current test to production OID equivalent used by the 
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
 | 2.16.840.1.101.3.2.1.48.37 | id-gpo-medium | 2.16.840.1.101.3.2.1.17.1 |
-
-#### Internal Revenue Service (IRS)
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.59 | id-US-IRS-Securemail | 2.16.840.1.101.3.2.1.5.6 |
 
 #### U.S. Patent and Trademark Office (USPTO)
 
@@ -295,7 +263,7 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 
 ### Non-Federal Issuer (NFI) Test OIDs
 
-#### Entrust Management Services
+#### Entrust Managed Services
 
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
@@ -316,15 +284,11 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | 2.16.840.1.114412.99.4.1.1 | DigiCert Level 1 Client Certificate - Personal | 2.16.840.1.114412.4.1.1 |
 | 2.16.840.1.114412.99.4.1.2 | DigiCert Level 1 Client Certificate - Enterprise | 2.16.840.1.114412.4.1.2 |
 | 2.16.840.1.114412.99.4.2 | DigiCert Level 2 Client Certificate - Basic | 2.16.840.1.114412.4.2 |
-| 2.16.840.1.114412.99.4.3.1 | DigiCert Level 3 Client Certificate - US -Medium | 2.16.840.1.114412.4.3.1 |  
-| 2.16.840.1.114412.99.4.3.2 | DigiCert Level 3 Client Certificate - CBP -Medium | 2.16.840.1.114412.4.3.2 |
+| 2.16.840.1.114412.99.4.3.1 | DigiCert Level 3 Client Certificate - US - Medium | 2.16.840.1.114412.4.3.1 |  
+| 2.16.840.1.114412.99.4.3.2 | DigiCert Level 3 Client Certificate - CBP - Medium | 2.16.840.1.114412.4.3.2 |
 | 2.16.840.1.114412.99.4.4.1 | Digicert Level 4 Client Certificate - US - Hardware | 2.16.840.1.114412.4.4.1 |
-| 2.16.840.1.114412.99.4.4.2 | Digicert Level 4 Client Certificate - CBP -  Hardware | 2.16.840.1.114412.4.4.2 |
-| 2.16.840.1.114412.99.4.5.1 | Level 4 PIV-I - Hardware | 2.16.840.1.114412.4.5.1 |
-| 2.16.840.1.114412.99.4.5.2 | DigiCert Level 4 PIV-I - Card Authentication | 2.16.840.1.114412.4.5.2 |
-| 2.16.840.1.114412.99.4.5.3 | DigiCert Level 4 PIV-I - Content Signing | 2.16.840.1.114412.4.5.3 |
-| 2.16.840.1.114412.99.1.11 | DigiCert OV SSL | 2.16.840.1.114412.1.11 |
-| 2.16.840.1.113733.1.7.21.1.1 | Class -1-VTN SSP-rudimentary | 2.16.840.1.113733.1.7.23.1.1.1 |
+| 2.16.840.1.114412.99.4.4.2 | Digicert Level 4 Client Certificate - CBP - Hardware | 2.16.840.1.114412.4.4.2 |
+| 2.16.840.1.113733.1.7.21.1.1 | Class 1-VTN SSP-rudimentary | 2.16.840.1.113733.1.7.23.1.1.1 |
 | 2.16.840.1.113733.1.7.21.2.1 | Class 2-VTN SSP-basic | 2.16.840.1.113733.1.7.23.2.1.1 |
 | 2.16.840.1.113733.1.7.21.3.6 | Class 3-VTN SSP-medium | 2.16.840.1.113733.1.7.23.3.1.6 |
 | 2.16.840.1.113733.1.7.21.3.7 | Class 3-VTN SSP-mediumHardware | 2.16.840.1.113733.1.7.23.3.1.7 |
@@ -334,12 +298,6 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | 2.16.840.1.113733.1.7.21.3.15 | Class 3-VTN SSP-Medium Hardware CBP | 2.16.840.1.113733.1.7.23.3.1.15 |
 | 2.16.840.1.113733.1.7.21.3.17 | Class 3-VTN SSP-PIV-I CardAuth | 2.16.840.1.113733.1.7.23.3.1.17 |
 | 2.16.840.1.113733.1.7.21.3.20 | Class 3-VTN SSP-PIV-I ContentSigning | 2.16.840.1.113733.1.7.23.3.1.20 |
-
-#### IdenTrust
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| TBA | | |
 
 ### Commercial PKI Bridge Test OIDs
 
@@ -370,90 +328,3 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | 1.3.6.1.4.1.24019.1.1.1.113 | CertiPath variant medium CBP Software | 1.3.6.1.4.1.24019.1.1.1.20 |
 | 1.3.6.1.4.1.24019.1.1.1.114 | CertiPath variant medium CBP Hardware | 1.3.6.1.4.1.24019.1.1.1.21 |
 | 1.3.6.1.4.1.24019.1.1.1.115 | CertiPath variant high CBP Hardware | 1.3.6.1.4.1.24019.1.1.1.22 |
-
-### Deprecated Test OIDS
-
-#### Federal PKI eGovernance CA (EGCA)
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.14 | id-eGov-Level1  | 2.16.840.1.101.3.2.1.3.9 |
-| 2.16.840.1.101.3.2.1.48.15 | id-eGov-Level2 | 2.16.840.1.101.3.2.1.3.10 |
-| 2.16.840.1.101.3.2.1.48.16 | id-eGov-Applications | 2.16.840.1.101.3.2.1.3.11 |
-| 2.16.840.1.101.3.2.1.48.90 | id-eGov-BAE-Broker | 2.16.840.1.101.3.2.1.3.32 |
-| 2.16.840.1.101.3.2.1.48.91 | id-eGov-RelyingParty | 2.16.840.1.101.3.2.1.3.33 |
-| 2.16.840.1.101.3.2.1.48.92 | id-eGov-MetaSigner- |2.16.840.1.101.3.2.1.3.34 |
-| 2.16.840.1.101.3.2.1.48.93 | id-eGov-MetaSigner-Hardware | 2.16.840.1.101.3.2.1.3.35 |
-| 2.16.840.1.101.3.2.1.48.94 | id-eGov-Level1-IdP | 2.16.840.1.101.3.2.1.3.28 |
-| 2.16.840.1.101.3.2.1.48.95 | id-eGov-Level2-IdP | 2.16.840.1.101.3.2.1.3.29 |
-| 2.16.840.1.101.3.2.1.48.96 | id-eGov-Level3-IdP | 2.16.840.1.101.3.2.1.3.30 |
-| 2.16.840.1.101.3.2.1.48.97 | id-eGov-Level4-IdP | 2.16.840.1.101.3.2.1.3.31 |
- 
-#### Federal PKI SHA-1 CA (SHA1FRCA)
-
-| Test OID                    | Policy                 | Production OID            |
-| --------------------------- | ---------------------- | ------------------------- |
-| 2.16.840.1.101.3.2.1.48.101 | id-sha1-medium-CBP     | 2.16.840.1.101.3.2.1.3.21 |
-| 2.16.840.1.101.3.2.1.48.102 |	id-sha1-mediumHW-CBP   | 2.16.840.1.101.3.2.1.3.22 |
-| 2.16.840.1.101.3.2.1.48.81  | id-sha1-policy         | 2.16.840.1.101.3.2.1.3.23 |
-| 2.16.840.1.101.3.2.1.48.82  | id-sha1-hardware       | 2.16.840.1.101.3.2.1.3.24 |
-| 2.16.840.1.101.3.2.1.48.83  | id-sha1-devices        | 2.16.840.1.101.3.2.1.3.25 |
-| 2.16.840.1.101.3.2.1.48.84  | id-sha1-authentication | 2.16.840.1.101.3.2.1.3.26 |
-| 2.16.840.1.101.3.2.1.48.85  | id-sha1-cardAuth       | 2.16.840.1.101.3.2.1.3.27 |
-
-#### Federal PKI Citizen and Commerce CA (C4CA)
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.17 | Citizen & Commerce Provisional | 2.16.840.1.101.3.2.1.14.1 |
-| 2.16.840.1.101.3.2.1.48.18 | Citizen & Commerce Approved | 2.16.840.1.101.3.2.1.14.2 |
-
-#### General Services Administration Access Certificates for Electronic Services (GSA ACES)
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.30 | aces-ca | 2.16.840.1.101.3.2.1.1.1 |
-| 2.16.840.1.101.3.2.1.48.31 | aces-identity | 2.16.840.1.101.3.2.1.1.2 |
-| 2.16.840.1.101.3.2.1.48.32 | aces-business-rep | 2.16.840.1.101.3.2.1.1.3 |
-| 2.16.840.1.101.3.2.1.48.33 | aces-relying-party | 2.16.840.1.101.3.2.1.1.4 |
-| 2.16.840.1.101.3.2.1.48.34 | aces-SSL | 2.16.840.1.101.3.2.1.1.5 |
-| 2.16.840.1.101.3.2.1.48.35 | aces-fed-employee | 2.16.840.1.101.3.2.1.1.6 |
-| 2.16.840.1.101.3.2.1.48.36 | aces-fed-employee-hw | 2.16.840.1.101.3.2.1.1.7 |
-
-#### Wells Fargo
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.73 | Wells Fargo CPS | 2.16.840.1.114171.500.0.0 |
-
-#### State of Illinois
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.38 | State of Illinois Level I (software) | 2.16.840.114273.1.1.1.1 |
-| 2.16.840.1.101.3.2.1.48.39 | State of Illinois Level I (hardware) | 2.16.840.114273.1.1.1.2 |
-| 2.16.840.1.101.3.2.1.48.40 | State of Illinois Level II (software) | 2.16.840.114273.1.1.1.3 |
-| 2.16.840.1.101.3.2.1.48.41 | State of Illinois Level II (hardware) | 2.16.840.114273.1.1.1.4 |
-| 2.16.840.1.101.3.2.1.48.42 | State of Illinois Level III (software) | 2.16.840.114273.1.1.1.5 |
-| 2.16.840.1.101.3.2.1.48.43 | State of Illinois Level III (hardware) | 2.16.840.114273.1.1.1.6 |
-| 2.16.840.1.101.3.2.1.48.44 | State of Illinois Level IV (hardware only) | 2.16.840.114273.1.1.1.7 |
-| 2.16.840.1.101.3.2.1.48.45 | State of Illinois MEDI Single-Use Certificate | 2.16.840.114273.1.1.2.1 |
-
-#### National Finance Center (NFC)
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.46 | nfc-basicAssurance | 2.16.840.1.101.3.2.1.8.1 |
-| 2.16.840.1.101.3.2.1.48.47 | nfc-mediumAssurance | 2.16.840.1.101.3.2.1.8.2 |
-| 2.16.840.1.101.3.2.1.48.48 | nfc-highAssurance | 2.16.840.1.101.3.2.1.8.3 |
-
-#### United State Postal Service (USPS)
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.103 | idusps-certpcy-rudimentaryAssurance | TBD |
-| 2.16.840.1.101.3.2.1.48.104 | idusps-certpcy-basicAssurance | TBD |
-| 2.16.840.1.101.3.2.1.48.105 | idusps-certpcy-mediumAssurance | TBD |
-| 2.16.840.1.101.3.2.1.48.106 | idusps-certpcy-mediumHardware | TBD |
-| 2.16.840.1.101.3.2.1.48.107 | idusps-certpcy-mediumDevice | TBD |
-| 2.16.840.1.101.3.2.1.48.108 | idusps-certpcy-mediumDeviceHardware | TBD |
