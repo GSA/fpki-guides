@@ -5,31 +5,24 @@ collection: tools
 permalink: /tools/citeguide/
 ---
 
-# Community Interoperability Test Environment (CITE) Participation Guidance
-
 Prepared By: The FPKI Technical Working Group (TWG)  <br>
 An FPKI Policy Authority Working Group
 
-Last Update: February 12th, 2019 <br>
+Updated: February 21st, 2019 <br>
 
 ## Overview
 
-The Federal Public Key Infrastructure (FPKI) has been the subject of various transitions and evolutions during its years of existence. This includes hardware and software upgrades, configuration and architecture changes, implementation of higher complexity keys and algorithms, and implementation of new application capabilities. The impact on continued interoperability throughout these transitions has highlighted the need for an integrated test environment.
+The Community Interoperability Test Environment (CITE) was established as the FPKI integrated test environment. CITE provides the FPKI community with a test environment that mimics the production FPKI hierarchy and is operated by the Federal PKI Management Authority (FPKIMA). It contains a Test Federal Common Policy and Test Federal Bridge that issue test CA certificates to participating Shared Service Providers, Federal Agency PKI, and Non-Federal Affiliates (referred to as FPKI Partners). CITE Participants refer to an FPKI Partner establishing a test PKI certified or cross-certified with the Test Common Policy or Test Bridge CA.
 
-The Community Interoperability Test Environment (CITE) was established as the FPKI integrated test environment. CITE provides the FPKI community with a test environment that mimics the production FPKI hierarchy. It is operated by the Federal PKI Management Authority (FPKIMA) and contains a Test Federal Common Policy and Test Federal Bridge. The FPKIMA operated Test Common and Federal Bridge issue test CA certificates to participating Shared Service Providers, Federal Agency PKI, and Non-Federal Affiliates (referred to as FPKI Partners) to perform interoperability and other forms of testing outlined in this document. CITE has two main purposes:
+- [Testing Use Cases](#testing-use-cases)
+- [Technical Specifications](#technical-specifications)
+- [Scheduled and Unscheduled Testing](#scheduled-and-unscheduled-testing)
+- [Repository Availability](#repository-availability)
+- [Technical Support Availability](#technical-support-availability)
+- [Test Websites](#test-websites)
+- [Appendix A - Test Policy Object Identifiers](#appendix-a-test-policy-object-identifiers)
 
-1. Ensure proper functionality of system changes prior to production deployment, and
-2. Identify and resolve technical issues across FPKI Partners.
-
-The FPKI Community can use CITE to evaluate PKI or application changes in a test environment that mimics the production FPKI hierarchy and test potential interoperability issues before those changes are deployed to the FPKI. <br>
-
-## Document Scope
-
-This document provides guidelines and specifications for an FPKI Partner to participate in CITE. CITE Participants refer to an FPKI Partner establishing a test PKI certified or cross-certified with the Test Common Policy or Test Bridge CA. This document shall not define how CITE Participants conduct testing.
-
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
-
-Modifications to this document and any waivers are controlled by the FPKI Technical Working Group. <br>
+This guide is a practice guide for FPKI Partners who want to either become CITE participants or leverage CITE for FPKI testing.
 
 ## Testing Use Cases
 
@@ -37,7 +30,7 @@ The main purpose of CITE is interoperability and infrastructure testing of PKI c
 
 Relying Party application testing ensures that application modules operate as intended. In addition, application testing ensures that the system performs as expected and can properly process transactions that rely on FPKI certificates.
 
-Some examples of testing conducted in CITE include:
+This document does not define how to perform testing in CITE. That is a responsibility of the CITE Participatns. Some examples of testing conducted in CITE include:
 1. Interoperability testing between cross-certified Certification Authorities (CAs);
 2. Transition testing to new algorithms (e.g., SHA-2, ECC);
 3. PIV and PIV-I card interoperability testing;
@@ -46,15 +39,9 @@ Some examples of testing conducted in CITE include:
 
 When testing is successful in CITE, assurance is gained that the proposed change(s) will operate in the production FPKI as intended. When tests fail in the CITE, issues are identified and addressed without production FPKI impact. <br>
 
-## Terms and Conditions
-
-To ensure CITE provides effective services and comprehensive test results, each CITE participant should emulate its production environment as closely as possible in CITE. To the extent possible, the test environment should include the same products, logical architecture, and community integration relationships as in the production environment.
-
-The closer the test environment is to the production, the more likely issues can be discovered and resolved early in the development and testing process. For example, if a Federal Agency PKI includes both HTTP and LDAP URIs in its production certificates, both types of URIs should be included in its CITE test certificates, along with operational repositories corresponding to those URIs. Therefore, both methods available in production can be tested in the CITE. <br>
-
 ## Technical Specifications
 
-CITE participants shall follow the below technical specifications.
+The FPKI Community can use CITE to evaluate PKI or application changes in a test environment that mimics the production FPKI hierarchy and test potential interoperability issues before those changes are deployed to the FPKI. CITE participants shall follow the below technical specifications.
 
 1. The CITE Participant services shall be internet accessible.
 2. Repository availability and technical support should be maintained as detailed in the [Repository Availability](#repository-availability) and [Technical Support Availability](#technical-support-availability) sections.
@@ -70,10 +57,10 @@ CITE participants shall follow the below technical specifications.
     1. Test certificates and CRL profiles (including version, key length, extensions, and syntax) shall match that of the production environment.
     2. The CITE CRLs may have a longer validation period than is required in production.
     3. The CITE CA certificates and cross-certificates shall depict the same trust relationships as in the production environment.
-    4. CITE Participants should assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See [Appendix A](#appendix-a) for test OIDs and their production equivalent.
+    4. CITE Participants should assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See [Appendix A - Test Policy Object Identifiers](#appendix-a-test-policy-object-identifiers) for test OIDs and their production equivalent.
     5. Resource references (such as CRL Distribution Points and Authority Information Access (AIA) points in the CITE certificates shall correspond to appropriately functional repositories.
 
-{% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs (see [Appendix A](#appendix-a) for test certificate policy OIDs)." %} <br>
+{% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs [Appendix A - Test Policy Object Identifiers](#appendix-a-test-policy-object-identifiers) for test certificate policy OIDs)." %} <br>
 
 ## Scheduled and Unscheduled Testing
 
@@ -107,11 +94,9 @@ CITE Participants shall provide the FPKI Technical Working Group with email and 
 
 | FPKI Partner | Website URL |
 | ------------ | ----------- |
-| No test websites established at this time | |
+| No test websites shared at this time | |
 
-## Appendix A 
-
-### Policy Object Identifiers (OIDS) and Mapping Table
+## Appendix A - Test Policy Object Identifiers
 
 The table below lists the current test to production OID equivalent used by the FPKIMA and CITE Participants.
 
@@ -120,7 +105,6 @@ The table below lists the current test to production OID equivalent used by the 
 3. [Federal Shared Service Provider (SSP) Test OIDs](#federal-shared-service-provider-ssp-test-oids)
 4. [Non-Federal Issuer (NFI) Test OIDs](#non-federal-issuer-nfi-test-oids)
 5. [Commercial PKI Bridge Test OIDs](#commercial-pki-bridge-test-oids)
-6. [Deprecated Test OIDs](#deprecated-test-oids)
 
 ### Federal PKI Trust Infrastructure Test OIDs
 
@@ -258,6 +242,8 @@ The table below lists the current test to production OID equivalent used by the 
 | 2.16.840.1.101.3.2.1.48.74 | NASA | 1.3.6.1.4.1.71.1.1.103 |
 
 ### Federal Shared Service Provider (SSP) Test OIDs
+
+All SSPs directly assert Federal Common Policy OIDs.
 
 See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 
