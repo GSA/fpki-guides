@@ -51,34 +51,32 @@ description: TBD
 
 | Common Name | Serial # | Validity | Hash (SHA1) |
 |-------------|----------|----------|-------------|
-| Alaska eHealth Network CA |  |  |  |
-| KeystoneHIE KeyHIE CA |  |  |  |
-| North Dakota Information Technology Department CA |  |  |  |
-| Cal INDEX CA |  |  |  |
-| Louisiana Health Care Quality Forum CA |  |  |  |
-| Oklahoma State Department of Health CA |  |  |  |
-| Catholic Health Initiatives CA |  |  |  |
-| Mary Washington Healthcare CA |  |  |  |
-| Optioncare CA |  |  |  |
-| Greenville Health System CA |  |  |  |
-| Mass HIway CA |  |  |  |
-| Orion Health Direct Secure Messaging Public HISP CA |  |  |  |
-| Highmark Tapestry HIE CA |  |  |  |
-| Mississippi Division of Medicaid CA |  |  |  |
-| Rush Health CA |  |  |  |
-| Huntsville Hospital System CA |  |  |  |
-| New Hampshire Health Information Organization CA |  |  |  |
-| Sutter Health CA |  |  |  |
-| Inland Empire Health Information Exchange |  |  |  |
-| New Mexico Health Information Collaborative CA |  |  |  |
-| The Koble Group CA |  |  |  |
-| Jax HR Saint Vincents HIE CA |  |  |  |
-| North Carolina Health Information Exchange CA |  |  |  |
-| Western Connecticut Health Network CA |  |  |  |
+| Alaska eHealth Network CA | 7A42C0E8D2725E05DF2A012B520D378  | 10/22/2013 to 10/22/2023  | 41C64D922958E527051246C6D26FB0A1C392A6EB |
+| KeystoneHIE KeyHIE CA | 2A537BC58D09EB0714B9004340C9504  | 8/19/2014 to 8/19/2024 | 62247623C912B6286AC3EFB0EA2E649720EAB7DE | 
+| North Dakota Information Technology Department CA | 4357DD28DE9370678C5094E9940E821  | 1/10/2014 to 1/1/2024 | A295DF1D857F219D96A9EAAA8CB4DE725B634D63 |
+| Cal INDEX CA | 4E99C3BEA35EBC9C93115BB5873F769 | 7/12/2016 to 7/12/2026 | C7E2D4CEC6F65653956E4116D896691A18A13FCB |
+| Louisiana Health Care Quality Forum CA | 491751063891838340AD681034CF86A  | 10/22/2013 to 10/22/2023 | 9DB9E8FD19740D423B20E047FEDE8FCA03D6D599 |
+| Oklahoma State Department of Health CA | 4793AAA351A61AE7F2756A5E524B014  | 2/16/2015 to 2/16/2025 | E1245959AF582F9AF0B101198CD85C97970765F9 |
+| Catholic Health Initiatives CA | 5737EBA16AEBC582D962F2EA938CC59  | 8/19/2014 to 8/19/2024 | F32A0706A0632E565D79F317141619FF2D314562 |
+| Mary Washington Healthcare CA | A3511BA0C581298F96CF119505F3FC3  | 3/5/2014 to 3/5/2024 | F2E05E1647BB5948040127E8E5515A38B24D0434 |
+| Optioncare CA | 74F2D04ADEBFC19884F420FFF9DF2CF  | 3/1/2016 to 3/1/2026 | A776F75611B2A7B548573DC29994F142DD363882 |
+| Greenville Health System CA | 39C60B26637C6B8E9B63B5A9EC588AA  | 3/5/2014 to 3/5/2024 | AA1FF6AE9B3B3F437A887B806CEF53689FD70CBD  |
+| Mass HIway CA | 5A42A2A54A348EF8B10AAFCFDEDBB73  | 9/25/2015 to 9/25/2025 | 7B3CE1AA5B8CB71DD8E7609AC7D144760C93CF84 |
+| Orion Health Direct Secure Messaging Public HISP CA | 6406F00285529404B11F92A78E67DA9  | 10/22/2013 to 10/22/2023 | DCDC844A0B183107A172802BF2489173A914B0C9 |
+| Highmark Tapestry HIE CA | B7D4F1EA2A013A2A1BE3AB00CD0407D  | 8/19/2014 to 8/19/2024 | E1CAD6EC91D6D1CFB2777AB023BEA496C2E2EDBE |
+| Mississippi Division of Medicaid CA | 7B268D3565D4EA118524BFE1A3088DD  | 1/8/2014 to 1/8/2024 | 03A88451EB50024EE1665F181BF511A623C724F3 |
+| Rush Health CA | 4B43B1C31EAB7E37BEB31F0CC3DBADD | 4/23/2014to 4/23/2024 | EC5C1E327D71840FD108557031AEAB63E762A207 |
+| Huntsville Hospital System CA | F0CCD49BA7A570FB90C8108BF1693A2 | 3/5/2014	to 3/5/2024 | B75219D4843296613B6369AFC628078CBC69DCFA |
+| New Hampshire Health Information Organization CA | FC78FF0B25CE0F20630C639C5A08C5F | 10/22/2013 to10/22/2023 | 6E2EF1187693A1C09E92DD083735BC7F39B3551E |
+| Sutter Health CA | C59E5800EE065EA52B5581A65775CC6 | 10/21/2014 to 10/21/2024 | 6887CAE99ECD54FEC484A90294C45973FBC12A08 |
+| Inland Empire Health Information Exchange | F6D2AE4D2580E0CA9EB1D4E1EAD131D | 1/8/2014	to 1/8/2024 | C68C49E448435DC6BD352A0CD05B157CD1D1E29C |
+| New Mexico Health Information Collaborative CA | 57E0CDCDDB211396AB5242B1839CC0E | 9/26/2014	to 9/26/2024 | 71440E4192C9C5F916D1BAC809C09E52C77A9661 |
+| The Koble Group CA | 1BC6B791447CDA90A8A14E8204957FD | 6/21/2016 to 6/21/2026 | 4D540D6E7BC3867D81178F98C5F21991247C2FBB |
+| Jax HR Saint Vincents HIE CA | C03AE8086FBACDDDD35ADF818F0979C | 2/16/2015 to 2/16/2025 | EFABA80CF00268CE78B5F21C11CF3494FED2751C |
+| North Carolina Health Information Exchange CA | 66B4604152D707EE44DD584B4EE81C4 | 3/5/2014	to 3/5/2024 | FF1414C895D1BC1EDC866BA333D2942B46EDCBCC |
+| Western Connecticut Health Network CA | 7295D1F92953D6776E2146E93A58957 | 3/5/2014 to 3/5/2024 | 948D1DAF1D124ACE83F6826192036EDC35C4D005 |
 
-That includes the details of the CAs
-SPKI, name, hash, etc
-That these CAs are still active but no longer a part of Federal PKI
+These CAs are still active but no longer a part of Federal PKI
 
 ## You should never encounter certs from these CAs for the majority of mission operational use cases including: 
 - VPNs
