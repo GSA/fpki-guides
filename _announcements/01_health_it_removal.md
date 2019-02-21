@@ -11,7 +11,7 @@ description: TBD
 ### CA Certificates Issued by the DigiCert Federated Trust CA
 
 | Common Name | Serial # | Validity | Hash (SHA1) |
-|-------------|----------|----------|-------------|
+|-------------------------------|----------|---------------|-------------|
 | AAMC Direct Intermediate CA | B6957DF612F5190A590DCA544B775A1 | 5/28/2015 to 5/28/2025 | 3C2C135BC01B3DF5B2F85AB78BB83698F1377116 |
 | DigiCert Federated Healthcare CA | 656F256EAA1A6DFF943082ABAE7B4EA | 2/11/2014 to 2/11/2024 | 0E694D69F792A2546B993D841A08AA4A85319C5B |
 | MHIN Direct CA | 29FAFE71A57144DAF7CB403031616AF | 1/8/2014 to 1/8/2024 | DCC8C9D8F2610843F5653876CF7E2879FC62CB41 |
@@ -44,8 +44,8 @@ description: TBD
 
 | Common Name | Serial # | Validity | Hash (SHA1) |
 |-------------|----------|----------|-------------|
-| MIDIGATE CA | |  |  |
-| Trinity Health Direct CA |  |  |  |
+| MIDIGATE CA | 0C436FDCE81703C46951EB97CF926806 | 11/6/2017 to 1/13/2023 | FB597F2604CB7EEC8953935E2EF527CB83B67ECA |
+| Trinity Health Direct CA | 05511821092EC4F77D4836AF31BB170F | 8/24/2017 to 1/13/2023 | 91C374480ABA3BB9B46C8A870F95E0CA98CF0C70 |
 
 ### CA Certificates Issued by the Orion Health Direct Secure Messaging CA 
 
