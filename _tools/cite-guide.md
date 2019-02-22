@@ -20,7 +20,7 @@ The Community Interoperability Test Environment (CITE) was established as the FP
 - [Repository Availability](#repository-availability)
 - [Technical Support Availability](#technical-support-availability)
 - [Test Websites](#test-websites)
-- [Appendix A - Test Policy Object Identifiers](#appendix-a-&nbsp;-&nbsp;-test-policy-object-identifiers)
+- [Appendix A - Test Policy Object Identifiers](#appendix-a-test-policy-object-identifiers)
 
 This guide is a practice guide for FPKI Partners who want to either become CITE participants or leverage CITE for FPKI testing.
 
@@ -57,10 +57,10 @@ The FPKI Community can use CITE to evaluate PKI or application changes in a test
     1. Test certificates and CRL profiles (including version, key length, extensions, and syntax) shall match that of the production environment.
     2. The CITE CRLs may have a longer validation period than is required in production.
     3. The CITE CA certificates and cross-certificates shall depict the same trust relationships as in the production environment.
-    4. CITE Participants should assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See [Appendix A Test Policy Object Identifiers](#appendix-a-test-policy-object-identifiers) for test OIDs and their production equivalent.
+    4. CITE Participants should assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See [Appendix A - Test Policy Object Identifiers](#appendix-a-test-policy-object-identifiers) for test OIDs and their production equivalent.
     5. Resource references (such as CRL Distribution Points and Authority Information Access (AIA) points in the CITE certificates shall correspond to appropriately functional repositories.
 
-{% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs [Appendix A Test Policy Object Identifiers](#appendix-a-test-policy-object-identifiers) for test certificate policy OIDs)." %} <br>
+{% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs [Appendix A - Test Policy Object Identifiers](#appendix-a-test-policy-object-identifiers) for test certificate policy OIDs)." %} <br>
 
 ## Scheduled and Unscheduled Testing
 
