@@ -20,7 +20,7 @@ The Community Interoperability Test Environment (CITE) was established as the FP
 - [Repository Availability](#repository-availability)
 - [Technical Support Availability](#technical-support-availability)
 - [Test Websites](#test-websites)
-- [Appendix A Test Policy Object Identifiers](#appendix-a-test-policy-object-identifiers)
+- [Appendix A - Test Policy Object Identifiers](#appendix-a-&nbsp;-&nbsp;-test-policy-object-identifiers)
 
 This guide is a practice guide for FPKI Partners who want to either become CITE participants or leverage CITE for FPKI testing.
 
@@ -96,7 +96,7 @@ CITE Participants shall provide the FPKI Technical Working Group with email and 
 | ------------ | ----------- |
 | No test websites shared at this time | |
 
-## Appendix A Test Policy Object Identifiers
+## Appendix A - Test Policy Object Identifiers
 
 The table below lists the current test to production OID equivalent used by the FPKIMA and CITE Participants.
 
