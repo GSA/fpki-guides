@@ -135,7 +135,7 @@ description: TBD
 -	Thumbprint (SHA-1 Hash): 4CDE1CE2BC31F6DE82E90E2799ED003ED6376DA0
 -	SPKI (SHA-256 Hash): 0FFCB556F276AA77482A6A89EB1708AFB08DC32EE3D2D67199F00BA98DC8F436
 
-> **Note: The Federal Bridge CA 2016 will issue a cross certificate to the DigiCert Federated ID L3 CA. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case. 
+> **Note**: The Federal Bridge CA 2016 will issue a cross certificate to the DigiCert Federated ID L3 CA. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case. 
 
 **DigiCert Federated ID L4 CA**
 -	Serial #: 097DBB8C7DFCD2CEDA71F35F73029DA7
