@@ -16,7 +16,7 @@ On March 4th, 2019 the Federal PKI (FPKI) performed two certificate management a
 
 This change focused on maintaining the appropriate mission scope for Federal PKI, and was not a reaction to misconduct. 
 
-**The following CAs are affected by this change:**
+## The following CAs are still active but no longer a part of Federal PKI:
 
 ### CA Certificates Issued by the DigiCert Federated Trust CA
 1. [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
@@ -60,12 +60,12 @@ This change focused on maintaining the appropriate mission scope for Federal PKI
 
 ### CA Certificates Issued by the Orion Health Direct Secure Messaging CA
 1. [Alaska eHealth Network CA](#alaska-ehealth-network-ca)
-1. [Cal INDEX CA](#cal-index-ca)(#highmark-tapestry-hie-ca)
+1. [Cal INDEX CA](#cal-index-ca)(#cal-index-ca)
 1. [Catholic Health Initiatives CA](#catholic-health-initiatives-ca)
 1. [Greenville Health System CA](#greenville-health-system-ca)
-1. [Highmark Tapestry HIE CA](#huntsville-hospital-system-ca)
-1. [Huntsville Hospital System CA](#inland-empire-health-information-exchange)
-1. [Inland Empire Health Information Exchange]
+1. [Highmark Tapestry HIE CA](#highmark-tapestry-hie-ca)
+1. [Huntsville Hospital System CA](#huntsville-hospital-system-ca)
+1. [Inland Empire Health Information Exchange](#inland-empire-health-information-exchange)
 1. [Jax HR Saint Vincents HIE CA](#jax-hr-saint-vincents-hie-ca)
 1. [KeystoneHIE KeyHIE CA](#keystonehie-keyhie-ca)
 1. [Louisiana Health Care Quality Forum CA](#louisiana-health-care-quality-forum-ca)
@@ -84,7 +84,6 @@ This change focused on maintaining the appropriate mission scope for Federal PKI
 1. [The Koble Group CA](#the-koble-group-ca)
 1. [Western Connecticut Health Network CA](#western-connecticut-health-network-ca)
 
-These CAs are still active but no longer a part of Federal PKI
 
 ### You should never encounter certs from these CAs for the majority of mission operational use cases including: 
 - VPNs
