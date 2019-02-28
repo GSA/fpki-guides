@@ -32,6 +32,8 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 | --------- | ---------- | ---------- | ------ | ------ |
 | STRAC Bridge | Federal Bridge CA 2016 | STRAC Bridge Root CA | 1f92eb3654f60a9092811f7948afff45c09a6ca9 | 02/14/2019 |
 | STRAC Bridge | STRAC Bridge Root CA | Federal Bridge CA 2016 | EE02BDB684AB4714C5F25300C41C5B8F328B0CD9 | 02/20/2019 |
+| DigiCert | DigiCert Federated ID L3 CA | Federal Bridge CA 2016 | 33514B5B7C0616724D9E174F59D7AA080740B8C3 | 02/28/2019 |
+
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
@@ -39,6 +41,7 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 | --------- | ---------- | ---------- | ------ | ------ |
 | STRAC Bridge | Federal Bridge CA 2016 | STRAC Bridge Root CA | 05B522AD82D4E1781BAB378E838AF4FFBAE0D7C9 | 02/21/2019 |
 | STRAC Bridge | STRAC Bridge Root CA | Federal Bridge CA 2016 | E4F6FBD50205A9645037FEF31EFCC83B78F9D68D | 02/21/2019 |
+| DigiCert | DigiCert Federated ID CA-1 | Federal Bridge CA 2016 | e80bddc61ed8c43ad095fc946217be45bdd347c1 | 09/28/2020 |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
