@@ -659,6 +659,7 @@
   end_datetime: February 29, 2020
   system: CertiPath Bridge 
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to CISRCA1
+  contact: judith dot spencer at certipath dot com
   ca_certificate_hash: EB23C015A0B4037738D54A088A653498D394F050 
   ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US 
   ca_certificate_subject: CN = CISRCA1, OU = Certification Authorities, O = Carillon Information Security Inc., C = CA
@@ -673,6 +674,7 @@
   end_datetime: February 29, 2020
   system: CertiPath Bridge 
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Carillon Federal Services PIV-I CA1
+  contact: judith dot spencer at certipath dot com
   ca_certificate_hash: FA75A4149838AFE4DEF18BAD39B5EFD6187D1A8B  
   ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
   ca_certificate_subject: CN = Carillon Federal Services PIV-I CA1, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US 
@@ -687,6 +689,7 @@
   end_datetime: February 29, 2020
   system: CertiPath Bridge 
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to NextgenIDRootCA1
+  contact: judith dot spencer at certipath dot com
   ca_certificate_hash: C8EC9DAB6354FA4E2BF292B0A542F37436965723
   ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
   ca_certificate_subject: CN = NextgenIDRootCA1, OU = Certification Authorities, O = NextgenID, C = US
@@ -701,6 +704,7 @@
   end_datetime: February 29, 2020
   system: CertiPath Bridge 
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Northrop Grumman Corporate Root CA-G2
+  contact: judith dot spencer at certipath dot com
   ca_certificate_hash: 6F14FDA78D34B603ABE060D9FD16331DAC646878
   ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
   ca_certificate_subject: CN = Northrop Grumman Corporate Root CA-G2, OU = Northrop Grumman Information Technology, O = Northrop Grumman Corporation, C = US
