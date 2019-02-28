@@ -5,93 +5,106 @@ title: Removal of Health IT CAs from Federal PKI
 pubDate: March 1, 2019
 collection: announcements
 permalink: announcements/health-it-removal/
-description: TBD
+description: On March 4th, 2019 the Federal PKI (FPKI) performed two certificate management activities to remove dependencies for 59 certification authorities (CAs) related to Health IT and Electronic Health Records systems use cases from the Federal PKI Trust Framework. This change focused on maintaining the appropriate mission scope for Federal PKI, and was not a reaction to misconduct. This announcement provides details related to the CAs affected by this change.
+
 ---
 
+On March 4th, 2019 the Federal PKI (FPKI) performed two certificate management activities to remove dependencies for 59 certification authorities (CAs) related to Health IT and Electronic Health Records systems use cases from the Federal PKI Trust Framework.
+
+1. The FPKI issued a cross-certificate from the Federal Bridge CA 2016 to the Federated ID L3 CA. This will ensure operation for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case. 
+2. The FPKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to the DigiCert Federated ID CA-1 CA.   
+
+This change focused on maintaining the appropriate mission scope for Federal PKI, and was not a reaction to misconduct. 
+
+**The following CAs are affected by this change:**
+
 ### CA Certificates Issued by the DigiCert Federated Trust CA
-- [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
-- [Allina Health Connect HIE Intermediate CA](#allina-health-connect-hie-intermediate-ca)
-- [Axesson Direct CA](#axesson-direct-ca)
-- [Care360 Direct Intermediate CA](#care360-direct-intermediate-ca)
-- [Cerner Corporation Direct Intermediate CA](#cerner-corporation-direct-intermediate-ca)
-- [Cerner Corporation Resonance Intermediate CA](#cerner-corporation-resonance-intermediate-ca)
-- [CompuGroup Medical Certificate Authority](#compugroup-medical-certificate-authority)
-- [Corepoint Direct Intermediate CA](#corepoint-direct-intermediate-ca)
-- [DigiCert Accredited Direct Med CA](#digicert-accredited-direct-med-ca)
-- [DigiCert Direct Non-Provider CA](#digicert-direct-non-provider-ca)
-- [DigiCert Federated Healthcare CA](#digicert-federated-healthcare-ca)
-- [DigiCert Federated ID L1 CA](#digicert-federated-id-l1-ca)
-- [DigiCert Federated ID L2 CA](#digicert-federated-id-l2-ca)
-- [DigiCert Federated ID L3 CA](#digicert-federated-id-l3-ca)
-- [DigiCert Federated ID L4 CA](#digicert-federated-id-l4-ca)
-- [DigiCert Federated ID US L3 CA](#digicert-federated-id-us-l3-ca)
-- [DigiCert Federated ID US L4 CA](#digicert-federated-id-us-l4-ca)
-- [DigiCert Governmental Direct CA](#digicert-governmental-direct-ca)
-- [DigiCert Provisional Direct Med CA](#digicert-provisional-direct-med-ca)
-- [Indian Health Service-RPMS DIRECT Messaging CA](#indian-health-service-rpms-direct-messaging-ca)
-- [Inpriva Direct Federated CA](#inpriva-direct-federated-ca)
-- [INTEGRIS Direct Intermediate CA](#integris-direct-intermediate-ca)
-- [iShare Medical Direct Intermediate CA](#ishare-medical-direct-intermediate-ca)
-- [MedicaSoft Direct Intermediate CA](#medicasoft-direct-intermediate-ca)
-- [Medicity Direct CA](#medicity-direct-ca)
-- [MHIN Direct CA](#mhin-direct-ca)
-- [Mirth Direct Intermediate CA](#mirth-direct-intermediate-ca)
-- [MobileMD Direct Intermediate CA](#mobilemd-direct-intermediate-ca)
-- [MRO Direct Intermediate CA](#mro-direct-intermediate-ca)
-- [Oregon Health Authority Direct CA](#oregon-health-authority-direct-ca)
-- [Orion Health Direct Secure Messaging CA](#orion-health-direct-secure-messaging-ca)
-- [RelayHealth Direct CA](#relayhealth-direct-ca)
-- [Rochester RHIO Intermediate CA](#rochester-rhio-intermediate-ca)
-- [SCHIEx Direct CA](#schiex-direct-ca)
+1. [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
+1. [Allina Health Connect HIE Intermediate CA](#allina-health-connect-hie-intermediate-ca)
+1. [Axesson Direct CA](#axesson-direct-ca)
+1. [Care360 Direct Intermediate CA](#care360-direct-intermediate-ca)
+1. [Cerner Corporation Direct Intermediate CA](#cerner-corporation-direct-intermediate-ca)
+1. [Cerner Corporation Resonance Intermediate CA](#cerner-corporation-resonance-intermediate-ca)
+1. [CompuGroup Medical Certificate Authority](#compugroup-medical-certificate-authority)
+1. [Corepoint Direct Intermediate CA](#corepoint-direct-intermediate-ca)
+1. [DigiCert Accredited Direct Med CA](#digicert-accredited-direct-med-ca)
+1. [DigiCert Direct Non-Provider CA](#digicert-direct-non-provider-ca)
+1. [DigiCert Federated Healthcare CA](#digicert-federated-healthcare-ca)
+1. [DigiCert Federated ID L1 CA](#digicert-federated-id-l1-ca)
+1. [DigiCert Federated ID L2 CA](#digicert-federated-id-l2-ca)
+1. [DigiCert Federated ID L3 CA](#digicert-federated-id-l3-ca)
+1. [DigiCert Federated ID L4 CA](#digicert-federated-id-l4-ca)
+1. [DigiCert Federated ID US L3 CA](#digicert-federated-id-us-l3-ca)
+1. [DigiCert Federated ID US L4 CA](#digicert-federated-id-us-l4-ca)
+1. [DigiCert Governmental Direct CA](#digicert-governmental-direct-ca)
+1. [DigiCert Provisional Direct Med CA](#digicert-provisional-direct-med-ca)
+1. [Indian Health Service-RPMS DIRECT Messaging CA](#indian-health-service-rpms-direct-messaging-ca)
+1. [Inpriva Direct Federated CA](#inpriva-direct-federated-ca)
+1. [INTEGRIS Direct Intermediate CA](#integris-direct-intermediate-ca)
+1. [iShare Medical Direct Intermediate CA](#ishare-medical-direct-intermediate-ca)
+1. [MedicaSoft Direct Intermediate CA](#medicasoft-direct-intermediate-ca)
+1. [Medicity Direct CA](#medicity-direct-ca)
+1. [MHIN Direct CA](#mhin-direct-ca)
+1. [Mirth Direct Intermediate CA](#mirth-direct-intermediate-ca)
+1. [MobileMD Direct Intermediate CA](#mobilemd-direct-intermediate-ca)
+1. [MRO Direct Intermediate CA](#mro-direct-intermediate-ca)
+1. [Oregon Health Authority Direct CA](#oregon-health-authority-direct-ca)
+1. [Orion Health Direct Secure Messaging CA](#orion-health-direct-secure-messaging-ca)
+1. [RelayHealth Direct CA](#relayhealth-direct-ca)
+1. [Rochester RHIO Intermediate CA](#rochester-rhio-intermediate-ca)
+1. [SCHIEx Direct CA](#schiex-direct-ca)
 
 ### CA Certificates Issued by the DigiCert Federated Trust CA-1
-- [MIDIGATE CA](#midigate-ca)
-- [Trinity Health Direct CA](#trinity-health-direct-ca)
+1. [MIDIGATE CA](#midigate-ca)
+1. [Trinity Health Direct CA](#trinity-health-direct-ca)
 
 ### CA Certificates Issued by the Orion Health Direct Secure Messaging CA
-- [Alaska eHealth Network CA]()
-- [Cal INDEX CA]()
-- [Catholic Health Initiatives CA]()
-- [Greenville Health System CA]()
-- [Highmark Tapestry HIE CA]()
-- [Huntsville Hospital System CA]()
-- [Inland Empire Health Information Exchange]()
-- [Jax HR Saint Vincents HIE CA]()
-- [KeystoneHIE KeyHIE CA]()
-- [Louisiana Health Care Quality Forum CA]()
-- [Mary Washington Healthcare CA]()
-- [Mass HIway CA]()
-- [Mississippi Division of Medicaid CA]()
-- [New Hampshire Health Information Organization CA]()
-- [New Mexico Health Information Collaborative CA]()
-- [North Carolina Health Information Exchange CA]()
-- [North Dakota Information Technology Department CA]()
-- [Oklahoma State Department of Health CA]()
-- [Optioncare CA]()
-- [Orion Health Direct Secure Messaging Public HISP CA]()
-- [Rush Health CA]()
-- [Sutter Health CA]()
-- [The Koble Group CA]()
-- [Western Connecticut Health Network CA]()
-
+1. [Alaska eHealth Network CA](#alaska-ehealth-network-ca)
+1. [Cal INDEX CA](#cal-index-ca)(#highmark-tapestry-hie-ca)
+1. [Catholic Health Initiatives CA](#catholic-health-initiatives-ca)
+1. [Greenville Health System CA](#greenville-health-system-ca)
+1. [Highmark Tapestry HIE CA](#huntsville-hospital-system-ca)
+1. [Huntsville Hospital System CA](#inland-empire-health-information-exchange)
+1. [Inland Empire Health Information Exchange]
+1. [Jax HR Saint Vincents HIE CA](#jax-hr-saint-vincents-hie-ca)
+1. [KeystoneHIE KeyHIE CA](#keystonehie-keyhie-ca)
+1. [Louisiana Health Care Quality Forum CA](#louisiana-health-care-quality-forum-ca)
+1. [Mary Washington Healthcare CA](#mary-washington-healthcare-ca)
+1. [Mass HIway CA](#mass-hiway-ca)
+1. [Mississippi Division of Medicaid CA](#mississippi-division-of-medicaid-ca)
+1. [New Hampshire Health Information Organization CA](#new-hampshire-health-information-organization-ca)
+1. [New Mexico Health Information Collaborative CA](#new-mexico-health-information-collaborative-ca)
+1. [North Carolina Health Information Exchange CA](#north-carolina-health-information-exchange-ca)
+1. [North Dakota Information Technology Department CA](#north-dakota-information-technology-department-ca)
+1. [Oklahoma State Department of Health CA](#oklahoma-state-department-of-health-ca)
+1. [Optioncare CA](#optioncare-ca)
+1. [Orion Health Direct Secure Messaging Public HISP CA](#orion-health-direct-secure-messaging-public-hisp-ca)
+1. [Rush Health CA](#rush-health-ca)
+1. [Sutter Health CA](#sutter-health-ca)
+1. [The Koble Group CA](#the-koble-group-ca)
+1. [Western Connecticut Health Network CA](#western-connecticut-health-network-ca)
 
 These CAs are still active but no longer a part of Federal PKI
 
-## You should never encounter certs from these CAs for the majority of mission operational use cases including: 
+### You should never encounter certs from these CAs for the majority of mission operational use cases including: 
 - VPNs
 - Enterprise ICAM SSO 
 - Federation services used for identity and authentication of end users
 - Direct network authentication
 
-## What are these used for? 
+### What are these used for? 
 - Healthcare IT and Electronic Health Records systems
 
-## What should an agency engineer do
-Free to remove these CAs from any embedded trust lists used for the above purposes  
+### What should an agency engineer do?
+- Free to remove these CAs from any embedded trust lists used for the above purposes  
+
+### Who can I contact for help or more information?
+- Email us at fpki@gsa.gov
 
 
+### Detailed Certificate Authority Information
 
-###  CA Certificates Issued by the DigiCert Federated Trust CA
+####  CA Certificates Issued by the DigiCert Federated Trust CA
 
 ###  AAMC Direct Intermediate CA
 -	Serial #: 0B6957DF612F5190A590DCA544B775A1
