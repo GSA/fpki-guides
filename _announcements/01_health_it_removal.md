@@ -9,22 +9,15 @@ description: The Federal PKI (FPKI) recently performed two certificate managemen
 
 ---
 
-The Federal PKI (FPKI) recently performed two certificate management activities to remove dependencies for 59 certification authorities (CAs) related to Health IT and Electronic Health Records systems use cases from the Federal PKI Trust Framework.
+This change focused on maintaining the appropriate mission scope for the Federal PKI, and was not a reaction to misconduct. 
+The Federal PKI (FPKI) recently performed two certificate management activities to remove dependencies for 59 certification authorities (CAs) related to Health IT and Electronic Health Records systems use cases from the Federal PKI Trust Framework. 
 
 1. On February 28, 2019 the FPKI issued a cross-certificate from the Federal Bridge CA 2016 to the DigiCert Federated ID L3 CA. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case for a relationship with the Federal PKI Trust Framework. 
 2. On March 4, 2019 the FPKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to the DigiCert Federated ID CA-1 CA.   
-This change focused on maintaining the appropriate mission scope for the Federal PKI, and was not a reaction to misconduct. 
 
-This change will:
-- Reduce regulatory burden on Health IT companies and systems;
-- Address duplicative accreditation processes and the cost burden for operating these accreditation processes and the accredited systems;
-- Improve the opportunities for Health IT innovation to occur;
-- Clearly delineate the delegated authorities for accrediting technologies; and
-- Reduce the complexity of the processes and associated information security risks to federal and commercial information systems.
+**As a result of this change the following CAs are still active but no longer a part of Federal PKI:**
 
-## The following CAs are still active but no longer a part of Federal PKI:##
-
-### CA Certificates Issued by the DigiCert Federated Trust CA
+**CA Certificates Issued by the DigiCert Federated Trust CA**
 1. [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
 1. [Allina Health Connect HIE Intermediate CA](#allina-health-connect-hie-intermediate-ca)
 1. [Axesson Direct CA](#axesson-direct-ca)
@@ -62,14 +55,14 @@ This change will:
 
 Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA.pem){:target="_blank"}.
 
-### CA Certificates Issued by the DigiCert Federated Trust CA-1
+** CA Certificates Issued by the DigiCert Federated Trust CA-1**
 1. [MIDIGATE CA](#midigate-ca)
 1. [Trinity Health Direct CA](#trinity-health-direct-ca)
 
 Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA-1.pem){:target="_blank"}.
 
 
-### CA Certificates Issued by the Orion Health Direct Secure Messaging CA
+**CA Certificates Issued by the Orion Health Direct Secure Messaging CA**
 1. [Alaska eHealth Network CA](#alaska-ehealth-network-ca)
 1. [Cal INDEX CA](#cal-index-ca)
 1. [Catholic Health Initiatives CA](#catholic-health-initiatives-ca)
