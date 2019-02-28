@@ -285,6 +285,41 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | 2.16.840.1.113733.1.7.21.3.17 | Class 3-VTN SSP-PIV-I CardAuth | 2.16.840.1.113733.1.7.23.3.1.17 |
 | 2.16.840.1.113733.1.7.21.3.20 | Class 3-VTN SSP-PIV-I ContentSigning | 2.16.840.1.113733.1.7.23.3.1.20 |
 
+#### IdenTrust
+| Test OID | Policy | Production OID |
+|-------------------------------|---------------------------------------------------|------------------------------|
+| 2.16.840.1.113839.99.100.2.3  | IGC Basic Software Signing                        | 2.16.840.1.113839.0.100.2.3  |
+| 2.16.840.1.113839.99.100.2.4  | IGC Basic Software Encryption                     | 2.16.840.1.113839.0.100.2.4  |
+| 2.16.840.1.113839.99.100.2.5  | IGC Basic Hardware Signing                        | 2.16.840.1.113839.0.100.2.5  |
+| 2.16.840.1.113839.99.100.2.6  | IGC Basic Hardware Encryption                     | 2.16.840.1.113839.0.100.2.6  |
+| 2.16.840.1.113839.99.100.2.7  | IGC Basic Hardware Card Authentication            | 2.16.840.1.113839.0.100.2.7  |
+| 2.16.840.1.113839.99.100.2.8  | IGC Basic Hardware Identity                       | 2.16.840.1.113839.0.100.2.8  |
+| 2.16.840.1.113839.99.100.3.1  | IGC Medium Software Signing                       | 2.16.840.1.113839.0.100.3.1  |
+| 2.16.840.1.113839.99.100.3.2  | IGC Medium Software Encryption                    | 2.16.840.1.113839.0.100.3.2  |
+| 2.16.840.1.113839.99.100.3.3  | IGC Medium Software Group Organization Signing    | 2.16.840.1.113839.0.100.3.3  |
+| 2.16.840.1.113839.99.100.3.4  | IGC Medium Software Group Organization Encryption | 2.16.840.1.113839.0.100.3.4  |
+| 2.16.840.1.113839.99.100.3.5  | IGC Medium Software Group Address Signing         | 2.16.840.1.113839.0.100.3.5  |
+| 2.16.840.1.113839.99.100.3.6  | IGC Medium Software Group Address Encryption      | 2.16.840.1.113839.0.100.3.6  |
+| 2.16.840.1.113839.99.100.12.1 | IGC Medium Hardware Signing                       | 2.16.840.1.113839.0.100.12.1 |
+| 2.16.840.1.113839.99.100.12.2 | IGC Medium Hardware Encryption                    | 2.16.840.1.113839.0.100.12.2 |
+| 2.16.840.1.113839.99.100.12.3 | IGC Medium Hardware Card Authentication           | 2.16.840.1.113839.0.100.12.3 |
+| 2.16.840.1.113839.99.100.12.4 | IGC Medium Hardware Identity                      | 2.16.840.1.113839.0.100.12.4 |
+| 2.16.840.1.113839.99.100.14.1 | IGC Medium Software CBP Signing                   | 2.16.840.1.113839.0.100.14.1 |
+| 2.16.840.1.113839.99.100.14.2 | IGC Medium Software CBP Encryption                | 2.16.840.1.113839.0.100.14.2 |
+| 2.16.840.1.113839.99.100.15.1 | IGC Medium Hardware CBP Signing                   | 2.16.840.1.113839.0.100.15.1 |
+| 2.16.840.1.113839.99.100.15.2 | IGC Medium Hardware CBP Encryption                | 2.16.840.1.113839.0.100.15.2 |
+| 2.16.840.1.113839.99.100.15.3 | IGC Medium Hardware CBP Card Authentication       | 2.16.840.1.113839.0.100.15.3 |
+| 2.16.840.1.113839.99.100.15.4 | IGC Medium Hardware CBP Identity                  | 2.16.840.1.113839.0.100.15.4 |
+| 2.16.840.1.113839.99.100.18.1 | IGC PIV-I Signing                                 | 2.16.840.1.113839.0.100.18.1 |
+| 2.16.840.1.113839.99.100.18.2 | IGC PIV-I Encryption                              | 2.16.840.1.113839.0.100.18.2 |
+| 2.16.840.1.113839.99.100.18.3 | IGC PIV-I Identity                                | 2.16.840.1.113839.0.100.18.3 |
+| 2.16.840.1.113839.99.100.19.1 | IGC PIV-I Card Authentication                     | 2.16.840.1.113839.0.100.19.1 |
+| 2.16.840.1.113839.99.100.20.1 | IGC PIV-I Content Signing                         | 2.16.840.1.113839.0.100.20.1 |
+| 2.16.840.1.113839.99.100.37.1 | IGC Medium Device Software                        | 2.16.840.1.113839.0.100.37.1 |
+| 2.16.840.1.113839.99.100.37.2 | IGC Medium TLS/SSL Software                       | 2.16.840.1.113839.0.100.37.2 |
+| 2.16.840.1.113839.99.100.37.3 | IGC Medium Group Device Software Signing          | 2.16.840.1.113839.0.100.37.3 |
+| 2.16.840.1.113839.99.100.37.4 | IGC Medium Group Device Software Encryption       | 2.16.840.1.113839.0.100.37.4 |
+
 ### Commercial PKI Bridge Test OIDs
 
 #### SAFE Bio-Pharma Bridge
