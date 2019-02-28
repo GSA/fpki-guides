@@ -16,7 +16,7 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 2. On March 4, 2019 the FPKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to the DigiCert Federated ID CA-1 CA.   
 ### As a result of this change the following CAs are still active but no longer a part of Federal PKI:
 
-_CA Certificates Issued by the DigiCert Federated Trust CA_
+**CA Certificates Issued by the DigiCert Federated Trust CA**
 1. [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
 1. [Allina Health Connect HIE Intermediate CA](#allina-health-connect-hie-intermediate-ca)
 1. [Axesson Direct CA](#axesson-direct-ca)
@@ -54,17 +54,17 @@ _CA Certificates Issued by the DigiCert Federated Trust CA_
 
 **Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA.pem){:target="_blank"}.
 
-<br><br>
+<br>
 
-_CA Certificates Issued by the DigiCert Federated Trust CA-1_
+**CA Certificates Issued by the DigiCert Federated Trust CA-1**
 1. [MIDIGATE CA](#midigate-ca)
 1. [Trinity Health Direct CA](#trinity-health-direct-ca)
 
 **Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA-1.pem){:target="_blank"}.
 
-<br><br>
+<br>
 
-_CA Certificates Issued by the Orion Health Direct Secure Messaging CA_
+**CA Certificates Issued by the Orion Health Direct Secure Messaging CA**
 1. [Alaska eHealth Network CA](#alaska-ehealth-network-ca)
 1. [Cal INDEX CA](#cal-index-ca)
 1. [Catholic Health Initiatives CA](#catholic-health-initiatives-ca)
