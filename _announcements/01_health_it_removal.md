@@ -15,7 +15,7 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 1. On February 28, 2019 the FPKI issued a cross-certificate from the Federal Bridge CA 2016 to the DigiCert Federated ID L3 CA. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case for a relationship with the Federal PKI Trust Framework. 
 2. On March 4, 2019 the FPKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to the DigiCert Federated ID CA-1 CA.   
 
-**As a result of this change the following CAs are still active but no longer a part of Federal PKI:**
+### As a result of this change the following CAs are still active but no longer a part of Federal PKI:
 
 **CA Certificates Issued by the DigiCert Federated Trust CA**
 1. [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
@@ -53,14 +53,17 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 1. [Rochester RHIO Intermediate CA](#rochester-rhio-intermediate-ca)
 1. [SCHIEx Direct CA](#schiex-direct-ca)
 
-Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA.pem){:target="_blank"}.
+> **Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA.pem){:target="_blank"}.
+
+<br>
 
 ** CA Certificates Issued by the DigiCert Federated Trust CA-1**
 1. [MIDIGATE CA](#midigate-ca)
 1. [Trinity Health Direct CA](#trinity-health-direct-ca)
 
-Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA-1.pem){:target="_blank"}.
+> **Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA-1.pem){:target="_blank"}.
 
+<br>
 
 **CA Certificates Issued by the Orion Health Direct Secure Messaging CA**
 1. [Alaska eHealth Network CA](#alaska-ehealth-network-ca)
@@ -88,7 +91,7 @@ Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByD
 1. [The Koble Group CA](#the-koble-group-ca)
 1. [Western Connecticut Health Network CA](#western-connecticut-health-network-ca)
 
-Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByOrionHealthDirectSecureMessagingCA.pem){:target="_blank"}.
+> **Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByOrionHealthDirectSecureMessagingCA.pem){:target="_blank"}.
 
 ### You should never encounter certificates issued from these CAs for the majority of mission operational use cases including: 
 - VPNs
@@ -105,6 +108,8 @@ Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByO
 ### Who can I contact for help or more information?
 - Email us at fpki@gsa.gov
 
+
+<br><br><br><br>
 
 ### Detailed Certificate Authority Information
 
