@@ -11,9 +11,16 @@ description: The Federal PKI (FPKI) recently performed two certificate managemen
 
 The Federal PKI (FPKI) recently performed two certificate management activities to remove dependencies for 59 certification authorities (CAs) related to Health IT and Electronic Health Records systems use cases from the Federal PKI Trust Framework.
 
-1. On February 28, 2019 the FPKI issued a cross-certificate from the Federal Bridge CA 2016 to the Federated ID L3 CA. This will ensure operation for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case. 
+1. On February 28, 2019 the FPKI issued a cross-certificate from the Federal Bridge CA 2016 to the DigiCert Federated ID L3 CA. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case for a relationship with the Federal PKI Trust Framework. 
 2. On March 4, 2019 the FPKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to the DigiCert Federated ID CA-1 CA.   
 This change focused on maintaining the appropriate mission scope for Federal PKI, and was not a reaction to misconduct. 
+
+This change will:
+- Reduce regulatory burden on Health IT companies and systems;
+- Address duplicative accreditation processes and the cost burden for operating these accreditation processes and the accredited systems;
+- Improve the opportunities for Health IT innovation to occur;
+- Clearly delineate the delegated authorities for accrediting technologies; and
+- Reduce the complexity of the processes and associated information security risks to federal and commercial information systems.
 
 ## The following CAs are still active but no longer a part of Federal PKI:
 
@@ -84,16 +91,16 @@ This change focused on maintaining the appropriate mission scope for Federal PKI
 1. [Western Connecticut Health Network CA](#western-connecticut-health-network-ca)
 
 
-### You should never encounter certs from these CAs for the majority of mission operational use cases including: 
+### You should never encounter certificates issued from these CAs for the majority of mission operational use cases including: 
 - VPNs
 - Enterprise ICAM SSO 
 - Federation services used for identity and authentication of end users
 - Direct network authentication
 
-### What are these used for? 
+### What are these CAs used for? 
 - Healthcare IT and Electronic Health Records systems
 
-### What should an agency engineer do?
+### What should an agency engineer do if they encounter one of these CA certificates?
 - Free to remove these CAs from any embedded trust lists used for the above purposes  
 
 ### Who can I contact for help or more information?
@@ -230,7 +237,7 @@ This change focused on maintaining the appropriate mission scope for Federal PKI
 -	Thumbprint (SHA-1 Hash): 4CDE1CE2BC31F6DE82E90E2799ED003ED6376DA0
 -	SPKI (SHA-256 Hash): 0FFCB556F276AA77482A6A89EB1708AFB08DC32EE3D2D67199F00BA98DC8F436
 
-> **Note**: The Federal Bridge CA 2016 will issue a cross certificate to the DigiCert Federated ID L3 CA. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case. 
+> **Note**: The Federal Bridge CA 2016 issued a cross certificate to the DigiCert Federated ID L3 CA on February 28, 2019. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case. 
 
 ### DigiCert Federated ID L4 CA
 -	Serial #: 097DBB8C7DFCD2CEDA71F35F73029DA7
