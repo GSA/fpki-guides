@@ -14,7 +14,7 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 1. On February 28, 2019 the FPKI issued a cross-certificate from the Federal Bridge CA 2016 to the DigiCert Federated ID L3 CA. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case for a relationship with the Federal PKI Trust Framework. 
 2. On March 4, 2019 the FPKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to the DigiCert Federated ID CA-1 CA.   
-### As a result of this change the following CAs are still active but no longer a part of Federal PKI:
+**As a result of this change the following CAs are still active but no longer a part of Federal PKI:**
 
 **CA Certificates Issued by the DigiCert Federated Trust CA**
 1. [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
