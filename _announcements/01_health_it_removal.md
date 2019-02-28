@@ -2,7 +2,7 @@
 layout: default
 navtitle: Removal of Health IT CAs from Federal PKI
 title: Removal of Health IT CAs from Federal PKI
-pubDate: March 1, 2019
+pubDate: March 4, 2019
 collection: announcements
 permalink: announcements/health-it-removal/
 description: On March 4th, 2019 the Federal PKI (FPKI) performed two certificate management activities to remove dependencies for 59 certification authorities (CAs) related to Health IT and Electronic Health Records systems use cases from the Federal PKI Trust Framework. This change focused on maintaining the appropriate mission scope for Federal PKI, and was not a reaction to misconduct. This announcement provides details related to the CAs affected by this change.
