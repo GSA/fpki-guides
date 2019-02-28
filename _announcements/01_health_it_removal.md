@@ -22,7 +22,7 @@ This change will:
 - Clearly delineate the delegated authorities for accrediting technologies; and
 - Reduce the complexity of the processes and associated information security risks to federal and commercial information systems.
 
-## The following CAs are still active but no longer a part of Federal PKI:
+## The following CAs are still active but no longer a part of Federal PKI:##
 
 ### CA Certificates Issued by the DigiCert Federated Trust CA
 1. [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
