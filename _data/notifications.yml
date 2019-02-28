@@ -683,7 +683,7 @@
   
 - notice_date: February 28, 2019
   change_type: CA Certificate Issuance
-  start_datetime: February 27, 2019
+  start_datetime: February 25, 2019
   end_datetime: February 29, 2020
   system: CertiPath Bridge 
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to NextgenIDRootCA1
@@ -697,7 +697,7 @@
 
 - notice_date: February 28, 2019
   change_type: CA Certificate Issuance
-  start_datetime: February 27, 2019
+  start_datetime: February 25, 2019
   end_datetime: February 29, 2020
   system: CertiPath Bridge 
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Northrop Grumman Corporate Root CA-G2
