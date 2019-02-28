@@ -71,7 +71,7 @@ Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByD
 
 ### CA Certificates Issued by the Orion Health Direct Secure Messaging CA
 1. [Alaska eHealth Network CA](#alaska-ehealth-network-ca)
-1. [Cal INDEX CA](#cal-index-ca)(#cal-index-ca)
+1. [Cal INDEX CA](#cal-index-ca)
 1. [Catholic Health Initiatives CA](#catholic-health-initiatives-ca)
 1. [Greenville Health System CA](#greenville-health-system-ca)
 1. [Highmark Tapestry HIE CA](#highmark-tapestry-hie-ca)
