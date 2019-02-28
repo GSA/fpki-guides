@@ -60,9 +60,14 @@ This change will:
 1. [Rochester RHIO Intermediate CA](#rochester-rhio-intermediate-ca)
 1. [SCHIEx Direct CA](#schiex-direct-ca)
 
+Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA.pem){:target="_blank"}.
+
 ### CA Certificates Issued by the DigiCert Federated Trust CA-1
 1. [MIDIGATE CA](#midigate-ca)
 1. [Trinity Health Direct CA](#trinity-health-direct-ca)
+
+Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA-1.pem){:target="_blank"}.
+
 
 ### CA Certificates Issued by the Orion Health Direct Secure Messaging CA
 1. [Alaska eHealth Network CA](#alaska-ehealth-network-ca)
@@ -90,6 +95,7 @@ This change will:
 1. [The Koble Group CA](#the-koble-group-ca)
 1. [Western Connecticut Health Network CA](#western-connecticut-health-network-ca)
 
+Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByOrionHealthDirectSecureMessagingCA.pem){:target="_blank"}.
 
 ### You should never encounter certificates issued from these CAs for the majority of mission operational use cases including: 
 - VPNs
