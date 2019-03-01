@@ -54,6 +54,7 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 **Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA.pem){:target="_blank"}.
 
+<br>
 
 **CA Certificates Issued by the DigiCert Federated Trust CA-1**
 1. [MIDIGATE CA](#midigate-ca)
@@ -61,6 +62,7 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 **Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA-1.pem){:target="_blank"}.
 
+<br>
 
 **CA Certificates Issued by the Orion Health Direct Secure Messaging CA**
 1. [Alaska eHealth Network CA](#alaska-ehealth-network-ca)
@@ -98,24 +100,21 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 - Federation services used for identity and authentication of end users
 - Direct network authentication
 
-<br>
 
 ### What are these CAs used for? 
 - Healthcare IT and Electronic Health Records systems
 
-<br>
 
 ### What should an agency engineer do if they encounter one of these CA certificates?
-- Free to remove these CAs from any embedded trust lists used for the above purposes  
+- Feel free to remove these CAs from any embedded trust lists used for the above purposes  
 
-<br>
 
 ### Who can I contact for help or more information?
 - Email us at fpki@gsa.gov
 
-<br>
 
-### Detailed Certificate Authority Information
+### Detailed Certificate Authority Information:
+A more detailed listing of the certificates affected by this change is presented below.
 
 ####  CA Certificates Issued by the DigiCert Federated Trust CA
 
