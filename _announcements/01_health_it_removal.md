@@ -13,7 +13,8 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 1. On February 28, 2019 the FPKI issued a cross-certificate from the Federal Bridge CA 2016 to the DigiCert Federated ID L3 CA. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case for a relationship with the Federal PKI Trust Framework. 
 2. On March 4, 2019 the FPKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to the DigiCert Federated ID CA-1 CA.   
-**As a result of this change the following CAs are still active but no longer a part of Federal PKI:**
+
+### As a result of this change the following CAs are still active but no longer a part of Federal PKI:
 
 **CA Certificates Issued by the DigiCert Federated Trust CA**
 1. [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
@@ -53,7 +54,6 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 **Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA.pem){:target="_blank"}.
 
-<br>
 
 **CA Certificates Issued by the DigiCert Federated Trust CA-1**
 1. [MIDIGATE CA](#midigate-ca)
@@ -61,7 +61,6 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 **Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA-1.pem){:target="_blank"}.
 
-<br>
 
 **CA Certificates Issued by the Orion Health Direct Secure Messaging CA**
 1. [Alaska eHealth Network CA](#alaska-ehealth-network-ca)
@@ -91,7 +90,7 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 **Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByOrionHealthDirectSecureMessagingCA.pem){:target="_blank"}.
 
-<br><br>
+<br>
 
 ### You should never encounter certificates issued from these CAs for the majority of mission operational use cases including: 
 - VPNs
@@ -99,22 +98,22 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 - Federation services used for identity and authentication of end users
 - Direct network authentication
 
-<br><br>
+<br>
 
 ### What are these CAs used for? 
 - Healthcare IT and Electronic Health Records systems
 
-<br><br>
+<br>
 
 ### What should an agency engineer do if they encounter one of these CA certificates?
 - Free to remove these CAs from any embedded trust lists used for the above purposes  
 
-<br><br>
+<br>
 
 ### Who can I contact for help or more information?
 - Email us at fpki@gsa.gov
 
-<br><br>
+<br>
 
 ### Detailed Certificate Authority Information
 
