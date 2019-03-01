@@ -114,7 +114,7 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 
 ### Detailed Certificate Authority Information:
-A more detailed listing of the certificates affected by this change is presented below.
+A more detailed listing of the CAs affected by this change is presented below:
 
 ####  CA Certificates Issued by the DigiCert Federated Trust CA
 
