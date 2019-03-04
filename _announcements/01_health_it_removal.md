@@ -16,6 +16,20 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 ### As a result of this change the following CAs are still active but no longer a part of Federal PKI:
 
+**CA Certificates Issued by the DigiCert Federated ID CA-1 CA**
+1. [DigiCert Federated Trust CA](digicert-federated-trust-ca)
+1. [DigiCert Federated Trust CA-1](digicert-federated-trust-ca--1)
+1. [DigiCert Federated ID L1 CA](digicert-federated-id-l1-ca)
+1. [DigiCert Federated ID L2 CA](digicert-federated-id-l2-ca)
+1. [DigiCert Federated ID L3 CA](digicert-federated-id-l3-ca)
+1. [DigiCert Federated ID L4 CA](digicert-federated-id-l4-ca)
+1. [DigiCert Federated ID US L3 CA](digicert-federated-id-us-l3-ca)
+1. [DigiCert Federated ID US L4 CA](digicert-federated-id-us-l4-ca)
+
+**Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedIDCA-1.pem){:target="_blank"}.
+
+<br>
+
 **CA Certificates Issued by the DigiCert Federated Trust CA**
 1. [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
 1. [Allina Health Connect HIE Intermediate CA](#allina-health-connect-hie-intermediate-ca)
@@ -115,6 +129,84 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 ### Detailed Certificate Authority Information:
 A more detailed listing of the CAs affected by this change is presented below:
+
+#### CA Certificates Issued by the DigiCert Federated ID CA-1 CA
+
+##### DigiCert Federated Trust CA
+-	Serial #: 0E569A999C8F5DDAF576E08A12759914 
+-	Not Before: 11/18/2011 
+-	Not After: 11/18/2023
+-	AKI: D02B3BFF6871D6900CF7C47379C7997000E54740 
+-	SKI: 4608385AA98E20BB0CAF5E31BA89B328BFAC8C36
+-	Thumbprint (SHA-1 Hash): A6B8FEE249869E52A3039CB86B97DE5EFB6E8EB4  
+-	SPKI (SHA-256 Hash):   
+
+##### DigiCert Federated Trust CA-1
+-	Serial #: 0E25E27258328AEBDA5BAE23412F0B83  
+-	Not Before: 8/24/2017 
+-	Not After: 1/14/2023 
+-	AKI: D02B3BFF6871D6900CF7C47379C7997000E54740 
+-	SKI: 6BD202D3D1A9638B394B45319A8F0CBE29E6012B 
+-	Thumbprint (SHA-1 Hash): E29C44387F7BAA9F49EFCCAEA654BCE20CFF5FD3 
+-	SPKI (SHA-256 Hash):   
+
+##### DigiCert Federated ID L1 CA
+-	Serial #: 0C7A7DCC53DDE3D580FC9688D3449627  
+-	Not Before: 10/30/2012 
+-	Not After: 10/30/2027
+-	AKI: D02B3BFF6871D6900CF7C47379C7997000E54740 
+-	SKI: DE9A5CAE53D3C97418000031921B4A2709C87948
+-	Thumbprint (SHA-1 Hash): 629D8910A0342BF54BC81CE857B1CDE8F197FDE6 
+-	SPKI (SHA-256 Hash):   
+
+##### DigiCert Federated ID L2 CA
+-	Serial #: 0DBA21F019A2AF46C3614FE7E72721F8 
+-	Not Before: 1/8/2014 
+-	Not After: 1/8/2029
+-	AKI: D02B3BFF6871D6900CF7C47379C7997000E54740  
+-	SKI: 0A26205117910D71DB3B3E5E0200A0E803B65519 
+-	Thumbprint (SHA-1 Hash): A6B6A96F9FE96A7ABD6D653F1C042B46DB997ABF 
+-	SPKI (SHA-256 Hash):   
+
+##### DigiCert Federated ID L3 CA
+-	Serial #: 0FDAC8733E6F53E33102675179703290 
+-	Not Before: 1/8/2014
+-	Not After: 1/8/2029
+-	AKI: D02B3BFF6871D6900CF7C47379C7997000E54740 
+-	SKI: 8F23D3C49CEBC2A6964E3AF1CE88B28BE2935412 
+-	Thumbprint (SHA-1 Hash): B60E8344FC32949C23D31A294F867EA64A9BECF2
+-	SPKI (SHA-256 Hash):   
+
+##### DigiCert Federated ID L4 CA
+-	Serial #: 0AE4FB7C15E43A90A753212AFFCFE140 
+-	Not Before: 10/30/2012 
+-	Not After: 10/30/2027
+-	AKI: D02B3BFF6871D6900CF7C47379C7997000E54740 
+-	SKI: E33A75499CDA442F6C86031C818B2857C8FFA232 
+-	Thumbprint (SHA-1 Hash): D69D7163302134697AFFBDB934E40CAB6AD57795 
+-	SPKI (SHA-256 Hash):   
+
+##### DigiCert Federated ID US L3 CA
+-	Serial #: 079E9B3BDD54A4449B220580F2602B97  
+-	Not Before: 1/8/2014  
+-	Not After: 1/8/2029
+-	AKI: D02B3BFF6871D6900CF7C47379C7997000E54740 
+-	SKI: 0A8FEE0166735DE223EDA829E85592525AD0BE88 
+-	Thumbprint (SHA-1 Hash): 7FF5F80F53A0DF20C42A7D0DC544C68D684CD557  
+-	SPKI (SHA-256 Hash):   
+
+> **Note**: The Federal Bridge CA 2016 issued a cross certificate to the DigiCert Federated ID L3 CA on February 28, 2019. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case. 
+
+##### DigiCert Federated ID US L4 CA
+-	Serial #: 0288147B73BE38D74651E1DCA065CD08  
+-	Not Before: 4/18/2013
+-	Not After: 4/18/2028
+-	AKI: D02B3BFF6871D6900CF7C47379C7997000E54740 
+-	SKI: 9AC44371300E3025A54AE9B4234ED338F3373FA8 
+-	Thumbprint (SHA-1 Hash): F7F5D745DB7AEADE2AA27E0D5AFAB9760BF8B8A4 
+-	SPKI (SHA-256 Hash):   
+
+
 
 ####  CA Certificates Issued by the DigiCert Federated Trust CA
 
