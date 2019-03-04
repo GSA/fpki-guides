@@ -101,12 +101,12 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 - Direct network authentication
 
 
-### What are these CAs used for? 
-- Healthcare IT and Electronic Health Records systems
-
-
 ### What should an agency engineer do if they encounter one of these CA certificates?
 - Feel free to remove these CAs from any embedded trust lists used for the above purposes  
+
+
+### What are these CAs used for? 
+- Healthcare IT and Electronic Health Records systems
 
 
 ### Who can I contact for help or more information?
