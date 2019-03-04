@@ -5,11 +5,11 @@ title: Removal of Health IT CAs from Federal PKI
 pubDate: March 4, 2019
 collection: announcements
 permalink: announcements/health-it-removal/
-description: The Federal PKI (FPKI) recently performed two certificate management activities to remove dependencies for 59 certification authorities (CAs) related to Health IT and Electronic Health Records systems use cases from the Federal PKI Trust Framework. This change focused on maintaining the appropriate mission scope for the Federal PKI, and was not a reaction to misconduct. This announcement provides details related to the CAs affected by this change.
+description: The Federal PKI (FPKI) recently performed two certificate management activities to remove dependencies for sixty-one certification authorities (CAs) related to Health IT and Electronic Health Records systems use cases from the Federal PKI Trust Framework. This change focused on maintaining the appropriate mission scope for the Federal PKI, and was not a reaction to misconduct. This announcement provides details related to the CAs affected by this change.
 
 ---
 
-The Federal PKI (FPKI) recently performed two certificate management activities to remove dependencies for 59 certification authorities (CAs) related to Health IT and Electronic Health Records systems use cases from the Federal PKI Trust Framework. This change focused on maintaining the appropriate mission scope for the Federal PKI, and was not a reaction to misconduct. 
+The Federal PKI (FPKI) recently performed two certificate management activities to remove dependencies for sixty-one certification authorities (CAs) related to Health IT and Electronic Health Records systems use cases from the Federal PKI Trust Framework. This change focused on maintaining the appropriate mission scope for the Federal PKI, and was not a reaction to misconduct. 
 
 1. On February 28, 2019 the FPKI issued a cross-certificate from the Federal Bridge CA 2016 to the DigiCert Federated ID L3 CA. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case for a relationship with the Federal PKI Trust Framework. 
 2. On March 4, 2019 the FPKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to the DigiCert Federated ID CA-1 CA.   
