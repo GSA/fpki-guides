@@ -16,7 +16,7 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 ### As a result of this change the following CAs are still active but no longer a part of Federal PKI:
 
-**CA Certificates Issued by the DigiCert Federated ID CA-1 CA**
+**CA Certificates Issued by DigiCert Federated ID CA-1 CA**
 1. [DigiCert Federated Trust CA](#digicert-federated-trust-ca)
 1. [DigiCert Federated Trust CA-1](#digicert-federated-trust-ca-1)
 1. [DigiCert Federated ID L1 CA](#digicert-federated-id-l1-ca)
@@ -30,7 +30,7 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 <br>
 
-**CA Certificates Issued by the DigiCert Federated Trust CA**
+**CA Certificates Issued by DigiCert Federated Trust CA**
 1. [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
 1. [Allina Health Connect HIE Intermediate CA](#allina-health-connect-hie-intermediate-ca)
 1. [Axesson Direct CA](#axesson-direct-ca)
@@ -70,7 +70,7 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 <br>
 
-**CA Certificates Issued by the DigiCert Federated Trust CA-1**
+**CA Certificates Issued by DigiCert Federated Trust CA-1**
 1. [MIDIGATE CA](#midigate-ca)
 1. [Trinity Health Direct CA](#trinity-health-direct-ca)
 
@@ -78,7 +78,7 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 <br>
 
-**CA Certificates Issued by the Orion Health Direct Secure Messaging CA**
+**CA Certificates Issued by Orion Health Direct Secure Messaging CA**
 1. [Alaska eHealth Network CA](#alaska-ehealth-network-ca)
 1. [Cal INDEX CA](#cal-index-ca)
 1. [Catholic Health Initiatives CA](#catholic-health-initiatives-ca)
