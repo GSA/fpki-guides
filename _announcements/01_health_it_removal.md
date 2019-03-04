@@ -18,7 +18,7 @@ The Federal PKI (FPKI) recently performed two certificate management activities 
 
 **CA Certificates Issued by the DigiCert Federated ID CA-1 CA**
 1. [DigiCert Federated Trust CA](#digicert-federated-trust-ca)
-1. [DigiCert Federated Trust CA-1](#digicert-federated-trust-ca--1)
+1. [DigiCert Federated Trust CA-1](#digicert-federated-trust-ca-1)
 1. [DigiCert Federated ID L1 CA](#digicert-federated-id-l1-ca)
 1. [DigiCert Federated ID L2 CA](#digicert-federated-id-l2-ca)
 1. [DigiCert Federated ID L3 CA](#digicert-federated-id-l3-ca)
