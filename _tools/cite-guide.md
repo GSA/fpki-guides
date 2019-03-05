@@ -286,7 +286,7 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | 2.16.840.1.113733.1.7.21.3.20 | Class 3-VTN SSP-PIV-I ContentSigning | 2.16.840.1.113733.1.7.23.3.1.20 |
 
 #### IdenTrust
-| Test OID | Policy | Production OID |
+| Test OID                      | Policy                                            | Production OID               |
 |-------------------------------|---------------------------------------------------|------------------------------|
 | 2.16.840.1.113839.99.100.2.3  | IGC Basic Software Signing                        | 2.16.840.1.113839.0.100.2.3  |
 | 2.16.840.1.113839.99.100.2.4  | IGC Basic Software Encryption                     | 2.16.840.1.113839.0.100.2.4  |
