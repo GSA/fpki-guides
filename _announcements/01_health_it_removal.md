@@ -1,136 +1,146 @@
 ---
 layout: default
-navtitle: Removal of Health IT CAs from Federal PKI
-title: Removal of Health IT CAs from Federal PKI
-pubDate: March 4, 2019
+navtitle: Removal of CAs from Federal PKI
+title: Removal of CAs from Federal PKI
+pubDate: March 5, 2019
 collection: announcements
 permalink: announcements/health-it-removal/
-description: The Federal PKI (FPKI) recently performed two certificate management activities to remove dependencies for fifty-nine (59) certification authorities (CAs) related to Health IT and Electronic Health Records systems use cases from the Federal PKI Trust Framework. This change focused on maintaining the appropriate mission scope for the Federal PKI, and was not a reaction to misconduct. This announcement provides details related to the CAs affected by this change.
+description: Federal PKI teams recently performed two actions to remove fifty-nine (59) certification authorities (CAs) related to health IT use cases from the Federal PKI trust framework. This change is related to efforts to assess and maintain the mission scope for Federal PKI and reduce burden for commercial and non-profit organizations.  This change is not a distrust action. This announcement provides information related to the CAs affected by this change.
 
 ---
 
-The Federal PKI (FPKI) recently performed two certificate management activities to remove dependencies for fifty-nine (59) certification authorities (CAs) related to Health IT and Electronic Health Records systems use cases from the Federal PKI Trust Framework. This change focused on maintaining the appropriate mission scope for the Federal PKI, and was not a reaction to misconduct. 
+Federal PKI teams performed two actions to remove fifty-nine (59) certification authorities (CAs) related to health IT use cases from the Federal PKI trust framework. This change is related to efforts to assess and maintain the mission scope for Federal PKI and reduce burden for commercial and non-profit organizations. This change is **not a distrust** action. 
 
-1. On February 28, 2019 the FPKI issued a cross-certificate from the Federal Bridge CA 2016 to the DigiCert Federated ID L3 CA. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case for a relationship with the Federal PKI Trust Framework. 
-2. On March 4, 2019 the FPKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to the DigiCert Federated ID CA-1 CA.   
+This announcement provides details related to the CAs affected by this change. 
 
-### As a result of this change the following CAs are still active but no longer a part of Federal PKI:
+- [What was the change?](#what-was-the-change)
+- [What certification authorities were impacted?](#what-certification-authorities-were-impacted)
+- [What should I do?](#what-should-i-do)
+- [Who can I contact for more information?](#who-can-i-contact-for-more-information)
+- [Additional Resources](#additional-resources)
 
-**CA Certificates Issued by DigiCert Federated ID CA-1 CA**
-- [DigiCert Federated Trust CA](#digicert-federated-trust-ca)
-- [DigiCert Federated Trust CA-1](#digicert-federated-trust-ca-1)
-- [DigiCert Federated ID L1 CA](#digicert-federated-id-l1-ca)
-- [DigiCert Federated ID L2 CA](#digicert-federated-id-l2-ca)
-- [DigiCert Federated ID L3 CA](#digicert-federated-id-l3-ca)
-- [DigiCert Federated ID L4 CA](#digicert-federated-id-l4-ca)
-- [DigiCert Federated ID US L3 CA](#digicert-federated-id-us-l3-ca)
-- [DigiCert Federated ID US L4 CA](#digicert-federated-id-us-l4-ca)
+## What was the change?
 
-**Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedIDCA-1.pem){:target="_blank"}.
+- **February 28, 2019:** Federal PKI issued a cross-certificate from the Federal Bridge CA 2016 to DigiCert Federated ID L3 CA. 
+  - The issuance of the new cross-certificate was to ensure operations for three (3) electronic prescriptions for controlled substance (EPCS) systems are not immediately impacted by any change.  
+- **March 4, 2019:** Federal PKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to DigiCert Federated ID CA-1 CA.   
 
-<br>
+## What certification authorities were impacted?
+The following CAs are still **active** and may be used for the intended purposes.  These CAs will no longer have a trust relationship with - or be required to be audited for - Federal PKI compliance.  
 
-**CA Certificates Issued by DigiCert Federated Trust CA**
-- [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)
-- [Allina Health Connect HIE Intermediate CA](#allina-health-connect-hie-intermediate-ca)
-- [Axesson Direct CA](#axesson-direct-ca)
-- [Care360 Direct Intermediate CA](#care360-direct-intermediate-ca)
-- [Cerner Corporation Direct Intermediate CA](#cerner-corporation-direct-intermediate-ca)
-- [Cerner Corporation Resonance Intermediate CA](#cerner-corporation-resonance-intermediate-ca)
-- [CompuGroup Medical Certificate Authority](#compugroup-medical-certificate-authority)
-- [Corepoint Direct Intermediate CA](#corepoint-direct-intermediate-ca)
-- [DigiCert Accredited Direct Med CA](#digicert-accredited-direct-med-ca)
-- [DigiCert Direct Non-Provider CA](#digicert-direct-non-provider-ca)
-- [DigiCert Federated Healthcare CA](#digicert-federated-healthcare-ca)
-- [DigiCert Federated ID L1 CA](#digicert-federated-id-l1-ca)
-- [DigiCert Federated ID L2 CA](#digicert-federated-id-l2-ca)
-- [DigiCert Federated ID L3 CA](#digicert-federated-id-l3-ca)
-- [DigiCert Federated ID L4 CA](#digicert-federated-id-l4-ca)
-- [DigiCert Federated ID US L3 CA](#digicert-federated-id-us-l3-ca)
-- [DigiCert Federated ID US L4 CA](#digicert-federated-id-us-l4-ca)
-- [DigiCert Governmental Direct CA](#digicert-governmental-direct-ca)
-- [DigiCert Provisional Direct Med CA](#digicert-provisional-direct-med-ca)
-- [Indian Health Service-RPMS DIRECT Messaging CA](#indian-health-service-rpms-direct-messaging-ca)
-- [Inpriva Direct Federated CA](#inpriva-direct-federated-ca)
-- [INTEGRIS Direct Intermediate CA](#integris-direct-intermediate-ca)
-- [iShare Medical Direct Intermediate CA](#ishare-medical-direct-intermediate-ca)
-- [MedicaSoft Direct Intermediate CA](#medicasoft-direct-intermediate-ca)
-- [Medicity Direct CA](#medicity-direct-ca)
-- [MHIN Direct CA](#mhin-direct-ca)
-- [Mirth Direct Intermediate CA](#mirth-direct-intermediate-ca)
-- [MobileMD Direct Intermediate CA](#mobilemd-direct-intermediate-ca)
-- [MRO Direct Intermediate CA](#mro-direct-intermediate-ca)
-- [Oregon Health Authority Direct CA](#oregon-health-authority-direct-ca)
-- [Orion Health Direct Secure Messaging CA](#orion-health-direct-secure-messaging-ca)
-- [RelayHealth Direct CA](#relayhealth-direct-ca)
-- [Rochester RHIO Intermediate CA](#rochester-rhio-intermediate-ca)
-- [SCHIEx Direct CA](#schiex-direct-ca)
+Each CA is listed by common name with a link to additional CA certificate details in the [Additional Resources](#additional-resources) section. 
 
-**Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA.pem){:target="_blank"}.
+**CA Certificates _Issued By_ DigiCert Federated ID CA-1 CA**  
 
-<br>
-
-**CA Certificates Issued by DigiCert Federated Trust CA-1**
-- [MIDIGATE CA](#midigate-ca)
-- [Trinity Health Direct CA](#trinity-health-direct-ca)
-
-**Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByDigiCertFederatedTrustCA-1.pem){:target="_blank"}.
-
-<br>
-
-**CA Certificates Issued by Orion Health Direct Secure Messaging CA**
-- [Alaska eHealth Network CA](#alaska-ehealth-network-ca)
-- [Cal INDEX CA](#cal-index-ca)
-- [Catholic Health Initiatives CA](#catholic-health-initiatives-ca)
-- [Greenville Health System CA](#greenville-health-system-ca)
-- [Highmark Tapestry HIE CA](#highmark-tapestry-hie-ca)
-- [Huntsville Hospital System CA](#huntsville-hospital-system-ca)
-- [Inland Empire Health Information Exchange](#inland-empire-health-information-exchange)
-- [Jax HR Saint Vincents HIE CA](#jax-hr-saint-vincents-hie-ca)
-- [KeystoneHIE KeyHIE CA](#keystonehie-keyhie-ca)
-- [Louisiana Health Care Quality Forum CA](#louisiana-health-care-quality-forum-ca)
-- [Mary Washington Healthcare CA](#mary-washington-healthcare-ca)
-- [Mass HIway CA](#mass-hiway-ca)
-- [Mississippi Division of Medicaid CA](#mississippi-division-of-medicaid-ca)
-- [New Hampshire Health Information Organization CA](#new-hampshire-health-information-organization-ca)
-- [New Mexico Health Information Collaborative CA](#new-mexico-health-information-collaborative-ca)
-- [North Carolina Health Information Exchange CA](#north-carolina-health-information-exchange-ca)
-- [North Dakota Information Technology Department CA](#north-dakota-information-technology-department-ca)
-- [Oklahoma State Department of Health CA](#oklahoma-state-department-of-health-ca)
-- [Optioncare CA](#optioncare-ca)
-- [Orion Health Direct Secure Messaging Public HISP CA](#orion-health-direct-secure-messaging-public-hisp-ca)
-- [Rush Health CA](#rush-health-ca)
-- [Sutter Health CA](#sutter-health-ca)
-- [The Koble Group CA](#the-koble-group-ca)
-- [Western Connecticut Health Network CA](#western-connecticut-health-network-ca)
-
-**Note:** Download a PEM encoded copy of these CA certificates [here](../../docs/issuedByOrionHealthDirectSecureMessagingCA.pem){:target="_blank"}.
-
-<br>
-
-### You should never encounter certificates issued from these CAs for the majority of mission operational use cases including: 
-- VPNs
-- Enterprise ICAM SSO 
-- Federation services used for identity and authentication of end users
-- Direct network authentication
+- [DigiCert Federated Trust CA](#digicert-federated-trust-ca)  
+- [DigiCert Federated Trust CA-1](#digicert-federated-trust-ca-1)  
+- [DigiCert Federated ID L1 CA](#digicert-federated-id-l1-ca)  
+- [DigiCert Federated ID L2 CA](#digicert-federated-id-l2-ca)  
+- [DigiCert Federated ID L3 CA](#digicert-federated-id-l3-ca)  
+- [DigiCert Federated ID L4 CA](#digicert-federated-id-l4-ca)  
+- [DigiCert Federated ID US L3 CA](#digicert-federated-id-us-l3-ca)  
+- [DigiCert Federated ID US L4 CA](#digicert-federated-id-us-l4-ca)  
 
 
-### What should an agency engineer do if they encounter one of these CA certificates?
-- Feel free to remove these CAs from any embedded trust lists used for the above purposes  
+**CA Certificates _Issued By_ DigiCert Federated Trust CA**  
+
+- [AAMC Direct Intermediate CA](#aamc-direct-intermediate-ca)  
+- [Allina Health Connect HIE Intermediate CA](#allina-health-connect-hie-intermediate-ca)  
+- [Axesson Direct CA](#axesson-direct-ca)  
+- [Care360 Direct Intermediate CA](#care360-direct-intermediate-ca)  
+- [Cerner Corporation Direct Intermediate CA](#cerner-corporation-direct-intermediate-ca)  
+- [Cerner Corporation Resonance Intermediate CA](#cerner-corporation-resonance-intermediate-ca)  
+- [CompuGroup Medical Certificate Authority](#compugroup-medical-certificate-authority)  
+- [Corepoint Direct Intermediate CA](#corepoint-direct-intermediate-ca)  
+- [DigiCert Accredited Direct Med CA](#digicert-accredited-direct-med-ca)  
+- [DigiCert Direct Non-Provider CA](#digicert-direct-non-provider-ca)  
+- [DigiCert Federated Healthcare CA](#digicert-federated-healthcare-ca)  
+- [DigiCert Federated ID L1 CA](#digicert-federated-id-l1-ca)  
+- [DigiCert Federated ID L2 CA](#digicert-federated-id-l2-ca)  
+- [DigiCert Federated ID L3 CA](#digicert-federated-id-l3-ca)  
+- [DigiCert Federated ID L4 CA](#digicert-federated-id-l4-ca)  
+- [DigiCert Federated ID US L3 CA](#digicert-federated-id-us-l3-ca)  
+- [DigiCert Federated ID US L4 CA](#digicert-federated-id-us-l4-ca)  
+- [DigiCert Governmental Direct CA](#digicert-governmental-direct-ca)  
+- [DigiCert Provisional Direct Med CA](#digicert-provisional-direct-med-ca)  
+- [Indian Health Service-RPMS DIRECT Messaging CA](#indian-health-service-rpms-direct-messaging-ca)  
+- [Inpriva Direct Federated CA](#inpriva-direct-federated-ca)  
+- [INTEGRIS Direct Intermediate CA](#integris-direct-intermediate-ca)  
+- [iShare Medical Direct Intermediate CA](#ishare-medical-direct-intermediate-ca)  
+- [MedicaSoft Direct Intermediate CA](#medicasoft-direct-intermediate-ca)  
+- [Medicity Direct CA](#medicity-direct-ca)  
+- [MHIN Direct CA](#mhin-direct-ca)  
+- [Mirth Direct Intermediate CA](#mirth-direct-intermediate-ca)  
+- [MobileMD Direct Intermediate CA](#mobilemd-direct-intermediate-ca)  
+- [MRO Direct Intermediate CA](#mro-direct-intermediate-ca)  
+- [Oregon Health Authority Direct CA](#oregon-health-authority-direct-ca)  
+- [Orion Health Direct Secure Messaging CA](#orion-health-direct-secure-messaging-ca)  
+- [RelayHealth Direct CA](#relayhealth-direct-ca)  
+- [Rochester RHIO Intermediate CA](#rochester-rhio-intermediate-ca)  
+- [SCHIEx Direct CA](#schiex-direct-ca)  
 
 
-### What are these CAs used for? 
-- Healthcare IT and Electronic Health Records systems
+**CA Certificates _Issued By_ DigiCert Federated Trust CA-1**   
+ 
+- [MIDIGATE CA](#midigate-ca)  
+- [Trinity Health Direct CA](#trinity-health-direct-ca)  
+
+**CA Certificates Issued by Orion Health Direct Secure Messaging CA**  
+
+- [Alaska eHealth Network CA](#alaska-ehealth-network-ca)  
+- [Cal INDEX CA](#cal-index-ca)  
+- [Catholic Health Initiatives CA](#catholic-health-initiatives-ca)  
+- [Greenville Health System CA](#greenville-health-system-ca)  
+- [Highmark Tapestry HIE CA](#highmark-tapestry-hie-ca)  
+- [Huntsville Hospital System CA](#huntsville-hospital-system-ca)  
+- [Inland Empire Health Information Exchange](#inland-empire-health-information-exchange)  
+- [Jax HR Saint Vincents HIE CA](#jax-hr-saint-vincents-hie-ca)  
+- [KeystoneHIE KeyHIE CA](#keystonehie-keyhie-ca)  
+- [Louisiana Health Care Quality Forum CA](#louisiana-health-care-quality-forum-ca)  
+- [Mary Washington Healthcare CA](#mary-washington-healthcare-ca)  
+- [Mass HIway CA](#mass-hiway-ca)  
+- [Mississippi Division of Medicaid CA](#mississippi-division-of-medicaid-ca)  
+- [New Hampshire Health Information Organization CA](#new-hampshire-health-information-organization-ca)  
+- [New Mexico Health Information Collaborative CA](#new-mexico-health-information-collaborative-ca)  
+- [North Carolina Health Information Exchange CA](#north-carolina-health-information-exchange-ca)  
+- [North Dakota Information Technology Department CA](#north-dakota-information-technology-department-ca)  
+- [Oklahoma State Department of Health CA](#oklahoma-state-department-of-health-ca)  
+- [Optioncare CA](#optioncare-ca)  
+- [Orion Health Direct Secure Messaging Public HISP CA](#orion-health-direct-secure-messaging-public-hisp-ca)  
+- [Rush Health CA](#rush-health-ca)  
+- [Sutter Health CA](#sutter-health-ca)  
+- [The Koble Group CA](#the-koble-group-ca)  
+- [Western Connecticut Health Network CA](#western-connecticut-health-network-ca)  
 
 
-### Who can I contact for help or more information?
-- Email us at fpki@gsa.gov
+## What should I do?
+A majority of mission operational use cases will never encounter certificates issued from these CAs.   Certificates from these CAs are primarily used for nationwide healthcare information systems and electronic health records.  
+
+You can remove these CAs from trust list configurations used for the following purposes: 
+
+- Federal government enterprise virtual private network (VPN) configurations
+- Federal government enterprise ICAM single-sign-on services
+- Federal government enterprise network authentication configurations
+- Federal government enterprise federation service configurations used for authentication of end users
+
+Removing the CAs from these trust list configurations may improve performance and reduce maintenance overhead.  
 
 
-### Detailed Certificate Authority Information:
-A more detailed listing of the CAs affected by this change is presented below:
+## Who can I contact for help or more information?  
+Email us at fpki@gsa.gov
 
-#### CA Certificates Issued by the DigiCert Federated ID CA-1 CA
+## Additional Resources
+Details of each CA affected by this change are listed below.  You can also download files with copies of the CA certificates.   
+
+To download PEM files with these CA certificates:  
+
+CA Certificates _Issued By_ |Download PEM File Link|
+---|---|
+CA Certificates _Issued By_ DigiCert Federated ID CA-1 CA |[Download ](../../docs/issuedByDigiCertFederatedIDCA-1.pem){:target="_blank"}| 
+CA Certificates _Issued By_ DigiCert Federated Trust CA |[Download ](../../docs/issuedByDigiCertFederatedTrustCA.pem){:target="_blank"}|
+CA Certificates _Issued By_ Orion Health Direct Secure Messaging CA |[Download ](../../docs/issuedByOrionHealthDirectSecureMessagingCA.pem){:target="_blank"}|
+ 
+#### CA Certificates _Issued By_ DigiCert Federated ID CA-1 CA
 
 ##### DigiCert Federated Trust CA
 -	Serial #: 0E569A999C8F5DDAF576E08A12759914 
@@ -195,7 +205,7 @@ A more detailed listing of the CAs affected by this change is presented below:
 -	Thumbprint (SHA-1 Hash): 7FF5F80F53A0DF20C42A7D0DC544C68D684CD557  
 -	SPKI (SHA-256 Hash): D78BD9425A708E062927E3FE396AC22DF1414B1AE926FB6E868165C039197CAC  
 
-> **Note**: The Federal Bridge CA 2016 issued a cross certificate to the DigiCert Federated ID L3 CA on February 28, 2019. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case. 
+> **Note**: Federal Bridge CA 2016 issued a cross certificate to the DigiCert Federated ID L3 CA on February 28, 2019. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case. 
 
 ##### DigiCert Federated ID US L4 CA
 -	Serial #: 0288147B73BE38D74651E1DCA065CD08  
@@ -207,8 +217,7 @@ A more detailed listing of the CAs affected by this change is presented below:
 -	SPKI (SHA-256 Hash): 07CCF59B26C0559F70F16FB8876444394F7148569D62CC06B07B18EBB1ECCCFF
 
 
-
-####  CA Certificates Issued by the DigiCert Federated Trust CA
+####  CA Certificates _Issued By_ DigiCert Federated Trust CA
 
 #####  AAMC Direct Intermediate CA
 -	Serial #: 0B6957DF612F5190A590DCA544B775A1
@@ -336,7 +345,7 @@ A more detailed listing of the CAs affected by this change is presented below:
 -	Thumbprint (SHA-1 Hash): 4CDE1CE2BC31F6DE82E90E2799ED003ED6376DA0
 -	SPKI (SHA-256 Hash): 0FFCB556F276AA77482A6A89EB1708AFB08DC32EE3D2D67199F00BA98DC8F436
 
-> **Note**: The Federal Bridge CA 2016 issued a cross certificate to the DigiCert Federated ID L3 CA on February 28, 2019. This will ensure operations for three (3) Electronic Prescriptions for Controlled Substance (EPCS) customers are not immediately impacted while we continue to review these systems and the use case. 
+> **Note**: The Federal Bridge CA 2016 issued a cross certificate to the DigiCert Federated ID L3 CA on February 28, 2019. The issuance of the new cross-certificate was to ensure operations for three (3) electronic prescriptions for controlled substance (EPCS) systems are not immediately impacted by any change.  
 
 ##### DigiCert Federated ID L4 CA
 -	Serial #: 097DBB8C7DFCD2CEDA71F35F73029DA7
@@ -518,9 +527,7 @@ A more detailed listing of the CAs affected by this change is presented below:
 -	Thumbprint (SHA-1 Hash): 0ECD0F4D9AB83326E91DC4CEC99C6FEFABDD3CCC
 -	SPKI (SHA-256 Hash): 9493051083E71E3404D462B36C4E89CEC4A397FFCDFCD10504316A3AD36C9E32 
 
-
-
-####  CA Certificates Issued by the DigiCert Federated Trust CA-1
+####  CA Certificates _Issued By_ DigiCert Federated Trust CA-1
 
 ##### MIDIGATE CA
 -	Serial #: 0C436FDCE81703C46951EB97CF926806
@@ -540,7 +547,7 @@ A more detailed listing of the CAs affected by this change is presented below:
 -	Thumbprint (SHA-1 Hash): 91C374480ABA3BB9B46C8A870F95E0CA98CF0C70
 -	SPKI (SHA-256 Hash): 5B7AAE96A364A9DEE4E69BD81A910B5E4AD11A0ACB153EB033657CF9C88179B5 
 
-####  CA Certificates Issued by the Orion Health Direct Secure Messaging CA 
+####  CA Certificates _Issued By_ Orion Health Direct Secure Messaging CA 
 
 ##### Alaska eHealth Network CA
 -	Serial #: 07A42C0E8D2725E05DF2A012B520D378
