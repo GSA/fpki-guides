@@ -556,7 +556,7 @@
 - notice_date: February 12, 2019
   change_type: Intent to Perform CA Certificate Revocation
   system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: Revocation planned for the certificate issued from the Federal Bridge CA 2016 to the Verizon Betrusted Production SSP CA A1
+  change_description: Revocation planned for the certificate issued from the Federal Common Policy CA to the Verizon Betrusted Production SSP CA A1
   contact: FPKI dash help at gsa dot gov
   ca_certificate_hash: 06 01 bb da d5 a2 82 31 bc 94 36 75 0b 4f 3a 48 4b ab 06 c3
   ca_certificate_issuer: Federal Common Policy CA
@@ -637,6 +637,37 @@
   aia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
   sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
   ocsp_uri: http://certstatus.strac.org
+  
+- notice_date: March 5, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: February 28, 2019
+  end_datetime: February 28, 2022
+  system: FPKI Trust Infrastructure - Federal Bridga CA
+  change_description: New cross-certificate issued from Federal Bridge CA 2016 to DigiCert Federated ID L3 CA
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 11E615170E4862535762EC128565377F1A813B51
+  ca_certificate_issuer: cn=Federal Bridge CA 2016,ou=FPKI,o=U.S. Government,c=US
+  ca_certificate_subject: cn=DigiCert Federated ID L3 CA,ou=www.digicert.com,o=DigiCert Inc,c=US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  
+- notice_date: March 5, 2019
+  change_type: CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: Revocation performed on the certificate issued from the Federal Common Policy CA to the Verizon Betrusted Production SSP CA A1
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 06 01 bb da d5 a2 82 31 bc 94 36 75 0b 4f 3a 48 4b ab 06 c3
+  ca_certificate_issuer: Federal Common Policy CA
+  ca_certificate_subject: Betrusted Production SSP CA A1
+  
+- notice_date: March 5, 2019
+  change_type: CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Bridge 2016
+  change_description: Revocation performed on the certificate issued from the Federal Bridge CA 2016 to DigiCert Federated ID CA-1
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: e8 0b dd c6 1e d8 c4 3a d0 95 fc 94 62 17 be 45 bd d3 47 c1
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: DigiCert Federated ID CA-1 
   
 #- notice_date: 
 #  change_type: CA Certificate Issuance

@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: March 8, 2019
+Updated: March 5, 2019
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -39,6 +39,7 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
+| Verizon | Verizon Betrusted Production SSP CA A1 | Federal Common Policy CA | 0601BBDAD5A28231BC9436750B4F3A484BAB06C3 | 12/09/2020 |
 | STRAC Bridge | Federal Bridge CA 2016 | STRAC Bridge Root CA | 05B522AD82D4E1781BAB378E838AF4FFBAE0D7C9 | 02/21/2019 |
 | STRAC Bridge | STRAC Bridge Root CA | Federal Bridge CA 2016 | E4F6FBD50205A9645037FEF31EFCC83B78F9D68D | 02/21/2019 |
 | DigiCert | DigiCert Federated ID CA-1 | Federal Bridge CA 2016 | e80bddc61ed8c43ad095fc946217be45bdd347c1 | 09/28/2020 |
