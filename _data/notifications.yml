@@ -604,7 +604,6 @@
 - notice_date: February 21, 2019
   change_type: CA Certificate Issuance
   start_datetime: February 20, 2019
-  end_datetime: February 19, 2022
   system: STRAC Bridge Root Certification Authority
   change_description: New cross-certificate issued from STRAC Bridge Root Certification Authority to Federal Bridge 2016
   contact: pki at strac dot org
@@ -615,29 +614,77 @@
   aia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
   sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
   ocsp_uri: http://certstatus.strac.org
-
-- notice_date: February 20, 2019
+  
+- notice_date: February 26, 2019
   change_type: Intent to Perform CA Certificate Issuance
-  start_datetime: Issuance date to be determined
-  system: CertiPath Bridge CA G2
-  change_description: CertiPath intends to reissue cross-certificates from the CertiPath Bridge CA G2 to Carillon, NextgenID, and Northrop Grumman prior to the end of this month. No changes are being made to certificate policies or policy mappings. After testing and vetting, newly issued certificates will be provided to FPKI and published to the CertiPath Bridge CA - G2 SIA location (http://certipath-sia.symauth.com/IssuedBy-CertiPathBridgeCA-G2.p7c)
-  contact: judith dot spencer at certipath dot com
-  
-- notice_date: February 21, 2019
+  start_datetime: April 7, 2019
+  system: US Treasury 
+  change_description: Treasury intends to re-key ou=OCIO CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US and ou=Social Security Administration Certification Authority, ou=SSA, o=U.S. Government, c=US on 4/7/2019. Certificates will be available following the key update at https://pki.treasury.gov.
+  contact: pki dot pmo at fiscal dot treasury dot gov
+  ca_certificate_hash:
+  ca_certificate_issuer:
+  ca_certificate_subject:
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: February 28, 2019
   change_type: CA Certificate Issuance
-  start_datetime: February 20, 2019
-  end_datetime: February 19, 2022
-  system: STRAC Bridge Root Certification Authority
-  change_description: New cross-certificate issued from STRAC Bridge Root Certification Authority to Federal Bridge 2016
-  contact: pki at strac dot org
-  ca_certificate_hash: EE02BDB684AB4714C5F25300C41C5B8F328B0CD9
-  ca_certificate_issuer: C=US, O=STRAC, OU=STRAC PKI Trust Infrastructure, CN=STRAC Bridge Root Certification Authority
-  ca_certificate_subject: C=US, O=STRAC, OU=STRAC PKI Trust Infrastructure, CN=STRAC Bridge Root Certification Authority
-  cdp_uri: http://pki.strac.org/bridge/crl/STRACBridgeRootCA.crl
-  aia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
-  sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
-  ocsp_uri: http://certstatus.strac.org
+  start_datetime: February 25, 2019
+  system: CertiPath Bridge 
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to CISRCA1
+  contact: judith dot spencer at certipath dot com
+  ca_certificate_hash: EB23C015A0B4037738D54A088A653498D394F050 
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US 
+  ca_certificate_subject: CN = CISRCA1, OU = Certification Authorities, O = Carillon Information Security Inc., C = CA
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
+  sia_uri:  
+  ocsp_uri:  
   
+- notice_date: February 28, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: February 25, 2019
+  system: CertiPath Bridge 
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Carillon Federal Services PIV-I CA1
+  contact: judith dot spencer at certipath dot com
+  ca_certificate_hash: FA75A4149838AFE4DEF18BAD39B5EFD6187D1A8B  
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
+  ca_certificate_subject: CN = Carillon Federal Services PIV-I CA1, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US 
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
+  sia_uri:  
+  ocsp_uri:  
+  
+- notice_date: February 28, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: February 25, 2019
+  system: CertiPath Bridge 
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to NextgenIDRootCA1
+  contact: judith dot spencer at certipath dot com
+  ca_certificate_hash: C8EC9DAB6354FA4E2BF292B0A542F37436965723
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
+  ca_certificate_subject: CN = NextgenIDRootCA1, OU = Certification Authorities, O = NextgenID, C = US
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c 
+  sia_uri:  
+  ocsp_uri:  
+
+- notice_date: February 28, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: February 25, 2019
+  system: CertiPath Bridge 
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Northrop Grumman Corporate Root CA-G2
+  contact: judith dot spencer at certipath dot com
+  ca_certificate_hash: 6F14FDA78D34B603ABE060D9FD16331DAC646878
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
+  ca_certificate_subject: CN = Northrop Grumman Corporate Root CA-G2, OU = Northrop Grumman Information Technology, O = Northrop Grumman Corporation, C = US
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c  
+  sia_uri:  
+  ocsp_uri:  
+
 #- notice_date: 
 #  change_type: CA Certificate Issuance
 #  start_datetime:
