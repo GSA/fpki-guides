@@ -717,6 +717,35 @@
   ca_certificate_issuer: Federal Bridge CA 2016
   ca_certificate_subject: DigiCert Federated ID CA-1 
   
+- change_type: CA Certificate Issuance
+  start_datetime: March 4, 2019
+  end_datetime: December 12, 2028
+  system: DigiCert Federal SSP Intermediate CA - G5
+  change_description: DigiCert Federal SSP Intermediate CA - G5 issued a certificate to U.S. Department of Transportation Device CA G5.
+  contact: steve dot medin at digicert dot com
+  ca_certificate_hash: 263a035b50fc26368dd9a38894764b3f3592fb17
+  ca_certificate_issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
+  ca_certificate_subject: CN = U.S. Department of Transportation Device CA G5, OU = U.S. Department of Transportation, O = U.S. Government, C = US
+  cdp_uri: http://ssp-crl.digicert.com/SSP/SSPG5.crl
+  aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ssp-ocsp.digicert.com 
+
+- notice_date: March 6, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: March 4, 2019
+  end_datetime: December 12, 2028
+  system: DigiCert Federal SSP Intermediate CA - G5
+  change_description: DigiCert Federal SSP Intermediate CA - G5 issued a certificate to U.S. Department of Transportation Agency CA G5.
+  contact: steve dot medin at digicert dot com
+  ca_certificate_hash: b1d05e5b9e025ea4b3b3e30dc3f45a19f9ec51f6
+  ca_certificate_issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
+  ca_certificate_subject: CN = U.S. Department of Transportation Agency CA G5, OU = U.S. Department of Transportation, O = U.S. Government, C = US
+  cdp_uri: http://ssp-crl.digicert.com/SSP/SSPG5.crl
+  aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
+  sia_uri: N/A
+  ocsp_uri: http://ssp-ocsp.digicert.com
+  
 #- notice_date: 
 #  change_type: CA Certificate Issuance
 #  start_datetime:
