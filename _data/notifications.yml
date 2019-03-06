@@ -717,7 +717,8 @@
   ca_certificate_issuer: Federal Bridge CA 2016
   ca_certificate_subject: DigiCert Federated ID CA-1 
   
-- change_type: CA Certificate Issuance
+- notice_date: March 6, 2019
+  change_type: CA Certificate Issuance
   start_datetime: March 4, 2019
   end_datetime: December 12, 2028
   system: DigiCert Federal SSP Intermediate CA - G5
