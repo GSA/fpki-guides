@@ -728,7 +728,7 @@
   ca_certificate_subject: CN = U.S. Department of Transportation Device CA G5, OU = U.S. Department of Transportation, O = U.S. Government, C = US
   cdp_uri: http://ssp-crl.digicert.com/SSP/SSPG5.crl
   aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
-  sia_uri: N/A
+  sia_uri:
   ocsp_uri: http://ssp-ocsp.digicert.com 
 
 - notice_date: March 6, 2019
@@ -743,7 +743,7 @@
   ca_certificate_subject: CN = U.S. Department of Transportation Agency CA G5, OU = U.S. Department of Transportation, O = U.S. Government, C = US
   cdp_uri: http://ssp-crl.digicert.com/SSP/SSPG5.crl
   aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
-  sia_uri: N/A
+  sia_uri:
   ocsp_uri: http://ssp-ocsp.digicert.com
   
 #- notice_date: 
