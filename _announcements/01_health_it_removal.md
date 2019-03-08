@@ -79,7 +79,7 @@ Each CA is listed by common name with a link to additional CA certificate detail
 - [MIDIGATE CA](#midigate-ca)  
 - [Trinity Health Direct CA](#trinity-health-direct-ca)  
 
-**CA Certificates Issued by Orion Health Direct Secure Messaging CA**  
+**CA Certificates _Issued By_ Orion Health Direct Secure Messaging CA**  
 
 - [Alaska eHealth Network CA](#alaska-ehealth-network-ca)  
 - [Cal INDEX CA](#cal-index-ca)  
