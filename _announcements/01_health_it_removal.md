@@ -132,6 +132,7 @@ CA Certificates _Issued By_ |Download PEM File|
 ---|---|
 CA Certificates _Issued By_ DigiCert Federated ID CA-1 CA |[Download ](../../docs/issuedByDigiCertFederatedIDCA-1.pem){:target="_blank"}| 
 CA Certificates _Issued By_ DigiCert Federated Trust CA |[Download ](../../docs/issuedByDigiCertFederatedTrustCA.pem){:target="_blank"}|
+CA Certificates _Issued By_ DigiCert Federated Trust CA-1 |[Download ](../../docs/issuedByDigiCertFederatedTrustCA-1.pem){:target="_blank"}|
 CA Certificates _Issued By_ Orion Health Direct Secure Messaging CA |[Download ](../../docs/issuedByOrionHealthDirectSecureMessagingCA.pem){:target="_blank"}|
  
 #### CA Certificates _Issued By_ DigiCert Federated ID CA-1 CA
