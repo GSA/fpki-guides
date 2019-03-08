@@ -16,7 +16,7 @@ This announcement provides details related to the CAs affected by this change.
 - [What was the change?](#what-was-the-change)
 - [What certification authorities were impacted?](#what-certification-authorities-were-impacted)
 - [What should I do?](#what-should-i-do)
-- [Who can I contact for more information?](#who-can-i-contact-for-more-information)
+- [Who can I contact for help or more information?](#who-can-i-contact-for-help-or-more-information)
 - [Additional Resources](#additional-resources)
 
 ## What was the change?
