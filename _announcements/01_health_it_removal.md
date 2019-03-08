@@ -26,7 +26,7 @@ This announcement provides details related to the CAs affected by this change.
 - **March 4, 2019:** Federal PKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to DigiCert Federated ID CA-1 CA.   
 
 ## What certification authorities were impacted?
-The following CAs are still **active** and may be used for the intended purposes.  These CAs will no longer have a trust relationship with - or be required to be audited for - Federal PKI compliance.  
+The following CAs are still **active** and may be used for the intended purposes.  These CAs no longer have a trust relationship with - or are required to be audited for - Federal PKI compliance.  
 
 Each CA is listed by common name with a link to additional CA certificate details in the [Additional Resources](#additional-resources) section. 
 
