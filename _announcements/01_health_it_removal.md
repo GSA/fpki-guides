@@ -22,7 +22,7 @@ This announcement provides details related to the CAs affected by this change.
 ## What was the change?
 
 - **February 28, 2019:** Federal PKI issued a cross-certificate from the Federal Bridge CA 2016 to DigiCert Federated ID L3 CA. 
-  - The issuance of the new cross-certificate was to ensure operations for three (3) electronic prescriptions for controlled substance (EPCS) systems are not immediately impacted by any change.  
+  - The issuance of the new cross-certificate was to ensure operations for three (3) electronic prescriptions for controlled substance (EPCS) systems were not immediately impacted by the planned revocation of the Federal Bridge CA 2016 / DigiCert Federated ID CA-1 cross-certificate.  
 - **March 4, 2019:** Federal PKI revoked the cross-certificate issued from the Federal Bridge CA 2016 to DigiCert Federated ID CA-1 CA.   
 
 ## What certification authorities were impacted?
