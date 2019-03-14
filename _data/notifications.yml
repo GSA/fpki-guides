@@ -767,11 +767,11 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime: June 29, 2019
   system: US Treasury 
-  change_description: Treasury intends to re-key ou=OCIO CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US on 6/29/2019. Certificates will be available following the key update at https://pki.treasury.gov.
+  change_description: Treasury intends to re-key the Treasury OCIO CA (TOCA) on 6/29/2019. Certificates will be available following the key update at https://pki.treasury.gov.
   contact: pki dot pmo at fiscal dot treasury dot gov
   ca_certificate_hash:
   ca_certificate_issuer:
-  ca_certificate_subject:
+  ca_certificate_subject: ou=OCIO CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US
   cdp_uri:
   aia_uri:
   sia_uri:
