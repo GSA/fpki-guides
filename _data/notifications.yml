@@ -558,7 +558,7 @@
   start_datetime: April 6, 2019
   end_datetime: April 7, 2019
   system: Symantec Managed PKI
-  change_description: DigiCert will be moving their Symantec Managed PKI to new data centers. The address ranges in the new data centers will be as follows - 216.168.245.0/24, 216.168.246.0/24, 216.168.248.0/24, and 216.168.249.0/24. Be prepared to update network configurations as necessary. This activity is planned to take place between 15:30 UTC, April 6, 2019 and 3:30 UTC, April 7, 2019. See https://knowledge.digicert.com/generalinformation/digicert-symantec-managed-pki-data-center-migration-information-.html for more information.
+  change_description: DigiCert will be moving the federal PKI shared service provider CAs (government) and other managed PKI to new data centers. The address ranges in the new data centers will be as follows - 216.168.245.0/24, 216.168.246.0/24, 216.168.248.0/24, and 216.168.249.0/24. Be prepared to update network configurations as necessary. This activity is planned to take place between 15:30 UTC, April 6, 2019 and 3:30 UTC, April 7, 2019. See https://knowledge.digicert.com/generalinformation/digicert-symantec-managed-pki-data-center-migration-information-.html for more information.
   contact: steve dot medin at digicert dot com 
   ca_certificate_hash:
   ca_certificate_issuer:
@@ -635,11 +635,11 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime: April 7, 2019
   system: US Treasury 
-  change_description: Treasury intends to re-key ou=Social Security Administration Certification Authority, ou=SSA, o=U.S. Government, c=US on 4/7/2019. Certificates will be available following the key update at https://pki.treasury.gov.
+  change_description: Treasury intends to re-key the Social Security Administration CA on 4/7/2019. Certificates will be available following the key update at https://pki.treasury.gov.
   contact: pki dot pmo at fiscal dot treasury dot gov
   ca_certificate_hash:
   ca_certificate_issuer:
-  ca_certificate_subject:
+  ca_certificate_subject: ou=Social Security Administration Certification Authority, ou=SSA, o=U.S. Government, c=US
   cdp_uri:
   aia_uri:
   sia_uri:
