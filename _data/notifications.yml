@@ -307,6 +307,21 @@
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   
+- notice_date: February 11, 2019
+  change_type: URI Change (IP addresses)
+  start_datetime: April 6, 2019
+  end_datetime: April 7, 2019
+  system: Symantec Managed PKI
+  change_description: DigiCert will be moving their Symantec Managed PKI to new data centers. The address ranges in the new data centers will be as follows - 216.168.245.0/24, 216.168.246.0/24, 216.168.248.0/24, and 216.168.249.0/24. Be prepared to update network configurations as necessary. This activity is planned to take place between 15:30 UTC, April 6, 2019 and 3:30 UTC, April 7, 2019. See https://knowledge.digicert.com/generalinformation/digicert-symantec-managed-pki-data-center-migration-information-.html for more information.
+  contact: steve dot medin at digicert dot com 
+  ca_certificate_hash:
+  ca_certificate_issuer:
+  ca_certificate_subject:
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri: 
+  
 - notice_date: April 4, 2018
   change_type: CA Certificate Revocation
   start_datetime: March 26, 2018 12:15 PM
