@@ -635,7 +635,7 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime: April 7, 2019
   system: US Treasury 
-  change_description: Treasury intends to re-key ou=OCIO CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US and ou=Social Security Administration Certification Authority, ou=SSA, o=U.S. Government, c=US on 4/7/2019. Certificates will be available following the key update at https://pki.treasury.gov.
+  change_description: Treasury intends to re-key ou=Social Security Administration Certification Authority, ou=SSA, o=U.S. Government, c=US on 4/7/2019. Certificates will be available following the key update at https://pki.treasury.gov.
   contact: pki dot pmo at fiscal dot treasury dot gov
   ca_certificate_hash:
   ca_certificate_issuer:
@@ -762,6 +762,20 @@
   aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
   sia_uri:
   ocsp_uri: http://ssp-ocsp.digicert.com
+  
+- notice_date: March 13, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime: June 29, 2019
+  system: US Treasury 
+  change_description: Treasury intends to re-key ou=OCIO CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US on 6/29/2019. Certificates will be available following the key update at https://pki.treasury.gov.
+  contact: pki dot pmo at fiscal dot treasury dot gov
+  ca_certificate_hash:
+  ca_certificate_issuer:
+  ca_certificate_subject:
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
   
 #- notice_date: 
 #  change_type: CA Certificate Issuance
