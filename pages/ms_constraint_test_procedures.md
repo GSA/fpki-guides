@@ -40,13 +40,13 @@ No further Federal PKI community-wide testing will be done.  If your agency has 
 
 1. For each Windows 10 client endpoint, verify current CTL settings.
 
-  1a. Create a text file on your desktop containing the certificate details: 
+    1a. Create a text file on your desktop containing the certificate details: 
 
 ```
 certutil -verifyCTL AuthRoot > c:\Users\<User>\Desktop\precertdetail.txt
 ```
 
-  1b. From precertdetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US". It should have the following entry:
+    1b. From precertdetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US". It should have the following entry:
 
 ```
 [905f942fd9f28f679b378180fd4f846347f645c1]
@@ -75,15 +75,15 @@ PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 
 2. Prepare the endpoint for the test CTL.
 
-  2a. Windows Key + S to search for "regedit". Right click and "Run as administrator"
+    2a. Windows Key + S to search for "regedit". Right click and "Run as administrator"
 
-  2b. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
+    2b. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
 
-  2c. Right click and create "New String" with name "RootDirURL" with this value 
+    2c. Right click and create "New String" with name "RootDirURL" with this value 
   
   http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/USPKI
 
-  2d. Delete these keys:
+    2d. Delete these keys:
 
 ``` 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\EncodedCtl]
@@ -91,21 +91,21 @@ PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
 ``` 
 
-  2e. Leave RegEdit open as you will verify the CTL is updated in a few steps. From the command prompt, run a CTL update command to update all certificates.
+    2e. Leave RegEdit open as you will verify the CTL is updated in a few steps. From the command prompt, run a CTL update command to update all certificates.
   
 ```
 certutil -generateSSTFromWU SSTFile
 ```
 
-  2f. Verify the Test CTL has updated in RegEdit. Confirm "EncodedCtl" and "LastSyncTime" attributes are populated in the [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate] directory.
+    2f. Verify the Test CTL has updated in RegEdit. Confirm "EncodedCtl" and "LastSyncTime" attributes are populated in the [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate] directory.
   
-  2g. From the command prompt, create a text file containing the certificate details: 
+    2g. From the command prompt, create a text file containing the certificate details: 
 
 ```
 certutil -verifyCTL AuthRoot > c:\ctltest\postcertdetail.txt
 ```
 
-  2h. From postcertdetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US". It should have the following entry:
+    2h. From postcertdetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US". It should have the following entry:
   
 ```
 [905f942fd9f28f679b378180fd4f846347f645c1]
@@ -138,7 +138,7 @@ PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 - Server Auth Not Before will include NotBeforeEKU = 1.3.6.1.5.5.7.3.3, "Server Authentication" after the list of EKUS.
 - No Server Auth bit will have no EKU = 1.3.6.1.5.5.7.3.1, "Server Authentication" entry in the list of EKUs.**
 
-  2i. If the CTL does not have one of the above changes, start over or contact fpki@gsa.gov.
+    2i. If the CTL does not have one of the above changes, start over or contact fpki@gsa.gov.
 
 3. Perform HTTPS tests, open Internet Explorer/Edge or Chrome and clear cache.
 
