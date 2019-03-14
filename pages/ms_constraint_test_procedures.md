@@ -38,15 +38,52 @@ No further Federal PKI community-wide testing will be done.  If your agency has 
 
 ### Test Procedures
 
-1. For each Windows 10 client endpoint, modify the registry key for the test CTL:
+1. For each Windows 10 client endpoint, verify current CTL settings.
 
-1a. Windows Key + S to search for "regedit". Right click and "Run as administrator"
+  1a. Create a text file on your desktop containing the certificate details: 
 
-1b. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
+```
+certutil -verifyCTL AuthRoot > c:\Users\<User>\Desktop\precertdetail.txt
+```
 
-1c. Right click and create "New String" with name "RootDirURL" with this value http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/USPKI
+  1b. From precertdetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US". It should have the following entry:
 
-2. Delete these keys:
+```
+[905f942fd9f28f679b378180fd4f846347f645c1]
+CertId = 1.3.6.1.4.1.311.10.11.3, "CERT_SHA1_HASH_PROP_ID"
+Subject = "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US"
+FriendlyName = "U.S Government Common Policy"
+EKU = 1.3.6.1.4.1.311.10.3.4, "Encrypting File System"
+EKU = 1.3.6.1.5.5.7.3.1, "Server Authentication"
+EKU = 1.3.6.1.5.5.7.3.2, "Client Authentication"
+EKU = 1.3.6.1.5.5.7.3.3, "Code Signing"
+EKU = 1.3.6.1.5.5.7.3.4, "Secure Email"
+EKU = 1.3.6.1.5.5.7.3.6, "IP security tunnel termination"
+EKU = 1.3.6.1.5.5.7.3.7, "IP security user"
+EKU = 1.3.6.1.5.5.7.3.8, "Time Stamping"
+EKU = 1.3.6.1.5.5.7.3.9, "OCSP Signing"
+NotBeforeEKU = 1.3.6.1.5.5.7.3.3, "Code Signing"
+NotBeforeTime = "2/28/2017 8:00 PM"
+MD5KeyId = 93ee7e01c999df57176c2c0a677aa1eb
+KeyId = ad0c7a755ce5f398c479980eac28fd97f4e702fc
+SHA256Thumbprint = 894ebc0b23da2a50c0186b7f8f25ef1f6b2935af32a94584ef80aaf877a3a06e
+SignatureHash = 375dc361146cfbdd26f82cbf8a4c1a173c9b6a11ac61dfe4c28cac281888ed22
+SignatureHashAlgorithm = 1.2.840.113549.1.1.11, "sha256RSA", 2.16.840.1.101.3.4.2.1, "sha256", "RSA/SHA256"
+PublicKeyLength = 2048
+PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
+```
+
+2. Prepare the endpoint for the test CTL.
+
+  2a. Windows Key + S to search for "regedit". Right click and "Run as administrator"
+
+  2b. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
+
+  2c. Right click and create "New String" with name "RootDirURL" with this value 
+  
+  http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/USPKI
+
+  2d. Delete these keys:
 
 ``` 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\EncodedCtl]
@@ -54,29 +91,22 @@ No further Federal PKI community-wide testing will be done.  If your agency has 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
 ``` 
 
-3. Verify the CTL settings on the endpoint. The notBefore or disallow status **DOES NOT** show up in the user interface. The only way to check the CTL settings is an output of the CTL file.
-
-3a. Open a command prompt as administrator and create a new test directory:
-
+  2e. Leave RegEdit open as you will verify the CTL is updated in a few steps. From the command prompt, run a CTL update command to update all certificates.
+  
 ```
-mkdir c:\ctltest
-```
-3b. Run a CTL update command to update all certificates.
-
-```
-certutil -generateSSTFromWU
+certutil -generateSSTFromWU SSTFile
 ```
 
-3c. Create a text file containing the certificate details: 
+  2f. Verify the Test CTL has updated in RegEdit. Confirm "EncodedCtl" and "LastSyncTime" attributes are populated in the [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate] directory.
+  
+  2g. From the command prompt, create a text file containing the certificate details: 
 
 ```
-certutil -verifyCTL AuthRoot > c:\ctltest\certdetail.txt
+certutil -verifyCTL AuthRoot > c:\ctltest\postcertdetail.txt
 ```
 
-3c. From c:\ctltest\certdetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US"
-
-3d. If the test CTL is loaded, it will have the following entry:
-
+  2h. From postcertdetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US". It should have the following entry:
+  
 ```
 [905f942fd9f28f679b378180fd4f846347f645c1]
 CertId = 1.3.6.1.4.1.311.10.11.3, "CERT_SHA1_HASH_PROP_ID"
@@ -103,23 +133,20 @@ PublicKeyLength = 2048
 PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 ``` 
 
-**NOTE - Either DisallowEKU = 1.3.6.1.5.5.7.3.1, "Server Authentication" or NotBeforeEKU = 1.3.6.1.5.5.7.3.3, "Server Authentication" confirm the test CTL is loaded.**
+**NOTE - Depending on the phast of testing, Server Authentication will be represented in different ways. 
+- Server Auth Disallow will include DisallowEKU = 1.3.6.1.5.5.7.3.1, "Server Authentication" after the list of EKUs.
+- Server Auth Not Before will include NotBeforeEKU = 1.3.6.1.5.5.7.3.3, "Server Authentication" after the list of EKUS.
+- No Server Auth bit will have no EKU = 1.3.6.1.5.5.7.3.1, "Server Authentication" entry in the list of EKUs.**
 
-4. Verify the Test CTL has updated
+  2i. If the CTL does not have one of the above changes, start over or contact fpki@gsa.gov.
 
-4a. Windows Key + S to search for "regedit". Right click and "Run as administrator"
-
-4b. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
-
-4c. Confirm "EncodedCtl" and "LastSyncTime" attributes are populated.
-
-5. Open Internet Explorer/Edge or Chrome and clear cache.
+3. Perform HTTPS tests, open Internet Explorer/Edge or Chrome and clear cache.
 
 ```
    Ctrl + Shift + Del
 ```
 
-6. Go to a website by using an FPKI certificate; and record results. Suggested websites:
+4. Go to a website by using an FPKI certificate; and record results. Suggested websites:
 Websites Chained to COMMON
 
 - [PKI.Treasury.gov](https://pki.treasury.gov){:target="_blank"} - Treasury Root CA-issued (COMMON-chained)
@@ -130,25 +157,25 @@ Websites Not-Chained to Common
 
 (% include alert-info.html content="Verify the certificate details and note the validation path." %)
 
-7. Open Internet Explorer/Edge or Chrome and clear cache.
+5. Open Internet Explorer/Edge or Chrome and clear cache.
 
 ```
    Ctrl + Shift + Del
 ```
 
-8. Re-Install COMMON using the group policy object procedures: [Install Using Group Policy Objects](#install-using-group-policy-objects).
+6. Re-Install COMMON using the group policy object procedures: [Install Using Group Policy Objects](#install-using-group-policy-objects).
 
-9. Repeat website tests from Step 6.
+7. Repeat website tests from Step 6.
 
-10. Once testing is done, return the endpoints to their normal configurations. This step may not be necessary if the endpoint is just for testing:
+8. Once testing is done, return the endpoints to their normal configurations. This step may not be necessary if the endpoint is just for testing:
 
-10a. Windows Key + S to search for "regedit". Right click and "Run as administrator"
+9. Windows Key + S to search for "regedit". Right click and "Run as administrator"
 
-10b. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
+10. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
 
-10c. Right click and update the "RootDirURL" with this value http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en
+11. Right click and update the "RootDirURL" with this value http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en
 
-10d. Delete these keys:
+12. Delete these keys:
 
 ``` 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\EncodedCtl]
@@ -156,7 +183,7 @@ Websites Not-Chained to Common
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
 ``` 
 
-11. Report your test results to **fpki@gsa.gov** or post them as an issue to GSA's [FPKI Guides](https://github.com/GSA/fpki-guides/issues) GitHub repository as "CTL Testing - Agency XXX Results." Include:
+12. Report your test results to **fpki@gsa.gov** or post them as an issue to GSA's [FPKI Guides](https://github.com/GSA/fpki-guides/issues) GitHub repository as "CTL Testing - Agency XXX Results." Include:
 - OS version
 - Browser versions
 - Steps used to test
