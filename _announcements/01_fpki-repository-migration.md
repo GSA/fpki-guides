@@ -12,7 +12,7 @@ description: On April 22, 2019, the Federal Public Key Infrastructure Management
 
 On April 22, 2019, the Federal Public Key Infrastructure Management Authority will migrate the hosting of HyperText Transfer Protocol (HTTP) repository services to a cloud-based solution. Existing Federal PKI CA certificate Uniform Resource Locators (URLs) **will not** change as a result of this migration.
 
-## What Will Be Impacted?
+## What will be impacted?
 
 This change will affect the hosting of certificate revocation lists, CA certificates, and certificate bundles for the following Federal PKI CAs:
 - Federal Bridge CA 2016
@@ -21,10 +21,10 @@ This change will affect the hosting of certificate revocation lists, CA certific
 - CAs operating within the FPKI Community Interoperability Test Environment (CITE)
 - US Federal TLS Root CA (under development) 
 
-## When Will This Change Take Place?
+## When will this change take place?
 The migration will take place on April 22, 2019.
 
-## What Should I Do?
+## What should I do?
 This change will be transparent to Relying Parties, and should not require any agency action. 
 
 The FPKI Community Interoperability Test Environment HTTP repository (http://http.cite.fpki-lab.gov) has used the new service since June 2018 with no reported issues. 
