@@ -18,7 +18,7 @@ This change will affect the hosting of certificate revocation lists, CA certific
 - Federal Bridge CA 2016
 - Federal Common Policy CA
 - SHA1 Federal Root CA
-- CAs operating within the FPKI Community Interoperability Test Environment (CITE)
+- Some Test CAs operating for the FPKI Community Interoperability Test Environment (CITE)
 - US Federal TLS Root CA (under development) 
 
 ## When will this change take place?
