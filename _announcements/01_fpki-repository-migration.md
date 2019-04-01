@@ -2,7 +2,7 @@
 layout: default
 navtitle: Upcoming Migration of Federal PKI Certificate Repository Services
 title: Upcoming Migration of Federal PKI Certificate Repository Services
-pubDate: March 29, 2019
+pubDate: April 1, 2019
 collection: announcements
 permalink: announcements/fpki-repository-migration/
 description: On April 22, 2019, the Federal Public Key Infrastructure Management Authority will migrate the hosting of HyperText Transfer Protocol (HTTP) repository services to a cloud-based solution. This announcement provides additional information related to the upcoming migration.
