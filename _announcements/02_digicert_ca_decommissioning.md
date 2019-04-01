@@ -2,7 +2,7 @@
 layout: default
 navtitle: DigiCert CA Decommissioning 
 title: DigiCert CA Decommissioning 
-pubDate: March 28, 2019
+pubDate: April 1, 2019
 collection: announcements
 permalink: announcements/digicert-ca-decommissioning/
 description: DigiCert Incorporated is planning on decommissioning several certification authorities (CAs) from the Federal PKI. These CAs are no longer active or required, and there is no expected impact from these changes.  This announcement provides information related to the CAs affected by this change.
