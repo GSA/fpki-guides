@@ -19,7 +19,6 @@ This change will affect the hosting of certificate revocation lists, CA certific
 - Federal Common Policy CA
 - SHA1 Federal Root CA
 - Some Test CAs operating for the FPKI Community Interoperability Test Environment (CITE)
-- US Federal TLS Root CA (under development) 
 
 ## When will this change take place?
 The migration will take place on April 22, 2019.
