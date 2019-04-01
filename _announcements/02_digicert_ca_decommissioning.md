@@ -12,7 +12,7 @@ DigiCert is planning on decommissioning several certification authorities (CAs) 
 
 Remaining active certificates issued from any of the CAs listed in the table below will be revoked.  Each CA planned for decommissioning will issue a long-lived CRL, and then have its signing CA certificate revoked by the Symantec Class 3 SSP Intermediate CA - G3 CA.  
 
-The following CAs are planned for revocation and removal: 
+The following CAs are planned for revocation and decommissioning: 
 
 | Certificate Serial Number | Subject | Issuer |
 |---------------------------|---------|--------|
