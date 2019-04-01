@@ -33,4 +33,4 @@ A new base URL is available for anyone who would like to test the planned reposi
 Contact fpki-help@gsa.gov with the subject “CDN Test Issue” if you'd like to learn more about testing, or if you have any issues.
 
 ## Who can I contact for help or more information?
-Email us at fpki@gsa.gov. 
+Email us at fpki-help@gsa.gov. 
