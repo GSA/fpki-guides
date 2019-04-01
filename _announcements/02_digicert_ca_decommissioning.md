@@ -8,7 +8,7 @@ permalink: announcements/digicert-ca-decommissioning/
 description: DigiCert Incorporated is planning on decommissioning several certification authorities (CAs) from the Federal PKI. These CAs are no longer active or required, and there is no expected impact from these changes.  This announcement provides information related to the CAs affected by this change.
 ---
 
-DigiCert Incorporated is planning on decommissioning several certification authorities (CAs) from the Federal PKI. These CAs are no longer active or required, and there is no expected impact from these changes. 
+DigiCert is planning on decommissioning several certification authorities (CAs) from the Federal PKI. These CAs are no longer active or required, and there is no expected impact from these changes. 
 
 Remaining active certificates issued from any of the CAs listed in the table below will be revoked.  Each CA planned for decommissioning will issue a long-lived CRL, and then have its signing certificate revoked by the Symantec Class 3 SSP Intermediate CA - G3 CA.  
 
