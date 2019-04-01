@@ -10,27 +10,31 @@ description: On April 22, 2019, the Federal Public Key Infrastructure Management
 
 {% include alert-info.html content="Upcoming changes to the hosting of Federal Public Key Infrastructure Certification Authority (CA) data repositories could impact your agency." %}
 
-On April 22, 2019, the Federal Public Key Infrastructure Management Authority will migrate the hosting of HyperText Transfer Protocol (HTTP) repository services to a cloud-based solution. Existing Federal PKI CA certificate Uniform Resource Locators (URLs) **will not** change as a result of this migration.
+The week of April 22, 2019, the Federal Public Key Infrastructure Management Authority will migrate the hosting of HyperText Transfer Protocol (HTTP) repository services to a cloud-based solution. Existing Federal PKI CA certificate Uniform Resource Locators (URLs) **will not** change as a result of this migration.
 
 ## What will be impacted?
 
 This change will affect the hosting of certificate revocation lists, CA certificates, and certificate bundles for the following Federal PKI CAs:
 - Federal Bridge CA 2016
 - Federal Common Policy CA
-- SHA1 Federal Root CA
-- Some Test CAs operating for the FPKI Community Interoperability Test Environment (CITE)
+- SHA-1 Federal Root CA G2
 
 ## When will this change take place?
-The migration will take place on April 22, 2019.
+The migration will take place the week of April 22, 2019.
 
 ## What should I do?
 This change will be transparent to Relying Parties, and should not require any agency action. 
 
 The FPKI Community Interoperability Test Environment HTTP repository (http://http.cite.fpki-lab.gov) has used the new service since June 2018 with no reported issues. 
 
-A new base URL is available for anyone who would like to test the planned repository service update before the April 22, 2019 migration. For example, to download a copy of the Federal Common Policy CA certificate using the cloud-based hosting solution, navigate to http://cdn.http.fpki.gov/fcpca/fcpca.crt. 
+To test access to the new service follow the below procedures:
+  1) Copy and paste the following link to access the FCPCA root certificate
 
-Contact fpki-help@gsa.gov with the subject “CDN Test Issue” if you'd like to learn more about testing, or if you have any issues.
+  http://cdn.http.fpki.gov/fcpca/fcpca.crt
+
+  2) If anything happens besides downloading the root certificate, please send an email to FPKI-Help@gsa.gov with the subject “CDN Test Issue”. In the body of the email, include your agency, office, and physical location so the FPKIMA can follow-up with your agency PKI or network operations team.
+  
+If the FPKIMA does not receive adverse feedback, this implementation will take place the week of April 22, 2019.
 
 ## Who can I contact for help or more information?
 Email us at fpki-help@gsa.gov. 
