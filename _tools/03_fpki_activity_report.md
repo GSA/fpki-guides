@@ -30,7 +30,7 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| Treasury | Treasury Root CA | Federal Common Policy CA | 6B70 | 04/02/2019 |
+| Treasury | Treasury Root CA | Federal Common Policy CA | fa392ea2972eb4edd1929932602a1909ac9558bc | 04/02/2019 |
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
