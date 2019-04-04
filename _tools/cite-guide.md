@@ -33,7 +33,7 @@ Relying Party application testing ensures that application modules operate as in
 This document does not define how to perform testing in CITE. That is a responsibility of the CITE Participants. Some examples of testing conducted in CITE include:
 1. Interoperability testing between cross-certified Certification Authorities (CAs);
 2. Transition testing to new algorithms (e.g., SHA-2, ECC);
-3. PIV and PIV-I card interoperability testing;
+3. PIV and PIV-I credential interoperability testing;
 4. Repository access testing when using content delivery networks, load balancers, or other networking configurations; and
 5. Path discovery and/or validation testing for an application
 
