@@ -30,7 +30,7 @@ The main purpose of CITE is interoperability and infrastructure testing of PKI c
 
 Relying Party application testing ensures that application modules operate as intended. In addition, application testing ensures that the system performs as expected and can properly process transactions that rely on FPKI certificates.
 
-This document does not define how to perform testing in CITE. That is a responsibility of the CITE Participatns. Some examples of testing conducted in CITE include:
+This document does not define how to perform testing in CITE. That is a responsibility of the CITE Participants. Some examples of testing conducted in CITE include:
 1. Interoperability testing between cross-certified Certification Authorities (CAs);
 2. Transition testing to new algorithms (e.g., SHA-2, ECC);
 3. PIV and PIV-I card interoperability testing;
