@@ -60,7 +60,7 @@ The FPKI Community can use CITE to evaluate PKI or application changes in a test
     4. CITE Participants should assert test certificate policy Object Identifiers (OIDs), when testing with CITE. See [Appendix A - Test Policy Object Identifiers](#appendix-a---test-policy-object-identifiers) for test OIDs and their production equivalent.
     5. Resource references (such as CRL Distribution Points and Authority Information Access (AIA) points in the CITE certificates shall correspond to appropriately functional repositories.
 
-{% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs [Appendix A - Test Policy Object Identifiers](#appendix-a---test-policy-object-identifiers) for test certificate policy OIDs)." %} <br>
+{% include alert-warning.html content="If publicly posting private keys for testing purposes, the corresponding certificates are required to assert test certificate policy OIDs." %} <br>
 
 ## Scheduled and Unscheduled Testing
 
