@@ -8,11 +8,12 @@ permalink: /ctltestprocedures/
 
 {% include alert-info.html content="Test results for _ServerAuth Disallow_ did not allow local trust decisions to override the CTL configuration, so no further testing will be conducted." %} 
 
-If your agency is impacted, you can test COMMON validation behavior. This test will confirm whether an enterprise GPO can override a Microsoft CTL setting for three possible conditions:
+If your agency is impacted, you can test COMMON validation behavior. This test will confirm whether an enterprise GPO can override a Microsoft CTL setting for two possible conditions:
 
-1. _serverAuth Disallow_,
-2. _serverAuth notBefore_, **OR**
-3. _no CTL entry_
+1. _serverAuth Disallow_,**OR**
+2. _no CTL entry_
+
+Test environments should mimic production environments including Operating System version and internet browser.
 
 No further Federal PKI community-wide testing will be done.  If your agency has questions, please email us at **fpki@gsa.gov**.
 
@@ -33,7 +34,7 @@ No further Federal PKI community-wide testing will be done.  If your agency has 
 
 ### Test Procedures
 
-1. For each Windows 10 client endpoint, verify current CTL settings.
+1. For each Windows 10 client endpoint or Windows 2016 or higher server, verify current CTL settings.
 
    1a. Create a text file on your desktop containing the certificate details: 
 
@@ -86,21 +87,15 @@ PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
 ``` 
 
-   2e. Leave RegEdit open as you will verify the CTL is updated in a few steps. From the command prompt, run a CTL update command to update all certificates.
+   2e. Verify the Test CTL has updated in RegEdit. Confirm "EncodedCtl" and "LastSyncTime" attributes are populated in the [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate] directory. Hit F5 to refresh. If they have not updated, open Edge or Chrome and load a website.
   
-```
-certutil -generateSSTFromWU SSTFile
-```
-
-   2f. Verify the Test CTL has updated in RegEdit. Confirm "EncodedCtl" and "LastSyncTime" attributes are populated in the [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate] directory. Hit F5 to refresh. If they have not updated, open Edge or Chrome and load a website.
-  
-   2g. From the command prompt, create a text file containing the Test CRL AuthRoot details: 
+   2f. From the command prompt, create a text file containing the Test CRL AuthRoot details: 
 
 ```
 certutil -verifyCTL AuthRoot > c:\ctltest\postAuthRootDetail.txt
 ```
 
-   2h. From postAuthRootDetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US". It may have the following entry based on the testing:
+   2g. From postAuthRootDetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US". It may have the following entry based on the testing:
   
 ```
 [905f942fd9f28f679b378180fd4f846347f645c1]
@@ -130,7 +125,7 @@ PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 
 **NOTE - Depending on the phast of testing, Server Authentication will be represented in different ways. Server Auth Disallow will include DisallowEKU = 1.3.6.1.5.5.7.3.1, "Server Authentication" after the list of EKUs. No CTL testing will have no entry for Federal Common Policy.**
 
-   2i. If the CTL does not have one of the above changes, start over or contact fpki@gsa.gov.
+   2h. If the CTL does not have one of the above changes, start over or contact fpki@gsa.gov.
 
 3. Perform HTTPS tests, open Internet Explorer/Edge or Chrome and clear cache.
 
@@ -138,18 +133,17 @@ PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
    Ctrl + Shift + Del
 ```
 
-4. Go to a website by using an FPKI certificate; and record results. Suggested websites:
+4. Go to a website using an FPKI certificate; and record results. Suggested websites:
 
 Websites Chained to COMMON
 - [PKI.Treasury.gov](https://pki.treasury.gov){:target="_blank"} - Treasury Root CA-issued (COMMON-chained)
-- [psa.dmdc.osd.mil](https://psa.dmdc.osd.mil/psawebdocs/){:target="_blank"} - DoD Root CA 3-issued (COMMON-chained)
-- [crls.pki.state.gov](https://crls.pki.state.gov/){:target="_blank"} - State Department Root CA-issued (COMMON-chained)
+- [ako.us.army.mil](https://ako.us.army.mil/){:target="_blank"} - DoD Root CA 3-issued (COMMON-chained)
 
 Websites Not-Chained to Common
 - [MAX.gov](https://max.gov/){:target="_blank"} - Entrust Root CA-issued (non-COMMON-chained)
 - [NIST.gov](https://csrc.nist.gov/){:target="_blank"} - DigiCert Root CA-issued (non-COMMOM-chained)
 
-(% include alert-info.html content="Verify the certificate details and note the validation path." %)
+(% include alert-info.html content="Verify the certificate details and note the validation path and any errors. For not CTL testing, Chrome warning pages in  may vary depending on the certificate, but an Edge warning should say Error Code: DLG_FLAGS_INVALID_CA." %)
 
 5. Open Internet Explorer/Edge or Chrome and clear cache.
 
@@ -157,7 +151,7 @@ Websites Not-Chained to Common
    Ctrl + Shift + Del
 ```
 
-6. Re-Install COMMON using the group policy object procedures: [Install Using Group Policy Objects](#install-using-group-policy-objects).
+6. Re-Install COMMON using the group policy object procedures: [Install Using Group Policy Objects](https://fpki.idmanagement.gov/truststores/microsoft/){:target="_blank"}
 
 7. Repeat website tests from Step 6.
 
@@ -167,7 +161,7 @@ Websites Not-Chained to Common
 
 10. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
 
-11. Delete the new string "RootDirUrl" you created.
+11. Delete the new string "RootDirUrl".
 
 12. Delete these keys:
 
