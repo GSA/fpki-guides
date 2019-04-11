@@ -36,13 +36,13 @@ No further Federal PKI community-wide testing will be done.  If your agency has 
 
 1. For each Windows 10 client endpoint or Windows 2016 or higher server, verify current CTL settings.
 
-   1a. Create a text file on your desktop containing the certificate details: 
-
+1a. Create a text file on your desktop containing the certificate details: 
+   
 ```
 certutil -verifyCTL AuthRoot > c:\Users\<User>\Desktop\preAuthRootDetail.txt
 ```
 
-   1b. From preAuthRootDetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US". It should have the following entry:
+1b. From preAuthRootDetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US". It should have the following entry:
 
 ```
 [905f942fd9f28f679b378180fd4f846347f645c1]
@@ -71,15 +71,15 @@ PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 
 2. Prepare the endpoint for the test CTL.
 
-   2a. Windows Key + S to search for "regedit". Right click and "Run as administrator"
+2a. Windows Key + S to search for "regedit". Right click and "Run as administrator"
 
-   2b. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
+2b. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
 
-   2c. Right click and create "New String" with name "RootDirUrl" with this value 
+2c. Right click and create "New String" with name "RootDirUrl" with this value 
   
   http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/USPKI
 
-   2d. Delete these keys:
+2d. Delete these keys:
 
 ``` 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\EncodedCtl]
@@ -87,15 +87,15 @@ PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
 ``` 
 
-   2e. Verify the Test CTL has updated in RegEdit. Confirm "EncodedCtl" and "LastSyncTime" attributes are populated in the [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate] directory. If they have not updated, open Edge or Chrome and load a website and then hit F5 to refresh in RegEdit.
+2e. Verify the Test CTL has updated in RegEdit. Confirm "EncodedCtl" and "LastSyncTime" attributes are populated in the [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate] directory. If they have not updated, open Edge or Chrome and load a website and then hit F5 to refresh in RegEdit.
   
-   2f. From the command prompt, create a text file containing the Test CRL AuthRoot details: 
+2f. From the command prompt, create a text file containing the Test CRL AuthRoot details: 
 
 ```
 certutil -verifyCTL AuthRoot > c:\ctltest\postAuthRootDetail.txt
 ```
 
-   2g. From postAuthRootDetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US". It may have the following entry based on the testing:
+2g. From postAuthRootDetail.txt, search for the COMMON subject "CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US". It may have the following entry based on the testing:
   
 ```
 [905f942fd9f28f679b378180fd4f846347f645c1]
@@ -157,11 +157,11 @@ Websites Not-Chained to Common
 
 8. For no CTL testing and following repeat testing after group policy object distribution, it is possible validation errors continue.
 
-   8a. Re-Install COMMON in the Trusted Root Certification Authorities store using the group policy object procedures.
+8a. Re-Install COMMON in the Trusted Root Certification Authorities store using the group policy object procedures.
    
-   8b. Repeat website tests from step 6.
+8b. Repeat website tests from step 6.
    
-   8c. If testing is successful, repeat website tests from Step 2. This confirms that a CTL refresh will not remove a user or enterprise installed version of COMMON.
+8c. If testing is successful, repeat website tests from Step 2. This confirms that a CTL refresh will not remove a user or enterprise installed version of COMMON.
 
 9. Once testing is done, return the endpoints to their normal configurations. This step may not be necessary if the endpoint is just for testing:
 
