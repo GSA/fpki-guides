@@ -306,7 +306,7 @@
   ca_certificate_subject: CN = CISRCA1, OU = Certification Authorities, O = Carillon Information Security Inc., C = CA
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
-  
+    
 - notice_date: April 4, 2018
   change_type: CA Certificate Revocation
   start_datetime: March 26, 2018 12:15 PM
@@ -553,6 +553,22 @@
   change_description: New cross-certificate planned for issuance from Federal Bridge CA 2016 to DigiCert Federated ID L3 CA
   contact: fpki at gsa dot gov
 
+- notice_date: February 11, 2019
+  change_type: URI Change (IP addresses)
+  start_datetime: April 6, 2019
+  end_datetime: April 7, 2019
+  system: Symantec Managed PKI
+  change_description: DigiCert will be moving the federal PKI shared service provider CAs (government) and other managed PKI to new data centers. The address ranges in the new data centers will be as follows - 216.168.245.0/24, 216.168.246.0/24, 216.168.248.0/24, and 216.168.249.0/24. Be prepared to update network configurations as necessary. This activity is planned to take place between 15:30 UTC, April 6, 2019 and 3:30 UTC, April 7, 2019. See https://knowledge.digicert.com/generalinformation/digicert-symantec-managed-pki-data-center-migration-information-.html for more information.
+  contact: steve dot medin at digicert dot com 
+  ca_certificate_hash:
+  ca_certificate_issuer:
+  ca_certificate_subject:
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri: 
+
+
 - notice_date: February 12, 2019
   change_type: Intent to Perform CA Certificate Revocation
   system: FPKI Trust Infrastructure - Federal Common Policy CA
@@ -619,11 +635,11 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime: April 7, 2019
   system: US Treasury 
-  change_description: Treasury intends to re-key ou=OCIO CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US and ou=Social Security Administration Certification Authority, ou=SSA, o=U.S. Government, c=US on 4/7/2019. Certificates will be available following the key update at https://pki.treasury.gov.
+  change_description: Treasury intends to re-key the Social Security Administration CA on 4/7/2019. Certificates will be available following the key update at https://pki.treasury.gov.
   contact: pki dot pmo at fiscal dot treasury dot gov
   ca_certificate_hash:
   ca_certificate_issuer:
-  ca_certificate_subject:
+  ca_certificate_subject: ou=Social Security Administration Certification Authority, ou=SSA, o=U.S. Government, c=US
   cdp_uri:
   aia_uri:
   sia_uri:
@@ -746,6 +762,35 @@
   aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
   sia_uri:
   ocsp_uri: http://ssp-ocsp.digicert.com
+  
+- notice_date: March 13, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime: June 29, 2019
+  system: US Treasury 
+  change_description: Treasury intends to re-key the Treasury OCIO CA (TOCA) on 6/29/2019. Certificates will be available following the key update at https://pki.treasury.gov.
+  contact: pki dot pmo at fiscal dot treasury dot gov
+  ca_certificate_hash:
+  ca_certificate_issuer:
+  ca_certificate_subject: ou=OCIO CA, ou=Certification Authorities, ou=Department of the Treasury, o=U.S. Government, c=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+  
+- notice_date: March 25, 2019
+  change_type: Intent to Decommission Multiple CAs
+  start_datetime:
+  end_datetime:
+  system: Symantec Class 3 SSP Intermediate CA - G3 (managed by DigiCert)
+  change_description: DigiCert is planning to decommission several CAs chaining to Symantec Class 3 SSP Intermediate CA - G3. Any remaining active certificates issued from the CAs listed below will be revoked before CA decommissioning.
+  contact: steve dot medin at digicert dot com
+  ca_certificate_hash: Multiple CA certificates will be revoked before decommissioning. Comma-separated list of CA hashes planned for revocation/decommissioning - 2938CC1B586C8B1A76832973389AB25C53F3658F, 3DFB1CB09BE5D1430DF9CE8E04F501ADB86CA176, 1EC98449B18472D6C2F516A4D0976350D5DD829A, CF9229CB50BF5DC25C156C4F825A67E2964236C8, FAED5B3AA85BFEA0BA8BA884689706044DFC0EC9, D4C786468511920E538C24384B3132D07DBACAF0, D514632CE34BF94C816A565DBB8FBB6BAD5FF335, 82E6536172F69E30786C9670840DB37077B5C08C, and F8912B3C9F3EB30F8A8D5A14E8038BD9BC6B771D
+  ca_certificate_issuer: Symantec Class 3 SSP Intermediate CA - G3
+  ca_certificate_subject: Multiple CA certificates will be revoked before decommissioning. Comma-separated list of CA Subject Names planned for revocation/decommissioning - CSC CA - 2, CSRA FBCA C4 Device CA, CSRA FBCA C4 CA, CSRA FBCA C3 Device CA, CSRA FBCA C3 CA, SureID Inc. CA2, SureID Inc. Device CA1, Eid Passport LRA Content Signer CA 3, and Eid Passport LRA Device 2 CA
+  cdp_uri: http://ssp-crl.symauth.com/STNSSP/Class3SSPCAG3.crl
+  aia_uri: http://ssp-aia.symauth.com/STNSSP/Certs_issued_to_Class3SSPCA-G3.p7c
+  sia_uri: http://ssp-sia.symauth.com/STNSSP/Certs_Issued_by_Class3SSPCA-G3.p7c
+  ocsp_uri: http://ssp-ocsp.symauth.com
   
 #- notice_date: 
 #  change_type: CA Certificate Issuance

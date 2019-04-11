@@ -3,7 +3,7 @@ To limit the impact to your agency, you will need to redistribute the Federal Co
 To redistribute COMMON, use these procedures:
 1. [Download a Copy of COMMON](#download-a-copy-of-common)
 1. [Verify Your Copy of COMMON](#verify-your-copy-of-common)
-1. [Redistribute COMMON](redistribute-common) <br>     - [macOS Solutions](#macos-solutions) <br>     - [iOS Solutions](#ios-solutions)
+1. [Redistribute COMMON](#redistribute-common) <br>     - [macOS Solutions](#macos-solutions) <br>     - [iOS Solutions](#ios-solutions)
 
 ### Download a Copy of COMMON
 To download a copy of COMMON, use one of the recommended options:
