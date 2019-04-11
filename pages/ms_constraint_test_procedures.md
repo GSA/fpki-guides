@@ -123,7 +123,7 @@ PublicKeyLength = 2048
 PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 ``` 
 
-**NOTE - Depending on the phast of testing, Server Authentication will be represented in different ways. Server Auth Disallow will include DisallowEKU = 1.3.6.1.5.5.7.3.1, "Server Authentication" after the list of EKUs. No CTL testing will have no entry for Federal Common Policy.**
+**NOTE - Depending on the phase of testing, Server Authentication will be represented in different ways. Server Auth Disallow will include DisallowEKU = 1.3.6.1.5.5.7.3.1, "Server Authentication" after the list of EKUs. No CTL testing will have no entry for Federal Common Policy.**
 
    2h. If the CTL does not have one of the above changes, start over or contact fpki@gsa.gov.
 
