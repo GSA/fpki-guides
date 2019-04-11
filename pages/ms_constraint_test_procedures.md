@@ -13,11 +13,11 @@ If your agency is impacted, you can test COMMON validation behavior. This test w
 1. _serverAuth Disallow_,**OR**
 2. _no CTL entry_
 
-Test environments should mimic production environments including Operating System version and internet browser.
+Test environments should mimic production environments including Windows Operating System version and Internet Browser.
 
 No further Federal PKI community-wide testing will be done.  If your agency has questions, please email us at **fpki@gsa.gov**.
 
-### Original Testing Schedule (Testing Has Been Concluded)
+### Testing Schedule (Testing Has Been Concluded)
 
 #### Phase 1&nbsp;&mdash;&nbsp;_serverAuth Disallow_ Testing (2018)
 - **April 13 -** Start _Disallow_ testing.
@@ -87,7 +87,7 @@ PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
 ``` 
 
-   2e. Verify the Test CTL has updated in RegEdit. Confirm "EncodedCtl" and "LastSyncTime" attributes are populated in the [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate] directory. Hit F5 to refresh. If they have not updated, open Edge or Chrome and load a website.
+   2e. Verify the Test CTL has updated in RegEdit. Confirm "EncodedCtl" and "LastSyncTime" attributes are populated in the [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate] directory. If they have not updated, open Edge or Chrome and load a website and then hit F5 to refresh in RegEdit.
   
    2f. From the command prompt, create a text file containing the Test CRL AuthRoot details: 
 
@@ -143,9 +143,9 @@ Websites Not-Chained to Common
 - [MAX.gov](https://max.gov/){:target="_blank"} - Entrust Root CA-issued (non-COMMON-chained)
 - [NIST.gov](https://csrc.nist.gov/){:target="_blank"} - DigiCert Root CA-issued (non-COMMOM-chained)
 
-(% include alert-info.html content="Verify the certificate details and note the validation path and any errors. For not CTL testing, Chrome warning pages in  may vary depending on the certificate, but an Edge warning should say Error Code: DLG_FLAGS_INVALID_CA." %)
+(% include alert-info.html content="Verify the certificate details and note the validation path and any errors. For no CTL testing, Chrome warning pages may vary depending on the certificate, but an Edge warning should say Error Code: DLG_FLAGS_INVALID_CA." %)
 
-5. Open Internet Explorer/Edge or Chrome and clear cache.
+5. Open Internet Explorer/Edge and/or Chrome and clear cache.
 
 ```
    Ctrl + Shift + Del
