@@ -123,7 +123,7 @@ PublicKeyLength = 2048
 PublicKeyAlgorithm = 1.2.840.113549.1.1.1, "RSA"
 ``` 
 
-**NOTE - Depending on the phase of testing, Server Authentication will be represented in different ways. Server Auth Disallow will include DisallowEKU = 1.3.6.1.5.5.7.3.1, "Server Authentication" after the list of EKUs. No CTL testing will have no entry for Federal Common Policy.**
+**NOTE - Depending on the phase of testing, Server Authentication will be represented in different ways. Server Auth Disallow will include DisallowEKU = 1.3.6.1.5.5.7.3.1, "Server Authentication" after the list of EKUs. _no CTL entry_ will have no entry for Federal Common Policy.**
 
    2h. If the CTL does not have one of the above changes, start over or contact fpki@gsa.gov.
 
@@ -143,7 +143,7 @@ Websites Not-Chained to Common
 - [MAX.gov](https://max.gov/){:target="_blank"} - Entrust Root CA-issued (non-COMMON-chained)
 - [NIST.gov](https://csrc.nist.gov/){:target="_blank"} - DigiCert Root CA-issued (non-COMMOM-chained)
 
-(% include alert-info.html content="Verify the certificate details and note the validation path and any errors. For no CTL testing, Chrome warning pages may vary depending on the certificate, but an Edge warning should say Error Code: DLG_FLAGS_INVALID_CA." %)
+(% include alert-info.html content="Verify the certificate details and note the validation path and any errors. For _no CTL entry_, Chrome warning pages may vary depending on the certificate, but an Edge warning should say Error Code: DLG_FLAGS_INVALID_CA." %)
 
 5. Open Internet Explorer/Edge and/or Chrome and clear cache.
 
@@ -153,17 +153,25 @@ Websites Not-Chained to Common
 
 6. Re-Install COMMON using the group policy object procedures: [Install Using Group Policy Objects](https://fpki.idmanagement.gov/truststores/microsoft/){:target="_blank"}
 
-7. Repeat website tests from Step 6.
+7. Repeat website tests from Step 6. 
 
-8. Once testing is done, return the endpoints to their normal configurations. This step may not be necessary if the endpoint is just for testing:
+8. For no CTL testing and following repeat testing after group policy object distribution, it is possible validation errors continue.
 
-9. Windows Key + S to search for "regedit". Right click and "Run as administrator"
+   8a. Re-Install COMMON in the Trusted Root Certification Authorities store using the group policy object procedures.
+   
+   8b. Repeat website tests from step 6.
+   
+   8c. If testing is successful, repeat website tests from Step 2. This confirms that a CTL refresh will not remove a user or enterprise installed version of COMMON.
 
-10. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
+9. Once testing is done, return the endpoints to their normal configurations. This step may not be necessary if the endpoint is just for testing:
 
-11. Delete the new string "RootDirUrl".
+10. Windows Key + S to search for "regedit". Right click and "Run as administrator"
 
-12. Delete these keys:
+11. Browse to [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate]
+
+12. Delete the new string "RootDirUrl".
+
+13. Delete these keys:
 
 ``` 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\AutoUpdate\EncodedCtl]
@@ -171,7 +179,7 @@ Websites Not-Chained to Common
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\AuthRoot\Certificates] (deleting all cached certificates)
 ``` 
 
-12. Report your test results to **fpki@gsa.gov** or post them as an issue to GSA's [FPKI Guides](https://github.com/GSA/fpki-guides/issues) GitHub repository as "CTL Testing - Agency XXX Results." Include:
+14. Report your test results to **fpki@gsa.gov** or post them as an issue to GSA's [FPKI Guides](https://github.com/GSA/fpki-guides/issues) GitHub repository as "CTL Testing - Agency XXX Results." Include:
 - OS version
 - Browser versions
 - Steps used to test
