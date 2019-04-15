@@ -736,7 +736,6 @@
 - notice_date: March 6, 2019
   change_type: CA Certificate Issuance
   start_datetime: March 4, 2019
-  end_datetime: December 12, 2028
   system: DigiCert Federal SSP Intermediate CA - G5
   change_description: DigiCert Federal SSP Intermediate CA - G5 issued a certificate to U.S. Department of Transportation Device CA G5.
   contact: steve dot medin at digicert dot com
@@ -751,7 +750,6 @@
 - notice_date: March 6, 2019
   change_type: CA Certificate Issuance
   start_datetime: March 4, 2019
-  end_datetime: December 12, 2028
   system: DigiCert Federal SSP Intermediate CA - G5
   change_description: DigiCert Federal SSP Intermediate CA - G5 issued a certificate to U.S. Department of Transportation Agency CA G5.
   contact: steve dot medin at digicert dot com
@@ -780,8 +778,7 @@
 - notice_date: March 25, 2019
   change_type: Intent to Decommission Multiple CAs
   start_datetime:
-  end_datetime:
-  system: Symantec Class 3 SSP Intermediate CA - G3 (managed by DigiCert)
+  system: Symantec Class 3 SSP Intermediate CA - G3 (DigiCert)
   change_description: DigiCert is planning to decommission several CAs chaining to Symantec Class 3 SSP Intermediate CA - G3. Any remaining active certificates issued from the CAs listed below will be revoked before CA decommissioning.
   contact: steve dot medin at digicert dot com
   ca_certificate_hash: Multiple CA certificates will be revoked before decommissioning. Comma-separated list of CA hashes planned for revocation/decommissioning - 2938CC1B586C8B1A76832973389AB25C53F3658F, 3DFB1CB09BE5D1430DF9CE8E04F501ADB86CA176, 1EC98449B18472D6C2F516A4D0976350D5DD829A, CF9229CB50BF5DC25C156C4F825A67E2964236C8, FAED5B3AA85BFEA0BA8BA884689706044DFC0EC9, D4C786468511920E538C24384B3132D07DBACAF0, D514632CE34BF94C816A565DBB8FBB6BAD5FF335, 82E6536172F69E30786C9670840DB37077B5C08C, and F8912B3C9F3EB30F8A8D5A14E8038BD9BC6B771D
@@ -791,6 +788,57 @@
   aia_uri: http://ssp-aia.symauth.com/STNSSP/Certs_issued_to_Class3SSPCA-G3.p7c
   sia_uri: http://ssp-sia.symauth.com/STNSSP/Certs_Issued_by_Class3SSPCA-G3.p7c
   ocsp_uri: http://ssp-ocsp.symauth.com
+  
+- notice_date: April 2, 2019
+  change_type: CA Certificate Revocation
+  start_datetime: April 2, 2019
+  system: Federal Common Policy CA
+  change_description: The Verizon SSP CA A2 was issued a new CA certificate on December 5, 2018. This notification communicates the revocation of the prior certificate.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: a9d3a8ac016dba9fa12685bf59dcc39f5dcaf781
+  ca_certificate_issuer: Federal Common Policy
+  ca_certificate_subject: Verizon SSP CA A2
+ 
+- notice_date: April 2, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: April 2, 2019
+  system: Federal Common Policy CA
+  change_description: CA certificate issuance from Federal Common Policy CA to Treasury Root CA
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: fa392ea2972eb4edd1929932602a1909ac9558bc
+  ca_certificate_issuer: Federal Common Policy CA
+  ca_certificate_subject: Treasury Root CA
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
+  sia_uri: http://pki.treasury.gov/root_sia.p7c
+ 
+- notice_date: April 7, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: April 7, 2019
+  system: US Treasury Root CA
+  change_description: Treasury re-keyed the Social Security Administration Certification Authority. Treasury communicated the intent to re-key this CA on February 26, 2019.
+  contact: pki dot pmo at fiscal dot treasury dot gov. 
+  ca_certificate_hash: 897A79FD488D426D6C50D0BA026F698BCA3334F4
+  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  ca_certificate_subject: OU = Social Security Administration Certification Authority, OU = SSA, O = U.S. Government, C = US
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
+  aia_uri: http://pki.treasury.gov/ssaca_aia.p7c
+  sia_uri: http://pki.treasury.gov/ssaca_sia.p7c
+  ocsp_uri:
+  
+- notice_date: April 12, 2019
+  change_type: Infrastructure Change
+  start_datetime: On or around April 22, 2019
+  system: Federal PKI Trust Infrastructure
+  change_description: The Federal Public Key Infrastructure Management Authority is implementing a Content Delivery Network for HyperText Transfer Protocol (HTTP) artifacts of the Federal Bridge CA 2016, Federal Common Policy CA, SHA1 Federal Root CA, and the soon to be commissioned TLS Root CA. The HTTP artifacts include certificate revocation lists, certificates, and certificate bundles (P7C files). No URLs will change with this migration. See https://fpki.idmanagement.gov/announcements/fpki-repository-migration/ for more information.
+  contact: fpki dash help at gsa dot gov 
+  ca_certificate_hash:
+  ca_certificate_issuer: 
+  ca_certificate_subject:
+  cdp_uri: 
+  aia_uri: 
+  sia_uri: 
+  ocsp_uri: 
   
 #- notice_date: 
 #  change_type: CA Certificate Issuance
