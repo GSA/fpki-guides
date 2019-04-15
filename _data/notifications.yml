@@ -819,11 +819,11 @@
  
 - notice_date: April 7, 2019
   change_type: CA Certificate Issuance
-  start_datetime: 4/7/2019
-  end_datetime: 4/7/2019
+  start_datetime: April 7, 2019
+  end_datetime: April 7, 2029
   system: US Treasury Root CA
-  change_description: Treasury re-keyed ou=Social Security Administration Certification Authority, ou=SSA, o=U.S. Government, c=US. 
-  contact: pki dot pmo at fiscal dot treasury dot gov. Treasury communicated the intent to re-key this CA on February 26, 2019.
+  change_description: Treasury re-keyed the Social Security Administration Certification Authority. Treasury communicated the intent to re-key this CA on February 26, 2019.
+  contact: pki dot pmo at fiscal dot treasury dot gov. 
   ca_certificate_hash: 897A79FD488D426D6C50D0BA026F698BCA3334F4
   ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
   ca_certificate_subject: OU = Social Security Administration Certification Authority, OU = SSA, O = U.S. Government, C = US
@@ -837,7 +837,7 @@
   start_datetime: On or around April 22, 2019
   end_datetime: 
   system: Federal PKI Trust Infrastructure
-  change_description: The FPKIMA is implementing a Content Delivery Network for HTTP artifacts of the FBCA, FCPCA, SHA1FRCA, and the soon to be commissioned TLS Root CA. The HTTP artifacts include certificate revocation lists, certificates, and certificate bundles (P7C files). No URLs will change with this migration. See https://fpki.idmanagement.gov/announcements/fpki-repository-migration/ for more information.
+  change_description: The Federal Public Key Infrastructure Management Authority is implementing a Content Delivery Network for HyperText Transfer Protocol (HTTP) artifacts of the Federal Bridge CA 2016, Federal Common Policy CA, SHA1 Federal Root CA, and the soon to be commissioned TLS Root CA. The HTTP artifacts include certificate revocation lists, certificates, and certificate bundles (P7C files). No URLs will change with this migration. See https://fpki.idmanagement.gov/announcements/fpki-repository-migration/ for more information.
   contact: fpki dash help at gsa dot gov 
   ca_certificate_hash:
   ca_certificate_issuer: 
