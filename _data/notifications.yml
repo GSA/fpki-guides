@@ -792,6 +792,61 @@
   sia_uri: http://ssp-sia.symauth.com/STNSSP/Certs_Issued_by_Class3SSPCA-G3.p7c
   ocsp_uri: http://ssp-ocsp.symauth.com
   
+- notice_date: April 2, 2019
+  change_type: CA Certificate Revocation
+  start_datetime: April 2, 2019
+  end_datetime: April 2, 2019
+  system: Federal Common Policy CA
+  change_description: The Verizon SSP CA A2 was issued a new CA certificate on December 5, 2018. This notification communicates the revocation of the prior certificate.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: a9d3a8ac016dba9fa12685bf59dcc39f5dcaf781
+  ca_certificate_issuer: Federal Common Policy
+  ca_certificate_subject: Verizon SSP CA A2
+ 
+- notice_date: April 2, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: April 2, 2019
+  end_datetime: April 2, 2022
+  system: Federal Common Policy CA
+  change_description: CA certificate issuance from Federal Common Policy CA to Treasury Root CA
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: fa392ea2972eb4edd1929932602a1909ac9558bc
+  ca_certificate_issuer: Federal Common Policy CA
+  ca_certificate_subject: Treasury Root CA
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
+  sia_uri: http://pki.treasury.gov/root_sia.p7c
+ 
+- notice_date: April 7, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: 4/7/2019
+  end_datetime: 4/7/2019
+  system: US Treasury Root CA
+  change_description: Treasury re-keyed ou=Social Security Administration Certification Authority, ou=SSA, o=U.S. Government, c=US. 
+  contact: pki dot pmo at fiscal dot treasury dot gov. Treasury communicated the intent to re-key this CA on February 26, 2019.
+  ca_certificate_hash: 897A79FD488D426D6C50D0BA026F698BCA3334F4
+  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  ca_certificate_subject: OU = Social Security Administration Certification Authority, OU = SSA, O = U.S. Government, C = US
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
+  aia_uri: http://pki.treasury.gov/ssaca_aia.p7c
+  sia_uri: http://pki.treasury.gov/ssaca_sia.p7c
+  ocsp_uri:
+  
+- notice_date: April 12, 2019
+  change_type: Infrastructure Change
+  start_datetime: On or around April 22, 2019
+  end_datetime: 
+  system: Federal PKI Trust Infrastructure
+  change_description: The FPKIMA is implementing a Content Delivery Network for HTTP artifacts of the FBCA, FCPCA, SHA1FRCA, and the soon to be commissioned TLS Root CA. The HTTP artifacts include certificate revocation lists, certificates, and certificate bundles (P7C files). No URLs will change with this migration. See https://fpki.idmanagement.gov/announcements/fpki-repository-migration/ for more information.
+  contact: fpki dash help at gsa dot gov 
+  ca_certificate_hash:
+  ca_certificate_issuer: 
+  ca_certificate_subject:
+  cdp_uri: 
+  aia_uri: 
+  sia_uri: 
+  ocsp_uri: 
+  
 #- notice_date: 
 #  change_type: CA Certificate Issuance
 #  start_datetime:
