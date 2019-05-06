@@ -928,7 +928,7 @@
   change_type: Infrastructure Change
   start_datetime: April 29, 2019
   system: FPKI Trust Infrastructure
-  change_description: The Federal Public Key Infrastructure Management Authority has completed its implemention of a Content Delivery Network for HyperText Transfer Protocol (HTTP) artifacts of the Federal Bridge CA 2016, Federal Common Policy CA, and SHA1 Federal Root CA. See https://fpki.idmanagement.gov/announcements/fpki-repository-migration/ for more information.
+  change_description: The Federal Public Key Infrastructure Management Authority has completed its implementation of a Content Delivery Network for HyperText Transfer Protocol (HTTP) artifacts of the Federal Bridge CA 2016, Federal Common Policy CA, and SHA1 Federal Root CA. See https://fpki.idmanagement.gov/announcements/fpki-repository-migration/ for more information.
   contact: fpki dash help at gsa dot gov
   
 - notice_date: May 6, 2019
