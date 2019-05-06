@@ -854,6 +854,97 @@
   sia_uri:
   ocsp_uri:
   
+- notice_date: April 26, 2019
+  change_type: Intent to Decommission Multiple CAs
+  start_datetime:
+  system: Verizon Non-Federal Issuer (NFI)
+  change_description: Verizon is planning to decommission several CAs. Any valid end entity certificates will be revoked; the CAs will be decommissioned and archived; and then the CA certificate issued to CT-CSSP-CA-A1 from the Federal Bridge CA will be revoked.
+  contact: abdul dot nur at verizon dot com
+  ca_certificate_hash: Comma-separated list of CA hashes planned for revocation/decommissioning - 687066BCE56B6E20AEA0C605B9B6679342269F21, 8EF17043FAD28004F407BABECE21A7C42BE4F275, and A4108B1D93D4F8837584FAEA8496847914606C29
+  ca_certificate_issuer: CT-CSSP-CA-A1 (issuer of Trans Sped Mobile QCA and VZ-SMC-CA-B2) and Federal Bridge CA 2016 (issuer of CT-CSSP-CA-A1)
+  ca_certificate_subject: Comma-separated list of CA Subject Names planned for revocation/decommissioning - CN=Trans Sped Mobile QCA,OU=Individual Subscriber CA,O=Trans Sped SRL,C=RO, CN=VZ-SMC-CA-B2,OU=PKI,OU=Services,O=Cybertrust,C=US, and CN=CT-CSSP-CA-A1,OU=PKI,OU=Services,O=Cybertrust,C=US
+  cdp_uri: 
+  aia_uri: 
+  sia_uri: 
+  ocsp_uri:  
+  
+- notice_date: April 26, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: April 21, 2019
+  system: CertiPath Bridge
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA to Boeing PCA G2.
+  contact: support at certipath dot com
+  ca_certificate_hash: e88050f8628bc42cae691fd96c3bb676411e2c24
+  ca_certificate_issuer: CN = CertiPath Bridge CA, OU = Certification Authorities, O = CertiPath LLC, C = US
+  ca_certificate_subject: CN = Boeing PCA G2, OU = certservers, O = Boeing, C = US 
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathLLCCertiPathBridgeCA.crl
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeRootCA.p7c
+  sia_uri:  
+  ocsp_uri:
+  
+- notice_date: April 26, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: April 21, 2019
+  system: CertiPath Bridge
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA–G2 to Boeing PCA G3.
+  contact: support at certipath dot com
+  ca_certificate_hash: de7b8e78b8866caac3af1fb871be49369cdd6c5c
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
+  ca_certificate_subject: CN = Boeing PCA G3, OU = certservers, O = Boeing, C = US
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
+  sia_uri:  
+  ocsp_uri:
+  
+- notice_date: April 26, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: April 21, 2019
+  system: CertiPath Bridge
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA–G2 to Federal Bridge CA 2016.
+  contact: support at certipath dot com
+  ca_certificate_hash: fce64c867d1af8e1c1ff5b07a869af5f3e6f823f
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
+  ca_certificate_subject: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US 
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
+  sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
+  ocsp_uri: 
+  
+- notice_date: April 26, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: April 21, 2019 
+  system: CertiPath Bridge
+  change_description: Issuance of cross-certificate from CertiPath Bridge CA–G2 to Lockheed Martin Root Certification Authority 2.
+  contact: support at certipath dot com
+  ca_certificate_hash: 90c55c1fa32a82c6e8f44e3e4ad8e4c08ade150f 
+  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
+  ca_certificate_subject: CN = Lockheed Martin Root Certification Authority 2, OU = Certification Authorities, O = Lockheed Martin Corporation, L = Denver, S = Colorado, C = US
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
+  sia_uri:  
+  ocsp_uri: 
+  
+- notice_date: April 29, 2019
+  change_type: Infrastructure Change
+  start_datetime: April 29, 2019
+  system: FPKI Trust Infrastructure
+  change_description: The Federal Public Key Infrastructure Management Authority has completed its implementation of a Content Delivery Network for HyperText Transfer Protocol (HTTP) artifacts of the Federal Bridge CA 2016, Federal Common Policy CA, and SHA1 Federal Root CA. See https://fpki.idmanagement.gov/announcements/fpki-repository-migration/ for more information.
+  contact: fpki dash help at gsa dot gov
+  
+- notice_date: May 6, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: May 4, 2019
+  system: US Treasury Root CA
+  change_description: Treasury re-keyed the NASA Operational Certification Authority.
+  contact: pki dot pmo at fiscal dot treasury dot gov. 
+  ca_certificate_hash: f504012b1fe57b4381e3bf5ba9f491144ed76ee1
+  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  ca_certificate_subject: OU = NASA Operational CA, OU = Certification Authorities, OU = NASA, O = U.S. Government, C = US
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
+  aia_uri: http://pki.treasury.gov/noca_aia.p7c
+  sia_uri: http://pki.treasury.gov/noca_sia.p7c
+  ocsp_uri: 
+  
 #- notice_date: 
 #  change_type: CA Certificate Issuance
 #  start_datetime:
