@@ -945,6 +945,20 @@
   sia_uri: http://pki.treasury.gov/noca_sia.p7c
   ocsp_uri: 
   
+- notice_date: May 9, 2019
+  change_type: Intent to Decommission CA
+  start_datetime:
+  system: SAFE-BioPharma
+  change_description: Synchronoss has informed SAFE-BioPharma that it will decommission the Zentry Certificate Authority that is currently cross-certified with the SAFE-BioPharma Bridge CA on July 1, 2019. Synchronoss will perform the following actions on this date - 1) Revoke all unexpired certificates issued from this CA, 2) Issue a long-term CRL, and 3) Destroy the CA signing keys.  Synchronoss confirms that a long-term data archive is being implemented in accordance with SAFE-BioPharma archive requirements.
+  contact: dsimonetti at safe-biopharma dot org
+  ca_certificate_hash: 833D2A24326C8EA10B60FD0FEB4AA0811B1747DD
+  ca_certificate_issuer: CN = SAFE Bridge CA 02, OU = Certification Authorities, O = SAFE-Biopharma, C = US
+  ca_certificate_subject: CN = Trans Sped SAFE CA III, OU = Individual Subscriber CA, O = Trans Sped SRL, C = RO
+  cdp_uri: http://sbca2.safe-biopharma.org/sbca/SBCA02.crl
+  aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c
+  sia_uri: 
+  ocsp_uri:    
+ 
 #- notice_date: 
 #  change_type: CA Certificate Issuance
 #  start_datetime:
