@@ -30,7 +30,7 @@ To report a change **or** system outage not listed below, please email fpki@gsa.
     <li><strong>Notice date: </strong> {{ notification.notice_date }}</li>
     <li><strong>System:</strong> {{ notification.system }}</li>
     <li><strong>Type:</strong> {{ notification.change_type }}</li>
-    <li><strong>Start Date and Time:</strong> {{ notification.start_datetime }}</li>
+    <li><strong>Start Date:</strong> {{ notification.start_datetime }}</li>
   </ul>
 	{% if notification.notification.end_datetime %}
       <ul class="usa-unstyled-list">
