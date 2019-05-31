@@ -961,7 +961,7 @@
 
 - notice_date: May 15, 2019
   change_type: CA Certificate Revocation
-  start_datetime:
+  start_datetime: May 28, 2019
   system: Federal Common Policy CA
   change_description: ORC SSP 3 CA has been decommissioned and the CA certificate from the Federal Common Policy CA revoked
   contact: fpki dash help at gsa dot gov
