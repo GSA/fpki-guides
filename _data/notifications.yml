@@ -575,7 +575,7 @@
   change_description: Revocation planned for the certificate issued from the Federal Common Policy CA to the Verizon Betrusted Production SSP CA A1
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 06 01 bb da d5 a2 82 31 bc 94 36 75 0b 4f 3a 48 4b ab 06 c3
-  ca_certificate_issuer: Federal Common Policy CA
+  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
   ca_certificate_subject: Betrusted Production SSP CA A1
 
 - notice_date: February 13, 2019
@@ -720,7 +720,7 @@
   change_description: Revocation performed on the certificate issued from the Federal Common Policy CA to the Verizon Betrusted Production SSP CA A1
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 06 01 bb da d5 a2 82 31 bc 94 36 75 0b 4f 3a 48 4b ab 06 c3
-  ca_certificate_issuer: Federal Common Policy CA
+  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
   ca_certificate_subject: Betrusted Production SSP CA A1
   
 - notice_date: March 5, 2019
@@ -796,7 +796,7 @@
   change_description: The Verizon SSP CA A2 was issued a new CA certificate on December 5, 2018. This notification communicates the revocation of the prior certificate.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: a9d3a8ac016dba9fa12685bf59dcc39f5dcaf781
-  ca_certificate_issuer: Federal Common Policy
+  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
   ca_certificate_subject: Verizon SSP CA A2
  
 - notice_date: April 2, 2019
@@ -806,7 +806,7 @@
   change_description: CA certificate issuance from Federal Common Policy CA to Treasury Root CA
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: fa392ea2972eb4edd1929932602a1909ac9558bc
-  ca_certificate_issuer: Federal Common Policy CA
+  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
   ca_certificate_subject: Treasury Root CA
   cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
@@ -958,7 +958,18 @@
   aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c
   sia_uri: 
   ocsp_uri:    
- 
+
+- notice_date: May 15, 2019
+  change_type: CA Certificate Revocation
+  start_datetime: May 28, 2019
+  system: Federal Common Policy CA
+  change_description: ORC SSP 3 CA has been decommissioned and the CA certificate from the Federal Common Policy CA revoked
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: BBFA5ABD8A09D73BE1FA30363F87402FEC5316F9
+  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject:  CN = ORC SSP 3, O = ORC PKI, C = US
+  
+
 #- notice_date: 
 #  change_type: CA Certificate Issuance
 #  start_datetime:
