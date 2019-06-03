@@ -969,7 +969,7 @@
   ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
   ca_certificate_subject:  CN = ORC SSP 3, O = ORC PKI, C = US
  
- - notice_date: June 3, 2019 
+- notice_date: June 3, 2019 
   change_type: CA Certificate Issuance
   start_datetime:  May 7, 2019
   system: ECA Root CA 4  
