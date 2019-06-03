@@ -842,9 +842,9 @@
   
 - notice_date: April 20, 2019
   change_type: Intent to Perform CA Certificate Issuance
-  start_datetime: June 29, 2019
+  start_datetime: June 6, 2019
   system: Department of Homeland Security Certification Authority (DHSCA)
-  change_description: DHS intends to re-key the DHSCA on 6/29/2019. Certificates will be available following the key update at https://pki.treasury.gov/crl_certs.htm.
+  change_description: DHS intends to re-key the DHSCA on 6/6/2019. Certificates will be available following the key update at https://pki.treasury.gov/crl_certs.htm.
   contact:  gladys dot garcia at hq dot dhs dot gov
   ca_certificate_hash:
   ca_certificate_issuer:
