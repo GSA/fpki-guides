@@ -842,9 +842,9 @@
   
 - notice_date: April 20, 2019
   change_type: Intent to Perform CA Certificate Issuance
-  start_datetime: June 29, 2019
+  start_datetime: June 6, 2019
   system: Department of Homeland Security Certification Authority (DHSCA)
-  change_description: DHS intends to re-key the DHSCA on 6/29/2019. Certificates will be available following the key update at https://pki.treasury.gov/crl_certs.htm.
+  change_description: DHS intends to re-key the DHSCA on 6/6/2019. Certificates will be available following the key update at https://pki.treasury.gov/crl_certs.htm
   contact:  gladys dot garcia at hq dot dhs dot gov
   ca_certificate_hash:
   ca_certificate_issuer:
@@ -968,7 +968,35 @@
   ca_certificate_hash: BBFA5ABD8A09D73BE1FA30363F87402FEC5316F9
   ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
   ca_certificate_subject:  CN = ORC SSP 3, O = ORC PKI, C = US
-  
+ 
+- notice_date: June 3, 2019 
+  change_type: CA Certificate Issuance
+  start_datetime:  May 7, 2019
+  system: ECA Root CA 4  
+  change_description: ECA Root CA 4 issued a certificate to the new IdenTrust ECA S22 CA 
+  contact: disa dot meade dot mae dot list dot pkieca at mail dot mil
+  ca_certificate_hash: A7BCFC00C818D2697D49C9407A5C7C2EEE250F00 
+  ca_certificate_issuer: CN=ECA Root CA 4,OU=ECA,O=U.S. Government,C=US
+  ca_certificate_subject: CN=IdenTrust ECA S22,OU=Certification Authorities,OU=ECA,O=U.S. Government,C=US
+  cdp_uri: http://crl.disa.mil/crl/ECAROOTCA4.crl
+  aia_uri: http://crl.disa.mil/issuedto/ECAROOTCA4_IT.p7c
+  sia_uri: 
+  ocsp_uri: http://ocsp.disa.mil
+
+- notice_date: June 3, 2019  
+  change_type: CA Certificate Issuance
+  start_datetime: May 7, 2019 
+  system:  ECA Root CA 4 
+  change_description: ECA Root CA 4 issued a certificate to the new IdenTrust ECA S22C CA
+  contact: disa dot meade dot mae dot list dot pkieca at mail dot mil
+  ca_certificate_hash: 858169080268C6473EC59293A412224659F1AC7B 
+  ca_certificate_issuer: CN=ECA Root CA 4,OU=ECA,O=U.S. Government,C=US
+  ca_certificate_subject: CN=IdenTrust ECA S22C,OU=Certification Authorities,OU=ECA,O=U.S. Government,C=US
+  cdp_uri: http://crl.disa.mil/crl/ECAROOTCA4.crl
+  aia_uri: http://crl.disa.mil/issuedto/ECAROOTCA4_IT.p7c
+  sia_uri: 
+  ocsp_uri: http://ocsp.disa.mil
+
 
 #- notice_date: 
 #  change_type: CA Certificate Issuance
