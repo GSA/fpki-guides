@@ -1011,7 +1011,7 @@
   sia_uri: http://pki.treasury.gov/dhsca_sia.p7c
   ocsp_uri:
 
-#- notice_date: 
+#- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
 #  end_datetime: 
