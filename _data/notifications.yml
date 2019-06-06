@@ -997,6 +997,19 @@
   sia_uri: 
   ocsp_uri: http://ocsp.disa.mil
 
+- notice_date: June 6, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: June 6, 2019
+  system: Department of Homeland Security Certification Authority (DHSCA)
+  change_description: DHS re-keyed the DHSCA on June 6, 2019. DHS communicated the intent to re-key this CA on April 20, 2019. The new certificate is available at https://pki.treasury.gov/crl_certs.htm
+  contact:  gladys dot garcia at hq dot dhs dot gov
+  ca_certificate_hash: 58085a64e181573f4fd917c5c021eb1cf344dd5f
+  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  ca_certificate_subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
+  aia_uri: http://pki.treasury.gov/dhsca_aia.p7c
+  sia_uri: http://pki.treasury.gov/dhsca_sia.p7c
+  ocsp_uri:
 
 #- notice_date: 
 #  change_type: CA Certificate Issuance
