@@ -30,13 +30,12 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| CertiPath Bridge | Federal Bridge CA 2016 | CertiPath Bridge CA - G2 | FCE64C867D1AF8E1C1FF5B07A869AF5F3E6F823F | 04/22/2019 |
+| No activity to report | | | | |
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| CertiPath Bridge | Federal Bridge CA 2016 | CertiPath Bridge CA - G2 | 6305CFA15E6E6AD972847251B6930FEA8D6087DB | 04/30/2019 |
 | WidePoint | ORC SSP 3 | Federal Common Policy CA | BBFA5ABD8A09D73BE1FA30363F87402FEC5316F9 | 01/12/2021 |
 
 The following certificates are expiring in the next four months and may be re-issued.
