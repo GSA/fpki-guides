@@ -1024,6 +1024,20 @@
   aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
   sia_uri: 
   ocsp_uri: 
+  
+- notice_date: June 14, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:  
+  system: DocuSign Root CA
+  change_description: The DocuSign Root CA (cross-certified with the TSCP SHA256 Bridge CA) intends to certify an issuing certification authority.  
+  contact: steve.race at tscp dot org  
+  ca_certificate_hash:  
+  ca_certificate_issuer: CN = DocuSign Root CA, OU = TSCP, O = DocuSign Inc., C = US
+  ca_certificate_subject: 
+  cdp_uri: http://crl.dsf.docusign.net/DocuSignRootCA.crl  
+  aia_uri: http://crt.dsf.docusign.net/DocuSignRootCA.p7c  
+  sia_uri: 
+  ocsp_uri:  
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
