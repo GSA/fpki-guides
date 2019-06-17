@@ -1010,6 +1010,20 @@
   aia_uri: http://pki.treasury.gov/dhsca_aia.p7c
   sia_uri: http://pki.treasury.gov/dhsca_sia.p7c
   ocsp_uri:
+  
+- notice_date: June 14, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: June 12, 2019
+  system: TSCP SHA256 Bridge CA  
+  change_description: The TSCP SHA256 Bridge CA issued a cross-certificate to the DocuSign Root CA
+  contact: steve.race at tscp dot org 
+  ca_certificate_hash: D1382AE6DACA5A69FE75B34635F529C79D5E2D90
+  ca_certificate_issuer: CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US 
+  ca_certificate_subject: CN = DocuSign Root CA, OU = TSCP, O = DocuSign Inc., C = US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl 
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri: 
+  ocsp_uri: 
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
