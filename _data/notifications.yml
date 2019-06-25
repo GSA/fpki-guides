@@ -1067,31 +1067,31 @@
   sia_uri:
   ocsp_uri:
 
-- notice_date: June 25, 2019 
+- notice_date: June 25, 2019
   change_type: CA Certificate Issuance
-  start_datetime: June 22, 2019 
-  system: US Treasury Root CA 
-  change_description: Treasury re-keyed the Department of Veterans Affairs CA. The new certificate is available at https://pki.treasury.gov.
+  start_datetime: June 22, 2019
+  system: US Treasury Root CA
+  change_description: Treasury re-keyed the Department of Veterans Affairs CA. Treasury communicated the intent to re-key this CA on March 13, 2019. Although the re-keyed certificate has been published, its private key will not be used for signing end entity certificates until June 29, 2019. The new certificate is available at https://pki.treasury.gov/crl_certs.htm
   contact: pki dot pmo at fiscal dot treasury dot gov
-  ca_certificate_hash: 76cc898f03eb0fc7e0877aac30a0c1340bb34879 
-  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
-  ca_certificate_subject: OU = Department of Veterans Affairs CA, OU = Certification Authorities, OU = Department of Veterans Affairs, O = U.S. Government, C = US 
-  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl 
-  aia_uri: http://pki.treasury.gov/vaca_aia.p7c  
+  ca_certificate_hash: 76cc898f03eb0fc7e0877aac30a0c1340bb34879
+  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  ca_certificate_subject: OU = Department of Veterans Affairs CA, OU = Certification Authorities, OU = Department of Veterans Affairs, O = U.S. Government, C = US
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
+  aia_uri: http://pki.treasury.gov/vaca_aia.p7c
   sia_uri: http://pki.treasury.gov/vaca_sia.p7c
   ocsp_uri:
 
-- notice_date: June 25, 2019  
+- notice_date: June 25, 2019
   change_type: CA Certificate Issuance
-  start_datetime: June 22, 2019  
-  system: US Treasury Root CA 
-  change_description: Treasury re-keyed the OCIO CA. The new certificate is available at https://pki.treasury.gov.  
-  contact: pki dot pmo at fiscal dot treasury dot gov 
-  ca_certificate_hash: e651a5dc6a1305613a22e46548e1666650c2825f 
-  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
-  ca_certificate_subject: OU = OCIO CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
-  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl 
-  aia_uri: http://pki.treasury.gov/toca_aia.p7c   
+  start_datetime: June 22, 2019
+  system: US Treasury Root CA
+  change_description: Treasury re-keyed the OCIO CA. Treasury communicated the intent to re-key this CA on March 13, 2019. Although the re-keyed certificate has been published, its private key will not be used for signing end entity certificates until June 29, 2019. The new certificate is available at https://pki.treasury.gov/crl_certs.htm
+  contact: pki dot pmo at fiscal dot treasury dot gov
+  ca_certificate_hash: e651a5dc6a1305613a22e46548e1666650c2825f
+  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  ca_certificate_subject: OU = OCIO CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
+  aia_uri: http://pki.treasury.gov/toca_aia.p7c
   sia_uri: http://pki.treasury.gov/toca_sia.p7c
   ocsp_uri:
 
