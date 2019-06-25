@@ -1039,6 +1039,62 @@
   sia_uri: 
   ocsp_uri:  
 
+- notice_date: June 25, 2019 
+  change_type: CA Certificate Issuance
+  start_datetime: June 19, 2019 
+  system: CertiPath Bridge CA - G2 
+  change_description: CertiPath Bridge CA - G2 issued a new cross-certificate to the Raytheon Root CA. 
+  contact: support at certipath dot com
+  ca_certificate_hash: 3afe40cb546fdec2d0b77454cebe5fb01d3dbb3a 
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US 
+  ca_certificate_subject: CN=Raytheon Root CA, OU=RaytheonRoot-g2, O=CAs, DC=raytheon, DC=com 
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl 
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c 
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: June 25, 2019 
+  change_type: CA Certificate Issuance
+  start_datetime: June 19, 2019 
+  system: CertiPath Bridge CA - G2 
+  change_description: CertiPath Bridge CA - G2 issued a new cross-certificate to the Ministerie van Defensie Certificatie Autoriteit - G2 CA.
+  contact: support at certipath dot com
+  ca_certificate_hash: b94b710964a6c1d53b3809e45d5805eca1e0c786
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US 
+  ca_certificate_subject: CN=Ministerie van Defensie Certificatie Autoriteit - G2, O=Ministerie van Defensie, C=NL
+  cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl 
+  aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c  
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: June 25, 2019 
+  change_type: CA Certificate Issuance
+  start_datetime: June 22, 2019 
+  system: US Treasury Root CA 
+  change_description: Treasury re-keyed the Department of Veterans Affairs CA. The new certificate is available at https://pki.treasury.gov.
+  contact: pki dot pmo at fiscal dot treasury dot gov
+  ca_certificate_hash: 76cc898f03eb0fc7e0877aac30a0c1340bb34879 
+  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
+  ca_certificate_subject: OU = Department of Veterans Affairs CA, OU = Certification Authorities, OU = Department of Veterans Affairs, O = U.S. Government, C = US 
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl 
+  aia_uri: http://pki.treasury.gov/vaca_aia.p7c  
+  sia_uri: http://pki.treasury.gov/vaca_sia.p7c
+  ocsp_uri:
+
+- notice_date: June 25, 2019  
+  change_type: CA Certificate Issuance
+  start_datetime: June 22, 2019  
+  system: US Treasury Root CA 
+  change_description: Treasury re-keyed the OCIO CA. The new certificate is available at https://pki.treasury.gov.  
+  contact: pki dot pmo at fiscal dot treasury dot gov 
+  ca_certificate_hash: e651a5dc6a1305613a22e46548e1666650c2825f 
+  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
+  ca_certificate_subject: OU = OCIO CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
+  cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl 
+  aia_uri: http://pki.treasury.gov/toca_aia.p7c   
+  sia_uri: http://pki.treasury.gov/toca_sia.p7c
+  ocsp_uri:
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
