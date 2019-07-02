@@ -9,7 +9,7 @@
     </span>
     <span class="usa-disclaimer-stage"></span>
   </div>
-  
+
     <nav class="usa-site-navbar">
       <a class="menu-btn" href="#">Menu</a>
       <div class="logo" id="logo">
@@ -20,10 +20,18 @@
       </div>
       <ul class="usa-button-list usa-unstyled-list">
         <li>
-          <a class="usa-button usa-button-outline-inverse" href="{{ site.repo_url }}">
-            View this site's code
-          </a>
-          </li>
+          <form id="search_form" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get" class="usa-search usa-search-small">
+            <input name="utf8" type="hidden" value="✓">
+            <input id="affiliate" type="hidden" name="affiliate" value="{{ site.search_site_handle }}">
+            <input type="hidden" name="commit" value="Search">
+            <div role="search" >
+              <input id="query" name="query" type="search" class="query" autocomplete="off" class="usagov-search-autocomplete" placeholder="Enter Search Term(s)" />
+              <button type="submit">
+                <span class="usa-sr-only">Search</span>
+              </button>
+            </div>
+          </form>
+        </li>
       </ul>
     </nav>
 	<nav class="usa-site-navbar-secondary">
@@ -32,7 +40,7 @@
 		  <li><a href="{{ nav.url }}" title="{{ nav.title }}">{{ nav.title }}</a></li>
 		{% endfor %}
       </ul>
-    </nav> 
+    </nav>
 </header>
 
 <div class="overlay"></div>
