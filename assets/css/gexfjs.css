@@ -2,6 +2,15 @@
  * Licensed under the MIT License
  * */
 
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
 body {
     font-family: "Calibri", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     /*font-size: 1.7rem;
@@ -144,7 +153,9 @@ h1 {
     border:1px solid #aaa;
     height: 120px; 
     margin: 0 auto;
-    /*right: 20px;*/
+	right: -15px;
+	top: -15px;
+
 }
 
 #zoomMinusButton, #zoomPlusButton {
