@@ -1095,6 +1095,35 @@
   sia_uri: http://pki.treasury.gov/toca_sia.p7c
   ocsp_uri:
 
+- notice_date: July 2, 2019
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: Verizon NFI 
+  change_description: On July 1, 2019, Verizon decommissioned Trans Sped Mobile QCA and VZ-SMC-CA-B2. Previously active end entity certificates issued from the CAs were revoked before CA decommissioning.
+  contact: abdul dot nur at verizon dot com 
+  ca_certificate_hash: 8EF17043FAD28004F407BABECE21A7C42BE4F275 and A4108B1D93D4F8837584FAEA8496847914606C29  
+  ca_certificate_issuer: CT-CSSP-CA-A1
+  ca_certificate_subject: Trans Sped Mobile QCA and VZ-SMC-CA-B2  
+  cdp_uri: http://cdp1.com-strong-id.net/CDP/CT-CSSP-CA-A1.crl
+  aia_uri: http://aia1.com-strong-id.net/CA/CT-CSSP-CA-A1.p7c
+  sia_uri: 
+  ocsp_uri: http://ocsp1.com-strong-id.net/CT-CSSP-CA-A1
+
+- notice_date: July 8, 2019
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: Symantec Class 3 SSP Intermediate CA - G3 (DigiCert)
+  change_description: On July 3, 2019, DigiCert decommissioned several CAs chaining to Symantec Class 3 SSP Intermediate CA - G3. Previously active end entity certificates issued from the CAs listed below were revoked before CA decommissioning.
+  contact: steve dot medin at digicert dot com
+  ca_certificate_hash: Multiple CA certificates were revoked. Comma-separated list of CA hashes - 3DFB1CB09BE5D1430DF9CE8E04F501ADB86CA176, 1EC98449B18472D6C2F516A4D0976350D5DD829A, CF9229CB50BF5DC25C156C4F825A67E2964236C8, D4C786468511920E538C24384B3132D07DBACAF0, D514632CE34BF94C816A565DBB8FBB6BAD5FF335, 82E6536172F69E30786C9670840DB37077B5C08C, and F8912B3C9F3EB30F8A8D5A14E8038BD9BC6B771D
+  ca_certificate_issuer: Symantec Class 3 SSP Intermediate CA - G3
+  ca_certificate_subject: Multiple CA certificates were revoked. Comma-separated list of CA Subject Names - CSRA FBCA C4 Device CA, CSRA FBCA C4 CA, CSRA FBCA C3 Device CA, SureID Inc. CA2, SureID Inc. Device CA1, Eid Passport LRA Content Signer CA 3, and Eid Passport LRA Device 2 CA
+  cdp_uri: http://ssp-crl.symauth.com/STNSSP/Class3SSPCAG3.crl
+  aia_uri: http://ssp-aia.symauth.com/STNSSP/Certs_issued_to_Class3SSPCA-G3.p7c
+  sia_uri: http://ssp-sia.symauth.com/STNSSP/Certs_Issued_by_Class3SSPCA-G3.p7c
+  ocsp_uri: http://ssp-ocsp.symauth.com
+
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
