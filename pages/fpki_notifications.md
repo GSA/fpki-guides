@@ -27,7 +27,7 @@ To report a change **or** system outage not listed below, please email fpki@gsa.
 <hr>
 {% for notification in site.data.notifications reversed %}
   <ul class="usa-unstyled-list">
-    <li><strong>Notice date: </strong> {{ notification.notice_date }}</li>
+    <li><strong>Notice Date: </strong> {{ notification.notice_date }}</li>
     <li><strong>System:</strong> {{ notification.system }}</li>
     <li><strong>Type:</strong> {{ notification.change_type }}</li>
   </ul>
@@ -102,8 +102,8 @@ The notification can also be emailed to fpki@gsa.gov. The email should contain t
 
 Subject:  FPKI System Notification - System Name 
   
-- Notice Date  
-- Change Type of one of the following: CA Certificate Issuance, CA Certificate Revocation, New CA, URI Change, System Outage  
+- Notice date  
+- Change type of one of the following: CA Certificate Issuance, CA Certificate Revocation, New CA, URI Change, System Outage  
 - Change start date   
 - Change end date  
 - Change description  
