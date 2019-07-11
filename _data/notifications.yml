@@ -1122,6 +1122,20 @@
   aia_uri: http://ssp-aia.symauth.com/STNSSP/Certs_issued_to_Class3SSPCA-G3.p7c
   sia_uri: http://ssp-sia.symauth.com/STNSSP/Certs_Issued_by_Class3SSPCA-G3.p7c
   ocsp_uri: http://ssp-ocsp.symauth.com
+  
+- notice_date: July 11, 2019
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: Symantec Class 3 SSP Intermediate CA - G3 (DigiCert)
+  change_description: On July 10, 2019, DigiCert decommissioned the CSRA FBCA C3 CA. Previously active end entity certificates issued from CSRA FBCA C3 CA were revoked before CA decommissioning.
+  contact: steve dot medin at digicert dot com
+  ca_certificate_hash: faed5b3aa85bfea0ba8ba884689706044dfc0ec9
+  ca_certificate_issuer: Symantec Class 3 SSP Intermediate CA - G3
+  ca_certificate_subject: CSRA FBCA C3 CA
+  cdp_uri: http://ssp-crl.symauth.com/STNSSP/Class3SSPCAG3.crl
+  aia_uri: http://ssp-aia.symauth.com/STNSSP/Certs_issued_to_Class3SSPCA-G3.p7c
+  sia_uri: http://ssp-sia.symauth.com/STNSSP/Certs_Issued_by_Class3SSPCA-G3.p7c
+  ocsp_uri: http://ssp-ocsp.symauth.com
 
 
 #- notice_date:  
