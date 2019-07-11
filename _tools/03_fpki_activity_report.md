@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: May 6, 2019
+Updated: July 2, 2019
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -36,7 +36,7 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| WidePoint | ORC SSP 3 | Federal Common Policy CA | BBFA5ABD8A09D73BE1FA30363F87402FEC5316F9 | 01/12/2021 |
+| No activity to report | | | | |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
