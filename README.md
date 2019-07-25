@@ -1,4 +1,4 @@
-This work is led by GSA teams and the Federal Public Key Infrastructure community in coordination with the ICAM Subcommittee of the Federal CIO Council.
+This work is led by GSA teams and the Federal Public Key Infrastructure community in coordination with the ICAM Subcommittee of the Federal CIO Council. 
 
 # Federal Public Key Infrastructure Guides
 This repository is for the collaborative development of the Federal Identity, Credential, and Access Management Playbooks and Guides for the *Federal Public Key Infrastructure*.  
