@@ -1137,6 +1137,33 @@
   sia_uri: http://ssp-sia.symauth.com/STNSSP/Certs_Issued_by_Class3SSPCA-G3.p7c
   ocsp_uri: http://ssp-ocsp.symauth.com
 
+- notice_date: July 23, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:  
+  system: Entrust Managed Services
+  change_description: Entrust intends to re-key both the Entrust Managed Services Root CA and the Entrust Managed Services SSP CA. The re-key events are tentatively planned for mid-August.  Entrust also communicated intent to request a new cross-certificate from the Federal Common Policy CA to the Entrust Managed Services Root CA, once the re-key is complete.  This notification will be updated as Entrust communicates the finalized event timeline with the Federal PKI Support Team.
+  contact: Cris dot TenEyck at entrustdatacard dot com and Howard dot Freitag at entrustdatacard dot com
+  ca_certificate_hash:  
+  ca_certificate_issuer: ou=Entrust Managed Services Root CA, ou=Certification Authorities, o=Entrust, c=US
+  ca_certificate_subject: Two certificates are planned for issuance (1) ou=Entrust Managed Services Root CA, ou=Certification Authorities and (2) o=Entrust, c=US and ou=Entrust Managed Services SSP CA, ou=Certification Authorities, o=Entrust, c=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+  
+- notice_date: July 24, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:  
+  system: FPKI Trust Infrastructure - Federal Bridge 2016
+  change_description: The Federal Bridge CA 2016 intends to issue cross-certificates to DoD Interoperability Root CA 2, TSCP SHA256 Bridge CA, and WidePoint NFI Root CA 1. Certificate issuance is expected to take place before August 15, 2019.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash:  
+  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: Three certificates are planned for issuance. (1) CN = DoD Interoperability Root CA 2, OU = PKI, OU = DoD, O = U.S. Government, C = US, (2) CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US, and (3) CN = WidePoint NFI Root 1, OU = Certification Authorities, O = WidePoint, C = US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
