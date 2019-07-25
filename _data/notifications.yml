@@ -1164,6 +1164,15 @@
   aia_uri:
   sia_uri:
   ocsp_uri:
+  
+- notice_date: July 25, 2019
+  change_type: Intent to Perform CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Bridge 2016
+  change_description: The Federal Bridge CA 2016 intends to revoke the cross-certificate issued to CN = CT-CSSP-CA-A1, OU = PKI, OU = Services, O = Cybertrust, C = US (operated by Verizon NFI).
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 68 70 66 bc e5 6b 6e 20 ae a0 c6 05 b9 b6 67 93 42 26 9f 21
+  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN = CT-CSSP-CA-A1, OU = PKI, OU = Services, O = Cybertrust, C = US
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
