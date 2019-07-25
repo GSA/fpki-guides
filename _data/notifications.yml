@@ -1159,7 +1159,7 @@
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  
   ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: Three certificates are planned for issuance. (1) CN = DoD Interoperability Root CA 2, OU = PKI, OU = DoD, O = U.S. Government, C = US, (2) CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US, and (3) CN = WidePoint NFI Root 1, OU = Certification Authorities, O = WidePoint, C = US
+  ca_certificate_subject: Three certificates are planned for issuance (1) CN = DoD Interoperability Root CA 2, OU = PKI, OU = DoD, O = U.S. Government, C = US, (2) CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US, and (3) CN = WidePoint NFI Root 1, OU = Certification Authorities, O = WidePoint, C = US
   cdp_uri:
   aia_uri:
   sia_uri:
