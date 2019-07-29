@@ -85,7 +85,7 @@ These steps will help you to create, distribute, and install profiles using Appl
 
 To use this profile, copy the XML information and save it as a `.mobileconfig` file. 
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
