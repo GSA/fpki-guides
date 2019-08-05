@@ -1141,7 +1141,7 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:  
   system: Entrust Managed Services
-  change_description: Entrust intends to re-key both the Entrust Managed Services Root CA and the Entrust Managed Services SSP CA. The re-key events are tentatively planned for mid-August.  Entrust also communicated intent to request a new cross-certificate from the Federal Common Policy CA to the Entrust Managed Services Root CA, once the re-key is complete.  This notification will be updated as Entrust communicates the finalized event timeline with the Federal PKI Support Team.
+  change_description: Entrust intends to re-key both the Entrust Managed Services Root CA and the Entrust Managed Services SSP CA. The Entrust Managed Services Root CA re-key event is planned for August 13, 2019.  Entrust also communicated intent to request a new cross-certificate from the Federal Common Policy CA to the Entrust Managed Services Root CA, once the re-key is complete.  This notification will be updated as Entrust communicates the finalized event timeline with the Federal PKI Support Team.
   contact: Cris dot TenEyck at entrustdatacard dot com and Howard dot Freitag at entrustdatacard dot com
   ca_certificate_hash:  
   ca_certificate_issuer: ou=Entrust Managed Services Root CA, ou=Certification Authorities, o=Entrust, c=US
@@ -1182,6 +1182,20 @@
   ca_certificate_hash: 73 dc cf 64 18 52 2b 69 a5 0a 96 72 1a eb 96 44 1e 6e f3 c0 
   ca_certificate_issuer: CN = CT-CSSP-CA-A1, OU = PKI, OU = Services, O = Cybertrust, C = US
   ca_certificate_subject: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
+  
+- notice_date: August 5, 2019
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: SAFE-BioPharma
+  change_description: On August 2, 2019, SAFE-BioPharma decommissioned the Trans Sped SAFE CA III. Previously active end entity certificates issued from Trans Sped SAFE CA III were revoked before CA decommissioning.
+  contact: kyle dot neuman at makeidentitysafe dot com
+  ca_certificate_hash: 833D2A24326C8EA10B60FD0FEB4AA0811B1747DD
+  ca_certificate_issuer: CN = SAFE Bridge CA 02, OU = Certification Authorities, O = SAFE-Biopharma, C = US
+  ca_certificate_subject: CN = Trans Sped SAFE CA III, OU = Individual Subscriber CA, O = Trans Sped SRL, C = RO
+  cdp_uri: http://sbca2.safe-biopharma.org/sbca/SBCA02.crl
+  aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c
+  sia_uri: 
+  ocsp_uri:    
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
