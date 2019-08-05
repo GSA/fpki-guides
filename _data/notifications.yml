@@ -1187,7 +1187,7 @@
   change_type: CA Certificate Revocation
   start_datetime:
   system: SAFE-BioPharma
-  change_description: On August 2, 2019, SAFE-BioPharma decommissioned the Trans Sped SAFE CA III. Previously active end entity certificates issued from Trans Sped SAFE CA III were revoked before CA decommissioning.
+  change_description: Synchronoss decommissioned the Trans Sped SAFE CA III. Previously active end entity certificates issued from Trans Sped SAFE CA III were revoked before CA decommissioning. On August 2, 2019, SAFE-BioPharma revoked the cross-certificate issued to Trans Sped SAFE CA III.
   contact: kyle dot neuman at makeidentitysafe dot com
   ca_certificate_hash: 833D2A24326C8EA10B60FD0FEB4AA0811B1747DD
   ca_certificate_issuer: CN = SAFE Bridge CA 02, OU = Certification Authorities, O = SAFE-Biopharma, C = US
