@@ -1201,7 +1201,7 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:  
   system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: The Federal Common Policy CA intends to issue a cross-certificate to the Entrust Managed Services Root CA, pending the Entrust Managed Services Root CA re-key.
+  change_description: The Federal Common Policy CA intends to issue a certificate to the Entrust Managed Services Root CA, pending the Entrust Managed Services Root CA re-key.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  
   ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
@@ -1214,7 +1214,7 @@
 - notice_date: August 08, 2019 
   change_type: CA Certificate Revocation
   start_datetime: 
-  system: FPKI Trust Infrastructure - Federal Bridge 2016 
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016 
   change_description: On August 06, 2019, the Federal Bridge CA 2016 revoked the cross-certificate issued to CN = CT-CSSP-CA-A1, OU = PKI, OU = Services, O = Cybertrust, C = US (operated by Verizon NFI).  
   contact: fpki dash help at gsa dot gov 
   ca_certificate_hash: 687066bce56b6e20aea0c605b9b6679342269f21 
@@ -1242,7 +1242,7 @@
 - notice_date: August 08, 2019
   change_type: CA Certificate Issuance
   start_datetime: August 06, 2019
-  system: FPKI Trust Infrastructure - Federal Bridge 2016
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
   change_description: The Federal Bridge CA 2016 issued a cross-certificate to DoD Interoperability Root CA 2.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 73050d5b629cf6286be972afddfa31d2864b4f35
@@ -1256,7 +1256,7 @@
 - notice_date: August 08, 2019
   change_type: CA Certificate Issuance
   start_datetime: August 06, 2019
-  system: FPKI Trust Infrastructure - Federal Bridge 2016
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
   change_description: The Federal Bridge CA 2016 issued a cross-certificate to WidePoint NFI Root 1.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 92bc06fe6b27cbe4723f309f34681fc57c8166ce 
@@ -1270,8 +1270,8 @@
 - notice_date: August 08, 2019
   change_type: CA Certificate Issuance
   start_datetime: August 06, 2019
-  system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: The Federal Bridge CA 2016 issued a cross-certificate to TSCP SHA256 Bridge CA.
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: The Federal Bridge CA 2016 issued a cross-certificate to the TSCP SHA256 Bridge CA.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  874007002a4a2fff3edcf90eb41adce7c2fb4915
   ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
@@ -1285,7 +1285,7 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:
   system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: The Federal Common Policy CA intends to issue an updated certificate to the US Treasury Root CA. The updated certificate will add the following certificate policy object identifiers id-fpki-certpcy-pivi-hardware (2.16.840.1.101.3.2.1.3.18), id-fpki-certpcy-pivi-cardAuth (2.16.840.1.101.3.2.1.3.19), and id-fpki-certpcy-pivi-contentSigning	2.16.840.1.101.3.2.1.3.20 to the US Treasury Root CA certificate's existing set.
+  change_description: The Federal Common Policy CA intends to issue an updated certificate to the US Treasury Root CA. The updated certificate will add the following certificate policy object identifiers to the US Treasury Root CA certificate's existing set - id-fpki-certpcy-pivi-hardware (2.16.840.1.101.3.2.1.3.18), id-fpki-certpcy-pivi-cardAuth (2.16.840.1.101.3.2.1.3.19), and id-fpki-certpcy-pivi-contentSigning	(2.16.840.1.101.3.2.1.3.20).
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:
   ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
