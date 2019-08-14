@@ -40,6 +40,7 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 | --------- | ---------- | ---------- | ------ | ------ |
 | DoD | DoD Interoperability Root CA 2 | Federal Bridge CA 2016 | 949E7F407D71EEE663709D5D2A680460146CE530 | 08/15/2019 |
 | TSCP | TSCP SHA256 Bridge CA | Federal Bridge CA 2016 | 949E7F407D71EEE663709D5D2A680460146CE530 | 08/11/2019 |
+| Verizon | CT-CSSP-CA-A1 | Federal Bridge CA 2016 | 687066BCE56B6E20AEA0C605B9B6679342269F21 | 08/06/2019 | 
 
 The following certificates are expiring in the next four months and may be re-issued.
 
