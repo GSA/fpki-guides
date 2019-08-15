@@ -33,13 +33,15 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 | TSCP | TSCP SHA256 Bridge CA | Federal Bridge CA 2016 | 874007002A4A2FFF3EDCF90EB41ADCE7C2FB4915 | 08/06/2019 |
 | DoD | DoD Interoperability Root CA 2 | Federal Bridge CA 2016 | 73050D5B629CF6286BE972AFDDFA31D2864B4F35 | 08/06/2019 |
 | WidePoint | WidePoint NFI Root 1 | Federal Bridge CA 2016 | 92BC06FE6B27CBE4723F309F34681FC57C8166CE | 08/06/2019 |
+| Treasury | US Treasury Root CA | Federal Common Policy CA | 48CE02A99AE2CC4f790F2989AA153ED565B7E4D2 | 08/14/2019 |
+| Entrust | Entrust Managed Services Root CA | Federal Common Policy CA | A09655170C87D0FBFE0328B99A7BAF4A1CF0B5D9 | 08/14/2019 |
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| DoD | DoD Interoperability Root CA 2 | Federal Bridge CA 2016 | 949E7F407D71EEE663709D5D2A680460146CE530 | 08/15/2019 |
-| TSCP | TSCP SHA256 Bridge CA | Federal Bridge CA 2016 | 949E7F407D71EEE663709D5D2A680460146CE530 | 08/11/2019 |
+| DoD | DoD Interoperability Root CA 2 | Federal Bridge CA 2016 | 949E7F407D71EEE663709D5D2A680460146CE530 | Expired - 08/15/2019 |
+| TSCP | TSCP SHA256 Bridge CA | Federal Bridge CA 2016 | 949E7F407D71EEE663709D5D2A680460146CE530 | Expired - 08/11/2019 |
 | Verizon | CT-CSSP-CA-A1 | Federal Bridge CA 2016 | 687066BCE56B6E20AEA0C605B9B6679342269F21 | Revoked - 08/06/2019 | 
 
 The following certificates are expiring in the next four months and may be re-issued.
