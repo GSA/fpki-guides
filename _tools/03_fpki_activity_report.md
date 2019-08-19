@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: July 2, 2019
+Updated: August 13, 2019
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -30,20 +30,28 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| No activity to report | | | | |
+| TSCP | TSCP SHA256 Bridge CA | Federal Bridge CA 2016 | 874007002A4A2FFF3EDCF90EB41ADCE7C2FB4915 | 08/06/2019 |
+| DoD | DoD Interoperability Root CA 2 | Federal Bridge CA 2016 | 73050D5B629CF6286BE972AFDDFA31D2864B4F35 | 08/06/2019 |
+| WidePoint | WidePoint NFI Root 1 | Federal Bridge CA 2016 | 92BC06FE6B27CBE4723F309F34681FC57C8166CE | 08/06/2019 |
+| Treasury | US Treasury Root CA | Federal Common Policy CA | 48CE02A99AE2CC4f790F2989AA153ED565B7E4D2 | 08/14/2019 |
+| Entrust | Entrust Managed Services Root CA | Federal Common Policy CA | A09655170C87D0FBFE0328B99A7BAF4A1CF0B5D9 | 08/14/2019 |
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| No activity to report | | | | |
+| Verizon | CT-CSSP-CA-A1 | Federal Bridge CA 2016 | 687066BCE56B6E20AEA0C605B9B6679342269F21 | Revoked - 08/06/2019 |
+| Verizon | Federal Bridge CA 2016 | CT-CSSP-CA-A1 | 73DCCF6418522B69A50A96721AEB96441E6EF3C0 | Revoked - 08/08/2019 |
+| TSCP | TSCP SHA256 Bridge CA | Federal Bridge CA 2016 | 949E7F407D71EEE663709D5D2A680460146CE530 | Expired - 08/11/2019 |
+| WidePoint | Federal Bridge CA 2016 | ORC NFI CA 2 | E5B1E78672EEA3702A7C713B63D238DB1EBC601B | Revoked - 08/14/2019 |
+| WidePoint | ORC NFI CA 2 | Federal Bridge CA 2016 | B055C6EE104E01EB688C8FB4F87CF77CA376AFDB | Revoked - 08/14/2019 |
+| DoD | DoD Interoperability Root CA 2 | Federal Bridge CA 2016 | 949E7F407D71EEE663709D5D2A680460146CE530 | Expired - 08/15/2019 |
 
 The following certificates are expiring in the next four months and may be re-issued.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ---------- |
-| DoD | DoD Interoperability Root CA 2 | Federal Bridge CA 2016 | 949E7F407D71EEE663709D5D2A680460146CE530 | 08/15/2019 |
-| TSCP | TSCP SHA256 Bridge CA | Federal Bridge CA 2016 | 949E7F407D71EEE663709D5D2A680460146CE530 | 08/11/2019 |
+| FPKIMA | Federal Common Policy CA | Federal Bridge CA 2016 | E5AE09B5237F70B25EF517381D781FA0067FE40C | 11/08/2019 |
 
 ## Repository Availability 
 Respository availability is an uptime metric for Certificate Revocation List availability. The table only contains Certification Authorities directly certified with the FPKIMA. A metric of "99" in the table below means the Certificate Revocation List was available for 99% of the given month, in other words, the file was not available for 1% of the month (18 minutes depending on the month). The last column is the 12-Month average.
