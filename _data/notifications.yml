@@ -1140,7 +1140,7 @@
 - notice_date: July 23, 2019
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:  
-  system: Entrust Managed Services
+  system: Entrust Federal Shared Service Provider
   change_description: Entrust intends to re-key both the Entrust Managed Services Root CA and the Entrust Managed Services SSP CA. The Entrust Managed Services Root CA re-key event is planned for August 13, 2019.  Entrust also communicated intent to request a new cross-certificate from the Federal Common Policy CA to the Entrust Managed Services Root CA, once the re-key is complete.  This notification will be updated as Entrust communicates the finalized event timeline with the Federal PKI Support Team.
   contact: Cris dot TenEyck at entrustdatacard dot com and Howard dot Freitag at entrustdatacard dot com
   ca_certificate_hash:  
@@ -1176,7 +1176,7 @@
   
 - notice_date: July 26, 2019
   change_type: Intent to Perform CA Certificate Revocation
-  system: Verizon NFI
+  system: Verizon Non-Federal Issuer (NFI)
   change_description: Verizon NFI intends to revoke the cross-certificate issued from CT-CSSP-CA-A1 to the Federal Bridge CA 2016.
   contact: andre dot varacka at verizon dot com
   ca_certificate_hash: 73 dc cf 64 18 52 2b 69 a5 0a 96 72 1a eb 96 44 1e 6e f3 c0 
@@ -1186,7 +1186,7 @@
 - notice_date: August 5, 2019
   change_type: CA Certificate Revocation
   start_datetime:
-  system: SAFE-BioPharma
+  system: SAFE-BioPharma Bridge 
   change_description: Synchronoss decommissioned the Trans Sped SAFE CA III. Previously active end entity certificates issued from Trans Sped SAFE CA III were revoked before CA decommissioning. On August 2, 2019, SAFE-BioPharma revoked the cross-certificate issued to Trans Sped SAFE CA III.
   contact: kyle dot neuman at makeidentitysafe dot com
   ca_certificate_hash: 833D2A24326C8EA10B60FD0FEB4AA0811B1747DD
@@ -1312,7 +1312,7 @@
 - notice_date: August 14, 2019
   change_type: CA Certificate Issuance
   start_datetime: August 13, 2019  
-  system: Entrust Managed Services
+  system: Entrust Federal Shared Service Provider
   change_description: The recently re-keyed Entrust Managed Services Root CA issued a certificate to the re-keyed Entrust Managed Services SSP CA. Entrust notified customers of the issuance event, but is not yet publishing the new certificate in Authority Information Access or Subject Information Access HyperText Transfer Protocol repositories. In the meantime, the certificate is available at https://enrollwebfed.managed.entrust.com/fssp/cda-docs/html/FedCertsoverviewfed.html. This notification will be updated as the certificate publishing timeline is made clear by Entrust. 
   contact: Cris dot TenEyck at entrustdatacard dot com and Howard dot Freitag at entrustdatacard dot com
   ca_certificate_hash: 722e8abbe6b66e47d1bcec3c7ec47aa5bbe4d3c5 
