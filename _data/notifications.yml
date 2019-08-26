@@ -1313,7 +1313,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 13, 2019  
   system: Entrust Federal Shared Service Provider
-  change_description: The recently re-keyed Entrust Managed Services Root CA issued a certificate to the re-keyed Entrust Managed Services SSP CA. Entrust will begin end entity certificate issuance with the re-keyed CA and publish its certificate in Authority Information Access and Subject Information Access HyperText Transfer Protocol repositories on Friday, September 27th, 2019 between 6:00 PM Eastern – 10:00 PM Eastern. In the meantime, the certificate is available at https://enrollwebfed.managed.entrust.com/fssp/cda-docs/html/FedCertsoverviewfed.html. 
+  change_description: The recently re-keyed Entrust Managed Services Root CA issued a certificate to the re-keyed Entrust Managed Services SSP CA. Entrust will publish and begin issuance from the re-keyed Entrust Managed Services SSP CA on Friday, September 27, 2019, between 6:00 PM Eastern – 10:00 PM Eastern. In the meantime, the certificate is available at https://enrollwebfed.managed.entrust.com/fssp/cda-docs/html/FedCertsoverviewfed.html. 
   contact: Cris dot TenEyck at entrustdatacard dot com and Howard dot Freitag at entrustdatacard dot com
   ca_certificate_hash: 722e8abbe6b66e47d1bcec3c7ec47aa5bbe4d3c5 
   ca_certificate_issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
@@ -1327,7 +1327,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 14, 2019  
   system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: The Federal Common Policy CA issued a certificate to the re-keyed Entrust Managed Services Root CA. Newly issued end entity certificates will not chain to this certificate until Friday, September 27th, 2019 between 6:00 PM Eastern – 10:00 PM Eastern when Entrust migrates issuance to the re-keyed Entrust Managed Services SSP CA.   
+  change_description: The Federal Common Policy CA issued a certificate to the re-keyed Entrust Managed Services Root CA.  Entrust will cut over to and begin issuance from the re-keyed Entrust Managed Services Root and SSP CA certificates on Friday, September 27, 2019, between 6:00 PM Eastern – 10:00 PM Eastern.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9 
   ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
