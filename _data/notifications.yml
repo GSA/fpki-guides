@@ -1327,7 +1327,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 14, 2019  
   system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: The Federal Common Policy CA issued a certificate to the re-keyed Entrust Managed Services Root CA.  Entrust will cut over to and begin issuance from the re-keyed Entrust Managed Services Root and SSP CA certificates on Friday, September 27, 2019, between 6:00 PM Eastern – 10:00 PM Eastern.
+  change_description: The Federal Common Policy CA issued a certificate to the re-keyed Entrust Managed Services Root CA.  Entrust will cut over to and begin issuance from the re-keyed Entrust Managed Services Root and SSP CA certificates on Friday, September 27, 2019, between 6:00 PM Eastern – 10:00 PM Eastern. The certificate is available for download at http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9 
   ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
@@ -1341,7 +1341,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 14, 2019
   system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: The Federal Common Policy CA issued an updated certificate to the US Treasury Root CA. The updated certificate adds the following certificate policy object identifiers to the US Treasury Root CA certificate's existing set - id-fpki-certpcy-pivi-hardware (2.16.840.1.101.3.2.1.3.18), id-fpki-certpcy-pivi-cardAuth (2.16.840.1.101.3.2.1.3.19), and id-fpki-certpcy-pivi-contentSigning	(2.16.840.1.101.3.2.1.3.20).
+  change_description: The Federal Common Policy CA issued an updated certificate to the US Treasury Root CA. The updated certificate adds the following certificate policy object identifiers to the US Treasury Root CA certificate's existing set - id-fpki-certpcy-pivi-hardware (2.16.840.1.101.3.2.1.3.18), id-fpki-certpcy-pivi-cardAuth (2.16.840.1.101.3.2.1.3.19), and id-fpki-certpcy-pivi-contentSigning	(2.16.840.1.101.3.2.1.3.20).  The certificate is available for download at http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 48ce02a99ae2cc4f790f2989aa153ed565b7e4d2
   ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
