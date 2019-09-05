@@ -888,28 +888,28 @@
  agency: Department of Veterans Affairs
  component: N/A
  acronym: VA
- ssp: U.S. Treasury SSP
+ ssp: U.S. Treasury SSP & Verizon SSP
  ca: <a href="#department-of-veterans-affairs-ca">Department of Veterans Affairs CA</a> and <a href="#veterans-affairs-user-ca-b1">Veterans Affairs User CA B1</a>  
 - 
  branch: Executive
  agency: Department of Veterans Affairs
  component: National Cemetery Administration
  acronym: NCA
- ssp: U.S. Treasury SSP
+ ssp: U.S. Treasury SSP & Verizon SSP
  ca: <a href="#department-of-veterans-affairs-ca">Department of Veterans Affairs CA</a> and <a href="#veterans-affairs-user-ca-b1">Veterans Affairs User CA B1</a>  
 - 
  branch: Executive
  agency: Department of Veterans Affairs
  component: Veterans Benefits Administration
  acronym: VBA
- ssp: U.S. Treasury SSP 
+ ssp: U.S. Treasury SSP & Verizon SSP
  ca: <a href="#department-of-veterans-affairs-ca">Department of Veterans Affairs CA</a> and <a href="#veterans-affairs-user-ca-b1">Veterans Affairs User CA B1</a>  
 - 
  branch: Executive
  agency: Department of Veterans Affairs
  component: Veterans Health Administration
  acronym: VHA
- ssp: U.S. Treasury SSP 
+ ssp: U.S. Treasury SSP & Verizon SSP
  ca: <a href="#department-of-veterans-affairs-ca">Department of Veterans Affairs CA</a> and <a href="#veterans-affairs-user-ca-b1">Veterans Affairs User CA B1</a>  
 - 
  branch: Executive
@@ -930,7 +930,7 @@
  agency: Environmental Protection Agency
  component: N/A
  acronym: EPA
- ssp: Entrust SSP 
+ ssp: ORC SSP 
  ca: <a href="#orc-ssp-4">ORC SSP 4</a> 
 - 
  branch: Executive
@@ -1056,7 +1056,7 @@
  agency: Federal Trade Commission
  component: N/A
  acronym: FTC
- ssp: Entrust SSP 
+ ssp: Entrust SSP & ORC SSP
  ca: <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a> and <a href="#orc-ssp-4">ORC SSP 4</a> 
 - 
  branch: Executive
