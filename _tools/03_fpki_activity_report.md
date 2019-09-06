@@ -53,7 +53,9 @@ The following certificates are expiring or a planned certificate activity in the
 | --------- | ---------- | ---------- | ---------- | ---------- | -------- |
 | FPKIMA | Federal Common Policy CA | Federal Bridge CA 2016 | E5AE09B5237F70B25EF517381D781FA0067FE40C | 11/08/2019 | Under PA Decision to re-issue |
 | FPKIMA | Federal Bridge CA 2016 | Federal Common Policy CA | e5ae09b5237f70b25ef517381d781fa0067fe40c | 11/08/2019 | Re-issue |
-| FPKIMA | SHA-1 Federal Root CA G2 | Federal Common Policy CA | 27c589ff2853bd1949cfa433f36a5e285b2e2c7c | 12/31/2019 | Let expire |
+| DoD | DoD Interoperability Root CA 1 | SHA-1 Federal Root CA G2 | 369814cdf6813b1cb973a492fdb130d1446296ef | 11/15/2019 | Let expire |
+| CertiPath Bridge | CertiPath Bridge CA | SHA-1 Federal Root CA G2 | 71fb94efbcfc8fffaab00db73e92da36a0e601fa | 11/29/2019 | Let expire |
+| FPKIMA | SHA-1 Federal Root CA G2 | Federal Common Policy CA | 27c589ff2853bd1949cfa433f36a5e285b2e2c7c | 12/31/2019 | Revoke due to decommission |
 | CertiPath Bridge | CertiPath Bridge CA - G2 | Federal Bridge CA 2016 | 4d4392ed9abaa619c97dd4ce668937f5d486f1c9 | 12/15/2019 | Re-issue |
 | USPTO | USPTO_INTR_CA1 | Federal Bridge CA 2016 | 0704ea9633a45a9a39123bac28be01078c6bfd3a | 12/15/2019 | Re-issue |
 | GSA ACES | ORC ACES 4 | Federal Bridge CA 2016 | 5573fcc5e6ffff2b710181accaa2efdadb8f0f4e | 8/21/2020 | Revoke due to decommission |
