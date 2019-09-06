@@ -51,7 +51,7 @@ The following certificates are planned for a certificate action in the next four
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | ---------- | ---------- | -------- |
-| FPKIMA | Federal Common Policy CA | Federal Bridge CA 2016 | E5AE09B5237F70B25EF517381D781FA0067FE40C | 11/08/2019 | Under PA Decision to let expire |
+| FPKIMA | Federal Common Policy CA | Federal Bridge CA 2016 | E5AE09B5237F70B25EF517381D781FA0067FE40C | 11/08/2019 | Under PA decision to let expire |
 | FPKIMA | Federal Bridge CA 2016 | Federal Common Policy CA | e5ae09b5237f70b25ef517381d781fa0067fe40c | 11/08/2019 | Re-issue |
 | DoD | DoD Interoperability Root CA 1 | SHA-1 Federal Root CA G2 | 369814cdf6813b1cb973a492fdb130d1446296ef | 11/15/2019 | Let expire |
 | CertiPath Bridge | CertiPath Bridge CA | SHA-1 Federal Root CA G2 | 71fb94efbcfc8fffaab00db73e92da36a0e601fa | 11/29/2019 | Let expire |
