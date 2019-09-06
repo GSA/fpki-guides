@@ -47,7 +47,7 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 | WidePoint | ORC NFI CA 2 | Federal Bridge CA 2016 | B055C6EE104E01EB688C8FB4F87CF77CA376AFDB | Revoked - 08/14/2019 |
 | DoD | DoD Interoperability Root CA 2 | Federal Bridge CA 2016 | 949E7F407D71EEE663709D5D2A680460146CE530 | Expired - 08/15/2019 |
 
-The following certificates are expiring or a planned certificate activity in the next four months and may be re-issued.
+The following certificates are planned for a certificate action in the next four months.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | ---------- | ---------- | -------- |
@@ -61,7 +61,7 @@ The following certificates are expiring or a planned certificate activity in the
 | GSA ACES | ORC ACES 4 | Federal Bridge CA 2016 | 5573fcc5e6ffff2b710181accaa2efdadb8f0f4e | 8/21/2020 | Revoke due to decommission |
 | WidePoint | ORC NFI CA 3 | Federal Bridge CA 2016 | b625da07302016d2837023bab94b6e0d76fc2e45 | 7/17/2021 | Revoke due to migration |
 
-The following certificates will be re-issued with the existing expiration date as part of the Federal Bridge CA 2019 re-key. This migration will occur between November 2019 - February 2020. Once a modified certificate is issued, the below certificates will be revoked.
+The following certificates will be re-issued with the existing expiration date as part of the Federal Bridge CA 2019 re-key. This migration will occur between November 2019 - February 2020. Once a modified certificate is issued, the below certificates will be revoked and this report as well as system notification will be sent to the FPKI community.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash |
 | --------- | ---------- | ---------- | ---------- |
