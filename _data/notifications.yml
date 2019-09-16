@@ -1351,6 +1351,15 @@
   sia_uri: http://pki.treasury.gov/root_sia.p7c
   ocsp_uri:   
 
+- notice_date: September 3, 2019
+  change_type: Intent to Perform CA Certificate Revocation
+  end_datetime:
+  system: GSA ACES and Federal Bridge CA 2016
+  change_description: WidePoint has decommissioned the ORC ACES 4 CA. The FPKIMA intends to revoke the certificate issued from the Federal Bridge CA to the ORC ACES 4 CA.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 5573FCC5E6FFFF2B710181ACCAA2EFDADB8F0F4E
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=ORC ACES 4, O=ORC PKI, C=US
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
