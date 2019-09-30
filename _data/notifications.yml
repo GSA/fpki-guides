@@ -1361,6 +1361,34 @@
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=ORC ACES 4, O=ORC PKI, C=US
 
+- notice_date: September 30, 2019
+  change_type: CA Certificate Revocation
+  end_datetime:
+  system: Federal Bridge CA 2016
+  change_description: The FPKIMA revoked the certificate issued from the Federal Bridge CA 2016 to the decommissioned ORC ACES 4 CA.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 5573FCC5E6FFFF2B710181ACCAA2EFDADB8F0F4E
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=ORC ACES 4, O=ORC PKI, C=US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/ORCACES4_SIA.p7c
+  ocsp_uri:
+  
+- notice_date: September 30, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:  
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The FPKIMA intends to issue a certificate from the Federal Common Policy CA to the planned Federal Bridge CA 2019 toward the end of October. CAs with valid certificates issued by the Federal Bridge CA 2016 will be migrated to the Federal Bridge CA 2019, allowing for the Federal Bridge CA 2016 to be decommissioned.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash:  
+  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_subject: CN=Federal Bridge CA 2019, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri:  
+  aia_uri: 
+  sia_uri:  
+  ocsp_uri:  
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
