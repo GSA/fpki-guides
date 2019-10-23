@@ -24,7 +24,7 @@ This announcement provides details related to the CAs affected by this change, a
 - Performing smart card logon to the government networks using PIV credentials issued from the re-keyed Entrust Managed Services SSP CA
 - Authenticating to the government virtual private network endpoints (VPNs) using PIV credentials issued from the re-keyed Entrust Managed Services SSP CA
 - Authenticating to the government internet-facing authentication and collaboration portals issued from the re-keyed Entrust Managed Services SSP CA
-- Agencies using internal OCSP responders will need to add entries for the re-keyed CA certificates
+- Agencies using internal Online Certificate Status Protocol (OCSP) responders for certificate validation
 
 
 ## Re-keyed certificate details
