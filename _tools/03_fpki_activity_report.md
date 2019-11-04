@@ -30,8 +30,8 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| FPKIMA | Federal Common Policy CA | Federal Bridge CA 2016 | 312B052AE68C4438098C05684BF7822A86ECA4E0 | 11/08/2019 |
-| FPKIMA | Federal Bridge CA 2016 | Federal Common Policy CA | BD38B7E253CFC5DD278A927F88833FB44C6AF03A | 11/08/2019 |
+| FPKIMA | Federal Common Policy CA | Federal Bridge CA 2016 | 312B052AE68C4438098C05684BF7822A86ECA4E0 | 10/28/2020 |
+| FPKIMA | Federal Bridge CA 2016 | Federal Common Policy CA | BD38B7E253CFC5DD278A927F88833FB44C6AF03A | 10/28/2020 |
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
