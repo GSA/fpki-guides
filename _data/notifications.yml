@@ -366,7 +366,7 @@
 - notice_date: June 13, 2018
   change_type: CA Certificate Issuance Intent
   system: CertiPath Bridge
-  change_description: CerithPath Bridge intends to renew the cross certificates from the CertiPath Bridge G1 and G2 to Raytheon prior to the end of this month. No changes are being made to certificate policies or policy mappings.
+  change_description: CerithPath Bridge intends to renew the cross-certificates from the CertiPath Bridge G1 and G2 to Raytheon prior to the end of this month. No changes are being made to certificate policies or policy mappings.
   contact: support at certipath dot com
 
 - notice_date: July 5, 2018
@@ -1387,7 +1387,36 @@
   cdp_uri:  
   aia_uri: 
   sia_uri:  
-  ocsp_uri:  
+  ocsp_uri:
+  
+- notice_date: October 28, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: October 28, 2019
+  end_datetime: October 28, 2020
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal Common Policy CA issued a cross-certificate to the Federal Bridge CA 2016. The certificate has a validity period of one year.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: bd38b7e253cfc5dd278a927f88833fb44c6af03a
+  ca_certificate_issuer: Federal Common Policy CA
+  ca_certificate_subject: Federal Bridge CA 2016
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
+  sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
+
+- notice_date: October 28, 2019
+  change_type: CA Certificate Issuance
+  start_datetime: October 28, 2019
+  end_datetime: October 28, 2020
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: The Federal Bridge CA 2016 issued a cross-certificate to the Federal Common Policy CA. The certificate has a validity period of one year.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 38341412caa3d72ade61022240411444d21b1de9
+  ca_certificate_issuer: Federal Bridge CA 2016
+  ca_certificate_subject: Federal Common Policy CA
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c
+
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
