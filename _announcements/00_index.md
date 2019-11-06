@@ -9,7 +9,7 @@ These announcements and hot topics concern Federal Public Key Infrastructure cha
 
 {% for item in site.announcements reversed %}
   {% assign link = item.permalink | remove: '/' %}
-  {% if link != item.collection %}
+  {% if link != item.collection and item.status == "active" %}
   <hr/>
   <h3><a href="{{site.baseurl}}/{{ item.permalink }}"  title="{{ item.title }}">{{ item.title }}</a></h3>
   <strong>Date:</strong> {{ item.pubDate }}<br />
