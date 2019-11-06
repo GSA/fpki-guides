@@ -5,7 +5,7 @@ collection: announcements
 permalink: /announcements/archive/
 ---
 
-{% include alert-warning.html content="Archived announcements are listed below for historical reference only. These announcements are longer being updated or maintained." %}
+{% include alert-warning.html content="Archived announcements are listed below for historical reference only. These announcements are no longer being updated or maintained." %}
 
 {% for item in site.announcements-archive %}
   <hr/>

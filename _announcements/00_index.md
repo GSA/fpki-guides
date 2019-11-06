@@ -7,7 +7,7 @@ permalink: /announcements/
 
 These announcements and hot topics concern Federal Public Key Infrastructure changes that may affect your agency's operations.
 
-{% for item in site.announcements reversed %}
+{% for item in site.announcements %}
   {% assign link = item.permalink | remove: '/' %}
   {% if link != item.collection and item.status == "active" %}
   <hr/>
