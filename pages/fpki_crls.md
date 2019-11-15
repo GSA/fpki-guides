@@ -28,24 +28,6 @@ When downloading **any** Certificate file from the list below, please verify the
 | P7C file - Issued To						| http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c	|
 
 
-### Federal Bridge CA 2013
-
-|**Federal Bridge CA 2013**|**Information**|
-|-----------|---------------|
-| Certificate Revocation List				| http://http.fpki.gov/bridge/fbca2013.crl					|
-| P7C file - Issued By						| http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c	|
-| P7C file - Issued To						| http://http.fpki.gov/bridge/caCertsIssuedTofbca2013.p7c	|
-
-
-### SHA-1 Federal Root CA G2
-
-|**SHA-1 Federal Root CA G2**|**Information**|
-|-----------|---------------|
-| Certificate Revocation List				| http://http.fpki.gov/sha1frca/sha1frca.crl				|
-| P7C file - Issued By						| http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c	|
-| P7C file - Issued To						| http://http.fpki.gov/sha1frca/caCertsIssuedTosha1frca.p7c	|
-
-	 
 
 ### Verify a hash
 You can verify the hash on files, including certificate files, using common utilities on operating systems.  Examples:
