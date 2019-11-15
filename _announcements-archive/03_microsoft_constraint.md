@@ -5,7 +5,7 @@ title: Federal Common Policy CA Removal from Microsoft Trust Store Impact
 pubDate: May 18, 2018
 archDate: October 21, 2019
 collection: announcements-archive
-permalink: /announcements/archive/mspkichanges/
+permalink: announcements/archive/mspkichanges/
 description: Upcoming changes regarding Microsoft's Trusted Root Program could impact your agency.  The Federal PKI Policy Authority has elected to remove our U.S. Government Root CA certificate (Federal Common Policy CA) from the Microsoft Trust Store. <br><br> This change will cause Windows users to receive errors when encountering instances of a Federal PKI CA-issued certificate. You can mitigate the impact for the government intranets and government-furnished equipment by using configuration management tools for federal devices. This announcement will be updated with new information and procedures as soon as they are available.   
 ---
 
