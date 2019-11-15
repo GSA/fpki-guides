@@ -147,7 +147,7 @@ collections:
     output: true
   announcements-archive:
     label: "Archived Announcements"
-    permalink: /announcements-archive/:path/
+    permalink: /announcements/archive/:path/
     output: true
 
 
