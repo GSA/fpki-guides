@@ -1420,7 +1420,7 @@
 - notice_date: November 4, 2019
   change_type: Intent to Decommission CA
   system: Federal PKI Management Authority - SHA-1 Federal Root CA
-  change_description: Intent to decommission the SHA-1 Federal Root CA in December 2019 after the expiration of all remaining valid CA certificates it issued (DoD Interoperability Root CA 1 and CertiPath Bridge CA).
+  change_description: The Federal PKI Management Authority intends to decommission the SHA-1 Federal Root CA in December 2019 after the expiration of all remaining valid CA certificates it issued (DoD Interoperability Root CA 1 and CertiPath Bridge CA).
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 27C589FF2853BD1949CFA433F36A5E285B2E2C7C
   ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
@@ -1472,7 +1472,7 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:  
   system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: The Federal Common Policy CA intends to issue a cross certificate to the U.S. Department of State AD Root CA. The new certificate will replace the existing certificate (expires on January 27, 2020). 
+  change_description: The Federal Common Policy CA intends to issue a certificate to the U.S. Department of State AD Root CA. The new certificate will replace the existing certificate (expires on January 27, 2020). 
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  
   ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
@@ -1486,7 +1486,7 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:  
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
-  change_description: The Federal PKI Management Authority intends to migrate CAs currently cross certified by the Federal Bridge CA 2016 to the planned Federal Bridge CA G4. Certificate expiration dates will be the same as those in the certificates issued by the Federal Bridge CA 2016.  Once all CA certificates have migrated, all active certificates issued by the Federal Bridge CA 2016 will be revoked and the Federal Bridge CA 2016 will be decommissioned (estimated to take place in March 2020).
+  change_description: The Federal PKI Management Authority intends to migrate CAs currently cross-certified by the Federal Bridge CA 2016 to the planned Federal Bridge CA G4. Certificate expiration dates will be the same as those in the valid certificates issued by the Federal Bridge CA 2016.  Once all CA certificates have migrated, all active certificates issued by the Federal Bridge CA 2016 will be revoked and the Federal Bridge CA 2016 will be decommissioned (estimated to take place in March 2020).
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  
   ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
@@ -1499,8 +1499,8 @@
 - notice_date: December 9, 2019
   change_type: Intent to Perform CA Certificate Revocation
   start_datetime:
-  system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: The Federal PKI Management Authority intends to revoke the certificate issued by the Federal Bridge CA 2016 to ORC NFI CA 3	(operated by WidePoint). The certificate has been superseded by the certificate issued from the Federal Bridge CA 2016 to WidePoint NFI Root 1.	
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued by the Federal Bridge CA 2016 to ORC NFI CA 3	(operated by WidePoint). The certificate has been superseded in function by the certificate issued from the Federal Bridge CA 2016 to WidePoint NFI Root 1.	
   contact: fpki at gsa dot gov
   ca_certificate_hash: b625da07302016d2837023bab94b6e0d76fc2e45
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
