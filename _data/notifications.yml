@@ -1480,9 +1480,35 @@
   cdp_uri:  
   aia_uri:
   sia_uri:  
-  ocsp_uri:  
+  ocsp_uri:
   
-
+- notice_date: December 9, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:  
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal PKI Management Authority intends to migrate CAs currently cross certified by the Federal Bridge CA 2016 to the planned Federal Bridge CA G4. Certificate expiration dates will be the same as those in the certificates issued by the Federal Bridge CA 2016.  Once all CA certificates have migrated, all active certificates issued by the Federal Bridge CA 2016 will be revoked and the Federal Bridge CA 2016 will be decommissioned (estimated to take place in March 2020).
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash:  
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: Comma-separated list of CA Subject Names planned for issuance - (1) OU=GPO PCA, OU=Certification Authorities, OU=Government Printing Office, O=U.S. Government, C=US, (2) CN=Symantec Class 3 SSP Intermediate CA - G3, OU=Symantec Trust Network, O=Symantec Corporation, C=US, (3) OU=Entrust Managed Services NFI Root CA, OU=Certification Authorities, O=Entrust, C=US, (4) CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US, (5)  CN=IdenTrust ACES CA 2, OU=IdenTrust Public Sector, O=IdenTrust, C=US, (6) CN=IdenTrust Global Common Root CA 1, O=IdenTrust, C=US, (7) CN=STRAC Bridge Root Certification Authority, OU=STRAC PKI Trust Infrastructure, O=STRAC, C=US, (8) CN=DigiCert Federated ID L3 CA, OU=www.digicert.com, O=DigiCert Inc, C=US, (9) CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US, (10) CN=WidePoint NFI Root 1, OU=Certification Authorities, O=WidePoint, C=US, (11) CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US
+  cdp_uri:  
+  aia_uri:
+  sia_uri:  
+  ocsp_uri:    
+  
+- notice_date: December 9, 2019
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge 2016
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued by the Federal Bridge CA 2016 to ORC NFI CA 3	(operated by WidePoint). The certificate has been superseded by the certificate issued from the Federal Bridge CA 2016 to WidePoint NFI Root 1.	
+  contact: fpki at gsa dot gov
+  ca_certificate_hash: b625da07302016d2837023bab94b6e0d76fc2e45
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=ORC NFI CA 3, O=ORC PKI, C=US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/ORCNFI3_SIA.p7c 
+  ocsp_uri:  
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
