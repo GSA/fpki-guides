@@ -1379,11 +1379,11 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:  
   system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: The FPKIMA intends to issue a certificate from the Federal Common Policy CA to the planned Federal Bridge CA 2019 toward the end of October. CAs with valid certificates issued by the Federal Bridge CA 2016 will be migrated to the Federal Bridge CA 2019, allowing for the Federal Bridge CA 2016 to be decommissioned.
+  change_description: The FPKIMA intends to issue a certificate from the Federal Common Policy CA to the planned Federal Bridge CA G4. CAs with valid certificates issued by the Federal Bridge CA 2016 will be migrated to the Federal Bridge CA G4, allowing for the Federal Bridge CA 2016 to be decommissioned.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  
   ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
-  ca_certificate_subject: CN=Federal Bridge CA 2019, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
   cdp_uri:  
   aia_uri: 
   sia_uri:  
