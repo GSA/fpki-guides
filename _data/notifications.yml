@@ -1469,20 +1469,6 @@
   ocsp_uri:  
 
 - notice_date: December 9, 2019
-  change_type: Intent to Perform CA Certificate Revocation
-  start_datetime:
-  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
-  change_description: The Federal PKI Management Authority intends to revoke the certificate issued by the Federal Bridge CA 2016 to ORC NFI CA 3	(operated by WidePoint).	
-  contact: fpki at gsa dot gov
-  ca_certificate_hash: b625da07302016d2837023bab94b6e0d76fc2e45
-  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
-  ca_certificate_subject: CN=ORC NFI CA 3, O=ORC PKI, C=US
-  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
-  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
-  sia_uri: http://crl-server.orc.com/caCerts/ORCNFI3_SIA.p7c 
-  ocsp_uri:  
-
-- notice_date: December 9, 2019
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:  
   system: FPKI Trust Infrastructure - Federal Common Policy CA
@@ -1509,6 +1495,21 @@
   aia_uri:
   sia_uri:  
   ocsp_uri:    
+
+- notice_date: December 9, 2019
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued by the Federal Bridge CA 2016 to ORC NFI CA 3	(operated by WidePoint).	
+  contact: fpki at gsa dot gov
+  ca_certificate_hash: b625da07302016d2837023bab94b6e0d76fc2e45
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=ORC NFI CA 3, O=ORC PKI, C=US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/ORCNFI3_SIA.p7c 
+  ocsp_uri:  
+
   
 #- notice_date:  
 #  change_type: CA Certificate Issuance
