@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: November 4, 2019
+Updated: December 9, 2019
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -29,27 +29,24 @@ The activity listed in this section is limited to the certificates issued BY or 
 The following certificates were issued **BY** or **TO** the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
-| --------- | ---------- | ---------- | ------ | ------ |
-| FPKIMA | Federal Common Policy CA | Federal Bridge CA 2016 | 312B052AE68C4438098C05684BF7822A86ECA4E0 | 10/28/2020 |
-| FPKIMA | Federal Bridge CA 2016 | Federal Common Policy CA | BD38B7E253CFC5DD278A927F88833FB44C6AF03A | 10/28/2020 |
+| --------- | ---------- | ---------- | ---------- | ----------- |
+
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| FPKIMA | Federal Common Policy CA | Federal Bridge CA 2016 | 38341412CAA3D72ADE61022240411444D21B1DE9 | 11/08/2019 |
-| FPKIMA | Federal Bridge CA 2016 | Federal Common Policy CA | E5AE09B5237F70B25EF517381D781FA0067FE40C | 11/08/2019 |
+| DoD | DoD Interoperability Root CA 1 | SHA-1 Federal Root CA G2 | 369814cdf6813b1cb973a492fdb130d1446296ef | 11/15/2019 | Expire |
+| CertiPath Bridge | CertiPath Bridge CA | SHA-1 Federal Root CA G2 | 71fb94efbcfc8fffaab00db73e92da36a0e601fa | 11/29/2019 | Expire |
+| GSA ACES | ORC ACES 4 | Federal Bridge CA 2016 | 5573fcc5e6ffff2b710181accaa2efdadb8f0f4e | 8/21/2020 | Revoked |
 
 The following certificates are planned for a certificate action in the next four months.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | ---------- | ---------- | -------- |
-| FPKIMA | Federal Common Policy CA | Federal Bridge CA 2016 | 312B052AE68C4438098C05684BF7822A86ECA4E0 | 11/08/2019 | Under PA decision to let expire |
-| FPKIMA | Federal Bridge CA 2016 | Federal Common Policy CA | BD38B7E253CFC5DD278A927F88833FB44C6AF03A | 11/08/2019 | Re-issue |
-| DoD | DoD Interoperability Root CA 1 | SHA-1 Federal Root CA G2 | 369814cdf6813b1cb973a492fdb130d1446296ef | 11/15/2019 | Expire |
-| CertiPath Bridge | CertiPath Bridge CA | SHA-1 Federal Root CA G2 | 71fb94efbcfc8fffaab00db73e92da36a0e601fa | 11/29/2019 | Expire |
 | CertiPath Bridge | CertiPath Bridge CA - G2 | Federal Bridge CA 2016 | 4d4392ed9abaa619c97dd4ce668937f5d486f1c9 | 12/15/2019 | Re-issue |
 | USPTO | USPTO_INTR_CA1 | Federal Bridge CA 2016 | 0704ea9633a45a9a39123bac28be01078c6bfd3a | 12/15/2019 | Re-issue |
+| Exostar |  Exostar Federated Identity Service Root CA 2 | Federal Bridge CA 2016 | fbe0def19bfe627f4c28c95a211acd7cc3c7afb2 | 4/30/2020 | Re-issue |
 | FPKIMA | SHA-1 Federal Root CA G2 | Federal Common Policy CA | 27c589ff2853bd1949cfa433f36a5e285b2e2c7c | 12/31/2019 | Revoke due to decommission |
 | WidePoint | ORC NFI CA 3 | Federal Bridge CA 2016 | b625da07302016d2837023bab94b6e0d76fc2e45 | 7/17/2021 | Revoke due to migration |
 
