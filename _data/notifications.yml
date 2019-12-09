@@ -237,8 +237,8 @@
   change_description: Issuance of cross-certificate from Federal Bridge 2016 to Entrust Non-Federal Root CA
   contact: fpki at gsa dot gov
   ca_certificate_hash: 22 05 08 b0 ab 72 e2 ee 3a ca a6 a9 ef 50 01 c8 7c 52 3e a4
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: OU = Entrust Managed Services NFI Root CA, OU = Certification Authorities, O = Entrust, C = US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Entrust Managed Services NFI Root CA, OU=Certification Authorities, O=Entrust, C=US
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://nfirootweb.managed.entrust.com/SIA/CAcertsIssuedByNFIRootCA.p7c
@@ -251,8 +251,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA–G2 to NextgenID Root CA1.
   contact: support at certipath dot com
   ca_certificate_hash: 50a2bf7afe08edf3877854f6d0a6e59127f68a94
-  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
-  ca_certificate_subject: CN = NextgenIDRootCA1, OU = Certification Authorities, O = NextgenID, C = US
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=NextgenIDRootCA1, OU=Certification Authorities, O=NextgenID, C=US
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   sia_uri: http://www.nextgenidtrust.com/PKI/certs/IssuedByNextgenIDRootCA1.p7c
@@ -265,8 +265,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA to Northrop Grumman Corporate Root CA
   contact: support at certipath dot com
   ca_certificate_hash: 8f98b196e6b9aed7a31522efae5bf5954da744c0
-  ca_certificate_issuer: CN = CertiPath Bridge CA, OU = Certification Authorities, O = CertiPath LLC, C = US
-  ca_certificate_subject: CN = Northrop Grumman Corporation Root CA, O = Northrop Grumman Corporation, C = US
+  ca_certificate_issuer: CN=CertiPath Bridge CA, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=Northrop Grumman Corporation Root CA, O=Northrop Grumman Corporation, C=US
   cdp_uri: http://certipath-crl.symauth.com/CertiPathLLCCertiPathBridgeCA.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeRootCA.p7c
     
@@ -277,8 +277,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Carillon Federal Services PIV-I CA1
   contact: support at certipath dot com
   ca_certificate_hash: 198271eee4689be1ff746e1a03cf205f4b2d518e
-  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
-  ca_certificate_subject: CN = Carillon Federal Services PIV-I CA1, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA1, OU=Certification Authorities, O=Carillon Federal Services Inc., C=US
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   
@@ -289,8 +289,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Northrop Grumman Corporation Root CA
   contact: support at certipath dot com
   ca_certificate_hash: 9bb7b4bfd188b99e10431bf5ac56a493dfd66978
-  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
-  ca_certificate_subject: CN = Northrop Grumman Corporate Root CA-G2, OU = Northrop Grumman Information Technology, O = Northrop Grumman Corporation, C = US
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=Northrop Grumman Corporate Root CA-G2, OU=Northrop Grumman Information Technology, O=Northrop Grumman Corporation, C=US
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   sia_uri: http://certdata.northropgrumman.com/certdata/p7c/IssuedByNorthropGrummanCorporateRootCA-G2.p7c
@@ -302,8 +302,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to CISRCA1
   contact: support at certipath dot com
   ca_certificate_hash: c466cb26e2c9a1a483a6f81701f208b5ff522ec4
-  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
-  ca_certificate_subject: CN = CISRCA1, OU = Certification Authorities, O = Carillon Information Security Inc., C = CA
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=CISRCA1, OU=Certification Authorities, O=Carillon Information Security Inc., C=CA
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
     
@@ -321,8 +321,8 @@
   change_description: Issuance of cross-certificate from Federal Bridge 2016 to US Patent and Trademark CA due to PTO Re-Key
   contact: fpki at gsa dot gov
   ca_certificate_hash: 07 04 ea 96 33 a4 5a 9a 39 12 3b ac 28 be 01 07 8c 6b fd 3a
-  ca_certificate_issuer: CN = Federal Bridge CA 2016 OU = FPKI O = U.S. Government C = US
-  ca_certificate_subject: CN = USPTO_INTR_CA1 CN = AIA CN = Public Key Services CN = Services CN = Configuration DC = uspto DC = gov
+  ca_certificate_issuer: CN=Federal Bridge CA 2016 OU=FPKI O=U.S. Government C=US
+  ca_certificate_subject: CN=USPTO_INTR_CA1 CN=AIA CN=Public Key Services CN=Services CN=Configuration DC=uspto DC=gov
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
@@ -357,8 +357,8 @@
   change_description: A new cross-certificate was issued from the Federal Bridge CA 2016 to the SAFE BioPharma Bridge CA 02
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 5c 65 42 19 97 2b ac 88 7b ea 9f 13 09 eb 9e 05 2f b7 75 7e
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = SAFE Bridge CA 02, OU = Certification Authorities, O = SAFE-Biopharma, C = US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://sbca2.safe-biopharma.org/sbca/issuedbySBCA02.p7c
@@ -389,8 +389,8 @@
   change_description: A new cross-certificate was issued from the Federal Bridge CA 2016 to the ORC NFI CA 3
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: b6 25 da 07 30 20 16 d2 83 70 23 ba b9 4b 6e 0d 76 fc 2e 45
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = ORC NFI CA 3, O = ORC PKI, C = US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=ORC NFI CA 3, O=ORC PKI, C=US
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://crl-server.orc.com/caCerts/ORCNFI3_SIA.p7c
@@ -403,8 +403,8 @@
   change_description: A new cross-certificate was issued from the Federal Bridge 2016 to the IdenTrust IGC Root CA 1
   contact: FPKI dash help at GSA dot Gov
   ca_certificate_hash: 05 24 54 75 3d 53 ff 23 76 73 7f a7 79 8e c7 2f ab 82 83 3c
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = IdenTrust Global Common Root CA 1, O = IdenTrust, C = US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=IdenTrust Global Common Root CA 1, O=IdenTrust, C=US
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://validation.identrust.com/roots/IssuedbyIGCRootCA1.p7c  
@@ -417,8 +417,8 @@
   change_description: A new cross-certificate was issued from the Federal Bridge 2016 to the IdenTrust ACES CA 2
   contact: FPKI dash help at GSA dot Gov
   ca_certificate_hash: ab 97 3a 75 fa 59 4f 5a 97 c5 3e 3c 50 24 4a e0 6c a6 10 a8
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = IdenTrust ACES CA 2, OU = IdenTrust Public Sector, O = IdenTrust, C = US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=IdenTrust ACES CA 2, OU=IdenTrust Public Sector, O=IdenTrust, C=US
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://validation.identrust.com/certs/issuedbyacesca2.p7c
@@ -430,8 +430,8 @@
   change_description: A new cross-certificate was issued from the SAFE Biopharma Bridge CA to the Federal Bridge 2016 CA
   contact: 
   ca_certificate_hash: 54 0c 2a c5 9f 8b 5b ab 1b 6a df 42 1a 7c 50 f0 90 1e 3d 54
-  ca_certificate_issuer: CN = SAFE Bridge CA 02, OU = Certification Authorities, O = SAFE-Biopharma, C = US
-  ca_certificate_subject: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
+  ca_certificate_subject: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
   cdp_uri: http://sbca2.safe-biopharma.org/sbca/SBCA02.crl
   aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c
   sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
@@ -443,8 +443,8 @@
   change_description: Issuance of a cross-certificate from the Federal Common Policy CA to the US Treasury Root CA.
   contact: fpki dash help at GSA dot gov
   ca_certificate_hash: 5a 87 92 2b 5e af 1d 63 19 8a 95 1b 2a b6 f5 9b 2f 16 c1 31
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
   cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
   sia_uri: http://pki.treasury.gov/root_sia.p7c
@@ -465,8 +465,8 @@
   change_description: Certificate issuance from the Federal Common Policy CA to the Verizon SSP CA A2 to add the Derived PIV OID
   contact: fpki dash help at GSA dot gov
   ca_certificate_hash: 47 7b f4 01 7d 25 cd e2 76 cd dd f7 56 d4 0c a5 91 d7 6f 6d
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = Verizon SSP CA A2, OU = SSP, O = Verizon, C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US
   cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
   sia_uri: http://sia1.ssp-strong-id.net/CA/VZ-SSP-CA-A2-SIA.p7c
@@ -478,8 +478,8 @@
   change_description: Issuance of a new CA certificate from the Federal Common Policy CA to Digicert Federal SSP Intermediate CA - G5. This CA certificate is new but intended as a rekey for the Symantec SSP Intermediate CA – G4 CA certificate.
   contact: fpki dash help at GSA dot gov
   ca_certificate_hash: 98 b5 82 47 ac 8a 2b c6 f3 48 f0 3e 8d 22 88 4d 83 45 fc 0f
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US
   cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
   sia_uri: http://ssp-sia.digicert.com/SSP/Certs_issued_by_SSPCAG5.p7c
@@ -491,8 +491,8 @@
   change_description: Issuance of a new cross-certificate from the SAFE BioPharma Bridge CA to IdenTrust SAFE-BioPharma CA 1 
   contact: dsimonetti at safe-biopharma dot org
   ca_certificate_hash: 245f753f8a315a83bd0be8cf70833503f99fd2d2
-  ca_certificate_issuer: CN = SAFE Bridge CA 02, OU = Certification Authorities, O = SAFE-Biopharma, C = US
-  ca_certificate_subject: CN = IdenTrust SAFE-BioPharma CA 1, OU = IdenTrust Global Common, O = IdenTrust, C = US
+  ca_certificate_issuer: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
+  ca_certificate_subject: CN=IdenTrust SAFE-BioPharma CA 1, OU=IdenTrust Global Common, O=IdenTrust, C=US
   cdp_uri: http://sbca2.safe-biopharma.org/sbca/SBCA02.crl
   aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c
   
@@ -503,8 +503,8 @@
   change_description: Issuance of a cross-certificate to Fortior Solutions, Inc.
   contact: steve.race at tscp dot org
   ca_certificate_hash: aebdf407b44afd431d8364012e096aea2a32a55d
-  ca_certificate_issuer: CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US
-  ca_certificate_subject: CN = Fortior Solutions Intermediate CA 2018, OU = Certificate Authorities, O = Fortior Solutions, C = US
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Fortior Solutions Intermediate CA 2018, OU=Certificate Authorities, O=Fortior Solutions, C=US
   cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
   aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
 
@@ -515,8 +515,8 @@
   change_description: Issuance of a cross-certificate to TSCP Bridge
   contact: steve.race at tscp dot org
   ca_certificate_hash: dc4b77d79b815187f5e0e73d13f6fe41cab86fab
-  ca_certificate_issuer: CN = Fortior Solutions Intermediate CA 2018, OU = Certificate Authorities, O = Fortior Solutions, C = US
-  ca_certificate_subject: CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US
+  ca_certificate_issuer: CN=Fortior Solutions Intermediate CA 2018, OU=Certificate Authorities, O=Fortior Solutions, C=US
+  ca_certificate_subject: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
   cdp_uri: http://pki-crl.symauth.com/FortiorSolutions/FortiorSolutionsICA2018.crl
   aia_uri: http://cacer.symauth.com/mpki/FortiorSolutionsICA2018.p7c  
   
@@ -527,8 +527,8 @@
   change_description: Issuance of a cross-certificate to Alexion Pharmaceuticals, Inc
   contact: steve.race at tscp dot org
   ca_certificate_hash: 692a53fa725e5581a5b1db1c3d7b27e6feb9cae8
-  ca_certificate_issuer: CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US
-  ca_certificate_subject: CN = Alexion Pharmaceuticals Issue 2 CA, OU = CAs, O = Alexion Pharmaceuticals, C = US
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Alexion Pharmaceuticals Issue 2 CA, OU=CAs, O=Alexion Pharmaceuticals, C=US
   cdp_uri: http://pki-crl.symauth.com/ca_1e66febad947306a6a338bb6f7971bca/LatestCRL.crl
   aia_uri: http://cacer.symauth.com/mpki/AlexionIssuingCA2.p7c
 
@@ -575,7 +575,7 @@
   change_description: Revocation planned for the certificate issued from the Federal Common Policy CA to the Verizon Betrusted Production SSP CA A1
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 06 01 bb da d5 a2 82 31 bc 94 36 75 0b 4f 3a 48 4b ab 06 c3
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: Betrusted Production SSP CA A1
 
 - notice_date: February 13, 2019
@@ -585,8 +585,8 @@
   change_description: Certificate issuance to NRC SSP Agency CA G4
   contact: steve dot medin at digicert dot com
   ca_certificate_hash: 1a03581dcf159d206accd7bdd176c788a0862353
-  ca_certificate_issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
-  ca_certificate_subject: CN = NRC SSP Agency CA G4, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US
+  ca_certificate_subject: CN=NRC SSP Agency CA G4, OU=U.S. Nuclear Regulatory Commission, O=U.S. Government, C=US
   cdp_uri: http://ssp-crl.digicert.com/SSP/SSPG5.crl
   aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
   ocsp_uri: http://ssp-ocsp.digicert.com
@@ -598,8 +598,8 @@
   change_description: Certificate issuance to NRC SSP Device CA G4
   contact: steve dot medin at digicert dot com
   ca_certificate_hash: 81f4fdb9f5dca2940416d483f011111984116ba9
-  ca_certificate_issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
-  ca_certificate_subject: CN = NRC SSP Device CA G4, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US
+  ca_certificate_subject: CN=NRC SSP Device CA G4, OU=U.S. Nuclear Regulatory Commission, O=U.S. Government, C=US
   cdp_uri: http://ssp-crl.digicert.com/SSP/SSPG5.crl
   aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
   ocsp_uri: http://ssp-ocsp.digicert.com
@@ -611,8 +611,8 @@
   change_description: New cross-certificate issued from Federal Bridge CA 2016 to STRAC Bridge Root Certification Authority
   contact: fpki at gsa dot gov
   ca_certificate_hash: 1f92eb3654f60a9092811f7948afff45c09a6ca9
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = STRAC Bridge Root Certification Authority, OU = STRAC PKI Trust Infrastructure, O = STRAC, C = US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=STRAC Bridge Root Certification Authority, OU=STRAC PKI Trust Infrastructure, O=STRAC, C=US
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
@@ -652,8 +652,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to CISRCA1
   contact: judith dot spencer at certipath dot com
   ca_certificate_hash: EB23C015A0B4037738D54A088A653498D394F050 
-  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US 
-  ca_certificate_subject: CN = CISRCA1, OU = Certification Authorities, O = Carillon Information Security Inc., C = CA
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US 
+  ca_certificate_subject: CN=CISRCA1, OU=Certification Authorities, O=Carillon Information Security Inc., C=CA
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   sia_uri:  
@@ -666,8 +666,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Carillon Federal Services PIV-I CA1
   contact: judith dot spencer at certipath dot com
   ca_certificate_hash: FA75A4149838AFE4DEF18BAD39B5EFD6187D1A8B  
-  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
-  ca_certificate_subject: CN = Carillon Federal Services PIV-I CA1, OU = Certification Authorities, O = Carillon Federal Services Inc., C = US 
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA1, OU=Certification Authorities, O=Carillon Federal Services Inc., C=US 
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   sia_uri:  
@@ -680,8 +680,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to NextgenIDRootCA1
   contact: judith dot spencer at certipath dot com
   ca_certificate_hash: C8EC9DAB6354FA4E2BF292B0A542F37436965723
-  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
-  ca_certificate_subject: CN = NextgenIDRootCA1, OU = Certification Authorities, O = NextgenID, C = US
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=NextgenIDRootCA1, OU=Certification Authorities, O=NextgenID, C=US
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c 
   sia_uri:  
@@ -694,8 +694,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Northrop Grumman Corporate Root CA-G2
   contact: judith dot spencer at certipath dot com
   ca_certificate_hash: 6F14FDA78D34B603ABE060D9FD16331DAC646878
-  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
-  ca_certificate_subject: CN = Northrop Grumman Corporate Root CA-G2, OU = Northrop Grumman Information Technology, O = Northrop Grumman Corporation, C = US
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=Northrop Grumman Corporate Root CA-G2, OU=Northrop Grumman Information Technology, O=Northrop Grumman Corporation, C=US
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c  
   sia_uri:  
@@ -720,7 +720,7 @@
   change_description: Revocation performed on the certificate issued from the Federal Common Policy CA to the Verizon Betrusted Production SSP CA A1
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 06 01 bb da d5 a2 82 31 bc 94 36 75 0b 4f 3a 48 4b ab 06 c3
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: Betrusted Production SSP CA A1
   
 - notice_date: March 5, 2019
@@ -740,8 +740,8 @@
   change_description: DigiCert Federal SSP Intermediate CA - G5 issued a certificate to U.S. Department of Transportation Device CA G5.
   contact: steve dot medin at digicert dot com
   ca_certificate_hash: 263a035b50fc26368dd9a38894764b3f3592fb17
-  ca_certificate_issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
-  ca_certificate_subject: CN = U.S. Department of Transportation Device CA G5, OU = U.S. Department of Transportation, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US
+  ca_certificate_subject: CN=U.S. Department of Transportation Device CA G5, OU=U.S. Department of Transportation, O=U.S. Government, C=US
   cdp_uri: http://ssp-crl.digicert.com/SSP/SSPG5.crl
   aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
   sia_uri:
@@ -754,8 +754,8 @@
   change_description: DigiCert Federal SSP Intermediate CA - G5 issued a certificate to U.S. Department of Transportation Agency CA G5.
   contact: steve dot medin at digicert dot com
   ca_certificate_hash: b1d05e5b9e025ea4b3b3e30dc3f45a19f9ec51f6
-  ca_certificate_issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
-  ca_certificate_subject: CN = U.S. Department of Transportation Agency CA G5, OU = U.S. Department of Transportation, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US
+  ca_certificate_subject: CN=U.S. Department of Transportation Agency CA G5, OU=U.S. Department of Transportation, O=U.S. Government, C=US
   cdp_uri: http://ssp-crl.digicert.com/SSP/SSPG5.crl
   aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
   sia_uri:
@@ -796,7 +796,7 @@
   change_description: The Verizon SSP CA A2 was issued a new CA certificate on December 5, 2018. This notification communicates the revocation of the prior certificate.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: a9d3a8ac016dba9fa12685bf59dcc39f5dcaf781
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: Verizon SSP CA A2
  
 - notice_date: April 2, 2019
@@ -806,7 +806,7 @@
   change_description: CA certificate issuance from Federal Common Policy CA to Treasury Root CA
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: fa392ea2972eb4edd1929932602a1909ac9558bc
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: Treasury Root CA
   cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
@@ -819,8 +819,8 @@
   change_description: Treasury re-keyed the Social Security Administration Certification Authority. Treasury communicated the intent to re-key this CA on February 26, 2019.
   contact: pki dot pmo at fiscal dot treasury dot gov. 
   ca_certificate_hash: 897A79FD488D426D6C50D0BA026F698BCA3334F4
-  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
-  ca_certificate_subject: OU = Social Security Administration Certification Authority, OU = SSA, O = U.S. Government, C = US
+  ca_certificate_issuer: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Social Security Administration Certification Authority, OU=SSA, O=U.S. Government, C=US
   cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
   aia_uri: http://pki.treasury.gov/ssaca_aia.p7c
   sia_uri: http://pki.treasury.gov/ssaca_sia.p7c
@@ -848,7 +848,7 @@
   contact:  gladys dot garcia at hq dot dhs dot gov
   ca_certificate_hash:
   ca_certificate_issuer:
-  ca_certificate_subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US
+  ca_certificate_subject: OU=DHS CA4, OU=Certification Authorities, OU=Department of Homeland Security, O=U.S. Government, C=US
   cdp_uri:
   aia_uri:
   sia_uri:
@@ -875,8 +875,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA to Boeing PCA G2.
   contact: support at certipath dot com
   ca_certificate_hash: e88050f8628bc42cae691fd96c3bb676411e2c24
-  ca_certificate_issuer: CN = CertiPath Bridge CA, OU = Certification Authorities, O = CertiPath LLC, C = US
-  ca_certificate_subject: CN = Boeing PCA G2, OU = certservers, O = Boeing, C = US 
+  ca_certificate_issuer: CN=CertiPath Bridge CA, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=Boeing PCA G2, OU=certservers, O=Boeing, C=US 
   cdp_uri: http://certipath-crl.symauth.com/CertiPathLLCCertiPathBridgeCA.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeRootCA.p7c
   sia_uri:  
@@ -889,8 +889,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA–G2 to Boeing PCA G3.
   contact: support at certipath dot com
   ca_certificate_hash: de7b8e78b8866caac3af1fb871be49369cdd6c5c
-  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
-  ca_certificate_subject: CN = Boeing PCA G3, OU = certservers, O = Boeing, C = US
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=Boeing PCA G3, OU=certservers, O=Boeing, C=US
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   sia_uri:  
@@ -903,8 +903,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA–G2 to Federal Bridge CA 2016.
   contact: support at certipath dot com
   ca_certificate_hash: fce64c867d1af8e1c1ff5b07a869af5f3e6f823f
-  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
-  ca_certificate_subject: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US 
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US 
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
@@ -917,8 +917,8 @@
   change_description: Issuance of cross-certificate from CertiPath Bridge CA–G2 to Lockheed Martin Root Certification Authority 2.
   contact: support at certipath dot com
   ca_certificate_hash: 90c55c1fa32a82c6e8f44e3e4ad8e4c08ade150f 
-  ca_certificate_issuer: CN = CertiPath Bridge CA - G2, OU = Certification Authorities, O = CertiPath LLC, C = US
-  ca_certificate_subject: CN = Lockheed Martin Root Certification Authority 2, OU = Certification Authorities, O = Lockheed Martin Corporation, L = Denver, S = Colorado, C = US
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=Lockheed Martin Root Certification Authority 2, OU=Certification Authorities, O=Lockheed Martin Corporation, L=Denver, S=Colorado, C=US
   cdp_uri: http://certipath-crl.symauth.com/CertiPathBridgeCA-G2.crl
   aia_uri: http://certipath-aia.symauth.com/CertiPathBridgeCA-G2.p7c
   sia_uri:  
@@ -938,8 +938,8 @@
   change_description: Treasury re-keyed the NASA Operational Certification Authority.
   contact: pki dot pmo at fiscal dot treasury dot gov. 
   ca_certificate_hash: f504012b1fe57b4381e3bf5ba9f491144ed76ee1
-  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
-  ca_certificate_subject: OU = NASA Operational CA, OU = Certification Authorities, OU = NASA, O = U.S. Government, C = US
+  ca_certificate_issuer: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  ca_certificate_subject: OU=NASA Operational CA, OU=Certification Authorities, OU=NASA, O=U.S. Government, C=US
   cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
   aia_uri: http://pki.treasury.gov/noca_aia.p7c
   sia_uri: http://pki.treasury.gov/noca_sia.p7c
@@ -952,8 +952,8 @@
   change_description: Synchronoss has informed SAFE-BioPharma that it will decommission the Zentry Certificate Authority that is currently cross-certified with the SAFE-BioPharma Bridge CA on July 1, 2019. Synchronoss will perform the following actions on this date - 1) Revoke all unexpired certificates issued from this CA, 2) Issue a long-term CRL, and 3) Destroy the CA signing keys.  Synchronoss confirms that a long-term data archive is being implemented in accordance with SAFE-BioPharma archive requirements.
   contact: dsimonetti at safe-biopharma dot org
   ca_certificate_hash: 833D2A24326C8EA10B60FD0FEB4AA0811B1747DD
-  ca_certificate_issuer: CN = SAFE Bridge CA 02, OU = Certification Authorities, O = SAFE-Biopharma, C = US
-  ca_certificate_subject: CN = Trans Sped SAFE CA III, OU = Individual Subscriber CA, O = Trans Sped SRL, C = RO
+  ca_certificate_issuer: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
+  ca_certificate_subject: CN=Trans Sped SAFE CA III, OU=Individual Subscriber CA, O=Trans Sped SRL, C=RO
   cdp_uri: http://sbca2.safe-biopharma.org/sbca/SBCA02.crl
   aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c
   sia_uri: 
@@ -966,8 +966,8 @@
   change_description: ORC SSP 3 CA has been decommissioned and the CA certificate from the Federal Common Policy CA revoked
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: BBFA5ABD8A09D73BE1FA30363F87402FEC5316F9
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject:  CN = ORC SSP 3, O = ORC PKI, C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject:  CN=ORC SSP 3, O=ORC PKI, C=US
  
 - notice_date: June 3, 2019 
   change_type: CA Certificate Issuance
@@ -1004,8 +1004,8 @@
   change_description: DHS re-keyed the DHSCA on June 6, 2019. DHS communicated the intent to re-key this CA on April 20, 2019. The new certificate is available at https://pki.treasury.gov/crl_certs.htm
   contact:  gladys dot garcia at hq dot dhs dot gov
   ca_certificate_hash: 58085a64e181573f4fd917c5c021eb1cf344dd5f
-  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
-  ca_certificate_subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US
+  ca_certificate_issuer: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  ca_certificate_subject: OU=DHS CA4, OU=Certification Authorities, OU=Department of Homeland Security, O=U.S. Government, C=US
   cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
   aia_uri: http://pki.treasury.gov/dhsca_aia.p7c
   sia_uri: http://pki.treasury.gov/dhsca_sia.p7c
@@ -1018,8 +1018,8 @@
   change_description: The TSCP SHA256 Bridge CA issued a cross-certificate to the DocuSign Root CA
   contact: steve.race at tscp dot org 
   ca_certificate_hash: D1382AE6DACA5A69FE75B34635F529C79D5E2D90
-  ca_certificate_issuer: CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US 
-  ca_certificate_subject: CN = DocuSign Root CA, OU = TSCP, O = DocuSign Inc., C = US
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US 
+  ca_certificate_subject: CN=DocuSign Root CA, OU=TSCP, O=DocuSign Inc., C=US
   cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl 
   aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
   sia_uri: 
@@ -1032,7 +1032,7 @@
   change_description: The DocuSign Root CA (cross-certified with the TSCP SHA256 Bridge CA) intends to certify an issuing certification authority.  
   contact: steve.race at tscp dot org  
   ca_certificate_hash:  
-  ca_certificate_issuer: CN = DocuSign Root CA, OU = TSCP, O = DocuSign Inc., C = US
+  ca_certificate_issuer: CN=DocuSign Root CA, OU=TSCP, O=DocuSign Inc., C=US
   ca_certificate_subject: 
   cdp_uri: http://crl.dsf.docusign.net/DocuSignRootCA.crl  
   aia_uri: http://crt.dsf.docusign.net/DocuSignRootCA.p7c  
@@ -1074,8 +1074,8 @@
   change_description: Treasury re-keyed the Department of Veterans Affairs CA. Treasury communicated the intent to re-key this CA on March 13, 2019. Although the re-keyed certificate has been published, its private key will not be used for signing end entity certificates until June 29, 2019. The new certificate is available at https://pki.treasury.gov/crl_certs.htm
   contact: pki dot pmo at fiscal dot treasury dot gov
   ca_certificate_hash: 76cc898f03eb0fc7e0877aac30a0c1340bb34879
-  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
-  ca_certificate_subject: OU = Department of Veterans Affairs CA, OU = Certification Authorities, OU = Department of Veterans Affairs, O = U.S. Government, C = US
+  ca_certificate_issuer: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Department of Veterans Affairs CA, OU=Certification Authorities, OU=Department of Veterans Affairs, O=U.S. Government, C=US
   cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
   aia_uri: http://pki.treasury.gov/vaca_aia.p7c
   sia_uri: http://pki.treasury.gov/vaca_sia.p7c
@@ -1088,8 +1088,8 @@
   change_description: Treasury re-keyed the OCIO CA. Treasury communicated the intent to re-key this CA on March 13, 2019. Although the re-keyed certificate has been published, its private key will not be used for signing end entity certificates until June 29, 2019. The new certificate is available at https://pki.treasury.gov/crl_certs.htm
   contact: pki dot pmo at fiscal dot treasury dot gov
   ca_certificate_hash: e651a5dc6a1305613a22e46548e1666650c2825f
-  ca_certificate_issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
-  ca_certificate_subject: OU = OCIO CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  ca_certificate_issuer: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  ca_certificate_subject: OU=OCIO CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
   cdp_uri: http://pki.treasury.gov/US_Treasury_Root_CA1.crl
   aia_uri: http://pki.treasury.gov/toca_aia.p7c
   sia_uri: http://pki.treasury.gov/toca_sia.p7c
@@ -1158,8 +1158,8 @@
   change_description: The Federal Bridge CA 2016 intends to issue cross-certificates to DoD Interoperability Root CA 2, TSCP SHA256 Bridge CA, and WidePoint NFI Root CA 1. Certificate issuance is expected to take place before August 15, 2019.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: Three certificates are planned for issuance. (1) CN = DoD Interoperability Root CA 2, OU = PKI, OU = DoD, O = U.S. Government, C = US, (2) CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US, and (3) CN = WidePoint NFI Root 1, OU = Certification Authorities, O = WidePoint, C = US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: Three certificates are planned for issuance. (1) CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US, (2) CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US, and (3) CN=WidePoint NFI Root 1, OU=Certification Authorities, O=WidePoint, C=US
   cdp_uri:
   aia_uri:
   sia_uri:
@@ -1168,11 +1168,11 @@
 - notice_date: July 25, 2019
   change_type: Intent to Perform CA Certificate Revocation
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: The Federal Bridge CA 2016 intends to revoke the cross-certificate issued to CN = CT-CSSP-CA-A1, OU = PKI, OU = Services, O = Cybertrust, C = US (operated by Verizon NFI).
+  change_description: The Federal Bridge CA 2016 intends to revoke the cross-certificate issued to CN=CT-CSSP-CA-A1, OU=PKI, OU=Services, O=Cybertrust, C=US (operated by Verizon NFI).
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 68 70 66 bc e5 6b 6e 20 ae a0 c6 05 b9 b6 67 93 42 26 9f 21
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = CT-CSSP-CA-A1, OU = PKI, OU = Services, O = Cybertrust, C = US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=CT-CSSP-CA-A1, OU=PKI, OU=Services, O=Cybertrust, C=US
   
 - notice_date: July 26, 2019
   change_type: Intent to Perform CA Certificate Revocation
@@ -1180,8 +1180,8 @@
   change_description: Verizon NFI intends to revoke the cross-certificate issued from CT-CSSP-CA-A1 to the Federal Bridge CA 2016.
   contact: andre dot varacka at verizon dot com
   ca_certificate_hash: 73 dc cf 64 18 52 2b 69 a5 0a 96 72 1a eb 96 44 1e 6e f3 c0 
-  ca_certificate_issuer: CN = CT-CSSP-CA-A1, OU = PKI, OU = Services, O = Cybertrust, C = US
-  ca_certificate_subject: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=CT-CSSP-CA-A1, OU=PKI, OU=Services, O=Cybertrust, C=US
+  ca_certificate_subject: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
   
 - notice_date: August 5, 2019
   change_type: CA Certificate Revocation
@@ -1190,8 +1190,8 @@
   change_description: Synchronoss decommissioned the Trans Sped SAFE CA III. Previously active end entity certificates issued from Trans Sped SAFE CA III were revoked before CA decommissioning. On August 2, 2019, SAFE-BioPharma revoked the cross-certificate issued to Trans Sped SAFE CA III.
   contact: kyle dot neuman at makeidentitysafe dot com
   ca_certificate_hash: 833D2A24326C8EA10B60FD0FEB4AA0811B1747DD
-  ca_certificate_issuer: CN = SAFE Bridge CA 02, OU = Certification Authorities, O = SAFE-Biopharma, C = US
-  ca_certificate_subject: CN = Trans Sped SAFE CA III, OU = Individual Subscriber CA, O = Trans Sped SRL, C = RO
+  ca_certificate_issuer: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
+  ca_certificate_subject: CN=Trans Sped SAFE CA III, OU=Individual Subscriber CA, O=Trans Sped SRL, C=RO
   cdp_uri: http://sbca2.safe-biopharma.org/sbca/SBCA02.crl
   aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c
   sia_uri: 
@@ -1204,7 +1204,7 @@
   change_description: The Federal Common Policy CA intends to issue a certificate to the Entrust Managed Services Root CA, pending the Entrust Managed Services Root CA re-key.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: ou=Entrust Managed Services Root CA, ou=Certification Authorities, o=Entrust, c=US
   cdp_uri:
   aia_uri:
@@ -1215,11 +1215,11 @@
   change_type: CA Certificate Revocation
   start_datetime: 
   system: FPKI Trust Infrastructure - Federal Bridge CA 2016 
-  change_description: On August 06, 2019, the Federal Bridge CA 2016 revoked the cross-certificate issued to CN = CT-CSSP-CA-A1, OU = PKI, OU = Services, O = Cybertrust, C = US (operated by Verizon NFI).  
+  change_description: On August 06, 2019, the Federal Bridge CA 2016 revoked the cross-certificate issued to CN=CT-CSSP-CA-A1, OU=PKI, OU=Services, O=Cybertrust, C=US (operated by Verizon NFI).  
   contact: fpki dash help at gsa dot gov 
   ca_certificate_hash: 687066bce56b6e20aea0c605b9b6679342269f21 
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US 
-  ca_certificate_subject: CN = CT-CSSP-CA-A1, OU = PKI, OU = Services, O = Cybertrust, C = US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US 
+  ca_certificate_subject: CN=CT-CSSP-CA-A1, OU=PKI, OU=Services, O=Cybertrust, C=US
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl 
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c 
   sia_uri: http://sia1.com-strong-id.net/CA/CT-CSSP-CA-A1-SIA.p7c 
@@ -1232,8 +1232,8 @@
   change_description: On August 08, 2019, Verizon NFI revoked the certificate issued from CT-CSSP-CA-A1 to the Federal Bridge CA 2016.
   contact: andre dot varacka at verizon dot com
   ca_certificate_hash: 73dccf6418522b69a50a96721aeb96441e6ef3c0  
-  ca_certificate_issuer: CN = CT-CSSP-CA-A1, OU = PKI, OU = Services, O = Cybertrust, C = US 
-  ca_certificate_subject: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=CT-CSSP-CA-A1, OU=PKI, OU=Services, O=Cybertrust, C=US 
+  ca_certificate_subject: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
   cdp_uri: http://cdp1.com-strong-id.net/CDP/CT-CSSP-CA-A1.cr 
   aia_uri: http://aia1.com-strong-id.net/CA/CT-CSSP-CA-A1.p7c 
   sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c  
@@ -1246,8 +1246,8 @@
   change_description: The Federal Bridge CA 2016 issued a cross-certificate to DoD Interoperability Root CA 2.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 73050d5b629cf6286be972afddfa31d2864b4f35
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = DoD Interoperability Root CA 2, OU = PKI, OU = DoD, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://crl.disa.mil/issuedby/DODINTEROPERABILITYROOTCA2_IB.p7c
@@ -1260,8 +1260,8 @@
   change_description: The Federal Bridge CA 2016 issued a cross-certificate to WidePoint NFI Root 1.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 92bc06fe6b27cbe4723f309f34681fc57c8166ce 
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = WidePoint NFI Root 1, OU = Certification Authorities, O = WidePoint, C = US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint NFI Root 1, OU=Certification Authorities, O=WidePoint, C=US
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT1.p7c
@@ -1274,8 +1274,8 @@
   change_description: The Federal Bridge CA 2016 issued a cross-certificate to the TSCP SHA256 Bridge CA.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  874007002a4a2fff3edcf90eb41adce7c2fb4915
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = TSCP SHA256 Bridge CA, OU = CAs, O = TSCP Inc., C = US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c
@@ -1288,8 +1288,8 @@
   change_description: The Federal Common Policy CA intends to issue an updated certificate to the US Treasury Root CA. The updated certificate will add the following certificate policy object identifiers to the US Treasury Root CA certificate's existing set - id-fpki-certpcy-pivi-hardware (2.16.840.1.101.3.2.1.3.18), id-fpki-certpcy-pivi-cardAuth (2.16.840.1.101.3.2.1.3.19), and id-fpki-certpcy-pivi-contentSigning	(2.16.840.1.101.3.2.1.3.20).
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
   cdp_uri:
   aia_uri:
   sia_uri:
@@ -1302,8 +1302,8 @@
   change_description: On August 14, 2019, the Federal Bridge CA 2016 revoked the cross-certificate issued to ORC NFI CA 2.    
   contact: fpki dash help at gsa dot gov 
   ca_certificate_hash: b055c6ee104e01eb688c8fb4f87cf77ca376afdb  
-  ca_certificate_issuer: CN = Federal Bridge CA 2016, OU = FPKI, O = U.S. Government, C = US 
-  ca_certificate_subject: CN = ORC NFI CA 2, O = ORC PKI, C = US 
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US 
+  ca_certificate_subject: CN=ORC NFI CA 2, O=ORC PKI, C=US 
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl 
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c 
   sia_uri: http://crl-server.orc.com/caCerts/ORCNFI2_SIA.p7c 
@@ -1316,8 +1316,8 @@
   change_description: The recently re-keyed Entrust Managed Services Root CA issued a certificate to the re-keyed Entrust Managed Services SSP CA. Entrust will publish and begin issuance from the re-keyed Entrust Managed Services SSP CA on Friday, September 27, 2019, between 6:00 PM Eastern – 10:00 PM Eastern. In the meantime, the certificate is available at https://enrollwebfed.managed.entrust.com/fssp/cda-docs/html/FedCertsoverviewfed.html. 
   contact: Cris dot TenEyck at entrustdatacard dot com and Howard dot Freitag at entrustdatacard dot com
   ca_certificate_hash: 722e8abbe6b66e47d1bcec3c7ec47aa5bbe4d3c5 
-  ca_certificate_issuer: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
-  ca_certificate_subject: OU = Entrust Managed Services SSP CA, OU = Certification Authorities, O = Entrust, C = US
+  ca_certificate_issuer: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US
+  ca_certificate_subject: OU=Entrust Managed Services SSP CA, OU=Certification Authorities, O=Entrust, C=US
   cdp_uri: http://rootweb.managed.entrust.com/CRLs/EMSRootCA3.crl 
   aia_uri: http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c 
   sia_uri:  
@@ -1330,8 +1330,8 @@
   change_description: The Federal Common Policy CA issued a certificate to the re-keyed Entrust Managed Services Root CA.  Entrust will cut over to and begin issuance from the re-keyed Entrust Managed Services Root and SSP CA certificates on Friday, September 27, 2019, between 6:00 PM Eastern – 10:00 PM Eastern.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9 
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: OU = Entrust Managed Services Root CA, OU = Certification Authorities, O = Entrust, C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US
   cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
   sia_uri: http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c
@@ -1344,8 +1344,8 @@
   change_description: The Federal Common Policy CA issued an updated certificate to the US Treasury Root CA. The updated certificate adds the following certificate policy object identifiers to the US Treasury Root CA certificate's existing set - id-fpki-certpcy-pivi-hardware (2.16.840.1.101.3.2.1.3.18), id-fpki-certpcy-pivi-cardAuth (2.16.840.1.101.3.2.1.3.19), and id-fpki-certpcy-pivi-contentSigning	(2.16.840.1.101.3.2.1.3.20).
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 48ce02a99ae2cc4f790f2989aa153ed565b7e4d2
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
-  ca_certificate_subject: CN = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
   cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
   sia_uri: http://pki.treasury.gov/root_sia.p7c
@@ -1382,7 +1382,7 @@
   change_description: The FPKIMA intends to issue a certificate from the Federal Common Policy CA to the planned Federal Bridge CA 2019 toward the end of October. CAs with valid certificates issued by the Federal Bridge CA 2016 will be migrated to the Federal Bridge CA 2019, allowing for the Federal Bridge CA 2016 to be decommissioned.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  
-  ca_certificate_issuer: CN = Federal Common Policy CA, OU = FPKI, O = U.S. Government, C = US
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=Federal Bridge CA 2019, OU=FPKI, O=U.S. Government, C=US
   cdp_uri:  
   aia_uri: 
@@ -1416,6 +1416,72 @@
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
   sia_uri: http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c
+
+- notice_date: November 4, 2019
+  change_type: Intent to Decommission CA
+  system: Federal PKI Management Authority - SHA-1 Federal Root CA
+  change_description: Intent to decommission the SHA-1 Federal Root CA in December 2019 after the expiration of all remaining valid CA certificates it issued (DoD Interoperability Root CA 1 and CertiPath Bridge CA).
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 27C589FF2853BD1949CFA433F36A5E285B2E2C7C
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=SHA-1 Federal Root CA G2, OU=FPKI, O=U.S. Government, C=US
+  
+- notice_date: November 29, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:  
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA intends to issue a cross certificate to Carillon Federal Services.
+  contact: steve.race at tscp dot org
+  ca_certificate_hash:  
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: 
+  cdp_uri:  
+  aia_uri:
+  sia_uri:  
+  ocsp_uri:
+  
+- notice_date: December 5, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:  
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The planned Federal Bridge CA G4 intends to issue a cross certificate to the United States Patent and Trademark Office's USPTO_INTR_CA1. The new certificate issued to USPTO_INTR_CA1 will replace the existing certificate issued by the Federal Bridge CA 2016 (expires Dec. 15, 2019)
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash:  
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=USPTO_INTR_CA1, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=uspto, DC=gov
+  cdp_uri:  
+  aia_uri:
+  sia_uri:  
+  ocsp_uri:  
+  
+- notice_date: December 5, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:  
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The planned Federal Bridge CA G4 intends to issue a cross certificate to the CertiPath Bridge CA - G2. The new certificate will replace the existing certificate issued by the Federal Bridge CA 2016 (expires Dec. 15, 2019)
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash:  
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
+  cdp_uri:  
+  aia_uri:
+  sia_uri:  
+  ocsp_uri:  
+ 
+- notice_date: December 9, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:  
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal Common Policy CA intends to issue a cross certificate to the U.S. Department of State AD Root CA. The new certificate will replace the existing certificate (expires on January 27, 2020). 
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash:  
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  cdp_uri:  
+  aia_uri:
+  sia_uri:  
+  ocsp_uri:  
+  
 
 
 #- notice_date:  
