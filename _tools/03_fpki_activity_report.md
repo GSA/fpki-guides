@@ -30,11 +30,12 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | ---------- | ----------- |
+|  N/A | N/A  | N/A  | N/A | N/A |
 
 
 The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
-| Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
+| Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | ------ | ------ |
 | DoD | DoD Interoperability Root CA 1 | SHA-1 Federal Root CA G2 | 369814cdf6813b1cb973a492fdb130d1446296ef | 11/15/2019 | Expire |
 | CertiPath Bridge | CertiPath Bridge CA | SHA-1 Federal Root CA G2 | 71fb94efbcfc8fffaab00db73e92da36a0e601fa | 11/29/2019 | Expire |
@@ -44,10 +45,14 @@ The following certificates are planned for a certificate action in the next four
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | ---------- | ---------- | -------- |
+| FPKIMA | Federal Bridge CA G4 | Federal Bridge CA G4 |   |   |   |
+| FPKIMA | Federal Common Policy CA | Federal Bridge CA G4 |   |   |   |
+| FPKIMA | Federal Bridge CA G4 | Federal Common Policy CA |   |   |   |
 | CertiPath Bridge | CertiPath Bridge CA - G2 | Federal Bridge CA 2016 | 4d4392ed9abaa619c97dd4ce668937f5d486f1c9 | 12/15/2019 | Re-issue |
 | USPTO | USPTO_INTR_CA1 | Federal Bridge CA 2016 | 0704ea9633a45a9a39123bac28be01078c6bfd3a | 12/15/2019 | Re-issue |
-| Exostar |  Exostar Federated Identity Service Root CA 2 | Federal Bridge CA 2016 | fbe0def19bfe627f4c28c95a211acd7cc3c7afb2 | 4/30/2020 | Re-issue |
 | FPKIMA | SHA-1 Federal Root CA G2 | Federal Common Policy CA | 27c589ff2853bd1949cfa433f36a5e285b2e2c7c | 12/31/2019 | Revoke due to decommission |
+| State | U.S. Department of State AD Root CA | Federal Common Policy CA | c8feb56d0efa3b3b4e2777986304cc19118676a4 | 1/27/2020 | Re-issue |
+| Exostar |  Exostar Federated Identity Service Root CA 2 | Federal Bridge CA 2016 | fbe0def19bfe627f4c28c95a211acd7cc3c7afb2 | 4/30/2020 | Re-issue |
 | WidePoint | ORC NFI CA 3 | Federal Bridge CA 2016 | b625da07302016d2837023bab94b6e0d76fc2e45 | 7/17/2021 | Revoke due to migration |
 
 The following certificates will be re-issued with the existing expiration date as part of the Federal Bridge CA re-key. This migration will occur between November 2019 - February 2020. Once a modified certificate is issued, the below certificates will be revoked and this report as well as system notification will be sent to the FPKI community.
@@ -67,6 +72,6 @@ The following certificates will be re-issued with the existing expiration date a
 | DoD | DoD Interoperability Root CA 2 | Federal Bridge CA 2016 | 73050d5b629cf6286be972afddfa31d2864b4f35 |
 
 ## Repository Availability 
-Respository availability is an uptime metric for Certificate Revocation List availability. The table only contains Certification Authorities directly certified with the FPKIMA. A metric of "99" in the table below means the Certificate Revocation List was available for 99% of the given month, in other words, the file was not available for 1% of the month (18 minutes depending on the month). The last column is the 12-Month average.
+Repository availability is an uptime metric for Certificate Revocation List availability. The table only contains Certification Authorities directly certified with the FPKIMA. A metric of "99" in the table below means the Certificate Revocation List was available for 99% of the given month, in other words, the file was not available for 1% of the month (18 minutes depending on the month). The last column is the 12-Month average.
 
 {% include fpkiar-repo-table.html %}
