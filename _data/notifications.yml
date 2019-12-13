@@ -1444,7 +1444,7 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:  
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
-  change_description: The planned Federal Bridge CA G4 intends to issue a cross certificate to the United States Patent and Trademark Office's USPTO_INTR_CA1. The new certificate issued to USPTO_INTR_CA1 will replace the existing certificate issued by the Federal Bridge CA 2016 (expires Dec. 15, 2019)
+  change_description: The planned Federal Bridge CA G4 intends to issue a cross certificate to the United States Patent and Trademark Office's USPTO_INTR_CA1. The new certificate issued to USPTO_INTR_CA1 will replace the existing certificate issued by the Federal Bridge CA 2016 (expires December 15, 2019)
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  
   ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
@@ -1458,7 +1458,7 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:  
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
-  change_description: The planned Federal Bridge CA G4 intends to issue a cross certificate to the CertiPath Bridge CA - G2. The new certificate will replace the existing certificate issued by the Federal Bridge CA 2016 (expires Dec. 15, 2019)
+  change_description: The planned Federal Bridge CA G4 intends to issue a cross certificate to the CertiPath Bridge CA - G2. The new certificate will replace the existing certificate issued by the Federal Bridge CA 2016 (expires December 15, 2019)
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  
   ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
@@ -1495,6 +1495,20 @@
   aia_uri:
   sia_uri:  
   ocsp_uri:
+  
+- notice_date: December 9, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:  
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The planned Federal Bridge CA G4 intends to issue a cross certificate to the Exostar Federated Identity Service Root CA 2. The new certificate will replace the existing certificate issued by the Federal Bridge CA 2016 (expires April 30, 2020).
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash:  
+  ca_certificate_issuer: 
+  ca_certificate_subject: 
+  cdp_uri:  
+  aia_uri:
+  sia_uri:  
+  ocsp_uri:  
   
 - notice_date: December 9, 2019
   change_type: Intent to Perform CA Certificate Issuance
