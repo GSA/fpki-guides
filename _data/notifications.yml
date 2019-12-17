@@ -1560,7 +1560,7 @@
   system: Federal PKI Trust Infrastructure - SHA-1 Federal Root CA
   change_description: The SHA-1 Federal Root CA was decommissioned. 
   contact: fpki dash help at gsa dot gov
-  ca_certificate_hash: 8 
+  ca_certificate_hash: 
   ca_certificate_issuer:  
   ca_certificate_subject:  
   cdp_uri:  
