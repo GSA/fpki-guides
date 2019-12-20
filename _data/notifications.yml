@@ -1597,6 +1597,19 @@
   sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
   ocsp_uri:
   
+- notice_date: December 17, 2019
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:  
+  system: DigiCert Federal Shared Service Provider
+  change_description: The DigiCert Federal SSP Intermediate CA intends to issue a new issuing CA certificate on behalf of the U.S. Department of Education. 
+  ca_certificate_hash:  
+  ca_certificate_issuer: CN = DigiCert Federal SSP Intermediate CA - G5, O = DigiCert, Inc., C = US
+  ca_certificate_subject: CN = U.S. Department of Education Device CA - G5, OU = U.S. Department of Education, O = U.S. Government, C = US.
+  cdp_uri:  
+  aia_uri:
+  sia_uri:  
+  ocsp_uri:     
+  
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
