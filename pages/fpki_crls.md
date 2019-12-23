@@ -3,7 +3,7 @@ layout: default
 title: Certificates and CRLs
 permalink: /crls/
 ---
-This page lists the endpoints to retrieve the certificates and certificate revocation lists (CRLs) for the trust infrastructure CAs.  We are working on compiling and adding information for ALL CAs currently in the Federal PKI network. 
+This page lists the endpoints to retrieve the certificates and certificate revocation lists (CRLs) for the infrastructure CAs.  We are working on compiling and adding information for ALL CAs currently in the Federal PKI. 
 
 When downloading **any** Certificate file from the list below, please verify the thumbprint (hash) on the downloaded file.  You can [verify the hash](#verify-a-hash) using common utilities on operating systems. 
 
@@ -27,23 +27,13 @@ When downloading **any** Certificate file from the list below, please verify the
 | P7C file - Issued By						| http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c	|
 | P7C file - Issued To						| http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c	|
 
+### Federal Bridge CA G4
 
-### Federal Bridge CA 2013
-
-|**Federal Bridge CA 2013**|**Information**|
+|**Federal Bridge CA G4**|**Information**|
 |-----------|---------------|
-| Certificate Revocation List				| http://http.fpki.gov/bridge/fbca2013.crl					|
-| P7C file - Issued By						| http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c	|
-| P7C file - Issued To						| http://http.fpki.gov/bridge/caCertsIssuedTofbca2013.p7c	|
-
-
-### SHA-1 Federal Root CA G2
-
-|**SHA-1 Federal Root CA G2**|**Information**|
-|-----------|---------------|
-| Certificate Revocation List				| http://http.fpki.gov/sha1frca/sha1frca.crl				|
-| P7C file - Issued By						| http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c	|
-| P7C file - Issued To						| http://http.fpki.gov/sha1frca/caCertsIssuedTosha1frca.p7c	|
+| Certificate Revocation List				| http://repo.fpki.gov/bridge/fbcag4.crl				|
+| P7C file - Issued By						| http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c	|
+| P7C file - Issued To						| http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c	|
 
 	 
 
