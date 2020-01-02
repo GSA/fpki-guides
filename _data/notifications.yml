@@ -1770,7 +1770,7 @@
   change_type: CA Certificate Expiration
   start_datetime: January 9, 2017 
   system: FPKI Trust Infrastructure
-  change_description: The certificate issued by the Federal Common Policy CA to SHA-1 Federal Root CA G2 expired on December 31, 2019. The expiration of this certificate marks the deprecation of SHA-1 certificates in the Federal PKI.
+  change_description: The certificate issued by the Federal Common Policy CA to SHA-1 Federal Root CA G2 expired on December 31, 2019. The expiration of this certificate marks the complete deprecation of SHA-1 certificates in the Federal PKI.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 27c589ff2853bd1949cfa433f36a5e285b2e2c7c 
   ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
