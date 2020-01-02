@@ -4,7 +4,6 @@
 #notice_date: notice date in <Month Day, Year>
 #change_type: < CA Certificate Issuance, CA Certificate Revocation, New CA, CA Termination, New URI in Certificates, OCSP Outage, CRL Outage >
 #start_datetime: start date of the change in <<Month Day, Year> HH:MM> format
-#end_datetime: end date of the change in <<Month Day, Year> HH:MM> format
 #system: <what is the system known as>
 #change_description: <detailed statement>
 #contact: <email, phone>
@@ -398,7 +397,6 @@
 - notice_date: August 23, 2018
   change_type: CA Certificate Issuance
   start_datetime: August 21, 2018
-  end_datetime: August 21, 2021
   system: FPKI Trust Infrastructure - Federal Bridge 2016
   change_description: A new cross-certificate was issued from the Federal Bridge 2016 to the IdenTrust IGC Root CA 1
   contact: FPKI dash help at GSA dot Gov
@@ -412,7 +410,6 @@
 - notice_date: August 23, 2018
   change_type: CA Certificate Issuance
   start_datetime: August 21, 2018
-  end_datetime: August 21, 2021
   system: FPKI Trust Infrastructure - Federal Bridge 2016
   change_description: A new cross-certificate was issued from the Federal Bridge 2016 to the IdenTrust ACES CA 2
   contact: FPKI dash help at GSA dot Gov
@@ -460,7 +457,6 @@
 - notice_date: December 12, 2018
   change_type: CA Certificate Issuance
   start_datetime: December 5, 2018
-  end_datetime: December 6, 2026
   system: FPKI Trust Infrastructure - Federal Common Policy CA
   change_description: Certificate issuance from the Federal Common Policy CA to the Verizon SSP CA A2 to add the Derived PIV OID
   contact: fpki dash help at GSA dot gov
@@ -556,7 +552,6 @@
 - notice_date: February 11, 2019
   change_type: URI Change (IP addresses)
   start_datetime: April 6, 2019
-  end_datetime: April 7, 2019
   system: Symantec Managed PKI
   change_description: DigiCert will be moving the federal PKI shared service provider CAs (government) and other managed PKI to new data centers. The address ranges in the new data centers will be as follows - 216.168.245.0/24, 216.168.246.0/24, 216.168.248.0/24, and 216.168.249.0/24. Be prepared to update network configurations as necessary. This activity is planned to take place between 15:30 UTC, April 6, 2019 and 3:30 UTC, April 7, 2019. See https://knowledge.digicert.com/generalinformation/digicert-symantec-managed-pki-data-center-migration-information-.html for more information.
   contact: steve dot medin at digicert dot com 
@@ -1353,7 +1348,6 @@
 
 - notice_date: September 3, 2019
   change_type: Intent to Perform CA Certificate Revocation
-  end_datetime:
   system: GSA ACES and Federal Bridge CA 2016
   change_description: WidePoint has decommissioned the ORC ACES 4 CA. The FPKIMA intends to revoke the certificate issued from the Federal Bridge CA to the ORC ACES 4 CA.
   contact: fpki dash help at gsa dot gov
@@ -1363,7 +1357,6 @@
 
 - notice_date: September 30, 2019
   change_type: CA Certificate Revocation
-  end_datetime:
   system: Federal Bridge CA 2016
   change_description: The FPKIMA revoked the certificate issued from the Federal Bridge CA 2016 to the decommissioned ORC ACES 4 CA.
   contact: fpki dash help at gsa dot gov
@@ -1392,7 +1385,6 @@
 - notice_date: October 28, 2019
   change_type: CA Certificate Issuance
   start_datetime: October 28, 2019
-  end_datetime: October 28, 2020
   system: FPKI Trust Infrastructure - Federal Common Policy CA
   change_description: The Federal Common Policy CA issued a cross-certificate to the Federal Bridge CA 2016. The certificate has a validity period of one year.
   contact: fpki dash help at gsa dot gov
@@ -1406,7 +1398,6 @@
 - notice_date: October 28, 2019
   change_type: CA Certificate Issuance
   start_datetime: October 28, 2019
-  end_datetime: October 28, 2020
   system: FPKI Trust Infrastructure - Federal Bridge CA 2016
   change_description: The Federal Bridge CA 2016 issued a cross-certificate to the Federal Common Policy CA. The certificate has a validity period of one year.
   contact: fpki dash help at gsa dot gov
@@ -1527,7 +1518,6 @@
 - notice_date: December 16, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 12, 2019
-  end_datetime: December 12, 2022
   system: FPKI Trust Infrastructure - Federal Common Policy CA
   change_description: The Federal Common Policy CA issued a cross certificate to the new Federal Bridge CA G4.
   contact: fpki dash help at gsa dot gov
@@ -1542,7 +1532,6 @@
 - notice_date: December 16, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 12, 2019
-  end_datetime: December 12, 2020
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a cross certificate to the Federal Common Policy CA.
   contact: fpki dash help at gsa dot gov
@@ -1570,7 +1559,6 @@
 - notice_date: December 16, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 12, 2019
-  end_datetime: December 12, 2022
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a cross certificate to the CertiPath Bridge CA - G2.
   contact: fpki dash help at gsa dot gov
@@ -1585,7 +1573,6 @@
 - notice_date: December 16, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 12, 2019
-  end_datetime: December 12, 2022
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a cross certificate to the United States Patent and Trademark Office's USPTO_INTR_CA1.
   contact: fpki dash help at gsa dot gov
@@ -1613,7 +1600,6 @@
 - notice_date: December 20, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 18, 2019
-  end_datetime: December 12, 2028
   system: DigiCert Federal Shared Service Provider
   change_description: The DigiCert Federal SSP Intermediate CA intends to issue a new issuing CA certificates on behalf of the U.S. Department of Education. 
   contact: aaron dot poulsen at digicert dot com
@@ -1628,7 +1614,6 @@
 - notice_date: December 23, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 16, 2019
-  end_datetime: February 28, 2022
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a cross certificate to the DigiCert Federated ID L3 CA. 
   contact: fpki dash help at gsa dot gov
@@ -1643,7 +1628,6 @@
 - notice_date: December 23, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 16, 2019
-  end_datetime: August 6, 2022
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a cross certificate to the DoD Interoperability Root CA 2. 
   contact: fpki dash help at gsa dot gov
@@ -1658,7 +1642,6 @@
 - notice_date: December 23, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 16, 2019
-  end_datetime: November 16, 2020
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a cross certificate to the Entrust Managed Services NFI Root CA. 
   contact: fpki dash help at gsa dot gov
@@ -1673,7 +1656,6 @@
 - notice_date: December 23, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 16, 2019
-  end_datetime: August 3, 2020
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a cross certificate to the GPO PCA. 
   contact: fpki dash help at gsa dot gov
@@ -1689,7 +1671,6 @@
 - notice_date: December 23, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 17, 2019
-  end_datetime: August 21, 2021
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a cross certificate to the IdenTrust ACES CA 2. 
   contact: fpki dash help at gsa dot gov
@@ -1704,7 +1685,6 @@
 - notice_date: December 23, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 17, 2019
-  end_datetime: August 21, 2021
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a cross certificate to the IdenTrust Global Common Root CA 1. 
   contact: fpki dash help at gsa dot gov
@@ -1719,7 +1699,6 @@
 - notice_date: December 23, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 17, 2019
-  end_datetime: June 7, 2021
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a cross certificate to the SAFE Bridge CA 02. 
   contact: fpki dash help at gsa dot gov
@@ -1734,7 +1713,6 @@
 - notice_date: December 23, 2019
   change_type: CA Certificate Issuance
   start_datetime: December 18, 2019
-  end_datetime: August 6, 2022
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a cross certificate to the TSCP SHA256 Bridge CA. 
   contact: fpki dash help at gsa dot gov
@@ -1745,11 +1723,67 @@
   aia_uri:  http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
   sia_uri:  http://tscp-sia.symauth.com/IssuedBy-tscpbcasha256.p7c
   ocsp_uri:  
+
+- notice_date: January 2, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: December 17, 2019 
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a cross certificate to the STRAC Bridge Root Certification Authority.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: c6d4d588000e823cfaf2ecf551ebcd3827fd71b6 
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=STRAC Bridge Root Certification Authority, OU=STRAC PKI Trust Infrastructure, O=STRAC, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl  
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c  
+  sia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
+  ocsp_uri:  
+
+- notice_date: January 2, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: December 18, 2019 
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a cross certificate to Symantec Class 3 SSP Intermediate CA - G3.  
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: a99a0d6510b59b6dc92270eae1f24fbc21d2dcce 
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Symantec Class 3 SSP Intermediate CA - G3, OU=Symantec Trust Network, O=Symantec Corporation, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl  
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c  
+  sia_uri: http://ssp-sia.symauth.com/STNSSP/Certs_Issued_by_Class3SSPCA-G3.p7
+  ocsp_uri:  
+
+- notice_date: January 2, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: December 18, 2019 
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal Common Policy CA issued a cross certificate to the U.S. Department of State AD Root CA. 
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: ce11590010562a39ad8b1455acf76c03737aebf6 
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=U.S. Department of State AD Root CA, CN=AIA,CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl  
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c   
+  sia_uri: http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c
+  ocsp_uri:    
   
+- notice_date: January 2, 2020
+  change_type: CA Certificate Expiration
+  start_datetime: January 9, 2017 
+  system: FPKI Trust Infrastructure
+  change_description: The certificate issued by the Federal Common Policy CA to SHA-1 Federal Root CA G2 expired on December 31, 2019. The expiration of this certificate marks the complete deprecation of SHA-1 certificates in the Federal PKI.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 27c589ff2853bd1949cfa433f36a5e285b2e2c7c 
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=SHA-1 Federal Root CA G2, OU = FPKI, O = U.S. Government, C = US
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl  
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
+  sia_uri: http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frcaG2.p7c
+  ocsp_uri:    
+    
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
-#  end_datetime: 
 #  system: 
 #  change_description: 
 #  contact: fpki@gsa.gov
