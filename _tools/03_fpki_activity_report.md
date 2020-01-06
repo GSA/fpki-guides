@@ -55,8 +55,6 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 | USPTO	| USPTO_INTR_CA1	| Federal Bridge CA 2016	| 0704ea9633a45a9a39123bac28be01078c6bfd3a	| 12/15/2019 | Expired |
 | USPTO	| Federal Bridge CA 2016	| USPTO_INTR_CA1	| d8d860c11f216ad1fe07e15caf19b3083c83dbba	| 12/19/2019 | Expired |
 | FPKIMA	| SHA-1 Federal Root CA G2	| Federal Common Policy CA	| 27c589ff2853bd1949cfa433f36a5e285b2e2c7c	| 12/31/2019 | Expired |
-| State	| U.S. Department of State AD Root CA	| Federal Common Policy CA	| c8feb56d0efa3b3b4e2777986304cc19118676a4	| 1/27/2020 | Renewed |
-| Treasury	| US Treasury Root CA	| Federal Common Policy CA	| 5a87922b5eaf1d63198a951b2ab6f59b2f16c131	| 8/29/2021 | Renewed |
 | CertiPath	| SHA-1 Federal Root CA G2	| CertiPath Bridge CA |	81777b472d6d561d1774d12322f827cab9ff534b	| 12/31/2019 | Expired |
 | CertiPath	| CertiPath Bridge CA	| SHA-1 Federal Root CA G2	| 71fb94efbcfc8fffaab00db73e92da36a0e601fa	| 12/29/2019 | Expired |
 | DoD	| SHA-1 Federal Root CA G2	| DoD Interoperability Root CA 1	| da2d8ab6ad1a2fe94fbbb8f0e4f887922d2a20bd	| 10/30/2020 | Expired |
@@ -70,9 +68,9 @@ The following certificates are planned for a certificate action in the next four
 | WidePoint | ORC NFI CA 3 | Federal Bridge CA 2016 | b625da07302016d2837023bab94b6e0d76fc2e45 | 7/17/2021 | Revoke due to migration |
 | WidePoint	| WidePoint NFI Root 1	| Federal Bridge CA 2016	| 92bc06fe6b27cbe4723f309f34681fc57c8166ce	| 8/6/2022 | Revoke due to migration |
 
-Revocation of the corresponding certificates re-issued with the existing expiration date as part of the migration to Federal Bridge CA G4  will be coordinated with the Affiliate .
+Revocation of the corresponding certificates re-issued with the existing expiration date as part of the migration to Federal Bridge CA G4 will be coordinated with the Affiliate.
 
 ## Repository Availability 
-Repository availability is an uptime metric for Certificate Revocation List availability. The table only contains Certification Authorities directly certified with the FPKIMA. A metric of "99" in the table below means the Certificate Revocation List was available for 99% of the given month, in other words, the file was not available for 1% of the month (18 minutes depending on the month). The last column is the 12-Month average.
+Repository availability is an uptime metric for Certificate Revocation List availability. The table only contains Certification Authorities directly signed by the Federal Common Policy Root CA, Federal Bridge CA 2016 or Federal Bridge CA G4. A metric of "99" in the table below means the Certificate Revocation List was available for 99% of the given month, in other words, the file was not available for 1% of the month (18 minutes depending on the month). The last column is the 12-month average.
 
 {% include fpkiar-repo-table.html %}
