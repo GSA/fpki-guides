@@ -4,7 +4,7 @@ title: Certificates and CRLs
 collection: crls
 permalink: /crls/
 ---
-This page lists the endpoints to retrieve the certificates and certificate revocation lists (CRLs) for the trust infrastructure CAs.  We are working on compiling and adding information for ALL CAs currently in the Federal PKI network. 
+This page lists the endpoints to retrieve the certificates and certificate revocation lists (CRLs) for the infrastructure CAs.  We are working on compiling and adding information for ALL CAs currently in the Federal PKI. 
 
 When downloading **any** Certificate file from the list below, please verify the thumbprint (hash) on the downloaded file.  You can [verify the hash](#verify-a-hash) using common utilities on operating systems. 
 
@@ -28,7 +28,15 @@ When downloading **any** Certificate file from the list below, please verify the
 | P7C file - Issued By						| http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c	|
 | P7C file - Issued To						| http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c	|
 
+### Federal Bridge CA G4
 
+|**Federal Bridge CA G4**|**Information**|
+|-----------|---------------|
+| Certificate Revocation List				| http://repo.fpki.gov/bridge/fbcag4.crl				|
+| P7C file - Issued By						| http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c	|
+| P7C file - Issued To						| http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c	|
+
+	 
 
 ### Verify a hash
 You can verify the hash on files, including certificate files, using common utilities on operating systems.  Examples:
