@@ -34,7 +34,7 @@ The following certificates were issued **BY** or **TO** the FPKI Trust Infrastru
 | FPKIMA |	Federal Bridge CA G4	| Federal Common Policy CA	| e836f3016bfb6e8df274f27fd8a4a5054517b0f1 | 12/12/2019 |
 | FPKIMA	| Federal Common Policy CA	| Federal Bridge CA G4	| 4ac107ee2151f0cb6b54ef350759f7bb51a3fca2 | 12/12/2019 |
 | CertiPath |	CertiPath Bridge CA - G2	| Federal Bridge CA G4	| 3bfc4df881682f8846bff486d422025aee7494d8 | 12/12/2019 |
-| DigiCert	| DigiCert Federated ID L3 CA	| Federal Bridge CA G4	| 17eaffeebc2f01cf5538b875d6b6b584fa88e27f | 12/16/2019 |
+| DigiCert	| DigiCert Federated ID L3 CA	| Federal Bridge CA G4	| 28f059e2dffac9de78fb7a1670c082dad2522d3b | 12/16/2019 |
 | DoD	| DoD Interoperability Root CA 2	| Federal Bridge CA G4	| ad9f51f8030956e9b85423256911868fd7a370cb	| 12/16/2019 |
 | Entrust	| Entrust Managed Services NFI Root CA	| Federal Bridge CA G4	| 313f87f0eb4f8e6c658f5e66f58764282c54fba4 | 12/16/2019 |
 | GPO	| GPO PCA	| Federal Bridge CA G4	| de8171556288add44e16d631653c46adab4dcf79 | 12/16/2019 |
