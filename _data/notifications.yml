@@ -1779,7 +1779,35 @@
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
   sia_uri: http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frcaG2.p7c
   ocsp_uri:    
-    
+
+- notice_date: January 7, 2020
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA intends to issue a cross certificate to Fortior Solutions. This is a renewal for the cross certificate from the TSCP SHA256 Bridge CA to Fortior Solutions Intermediate CA 2018, expiring February 11, 2020.
+  contact: steve.race at tscp dot org
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Fortior Solutions Intermediate CA 2018, OU=Certificate Authorities, O=Fortior Solutions, C=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: January 7, 2020
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA intends to issue a cross certificate to Alexion Pharmaceuticals, Inc. This is a renewal for the cross certificate from the TSCP SHA256 Bridge CA to the Alexion Pharmaceuticals Issue 2 CA, expiring January 23, 2020.
+  contact: steve.race at tscp dot org
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Alexion Pharmaceuticals Issue 2 CA, OU=CAs, O=Alexion Pharmaceuticals, C=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+ 
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
