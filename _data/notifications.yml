@@ -497,7 +497,7 @@
   start_datetime: February 11, 2019
   system: TSCP SHA256 Bridge CA
   change_description: Issuance of a cross-certificate to Fortior Solutions, Inc.
-  contact: steve.race at tscp dot org
+  contact: steve dot race at tscp dot org
   ca_certificate_hash: aebdf407b44afd431d8364012e096aea2a32a55d
   ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
   ca_certificate_subject: CN=Fortior Solutions Intermediate CA 2018, OU=Certificate Authorities, O=Fortior Solutions, C=US
@@ -509,7 +509,7 @@
   start_datetime: February 11, 2019
   system: Fortior Solutions Intermediate CA 2018
   change_description: Issuance of a cross-certificate to TSCP Bridge
-  contact: steve.race at tscp dot org
+  contact: steve dot race at tscp dot org
   ca_certificate_hash: dc4b77d79b815187f5e0e73d13f6fe41cab86fab
   ca_certificate_issuer: CN=Fortior Solutions Intermediate CA 2018, OU=Certificate Authorities, O=Fortior Solutions, C=US
   ca_certificate_subject: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
@@ -521,7 +521,7 @@
   start_datetime: January 23, 2019
   system: TSCP SHA256 Bridge CA
   change_description: Issuance of a cross-certificate to Alexion Pharmaceuticals, Inc
-  contact: steve.race at tscp dot org
+  contact: steve dot race at tscp dot org
   ca_certificate_hash: 692a53fa725e5581a5b1db1c3d7b27e6feb9cae8
   ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
   ca_certificate_subject: CN=Alexion Pharmaceuticals Issue 2 CA, OU=CAs, O=Alexion Pharmaceuticals, C=US
@@ -1011,7 +1011,7 @@
   start_datetime: June 12, 2019
   system: TSCP SHA256 Bridge CA  
   change_description: The TSCP SHA256 Bridge CA issued a cross-certificate to the DocuSign Root CA
-  contact: steve.race at tscp dot org 
+  contact: steve dot race at tscp dot org 
   ca_certificate_hash: D1382AE6DACA5A69FE75B34635F529C79D5E2D90
   ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US 
   ca_certificate_subject: CN=DocuSign Root CA, OU=TSCP, O=DocuSign Inc., C=US
@@ -1025,7 +1025,7 @@
   start_datetime:  
   system: DocuSign Root CA
   change_description: The DocuSign Root CA (cross-certified with the TSCP SHA256 Bridge CA) intends to certify an issuing certification authority.  
-  contact: steve.race at tscp dot org  
+  contact: steve dot race at tscp dot org  
   ca_certificate_hash:  
   ca_certificate_issuer: CN=DocuSign Root CA, OU=TSCP, O=DocuSign Inc., C=US
   ca_certificate_subject: 
@@ -1422,7 +1422,7 @@
   start_datetime:  
   system: TSCP SHA256 Bridge CA
   change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA intends to issue a cross certificate to Carillon Federal Services.
-  contact: steve.race at tscp dot org
+  contact: steve dot race at tscp dot org
   ca_certificate_hash:  
   ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
   ca_certificate_subject: 
@@ -1779,7 +1779,35 @@
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
   sia_uri: http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frcaG2.p7c
   ocsp_uri:    
-    
+
+- notice_date: January 7, 2020
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA intends to issue a cross certificate to Fortior Solutions. This is a renewal for the cross certificate from the TSCP SHA256 Bridge CA to Fortior Solutions Intermediate CA 2018, expiring February 11, 2020.
+  contact: steve dot race at tscp dot org
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Fortior Solutions Intermediate CA 2018, OU=Certificate Authorities, O=Fortior Solutions, C=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: January 7, 2020
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA intends to issue a cross certificate to Alexion Pharmaceuticals, Inc. This is a renewal for the cross certificate from the TSCP SHA256 Bridge CA to the Alexion Pharmaceuticals Issue 2 CA, expiring January 23, 2020.
+  contact: steve dot race at tscp dot org
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Alexion Pharmaceuticals Issue 2 CA, OU=CAs, O=Alexion Pharmaceuticals, C=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+ 
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
