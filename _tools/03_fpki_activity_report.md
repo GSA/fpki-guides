@@ -54,6 +54,7 @@ The following certificates have been removed from the FPKI Trust Infrastructure 
 | CertiPath Bridge	| CertiPath Bridge CA - G2	| Federal Bridge CA 2016	| 4d4392ed9abaa619c97dd4ce668937f5d486f1c9	| 12/15/2019 | Expired |
 | USPTO	| USPTO_INTR_CA1	| Federal Bridge CA 2016	| 0704ea9633a45a9a39123bac28be01078c6bfd3a	| 12/15/2019 | Expired |
 | USPTO	| Federal Bridge CA 2016	| USPTO_INTR_CA1	| d8d860c11f216ad1fe07e15caf19b3083c83dbba	| 12/19/2019 | Expired |
+| State |  U.S. Department of State AD Root CA | Federal Common Policy CA	| c8feb56d0efa3b3b4e2777986304cc19118676a4 | 1/27/2020 | Re-issue |
 | FPKIMA	| SHA-1 Federal Root CA G2	| Federal Common Policy CA	| 27c589ff2853bd1949cfa433f36a5e285b2e2c7c	| 12/31/2019 | Expired |
 | CertiPath	| SHA-1 Federal Root CA G2	| CertiPath Bridge CA |	81777b472d6d561d1774d12322f827cab9ff534b	| 12/31/2019 | Expired |
 | CertiPath	| CertiPath Bridge CA	| SHA-1 Federal Root CA G2	| 71fb94efbcfc8fffaab00db73e92da36a0e601fa	| 12/29/2019 | Expired |
