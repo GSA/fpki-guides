@@ -1808,6 +1808,20 @@
   sia_uri:
   ocsp_uri:
  
+- notice_date: January 15, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: January 8, 2020 
+  system: STRAC Bridge Root Certification Authority
+  change_description: The STRAC Bridge Root Certification Authority issued a cross certificate to the FTI Certification Authority. 
+  contact: pki at strac dot org
+  ca_certificate_hash: f012c16cfeda614c5ca43e464c91e316f5067933
+  ca_certificate_issuer: CN=STRAC Bridge Root Certification Authority, OU=STRAC PKI Trust Infrastructure, O=STRAC, C=US
+  ca_certificate_subject: CN=FTI Certification Authority, OU=FTI PKI Trust Infrastructure, O=Foundation for Trusted Identity, C=US
+  cdp_uri: http://pki.strac.org/bridge/crl/STRACBridgeRootCA.crl
+  aia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
+  sia_uri: http://pki.fti.org/fti_ca/certificates/FTICA.p7c
+  ocsp_uri: http://certstatus.strac.org
+
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
