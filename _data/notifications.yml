@@ -1827,7 +1827,7 @@
   start_datetime: January 17, 2020 
   system: U.S. Department of State AD Root CA 
   change_description: The Department of State AD Root CA issued a new link certificate. The Authority Key Identifier in the new link certificate maps to the Subject Key Identifier found in the 4096-bit certificate issued from the Federal Common Policy CA to the U.S. Department of State AD Root CA. 
-  contact: 
+  contact: fpki at gsa dot gov
   ca_certificate_hash: 9805f8a8c80be8f691122550d7f5fc163830d751 
   ca_certificate_issuer: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu 
   ca_certificate_subject: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu 
