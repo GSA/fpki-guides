@@ -1308,7 +1308,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 13, 2019  
   system: Entrust Federal Shared Service Provider
-  change_description: The recently re-keyed Entrust Managed Services Root CA issued a certificate to the re-keyed Entrust Managed Services SSP CA. Entrust will publish and begin issuance from the re-keyed Entrust Managed Services SSP CA on Friday, September 27, 2019, between 6:00 PM Eastern – 10:00 PM Eastern. In the meantime, the certificate is available at https://enrollwebfed.managed.entrust.com/fssp/cda-docs/html/FedCertsoverviewfed.html. 
+  change_description: The recently re-keyed Entrust Managed Services Root CA issued a certificate to the re-keyed Entrust Managed Services SSP CA. Entrust will publish and begin issuance from the re-keyed Entrust Managed Services SSP CA on Friday, September 27, 2019, between 6:00 PM Eastern – 10:00 PM Eastern. In the meantime, the certificate is available at https://enrollwebfed.managed.entrust.com/fssp/cda-docs/html/FedCertsoverviewfed.html. 
   contact: Cris dot TenEyck at entrustdatacard dot com and Howard dot Freitag at entrustdatacard dot com
   ca_certificate_hash: 722e8abbe6b66e47d1bcec3c7ec47aa5bbe4d3c5 
   ca_certificate_issuer: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US
@@ -1322,7 +1322,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 14, 2019  
   system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: The Federal Common Policy CA issued a certificate to the re-keyed Entrust Managed Services Root CA.  Entrust will cut over to and begin issuance from the re-keyed Entrust Managed Services Root and SSP CA certificates on Friday, September 27, 2019, between 6:00 PM Eastern – 10:00 PM Eastern.
+  change_description: The Federal Common Policy CA issued a certificate to the re-keyed Entrust Managed Services Root CA.  Entrust will cut over to and begin issuance from the re-keyed Entrust Managed Services Root and SSP CA certificates on Friday, September 27, 2019, between 6:00 PM Eastern – 10:00 PM Eastern.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9 
   ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
@@ -1808,6 +1808,20 @@
   sia_uri:
   ocsp_uri:
  
+- notice_date: January 15, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: January 8, 2020 
+  system: STRAC Bridge Root Certification Authority
+  change_description: The STRAC Bridge Root Certification Authority issued a cross certificate to the FTI Certification Authority. 
+  contact: pki at strac dot org
+  ca_certificate_hash: f012c16cfeda614c5ca43e464c91e316f5067933
+  ca_certificate_issuer: CN=STRAC Bridge Root Certification Authority, OU=STRAC PKI Trust Infrastructure, O=STRAC, C=US
+  ca_certificate_subject: CN=FTI Certification Authority, OU=FTI PKI Trust Infrastructure, O=Foundation for Trusted Identity, C=US
+  cdp_uri: http://pki.strac.org/bridge/crl/STRACBridgeRootCA.crl
+  aia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
+  sia_uri: http://pki.fti.org/fti_ca/certificates/FTICA.p7c
+  ocsp_uri: http://certstatus.strac.org
+
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
