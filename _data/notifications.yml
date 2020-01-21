@@ -1821,7 +1821,20 @@
   aia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
   sia_uri: http://pki.fti.org/fti_ca/certificates/FTICA.p7c
   ocsp_uri: http://certstatus.strac.org
-
+  
+- notice_date: January 21, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: January 17, 2020 
+  system: U.S. Department of State AD Root CA 
+  change_description: The Department of State AD Root CA issued a new link certificate. The Authority Key Identifier in the new link certificate maps to the Subject Key Identifier found in the 4096-bit certificate issued from the Federal Common Policy CA to the U.S. Department of State AD Root CA. 
+  contact: 
+  ca_certificate_hash: 9805f8a8c80be8f691122550d7f5fc163830d751 
+  ca_certificate_issuer: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu 
+  ca_certificate_subject: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu 
+  cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIRootCA1.crl
+  aia_uri: http://crls.pki.state.gov/AIA/CertsIssuedToDoSADRootCA.p7c 
+  sia_uri:  
+  ocsp_uri: http://ocsp.pki.state.gov/OCSP/DoSOCSPResponder 
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
