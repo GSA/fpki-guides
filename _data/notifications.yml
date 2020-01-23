@@ -1821,7 +1821,77 @@
   aia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
   sia_uri: http://pki.fti.org/fti_ca/certificates/FTICA.p7c
   ocsp_uri: http://certstatus.strac.org
-  
+    
+- notice_date: January 18, 2020  
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: ORC NFI CA 3 
+  change_description: WidePoint intends to revoke the cross certificate issued by ORC NFI CA 3 to the Federal Bridge CA 2016.
+  contact: pkipolicy at orc dot com 
+  ca_certificate_hash: 739425b5e2fd18cc84efb67415bafacb67e0d3a8
+  ca_certificate_issuer: CN=ORC NFI CA 3, O=ORC PKI, C=US 
+  ca_certificate_subject: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US 
+  cdp_uri: http://crl-server.orc.com/CRLs/ORCNFI3.crl
+  aia_uri: http://crl-server.orc.com/caCerts/ORCNFI3.p7c
+  sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
+  ocsp_uri: http://nfi3.eva.orc.com/  
+
+- notice_date: January 18, 2020  
+  change_type: Intent to Decommission CA
+  start_datetime:
+  system: WidePoint NFI Root 1  
+  change_description: WidePoint intends to decommission WidePoint NFI Root 1. All certificates issued by WidePoint NFI Root 1 will be revoked before the CA is decommissioned. 
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash:
+  ca_certificate_issuer:  
+  ca_certificate_subject:  
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: January 18, 2020  
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: The Federal Bridge CA 2016 intends to revoke the cross certificate issued to WidePoint NFI Root 1.   
+  contact: fpki dash help at gsa dot gov  
+  ca_certificate_hash: 92bc06fe6b27cbe4723f309f34681fc57c8166ce
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint NFI Root 1, OU=Certification Authorities, O=WidePoint, C=US 
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT1.p7c
+  ocsp_uri:
+
+- notice_date: January 18, 2020  
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: WidePoint NFI Root 2 
+  change_description: The planned WidePoint NFI Root 2 intends to issue a certificate to ORC NFI CA 3.
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US  
+  ca_certificate_subject: CN=ORC NFI CA 3, O=ORC PKI, C=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: January 18, 2020 
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a cross certificate to the planned WidePoint NFI Root 2.  
+  contact: fpki dash help at gsa dot gov 
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US 
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
 - notice_date: January 21, 2020
   change_type: CA Certificate Issuance
   start_datetime: January 17, 2020 
@@ -1835,6 +1905,21 @@
   aia_uri: http://crls.pki.state.gov/AIA/CertsIssuedToDoSADRootCA.p7c 
   sia_uri:  
   ocsp_uri: http://ocsp.pki.state.gov/OCSP/DoSOCSPResponder 
+  
+- notice_date: January 23, 2020
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: U.S. Department of State AD Root CA
+  change_description: The Department of State intends to re-key U.S. Department of State PIV CA2. The CA signing key length will be changed from its current 2048-bit key size to 3072-bits. The re-keyed U.S. Department of State PIV CA2 certificate will be issued from the 4096-bit U.S. Department of State AD Root CA.
+  contact: shomolp at state dot gov or shanleyrj at state dot gov
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  ca_certificate_subject: OU=U.S. Department of State PIV CA2, OU=Certification Authorities, OU=PIV, OU=Department of State, O=U.S. Government, C=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:  
+
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
