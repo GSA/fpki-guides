@@ -31,12 +31,15 @@ navbar:
 - title: PIV Guides
   description: PIV Guides
   url: https://piv.idmanagement.gov
-- title: Physical Access Control Guide
-  description: Physical Access Control Guides
-  url: https://pacs.idmanagement.gov
 #- title: Federal PKI Guides
 #  description: Federal PKI Guides
 #  url: https://github.com/gsa/fpki-guides
+- title: Physical Access Control Guide
+  description: Physical Access Control Guides
+  url: https://pacs.idmanagement.gov
+- title: Program Management Guide
+  description: Program Management Guide
+  url: https://pm.idmanagement.gov
 
 # Build settings
 markdown: kramdown
