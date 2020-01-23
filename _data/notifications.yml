@@ -1911,7 +1911,7 @@
   start_datetime:
   system: U.S. Department of State AD Root CA
   change_description: The Department of State intends to re-key U.S. Department of State PIV CA2. The CA signing key length will be changed from its current 2048-bit key size to 3072-bits. The re-keyed U.S. Department of State PIV CA2 certificate will be issued from the 4096-bit U.S. Department of State AD Root CA.
-  contact: shomolp at state.gov or shanleyrj at state dot gov
+  contact: shomolp at state dot gov or shanleyrj at state dot gov
   ca_certificate_hash:
   ca_certificate_issuer: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
   ca_certificate_subject: OU=U.S. Department of State PIV CA2, OU=Certification Authorities, OU=PIV, OU=Department of State, O=U.S. Government, C=US
