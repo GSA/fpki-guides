@@ -1920,6 +1920,64 @@
   sia_uri:
   ocsp_uri:  
 
+- notice_date: January 27, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: January 24, 2020
+  system: U.S. Department of State AD Root CA
+  change_description: The Department of State re-keyed U.S. Department of State PIV CA2. 
+  contact: shomolp at state dot gov or shanleyrj at state dot gov
+  ca_certificate_hash: 68a4e9ab7a1fb8fb85316a770ff9ca874c020724
+  ca_certificate_issuer: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  ca_certificate_subject: OU=U.S. Department of State PIV CA2, OU=Certification Authorities, OU=PIV, OU=Department of State, O=U.S. Government, C=US
+  cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIRootCA1.crl
+  aia_uri: http://crls.pki.state.gov/AIA/CertsIssuedToDoSADRootCA.p7c
+  sia_uri:
+  ocsp_uri: http://ocsp.pki.state.gov/OCSP/DoSOCSPResponder 
+
+- notice_date: 
+  change_type: CA Certificate Issuance
+  start_datetime: January 28, 2020
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA issued a cross certificate to Fortior Solutions. This is a renewal for the cross certificate from the TSCP SHA256 Bridge CA to Fortior Solutions Intermediate CA 2018, expiring February 11, 2020.
+  contact: steve dot race at tscp dot org
+  ca_certificate_hash: 000ea5b4b63f39d083bd5a0777ca334d6ff58c94
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Fortior Solutions Intermediate CA 2018, OU=Certificate Authorities, O=Fortior Solutions, C=US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: January 28, 2020 
+  change_type: CA Certificate Issuance
+  start_datetime: January 22, 2020
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA issued a cross certificate to Alexion Pharmaceuticals, Inc. This is a renewal for the cross certificate from the TSCP SHA256 Bridge CA to the Alexion Pharmaceuticals Issue 2 CA that expired on January 23, 2020.
+  contact: steve dot race at tscp dot org
+  ca_certificate_hash: 2d7b753e7aee8a31ccf77fc6b1f6ff48a15debba
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Alexion Pharmaceuticals Issue 2 CA, OU=CAs, O=Alexion Pharmaceuticals, C=US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: January 28, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: January 15, 2020
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA issued a cross certificate to the Federal Bridge CA G4.
+  contact: steve dot race at tscp dot org
+  ca_certificate_hash: cc2f344b6c6965073129342f761dc9d55f6ae3fe
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri:
+
+
+
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
