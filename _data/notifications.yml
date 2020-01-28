@@ -1934,7 +1934,7 @@
   sia_uri:
   ocsp_uri: http://ocsp.pki.state.gov/OCSP/DoSOCSPResponder 
 
-- notice_date: 
+- notice_date: January 28, 2020 
   change_type: CA Certificate Issuance
   start_datetime: January 28, 2020
   system: TSCP SHA256 Bridge CA
