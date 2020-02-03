@@ -140,9 +140,9 @@
 -
  branch: Executive
  agency: Environmental Protection Agency
- credentialProvider: Internal <br>(migrating to USAccess)
- ssp: WidePoint Federal SSP and Entrust Federal SSP
- ca: <a href="#orc-ssp-4">ORC SSP 4</a> and <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a>
+ credentialProvider: USAccess
+ ssp: Entrust Federal SSP
+ ca: <a href="#entrust-managed-services-ssp-ca">Entrust Managed Services SSP CA</a>
 -
  branch: Executive
  agency: Federal Reserve Board
