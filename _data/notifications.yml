@@ -1976,8 +1976,19 @@
   sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
   ocsp_uri:
 
-
-
+- notice_date: February 11, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: January 8, 2020
+  system: STRAC Bridge Root Certification Authority
+  change_description: The STRAC Bridge Root Certification Authority issued a cross certificate to the Federal Bridge CA G4.
+  contact: pki at strac dot org
+  ca_certificate_hash: c5229a1bc85e3d6a0b75442cd8b4a91182b6fe14
+  ca_certificate_issuer: CN = STRAC Bridge Root Certification Authority, OU = STRAC PKI Trust Infrastructure, O = STRAC, C = US
+  ca_certificate_subject: CN = Federal Bridge CA G4, OU = FPKI, O = U.S. Government, C = US
+  cdp_uri: http://pki.strac.org/bridge/crl/STRACBridgeRootCA.crl
+  aia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri: http://certstatus.strac.org
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
