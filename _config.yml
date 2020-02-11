@@ -31,12 +31,15 @@ navbar:
 - title: PIV Guides
   description: PIV Guides
   url: https://piv.idmanagement.gov
-- title: Physical Access Control Guide
-  description: Physical Access Control Guides
-  url: https://pacs.idmanagement.gov
 #- title: Federal PKI Guides
 #  description: Federal PKI Guides
 #  url: https://github.com/gsa/fpki-guides
+- title: Physical Access Control Guide
+  description: Physical Access Control Guides
+  url: https://pacs.idmanagement.gov
+- title: Program Management Guide
+  description: Program Management Guide
+  url: https://pm.idmanagement.gov
 
 # Build settings
 markdown: kramdown
@@ -67,9 +70,10 @@ navigation:
   internal: true
   coll: false
 - text: Certificates and CRLs
-  url: crls
+  url: crls/
   internal: true
-  coll: false
+  coll: true
+  collname: crls
 # - text: Certificate Policies
   # url: policyobjects
   # internal: true
@@ -133,6 +137,10 @@ collections:
   faq:
     label: "FAQ"
     permalink: /faq/:path/
+    output: true
+  crls:
+    label: "Certificates and CRLs"
+    permalink: /crls/:path/
     output: true
   truststores:
     label: "Trust Stores"
