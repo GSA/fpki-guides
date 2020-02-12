@@ -30,12 +30,14 @@ No certificates were issued **BY** or **TO** the FPKI Trust Infrastructure in th
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
+| No activity to report | | | | |
 
 
 No certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
+| No activity to report | | | | |
 
 The following certificates are planned for a certificate action in the next four months.
 
