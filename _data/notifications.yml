@@ -1989,6 +1989,57 @@
   aia_uri: http://pki.strac.org/bridge/certificates/STRACBridgeRootCA.p7c
   sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
   ocsp_uri: http://certstatus.strac.org
+  
+- notice_date: February 11, 2020
+  change_type: Intent to Perform CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 intends to revoke the cross certificate issued to the TSCP SHA256 Bridge CA on or around February 27, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 874007002a4a2fff3edcf90eb41adce7c2fb4915
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+
+- notice_date: February 11, 2020
+  change_type: Intent to Perform CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 intends to revoke the cross certificate issued to IdenTrust Global Common Root CA 1 on or around February 27, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 052454753d53ff2376737fa7798ec72fab82833c
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=IdenTrust Global Common Root CA 1, O=IdenTrust, C=US
+
+- notice_date: February 11, 2020
+  change_type: Intent to Perform CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 intends to revoke the cross certificate issued to IdenTrust ACES CA 2 on or around February 27, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: ab973a75fa594f5a97c53e3c50244ae06ca610a8
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=IdenTrust ACES CA 2, OU=IdenTrust Public Sector, O=IdenTrust, C=US
+
+- notice_date: February 11, 2020
+  change_type: Intent to Perform CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 intends to revoke the cross certificate issued to the Entrust Managed Services NFI Root CA on or around March 17, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 220508b0ab72e2ee3acaa6a9ef5001c87c523ea4
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Entrust Managed Services NFI Root CA, OU=Certification Authorities, O=Entrust, C=US
+
+- notice_date: February 12, 2020 
+  change_type: CA Certificate Issuance
+  start_datetime: February 4, 2020
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a cross certificate to the new WidePoint NFI Root 2.  
+  contact: fpki dash help at gsa dot gov 
+  ca_certificate_hash: b0b49b217bce1b18fb374dc629d5f100ba9dde49
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US 
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  ocsp_uri:
+
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
