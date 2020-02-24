@@ -2069,7 +2069,7 @@
 - notice_date: February 24, 2020
   change_type: CA Certificate Issuance
   system: CertiPath Bridge CA - G3 
-  change_description: The CertiPath Bridge CA - G3 issued a cross certificate to the Federal Bridge CA G4.
+  change_description: CertiPath Bridge CA - G3 issued a cross certificate to the Federal Bridge CA G4.
   contact: support at certipath dot com  
   ca_certificate_hash: f01f590afc18706240ebeab75b5c3e6defd67fb0
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
@@ -2083,7 +2083,7 @@
 - notice_date: February 24, 2020 
   change_type: CA Certificate Issuance
   system: WidePoint NFI Root 2 
-  change_description: The WidePoint NFI Root 2 issued a certificate to ORC NFI CA 3.
+  change_description: WidePoint NFI Root 2 issued a certificate to ORC NFI CA 3.
   contact: pkipolicy at orc dot com
   ca_certificate_hash: 84262340df40dadba0206efecf4211b45f7d88c2
   ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US  
