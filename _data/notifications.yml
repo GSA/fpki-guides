@@ -2054,6 +2054,15 @@
   ocsp_uri:
   
 - notice_date: February 24, 2020
+  change_type: Intent to Perform CA Certificate Revocation
+  system: SAFE Bridge CA 02
+  change_description: SAFE Bridge CA 02 intends to revoke the cross certificate issued to Exostar Federated Identity Service Root CA 2.
+  contact: kyle dot neuman at makeidentitysafe dot com
+  ca_certificate_hash: 534d0225dd69aae7a1820a493156ed1c852c73e4
+  ca_certificate_issuer: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
+  ca_certificate_subject: CN=Exostar Federated Identity Service Root CA 2, OU=Certification Authorities, O=Exostar LLC, C=US
+  
+- notice_date: February 24, 2020
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
   change_description: The Federal Bridge CA G4 issued a cross certificate to the CertiPath Bridge CA - G3.
@@ -2079,7 +2088,6 @@
   sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
   ocsp_uri:  
 
-
 - notice_date: February 24, 2020 
   change_type: CA Certificate Issuance
   system: WidePoint NFI Root 2 
@@ -2092,6 +2100,7 @@
   aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
   sia_uri:
   ocsp_uri:
+
 
 
 #- notice_date:  
