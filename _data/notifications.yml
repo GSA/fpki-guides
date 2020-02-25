@@ -2052,6 +2052,55 @@
   aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
   sia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
   ocsp_uri:
+  
+- notice_date: February 24, 2020
+  change_type: Intent to Perform CA Certificate Revocation
+  system: SAFE Bridge CA 02
+  change_description: SAFE Bridge CA 02 intends to revoke the cross certificate issued to Exostar Federated Identity Service Root CA 2.
+  contact: kyle dot neuman at makeidentitysafe dot com
+  ca_certificate_hash: 534d0225dd69aae7a1820a493156ed1c852c73e4
+  ca_certificate_issuer: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
+  ca_certificate_subject: CN=Exostar Federated Identity Service Root CA 2, OU=Certification Authorities, O=Exostar LLC, C=US
+  
+- notice_date: February 24, 2020
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a cross certificate to the CertiPath Bridge CA - G3.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 77d6cf512ec6054e9ddf37a37d83c4955228e21c
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://aia.certipath.com/IssuedBy-CertiPathBridgeCA-G3.p7c
+  ocsp_uri: 
+  
+- notice_date: February 24, 2020
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA - G3 
+  change_description: CertiPath Bridge CA - G3 issued a cross certificate to the Federal Bridge CA G4.
+  contact: support at certipath dot com  
+  ca_certificate_hash: f01f590afc18706240ebeab75b5c3e6defd67fb0
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri:  
+
+- notice_date: February 24, 2020 
+  change_type: CA Certificate Issuance
+  system: WidePoint NFI Root 2 
+  change_description: WidePoint NFI Root 2 issued a certificate to ORC NFI CA 3.
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash: 84262340df40dadba0206efecf4211b45f7d88c2
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US  
+  ca_certificate_subject: CN=ORC NFI CA 3, O=ORC PKI, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri:
+  ocsp_uri:
+
 
 
 #- notice_date:  
