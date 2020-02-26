@@ -2056,7 +2056,7 @@
 - notice_date: February 20, 2020
   change_type: Intent to Perform CA Certificate Issuance
   system: CertiPath Bridge CA - G3
-  change_description: The CertiPath Bridge CA - G3 CA intends to issue a cross certificate to Carillon Federal Services PIV-I CA1. This certificate will replace the certificate issued by the CertiPath Bridge CA - G2 CA expiring on February 29, 2020.
+  change_description: CertiPath Bridge CA - G3 intends to issue a cross certificate to Carillon Federal Services PIV-I CA1. This certificate will replace the certificate issued by CertiPath Bridge CA - G2 expiring on February 29, 2020.
   contact: support at certipath dot com
   ca_certificate_hash:
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
@@ -2069,7 +2069,7 @@
 - notice_date: February 20, 2020
   change_type: Intent to Perform CA Certificate Issuance
   system: CertiPath Bridge CA - G3
-  change_description: The CertiPath Bridge CA - G3 CA intends to issue a cross certificate to NextgenIDRootCA1. This certificate will replace the certificate issued by the CertiPath Bridge CA - G2 CA expiring on February 29, 2020.
+  change_description: CertiPath Bridge CA - G3 intends to issue a cross certificate to NextgenIDRootCA1. This certificate will replace the certificate issued by CertiPath Bridge CA - G2 expiring on February 29, 2020.
   contact: support at certipath dot com
   ca_certificate_hash:
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
@@ -2083,7 +2083,7 @@
 - notice_date: February 20, 2020
   change_type: Intent to Perform CA Certificate Issuance
   system: CertiPath Bridge CA - G3
-  change_description: The CertiPath Bridge CA - G3 CA intends to issue a cross certificate to Northrop Grumman Corporate Root CA-G2. This certificate will replace the certificate issued by the CertiPath Bridge CA - G2 CA expiring on February 29, 2020.
+  change_description: CertiPath Bridge CA - G3 intends to issue a cross certificate to Northrop Grumman Corporate Root CA-G2. This certificate will replace the certificate issued by CertiPath Bridge CA - G2 expiring on February 29, 2020.
   contact: support at certipath dot com
   ca_certificate_hash:
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
@@ -2097,7 +2097,7 @@
 - notice_date: February 20, 2020
   change_type: Intent to Perform CA Certificate Issuance
   system: CertiPath Bridge CA - G3
-  change_description: The CertiPath Bridge CA - G3 CA intends to issue a cross certificate to Carillon PKI Services G2 Root CA 2.
+  change_description: CertiPath Bridge CA - G3 intends to issue a cross certificate to Carillon PKI Services G2 Root CA 2.
   contact: support at certipath dot com
   ca_certificate_hash:
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
@@ -2109,7 +2109,7 @@
 - notice_date: February 20, 2020
   change_type: Intent to Perform CA Certificate Issuance
   system: CertiPath Bridge CA - G3
-  change_description: The CertiPath Bridge CA - G3 CA intends to issue a cross certificate to the Netherlands Ministry of Defence.
+  change_description: CertiPath Bridge CA - G3 intends to issue a cross certificate to the Netherlands Ministry of Defence.
   contact: support at certipath dot com
   ca_certificate_hash:
   ca_certificate_subject: CN=Ministerie van Defensie PKIoverheid Organisatie Persoon CA - G3, 2.5.4.97=NTRNL-27370985, O=Ministerie van Defensie, C=NL
