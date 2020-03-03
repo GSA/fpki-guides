@@ -2213,6 +2213,7 @@
   ca_certificate_hash: 5283e2ea0ee49b1deb93841e81b1b5b524b1e0b5
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
   ca_certificate_subject: CN=Carillon PKI Services G2 Root CA 2, OU=Certification Authorities, O=Carillon Information Security Inc., C=CA
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
   aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
   sia_uri:
   ocsp_uri:  
@@ -2224,6 +2225,7 @@
   contact: support at certipath dot com
   ca_certificate_hash: 7d0fb042df05a08fa7b2303346a3f1758f314a41
   ca_certificate_subject: CN=Ministerie van Defensie PKIoverheid Organisatie Persoon CA - G3, 2.5.4.97=NTRNL-27370985, O=Ministerie van Defensie, C=NL
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
   aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
   sia_uri:
