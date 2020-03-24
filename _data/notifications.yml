@@ -2270,6 +2270,19 @@
   aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
   sia_uri: http://www.fis.evincible.com/fis/public/ExostarFederatedIdentityServiceRootCA2.p7c
   ocsp_uri:   
+  
+- notice_date: March 17, 2020
+  change_type: CA Certificate Issuance
+  system: CertiPath Bridge CA - G2
+  change_description: CertiPath Bridge CA - G2 issued a cross certificate to the Federal Bridge CA G4.
+  contact: support at certipath dot com
+  ca_certificate_hash: 6f9830730374438b333d78876c1f830304d49451
+  ca_certificate_issuer:  CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
+  ca_certificate_subject: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G2.crl 
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G2.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri:
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
