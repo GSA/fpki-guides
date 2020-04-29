@@ -2301,7 +2301,7 @@
   change_type: CA Certificate Issuance
   start_datetime: April 21, 2020
   system: CertiPath Bridge
-  change_description: Issuance of cross certificate from CertiPath Bridge CA – G3 to Boeing PCA G3.
+  change_description: CertiPath Bridge CA – G3 issued a cross certificate to Boeing PCA G3.
   contact: support at certipath dot com
   ca_certificate_hash: f062bfcc913dfd1362ececce82e17fbf6fbaee83 
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US 
@@ -2315,7 +2315,7 @@
   change_type: CA Certificate Issuance
   start_datetime: April 21, 2020
   system: CertiPath Bridge
-  change_description: Issuance of cross certificate from CertiPath Bridge CA – G3 to Lockheed Martin Root Certification Authority 2.
+  change_description: CertiPath Bridge CA – G3 issued a cross certificate to Lockheed Martin Root Certification Authority 2.
   contact: support at certipath dot com
   ca_certificate_hash: f72ec29d98caa8eefc330848d0d31235bd088ea0 
   ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US  
