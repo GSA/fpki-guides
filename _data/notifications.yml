@@ -20,7 +20,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 20, 2017 12:15:44 PM
   system: Federal PKI Trust Infrastructure
-  change_description: Issuance of cross-certificate from Federal Bridge to Identrust
+  change_description: Issuance of cross certificate from Federal Bridge to Identrust
   contact: fpki at gsa dot gov
   ca_certificate_hash: 8c 7a 33 76 da 95 e2 be 52 da bc 03 21 56 f4 c4 78 74 e4 c4
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -34,7 +34,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 20, 2017 12:26:12 PM
   system: Federal PKI Trust Infrastructure
-  change_description: Issuance of cross-certificate from Federal Bridge to Identrust
+  change_description: Issuance of cross certificate from Federal Bridge to Identrust
   contact: fpki at gsa dot gov
   ca_certificate_hash: f2 82 e5 05 30 11 13 e7 36 8a 26 2e 4e 3d fe 23 ed 39 c9 54
   ca_certificate_issuer:  Federal Bridge CA 2016
@@ -48,7 +48,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 20, 2017 12:56:58 PM
   system: Federal PKI Trust Infrastructure
-  change_description: Issuance of cross-certificate from Federal Bridge to Identrust
+  change_description: Issuance of cross certificate from Federal Bridge to Identrust
   contact: fpki at gsa dot gov
   ca_certificate_hash: 8f 0c 18 76 9e 9e 6d 48 c5 8e 41 8e 9b d5 79 84 a7 ae 49 f4
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -62,7 +62,7 @@
   change_type: CA Certificate Issuance
   start_datetime: July 12, 2017 10:59:26 AM
   system: Federal PKI Trust Infrastructure
-  change_description: Issuance of cross-certificate from Federal Bridge to Widepoint
+  change_description: Issuance of cross certificate from Federal Bridge to Widepoint
   contact: fpki at gsa dot gov
   ca_certificate_hash: 8a 0a 15 2e f9 36 74 72 c8 83 28 e7 b8 18 a5 7a ed ea 33 ef
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -76,7 +76,7 @@
   change_type: CA Certificate Issuance
   start_datetime: July 25, 2017 12:57:21 PM
   system: Federal PKI Trust Infrastructure
-  change_description: Issuance of cross-certificate from Federal Bridge to Symantec
+  change_description: Issuance of cross certificate from Federal Bridge to Symantec
   contact: fpki at gsa dot gov
   ca_certificate_hash: 63 3b 29 78 0d 72 f9 b6 e6 52 f8 58 6b 13 87 02 19 5a 2c cd
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -90,7 +90,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 3, 2017 1:33:41 PM
   system: N/A
-  change_description: Issuance of cross-certificate from Federal Bridge to US Government Publishing Office
+  change_description: Issuance of cross certificate from Federal Bridge to US Government Publishing Office
   contact: fpki at gsa dot gov
   ca_certificate_hash: b8 ea bb 18 ed 54 4c 9f cf b2 99 bd 5d 32 21 27 e6 f4 8d 90
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -104,7 +104,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 4, 2017 3:28:27 PM
   system: US Government Publishing Office CAs
-  change_description: Issuance of cross-certificate from US Government Publishing Office to Federal Bridge
+  change_description: Issuance of cross certificate from US Government Publishing Office to Federal Bridge
   contact: fpki at gsa dot gov
   ca_certificate_hash: b5 d4 0b e9 4f 2e 01 4f 51 0b 29 64 36 6f 10 13 f4 1a f3 0e
   ca_certificate_issuer: GPO PCA
@@ -156,7 +156,7 @@
   change_type: CA Certificate Issuance
   start_datetime: September 28, 2017
   system: Federal PKI Trust Infrastructure
-  change_description: Issuance of cross-certificate from Federal Bridge to DigiCert
+  change_description: Issuance of cross certificate from Federal Bridge to DigiCert
   contact: fpki at gsa dot gov
   ca_certificate_hash: e8 0b dd c6 1e d8 c4 3a d0 95 fc 94 62 17 be 45 bd d3 47 c1
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -170,14 +170,14 @@
   change_type: CA Certificate Issuance
   start_datetime: November 3, 2017
   system: TSCP SHA256 Bridge CA
-  change_description: Issuance of a cross-certificate to Alexion Pharmaceuticals, Inc
+  change_description: Issuance of a cross certificate to Alexion Pharmaceuticals, Inc
   contact: shauna.russell@tscp.org, fpki at gsa dot gov
 
 - notice_date: November 16, 2017
   change_type: CA Certificate Issuance
   start_datetime: August 21, 2017
   system: Federal PKI Trust Infrastructure
-  change_description: Issuance of cross-certificate from Federal Bridge to ORC (Widepoint) ACES
+  change_description: Issuance of cross certificate from Federal Bridge to ORC (Widepoint) ACES
   contact: fpki at gsa dot gov
   ca_certificate_hash: 55 73 fc c5 e6 ff ff 2b 71 01 81 ac ca a2 ef da db 8f 0f 4e
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -191,7 +191,7 @@
   change_type: CA Certificate Issuance
   start_datetime: October 4, 2017
   system: Federal PKI Trust Infrastructure
-  change_description: Issuance of cross-certificate from Federal Bridge to ORC (Widepoint) Non-Federal Issuer CA
+  change_description: Issuance of cross certificate from Federal Bridge to ORC (Widepoint) Non-Federal Issuer CA
   contact: fpki at gsa dot gov
   ca_certificate_hash: b0 55 c6 ee 10 4e 01 eb 68 8c 8f b4 f8 7c f7 7c a3 76 af db
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -205,7 +205,7 @@
   change_type: CA Certificate Issuance
   start_datetime: October 4, 2017
   system: Federal PKI Trust Infrastructure
-  change_description: Issuance of cross-certificate from Federal Bridge to Verizon Non-Federal Issuer CA
+  change_description: Issuance of cross certificate from Federal Bridge to Verizon Non-Federal Issuer CA
   contact: fpki at gsa dot gov
   ca_certificate_hash: 68 70 66 bc e5 6b 6e 20 ae a0 c6 05 b9 b6 67 93 42 26 9f 21
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -219,7 +219,7 @@
   change_type: CA Certificate Issuance
   start_datetime: October 25, 2017
   system: Federal PKI Trust Infrastructure
-  change_description: Issuance of cross-certificate from Federal Bridge to Symantec
+  change_description: Issuance of cross certificate from Federal Bridge to Symantec
   contact: fpki at gsa dot gov
   ca_certificate_hash: 91 45 31 f5 a6 10 91 40 05 42 2e 56 d6 71 12 18 13 3b 10 48
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -233,7 +233,7 @@
   change_type: CA Certificate Issuance
   start_datetime: November 16, 2017 
   system: Federal PKI Trust Infrastructure
-  change_description: Issuance of cross-certificate from Federal Bridge 2016 to Entrust Non-Federal Root CA
+  change_description: Issuance of cross certificate from Federal Bridge 2016 to Entrust Non-Federal Root CA
   contact: fpki at gsa dot gov
   ca_certificate_hash: 22 05 08 b0 ab 72 e2 ee 3a ca a6 a9 ef 50 01 c8 7c 52 3e a4
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
@@ -247,7 +247,7 @@
   change_type:  CA Certificate Issuance
   start_datetime: January 22, 2018 7:00:00 PM
   system: CertiPath Bridge
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA–G2 to NextgenID Root CA1.
+  change_description: Issuance of cross certificate from CertiPath Bridge CA–G2 to NextgenID Root CA1.
   contact: support at certipath dot com
   ca_certificate_hash: 50a2bf7afe08edf3877854f6d0a6e59127f68a94
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
@@ -261,7 +261,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 19, 2018 7:00:00 PM
   system: CertiPath Bridge
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA to Northrop Grumman Corporate Root CA
+  change_description: Issuance of cross certificate from CertiPath Bridge CA to Northrop Grumman Corporate Root CA
   contact: support at certipath dot com
   ca_certificate_hash: 8f98b196e6b9aed7a31522efae5bf5954da744c0
   ca_certificate_issuer: CN=CertiPath Bridge CA, OU=Certification Authorities, O=CertiPath LLC, C=US
@@ -273,7 +273,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 19, 2018 7:00:00 PM
   system: CertiPath Bridge
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Carillon Federal Services PIV-I CA1
+  change_description: Issuance of cross certificate from CertiPath Bridge CA - G2 to Carillon Federal Services PIV-I CA1
   contact: support at certipath dot com
   ca_certificate_hash: 198271eee4689be1ff746e1a03cf205f4b2d518e
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
@@ -285,7 +285,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 19, 2018 7:00:00 PM
   system: CertiPath Bridge
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Northrop Grumman Corporation Root CA
+  change_description: Issuance of cross certificate from CertiPath Bridge CA - G2 to Northrop Grumman Corporation Root CA
   contact: support at certipath dot com
   ca_certificate_hash: 9bb7b4bfd188b99e10431bf5ac56a493dfd66978
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
@@ -298,7 +298,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 25, 2018 7:00:00 PM
   system: CertiPath Bridge
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to CISRCA1
+  change_description: Issuance of cross certificate from CertiPath Bridge CA - G2 to CISRCA1
   contact: support at certipath dot com
   ca_certificate_hash: c466cb26e2c9a1a483a6f81701f208b5ff522ec4
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
@@ -310,14 +310,14 @@
   change_type: CA Certificate Revocation
   start_datetime: March 26, 2018 12:15 PM
   system: SAFE Biopharma Bridge Opera tional Authority
-  change_description: The cross-certificate from SAFE Biopharma Bridge CA [SBCA 02] to FBCA 2013 has been revoked. The CRL was published shortly thereafter.
+  change_description: The cross certificate from SAFE Biopharma Bridge CA [SBCA 02] to FBCA 2013 has been revoked. The CRL was published shortly thereafter.
   contact: Matthew dot Williams at exostar dot com
   
 - notice_date: April 25, 2018
   change_type: CA Certificate Issuance
   start_datetime: April 23, 2018
   system: Federal PKI Trust Infrastructure
-  change_description: Issuance of cross-certificate from Federal Bridge 2016 to US Patent and Trademark CA due to PTO Re-Key
+  change_description: Issuance of cross certificate from Federal Bridge 2016 to US Patent and Trademark CA due to PTO Re-Key
   contact: fpki at gsa dot gov
   ca_certificate_hash: 07 04 ea 96 33 a4 5a 9a 39 12 3b ac 28 be 01 07 8c 6b fd 3a
   ca_certificate_issuer: CN=Federal Bridge CA 2016 OU=FPKI O=U.S. Government C=US
@@ -353,7 +353,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 7, 2018
   system: Federal PKI Trust Infrastructure
-  change_description: A new cross-certificate was issued from the Federal Bridge CA 2016 to the SAFE BioPharma Bridge CA 02
+  change_description: A new cross certificate was issued from the Federal Bridge CA 2016 to the SAFE BioPharma Bridge CA 02
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 5c 65 42 19 97 2b ac 88 7b ea 9f 13 09 eb 9e 05 2f b7 75 7e
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
@@ -365,14 +365,14 @@
 - notice_date: June 13, 2018
   change_type: CA Certificate Issuance Intent
   system: CertiPath Bridge
-  change_description: CerithPath Bridge intends to renew the cross-certificates from the CertiPath Bridge G1 and G2 to Raytheon prior to the end of this month. No changes are being made to certificate policies or policy mappings.
+  change_description: CerithPath Bridge intends to renew the cross certificates from the CertiPath Bridge G1 and G2 to Raytheon prior to the end of this month. No changes are being made to certificate policies or policy mappings.
   contact: support at certipath dot com
 
 - notice_date: July 5, 2018
   change_type: CA Certificate Issuance
   start_datetime: July 17, 2018
   system: CertiPath Bridge
-  change_description: A cross-certificate was issued from Certipath Bridge CA-G2 to Air Canada Enterprise Root CA1
+  change_description: A cross certificate was issued from Certipath Bridge CA-G2 to Air Canada Enterprise Root CA1
   contact: support at certipath dot com
   ca_certificate_hash:
   ca_certificate_issuer: C=US, O=CertiPath LLC, OU=Certification Authorities, CN=CertiPath Bridge CA - G2
@@ -385,7 +385,7 @@
   change_type: CA Certificate Issuance
   start_datetime: July 17, 2018
   system: Federal PKI Trust Infrastructure
-  change_description: A new cross-certificate was issued from the Federal Bridge CA 2016 to the ORC NFI CA 3
+  change_description: A new cross certificate was issued from the Federal Bridge CA 2016 to the ORC NFI CA 3
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: b6 25 da 07 30 20 16 d2 83 70 23 ba b9 4b 6e 0d 76 fc 2e 45
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
@@ -398,7 +398,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 21, 2018
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: A new cross-certificate was issued from the Federal Bridge 2016 to the IdenTrust IGC Root CA 1
+  change_description: A new cross certificate was issued from the Federal Bridge 2016 to the IdenTrust IGC Root CA 1
   contact: FPKI dash help at GSA dot Gov
   ca_certificate_hash: 05 24 54 75 3d 53 ff 23 76 73 7f a7 79 8e c7 2f ab 82 83 3c
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
@@ -411,7 +411,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 21, 2018
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: A new cross-certificate was issued from the Federal Bridge 2016 to the IdenTrust ACES CA 2
+  change_description: A new cross certificate was issued from the Federal Bridge 2016 to the IdenTrust ACES CA 2
   contact: FPKI dash help at GSA dot Gov
   ca_certificate_hash: ab 97 3a 75 fa 59 4f 5a 97 c5 3e 3c 50 24 4a e0 6c a6 10 a8
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
@@ -424,7 +424,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 30, 2018
   system: SAFE Biopharma Bridge CA
-  change_description: A new cross-certificate was issued from the SAFE Biopharma Bridge CA to the Federal Bridge 2016 CA
+  change_description: A new cross certificate was issued from the SAFE Biopharma Bridge CA to the Federal Bridge 2016 CA
   contact: 
   ca_certificate_hash: 54 0c 2a c5 9f 8b 5b ab 1b 6a df 42 1a 7c 50 f0 90 1e 3d 54
   ca_certificate_issuer: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
@@ -437,7 +437,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 29, 2018
   system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: Issuance of a cross-certificate from the Federal Common Policy CA to the US Treasury Root CA.
+  change_description: Issuance of a cross certificate from the Federal Common Policy CA to the US Treasury Root CA.
   contact: fpki dash help at GSA dot gov
   ca_certificate_hash: 5a 87 92 2b 5e af 1d 63 19 8a 95 1b 2a b6 f5 9b 2f 16 c1 31
   ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
@@ -484,7 +484,7 @@
   change_type: CA Certificate Issuance
   start_datetime: December 19, 2018
   system: SAFE-BioPharma Bridge CA
-  change_description: Issuance of a new cross-certificate from the SAFE BioPharma Bridge CA to IdenTrust SAFE-BioPharma CA 1 
+  change_description: Issuance of a new cross certificate from the SAFE BioPharma Bridge CA to IdenTrust SAFE-BioPharma CA 1 
   contact: dsimonetti at safe-biopharma dot org
   ca_certificate_hash: 245f753f8a315a83bd0be8cf70833503f99fd2d2
   ca_certificate_issuer: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
@@ -496,7 +496,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 11, 2019
   system: TSCP SHA256 Bridge CA
-  change_description: Issuance of a cross-certificate to Fortior Solutions, Inc.
+  change_description: Issuance of a cross certificate to Fortior Solutions, Inc.
   contact: steve dot race at tscp dot org
   ca_certificate_hash: aebdf407b44afd431d8364012e096aea2a32a55d
   ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
@@ -508,7 +508,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 11, 2019
   system: Fortior Solutions Intermediate CA 2018
-  change_description: Issuance of a cross-certificate to TSCP Bridge
+  change_description: Issuance of a cross certificate to TSCP Bridge
   contact: steve dot race at tscp dot org
   ca_certificate_hash: dc4b77d79b815187f5e0e73d13f6fe41cab86fab
   ca_certificate_issuer: CN=Fortior Solutions Intermediate CA 2018, OU=Certificate Authorities, O=Fortior Solutions, C=US
@@ -520,7 +520,7 @@
   change_type: CA Certificate Issuance
   start_datetime: January 23, 2019
   system: TSCP SHA256 Bridge CA
-  change_description: Issuance of a cross-certificate to Alexion Pharmaceuticals, Inc
+  change_description: Issuance of a cross certificate to Alexion Pharmaceuticals, Inc
   contact: steve dot race at tscp dot org
   ca_certificate_hash: 692a53fa725e5581a5b1db1c3d7b27e6feb9cae8
   ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
@@ -531,7 +531,7 @@
 - notice_date: February 11, 2019
   change_type: Intent to Perform CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: New cross-certificate planned for issuance from Federal Bridge CA 2016 to STRAC Bridge Root Certification Authority
+  change_description: New cross certificate planned for issuance from Federal Bridge CA 2016 to STRAC Bridge Root Certification Authority
   contact: fpki at gsa dot gov
 
 - notice_date: February 11, 2019
@@ -546,7 +546,7 @@
 - notice_date: February 11, 2019
   change_type: Intent to Perform CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: New cross-certificate planned for issuance from Federal Bridge CA 2016 to DigiCert Federated ID L3 CA
+  change_description: New cross certificate planned for issuance from Federal Bridge CA 2016 to DigiCert Federated ID L3 CA
   contact: fpki at gsa dot gov
 
 - notice_date: February 11, 2019
@@ -603,7 +603,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 14, 2019
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: New cross-certificate issued from Federal Bridge CA 2016 to STRAC Bridge Root Certification Authority
+  change_description: New cross certificate issued from Federal Bridge CA 2016 to STRAC Bridge Root Certification Authority
   contact: fpki at gsa dot gov
   ca_certificate_hash: 1f92eb3654f60a9092811f7948afff45c09a6ca9
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
@@ -616,7 +616,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 20, 2019
   system: STRAC Bridge Root Certification Authority
-  change_description: New cross-certificate issued from STRAC Bridge Root Certification Authority to Federal Bridge 2016
+  change_description: New cross certificate issued from STRAC Bridge Root Certification Authority to Federal Bridge 2016
   contact: pki at strac dot org
   ca_certificate_hash: EE02BDB684AB4714C5F25300C41C5B8F328B0CD9
   ca_certificate_issuer: C=US, O=STRAC, OU=STRAC PKI Trust Infrastructure, CN=STRAC Bridge Root Certification Authority
@@ -644,7 +644,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 25, 2019
   system: CertiPath Bridge 
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to CISRCA1
+  change_description: Issuance of cross certificate from CertiPath Bridge CA - G2 to CISRCA1
   contact: judith dot spencer at certipath dot com
   ca_certificate_hash: EB23C015A0B4037738D54A088A653498D394F050 
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US 
@@ -658,7 +658,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 25, 2019
   system: CertiPath Bridge 
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Carillon Federal Services PIV-I CA1
+  change_description: Issuance of cross certificate from CertiPath Bridge CA - G2 to Carillon Federal Services PIV-I CA1
   contact: judith dot spencer at certipath dot com
   ca_certificate_hash: FA75A4149838AFE4DEF18BAD39B5EFD6187D1A8B  
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
@@ -672,7 +672,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 25, 2019
   system: CertiPath Bridge 
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to NextgenIDRootCA1
+  change_description: Issuance of cross certificate from CertiPath Bridge CA - G2 to NextgenIDRootCA1
   contact: judith dot spencer at certipath dot com
   ca_certificate_hash: C8EC9DAB6354FA4E2BF292B0A542F37436965723
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
@@ -686,7 +686,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 25, 2019
   system: CertiPath Bridge 
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA - G2 to Northrop Grumman Corporate Root CA-G2
+  change_description: Issuance of cross certificate from CertiPath Bridge CA - G2 to Northrop Grumman Corporate Root CA-G2
   contact: judith dot spencer at certipath dot com
   ca_certificate_hash: 6F14FDA78D34B603ABE060D9FD16331DAC646878
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
@@ -700,7 +700,7 @@
   change_type: CA Certificate Issuance
   start_datetime: February 28, 2019
   system: FPKI Trust Infrastructure - Federal Bridga CA
-  change_description: New cross-certificate issued from Federal Bridge CA 2016 to DigiCert Federated ID L3 CA
+  change_description: New cross certificate issued from Federal Bridge CA 2016 to DigiCert Federated ID L3 CA
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 11E615170E4862535762EC128565377F1A813B51
   ca_certificate_issuer: cn=Federal Bridge CA 2016,ou=FPKI,o=U.S. Government,c=US
@@ -867,7 +867,7 @@
   change_type: CA Certificate Issuance
   start_datetime: April 21, 2019
   system: CertiPath Bridge
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA to Boeing PCA G2.
+  change_description: Issuance of cross certificate from CertiPath Bridge CA to Boeing PCA G2.
   contact: support at certipath dot com
   ca_certificate_hash: e88050f8628bc42cae691fd96c3bb676411e2c24
   ca_certificate_issuer: CN=CertiPath Bridge CA, OU=Certification Authorities, O=CertiPath LLC, C=US
@@ -881,7 +881,7 @@
   change_type: CA Certificate Issuance
   start_datetime: April 21, 2019
   system: CertiPath Bridge
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA–G2 to Boeing PCA G3.
+  change_description: Issuance of cross certificate from CertiPath Bridge CA–G2 to Boeing PCA G3.
   contact: support at certipath dot com
   ca_certificate_hash: de7b8e78b8866caac3af1fb871be49369cdd6c5c
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
@@ -895,7 +895,7 @@
   change_type: CA Certificate Issuance
   start_datetime: April 21, 2019
   system: CertiPath Bridge
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA–G2 to Federal Bridge CA 2016.
+  change_description: Issuance of cross certificate from CertiPath Bridge CA–G2 to Federal Bridge CA 2016.
   contact: support at certipath dot com
   ca_certificate_hash: fce64c867d1af8e1c1ff5b07a869af5f3e6f823f
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
@@ -909,7 +909,7 @@
   change_type: CA Certificate Issuance
   start_datetime: April 21, 2019 
   system: CertiPath Bridge
-  change_description: Issuance of cross-certificate from CertiPath Bridge CA–G2 to Lockheed Martin Root Certification Authority 2.
+  change_description: Issuance of cross certificate from CertiPath Bridge CA–G2 to Lockheed Martin Root Certification Authority 2.
   contact: support at certipath dot com
   ca_certificate_hash: 90c55c1fa32a82c6e8f44e3e4ad8e4c08ade150f 
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US
@@ -1010,7 +1010,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 12, 2019
   system: TSCP SHA256 Bridge CA  
-  change_description: The TSCP SHA256 Bridge CA issued a cross-certificate to the DocuSign Root CA
+  change_description: The TSCP SHA256 Bridge CA issued a cross certificate to the DocuSign Root CA
   contact: steve dot race at tscp dot org 
   ca_certificate_hash: D1382AE6DACA5A69FE75B34635F529C79D5E2D90
   ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US 
@@ -1038,7 +1038,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 19, 2019 
   system: CertiPath Bridge CA - G2 
-  change_description: CertiPath Bridge CA - G2 issued a new cross-certificate to the Raytheon Root CA. 
+  change_description: CertiPath Bridge CA - G2 issued a new cross certificate to the Raytheon Root CA. 
   contact: support at certipath dot com
   ca_certificate_hash: 3afe40cb546fdec2d0b77454cebe5fb01d3dbb3a 
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US 
@@ -1052,7 +1052,7 @@
   change_type: CA Certificate Issuance
   start_datetime: June 19, 2019 
   system: CertiPath Bridge CA - G2 
-  change_description: CertiPath Bridge CA - G2 issued a new cross-certificate to the Ministerie van Defensie Certificatie Autoriteit - G2 CA.
+  change_description: CertiPath Bridge CA - G2 issued a new cross certificate to the Ministerie van Defensie Certificatie Autoriteit - G2 CA.
   contact: support at certipath dot com
   ca_certificate_hash: b94b710964a6c1d53b3809e45d5805eca1e0c786
   ca_certificate_issuer: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US 
@@ -1136,7 +1136,7 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:  
   system: Entrust Federal Shared Service Provider
-  change_description: Entrust intends to re-key both the Entrust Managed Services Root CA and the Entrust Managed Services SSP CA. The Entrust Managed Services Root CA re-key event is planned for August 13, 2019.  Entrust also communicated intent to request a new cross-certificate from the Federal Common Policy CA to the Entrust Managed Services Root CA, once the re-key is complete.  This notification will be updated as Entrust communicates the finalized event timeline with the Federal PKI Support Team.
+  change_description: Entrust intends to re-key both the Entrust Managed Services Root CA and the Entrust Managed Services SSP CA. The Entrust Managed Services Root CA re-key event is planned for August 13, 2019.  Entrust also communicated intent to request a new cross certificate from the Federal Common Policy CA to the Entrust Managed Services Root CA, once the re-key is complete.  This notification will be updated as Entrust communicates the finalized event timeline with the Federal PKI Support Team.
   contact: Cris dot TenEyck at entrustdatacard dot com and Howard dot Freitag at entrustdatacard dot com
   ca_certificate_hash:  
   ca_certificate_issuer: ou=Entrust Managed Services Root CA, ou=Certification Authorities, o=Entrust, c=US
@@ -1150,7 +1150,7 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:  
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: The Federal Bridge CA 2016 intends to issue cross-certificates to DoD Interoperability Root CA 2, TSCP SHA256 Bridge CA, and WidePoint NFI Root CA 1. Certificate issuance is expected to take place before August 15, 2019.
+  change_description: The Federal Bridge CA 2016 intends to issue cross certificates to DoD Interoperability Root CA 2, TSCP SHA256 Bridge CA, and WidePoint NFI Root CA 1. Certificate issuance is expected to take place before August 15, 2019.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
@@ -1163,7 +1163,7 @@
 - notice_date: July 25, 2019
   change_type: Intent to Perform CA Certificate Revocation
   system: FPKI Trust Infrastructure - Federal Bridge 2016
-  change_description: The Federal Bridge CA 2016 intends to revoke the cross-certificate issued to CN=CT-CSSP-CA-A1, OU=PKI, OU=Services, O=Cybertrust, C=US (operated by Verizon NFI).
+  change_description: The Federal Bridge CA 2016 intends to revoke the cross certificate issued to CN=CT-CSSP-CA-A1, OU=PKI, OU=Services, O=Cybertrust, C=US (operated by Verizon NFI).
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 68 70 66 bc e5 6b 6e 20 ae a0 c6 05 b9 b6 67 93 42 26 9f 21
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
@@ -1172,7 +1172,7 @@
 - notice_date: July 26, 2019
   change_type: Intent to Perform CA Certificate Revocation
   system: Verizon Non-Federal Issuer (NFI)
-  change_description: Verizon NFI intends to revoke the cross-certificate issued from CT-CSSP-CA-A1 to the Federal Bridge CA 2016.
+  change_description: Verizon NFI intends to revoke the cross certificate issued from CT-CSSP-CA-A1 to the Federal Bridge CA 2016.
   contact: andre dot varacka at verizon dot com
   ca_certificate_hash: 73 dc cf 64 18 52 2b 69 a5 0a 96 72 1a eb 96 44 1e 6e f3 c0 
   ca_certificate_issuer: CN=CT-CSSP-CA-A1, OU=PKI, OU=Services, O=Cybertrust, C=US
@@ -1182,7 +1182,7 @@
   change_type: CA Certificate Revocation
   start_datetime:
   system: SAFE-BioPharma Bridge 
-  change_description: Synchronoss decommissioned the Trans Sped SAFE CA III. Previously active end entity certificates issued from Trans Sped SAFE CA III were revoked before CA decommissioning. On August 2, 2019, SAFE-BioPharma revoked the cross-certificate issued to Trans Sped SAFE CA III.
+  change_description: Synchronoss decommissioned the Trans Sped SAFE CA III. Previously active end entity certificates issued from Trans Sped SAFE CA III were revoked before CA decommissioning. On August 2, 2019, SAFE-BioPharma revoked the cross certificate issued to Trans Sped SAFE CA III.
   contact: kyle dot neuman at makeidentitysafe dot com
   ca_certificate_hash: 833D2A24326C8EA10B60FD0FEB4AA0811B1747DD
   ca_certificate_issuer: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
@@ -1210,7 +1210,7 @@
   change_type: CA Certificate Revocation
   start_datetime: 
   system: FPKI Trust Infrastructure - Federal Bridge CA 2016 
-  change_description: On August 06, 2019, the Federal Bridge CA 2016 revoked the cross-certificate issued to CN=CT-CSSP-CA-A1, OU=PKI, OU=Services, O=Cybertrust, C=US (operated by Verizon NFI).  
+  change_description: On August 06, 2019, the Federal Bridge CA 2016 revoked the cross certificate issued to CN=CT-CSSP-CA-A1, OU=PKI, OU=Services, O=Cybertrust, C=US (operated by Verizon NFI).  
   contact: fpki dash help at gsa dot gov 
   ca_certificate_hash: 687066bce56b6e20aea0c605b9b6679342269f21 
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US 
@@ -1238,7 +1238,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 06, 2019
   system: FPKI Trust Infrastructure - Federal Bridge CA 2016
-  change_description: The Federal Bridge CA 2016 issued a cross-certificate to DoD Interoperability Root CA 2.
+  change_description: The Federal Bridge CA 2016 issued a cross certificate to DoD Interoperability Root CA 2.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 73050d5b629cf6286be972afddfa31d2864b4f35
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
@@ -1252,7 +1252,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 06, 2019
   system: FPKI Trust Infrastructure - Federal Bridge CA 2016
-  change_description: The Federal Bridge CA 2016 issued a cross-certificate to WidePoint NFI Root 1.
+  change_description: The Federal Bridge CA 2016 issued a cross certificate to WidePoint NFI Root 1.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 92bc06fe6b27cbe4723f309f34681fc57c8166ce 
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
@@ -1266,7 +1266,7 @@
   change_type: CA Certificate Issuance
   start_datetime: August 06, 2019
   system: FPKI Trust Infrastructure - Federal Bridge CA 2016
-  change_description: The Federal Bridge CA 2016 issued a cross-certificate to the TSCP SHA256 Bridge CA.
+  change_description: The Federal Bridge CA 2016 issued a cross certificate to the TSCP SHA256 Bridge CA.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  874007002a4a2fff3edcf90eb41adce7c2fb4915
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
@@ -1294,7 +1294,7 @@
   change_type: CA Certificate Revocation
   start_datetime: 
   system: FPKI Trust Infrastructure - Federal Bridge CA 2016 
-  change_description: On August 14, 2019, the Federal Bridge CA 2016 revoked the cross-certificate issued to ORC NFI CA 2.    
+  change_description: On August 14, 2019, the Federal Bridge CA 2016 revoked the cross certificate issued to ORC NFI CA 2.    
   contact: fpki dash help at gsa dot gov 
   ca_certificate_hash: b055c6ee104e01eb688c8fb4f87cf77ca376afdb  
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US 
@@ -1386,7 +1386,7 @@
   change_type: CA Certificate Issuance
   start_datetime: October 28, 2019
   system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: The Federal Common Policy CA issued a cross-certificate to the Federal Bridge CA 2016. The certificate has a validity period of one year.
+  change_description: The Federal Common Policy CA issued a cross certificate to the Federal Bridge CA 2016. The certificate has a validity period of one year.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: bd38b7e253cfc5dd278a927f88833fb44c6af03a
   ca_certificate_issuer: Federal Common Policy CA
@@ -1399,7 +1399,7 @@
   change_type: CA Certificate Issuance
   start_datetime: October 28, 2019
   system: FPKI Trust Infrastructure - Federal Bridge CA 2016
-  change_description: The Federal Bridge CA 2016 issued a cross-certificate to the Federal Common Policy CA. The certificate has a validity period of one year.
+  change_description: The Federal Bridge CA 2016 issued a cross certificate to the Federal Common Policy CA. The certificate has a validity period of one year.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 38341412caa3d72ade61022240411444d21b1de9
   ca_certificate_issuer: Federal Bridge CA 2016
@@ -2296,6 +2296,35 @@
   aia_uri:
   sia_uri:
   ocsp_uri: 
+  
+- notice_date: April 29, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: April 21, 2020
+  system: CertiPath Bridge
+  change_description: CertiPath Bridge CA – G3 issued a cross certificate to Boeing PCA G3.
+  contact: support at certipath dot com
+  ca_certificate_hash: f062bfcc913dfd1362ececce82e17fbf6fbaee83 
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US 
+  ca_certificate_subject: CN=Boeing PCA G3, OU=certservers, O=Boeing, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri:  
+  ocsp_uri:
+  
+- notice_date: April 29, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: April 21, 2020
+  system: CertiPath Bridge
+  change_description: CertiPath Bridge CA – G3 issued a cross certificate to Lockheed Martin Root Certification Authority 2.
+  contact: support at certipath dot com
+  ca_certificate_hash: f72ec29d98caa8eefc330848d0d31235bd088ea0 
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US  
+  ca_certificate_subject: CN=Lockheed Martin Root Certification Authority 2, OU=Certification Authorities, O=Lockheed Martin Corporation, L=Denver, S=Colorado, C=US
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri:  
+  ocsp_uri:
+  
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
