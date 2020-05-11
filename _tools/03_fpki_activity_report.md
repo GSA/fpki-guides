@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: April 9, 2020
+Updated: May 12, 2020
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -26,20 +26,19 @@ The operational status for each Federal Agency or affiliate connected to the Fed
 ## FPKIMA Certificate Activity
 The activity listed in this section is limited to the certificates issued BY or TO the Federal Bridge or Federal Common Policy CA.
 
-The following certificates have been issued and/or published to the FPKI Trust Infrastructure in the last 30 days.
+No certificates were issued and/or published to the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| CertiPath | Federal Bridge CA G4 | CertiPath Bridge CA - G2 | 6f9830730374438b333d78876c1f830304d49451 | 1/20/2020 |
-| DoD | Federal Bridge CA G4 | DoD Interoperability Root CA 2 | 1e95e1de935599c3e7c9c72e5989665e3311d867 | 2/25/2020 |
+| No Activity | |  |  |  |
 
 
-The following certificates have been removed from the FPKI Trust Infrastructure in the last 30 days.
+No certificates were removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| Exostar | Exostar Federated Identity Service Root CA 2 | Federal Bridge CA 2016 | fbe0def19bfe627f4c28c95a211acd7cc3c7afb2 | 4/3/2020 |
-| Exostar | Federal Bridge CA 2016 | Exostar Federated Identity Service Root CA 2 | 11f8e4665fdf793ffc34eadd288e0b0fcd23c012 | 4/5/2020 |
+| No Activity |  |  |  |  |
+
 
 The following certificates are planned for a certificate action in the near future, dates to be determined based on availability.
 
