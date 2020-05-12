@@ -2325,6 +2325,20 @@
   sia_uri:  
   ocsp_uri:
   
+- notice_date: May 4, 2020 
+  change_type: CA Certificate Issuance
+  start_datetime: April 21, 2020
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA issued a cross certificate to Carillon Federal Services PIV-I CA2.
+  contact: steve dot race at tscp dot org
+  ca_certificate_hash: 352f268667640942e57f834f3691372a24109e2e
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA2, OU=Certificate Authorities, O=Carillon Federal Services Inc., C=US 
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri:
+  ocsp_uri:
+
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
