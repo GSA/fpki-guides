@@ -2339,6 +2339,20 @@
   sia_uri:
   ocsp_uri:
 
+- notice_date: May 12, 2020
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued by the Federal Common Policy CA to VeriSign SSP Intermediate CA - G3 (operated by DigiCert Federal Shared Service Provider). All CA certificates issued by VeriSign SSP Intermediate CA - G3 have expired and the CA is no longer in use. 	
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: e9c8715b871db1d87bb65ba2a5bbfa8000df7861  
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=VeriSign SSP Intermediate CA - G3, O=VeriSign, Inc., C=US
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c 
+  sia_uri: http://ssp-sia.verisign.com/SSP/Certs_issued_by_VRSNSSPCAG3.p7c 
+  ocsp_uri:  
+
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
