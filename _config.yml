@@ -97,6 +97,7 @@ navigation:
   url: notifications
   internal: true
   coll: false
+
 #https://github.com/jekyll/jekyll/issues/2346
 #- text: Engineer Guides
 # url: engineer/
@@ -121,8 +122,6 @@ navigation:
   url: contribute
   internal: true
   coll: false
-
-
 
 #https://github.com/jekyll/jekyll/issues/2346
 collections:
@@ -154,6 +153,11 @@ collections:
     label: "Announcements"
     permalink: /announcements/:path/
     output: true
+  announcements-archive:
+    label: "Archived Announcements"
+    permalink: /announcements/archive/:path/
+    output: true
+
 
 include:
 - _stylesheets
