@@ -2366,6 +2366,34 @@
   sia_uri: http://sspsia.digicert.com/STNSSP/Certs_Issued_by_Class3SSPCA-G4.p7c
   ocsp_uri: 
 
+- notice_date: May 29, 2020
+  change_type: CA Certificate Issuance
+  system: WidePoint Non-Federal Issuer
+  change_description: WidePoint NFI Root 2 issued a certificate to WidePoint ORC NFI 4.
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash: 5a95aea990a7aec492134a5b437cf3324f260793  
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US 
+  ca_certificate_subject: CN=WidePoint ORC NFI 4, OU=Certification Authorities, O=WidePoint, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri:  
+  ocsp_uri: 
+
+- notice_date: May 29, 2020
+  change_type: CA Certificate Issuance
+  system: WidePoint Non-Federal Issuer
+  change_description: WidePoint NFI Root 2 issued a certificate to WidePoint NFI CA 5.
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash: 52a2b89934a8f53719d620697496a6eb82a06e13 
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  ca_certificate_subject: CN=WidePoint NFI CA 5, O=ORC PKI, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c 
+  sia_uri:  
+  ocsp_uri: 
+  
+
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
