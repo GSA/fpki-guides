@@ -2393,17 +2393,17 @@
   ocsp_uri: 
   
 - notice_date: June 1, 2020
- change_type: Intent to Perform CA Certificate Issuance
- system: TSCP SHA256 Bridge CA
- change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA intends to renew the cross certificate issued to DocuSign, Inc.
- contact: steve.race at tscp dot org
- ca_certificate_hash:
- ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
- ca_certificate_subject: CN=DocuSign Root CA, OU=TSCP, O=DocuSign Inc., C=US
- cdp_uri:
- aia_uri:
- sia_uri:
- ocsp_uri:  
+  change_type: Intent to Perform CA Certificate Issuance
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA intends to renew the cross certificate issued to DocuSign, Inc.
+  contact: steve.race at tscp dot org
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=DocuSign Root CA, OU=TSCP, O=DocuSign Inc., C=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:  
 
 - notice_date: June 8, 2020
   change_type: CA Certificate Revocation
