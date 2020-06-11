@@ -30,7 +30,7 @@ The following certificate was issued and published to the FPKI Trust Infrastruct
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-|| DigiCert | DigiCert Class 3 SSP Intermediate CA - G4 | Federal Bridge CA G4 | 8a8e06a378289206a64c85ad7dd37846b1ed3aad | 5/14/20 |
+| DigiCert | DigiCert Class 3 SSP Intermediate CA - G4 | Federal Bridge CA G4 | 8a8e06a378289206a64c85ad7dd37846b1ed3aad | 5/14/20 |
 
 
 The following certificate was removed from the FPKI Trust Infrastructure in the last 30 days.
@@ -48,6 +48,7 @@ The following certificate was removed from the FPKI Trust Infrastructure in the 
 | STRAC | STRAC Bridge Root Certification Authority | Federal Bridge CA 2016 | 1f92eb3654f60a9092811f7948afff45c09a6ca9 | 2/14/2022 |
 
 The following certificates are planned for a certificate action in the near future, dates to be determined based on availability.
+
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | ---------- | ---------- | -------- |
 | GPO | GPO PCA | Federal Bridge CA 2016 | b8eabb18ed544c9fcfb299bd5d322127e6f48d90 | 8/3/2020 | Revocation |
