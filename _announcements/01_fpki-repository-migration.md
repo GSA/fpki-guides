@@ -6,6 +6,7 @@ pubDate: April 1, 2019
 collection: announcements
 permalink: announcements/fpki-repository-migration/
 description: On April 22, 2019, the Federal Public Key Infrastructure Management Authority will migrate the hosting of HyperText Transfer Protocol (HTTP) repository services to a cloud-based solution. This announcement provides additional information related to the upcoming migration.
+status: active
 ---
 
 {% include alert-info.html content="Upcoming changes to the hosting of Federal Public Key Infrastructure Certification Authority (CA) data repositories could impact your agency." %}

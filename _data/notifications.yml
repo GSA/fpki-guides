@@ -2366,6 +2366,73 @@
   sia_uri: http://sspsia.digicert.com/STNSSP/Certs_Issued_by_Class3SSPCA-G4.p7c
   ocsp_uri: 
 
+- notice_date: May 29, 2020
+  change_type: CA Certificate Issuance
+  system: WidePoint Non-Federal Issuer
+  change_description: WidePoint NFI Root 2 issued a certificate to WidePoint ORC NFI 4.
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash: 5a95aea990a7aec492134a5b437cf3324f260793  
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US 
+  ca_certificate_subject: CN=WidePoint ORC NFI 4, OU=Certification Authorities, O=WidePoint, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri:  
+  ocsp_uri: 
+
+- notice_date: May 29, 2020
+  change_type: CA Certificate Issuance
+  system: WidePoint Non-Federal Issuer
+  change_description: WidePoint NFI Root 2 issued a certificate to WidePoint NFI CA 5.
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash: 52a2b89934a8f53719d620697496a6eb82a06e13 
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  ca_certificate_subject: CN=WidePoint NFI CA 5, O=ORC PKI, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c 
+  sia_uri:  
+  ocsp_uri: 
+  
+- notice_date: June 1, 2020
+  change_type: Intent to Perform CA Certificate Issuance
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA intends to renew the cross certificate issued to DocuSign, Inc.
+  contact: steve.race at tscp dot org
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=DocuSign Root CA, OU=TSCP, O=DocuSign Inc., C=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+  
+- notice_date: June 4, 2020 
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a cross certificate to GPO PCA.  
+  contact: fpki dash help at gsa dot gov 
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=GPO PCA, OU=Certification Authorities, OU=Government Printing Office, O=U.S. Government, C=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: June 8, 2020
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: On June 4, 2020, the Federal PKI Management Authority revoked the certificate issued by the Federal Common Policy CA to VeriSign SSP Intermediate CA - G3 (operated by DigiCert Federal Shared Service Provider). All CA certificates issued by VeriSign SSP Intermediate CA - G3 have expired and the CA is no longer in use. 	
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: e9c8715b871db1d87bb65ba2a5bbfa8000df7861  
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=VeriSign SSP Intermediate CA - G3, O=VeriSign, Inc., C=US
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c 
+  sia_uri: http://ssp-sia.verisign.com/SSP/Certs_issued_by_VRSNSSPCAG3.p7c 
+  ocsp_uri:  
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
