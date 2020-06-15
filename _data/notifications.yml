@@ -2439,7 +2439,7 @@
   change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 revoked the cross certificate issued to DigiCert Federated ID L3 CA on June 9, 2020. 	
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 33514b5b7c0616724d9e174f59d7aa080740b8c3   
-  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=DigiCert Federated ID L3 CA, OU=www.digicert.com, O=DigiCert Inc, C=US 
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl 
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
@@ -2452,7 +2452,7 @@
   change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 revoked the cross certificate issued to DoD Interoperability Root CA 2 on June 9, 2020.	
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 73050d5b629cf6286be972afddfa31d2864b4f35   
-  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=DoD Interoperability Root CA 2, OU=PKI, OU=DoD, O=U.S. Government, C=US 
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
@@ -2465,7 +2465,7 @@
   change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 revoked the cross certificate issued to ORC NFI CA 3 on June 9, 2020.	
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: b625da07302016d2837023bab94b6e0d76fc2e45   
-  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=ORC NFI CA 3, O=ORC PKI, C=US 
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl 
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c 
@@ -2478,7 +2478,7 @@
   change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 revoked the cross certificate issued to STRAC Bridge Root Certification Authority on June 9, 2020.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 1f92eb3654f60a9092811f7948afff45c09a6ca9  
-  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=STRAC Bridge Root Certification Authority, OU=STRAC PKI Trust Infrastructure, O=STRAC, C=US 
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
@@ -2491,7 +2491,7 @@
   change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 revoked the cross certificate issued to Symantec Class 3 SSP Intermediate CA - G3 on June 9, 2020.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 914531f5a610914005422e56d6711218133b1048   
-  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=Symantec Class 3 SSP Intermediate CA - G3, OU=Symantec Trust Network, O=Symantec Corporation, C=US 
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl 
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
@@ -2504,7 +2504,7 @@
   change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 revoked the cross certificate issued to WidePoint NFI Root 1 on June 9, 2020.	
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 92bc06fe6b27cbe4723f309f34681fc57c8166ce    
-  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=WidePoint NFI Root 1, OU=Certification Authorities, O=WidePoint, C=US 
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl 
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
@@ -2517,7 +2517,7 @@
   change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 revoked the cross certificate issued to Entrust Managed Services NFI Root CA on June 9, 2020.	
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 220508b0ab72e2ee3acaa6a9ef5001c87c523ea4   
-  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: OU=Entrust Managed Services NFI Root CA, OU=Certification Authorities, O=Entrust, C=US 
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl 
   aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c  
