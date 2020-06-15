@@ -2503,7 +2503,7 @@
   system: FPKI Trust Infrastructure - Federal Bridge CA 2016
   change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 revoked the cross certificate issued to WidePoint NFI Root 1 on June 9, 2020.	
   contact: fpki dash help at gsa dot gov
-  ca_certificate_hash: 7345c2f627bef049bc46990249c97be5357e0b11    
+  ca_certificate_hash: 92bc06fe6b27cbe4723f309f34681fc57c8166ce    
   ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=WidePoint NFI Root 1, OU=Certification Authorities, O=WidePoint, C=US 
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl 
