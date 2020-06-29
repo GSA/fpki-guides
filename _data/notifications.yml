@@ -2574,7 +2574,7 @@
   system: FPKI Trust Infrastructure - Federal Bridge CA 2016
   change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 will revoke the cross certificate issued to SAFE Bridge CA 02 Certification Authority.
   contact: fpki dash help at gsa dot gov
-  ca_certificate_hash: b8eabb18ed544c9fcfb299bd5d322127e6f48d90
+  ca_certificate_hash: 5c654219972bac887bea9f1309eb9e052fb7757e
   ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
   cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
