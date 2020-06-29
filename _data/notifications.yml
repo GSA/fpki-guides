@@ -2524,6 +2524,64 @@
   sia_uri: http://nfirootweb.managed.entrust.com/SIA/CAcertsIssuedByNFIRootCA.p7c 
   ocsp_uri:  
 
+- notice_date: June 26, 2020
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  end_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The new three year cross certificate to the Government Publishing Office (GPO) replaces the one expiring on August 3, 2020. Acceptance of the new certificate will result in the revocation of the certificate that was set to expire on August 3, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: de8171556288add44e16d631653c46adab4dcf79
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=GPO PCA, OU=Certification Authorities, OU=Government Printing Office, O=U.S. Government, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://www.gpo-fbca-crls.ois.gpo.gov/caCertsIssuedByGPO.p7c
+
+- notice_date: June 26, 2020
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  end_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 will revoke the cross certificate issued to GPO PCA Root Certification Authority.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: b8eabb18ed544c9fcfb299bd5d322127e6f48d90
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=GPO PCA, OU=Certification Authorities, OU=Government Printing Office, O=U.S. Government, C=US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://www.gpo-fbca-crls.ois.gpo.gov/caCertsIssuedByGPO.p7c
+  ocsp_uri:
+
+- notice_date: June 26, 2020
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  end_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 will revoke the cross certificate issued to SAFE Bridge CA 02 Certification Authority.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: b8eabb18ed544c9fcfb299bd5d322127e6f48d90
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://sbca2.safe-biopharma.org/sbca/issuedbySBCA02.p7c
+
+- notice_date: June 29, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: June 23, 2020
+  system: CertiPath Bridge
+  change_description: CertiPath Bridge CA – G3 issued a cross certificate to Raytheon.
+  contact: support at certipath dot com
+  ca_certificate_hash: 4f28171d4a30679edea7f3271c6cfdb924241f0e   
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US  
+  ca_certificate_subject: CN=Raytheon Class 3 MASCA, OU=Class3-g2, O=cas, DC=raytheon, DC=com 
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl 
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri:  
+  ocsp_uri:
+  
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
