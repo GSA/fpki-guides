@@ -92,9 +92,23 @@ CITE Participants shall provide the FPKI Technical Working Group with email and 
 
 ## Test Websites
 
-| FPKI Partner | Website URL |
+| FPKI CA Certificates | Website URL |
 | ------------ | ----------- |
-| No test websites shared at this time | |
+| Test FCPCA | http://repo.cite.fpki-lab.gov/fcpca/Testfcpca.crt |
+| Test FCPCA G2 | http://repo.cite.fpki-lab.gov/fcpca/Testfcpcag2.crt |
+
+
+| FPKI CA CRLs | Website URL |
+| ------------ | ----------- |
+| Test FCPCA | http://repo.cite.fpki-lab.gov/fcpca/Testfcpca.crl |
+| Test FCPCA G2 | http://repo.cite.fpki-lab.gov/fcpca/Testfcpcag2.crl |
+| Test FBCA G4 | http://repo.cite.fpki-lab.gov/bridge/Testfbcag4.crl |
+
+| FPKI CA p7c | Website SIA |  Website AIA |
+| ------------ | ----------- | ----------- | 
+| Test FCPCA | http://repo.cite.fpki-lab.gov/fcpca/caCertsIssuedByTestfcpca.p7c | http://repo.cite.fpki-lab.gov/fcpca/caCertsIssuedToTestfcpca.p7c |
+| Test FCPCA G2 | http://repo.cite.fpki-lab.gov/fcpca/caCertsIssuedByTestfcpcag2.p7c | http://repo.cite.fpki-lab.gov/fcpca/caCertsIssuedToTestfcpcag2.p7c |
+
 
 ## Appendix A - Test Policy Object Identifiers
 
