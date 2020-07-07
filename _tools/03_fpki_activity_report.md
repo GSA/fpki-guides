@@ -31,7 +31,7 @@ The following certificate was issued and published to the FPKI Trust Infrastruct
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
 | SAFE | Federal Bridge CA G4 | SAFE Bridge CA 02 | f63f8b52f872ce8db9ff655a215d36a28fefe673 | 6/24/20 |
-
+| GPO | GPO PCA | Federal Bridge CA G4 | 52db35c57036a5641bb8dd6b552391a7815681dd | 6/25/20 |
 
 The following certificates were removed from the FPKI Trust Infrastructure in the last 30 days.
 
@@ -41,7 +41,7 @@ The following certificates were removed from the FPKI Trust Infrastructure in th
 | STRAC | Federal Bridge CA 2016 | STRAC Bridge Root Certification Authority | ee02bdb684ab4714c5f25300c41c5b8f328b0cd9 | 2/19/2022 |
 | SAFE | Federal Bridge CA 2016 | SAFE Bridge CA 02 | 540c2ac59f8b5bab1b6adf421a7c50f0901e3d54 | 8/23/2021 |
 | WidePoint | Federal Bridge CA 2016 | ORC NFI CA 3 | 739425b5e2fd18cc84efb67415bafacb67e0d3a8 | 7/12/2020 |
-
+| GPO |GPO PCA | Federal Bridge CA G4 | de8171556288add44e16d631653c46adab4dcf79 | 8/3/20 |
 
 The following certificates are planned for a certificate action in the near future, dates to be determined based on availability.
 
