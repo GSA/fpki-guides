@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: June 10, 2020
+Updated: July 7, 2020
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -30,22 +30,18 @@ The following certificate was issued and published to the FPKI Trust Infrastruct
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| DigiCert | DigiCert Class 3 SSP Intermediate CA - G4 | Federal Bridge CA G4 | 8a8e06a378289206a64c85ad7dd37846b1ed3aad | 5/14/20 |
+| SAFE | Federal Bridge CA G4 | SAFE Bridge CA 02 | f63f8b52f872ce8db9ff655a215d36a28fefe673 | 6/24/20 |
+| GPO | GPO PCA | Federal Bridge CA G4 | 52db35c57036a5641bb8dd6b552391a7815681dd | 6/25/20 |
 
-
-The following certificate was removed from the FPKI Trust Infrastructure in the last 30 days.
+The following certificates were removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
 | --------- | ---------- | ---------- | ------ | ------ |
-| DoD | Federal Bridge CA 2016 | DoD Interoperability Root CA 2 | be06084e8922a5ea91056e65cbf4b627e7e001fe | 5/9/2020 |
-| WidePoint | ORC NFI CA 3 | Federal Bridge CA 2016 | b625da07302016d2837023bab94b6e0d76fc2e45 | 7/17/2021 |
-| WidePoint | WidePoint NFI Root 1 | Federal Bridge CA 2016 | 92bc06fe6b27cbe4723f309f34681fc57c8166ce | 8/6/2022 |
-| DigiCert | DigiCert Federated ID L3 CA | Federal Bridge CA 2016 | 33514b5b7c0616724d9e174f59d7aa080740b8c3 | 2/28/2022 |
-| DigiCert | Symantec Class 3 SSP Intermediate CA - G3 | Federal Bridge CA 2016 | 914531f5a610914005422e56d6711218133b1048 | 10/25/2020 |
 | DigiCert | VeriSign SSP Intermediate CA - G3 | Federal Common Policy CA | e9c8715b871db1d87bb65ba2a5bbfa8000df7861 | 12/9/2020 |
-| Entrust | Entrust Managed Services NFI Root CA | Federal Bridge CA 2016 | 220508b0ab72e2ee3acaa6a9ef5001c87c523ea4 | 11/16/2020 |
-| DoD | DoD Interoperability Root CA 2 | Federal Bridge CA 2016 | 73050d5b629cf6286be972afddfa31d2864b4f35 | 8/6/2022 |
-| STRAC | STRAC Bridge Root Certification Authority | Federal Bridge CA 2016 | 1f92eb3654f60a9092811f7948afff45c09a6ca9 | 2/14/2022 |
+| STRAC | Federal Bridge CA 2016 | STRAC Bridge Root Certification Authority | ee02bdb684ab4714c5f25300c41c5b8f328b0cd9 | 2/19/2022 |
+| SAFE | Federal Bridge CA 2016 | SAFE Bridge CA 02 | 540c2ac59f8b5bab1b6adf421a7c50f0901e3d54 | 8/23/2021 |
+| WidePoint | Federal Bridge CA 2016 | ORC NFI CA 3 | 739425b5e2fd18cc84efb67415bafacb67e0d3a8 | 7/12/2020 |
+| GPO |GPO PCA | Federal Bridge CA G4 | de8171556288add44e16d631653c46adab4dcf79 | 8/3/20 |
 
 The following certificates are planned for a certificate action in the near future, dates to be determined based on availability.
 
@@ -53,9 +49,12 @@ The following certificates are planned for a certificate action in the near futu
 | --------- | ---------- | ---------- | ---------- | ---------- | -------- |
 | GPO | GPO PCA | Federal Bridge CA 2016 | b8eabb18ed544c9fcfb299bd5d322127e6f48d90 | 8/3/2020 | Revocation |
 | SAFE | SAFE Bridge CA 02 | Federal Bridge CA 2016 | 5c654219972bac887bea9f1309eb9e052fb7757e | 6/7/2021 | Revocation |
+| GPO | Federal Bridge CA 2016 | GPO PCA | b5d40be94f2e014f510b2964366f1013f41af30e | 8/4/2020 | Revocation |
+| Entrust | Federal Bridge CA 2016 | Entrust Managed Services NFI Root CA | 5a186cb0fc1bb48bf3b83f60f86b2703a63a0ded | 11/20/2020 | Revocation |
+| FPKIMA | Federal Bridge CA 2016 | Federal Common Policy CA | bd38b7e253cfc5dd278a927f88833fb44c6af03a | 10/28/2020 | Revocation |
 
 
 ## Repository Availability 
-Repository availability is an uptime metric for Certificate Revocation List availability. The table only contains Certification Authorities directly signed by the Federal Common Policy Root CA, Federal Bridge CA 2016 or Federal Bridge CA G4. A metric of "99" in the table below means the Certificate Revocation List was available for 99% of the given month, in other words, the file was not available for 1% of the month (18 minutes depending on the month). The last column is the 12-month average.
+Repository availability is an uptime metric for Certificate Revocation List availability, basaed on monitoring by the FPKIMA. The table only contains Certification Authorities directly signed by the Federal Common Policy Root CA, Federal Bridge CA 2016 or Federal Bridge CA G4. A metric of "99" in the table below means the Certificate Revocation List was available for 99% of the given month, in other words, the file was not available for 1% of the month. The last column is the 12-month average.
 
 {% include fpkiar-repo-table.html %}
