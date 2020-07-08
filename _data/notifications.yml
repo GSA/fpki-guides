@@ -2595,7 +2595,20 @@
   sia_uri:  
   ocsp_uri:
   
-
+- notice_date: July 7, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: June 9, 2020
+  system: DigiCert Federal Shared Service Provider
+  change_description: The DigiCert Federal SSP Intermediate CA - G5 issued a CA certificate on behalf of the U.S. Department of Education.
+  contact: aaron dot poulsen at digicert dot com
+  ca_certificate_hash:  6f48424ae8a01c2a77213a9d34f5761daacd9eac
+  ca_certificate_issuer: CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US
+  ca_certificate_subject: CN=U.S. Department of Education Agency CA - G5, OU=U.S. Department of Education, O=U.S. Government, C=US
+  cdp_uri:  http://ssp-crl.digicert.com/SSP/SSPG5.crl
+  aia_uri: http://ssp-aia.digicert.com/SSP/Certs_issued_to_SSPCAG5.p7c
+  sia_uri:  
+  ocsp_uri:  http://ssp-ocsp.digicert.com
+  
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
