@@ -8,11 +8,11 @@ permalink: /tools/citeguide/
 Prepared By: The FPKI Technical Working Group (TWG)  <br>
 An FPKI Policy Authority Working Group
 
-Updated: February 21st, 2019 <br>
+Updated: July 7, 2020 <br>
 
 ## Overview
 
-The Community Interoperability Test Environment (CITE) was established as the FPKI integrated test environment. CITE provides the FPKI community with a test environment that mimics the production FPKI hierarchy and is operated by the Federal PKI Management Authority (FPKIMA). It contains a Test Federal Common Policy and Test Federal Bridge that issue test CA certificates to participating Shared Service Providers, Federal Agency PKI, and Non-Federal Affiliates (referred to as FPKI Partners). CITE Participants refer to an FPKI Partner establishing a test PKI certified or cross-certified with the Test Common Policy or Test Bridge CA.
+The Community Interoperability Test Environment (CITE) was established as the FPKI integrated test environment. CITE provides the FPKI community with a test environment that tries to mimics the production FPKI hierarchy and is managed by the Federal PKI Management Authority (FPKIMA). It contains a Test Federal Common Policy and Test Federal Bridge that issue test CA certificates to participating Shared Service Providers, Federal Agency PKI, and Non-Federal Affiliates (referred to as FPKI Partners). CITE Participants refer to an FPKI Partner establishing a test PKI certified or cross-certified with the Test Common Policy or Test Bridge CA.
 
 - [Testing Use Cases](#testing-use-cases)
 - [Technical Specifications](#technical-specifications)
@@ -86,15 +86,33 @@ CITE Participant repositories should be available during regular business hours 
 
 ## Technical Support Availability
 
-CITE Participants shall provide the FPKI Technical Working Group with email and phone information for at least two technical contactsto help coordinate any technical service issues. In lieu of providing individual names for technical POCs, CITE Participants may establish a group or other organizational-based email addresses for communications with the appropriate technical contacts. This information will only be made available (in a controlled manner) to CITE Participants, FPKI Applicants (if applicable), and vendors supporting the FPKI as needed during testing or troubleshooting. CITE Participants involved in scheduled testing shall provide the issuance, management, and troubleshooting necessary to help resolve any issues.
+CITE Participants shall provide the FPKI Technical Working Group with email and phone information for at least two technical contacts to help coordinate any technical service issues. In lieu of providing individual names for technical POCs, CITE Participants may establish a group or other organizational-based email addresses for communications with the appropriate technical contacts. This information will only be made available (in a controlled manner) to CITE Participants, FPKI Applicants (if applicable), and vendors supporting the FPKI as needed during testing or troubleshooting. CITE Participants involved in scheduled testing shall provide the issuance, management, and troubleshooting necessary to help resolve any issues.
 
 {% include alert-warning.html content="CITE Participant technical support is only available for scheduled testing with any outage resolved on a best effort basis. " %} <br>
 
 ## Test Websites
 
-| FPKI Partner | Website URL |
+| FPKI CA Certificates | Website URL |
 | ------------ | ----------- |
-| No test websites shared at this time | |
+| Test FCPCA | http://repo.cite.fpki-lab.gov/fcpca/Testfcpca.crt |
+| Test FCPCA G2 | http://repo.cite.fpki-lab.gov/fcpca/Testfcpcag2.crt |
+
+
+| FPKI CA CRLs | Website URL |
+| ------------ | ----------- |
+| Test FCPCA | http://repo.cite.fpki-lab.gov/fcpca/Testfcpca.crl |
+| Test FCPCA G2 | http://repo.cite.fpki-lab.gov/fcpca/Testfcpcag2.crl |
+| Test FBCA G4 | http://repo.cite.fpki-lab.gov/bridge/Testfbcag4.crl |
+
+| FPKI CA p7c | Website SIA |  Website AIA |
+| ------------ | ----------- | ----------- | 
+| Test FCPCA | http://repo.cite.fpki-lab.gov/fcpca/caCertsIssuedByTestfcpca.p7c | http://repo.cite.fpki-lab.gov/fcpca/caCertsIssuedToTestfcpca.p7c |
+| Test FCPCA G2 | http://repo.cite.fpki-lab.gov/fcpca/caCertsIssuedByTestfcpcag2.p7c | http://repo.cite.fpki-lab.gov/fcpca/caCertsIssuedToTestfcpcag2.p7c |
+
+| Test Partner |CRL | SIA | AIA |
+| ------------ | ----------- | ----------- | ----------- |
+| Treasury | http://devpki.treasury.gov/Dev_US_Treasury_Root_CA.crl | http://devpki.treas.gov/devroot_sia.p7c | http://devpki.treasury.gov/cacertsissuedtodevtrca.p7c |
+| DoD | http://crl.nit.disa.mil/crl/DODJITCINTEROPERABILITYROOTCA2.crl | http://crl.nit.disa.mil/issuedby/DODJITCINTEROPERABILITYROOTCA2_IB.p7c | http://crl.nit.disa.mil/issuedto/DODJITCINTEROPERABILITYROOTCA2_IT.p7c |
 
 ## Appendix A - Test Policy Object Identifiers
 
@@ -139,6 +157,9 @@ The table below lists the current test to production OID equivalent used by the 
 | 2.16.840.1.101.3.2.1.48.98 | id-fpki-common-devicesHardware | 2.16.840.1.101.3.2.1.3.36 |
 | 2.16.840.1.101.3.2.1.48.109 | id-fpki-common-pivAuth-derived | 2.16.840.1.101.3.2.1.3.40 |
 | 2.16.840.1.101.3.2.1.48.110 | id-fpki-common-pivAuth-derived-hardware | 2.16.840.1.101.3.2.1.3.41 |
+| 2.16.840.1.101.3.2.1.48.83 | id-fpki-common-pivi-authentication | 2.16.840.1.101.3.2.1.3.45 |
+| 2.16.840.1.101.3.2.1.48.84 | id-pki-common-pivi-cardAuth | 2.16.840.1.101.3.2.1.3.46 |
+| 2.16.840.1.101.3.2.1.48.85 | id-pki-common-pivi-contentSigning | 2.16.840.1.101.3.2.1.3.47 |
 
 ### Federal Agency PKI Test OIDs
 
@@ -146,12 +167,6 @@ The table below lists the current test to production OID equivalent used by the 
 
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.68 | id-US-dod-basic | 2.16.840.1.101.2.1.11.2 |
-| 2.16.840.1.101.3.2.1.48.69 | id-US-dod-medium-2048 | 2.16.840.1.101.2.1.11.18 |
-| 2.16.840.1.101.3.2.1.48.70 | id-US-dod-mediumhardware-2048 | 2.16.840.1.101.2.1.11.19 |
-| 2.16.840.1.101.3.2.1.48.71 | id-US-dod-FORTEZZA | 2.16.840.1.101.2.1.11.4 |
-| 2.16.840.1.101.3.2.1.48.72 | id-US-dod-type1 | 2.16.840.1.101.2.1.11.6 |
-| N/A | id-US-dod-mediumNPE-2048 | 2.16.840.1.101.2.1.11.17 |
 | N/A | id-US-dod-mediumNPE-112 | 2.16.840.1.101.2.1.11.36 |
 | N/A | id-US-dod-mediumNPE-128 | 2.16.840.1.101.2.1.11.37 |
 | N/A | id-US-dod-mediumNPE-192 | 2.16.840.1.101.2.1.11.38 |
@@ -166,19 +181,13 @@ The table below lists the current test to production OID equivalent used by the 
 
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
-| N/A | ECA medium | 2.16.840.1.101.3.2.1.12.1 |
-| N/A | ECA Medium Hardware | 2.16.840.1.101.3.2.1.12.2 |
-| N/A | ECA Medium Token | 2.16.840.1.101.3.2.1.12.3 |
-
-#### Department of Homeland Security (DHS)
-
-| Test OID                    | Policy                 | Production OID     |
-| --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.15.31 | id-dhs-certpcy-rudimentary | 2.16.840.1.101.3.2.1.15.1 |
-| 2.16.840.1.101.3.2.1.15.32 | id-dhs-certpcy-basic | 2.16.840.1.101.3.2.1.15.2 |
-| 2.16.840.1.101.3.2.1.15.33 | id-dhs-certpcy-medium | 2.16.840.1.101.3.2.1.15.3 |
-| 2.16.840.1.101.3.2.1.15.34 | id-dhs-certpcy-high | 2.16.840.1.101.3.2.1.15.4 |
-| 2.16.840.1.101.3.2.1.15.35 | id-dhs-certpcy-mediumHardware | 2.16.840.1.101.3.2.1.15.5 |
+| N/A | id-eca-medium-sha256 | 2.16.840.1.101.3.2.1.12.4 |
+| N/A | id-eca-medium-token-sha256 | 2.16.840.1.101.3.2.1.12.5 |
+| N/A | id-eca-medium-hardware-pivi | 2.16.840.1.101.3.2.1.12.6 |
+| N/A | id-eca-cardauth-pivi | 2.16.840.1.101.3.2.1.12.7 |
+| N/A | id-eca-contentsigning-pivi | 2.16.840.1.101.3.2.1.12.8 |
+| N/A | id-eca-medium-device-sha256 | 2.16.840.1.101.3.2.1.12.9 |
+| N/A | id-eca-medium-hardware-sha256 | 2.16.840.1.101.3.2.1.12.10 |
 
 #### Department of State (DOS)
 
@@ -191,7 +200,7 @@ The table below lists the current test to production OID equivalent used by the 
 | 2.16.840.1.101.3.2.1.48.53 | state-mrtd | 2.16.840.1.101.3.2.1.6.100 |
 | 2.16.840.1.101.3.2.1.48.77 | State Medium Hardware | 2.16.840.1.101.3.2.1.6.12 |
 
-#### Department of the Treausry
+#### Department of the Treasury
 
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
@@ -220,20 +229,17 @@ The table below lists the current test to production OID equivalent used by the 
 
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.37 | id-gpo-medium | 2.16.840.1.101.3.2.1.17.1 |
+| 2.16.840.1.101.3.2.1.48.37 | id-gpo-certpcy-mediumAssurance | 2.16.840.1.101.3.2.1.17.1 |
+| N/A | id-gpo-certpcy-mediumHardware | 2.16.840.1.101.3.2.1.17.2 |
+| N/A | id-gpo-certpcy-devices | 2.16.840.1.101.3.2.1.17.3 |
 
 #### U.S. Patent and Trademark Office (USPTO)
 
 | Test OID                    | Policy                 | Production OID     |
 | --------------------------- | ---------------------- | ------------------ |
-| 2.16.840.1.101.3.2.1.48.60 | pto-registered-practitioner | 2.16.840.1.101.3.2.1.2.1 |
-| 2.16.840.1.101.3.2.1.48.61 | pto-inventor | 2.16.840.1.101.3.2.1.2.2 |
-| 2.16.840.1.101.3.2.1.48.62 | pto-practitioner-employee | 2.16.840.1.101.3.2.1.2.3 |
-| 2.16.840.1.101.3.2.1.48.63 | pto-basic | 2.16.840.1.101.3.2.1.2.4 |
-| 2.16.840.1.101.3.2.1.48.64 | pto-service-provider | 2.16.840.1.101.3.2.1.2.5 |
-| 2.16.840.1.101.3.2.1.48.65 | pto-service-provider-registrar | 2.16.840.1.101.3.2.1.2.6 |
-| 2.16.840.1.101.3.2.1.48.66 | pto-basic-2003 | 2.16.840.1.101.3.2.1.2.7 |
-| 2.16.840.1.101.3.2.1.48.67 | pto-medium-2003 | 2.16.840.1.101.3.2.1.2.8 |
+| 2.16.840.1.101.3.2.1.48.66 | id-pto-basic-2003 | 2.16.840.1.101.3.2.1.2.7 |
+| 2.16.840.1.101.3.2.1.48.67 | id-pto-medium-2003 | 2.16.840.1.101.3.2.1.2.8 |
+| 2.16.840.1.101.3.2.1.48.65 | id-pto-mediumHardware | 2.16.840.1.101.3.2.1.2.9 |
 
 #### National Aeronautics and Space Administration (NASA)
 
@@ -256,7 +262,7 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | 2.16.840.1.114027.200.3.10.10.1.8 | id-emspki-nfssp-rudimentary-policy | 2.16.840.1 .114027.200.3.10.7.8 |
 | 2.16.840.1.114027.200.3.10.10.1.7 | id-emspki-nfssp-basic-policy | 2.16.840.1.114027.200.3.10.7.7 |
 | 2.16.840.1.114027.200.3.10.10.1.3 | id-emspki-nfssp-medium-policy | 2.16.840.1.114027.200.3.10.7.1 |
-| N/A | id-emspki-nfssp-medium-devices | 2.16.840.1.114027.200.3.10.7.3 |
+| unknown | id-emspki-nfssp-medium-devices | 2.16.840.1.114027.200.3.10.7.3 |
 | 2.16.840.1.114027.200.3.10.10.1.4 | id-emspki-nfssp-medium-hardware| 2.16.840.1.114027.200.3.10.7.2 |
 | 2.16.840.1.114027.200.3.10.10.1.6 | id-emspki-nfssp-medium-authentication | 2.16.840.1.114027.200.3.10.7.4 |
 | 2.16.840.1.114027.200.3.10.10.1.6 | id-emspki-nfssp-pivi-hardware | 2.16.840.1.114027.200.3.10.7.6 |
@@ -284,6 +290,16 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | 2.16.840.1.113733.1.7.21.3.15 | Class 3-VTN SSP-Medium Hardware CBP | 2.16.840.1.113733.1.7.23.3.1.15 |
 | 2.16.840.1.113733.1.7.21.3.17 | Class 3-VTN SSP-PIV-I CardAuth | 2.16.840.1.113733.1.7.23.3.1.17 |
 | 2.16.840.1.113733.1.7.21.3.20 | Class 3-VTN SSP-PIV-I ContentSigning | 2.16.840.1.113733.1.7.23.3.1.20 |
+
+#### Exostar
+
+| Test OID                      | Policy                                            | Production OID               |
+|-------------------------------|---------------------------------------------------|------------------------------|
+| 1.3.6.1.4.1.13948.1.1.1.18 | id-Exostar-basic-sha2 | 1.3.6.1.4.1.13948.1.1.1.8 |
+| 1.3.6.1.4.1.13948.1.1.1.15 | id-Exostar-mediumSoftware-sha2 | 1.3.6.1.4.1.13948.1.1.1.5 |
+| 1.3.6.1.4.1.13948.1.1.1.16 | id-Exostar-mediumHardware-sha2 | 1.3.6.1.4.1.13948.1.1.1.6 |
+| unknown | id-Exostar-Software-device-sha2 | 1.3.6.1.4.1.13948.1.1.1.25 |
+| unknown | id-Exostar-mediumHardware-device-sha2 | 1.3.6.1.4.1.13948.1.1.1.26 |
 
 #### IdenTrust
 
@@ -350,3 +366,33 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | 1.3.6.1.4.1.24019.1.1.1.113 | CertiPath variant medium CBP Software | 1.3.6.1.4.1.24019.1.1.1.20 |
 | 1.3.6.1.4.1.24019.1.1.1.114 | CertiPath variant medium CBP Hardware | 1.3.6.1.4.1.24019.1.1.1.21 |
 | 1.3.6.1.4.1.24019.1.1.1.115 | CertiPath variant high CBP Hardware | 1.3.6.1.4.1.24019.1.1.1.22 |
+
+#### STRAC Bridge
+
+| Test OID                    | Policy                 | Production OID     |
+| --------------------------- | ---------------------- | ------------------ |
+| 1.3.6.1.4.1.39789.2.1.99.1 | stracbridge-certpcy-rudimentaryAssurance | 1.3.6.1.4.1.39789.2.1.5.1 |
+| 1.3.6.1.4.1.39789.2.1.99.2 | stracbridge-certpcy-basicAssurance | 1.3.6.1.4.1.39789.2.1.5.2 |
+| 1.3.6.1.4.1.39789.2.1.99.3 | stracbridge-certpcy-mediumAssurance | 1.3.6.1.4.1.39789.2.1.5.3 |
+| 1.3.6.1.4.1.39789.2.1.99.4 | stracbridge-certpcy-mediumHardware | 1.3.6.1.4.1.39789.2.1.5.4 |
+| 1.3.6.1.4.1.39789.2.1.99.5 | stracbridge-certpcy-mediumCBP | 1.3.6.1.4.1.39789.2.1.5.5 |
+| 1.3.6.1.4.1.39789.2.1.99.6 | stracbridge-certpcy-mediumHW-CBP | 1.3.6.1.4.1.39789.2.1.5.6 |
+| 1.3.6.1.4.1.39789.2.1.99.7 | stracbridge-certpcy-pivi-hardware | 1.3.6.1.4.1.39789.2.1.5.7 |
+| 1.3.6.1.4.1.39789.2.1.99.8 | stracbridge-certpcy-pivi-cardAuth | 1.3.6.1.4.1.39789.2.1.5.8 |
+| 1.3.6.1.4.1.39789.2.1.99.9 | stracbridge-certpcy-pivi-contentSigning | 1.3.6.1.4.1.39789.2.1.5.9 |
+| 1.3.6.1.4.1.39789.2.1.99.10 | stracbridge-certpcy-mediumDevice | 1.3.6.1.4.1.39789.2.1.5.10 |
+| 1.3.6.1.4.1.39789.2.1.99.11 | stracbridge-certpcy-mediumDeviceHardware | 1.3.6.1.4.1.39789.2.1.5.11 |
+
+#### TSCP Bridge
+
+| Test OID                    | Policy                 | Production OID     |
+| --------------------------- | ---------------------- | ------------------ |
+| 1.3.6.1.4.1.38099.1.1.1.201 | tscp-certpcy-medium | 1.3.6.1.4.1.38099.1.1.1.1 |
+| 1.3.6.1.4.1.38099.1.1.1.202 | tscp-certpcy-MediumHardware | 1.3.6.1.4.1.38099.1.1.1.2 |
+| 1.3.6.1.4.1.38099.1.1.1.203 | tscp-certpcy-Medium-CBP | 1.3.6.1.4.1.38099.1.1.1.3 |
+| 1.3.6.1.4.1.38099.1.1.1.204 | tscp-certpcy-MediumHardware-CBP | 1.3.6.1.4.1.38099.1.1.1.4 |
+| 1.3.6.1.4.1.38099.1.1.1.205 | tscp-certpcy-PIVI | 1.3.6.1.4.1.38099.1.1.1.5 |
+| 1.3.6.1.4.1.38099.1.1.1.206 | tscp-certpcy-PIVI-CardAuth | 1.3.6.1.4.1.38099.1.1.1.6 |
+| 1.3.6.1.4.1.38099.1.1.1.207 | tscp-certpcy-PIVI-ContentSigning | 1.3.6.1.4.1.38099.1.1.1.7 |
+| 1.3.6.1.4.1.38099.1.1.1.212 | tscp-certpcy-MediumDevice | 1.3.6.1.4.1.38099.1.1.1.12 |
+| 1.3.6.1.4.1.38099.1.1.1.213 | tscp-certpcy-MediumDeviceHardware | 1.3.6.1.4.1.38099.1.1.1.13 |
