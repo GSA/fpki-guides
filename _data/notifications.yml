@@ -2609,6 +2609,13 @@
   sia_uri:  
   ocsp_uri:  http://ssp-ocsp.digicert.com
   
+- notice_date:  July 8, 2020  
+  change_type: OCSP Outage
+  system: Entrust Federal OCSP Service
+  change_description: On July 8, 2020 at approximately 4:00 PM CDT, Entrust Datacard performed a service failover of all Entrust Federal OCSP traffic including ocsp.managed.entrust.com from the Dallas primary site to the Denver alternate site due to ISP routing issues.  The routing issues have been resolved. On Friday, July 10, 2020 at 4:00 PM CDT, all Entrust Federal OCSP traffic including ocsp.managed.entrust.com will fail back to the Dallas primary site. Entrust customers were notified of this issue via email.
+  contact: support at entrustdatacard dot com   
+  ocsp_uri: ocsp.managed.entrust.com, ocspproofs.managed.entrust.com, nfiocsp.managed.entrust.com, doesspocsp.managed.entrust.com, hhspkiocsp.managed.entrust.com, feddcsocsp.managed.entrust.com
+  
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
