@@ -34,7 +34,7 @@ To verify the redistribution of the COMMON root CA certificate to your agency's 
 
 ### Use LANDesk 2016
 
-**Note:**&nbsp;&nbsp;If your agency uses a version above LANDesk 2016, please see [Ivanti: Install Root Certificates on Windows](https://help.ivanti.com/ap/help/en_US/fd/4.4/Content/FileDirector/Admin/3_Clients/Install_Root_Certificate_on_Windows.htm){:target="_blank"}.<br>
+**Note:**&nbsp;&nbsp;If your agency uses a version above LANDesk 2016, please see [Ivanti: Install Root Certificates on Windows](https://help.ivanti.com/ap/help/en_US/fd/4.4/Content/FileDirector/Admin/3_Clients/Install_Root_Certificate_on_Windows.htm){:target="_blank"}{:rel="noopener noreferrer"}.<br>
 
 1. Open *LANDesk 2016*:&nbsp;&nbsp;**Start** -> **LANDesk Management** -> **Desktop Manager**.
 2. Create a custom registry data item:&nbsp;&nbsp;**Tools** -> **Reporting/Monitoring** -> **Manage software list**.
