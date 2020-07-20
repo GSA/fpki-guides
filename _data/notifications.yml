@@ -2615,6 +2615,64 @@
   change_description: On July 8, 2020 at approximately 4:00 PM CDT, Entrust Datacard performed a service failover of all Entrust Federal OCSP traffic including ocsp.managed.entrust.com from the Dallas primary site to the Denver alternate site due to ISP routing issues.  On Friday, July 10, 2020 at 4:00 PM CDT, all Entrust Federal OCSP traffic failed back to the Dallas primary site. Entrust customers were notified of this issue via email.
   contact: support at entrustdatacard dot com   
   ocsp_uri: ocsp.managed.entrust.com, ocspproofs.managed.entrust.com, nfiocsp.managed.entrust.com, doesspocsp.managed.entrust.com, hhspkiocsp.managed.entrust.com, feddcsocsp.managed.entrust.com
+
+- notice_date: July 14, 2020
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: U.S. Department of State AD Root CA
+  change_description: The Department of State intends to deploy a Derived PIV credential CA.
+  contact: shanleyrj at state dot gov
+  ca_certificate_hash: 
+  ca_certificate_issuer: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  ca_certificate_subject: CN=U.S. Department of State DPC CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: July 16, 2020
+  change_type: CA Certificate Revocation
+  start_datetime:
+  end_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The certificate issued from the Federal Bridge CA G4 to GPO PCA that was set to expire on August 3, 2020 has been revoked.  A new, three-year cross certificate was issued from the Federal Bridge CA G4 to GPO PCA on June 25, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: de8171556288add44e16d631653c46adab4dcf79
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=GPO PCA, OU=Certification Authorities, OU=Government Printing Office, O=U.S. Government, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://www.gpo-fbca-crls.ois.gpo.gov/caCertsIssuedByGPO.p7c
+
+- notice_date: July 16, 2020
+  change_type: CA Certificate Revocation
+  start_datetime:
+  end_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 revoked the cross certificate issued to GPO PCA Root Certification Authority.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: b8eabb18ed544c9fcfb299bd5d322127e6f48d90
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=GPO PCA, OU=Certification Authorities, OU=Government Printing Office, O=U.S. Government, C=US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://www.gpo-fbca-crls.ois.gpo.gov/caCertsIssuedByGPO.p7c
+  ocsp_uri:
+
+- notice_date: July 16, 2020
+  change_type: CA Certificate Revocation
+  start_datetime:
+  end_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: As part of the migration to the Federal Bridge CA G4, the Federal Bridge CA 2016 revoked the cross certificate issued to SAFE Bridge CA 02 Certification Authority.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 5c654219972bac887bea9f1309eb9e052fb7757e
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://sbca2.safe-biopharma.org/sbca/issuedbySBCA02.p7c
+  
   
 #- notice_date:  
 #  change_type: CA Certificate Issuance
