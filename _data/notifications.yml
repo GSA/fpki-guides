@@ -2676,7 +2676,7 @@
 - notice_date: July 30, 2020
   change_type: Intent to Perform CA Certificate Revocation
   system: FPKI Trust Infrastructure - Federal Bridge CA G4
-  change_description: The Federal PKI Management Authority intends to revoke the certificate issued from Federal Bridge CA G4 to IdenTrust ACES CA 2.
+  change_description: As part of the Access Certificates for Electronic Services (ACES) program sunset, the Federal PKI Management Authority intends to revoke the certificate issued from Federal Bridge CA G4 to IdenTrust ACES CA 2.
   contact: fpki at gsa dot gov
   ca_certificate_hash: 1e5a60b592dfdbeea3d99a5225abc5e2239b987e
   ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
