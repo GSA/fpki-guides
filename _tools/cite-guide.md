@@ -8,7 +8,7 @@ permalink: /tools/citeguide/
 Prepared By: The FPKI Technical Working Group (TWG)  <br>
 An FPKI Policy Authority Working Group
 
-Updated: July 7, 2020 <br>
+Updated: August 11, 2020 <br>
 
 ## Overview
 
@@ -261,10 +261,10 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | --------------------------- | ---------------------- | ------------------ |
 | 2.16.840.1.114027.200.3.10.10.1.8 | id-emspki-nfssp-rudimentary-policy | 2.16.840.1 .114027.200.3.10.7.8 |
 | 2.16.840.1.114027.200.3.10.10.1.7 | id-emspki-nfssp-basic-policy | 2.16.840.1.114027.200.3.10.7.7 |
-| 2.16.840.1.114027.200.3.10.10.1.3 | id-emspki-nfssp-medium-policy | 2.16.840.1.114027.200.3.10.7.1 |
-| unknown | id-emspki-nfssp-medium-devices | 2.16.840.1.114027.200.3.10.7.3 |
-| 2.16.840.1.114027.200.3.10.10.1.4 | id-emspki-nfssp-medium-hardware| 2.16.840.1.114027.200.3.10.7.2 |
-| 2.16.840.1.114027.200.3.10.10.1.6 | id-emspki-nfssp-medium-authentication | 2.16.840.1.114027.200.3.10.7.4 |
+| 2.16.840.1.114027.200.3.10.10.1.1 | id-emspki-nfssp-medium-policy | 2.16.840.1.114027.200.3.10.7.1 |
+| 2.16.840.1.114027.200.3.10.10.1.3 | id-emspki-nfssp-medium-devices | 2.16.840.1.114027.200.3.10.7.3 |
+| 2.16.840.1.114027.200.3.10.10.1.2 | id-emspki-nfssp-medium-hardware| 2.16.840.1.114027.200.3.10.7.2 |
+| 2.16.840.1.114027.200.3.10.10.1.4 | id-emspki-nfssp-medium-authentication | 2.16.840.1.114027.200.3.10.7.4 |
 | 2.16.840.1.114027.200.3.10.10.1.6 | id-emspki-nfssp-pivi-hardware | 2.16.840.1.114027.200.3.10.7.6 |
 | 2.16.840.1.114027.200.3.10.10.1.5 | id-emspki-nfssp-medium-cardAuth | 2.16.840.1.114027.200.3.10.7.5 |
 | 2.16.840.1.114027.200.3.10.10.1.9 | id-emspki-nfssp-pivi-contentSigning | 2.16.840.1.114027.200.3.10.7.9 |
@@ -336,6 +336,19 @@ See [Federal PKI Federal Common Policy](#federal-pki-federal-common-policy)
 | 2.16.840.1.113839.99.100.37.2 | IGC Medium TLS/SSL Software                       | 2.16.840.1.113839.0.100.37.2 |
 | 2.16.840.1.113839.99.100.37.3 | IGC Medium Group Device Software Signing          | 2.16.840.1.113839.0.100.37.3 |
 | 2.16.840.1.113839.99.100.37.4 | IGC Medium Group Device Software Encryption       | 2.16.840.1.113839.0.100.37.4 |
+
+#### WidePoint
+
+| Test OID                      | Policy                                            | Production OID               |
+|-------------------------------|---------------------------------------------------|------------------------------|
+| 1.3.6.1.4.1.3922.1.1.2.3 | id-orc-nfissp-certpolicy-mediumAssurance | 1.3.6.1.4.1.3922.1.1.1.3 |
+| 1.3.6.1.4.1.3922.1.1.2.12	| id-orc-nfissp-certpolicy-mediumhardware |	1.3.6.1.4.1.3922.1.1.1.12 |
+| 1.3.6.1.4.1.3922.1.1.2.18	| id-orc-nfissp-certpolicy-pivi-hardware | 1.3.6.1.4.1.3922.1.1.1.18 |
+| 1.3.6.1.4.1.3922.1.1.2.19 | id-orc-nfissp-certpolicy-pivi-cardAuth | 1.3.6.1.4.1.3922.1.1.1.19 |
+| 1.3.6.1.4.1.3922.1.1.2.20 | id-orc-nfissp-certpolicy-pivi-contentSigning | 1.3.6.1.4.1.3922.1.1.1.20 |
+| 1.3.6.1.4.1.3922.1.1.2.37 | id-orc-nfissp-certpolicy-mediumDevice | 1.3.6.1.4.1.3922.1.1.1.37 |
+| 1.3.6.1.4.1.3922.1.1.2.38 | id-orc-nfissp-certpolicy-mediumDeviceHardware | 1.3.6.1.4.1.3922.1.1.1.38 |
+
 
 ### Commercial PKI Bridge Test OIDs
 
