@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: August 3, 2020
+Updated: August 11, 2020
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -32,6 +32,7 @@ No certificates were issued or published to the FPKI Trust Infrastructure in the
 | --------- | ---------- | ---------- | ------ | ------ |
 | No activity to report|  |   |   |  |
 
+
 The following certificates were removed from the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
@@ -51,6 +52,7 @@ The following certificates are planned for a certificate action in the near futu
 | FPKIMA | Federal Bridge CA 2016 | Federal Common Policy CA | bd38b7e253cfc5dd278a927f88833fb44c6af03a | 10/28/2020 | Revocation |
 | FPKIMA | Federal Common Policy CA | Federal Bridge CA 2016 | 38341412caa3d72ade61022240411444d21b1de9 | 10/28/20 | Revocation or removal |
 | FPKIMA | Federal Common Policy CA | Federal Bridge CA G4 | 4ac107ee2151f0cb6b54ef350759f7bb51a3fca2 | 12/12/20 | Reissue |
+
 
 
 ## Repository Availability 
