@@ -2698,7 +2698,7 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:
   system: Exostar Federated Identity Service Root CA 2
-  change_description: Exostar intends to issue a new signing CA certificate.
+  change_description: Exostar intends to issue a new CA certificate.
   contact: info at exostar dot com
   ca_certificate_hash:
   ca_certificate_issuer: CN=Exostar Federated Identity Service Root CA 2, OU=Certification Authorities, O=Exostar LLC, C=US
