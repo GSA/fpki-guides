@@ -2762,6 +2762,18 @@
   sia_uri: http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
   ocsp_uri:
 
+- notice_date: September 16, 2020
+  change_type: CA Certificate Issuance
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA issued a cross certificate to DocuSign, Inc.
+  contact: steve.race at tscp dot org
+  ca_certificate_hash: e515aa068b003bee83f8d7e15b5f25165a456941
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=DocuSign Root CA, OU=TSCP, O=DocuSign Inc., C=US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri:
+  ocsp_uri:
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
