@@ -2804,7 +2804,7 @@
 - notice_date: September 25, 2020
   change_type: Intent to Perform CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
-  change_description: The Federal PKI Management Authority is preparing to issue several CA certificates from the planned Federal Common Policy CA G2.
+  change_description: As part of the migration from the Federal Common Policy CA to the planned Federal Common Policy CA G2, the Federal PKI Management Authority is preparing to issue several CA certificates.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:  
   ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
