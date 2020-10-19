@@ -2870,30 +2870,30 @@
   ocsp_uri:
 
 - notice_date: October 13, 2020
-change_type: CA Certificate Revocation
-system: FPKI Trust Infrastructure - Federal Common Policy CA
-change_description: As part of the migration to the Federal Bridge CA G4 and in preparation for the Federal Bridge CA 2016 decommissioning, the Federal Common Policy CA revoked the certificate issued to Federal Bridge CA 2016.
-contact: fpki dash help at gsa dot gov
-ca_certificate_hash: bd38b7e253cfc5dd278a927f88833fb44c6af03a
-ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
-ca_certificate_subject: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
-cdp_uri:  http://http.fpki.gov/fcpca/fcpca.crl
-aia_uri:  http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
-sia_uri:  http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
-ocsp_uri:
+  change_type: CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: As part of the migration to the Federal Bridge CA G4 and in preparation for the Federal Bridge CA 2016 decommissioning, the Federal Common Policy CA revoked the certificate issued to Federal Bridge CA 2016.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: bd38b7e253cfc5dd278a927f88833fb44c6af03a
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri:  http://http.fpki.gov/fcpca/fcpca.crl
+  aia_uri:  http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
+  sia_uri:  http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
+  ocsp_uri:
 
 - notice_date: October 13, 2020
-change_type: CA Certificate Revocation
-system: FPKI Trust Infrastructure - Federal Bridge CA 2016
-change_description: As part of the migration to the Federal Bridge CA G4 and in preparation for the Federal Bridge CA 2016 decommissioning, the Federal Bridge CA 2016 revoked the certificate issued to the Federal Common Policy CA.
-contact: fpki dash help at gsa dot gov
-ca_certificate_hash: 38341412caa3d72ade61022240411444d21b1de9
-ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
-ca_certificate_subject: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
-cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
-aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
-sia_uri: http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c
-ocsp_uri:
+  change_type: CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: As part of the migration to the Federal Bridge CA G4 and in preparation for the Federal Bridge CA 2016 decommissioning, the Federal Bridge CA 2016 revoked the certificate issued to the Federal Common Policy CA.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 38341412caa3d72ade61022240411444d21b1de9
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c
+  ocsp_uri:
 
 - notice_date: October 14, 2020
   change_type: CA Certificate Issuance
