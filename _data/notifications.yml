@@ -2863,7 +2863,7 @@
   contact: info at exostar dot com
   ca_certificate_hash: d5f180db664ec80be77d9bfd5484a50cece5a58d
   ca_certificate_issuer: CN=Exostar Federated Identity Service Root CA 2, OU=Certification Authorities, O=Exostar LLC, C=US
-  ca_certificate_subject: CN = Exostar Federated Identity Service Signing CA 4, DC = evincible, DC = com
+  ca_certificate_subject: CN=Exostar Federated Identity Service Signing CA 4, DC=evincible, DC=com
   cdp_uri: http://www.fis.evincible.com/fis/public/ERCA2.crl
   aia_uri: http://www.fis.evincible.com/fis/public/issuedtoERCA2.p7c
   sia_uri:
@@ -2945,8 +2945,8 @@
   ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
   ca_certificate_subject: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
   cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl 
-  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
-  sia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
   ocsp_uri:
 
 - notice_date: October 19, 2020
