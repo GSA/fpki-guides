@@ -2926,7 +2926,7 @@
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
-  change_description: The Federal Common Policy CA G2 intends to issue a cross certificate to WidePoint SSP CA 5.
+  change_description: The Federal Common Policy CA G2 intends to issue a cross certificate to WidePoint ORC SSP 5.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash:
   ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
