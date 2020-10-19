@@ -2939,7 +2939,7 @@
 - notice_date: October 15, 2020
   change_type: CA Certificate Issuance
   system: FPKI Trust Infrastructure - Federal Common Policy CA G2
-  change_description: The Federal PKI Management Authority issued a cross certificate to the Federal Bridge CA G4.
+  change_description: The Federal Common Policy CA G2 issued a cross certificate to the Federal Bridge CA G4.
   contact: fpki dash help at gsa dot gov
   ca_certificate_hash: 97db351e069964297a82040eb760c9cc1d74ba33  
   ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
