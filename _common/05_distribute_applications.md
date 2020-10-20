@@ -21,4 +21,4 @@ Work across your agency teams to identify applications that rely on custom trust
 
 <br>
 
-Next, [prepare to migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/prepare-to-migrate/).
+Optionally, [distribute the CA certificates issued by the Federal Common Policy CA G2]({{site.baseurl}}/common/certificates/).
