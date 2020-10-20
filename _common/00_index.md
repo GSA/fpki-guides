@@ -17,7 +17,8 @@ The Federal Government recently deployed a new Federal Public Key Infrastructure
 
 <br>
 
-Federal enterprises and other relying party organizations should plan for this transition and test interoperability in advance of implementing changes in their production IT environments.
+{% include alert-success.html content="Federal enterprises and other relying party organizations should plan for this transition and test interoperability in advance of implementing changes in their production IT environments." %} 
+
 
 <p style="font-size: 2rem; font-weight: 700; padding-top: 15px;">Complete the steps below to mitigate the negative impacts of this change:</p>
 
