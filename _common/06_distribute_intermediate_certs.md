@@ -92,3 +92,8 @@ The following certificates are expected to be issued by the Federal Common Polic
 | Entrust Federal Shared Service Provider | OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US  |
 | Verizon Federal Shared Service Provider | CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US   |
 | WidePoint Federal Shared Service Provider | (1) CN=ORC SSP 4, O=ORC PKI, C=US <br> (2) CN=WidePoint SSP CA 5, OU=Certification Authorities, O=WidePoint, C=US |
+
+<br>
+
+Finally, [migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/migrate/).
+
