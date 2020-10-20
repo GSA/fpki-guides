@@ -24,11 +24,11 @@ Federal Common Policy CA certificate details are below:
 
 ## 1. Disable distribution of the Federal Common Policy CA
 
-Reference the distribution mechanisms [here]({{site.baseurl}}/common/distribute-os/) to review how the Federal Common Policy CA certificate **could** be distributed across your enterprise.  Ensure all existing distribution mechanisms are disabled. Sample procedures to disable the distribution of the Federal Common Policy CA (generation 1) are listed below:
+Reference the distribution mechanisms [here]({{site.baseurl}}/common/distribute-os/) to review how the Federal Common Policy CA certificate **could** be distributed across your enterprise.  Ensure all existing distribution mechanisms are disabled. Sample procedures to disable the distribution of the Federal Common Policy CA (generation 1) are listed below if the Federal Common Policy CA was distributed using:
 
-- [the Federal Common Policy CA was distributed using Microsoft Certutil](#if-the-federal-common-policy-ca-was-distributed-using-microsoft-certutil)
-- [the Federal Common Policy CA was distributed using a Microsoft Group Policy Object (GPO)](#if-the-federal-common-policy-ca-was-distributed-using-a-group-policy-object)
-- [the Federal Common Policy CA was distributed using an Apple Configuration Profile (macOS or iOS)](#if-the-federal-common-policy-ca-was-distributed-using-an-apple-configuration-profile)
+- [Microsoft Certutil](#if-the-federal-common-policy-ca-was-distributed-using-microsoft-certutil)
+- [Microsoft Group Policy Object (GPO)](#if-the-federal-common-policy-ca-was-distributed-using-a-group-policy-object)
+- [an Apple Configuration Profile (macOS or iOS)](#if-the-federal-common-policy-ca-was-distributed-using-an-apple-configuration-profile)
 
 <br>
 
