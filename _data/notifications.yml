@@ -2854,8 +2854,115 @@
   aia_uri:
   sia_uri:
   ocsp_uri:
-  
-  
+
+- notice_date: October 13, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: September 30, 2020
+  system: Exostar Federated Identity Service Root CA 2
+  change_description: Exostar stood-up a new issuing CA named "Exostar Federated Identity Service Signing CA 4."
+  contact: info at exostar dot com
+  ca_certificate_hash: d5f180db664ec80be77d9bfd5484a50cece5a58d
+  ca_certificate_issuer: CN=Exostar Federated Identity Service Root CA 2, OU=Certification Authorities, O=Exostar LLC, C=US
+  ca_certificate_subject: CN=Exostar Federated Identity Service Signing CA 4, DC=evincible, DC=com
+  cdp_uri: http://www.fis.evincible.com/fis/public/ERCA2.crl
+  aia_uri: http://www.fis.evincible.com/fis/public/issuedtoERCA2.p7c
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: October 13, 2020
+  change_type: CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: As part of the migration to the Federal Bridge CA G4 and in preparation for the Federal Bridge CA 2016 decommissioning, the Federal Common Policy CA revoked the certificate issued to Federal Bridge CA 2016.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: bd38b7e253cfc5dd278a927f88833fb44c6af03a
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri:  http://http.fpki.gov/fcpca/fcpca.crl
+  aia_uri:  http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c
+  sia_uri:  http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c
+  ocsp_uri:
+
+- notice_date: October 13, 2020
+  change_type: CA Certificate Revocation
+  system: FPKI Trust Infrastructure - Federal Bridge CA 2016
+  change_description: As part of the migration to the Federal Bridge CA G4 and in preparation for the Federal Bridge CA 2016 decommissioning, the Federal Bridge CA 2016 revoked the certificate issued to the Federal Common Policy CA.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 38341412caa3d72ade61022240411444d21b1de9
+  ca_certificate_issuer: CN=Federal Bridge CA 2016, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: http://http.fpki.gov/bridge/fbca2016.crl
+  aia_uri: http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c
+  sia_uri: http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c
+  ocsp_uri:
+
+- notice_date: October 14, 2020
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2 (FCPCAG2)
+  change_description: The Federal PKI Management Authority established a new root certification authority.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 99b4251e2eee05d8292e8397a90165293d116028  
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: 
+  aia_uri: 
+  sia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c
+  ocsp_uri:
+
+- notice_date: October 14, 2020
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a cross certificate to the Entrust Managed Services NFI Root CA.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Entrust Managed Services NFI Root CA, OU=Certification Authorities, O=Entrust, C=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: October 15, 2020
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 intends to issue a cross certificate to WidePoint ORC SSP 5.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint ORC SSP 5, O=ORC PKI, C = US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: October 15, 2020
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a cross certificate to the Federal Bridge CA G4.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 97db351e069964297a82040eb760c9cc1d74ba33  
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl 
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c
+  sia_uri: http://repo.fpki.gov/bridge/caCertsIssuedByfbcag4.p7c
+  ocsp_uri:
+
+- notice_date: October 19, 2020
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a cross certificate to SAFE Identity Bridge CA.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=SAFE Identity Bridge CA, OU=Certification Authorities, O=SAFE Identity, C=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
