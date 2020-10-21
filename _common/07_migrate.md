@@ -11,9 +11,7 @@ To migrate to the Federal Common Policy CA G2 (FCPCA G2) as your agency's federa
 1. [**disable enterprise distribution**](#1-disable-distribution-of-the-federal-common-policy-ca) of the Federal Common Policy CA as a _trusted root_ CA certificate
 1. [**distrust**](#2-distrust-the-federal-common-policy-ca) the Federal Common Policy CA
 
-<br>
-
-Federal Common Policy CA certificate details are below:
+<p>Federal Common Policy CA certificate details are below:</p>
 
 | **Federal Common Policy CA (generation 1)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
