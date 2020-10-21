@@ -33,7 +33,7 @@ Reference the distribution mechanisms [here]({{site.baseurl}}/common/distribute-
 
 <br>
 
-### If the Federal Common Policy CA was distributed using Microsoft Certutil
+### If the Federal Common Policy CA was distributed using Microsoft Certutil...
 {% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
 
 1. Navigate to **Server Manager**.
@@ -46,7 +46,7 @@ Reference the distribution mechanisms [here]({{site.baseurl}}/common/distribute-
 
 <br>
 
-### If the Federal Common Policy CA was distributed using a Microsoft Group Policy Object
+### If the Federal Common Policy CA was distributed using a Microsoft Group Policy Object...
 {% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
 
 1. Navigate to **Server Manager**.
@@ -57,7 +57,7 @@ Reference the distribution mechanisms [here]({{site.baseurl}}/common/distribute-
 
 <br>
 
-### If the Federal Common Policy CA was distributed using an Apple Configuration Profile
+### If the Federal Common Policy CA was distributed using an Apple Configuration Profile...
 1. Identify how the profile is being distributed across the enterprise (e.g., over-the-air profile delivery or from an MDM server)
 2. Use local knowledge to disable the distribution.  If you are having trouble with a specific product, email us at fpki-help@gsa.gov.
 
