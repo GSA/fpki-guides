@@ -23,14 +23,14 @@ The Federal Government recently deployed a new Federal Public Key Infrastructure
 <p style="font-size: 2rem; font-weight: 700; padding-top: 15px;">Complete the steps below to mitigate the negative impacts of this change:</p>
 
 - **Recommended by December 31st, 2020:**
-     -  1 - [Prepare to migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/prepare-to-migrate/)
-     -  2 - [Obtain and verify a copy of the Federal Common Policy CA G2 certificate]({{site.baseurl}}/common/obtain-and-verify/)
-     -  3 - [Distribute the certificate to Operating Systems]({{site.baseurl}}/common/distribute-os/)
-     -  4 - [Verify Operating System distribution]({{site.baseurl}}/common/verify-os-distribution/)
-     -  5 - [Distribute the certificate to applications]({{site.baseurl}}/common/distribute-apps/)
-     -  6 - [Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)]({{site.baseurl}}/common/certificates/)
+     - [1. Prepare to migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/prepare-to-migrate/)
+     - [2. Obtain and verify a copy of the Federal Common Policy CA G2 certificate]({{site.baseurl}}/common/obtain-and-verify/)
+     - [3. Distribute the certificate to Operating Systems]({{site.baseurl}}/common/distribute-os/)
+     - [4. Verify Operating System distribution]({{site.baseurl}}/common/verify-os-distribution/)
+     - [5. Distribute the certificate to applications]({{site.baseurl}}/common/distribute-apps/)
+     - [6. Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)]({{site.baseurl}}/common/certificates/)
 - **Recommended by April 20th, 2021:**
-     -  7 - [Migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/migrate/)
+     - [7. Migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/migrate/)
 
 
 <p style="font-size: 2rem; font-weight: 700; padding-top: 15px">Need Help?</p>
