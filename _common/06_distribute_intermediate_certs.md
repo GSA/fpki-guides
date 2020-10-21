@@ -34,14 +34,6 @@ To simplify certificate path building within your enterprise, you may **optional
 	
 ### Use macOS/iOS Configuration Profile
 
-## macOS Solutions
-
-#### Create, Distribute, and Install an Apple Configuration Profile
-
-For **macOS and [iOS](#install-fcpca-g2-using-an-apple-configuration-profile-in-ios)** government-furnished devices, you can use Apple Configuration Profiles (XML files) to distribute and automatically install FCPCA G2.  
-
-These steps will help you to create, distribute, and install profiles using Apple’s free *Configurator 2* application. Third-party applications are available.
-
 {% include alert-warning.html content="Only System or Mobile Device Management (MDM) Administrators should create, distribute, and install Apple Configuration Profiles." %} 
 
 #### Create an Apple Configuration Profile
