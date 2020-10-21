@@ -238,8 +238,8 @@ Use Apple's _Configurator 2_ to distribute your Apple Configuration Profile to g
 - Physically connect to the user's device.
 - Email a profile to specific users.* 
 - Share a profile on an agency intranet webpage.*
-- [Share via over-the-air profile delivery and configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}.
-- [Share via over-the-air delivery and configuration from an MDM server](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. (Third-party applications are available.)
+- [Share via over-the-air profile delivery and configuration (Apple Developer Library)](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}.
+- [Share via over-the-air delivery and configuration from an MDM server (Apple Developer Library)](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. (Third-party applications are available.)
 > **For iOS only***&nbsp;&mdash;&nbsp;If you download and install FCPCA G2 from an email or an intranet website, you will need to _manually enable SSL trust for FCPCA G2_. This is not needed if you use Configurator 2 with over-the-air (OTA) methods or an MDM enrollment profile to install FCPCA G2. (See [Enable Full Trust for FCPCA G2](#enable-full-trust-for-fcpca-g2).)
 
 #### Install an Apple Configuration Profile
