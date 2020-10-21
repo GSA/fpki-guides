@@ -9,23 +9,23 @@ permalink: common/distribute-os/
 
 To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of these options:
 
-**Microsoft Solutions**
+### Microsoft Solutions
 1. [Use Microsoft Certutil](#use-microsoft-certutil)
 1. [Use Microsoft Group Policy Object (GPO)](#use-microsoft-group-policy-object-gpo)
 1. [Use third-party configuration management tools](#use-third-party-configuration-management-tools)
 1. [Use Microsoft Certificate Manager for unmanaged devices](#manually-use-microsoft-certificate-manager-for-unmanaged-devices)
 
-**macOS Solutions**
+### macOS Solutions
 1. [Use an Apple Configuration Profile](#create-distribute-and-install-an-apple-configuration-profile)
 1. [Use Command Line](#install-fcpca-g2-using-command-line)
 1. [Use Apple Keychain](#install-fcpca-g2-using-apple-keychain-access)
 
-**iOS Solutions**
+### iOS Solutions
 1. [Use an Apple Configuration Profile](#install-fcpca-g2-using-an-apple-configuration-profile-in-ios)
 1. [Use the Safari Web Browser](#install-fcpca-g2-using-safari-web-browser)
 1. [Enable Full Trust for FCPCA G2](#enable-full-trust-for-fcpca-g2)
 
-**Linux/Unix Solutions**
+### Linux/Unix Solutions
 1. [Use the command line](#use-the-command-line)
 
 
@@ -41,7 +41,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 
 ## Microsoft Solutions
 
-#### Use Microsoft Certutil 
+### Use Microsoft Certutil 
 
 {% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
 
@@ -65,7 +65,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 ![Sample Steps]({{site.baseurl}}/img/certutil.gif){:style="width:85%;"}
 
 
-#### Use Microsoft Group Policy Object (GPO)
+### Use Microsoft Group Policy Object (GPO)
 
 {% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
 
@@ -90,7 +90,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 *Sample steps run on Microsoft Server 2016:*
 ![Sample Steps]({{site.baseurl}}/img/gpo.gif){:style="width:85%;"}
 
-#### Use third-party configuration management tools
+### Use third-party configuration management tools
 
 {% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
 
@@ -101,7 +101,7 @@ You can use third-party configuration management tools, such as BigFix.
         certutil -f -addstore root “fcpcag2.crt”
     ```
 
-#### Use Microsoft Certificate Manager for unmanaged devices
+### Use Microsoft Certificate Manager for unmanaged devices
 
 To distribute FCPCA G2 to unmanaged devices:
 
@@ -120,7 +120,7 @@ To distribute FCPCA G2 to unmanaged devices:
 
 ## macOS Solutions
 
-#### Create, Distribute, and Install an Apple Configuration Profile
+### Create, Distribute, and Install an Apple Configuration Profile
 
 For **macOS and [iOS](#install-fcpca-g2-using-an-apple-configuration-profile-in-ios)** government-furnished devices, you can use Apple Configuration Profiles (XML files) to distribute and automatically install FCPCA G2.  
 
@@ -128,7 +128,7 @@ These steps will help you to create, distribute, and install profiles using Appl
 
 {% include alert-warning.html content="Only System or Mobile Device Management (MDM) Administrators should create, distribute, and install Apple Configuration Profiles." %} 
 
-#### Create an Apple Configuration Profile
+### Create an Apple Configuration Profile
 
 1. As an administrator, you will need to first [download and verify]({{site.baseurl}}/common/obtain-and-verify/) a copy of FCPCA G2 to your device.   
 2. Then, download and install *Configurator 2* from the Apple App Store.
@@ -229,7 +229,7 @@ To use this profile, copy the XML information and save it as a `.mobileconfig` f
 </plist>
 ``` 
 
-#### Distribute an Apple Configuration Profile
+### Distribute an Apple Configuration Profile
 
 {% include alert-warning.html content="Only System or MDM Administrators should use these steps. You should never email an Apple Configuration Profile to someone outside your agency's domain." %} 
 
@@ -242,7 +242,7 @@ Use Apple's _Configurator 2_ to distribute your Apple Configuration Profile to g
 - [Share via over-the-air delivery and configuration from an MDM server (Apple Developer Library)](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. (Third-party applications are available.)
 > **For iOS only***&nbsp;&mdash;&nbsp;If you download and install FCPCA G2 from an email or an intranet website, you will need to _manually enable SSL trust for FCPCA G2_. This is not needed if you use Configurator 2 with over-the-air (OTA) methods or an MDM enrollment profile to install FCPCA G2. (See [Enable Full Trust for FCPCA G2](#enable-full-trust-for-fcpca-g2).)
 
-#### Install an Apple Configuration Profile
+### Install an Apple Configuration Profile
 
 We recommend using an automated method to install Apple Configuration Profiles on government-furnished Apple devices (e.g., a desktop configuration management or MDM tool), which will distribute FCPCA G2. (If you have questions about third-party products, email us at fpki@gsa.gov.)
 
@@ -255,7 +255,7 @@ You can also manually install a profile.
 </video>
 <br>
 
-#### Install FCPCA G2 Using Command Line
+### Install FCPCA G2 Using Command Line
 
 {% include alert-info.html content="These steps will install FCPCA G2 in the System Keychain. System administrators should use these steps. Non-administrators will encounter permission errors." %}
 
@@ -274,14 +274,14 @@ You can also manually install a profile.
 </video>
 <br>
 
-#### Install FCPCA G2 Using Apple Keychain Access
+### Install FCPCA G2 Using Apple Keychain Access
 
 You can use one of these methods to install FCPCA G2 by using Apple Keychain Access:
 
 * System Keychain
 * Login Keychain
 
-##### System Keychain
+#### System Keychain
 {% include alert-info.html content="These steps will install FCPCA G2 in the System Keychain. System administrators should use these steps.  Non-administrators will encounter permission errors." %}
 
 1. Click the **Spotlight** icon and search for *Keychain Access*.
@@ -298,7 +298,7 @@ You can use one of these methods to install FCPCA G2 by using Apple Keychain Acc
   <source src="{{site.baseurl}}/video/keychain_gui_admin.mp4" type="video/mp4">
 </video>
 <br>
-##### Login Keychain
+#### Login Keychain
 
 {% include alert-info.html content="These steps will install FCPCA G2 in the login Keychain. Both system administrators and non-administrators can use these steps." %}
 
@@ -321,13 +321,12 @@ You can use one of these methods to install FCPCA G2 by using Apple Keychain Acc
 
 ## iOS Solutions
 
-
-#### Install FCPCA G2 Using an Apple Configuration Profile in iOS
+### Install FCPCA G2 Using an Apple Configuration Profile in iOS
 Apple Configuration Profiles can be used to install FCPCA G2 on both macOS and iOS devices. 
 
 Review the [Apple Configuration Profiles](#install-an-apple-configuration-profile) guidance above.
 
-#### Install FCPCA G2 Using Safari Web Browser
+### Install FCPCA G2 Using Safari Web Browser
 The Safari web browser can be used to install FCPCA G2 on **iOS devices only**. 
 
 {% include alert-info.html content="These steps will install FCPCA G2 as a trusted root certificate. System administrators or non-administrators can use these steps." %}
@@ -353,7 +352,7 @@ The Safari web browser can be used to install FCPCA G2 on **iOS devices only**.
 <br>
 
 
-#### Enable Full Trust for FCPCA G2 
+### Enable Full Trust for FCPCA G2 
 This option works for **iOS** devices only.
 
 {% include alert-info.html content="These steps will enable “full trust” for certificates that chain to FCPCA G2. Both system administrators and non-administrators can use these steps." %}
@@ -373,7 +372,7 @@ This option works for **iOS** devices only.
 
 ## Linux/Unix Solutions
 
-#### Use the Command Line
+### Use the Command Line
 1. Launch the command line.
 
 
