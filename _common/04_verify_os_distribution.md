@@ -9,7 +9,7 @@ permalink: common/verify-os-distribution/
 
 To verify the distribution of the Federal Common Policy CA G2 certificate to your agency's workstations and devices, use one of the options below:
 
-**Microsoft Solutions**
+### Microsoft Solutions
 - **Automated Solutions (*Recommended*)**
      - [Use BigFix](#use-bigfix)
      - [Use LANDesk 2016](#use-landesk-2016)
@@ -17,19 +17,20 @@ To verify the distribution of the Federal Common Policy CA G2 certificate to you
      - [Use Microsoft Certificate Manager](#use-microsoft-certificate-manager)
      - [Use Microsoft Registry Editor](#use-microsoft-registry-editor)
 
-**macOS Solutions**
+### macOS Solutions
 - [Use Keychain Access](#use-keychain-access)
 
-**iOS Solutions**
+### iOS Solutions
 - [Use Settings](#use-settings)
 	 
-**Linux/Unix Solutions**
+### Linux/Unix Solutions
 - [Use the Command Line](#use-the-command-line)
 
 <br>
 
 ---------------------------------------------------
 
+## Microsoft Solutions 
 
 ### Use BigFix
 
@@ -107,7 +108,7 @@ To verify the distribution of the Federal Common Policy CA G2 certificate to you
 11. Double-click the *new query name* to verify FCPCA G2 distribution. The results will be similar to these:<br><br />
     ![Sample Output]({{site.baseurl}}/img/landesk-results.jpg){:style="width:90%;"}
 
-#### Use Microsoft Certificate Manager
+### Use Microsoft Certificate Manager
 
 1. Open *Microsoft Certificate Manager*:&nbsp;&nbsp;**Start**; then type **certlm.msc** and press **Enter**.
 2. Go to **Trusted Root Certification Authorities** -> **Certificates**. To see whether FCPCA G2 was successfully distributed, look for _Federal Common Policy CA G2_ shown with **Intended Purposes** of *ALL* and a **Friendly Name** of *None*, as shown here:<br><br />
@@ -124,7 +125,7 @@ To verify the distribution of the Federal Common Policy CA G2 certificate to you
      - For Certutil-distributed copies of FCPCA G2, click **Enterprise** -> **Certificates**. *FCPCA G2 should appear in the certificates list.*<br>
      - For GPO-distributed copies of FCPCA G2, click **Group Policy** -> **Certificates**. *FCPCA G2 should appear in the certificates list.*
 
-#### Use Microsoft Registry Editor
+### Use Microsoft Registry Editor
 
 1. Verify that FCPCA G2 has been distributed to a specific workstation or device:&nbsp;&nbsp;open the *Microsoft Registry Editor*:&nbsp;&nbsp;**Start**; type **regedit.exe** and press **Enter**.
 2. The following registry keys will appear for GPO- or Certutil-distributed copies of FCPCA G2: 
@@ -160,7 +161,6 @@ To verify the distribution of the Federal Common Policy CA G2 certificate to you
 
 ## iOS Solutions 
 
-
 ### Use Settings
 
 1. Click through **Settings** -> **About** -> **Certificate Trust Settings**.
@@ -171,23 +171,20 @@ To verify the distribution of the Federal Common Policy CA G2 certificate to you
 
 <br>
 
-
 --------------------------
 
 ## Linux/Unix Solutions
 
-#### Use the Command Line
+### Use the Command Line
 1. Launch the command line.
-
 
 2. Run command:
 
     ```
-        sha256sum /etc/ssl/certs/fcpcag2.pem
+        sha256sum /etc/ssl/certs/fcpcag2.*
     ```
 
-	> Note: "fcpcag2" 
-
+	> **Note:** "fcpcag2" was the name of the file distributed to the Operating System
 
 
 3. Verify the file hash matches the one listed [here]({{site.baseurl}}/common/):
