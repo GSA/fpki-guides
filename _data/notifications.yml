@@ -2981,7 +2981,7 @@
   change_type: Intent to Decommission CA
   start_datetime:
   system: US Treasury Public CA
-  change_description: Treasury is scheduled to decommission the US Treasury Public CA on November 18, 2020.  Previously the CA's certificate was set to expire on December 5, 2020.  Treasury does not anticipate negative impacts on the FPKI community. 
+  change_description: Treasury is scheduled to decommission the US Treasury Public CA on November 18, 2020.  Previously, the CA's certificate was set to expire on December 5, 2020.  Treasury does not anticipate negative impacts on the FPKI community due to this change. 
   contact: pki dot pmo at fiscal dot treasury dot gov
   ca_certificate_hash: 14d4454152a6a1384052186adbb944fb2e1a768d
   ca_certificate_issuer: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
