@@ -2963,6 +2963,20 @@
   sia_uri:
   ocsp_uri:
 
+- notice_date: October 26, 2020
+  change_type: Intent to Decommission CA
+  start_datetime:
+  system: US Treasury Public CA
+  change_description: Treasury has notified the FPKIPA of an upcoming Treasury PKI architecture change.  Treasury is scheduled to decommission the US Treasury Public CA on November 18, 2020.  Treasury does not anticipate negative impacts on the FPKI community. 
+  contact: pki dot pmo at fiscal dot treasury dot gov
+  ca_certificate_hash: 14d4454152a6a1384052186adbb944fb2e1a768d
+  ca_certificate_issuer: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  ca_certificate_subject: OU=US Treasury Public CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  cdp_uri: http://pki.treas.gov/US_Treasury_Root_CA.crl
+  aia_uri: http://pki.treas.gov/teca_aia.p7c
+  sia_uri:
+  ocsp_uri:
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
