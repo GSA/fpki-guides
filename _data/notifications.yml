@@ -2963,6 +2963,48 @@
   sia_uri:
   ocsp_uri:
 
+- notice_date: October 23, 2020
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 issued a cross certificate to Symantec Class 3 SSP Intermediate CA – G3 (operated by DigiCert).
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 2e0140b2b72765ab0f266f57562c3cfd33fd5eb2
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Symantec Class 3 SSP Intermediate CA – G3, OU=Symantec Trust Network, O=Symantec Corporation, C=US
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
+  sia_uri: http://ssp-sia.symauth.com/STNSSP/Certs_Issued_by_Class3SSPCA-G3.p7c
+  ocsp_uri:
+
+- notice_date: October 26, 2020
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal Bridge CA G4 intends to issue a cross certificate to the United States Patent and Trademark Office.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=USPTO_INTR_CA1, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=uspto, DC=gov
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: October 26, 2020
+  change_type: Intent to Decommission CA
+  start_datetime:
+  system: US Treasury Public CA
+  change_description: Treasury is scheduled to decommission the US Treasury Public CA on November 18, 2020.  Previously, the CA's certificate was set to expire on December 5, 2020.  Treasury does not anticipate negative impacts on the FPKI community due to this change. 
+  contact: pki dot pmo at fiscal dot treasury dot gov
+  ca_certificate_hash: 14d4454152a6a1384052186adbb944fb2e1a768d
+  ca_certificate_issuer: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  ca_certificate_subject: OU=US Treasury Public CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  cdp_uri: http://pki.treas.gov/US_Treasury_Root_CA.crl
+  aia_uri: http://pki.treas.gov/teca_aia.p7c
+  sia_uri:
+  ocsp_uri:
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
