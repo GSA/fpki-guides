@@ -32,9 +32,9 @@ The easiest way to verify your migration to the Federal Common Policy CA G2 is t
 
 
 ### Troubleshooting
-- If you're building a path to the Federal Common Policy CA (generation 1)
+- If you're building a path to the Federal Common Policy CA (generation 1)...
 	- [Verify you have distrusted the Federal Common Policy CA]({{site.baseurl}}/common/migrate/#2-distrust-the-federal-common-policy-ca)
-- If a path isn't building at all
+- If a path isn't building at all...
 	- [Verify your distribution of the Federal Common Policy CA G2]({{site.baseurl}}/common/verify-os-distribution/)
 	- [Distribute the CA certificates issued by the Federal Common Policy CA G2]({{site.baseurl}}/common/certificates/)
 
