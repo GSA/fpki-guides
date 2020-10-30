@@ -40,4 +40,4 @@ The easiest way to verify your migration to the Federal Common Policy CA G2 is t
 
 ## Need Help?
 
-View the [Frequently Asked Questions]({{site.baseurl}}/common/faq/) page for more information, or email us at fpkirootupdate@gsa.gov .
+View the [Frequently Asked Questions]({{site.baseurl}}/common/faq/) page for more information, or email us at fpkirootupdate@gsa.gov.
