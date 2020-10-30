@@ -1,11 +1,11 @@
 ---
 layout: default 
-title: 8. Verify Migration to the Federal Common Policy CA G2
+title: 8. Verify migration to the Federal Common Policy CA G2
 collection: common
 permalink: common/verify-migration/
 ---
 
-The easiest way to verify your migration to the Federal Common Policy CA G2 is to validate one of the certificates found on your PIV credential.
+The easiest way to verify your migration to the Federal Common Policy CA G2 is to validate one of your PIV credential certificates.
 
 ### Verify Migration on Windows
 
@@ -13,7 +13,7 @@ The easiest way to verify your migration to the Federal Common Policy CA G2 is t
 1. Double-click on **Personal** and then **Certificates**.
 1. Browse to and select any of the certificates found on your PIV credential (the "Issued To" column will list your name).
 1. Double-click the certificate and select the **Certification Path** tab.
-1. Verify the certificate chain begins with the Federal Common Policy CA G2 (pictured below).  <br><br>**Note:** It's okay if you see different certification authorities named below the Federal Common Policy CA G2.  The important thing is to see the Federal Common Policy CA G2 listed. 
+1. Verify the certificate chain begins with the **Federal Common Policy CA G2** (pictured below).  <br><br>**Note:** It's okay if you see different certification authorities named below the Federal Common Policy CA G2. 
 
 ![verify_common_migration]({{site.baseurl}}/img/verify-migration-windows.png){:style="width:40%;"}
 
@@ -32,9 +32,9 @@ The easiest way to verify your migration to the Federal Common Policy CA G2 is t
 
 
 ### Troubleshooting
-- If you are building a path to the Federal Common Policy CA (generation 1)
+- If you're building a path to the Federal Common Policy CA (generation 1)
 	- [Verify you have distrusted the Federal Common Policy CA]({{site.baseurl}}/common/migrate/#2-distrust-the-federal-common-policy-ca)
-- If a path is not building at all
+- If a path isn't building at all
 	- [Verify your distribution of the Federal Common Policy CA G2]({{site.baseurl}}/common/verify-os-distribution/)
 	- [Distribute the CA certificates issued by the Federal Common Policy CA G2]({{site.baseurl}}/common/certificates/)
 
