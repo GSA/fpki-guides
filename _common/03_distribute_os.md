@@ -5,7 +5,7 @@ collection: common
 permalink: common/distribute-os/
 ---
 
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share one of your agency's playbooks to distribute a trusted root CA certificate to an Operating System trust store, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
+{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share one of your agency's playbooks to distribute a trusted root CA certificate to an Operating System trust store, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
 
 To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of these options:
 

@@ -5,7 +5,7 @@ collection: common
 permalink: common/distribute-apps/
 ---
 
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share one of your agency's playbooks to distribute a trusted root CA certificate to an application trust store, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
+{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share one of your agency's playbooks to distribute a trusted root CA certificate to an application trust store, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
 
 Though many software applications leverage the underlying Operating System [trust store]({{site.baseurl}}/truststores/) to verify whether a certificate should be trusted, not all do. 
 

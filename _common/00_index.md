@@ -31,8 +31,8 @@ The Federal Government recently deployed a new Federal Public Key Infrastructure
      - [6. Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)]({{site.baseurl}}/common/certificates/)
 - **Recommended by April 20th, 2021:**
      - [7. Migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/migrate/)
-
+     - [8. Verify Migration to the Federal Common Policy CA G2]({{site.baseurl}}/common/verify-migration/)
 
 <p style="font-size: 2rem; font-weight: 700; padding-top: 15px">Need Help?</p>
 
-View the [Frequently Asked Questions]({{site.baseurl}}/common/faq/) page for more information, or email us at fpki-help@gsa.gov.
+View the [Frequently Asked Questions]({{site.baseurl}}/common/faq/) page for more information, or email us at fpkirootupdate@gsa.gov.

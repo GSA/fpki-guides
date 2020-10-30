@@ -11,7 +11,10 @@ To migrate to the Federal Common Policy CA G2 (FCPCA G2) as your agency's federa
 1. [**disable enterprise distribution**](#1-disable-distribution-of-the-federal-common-policy-ca) of the Federal Common Policy CA as a _trusted root_ CA certificate
 1. [**distrust**](#2-distrust-the-federal-common-policy-ca) the Federal Common Policy CA
 
-<p>Federal Common Policy CA certificate details are below:</p>
+{% include alert-warning.html content="<strong>Heads up!</strong> Test the procedures below in a controlled environment <strong>before</strong> deploying across your entire enterprise.  If the Federal Common Policy CA G2 certificate was not successfully distributed before following these steps, you may cause a <strong>denial-of-service.</strong>" %}
+
+
+## Federal Common Policy CA (generation 1) certificate details
 
 | **Federal Common Policy CA (generation 1)**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
@@ -20,6 +23,7 @@ To migrate to the Federal Common Policy CA G2 (FCPCA G2) as your agency's federa
 | Serial Number | 0130 |
 | SHA-1 Thumbprint | 90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1 |
 | SHA-256 Thumbprint | 89 4e bc 0b 23 da 2a 50 c0 18 6b 7f 8f 25 ef 1f 6b 29 35 af 32 a9 45 84 ef 80 aa f8 77 a3 a0 6e |
+
 
 ## 1. Disable distribution of the Federal Common Policy CA
 
@@ -64,10 +68,10 @@ Reference the distribution mechanisms [here]({{site.baseurl}}/common/distribute-
 ## 2. Distrust the Federal Common Policy CA 
 
 Use one of the methods below to distrust the Federal Common Policy CA (generation 1).
+- [Use Microsoft Group Policy Object (GPO)](#use-microsoft-group-policy-object)
+- [Use macOS Terminal](#use-macos-terminal)
 
-<br>
-
-### Use Microsoft Group Policy Object (GPO)
+### Use Microsoft Group Policy Object
 
 {% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
 
@@ -115,5 +119,8 @@ Use one of the methods below to distrust the Federal Common Policy CA (generatio
   <source src="{{site.baseurl}}/video/remove_command_line.mp4" type="video/mp4">
 </video>
 <br>
+
+
+Finally, [verify migration to the Federal Common Policy CA G2]({{site.baseurl}}/common/verify-migration/).
 
 

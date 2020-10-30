@@ -104,7 +104,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7" class="desc">
   <ul>
-	<li>Work with your colleagues to develop and execute a plan for distributing the FCPCA G2 certificate, and <b>optionally</b> the CA certificates issued by FCPCA G2 to Operating Systems and applications across your enterprise.</li>
+	<li>Work with your colleagues to develop, execute, and test a plan for distributing the FCPCA G2 certificate, and <b>optionally</b> the CA certificates issued by FCPCA G2 to Operating Systems and applications across your enterprise.</li>
 	<li>Communication is key! Collaborate with colleagues across your agency and ensure the appropriate stakeholders are involved.</li> 
   </ul>
   </td>

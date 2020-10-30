@@ -87,5 +87,5 @@ The following certificates are expected to be issued by the Federal Common Polic
 
 <br>
 
-Finally, [migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/migrate/).
+Next, [migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/migrate/).
 
