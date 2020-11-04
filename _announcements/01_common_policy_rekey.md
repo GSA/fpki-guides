@@ -39,4 +39,4 @@ To prevent issues, agencies **must** distribute the Federal Common Policy CA G2 
 To prepare for the Federal Common Policy CA update, read our guide [here]({{ site.baseurl }}/common).
 
 ## Who can I contact for help or more information?
-Email us at fpki-help@gsa.gov. 
+Email us at fpkirootupdate@gsa.gov. 
