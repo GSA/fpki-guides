@@ -15,7 +15,7 @@ No. PIV credentials will *not* be affected by this change.
 
 ### Is the Federal Common Policy CA changing?
 
-Yes. In **October 2020**, the Federal Government will establish a new Federal Public Key Infrastructure (FPKI) Root Certification Authority (CA) known as the **Federal Common Policy CA G2**. 
+Yes. In **October 2020**, the Federal Government established a new Federal Public Key Infrastructure (FPKI) Root Certification Authority (CA) known as the **Federal Common Policy CA G2**. 
 
 Between December 2020 and May 2021, CAs cross-certified by the existing Federal Common Policy CA will be migrated to the Federal Common Policy CA G2.  Once the migration is complete, the existing Federal Common Policy CA (FCPCA) will be decommissioned (planned for May 2021). 
 
@@ -24,8 +24,8 @@ Between December 2020 and May 2021, CAs cross-certified by the existing Federal 
 ### When will this change occur?
 
 Tentative time-line:
-- **October 14, 2020**: The Federal PKI Management Authority (FPKIMA) will establish the new Federal Common Policy CA G2
-- **October 15, 2020**: The FPKIMA will issue and distribute a cross certificate issued from the Federal Common Policy CA G2 to the Federal Bridge CA G4
+- **October 14, 2020**: The Federal PKI Management Authority (FPKIMA) established the new Federal Common Policy CA G2
+- **October 15, 2020**: The FPKIMA issued and distributed a cross certificate from the Federal Common Policy CA G2 to the Federal Bridge CA G4
 - **November 18, 2020**: The FPKIMA will issue and distribute certificates to migrate agency and affiliate CAs cross-certified by the Federal Common Policy CA to the Federal Common Policy CA G2 
 - **December 2020 to May 2021**: All agencies will need to transition from using the Federal Common Policy CA as a trust anchor to the Federal Common Policy CA G2 *(approximately six months)*
 - **May 2021**: The FPKIMA will decommission the existing Federal Common Policy CA
