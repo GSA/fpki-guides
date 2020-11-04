@@ -34,9 +34,7 @@ Tentative time-line:
 - **May 2021**: The FPKIMA team will decommission the old Federal Common Policy CA 
 
 ## What should I do?
-To prevent issues, agencies **must** distribute the Federal Common Policy CA G2 root certificate as a trusted Root Certification Authority to workstations and servers **_as soon as it is available_**.
-
-{% include alert-info.html content="The Federal Common Policy CA G2 CA certificate is expected for distribution on <strong>October 14, 2020</strong>.  This announcement will be updated once the certificate is available." %}
+To prevent issues, agencies **must** distribute the Federal Common Policy CA G2 root certificate as a trusted Root Certification Authority to workstations and servers.
 
 To prepare for the Federal Common Policy CA update, read our guide [here]({{ site.baseurl }}/common).
 
