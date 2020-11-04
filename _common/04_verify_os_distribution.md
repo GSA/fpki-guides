@@ -45,7 +45,7 @@ To verify the distribution of the Federal Common Policy CA G2 certificate to you
 3. The file's hash must match this one:
 
     ```
-          b2bd79f6edf93553c001dd333657442ac4137d62246b1d7695de994a0a770d37
+          03bca16f7d21be344d954105b5ccb3caf578588cf6b8bd6f1cd03dfe298361bb
     ```
 
 4. Log into *BigFix*:&nbsp;&nbsp;**Start** -> **IBM BigFix** -> **IBM BigFix Console**.
