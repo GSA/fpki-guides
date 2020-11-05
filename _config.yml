@@ -74,15 +74,16 @@ navigation:
   internal: true
   coll: true
   collname: crls
-# - text: Certificate Policies
-  # url: policyobjects
-  # internal: true
-  # coll: false
 - text: Trust Stores
   url: truststores/
   internal: true
-  coll: true
+  coll: false
   collname: truststores
+- text: Federal Common Policy <br>CA Update (FY 21)
+  url: common/
+  internal: true
+  coll: true
+  collname: common
 - text: Useful Tools
   url: tools/
   internal: true
@@ -129,10 +130,6 @@ collections:
     label: "Engineer Guides"
     permalink: /engineer/:path/
     output: true
-#  pkifundamentals:
-#    label: "Public Key Infrastructure"
-#    permalink: /pki/:path/
-#    output: true
   faq:
     label: "FAQ"
     permalink: /faq/:path/
@@ -148,6 +145,10 @@ collections:
   tools:
     label: "Useful Tools"
     permalink: /tools/:path/
+    output: true
+  common:
+    label: "Federal Common Policy CA Update"
+    permalink: /common/:path/
     output: true
   announcements:
     label: "Announcements"

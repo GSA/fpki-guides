@@ -4,7 +4,7 @@ title: How to Contribute
 permalink: /contribute/
 ---
 
-Thank you for considering contributing to our development of open and transparent Federal PKIU Guides.  Everyone has tricks and tips and we want to share these with our colleagues! 
+Thank you for considering contributing to our development of open and transparent Federal PKI Guides.  Everyone has tricks and tips and we want to share these with our colleagues! 
 
 To contribute to this site, you can:
 
