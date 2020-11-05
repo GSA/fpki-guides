@@ -18,17 +18,22 @@ This change affects *all federal agencies* and the following services:
 {% include alert-success.html content="Federal enterprises and other relying party organizations should plan for this transition and test interoperability in advance of implementing changes in their production IT environments." %} 
 
 **Recommended steps to complete by December 31st, 2020:**
-    1. [Prepare to migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/prepare-to-migrate/)
-    2. [Obtain and verify a copy of the Federal Common Policy CA G2 certificate]({{site.baseurl}}/common/obtain-and-verify/) 
-    3. [Distribute the certificate to operating systems]({{site.baseurl}}/common/distribute-os/)  
-    4. [Verify operating system distribution]({{site.baseurl}}/common/verify-os-distribution/)  
-    5. [Distribute the certificate to applications]({{site.baseurl}}/common/distribute-apps/)  
-    6. [Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)]({{site.baseurl}}/common/certificates/)
 
+<ol>
+   <li>[Prepare to migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/prepare-to-migrate/)</li>
+   <li>[Obtain and verify a copy of the Federal Common Policy CA G2 certificate]({{site.baseurl}}/common/obtain-and-verify/)</li>
+   <li>[Distribute the certificate to operating systems]({{site.baseurl}}/common/distribute-os/)</li>
+   <li>[Verify operating system distribution]({{site.baseurl}}/common/verify-os-distribution/)</li>
+   <li>[Distribute the certificate to applications]({{site.baseurl}}/common/distribute-apps/)</li>
+   <li>[Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)]({{site.baseurl}}/common/certificates/)</li>
+</ol>
+    
 **Recommended steps to complete by April 20th, 2021:**
 
-    7. [Migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/migrate/)  
-    8. [Verify migration to the Federal Common Policy CA G2]({{site.baseurl}}/common/verify-migration/)
+<ol>
+   <li value="7">[Migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/migrate/)</li>
+   <li value="8">[Verify migration to the Federal Common Policy CA G2]({{site.baseurl}}/common/verify-migration/)</li>
+</ol>
 
 ## Need Help?
 
