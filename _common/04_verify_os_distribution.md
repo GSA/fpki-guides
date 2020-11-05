@@ -130,11 +130,11 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 1. Verify that FCPCA G2 has been distributed to a specific workstation or device:&nbsp;&nbsp;open the *Microsoft Registry Editor*:&nbsp;&nbsp;**Start**; type **regedit.exe** and press **Enter**.
 2. The following registry keys will appear for GPO- or Certutil-distributed copies of FCPCA G2: 
 
-	#### GPO-distributed FCPCA G2: 
+#### GPO-distributed FCPCA G2: 
 	- HKLM:\SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
 	- HKLM:\SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\ 
 
-	#### Certutil-distributed FCPCA G2: 
+#### Certutil-distributed FCPCA G2: 
 	- HKLM:\SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
 	- HKLM:\SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028\
 
