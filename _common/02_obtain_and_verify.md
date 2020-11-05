@@ -34,7 +34,8 @@ To verify your copy of FCPCA G2, use one of these options:
 	   certutil -hashfile {DOWNLOAD_LOCATION}\fcpcag2.crt SHA256
     ```
 
-*See these steps in action on Microsoft Server 2016:*
+**Note:** The following .gif shows you how to verify your copy of FCPCA G2 on Microsoft Server 2016.
+<br>
 ![A .gif that shows the verification steps performed on Microsoft Server 2016]({{site.baseurl}}/img/verify.gif){:style="width:85%;"}
 
 <br>
@@ -49,7 +50,7 @@ To verify your copy of FCPCA G2, use one of these options:
     ```
     
 
-*See these steps in action on macOS Catalina (10.15):*
+**Note:** The following .gif shows you how to verify your copy of FCPCA G2 on macOS Catalina (10.15).
 <br>
 <video width="85%" controls>
   <source src="{{site.baseurl}}/video/download_and_verify.mp4" type="video/mp4" alt="A video that shows the verification steps performed on macOS Catalina (10.15)">
