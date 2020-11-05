@@ -390,8 +390,8 @@ This option works for **iOS** devices only.
 1. Copy your verified copy of FCPCA G2 into the folder and set permissions with the following commands:
 
     ```
-	sudo cp [PATH\]fcpcag2.crt .
-        sudo chmod 644 [PATH\]fcpcag2.crt
+        sudo cp [PATH\]fcpcag2.crt .
+        sudo chmod 644 [PATH\]fcpcag2.crt	
     ```
 
 1. Update Trusted Certificates with the following command:
