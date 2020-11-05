@@ -85,7 +85,7 @@ Use one of the methods below to distrust the FCPCA G1.
 1. Right-click the newly created *Group Policy Object (GPO)* and click **Edit**.
 1. Navigate to **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies**.  
 1. Right-click **Untrusted Certificates**, and select **Import**. *The Certificate Import Wizard will open*. 
-1. Browse to and select your copy of FCPCA G2.
+1. Browse to and select your copy of FCPCA G1.
 1. Verify that the target **Certificate Store** presents **Untrusted Certificates**, and select **Next**.
 1. Select **Finish** to complete the import.
 
