@@ -10,8 +10,8 @@ To limit the impact to your agency, you should distribute the Federal Common Pol
 ### Download a Copy of FCPCA G2
 
 To download a copy of FCPCA G2, use one of these recommended options:
-1. Download the certificate from http://repo.fpki.gov/fcpca/fcpcag2.crt
-1. Email fpki-help@gsa.gov to request an out-of-band copy for download.
+- Download the certificate from http://repo.fpki.gov/fcpca/fcpcag2.crt
+- Email fpki-help@gsa.gov to request an out-of-band copy for download.
 
 {% include alert-warning.html content="<b>You should never install a root certificate before you verify it.</b> The procedures below describe how to verify the authenticity of your copy of the FCPCA G2. Your certificate details and hash must match the expected values in the following table." %} 
 
