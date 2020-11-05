@@ -5,27 +5,33 @@ collection: common
 permalink: common/certificates/
 ---
 
-To simplify certificate path building within your enterprise, you may **optionally** distribute the CA certificates [issued by the Federal Common Policy CA G2](#certificates-issued-by-the-federal-common-policy-ca-g2). Sample procedures for the distribution of intermediate CA certificates are below:
+To simplify certificate path building within your enterprise, you can *optionally* distribute the CA certificates [issued by the Federal Common Policy CA (FCPCA) G2](#certificates-issued-by-the-federal-common-policy-ca-g2). Sample procedures for the distribution of intermediate CA certificates are below:
 
 
 ### Use Microsoft Group Policy Object (GPO)
 
-{% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
+{% include alert-warning.html content="You must have enterprise administrator privileges for the domain to use these procedures. You must run the commands from an agency domain controller." %}
 
 1. Navigate to **Server Manager**.
 1. Select **Tools**.
 1. Select **Group Policy Management** from the drop-down list.
-1. Right-click your desired domain(s), and select **Create a GPO in this domain, and Link it here…**.
+1. Right-click your desired domain(s), and select **Create a GPO in this domain, and Link it here**.
 1. Enter a GPO **Name** and click **OK**.
-1. Right-click the newly created *Group Policy Object (GPO)* and click **Edit…**.
-1. Navigate to **Policies** -> **Windows Settings** -> **Security Settings** -> **Public Key Policies**.  
-1. Right-click **Intermediate Certification Authorities**, and select **Import**. *The Certificate Import Wizard will open*. 
-1. Browse to and select the certificates [issued by the Federal Common Policy CA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) you'd like to distribute.
+1. Right-click the newly created GPO and click **Edit**.
+1. Navigate to **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies**.  
+1. Right-click **Intermediate Certification Authorities**, and select **Import**.
+
+	The Certificate Import Wizard appears
+	
+1. Browse to and select the certificates [issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) that you want to distribute.
 1. Verify that the target **Certificate Store** presents **Intermediate Certification Authorities**, and select **Next**.
-1. Select **Finish** to complete the import.  You'll see the message, *The import was successful*.
+1. Select **Finish** to complete the import. 
+
+	A success message appears.
+	
 1. Close the **Group Policy Management** window.
 1. Wait for clients to consume the new policy.
-1. [OPTIONAL] You can force client consumption:  click **Start**, type **cmd**, press **Enter**, and run command:
+1. (*Optional*) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
     ```
           gpupdate /force
     ```
@@ -38,16 +44,17 @@ To simplify certificate path building within your enterprise, you may **optional
 
 #### Create an Apple Configuration Profile
 
-1. As an administrator, you will need to first [download and verify] the certificates [issued by the Federal Common Policy CA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) you'd like to distribute.   
-2. Then, download and install *Configurator 2* from the Apple App Store.
-3. Open *Configurator 2* and click **File** -> **New Profile**.
-4. Under the **General** tab, enter a unique profile **Name** (e.g., "FPKI Intermediate CA Certificate Distribution Profile") and **Identifier** (e.g., "FCPCAG2-Intermediate-0001").
-5. Under the **Certificates** tab, click **Configure**; then browse to and select the certificates you'd like to distribute.
-6. (*Optional*) Add additional agency-specific configurations or customizations. 
-7. Click **File** -> **Save** to save your profile to your preferred location. 
-8. Follow the steps to [distribute](../distribute-os/#distribute-an-apple-configuration-profile) the profile to macOS and iOS devices across your enterprise.
+1. As an administrator, [download and verify] the certificates [issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) that you want to distribute.   
+2. Download and install *Configurator 2* from the Apple App Store.
+3. Open *Configurator 2* and click **File** > **New Profile**.
+4. On the **General** tab, enter a unique profile **Name** (for example, *FPKI Intermediate CA Certificate Distribution Profile*) and **Identifier** (for example, *FCPCAG2-Intermediate-0001*).
+5. On the **Certificates** tab, click **Configure**.
+6. Browse to and select the certificates you want to distribute.
+7. (*Optional*) Add additional agency-specific configurations or customizations. 
+8. Click **File** > **Save** to save your profile to your preferred location. 
+9. Follow the steps to [distribute](../distribute-os/#distribute-an-apple-configuration-profile) the profile to macOS and iOS devices across your enterprise.
 
-**Note:**&nbsp;&nbsp;This video shows you how to create an Apple Configuration Profile. 
+**Note:**&nbsp;&nbsp;The following video shows you how to create an Apple configuration profile. 
 
 <br>
 <video width="85%" controls>
@@ -60,7 +67,7 @@ To simplify certificate path building within your enterprise, you may **optional
 
 ### Certificates issued by the Federal Common Policy CA G2
 
-{% include alert-info.html content="Review the <a href=\"https://fpki.idmanagement.gov/notifications/#notifications\" target=\"_blank\">System Notifications</a> page or follow us on <a href=\"https://github.com/GSA/fpki-guides/issues/\" target=\"_blank\">GitHub</a> to learn when new certificates are issued.  If you're looking for certificates <i>issued to</i> the Federal Common Policy CA G2, email us at fpki-help@gsa.gov" %} 
+{% include alert-info.html content="Review the <a href=\"https://fpki.idmanagement.gov/notifications/#notifications\" target=\"_blank\">System Notifications</a> page or follow us on <a href=\"https://github.com/GSA/fpki-guides/issues/\" target=\"_blank\">GitHub</a> to learn when new certificates are issued.  If you're looking for certificates <i>issued to</i> the FCPCA G2, email us at fpki-help@gsa.gov." %} 
 
 | **Issued to: Federal Bridge CA G4**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
@@ -72,9 +79,9 @@ To simplify certificate path building within your enterprise, you may **optional
 | Download Location | Click [here](../../certs/federal_bridge_ca_g4.cer)|
 
 
-### Certificates pending issuance by the Federal Common Policy CA G2
+### Certificates pending issuance by the FCPCA G2
 
-The following certificates are expected to be issued by the Federal Common Policy CA G2 on November 18, 2020.
+The following certificates are expected to be issued by the FCPCA G2 on November 18, 2020.
 
 | CA Operator | CA Distinguished Name | 
 | :-------- | :-------------------------------     |
@@ -87,5 +94,5 @@ The following certificates are expected to be issued by the Federal Common Polic
 
 <br>
 
-Next, [migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/migrate/).
+Next, [migrate to the FCPCA G2]({{site.baseurl}}/common/migrate/).
 
