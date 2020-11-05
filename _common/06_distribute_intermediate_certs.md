@@ -40,9 +40,9 @@ To simplify certificate path building within your enterprise, you can *optionall
 	
 ### Use macOS/iOS Configuration Profile
 
-{% include alert-warning.html content="Only System or Mobile Device Management (MDM) Administrators should create, distribute, and install Apple Configuration Profiles." %} 
+{% include alert-warning.html content="Only System or Mobile Device Management (MDM) Administrators should create, distribute, and install Apple configuration profiles." %} 
 
-#### Create an Apple Configuration Profile
+#### Create an Apple configuration profile
 
 1. As an administrator, [download and verify] the certificates [issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) that you want to distribute.   
 2. Download and install *Configurator 2* from the Apple App Store.
