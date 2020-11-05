@@ -6,15 +6,14 @@ permalink: common/prepare-to-migrate/
 ---
  
 
-Use the checklist below to prepare your agency for the migration to the Federal Common Policy CA G2.  The checklist highlights activities as they relate to the following roles:
-- Information Technology Engineers and System Administrators (ENG)
-- Application Developers and Owners (APP)
-- Project Managers (PM)
-- Chief Information Officers (CIO)
-- Chief Security Officers (CSO)
+Use the checklist below to prepare your agency for the migration to the Federal Common Policy CA (FCPCA) G2.  The checklist highlights activities as they relate to the following roles:
+- **ENG** - Information technology engineers and system administrators
+- **APP** - Application developers and owners
+- **PM** - Project managers
+- **CIO** - Chief information officers
+- **CSO** - Chief security officers
 
-Agency staff are encouraged to participate in steps where their roles are listed in blue, bold font.
-
+We encourage agency staff to participate in steps where their roles appear in blue, bold font.
 
 <style>
 .title {font-size: 20px; color: white; background-color: #112e51; font-weight: 900;}
@@ -30,7 +29,7 @@ Agency staff are encouraged to participate in steps where their roles are listed
  <col width="200">
 
  <tr>
-  <th colspan="2" class="title">Federal Common Policy CA G2 Migration Checklist</th>
+  <th colspan="2" class="title">FCPCA G2 Migration Checklist</th>
   <th colspan="5" class="header">Recommended Participants</th>
  </tr>
 
@@ -46,15 +45,15 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7" class="desc">
   <ul>
-	<li>We're collaborating with CISA on a series of webinars to get the word out about our upcoming changes and to answer any questions you might have. </li>
-	<li>Once available, we'll post the webinar schedule on this page.</li>
-	<li>Encourage webinar participation throughout relevant stakeholders within your organization.</li>
+	<li>We are collaborating with CISA on a series of webinars to communicate upcoming changes and answer your questions. </li>
+	<li>When it's available, we'll post the webinar schedule on this page.</li>
+	<li>We encourage any relevant stakeholders in your organization to participate in the webinar.</li>
   </ul>
   </td>
 </tr>
 
  <tr>
-  <td colspan="2" class="what">2. Communicate the upcoming changes across your enterprise</td>
+  <td colspan="2" class="what">2. Communicate upcoming changes across your enterprise</td>
   <td class="who" id="whoactive">ENG</td>
   <td class="who" id="whoactive">APP</td>
   <td class="who" id="whoactive">PM</td>
@@ -65,8 +64,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7" class="desc">
   <ul>
-	<li>Communicate with relevant stakeholders <strong>early and often</strong> to minimize the opportunity for issues related to the migration to the Federal Common Policy CA G2.</li>
-	<li>This requires collaboration and coordination across a variety of agency stakeholders to include Domain Administrators, Website / Application Administrators, Mobile Device Management Administrators, etc. </li>
+	<li>Communicate with relevant stakeholders <strong>early and often</strong> to minimize the opportunity migration issues with the FCPCA G2.</li>
+	<li>Collaborate and coordinate with a variety of agency stakeholders, including but not limited to domain administrators, website and application administrators, mobile device management administrators. </li>
 	<li>Identify who you need to communicate with, and get started now!</li>
 
   </ul>
@@ -86,8 +85,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7" class="desc">
   <ul>
-	<li>Inventory the systems and applications within your agency.</li>
-	<li>Identify how each will receive the updated Federal Common Policy CA G2 CA certificate (e.g., you'll distribute the certificate through a Group Policy Object (GPO) or a Mobile Device Management (MDM) tool).</li>
+	<li>Inventory your agency's systems and applications.</li>
+	<li>Identify how you will deliver the updated FCPCA G2 CA certificate to each system or application. For example, you might distribute the certificate through a Group Policy Object (GPO) or Mobile Device Management (MDM) tool.</li>
   </ul>
   </td>
 </tr>
@@ -104,8 +103,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7" class="desc">
   <ul>
-	<li>Work with your colleagues to develop, execute, and test a plan for distributing the FCPCA G2 certificate, and <b>optionally</b> the CA certificates issued by FCPCA G2 to Operating Systems and applications across your enterprise.</li>
-	<li>Communication is key! Collaborate with colleagues across your agency and ensure the appropriate stakeholders are involved.</li> 
+	<li>Work with your colleagues to develop, execute, and test a plan to distribute the FCPCA G2 certificate (and, optionally, the CA certificates issued by the FCPCA G2) to operating systems and applications across your enterprise.</li>
+	<li>Communication is key! Collaborate with both colleagues and stakeholders across your agency.</li> 
   </ul>
   </td>
 </tr>
@@ -122,8 +121,8 @@ Agency staff are encouraged to participate in steps where their roles are listed
 <tr>
   <td colspan="7" class="desc">
   <ul>
-	<li>Don't forget to follow your agency's established enterprise change management process(es). </li>
-	<li>Test the procedures recommended by this guide in a test environment, if possible, to verify the intended results prior to production implementation. </li>
+	<li>Follow your agency's established enterprise change management process(es). </li>
+	<li>Test the procedures recommended by this guide in a test environment, if possible, to verify the intended results prior to production implementation.</li>
   </ul>
   </td>
 </tr>
@@ -131,4 +130,4 @@ Agency staff are encouraged to participate in steps where their roles are listed
 
 </table>
 
-Get started today, [obtain and verify a copy of the Federal Common Policy CA G2 certificate]({{site.baseurl}}/common/obtain-and-verify/).
+Get started today! [Obtain and verify a copy of the FCPCA G2 certificate]({{site.baseurl}}/common/obtain-and-verify/).
