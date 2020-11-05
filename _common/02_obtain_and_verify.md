@@ -7,7 +7,7 @@ permalink: common/obtain-and-verify/
 
 To limit the impact to your agency, you should distribute the Federal Common Policy CA G2 (FCPCA G2) certificate to all government-furnished workstations and devices as a _trusted root certificate_ **as soon as possible**.
 
-### Download a Copy of FCPCA G2
+## Download a Copy of FCPCA G2
 
 To download a copy of FCPCA G2, use one of these recommended options:
 - Download the certificate from http://repo.fpki.gov/fcpca/fcpcag2.crt
@@ -22,11 +22,11 @@ To download a copy of FCPCA G2, use one of these recommended options:
 | SHA-1 Thumbprint | 99B4251E2EEE05D8292E8397A90165293D116028 |
 | SHA-256 Thumbprint | 5F9AECC24616B2191372600DD80F6DD320C8CA5A0CEB7F09C985EBF0696934FC |
 
-### Verify Your Copy of FCPCA G2
+## Verify Your Copy of FCPCA G2
 
 To verify your copy of FCPCA G2, use one of these options: 
 
-#### On Windows: Use Microsoft Certutil
+### On Windows: Use Microsoft Certutil
 1. Click **Start**, type **cmd**, and press **Enter**.
 2. Run the following command:
 <br>
@@ -40,7 +40,7 @@ To verify your copy of FCPCA G2, use one of these options:
 
 <br>
 
-#### On macOS: Use Terminal
+### On macOS: Use Terminal
 1. Click the **Spotlight** icon and search for _Terminal_.
 2. Double-click the **Terminal** icon (black monitor icon with white ">_") to open a window.
 3. Run the following command:
@@ -57,7 +57,7 @@ To verify your copy of FCPCA G2, use one of these options:
 </video>
 <br>
 
-#### On Linux/Unix: Use the Command Line
+### On Linux/Unix: Use the Command Line
 1. Open the command line.
 2. Run the following command:
 <br>
