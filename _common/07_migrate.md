@@ -7,7 +7,9 @@ permalink: common/migrate/
 
 {% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distrust a CA certificate, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpki@gsa.gov." %}
 
-To migrate from the Federal Common Policy CA (FCPCA) G1 to the FCPCA G2 as your agency's federal trust anchor, you'll need to:
+For the purpose of these steps, we refer to the existing Federal Common Policy CA (FCPCA) as *FCPCA G1*.
+
+To migrate from the existing FCPCA G1 to the FCPCA G2 as your agency's federal trust anchor, you'll need to:
 1. [**disable enterprise distribution**](#disable-distribution-of-the-fcpca-g1) of the FCPCA G1 as a _trusted root_ CA certificate, and
 1. [**distrust**](#distrust-the-fcpca-g1) the FCPCA G1.
 
