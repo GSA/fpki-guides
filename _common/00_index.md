@@ -31,6 +31,6 @@ This change affects *all federal agencies* and the following services:
 7. [Migrate to the Federal Common Policy CA G2]({{site.baseurl}}/common/migrate/)
 8. [Verify migration to the Federal Common Policy CA G2]({{site.baseurl}}/common/verify-migration/)
 
-<p style="font-size: 2rem; font-weight: 700; padding-top: 15px">Need Help?</p>
+## Need Help?
 
 View the [Frequently Asked Questions]({{site.baseurl}}/common/faq/) page for more information, or email us at fpkirootupdate@gsa.gov.
