@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: 3. Distribute the certificate to Operating Systems
+title: 3. Distribute the certificate to operating systems
 collection: common
 permalink: common/distribute-os/
 ---
