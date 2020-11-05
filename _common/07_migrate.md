@@ -63,7 +63,7 @@ Reference the distribution mechanisms [here]({{site.baseurl}}/common/distribute-
 
 ### If the FCPCA was distributed using an Apple configuration profile
 1. Identify how the profile is being distributed across the enterprise (e.g., over-the-air profile delivery or from an MDM server)
-2. Use local knowledge to disable the distribution.  If you are having trouble with a specific product, email us at fpki-help@gsa.gov.
+2. Use local knowledge to disable the distribution.  If you are having trouble with a specific product, email us at fpkirootupdate@gsa.gov.
 
 <br>
 
