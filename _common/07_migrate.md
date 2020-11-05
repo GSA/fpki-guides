@@ -18,7 +18,7 @@ To migrate from the existing FCPCA G1 to the FCPCA G2 as your agency's federal t
 
 **FCPCA G1 certificate details**
 
-| **FCPCA G1 **  | **Certificate Details**                             |
+| **FCPCA G1**  | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
 | Federal Common Policy CA<br>(sometimes shown as *U.S. Government Common Policy*) | http://http.fpki.gov/fcpca/fcpca.crt |
 | Distinguished Name | cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US |
