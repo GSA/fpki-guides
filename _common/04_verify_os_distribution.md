@@ -73,32 +73,32 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 	- GPO Distribution
 	```
 		Root Key: HKLM
-          	Key: SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
-          	Value: BLOB
-          	Attribute Name: Custom Data – FCPCAG2Win32 GPO – Certificate
+		Key: SOFTWARE\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
+		Value: BLOB
+		Attribute Name: Custom Data – FCPCAG2Win32 GPO – Certificate
 	```
 	- Certutil Distribution
 	```
 		Root Key: HKLM
-          	Key: SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
-          	Value: BLOB
-          	Attribute Name: Custom Data – FCPCAG2Win32 certutil – Certificate
+		Key: SOFTWARE\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
+		Value: BLOB
+		Attribute Name: Custom Data – FCPCAG2Win32 certutil – Certificate
 	```
 	
       **Microsoft Windows 64-bit Versions**
 	- GPO Distribution
 	```
 		Root Key: HKLM
-          	Key: SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
-          	Value: BLOB
-          	Attribute Name: Custom Data – FCPCAG2Win64 GPO - Certificate
+		Key: SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
+		Value: BLOB
+		Attribute Name: Custom Data – FCPCAG2Win64 GPO - Certificate
 	```
 	- Certutil Distribution
 	```
-          	Root Key: HKLM
-          	Key: SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
-          	Value: BLOB
-          	Attribute Name: Custom Data – FCPCAG2Win64 certutil - Certificate
+		Root Key: HKLM
+		Key: SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
+		Value: BLOB
+		Attribute Name: Custom Data – FCPCAG2Win64 certutil - Certificate
 	```
 
 6. Create a query for the registry item:&nbsp;&nbsp;on the left side panel, expand **Network View**, and click **Queries**. 
