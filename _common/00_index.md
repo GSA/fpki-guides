@@ -12,8 +12,8 @@ The Federal Government recently deployed a new Federal Public Key Infrastructure
 
 - Personal Identity Verification (PIV) credential authentication to the government networks
 - Agency web applications implementing client authentication (e.g., PIV authentication)
-- Validation of digital signatures
-- Other applications leveraging the Federal Common Policy CA as a trust anchor
+- User digital signatures that leverage PIV or similar credentials
+- Other applications leveraging the Federal Common Policy CA as a root
 
 <br>
 
