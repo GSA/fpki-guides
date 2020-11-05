@@ -64,7 +64,7 @@ We encourage agency staff to participate in steps where their roles appear in bl
 <tr>
   <td colspan="7" class="desc">
   <ul>
-	<li>Communicate with relevant stakeholders <strong>early and often</strong> to minimize the opportunity migration issues with the FCPCA G2.</li>
+	<li>Communicate with relevant stakeholders <strong>early and often</strong> to minimize migration issues.</li>
 	<li>Collaborate and coordinate with a variety of agency stakeholders, including but not limited to domain administrators, website and application administrators, mobile device management administrators. </li>
 	<li>Identify who you need to communicate with, and get started now!</li>
 
