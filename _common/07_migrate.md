@@ -13,7 +13,7 @@ To migrate from the existing FCPCA G1 to the FCPCA G2 as your agency's federal t
 1. [**disable enterprise distribution**](#disable-distribution-of-the-fcpca-g1) of the FCPCA G1 as a _trusted root_ CA certificate, and
 1. [**distrust**](#distrust-the-fcpca-g1) the FCPCA G1.
 
-{% include alert-warning.html content="<strong>Heads up!</strong> Test the following steps in a controlled environment <strong>before</strong> you deploy them across your enterprise. If you do not successfully distribute the FCPCA G2 certificate before you begin these steps, you may cause a *denial-of-service*, impacting smartcard logon for your applications and systems." %}
+{% include alert-warning.html content="<strong>Heads up!</strong> Test the following steps in a controlled environment <strong>before</strong> you deploy them across your enterprise. If you do not successfully distribute the FCPCA G2 certificate before you begin these steps, you may cause a <strong>denial-of-service</strong>, impacting smartcard logon for your applications and systems." %}
 
 
 **FCPCA G1 certificate details**
