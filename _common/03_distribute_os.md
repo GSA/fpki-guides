@@ -141,7 +141,7 @@ These steps describe how to create, distribute, and install profiles using Apple
 1. As an administrator, [download and verify]({{site.baseurl}}/common/obtain-and-verify/) a copy of the FCPCA G2 to your device.   
 2. Download and install *Configurator 2* from the Apple App Store.
 3. Open *Configurator 2* and click **File** > **New Profile**.
-4. On the **General** tab, enter a unique profile **Name** (for example, *Federal FCPCA G2 Policy Certification Authority Profile*) and **Identifier** (for example, *FCPCAG2-0001*).
+4. On the **General** tab, enter a unique profile **Name** (for example, *FCPCA G2 Profile*) and **Identifier** (for example, *FCPCAG2-0001*).
 5. On the **Certificates** tab, click **Configure**. 
 6. Browse to and select your verified copy of the FCPCA G2.
 7. (*Optional*) Add additional agency-specific configurations or customizations. 
