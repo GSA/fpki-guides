@@ -44,7 +44,7 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Create an Apple configuration profile
 
-1. As an administrator, [download and verify] the certificates [issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) that you want to distribute.   
+1. As an administrator, download and verify the certificates [issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) that you want to distribute.   
 2. Download and install *Configurator 2* from the Apple App Store.
 3. Open *Configurator 2* and click **File** > **New Profile**.
 4. On the **General** tab, enter a unique profile **Name** (for example, *FPKI Intermediate CA Certificate Distribution Profile*) and **Identifier** (for example, *FCPCAG2-Intermediate-0001*).
