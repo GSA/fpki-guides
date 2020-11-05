@@ -58,7 +58,7 @@ To verify your copy of FCPCA G2, use one of these options:
 
 #### On Linux/Unix: Use the Command Line
 1. Open the command line.
-2. Run command:
+2. Run the following command:
 <br>
     ```
 	$ sha256sum {DOWNLOAD_LOCATION}/fcpcag2.crt
