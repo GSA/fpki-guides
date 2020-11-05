@@ -253,7 +253,7 @@ You can use Apple's _Configurator 2_ to distribute your Apple configuration prof
 
 ### Install an Apple configuration profile
 
-We recommend using an automated method to install Apple configuration profiles on government-furnished Apple devices (for example, a desktop configuration management or MDM tool), which will distribute FCPCA G2. (If you have questions about third-party products, email us at fpki@gsa.gov.)
+We recommend using an automated method to install Apple configuration profiles on government-furnished Apple devices (for example, a desktop configuration management or MDM tool), which will distribute FCPCA G2. (If you have questions about third-party products, email us at fpkirootupdate@gsa.gov.)
 
 You can also manually install a profile. 
 
