@@ -85,7 +85,7 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 		Attribute Name: Custom Data – FCPCAG2Win32 certutil – Certificate
 	```
 	
-      **Microsoft Windows 64-bit Versions**
+	**Microsoft Windows 64-bit Versions**
 	- GPO Distribution
 	```
 		Root Key: HKLM
