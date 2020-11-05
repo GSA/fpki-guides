@@ -86,14 +86,14 @@ To verify that the Federal Common Policy CA (FCPCA) G2 certificate has been dist
 	```
 	
       **Microsoft Windows 64-bit Versions**
-      - GPO Distribution
+	- GPO Distribution
 	```
 		Root Key: HKLM
           	Key: SOFTWARE\WOW6432Node\Policies\Microsoft\SystemCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
           	Value: BLOB
           	Attribute Name: Custom Data – FCPCAG2Win64 GPO - Certificate
 	```
-      - Certutil Distribution
+	- Certutil Distribution
 	```
           	Root Key: HKLM
           	Key: SOFTWARE\WOW6432Node\Microsoft\EnterpriseCertificates\Root\Certificates\99b4251e2eee05d8292e8397a90165293d116028
