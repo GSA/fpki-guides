@@ -84,7 +84,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 	
 1. Close the **Group Policy Management** window.
 1. Wait for clients to consume the new policy.
-1. (Optional) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
+1. (*Optional*) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
     ```
           gpupdate /force
     ```
