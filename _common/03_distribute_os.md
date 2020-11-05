@@ -151,7 +151,7 @@ These steps describe how to create, distribute, and install profiles using Apple
 **Note:** The following video shows you how to create an Apple configuration profile.
 <br>
 <video width="85%" controls>
-  <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
+  <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4" alt="A video that shows the steps to create an Apple configuration profile.">
 </video>
 <br>
 
@@ -260,7 +260,7 @@ You can also manually install a profile.
 **Note:**&nbsp;&nbsp;The following video shows you how to manually install an Apple configuration profile on **macOS**.
 <br>
 <video width="85%" controls>
-  <source src="{{site.baseurl}}/video/manual_install_profile.mp4" type="video/mp4">
+  <source src="{{site.baseurl}}/video/manual_install_profile.mp4" type="video/mp4"  alt="A video that shows the steps to manually install an Apple configuration profile.">
 </video>
 <br>
 
@@ -279,7 +279,7 @@ You can also manually install a profile.
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 using the command line.
 <br>
 <video width="85%" controls>
-  <source src="{{site.baseurl}}/video/install_command_line.mp4" type="video/mp4">
+  <source src="{{site.baseurl}}/video/install_command_line.mp4" type="video/mp4"  alt="A video that shows the steps to install FCPCA G2 using the macOS command line.">
 </video>
 <br>
 
@@ -298,10 +298,10 @@ You can use the System Keychain or Login Keychain to install the FCPCA G2.
 6. When prompted, enter your *administrator* username and password.
 7. Keychain Access will present the installed certificate.
 
-**Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 by using the Apple Keychain Access import process.
+**Note:**&nbsp;&nbsp;The following video shows administrators how to install FCPCA G2 by using the Apple Keychain Access import process.
 <br>
 <video width="85%" controls>
-  <source src="{{site.baseurl}}/video/keychain_gui_admin.mp4" type="video/mp4">
+  <source src="{{site.baseurl}}/video/keychain_gui_admin.mp4" type="video/mp4"  alt="A video that shows the steps for administrators to install FCPCA G2 using the Apple Keychain Access import process.">
 </video>
 <br>
 #### Login Keychain
@@ -316,7 +316,7 @@ You can use the System Keychain or Login Keychain to install the FCPCA G2.
 **Note:**&nbsp;&nbsp;The following video shows non-administrators how to install FCPCA G2 using the Apple Keychain Access import process.
 <br>
 <video width="85%" controls>
-  <source src="{{site.baseurl}}/video/keychain_gui_non_admin.mp4" type="video/mp4">
+  <source src="{{site.baseurl}}/video/keychain_gui_non_admin.mp4" type="video/mp4"  alt="A video that shows the steps for non-administrators to install FCPCA G2 using the Apple Keychain Access import process.">
 </video>
 <br>
 
@@ -354,7 +354,7 @@ You can use the Safari web browser to install the FCPCA G2 on **iOS devices only
 **Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 using the Safari web browser.
 <br>
 <video width="300" controls>
-  <source src="{{site.baseurl}}/video/ios_safari_configuration-g2.mp4" type="video/mp4">
+  <source src="{{site.baseurl}}/video/ios_safari_configuration-g2.mp4" type="video/mp4"  alt="A video that shows the steps to install FCPCA G2 in the Safari web browser.">
 </video>
 <br>
 
