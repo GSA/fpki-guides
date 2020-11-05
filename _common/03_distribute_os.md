@@ -5,64 +5,60 @@ collection: common
 permalink: common/distribute-os/
 ---
 
-{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share one of your agency's playbooks to distribute a trusted root CA certificate to an Operating System trust store, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
+{% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an operating system trust store, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
 
 To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of these options:
 
-### Microsoft Solutions
-1. [Use Microsoft Certutil](#use-microsoft-certutil)
-1. [Use Microsoft Group Policy Object (GPO)](#use-microsoft-group-policy-object-gpo)
-1. [Use third-party configuration management tools](#use-third-party-configuration-management-tools)
-1. [Use Microsoft Certificate Manager for unmanaged devices](#manually-use-microsoft-certificate-manager-for-unmanaged-devices)
+## Microsoft Solutions
+- [Use Microsoft Certutil](#use-microsoft-certutil)
+- [Use Microsoft Group Policy Object (GPO)](#use-microsoft-group-policy-object-gpo)
+- [Use third-party configuration management tools](#use-third-party-configuration-management-tools)
+- [Use Microsoft Certificate Manager for unmanaged devices](#manually-use-microsoft-certificate-manager-for-unmanaged-devices)
 
-### macOS Solutions
-1. [Use an Apple Configuration Profile](#create-distribute-and-install-an-apple-configuration-profile)
-1. [Use Command Line](#install-fcpca-g2-using-command-line)
-1. [Use Apple Keychain](#install-fcpca-g2-using-apple-keychain-access)
+## macOS Solutions
+- [Use an Apple configuration profile](#create-distribute-and-install-an-apple-configuration-profile)
+- [Use the command line](#install-fcpca-g2-using-command-line)
+- [Use Apple Keychain](#install-fcpca-g2-using-apple-keychain-access)
 
-### iOS Solutions
-1. [Use an Apple Configuration Profile](#install-fcpca-g2-using-an-apple-configuration-profile-in-ios)
-1. [Use the Safari Web Browser](#install-fcpca-g2-using-safari-web-browser)
-1. [Enable Full Trust for FCPCA G2](#enable-full-trust-for-fcpca-g2)
+## iOS Solutions
+- [Use an Apple configuration profile](#install-fcpca-g2-using-an-apple-configuration-profile-in-ios)
+- [Use the Safari Web Browser](#install-fcpca-g2-using-safari-web-browser)
+- [Enable Full Trust for FCPCA G2](#enable-full-trust-for-fcpca-g2)
 
-### Linux/Unix Solutions
-1. [Use the command line](#use-the-command-line)
+## Linux/Unix Solutions
+- [Use the command line](#use-the-command-line)
 
 
-{% include alert-warning.html content="<strong>Important!</strong> If your enterprise systems do not have <a href=\"https://fpki.idmanagement.gov/truststores/#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems\" target=\"_blank\">dynamic path validation</a> enabled, you may also need to distribute the <a href=\"../certificates\">intermediate CA certificates</a> issued by the Federal Common Policy CA G2.  These certificates will available after November 18, 2020." %}
+{% include alert-warning.html content="<strong>Important!</strong> If your enterprise systems do not have <a href=\"https://fpki.idmanagement.gov/truststores/#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems\" target=\"_blank\">dynamic path validation</a> enabled, you may also need to distribute the <a href=\"../certificates\">intermediate CA certificates</a> issued by the FCPCA G2.  These certificates will be available after November 18, 2020." %}
 
 <br>
 
-
-
-
 ---------------------------------------------------
-
 
 ## Microsoft Solutions
 
 ### Use Microsoft Certutil 
 
-{% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
+{% include alert-warning.html content="You must have Enterprise Administrator privileges for the domain to use these procedures. The commands must be run from an agency domain controller." %}
 
 1. Click **Start**, type **cmd**, and press **Enter**.
-1. Run command:
+1. Run the following command:
     ```
         certutil -dspublish -f [PATH\]fcpcag2.crt RootCA
     ```
 
-1. To verify that FCPCA G2 was distributed, run commands:
+1. To verify that FCPCA G2 was distributed, run the following commands:
     ```
         gpupdate /force
         certutil -viewstore -enterprise
     ```
 
-1. Confirm that FCPCA G2 is contained in the output details.
-1. Verify the certificate details against the [expected values]({{site.baseurl}}/common/obtain-and-verify) (e.g., serial number, hash, etc.).
+1. Confirm that the output details include FCPCA G2.
+1. Verify the certificate details against the [expected values]({{site.baseurl}}/common/obtain-and-verify) (for example, serial number, hash, etc.).
 
 
-*Sample steps run on Microsoft Server 2016:*
-![Sample Steps]({{site.baseurl}}/img/certutil.gif){:style="width:85%;"}
+**Note:** The following .gif shows you how to distribute the FCPCA G2 using Microsoft Certutil.
+<br>![A .gif that shows the distribution and verification steps performed using Microsoft Certutil]({{site.baseurl}}/img/certutil.gif){:style="width:85%;"}
 
 
 ### Use Microsoft Group Policy Object (GPO)
@@ -72,46 +68,58 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 1. Navigate to **Server Manager**.
 1. Select **Tools**.
 1. Select **Group Policy Management** from the drop-down list.
-1. Right-click your desired domain(s), and select **Create a GPO in this domain, and Link it here…**.
-1. Enter a GPO **Name** and click **OK**.
-1. Right-click the newly created *Group Policy Object (GPO)* and click **Edit…**.
-1. Navigate to **Policies** -> **Windows Settings** -> **Security Settings** -> **Public Key Policies**.  
-1. Right-click **Trusted Root Certification Authorities**, and select **Import**. *The Certificate Import Wizard will open*. 
-1. Browse to and select your copy of FCPCA G2.
+1. Right-click your desired domain(s), and select **Create a GPO in this domain, and Link it here**.
+1. Enter a GPO **Name**, and click **OK**.
+1. Right-click the newly created GPO and click **Edit**.
+1. Navigate to **Policies** > **Windows Settings** > **Security Settings** > **Public Key Policies**.  
+1. Right-click **Trusted Root Certification Authorities**, and select **Import**.
+	
+	The Certificate Import Wizard appears. 
+	
+1. Browse to and select your copy of the FCPCA G2.
 1. Verify that the target **Certificate Store** presents **Trusted Root Certification Authorities**, and select **Next**.
-1. Select **Finish** to complete the import.  You'll see the message, *The import was successful*.
+1. Select **Finish** to complete the import.
+
+	A success message appears.
+	
 1. Close the **Group Policy Management** window.
 1. Wait for clients to consume the new policy.
-1. [OPTIONAL] You can force client consumption:  click **Start**, type **cmd**, press **Enter**, and run command:
+1. (Optional) To force client consumption, click **Start**, type **cmd**, press **Enter**, and run the following command:
     ```
           gpupdate /force
     ```
 
-*Sample steps run on Microsoft Server 2016:*
-![Sample Steps]({{site.baseurl}}/img/gpo.gif){:style="width:85%;"}
+**Note:** The following .gif shows you how to distribute the FCPCA G2 with Microsoft GPO.
+<br>
+![A .gif that shows the distribution and verification steps performed with Microsoft Group Policy Object (GPO)]({{site.baseurl}}/img/gpo.gif){:style="width:85%;"}
 
 ### Use third-party configuration management tools
 
-{% include alert-warning.html content="You must have Enterprise Administrator privileges for the Domain to use these procedures. The commands must be run from an agency Domain Controller." %}
+{% include alert-warning.html content="To follow these steps, you must have Enterprise Administrator privileges for the Domain. You will need to run these commands from an agency domain controller." %}
 
 You can use third-party configuration management tools, such as BigFix.
 
-1. Using BigFix, schedule a task and push the certificate file. Run command (example): 
+1. Using BigFix, schedule a task and push the certificate file. Run the following command (example): 
     ```
         certutil -f -addstore root “fcpcag2.crt”
     ```
 
 ### Use Microsoft Certificate Manager for unmanaged devices
 
-To distribute FCPCA G2 to unmanaged devices:
+To distribute the FCPCA G2 to unmanaged devices:
 
-1. Click **Start**, type **certmgr.msc**, and then press **Enter**.
-1. Right-click **Trusted Root Certification Authorities** and select **All Tasks** -> **Import**. *The Certificate Import Wizard will open*. 
-1. Browse to and select your copy of FCPCA G2.
-1. Verify that the desired **Certificate Store** presents **Trusted Root Certification Authorities**, and select *Next*.
-1. Select *Finish* to complete the import. You'll see the message, *The import was successful*.
+1. Click **Start**, type **certmgr.msc**, and  press **Enter**.
+1. Right-click **Trusted Root Certification Authorities**, and select **All Tasks** > **Import**.
 
-> **Note:** If several users share a device, you can run **certlm.msc** to simultaneously update the certificate stores for the accounts on the device (vs. updating each account separately). 
+	The Certificate Import Wizard appears. 
+	
+1. Browse to and select your copy of the FCPCA G2.
+1. Verify that the desired **Certificate Store** displays **Trusted Root Certification Authorities**, and select *Next*.
+1. Select *Finish* to complete the import.
+	
+	A success message appears.
+
+> **Note:** If several users share a device, you can run the **certlm.msc** to simultaneously update the certificate stores for the accounts on the device (vs. updating each account separately). 
 
 <br>
 
@@ -120,26 +128,27 @@ To distribute FCPCA G2 to unmanaged devices:
 
 ## macOS Solutions
 
-### Create, Distribute, and Install an Apple Configuration Profile
+### Create, distribute, and install an Apple configuration profile
 
-For **macOS and [iOS](#install-fcpca-g2-using-an-apple-configuration-profile-in-ios)** government-furnished devices, you can use Apple Configuration Profiles (XML files) to distribute and automatically install FCPCA G2.  
+For **macOS and [iOS](#install-fcpca-g2-using-an-apple-configuration-profile-in-ios)** government-furnished devices, you can use Apple configuration profiles (XML files) to distribute and automatically install the FCPCA G2.  
 
-These steps will help you to create, distribute, and install profiles using Apple’s free *Configurator 2* application. Third-party applications are available.
+These steps describe how to create, distribute, and install profiles using Apple’s free *Configurator 2* application. There are also available third-party applications.
 
-{% include alert-warning.html content="Only System or Mobile Device Management (MDM) Administrators should create, distribute, and install Apple Configuration Profiles." %} 
+{% include alert-warning.html content="Only System or mobile device management (MDM) administrators should create, distribute, and install Apple configuration profiles." %} 
 
-### Create an Apple Configuration Profile
+### Create an Apple configuration profile
 
-1. As an administrator, you will need to first [download and verify]({{site.baseurl}}/common/obtain-and-verify/) a copy of FCPCA G2 to your device.   
-2. Then, download and install *Configurator 2* from the Apple App Store.
-3. Open *Configurator 2* and click **File** -> **New Profile**.
-4. Under the **General** tab, enter a unique profile **Name** ("Federal FCPCA G2 Policy Certification Authority Profile" was used for this example) and **Identifier** ("FCPCAG2-0001" was used for this example).
-5. Under the **Certificates** tab, click **Configure**; then browse to and select your verified copy of FCPCA G2.
-6. (*Optional*) Add additional agency-specific configurations or customizations. 
-7. Click **File** -> **Save** to save your profile to your preferred location. 
-8. Follow the steps to [distribute](#distribute-an-apple-configuration-profile) the profile across your enterprise.
+1. As an administrator, [download and verify]({{site.baseurl}}/common/obtain-and-verify/) a copy of the FCPCA G2 to your device.   
+2. Download and install *Configurator 2* from the Apple App Store.
+3. Open *Configurator 2* and click **File** > **New Profile**.
+4. On the **General** tab, enter a unique profile **Name** (in this example, *Federal FCPCA G2 Policy Certification Authority Profile*) and **Identifier** (in this example, *FCPCAG2-0001*).
+5. On the **Certificates** tab, click **Configure**. 
+6. Browse to and select your verified copy of the FCPCA G2.
+7. (*Optional*) Add additional agency-specific configurations or customizations. 
+8. Click **File** > **Save** to save your profile to your preferred location. 
+9. [Distribute the profile across your enterprise](#distribute-an-apple-configuration-profile).
 
-**Note:**&nbsp;&nbsp;This video shows you how to create an Apple Configuration Profile. The steps and example below also show you how to do this.<br><br>This profile can be reused.
+**Note:** The following video shows you how to create an Apple configuration profile.
 <br>
 <video width="85%" controls>
   <source src="{{site.baseurl}}/video/create_profile.mp4" type="video/mp4">
@@ -150,7 +159,7 @@ These steps will help you to create, distribute, and install profiles using Appl
 <b>APPLE CONFIGURATION PROFILE (EXAMPLE)</b>
 </p>
 
-{% include alert-warning.html content="Before using this profile, you should verify its suitability for your agency." %} 
+{% include alert-warning.html content="Before using this profile, you should verify that it is suitable for your agency." %} 
 
 To use this profile, copy the XML information and save it as a `.mobileconfig` file. 
 
@@ -229,26 +238,26 @@ To use this profile, copy the XML information and save it as a `.mobileconfig` f
 </plist>
 ``` 
 
-### Distribute an Apple Configuration Profile
+### Distribute an Apple configuration profile
 
-{% include alert-warning.html content="Only System or MDM Administrators should use these steps. You should never email an Apple Configuration Profile to someone outside your agency's domain." %} 
+{% include alert-warning.html content="Only System or MDM Administrators should use these steps. You should never email an Apple configuration profile to someone outside your agency's domain." %} 
 
-Use Apple's _Configurator 2_ to distribute your Apple Configuration Profile to government-furnished **macOS and iOS** devices in these ways: 
+You can use Apple's _Configurator 2_ to distribute your Apple configuration profile to government-furnished macOS and iOS devices in the following ways: 
 
 - Physically connect to the user's device.
 - Email a profile to specific users.* 
 - Share a profile on an agency intranet webpage.*
 - [Share via over-the-air profile delivery and configuration (Apple Developer Library)](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009505){:target="_blank"}.
-- [Share via over-the-air delivery and configuration from an MDM server (Apple Developer Library)](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. (Third-party applications are available.)
-> **For iOS only***&nbsp;&mdash;&nbsp;If you download and install FCPCA G2 from an email or an intranet website, you will need to _manually enable SSL trust for FCPCA G2_. This is not needed if you use Configurator 2 with over-the-air (OTA) methods or an MDM enrollment profile to install FCPCA G2. (See [Enable Full Trust for FCPCA G2](#enable-full-trust-for-fcpca-g2).)
+- [Share via over-the-air delivery and configuration from an MDM server (Apple Developer Library)](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/6-MDM_Best_Practices/MDM_Best_Practices.html#//apple_ref/doc/uid/TP40017387-CH5-SW2){:target="_blank"}. Third-party applications are also available.
+> ***For iOS only**&nbsp;&mdash;&nbsp;If you download and install the FCPCA G2 from an email or an intranet website, you will need to _manually enable SSL trust for FCPCA G2_. This is not needed if you use Configurator 2 with over-the-air (OTA) methods or an MDM enrollment profile to install the FCPCA G2. (See [Enable Full Trust for FCPCA G2](#enable-full-trust-for-fcpca-g2).)
 
-### Install an Apple Configuration Profile
+### Install an Apple configuration profile
 
-We recommend using an automated method to install Apple Configuration Profiles on government-furnished Apple devices (e.g., a desktop configuration management or MDM tool), which will distribute FCPCA G2. (If you have questions about third-party products, email us at fpki@gsa.gov.)
+We recommend using an automated method to install Apple configuration profiles on government-furnished Apple devices (for example, a desktop configuration management or MDM tool), which will distribute FCPCA G2. (If you have questions about third-party products, email us at fpki@gsa.gov.)
 
 You can also manually install a profile. 
 
-**Note:**&nbsp;&nbsp;This video shows you how to manually install an Apple Configuration Profile on **macOS**.
+**Note:**&nbsp;&nbsp;The following video shows you how to manually install an Apple configuration profile on **macOS**.
 <br>
 <video width="85%" controls>
   <source src="{{site.baseurl}}/video/manual_install_profile.mp4" type="video/mp4">
@@ -257,9 +266,9 @@ You can also manually install a profile.
 
 ### Install FCPCA G2 Using Command Line
 
-{% include alert-info.html content="These steps will install FCPCA G2 in the System Keychain. System administrators should use these steps. Non-administrators will encounter permission errors." %}
+{% include alert-info.html content="These steps describe how to install the FCPCA G2 in the System Keychain. You must have system administrator privileges to perform these steps." %}
 
-1. Click the **Spotlight** icon and search for *terminal*.
+1. Click the **Spotlight** icon and search for *Terminal*.
 2. Double-click the **Terminal** icon (black monitor icon with white “>_”) to open a window.
 3. Run the following command:
 
@@ -267,7 +276,7 @@ You can also manually install a profile.
 	$ sudo security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" {DOWNLOAD_LOCATION}/fcpcag2.crt
     ```
     
-**Note:**&nbsp;&nbsp;This video shows you how to install FCPCA G2 using the command line.
+**Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 using the command line.
 <br>
 <video width="85%" controls>
   <source src="{{site.baseurl}}/video/install_command_line.mp4" type="video/mp4">
@@ -276,13 +285,10 @@ You can also manually install a profile.
 
 ### Install FCPCA G2 Using Apple Keychain Access
 
-You can use one of these methods to install FCPCA G2 by using Apple Keychain Access:
-
-* System Keychain
-* Login Keychain
+You can use the System Keychain or Login Keychain to install the FCPCA G2.
 
 #### System Keychain
-{% include alert-info.html content="These steps will install FCPCA G2 in the System Keychain. System administrators should use these steps.  Non-administrators will encounter permission errors." %}
+{% include alert-info.html content="These steps describe how to install FCPCA G2 in the System Keychain. You must have system administrator privileges to perform these steps." %}
 
 1. Click the **Spotlight** icon and search for *Keychain Access*.
 2. Double-click the **Keychain Access** icon to open the application.
@@ -292,7 +298,7 @@ You can use one of these methods to install FCPCA G2 by using Apple Keychain Acc
 6. When prompted, enter your *administrator* username and password.
 7. Keychain Access will present the installed certificate.
 
-**Note:**&nbsp;&nbsp;This video shows you how to install FCPCA G2 by using the Apple Keychain Access import process.
+**Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 by using the Apple Keychain Access import process.
 <br>
 <video width="85%" controls>
   <source src="{{site.baseurl}}/video/keychain_gui_admin.mp4" type="video/mp4">
@@ -300,13 +306,14 @@ You can use one of these methods to install FCPCA G2 by using Apple Keychain Acc
 <br>
 #### Login Keychain
 
-{% include alert-info.html content="These steps will install FCPCA G2 in the login Keychain. Both system administrators and non-administrators can use these steps." %}
+{% include alert-info.html content="These steps describe how to install FCPCA G2 in the Login Keychain. Both system administrators and non-administrators can perform these steps." %}
 
 1. Browse to your downloaded, verified copy of FCPCA G2.
-2. Double-click on the file.
-3. Keychain Access will open and present the installed certificate.
+2. Double-click the file.
 
-**Note:**&nbsp;&nbsp;This video shows non-administrators how to install FCPCA G2 by using<br>the Apple Keychain Access import process.
+	Keychain Access opens and displays the installed certificate.
+
+**Note:**&nbsp;&nbsp;The following video shows non-administrators how to install FCPCA G2 using the Apple Keychain Access import process.
 <br>
 <video width="85%" controls>
   <source src="{{site.baseurl}}/video/keychain_gui_non_admin.mp4" type="video/mp4">
@@ -321,30 +328,30 @@ You can use one of these methods to install FCPCA G2 by using Apple Keychain Acc
 
 ## iOS Solutions
 
-### Install FCPCA G2 Using an Apple Configuration Profile in iOS
-Apple Configuration Profiles can be used to install FCPCA G2 on both macOS and iOS devices. 
+### Install FCPCA G2 Using an Apple configuration profile in iOS
+You can use Apple configuration profiles to install the FCPCA G2 on both macOS and iOS devices. 
 
-Review the [Apple Configuration Profiles](#install-an-apple-configuration-profile) guidance above.
+Review the [Apple configuration profiles](#install-an-apple-configuration-profile) guidance for instructions.
 
 ### Install FCPCA G2 Using Safari Web Browser
-The Safari web browser can be used to install FCPCA G2 on **iOS devices only**. 
+You can use the Safari web browser to install the FCPCA G2 on **iOS devices only**. 
 
-{% include alert-info.html content="These steps will install FCPCA G2 as a trusted root certificate. System administrators or non-administrators can use these steps." %}
+{% include alert-info.html content="These steps describe how to install the FCPCA G2 as a trusted root certificate. Both system administrators and non-administrators can perform these steps." %}
 
 1. Launch **Safari**.
 2. Navigate to the FCPCA G2 root CA certificate: http://repo.fpki.gov/fcpca/fcpcag2.crt.<br>
 > System message says: *The website is trying to open Settings to show you a configuration profile. Do you want to allow this?*<br>
 3. Click **Allow**.<br>
 > The FCPCA G2 configuration profile appears.<br> 
-4. Click **More Details** and then the FCPCA G2 certificate entry.
-5. Scroll down to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value]({{site.baseurl}}/common/obtain-and-verify).
+4. Click **More Details**, and then select the FCPCA G2 certificate entry.
+5. Scroll to **Fingerprints** and verify the certificate's SHA-256 hash against the [expected value]({{site.baseurl}}/common/obtain-and-verify).
 6. At the top left of screen, click **Back** and **Install Profile**. Then, click **Install** (top right).
 7. When prompted, enter your device **passcode**.
-8. Click **Install** (top right), and **Install** again.
+8. Click **Install** in the upper right corner, and **Install** again.
 9. Click **Done**.
 10. Follow the steps below to enable [full trust for FCPCA G2](#enable-full-trust-for-fcpca-g2).
 
-**Note:**&nbsp;&nbsp;This video shows you how to install FCPCA G2 using the Safari web browser.
+**Note:**&nbsp;&nbsp;The following video shows you how to install FCPCA G2 using the Safari web browser.
 <br>
 <video width="300" controls>
   <source src="{{site.baseurl}}/video/ios_safari_configuration-g2.mp4" type="video/mp4">
@@ -355,12 +362,13 @@ The Safari web browser can be used to install FCPCA G2 on **iOS devices only**.
 ### Enable Full Trust for FCPCA G2 
 This option works for **iOS** devices only.
 
-{% include alert-info.html content="These steps will enable “full trust” for certificates that chain to FCPCA G2. Both system administrators and non-administrators can use these steps." %}
+{% include alert-info.html content="These steps describe how to enable “full trust” for certificates that chain to FCPCA G2. Both system administrators and non-administrators can perform these steps." %}
 
-1. From the iOS device's **Home** screen, go to **Settings** -> **General** -> **About** -> **Certificate Trust Settings**.
-2. Beneath **Enable Full Trust for Root Certificates**, toggle _ON_ for the FCPCA G2 root CA certificate entry. 
+1. On the iOS device's **Home** screen, select **Settings** > **General** > **About** > **Certificate Trust Settings**.
+2. Under **Enable Full Trust for Root Certificates**, toggle _ON_ for the FCPCA G2 root CA certificate entry. 
 3. When the certificate appears, click **Continue**.
-4. You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
+
+	You can now successfully navigate to any intranet website whose SSL certificate was issued by a Federal Public Key Infrastructure (FPKI) CA.
 
 <img src="{{site.baseurl}}/img/ios_full_trust-g2.jpg" alt="iOS full trust" width="300">
 
@@ -372,23 +380,21 @@ This option works for **iOS** devices only.
 
 ## Linux/Unix Solutions
 
-### Use the Command Line
 1. Launch the command line.
 
-
-2. Change directory
+1. Change directory with the following command:
     ```
         cd /usr/local/share/ca-certificates/
     ```
 
-1. Copy your verified copy of FCPCA G2 into the folder and set permissions:
+1. Copy your verified copy of FCPCA G2 into the folder and set permissions with the following commands:
 
     ```
 	sudo cp [PATH\]fcpcag2.crt .
         sudo chmod 644 [PATH\]fcpcag2.crt
     ```
 
-1. Update Trusted Certificates:
+1. Update Trusted Certificates with the following command:
     ```
         sudo update-ca-certificates
     ```
@@ -398,4 +404,4 @@ This option works for **iOS** devices only.
 
 
 
-Next, [verify distribution of the Federal Common Policy CA G2 certificate as an Operating System Trusted Root]({{site.baseurl}}/common/verify-os-distribution/).
+Next, [verify distribution of the FCPCA G2 certificate as an operating system trusted root]({{site.baseurl}}/common/verify-os-distribution/).
