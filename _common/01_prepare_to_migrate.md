@@ -46,7 +46,14 @@ We encourage agency staff to participate in steps where their roles appear in bl
   <td colspan="7" class="desc">
   <ul>
 	<li>We are collaborating with CISA on a series of webinars to communicate upcoming changes and answer your questions. </li>
-	<li>When it's available, we'll post the webinar schedule on this page.</li>
+	<li>Upcoming webinars:</li>
+	<ul id="webinar series">
+		<li>Tuesday, November 17 at 10:30 am EST</li>
+		<ul id="webinar details">
+		<li><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTJmODBkNjctMzlhYi00MmQ2LWI0MDgtMDY0Mjc3MzQyNTZk%40thread.v2/0?context=%7b%22Tid%22%3a%223ccde76c-946d-4a12-bb7a-fc9d0842354a%22%2c%22Oid%22%3a%2278bdbe8f-9465-4376-81c9-79ddeca6848b%22%7d" target="_blank">Join via Microsoft Teams</a> </li>
+		<li>Join by phone: +1 202-516-6093,,457161743# (Conference ID: 457 161 743#)</li>
+		</ul>
+    </ul>
 	<li>We encourage any relevant stakeholders in your organization to participate in the webinar.</li>
   </ul>
   </td>
