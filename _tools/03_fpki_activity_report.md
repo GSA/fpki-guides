@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: November 8, 2020
+Updated: November 10, 2020
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -32,7 +32,7 @@ The following certificates were issued or published to the FPKI Trust Infrastruc
 | --------- | ---------- | ---------- | ------ | ------ |
 | Entrust | Entrust Managed Services NFI Root CA | Federal Bridge CA G4 | d45ccedd462a2e2718627eeb6e013fc0a0dc6940 | 10/29/2020 |
 | DigiCert | Symantec Class 3 SSP Intermediate CA – G3 | Federal Bridge CA G4 | 2e0140b2b72765ab0f266f57562c3cfd33fd5eb2 | 10/22/2020 |
-| FPKIMA | Federal Common Policy CA  | Federal Bridge CA G4 | fb3f5e09cac4fe4066f6c48cce31feca02fea677 |  |
+| FPKIMA | Federal Common Policy CA  | Federal Bridge CA G4 | fb3f5e09cac4fe4066f6c48cce31feca02fea677 | 10/13/2020 |
 | FPKIMA | Federal Bridge CA G4 | Federal Common Policy CA G2 | 97db351e069964297a82040eb760c9cc1d74ba33 | 10/15/2020 - Issued (not published) |
 | FPKIMA | Federal Common Policy CA G2 | Federal Bridge CA G4 | edf2d373f4c56b5186087300638e3c5660c9a090 | 10/15/2020 - Issued (not published) |
 | FPKIMA | Federal Common Policy CA G2 | Federal Common Policy CA G2 | 99b4251e2eee05d8292e8397a90165293d116028 | 10/14/2020 - Establish |
