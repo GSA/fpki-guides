@@ -11,7 +11,7 @@ status: active
 
 {% include alert-info.html content="Upcoming changes to the Federal Common Policy Certification Authority (CA) will impact your agency.  This announcement will be updated as more information is available." %}
 
-In **October 2020**, the Federal Government created new Federal Public Key Infrastructure (FPKI) Root Certification Authority (CA).  The new root is named the **Federal Common Policy CA G2**. 
+In **October 2020**, the Federal Government created a new Federal Public Key Infrastructure (FPKI) Root Certification Authority (CA).  The new root is named the **Federal Common Policy CA G2**. 
 
 Between December 2020 and May 2021, the CAs signed by the old root will be migrated to be signed by this new root: Federal Common Policy CA G2.  Once the migration is complete, the old root will be decommissioned. 
 
