@@ -6,7 +6,7 @@ permalink: common/faq/
 ---
  
  
-- [Will my PIV credentials break or need to be updated or replaced when this change occurs](#will-my-piv-credentials-break-or-need-to-be-updated-or-replaced-when-this-change-occurs?)
+- [Will my PIV credentials break or need to be updated or replaced when this change occurs](#will-my-piv-credentials-break-or-need-to-be-updated-or-replaced-when-this-change-occurs)
 - [Is the Federal Common Policy CA changing?](#is-the-federal-common-policy-ca-changing)
 - [When will this change happen?](#when-will-this-change-happen)
 - [Which operating systems will this change affect?](#which-operating-systems-will-this-change-affect)
@@ -15,7 +15,7 @@ permalink: common/faq/
 - [What errors can occur in macOS if I don’t distribute the FCPCA G2?](#what-errors-can-occur-in-macos-if-i-dont-distribute-the-fcpca-g2)
 - [What errors can occur in iOS if I don’t distribute the FCPCA G2?](#what-errors-can-occur-in-ios-if-i-dont-distribute-the-fcpca-g2)
 - [How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?](#how-can-i-verify-that-the-fcpca-g2-has-been-successfully-distributed-to-my-workstation-or-device)
-- [My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?](#my-agency-gets-piv-cards-from-issuer-name.-i-wont-be-affected-by-this-change-right)
+- [My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
 - [Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
  
  
