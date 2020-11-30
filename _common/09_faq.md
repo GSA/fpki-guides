@@ -5,17 +5,31 @@ collection: common
 permalink: common/faq/
 ---
  
-### Will my PIV credentials break or need to be updated or replaced when this change occurs?
+ 
+- [Will my PIV credentials break or need to be updated or replaced when this change occurs](#will-my-piv-credentials-break-or-need-to-be-updated-or-replaced-when-this-change-occurs)
+- [Is the Federal Common Policy CA changing?](#is-the-federal-common-policy-ca-changing)
+- [When will this change happen?](#when-will-this-change-happen)
+- [Which operating systems will this change affect?](#which-operating-systems-will-this-change-affect)
+- [What happens if I don’t distribute the FCPCA G2?](#what-happens-if-i-dont-distribute-the-fcpca-g2)
+- [What errors can occur in Windows if I don’t distribute the FCPCA G2?](#what-errors-can-occur-in-windows-if-i-dont-distribute-the-fcpca-g2)
+- [What errors can occur in macOS if I don’t distribute the FCPCA G2?](#what-errors-can-occur-in-macos-if-i-dont-distribute-the-fcpca-g2)
+- [What errors can occur in iOS if I don’t distribute the FCPCA G2?](#what-errors-can-occur-in-ios-if-i-dont-distribute-the-fcpca-g2)
+- [How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?](#how-can-i-verify-that-the-fcpca-g2-has-been-successfully-distributed-to-my-workstation-or-device)
+- [My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
+- [Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
+ 
+ 
+## Will my PIV credentials break or need to be updated or replaced when this change occurs?
 
 No. PIV credentials will *not* be affected by this change. 
 
-### Is the Federal Common Policy CA changing?
+## Is the Federal Common Policy CA changing?
 
 Yes. In **October 2020**, the Federal Government established a new Federal Public Key Infrastructure (FPKI) Root Certification Authority (CA) known as the **Federal Common Policy CA (FCPCA) G2**. 
 
 Between December 2020 and May 2021, CAs cross-certified by the existing FCPCA will be migrated to the FCPCA G2. Once the migration is complete, the existing FCPCA will be decommissioned (planned for May 2021). 
 
-### When will this change happen?
+## When will this change happen?
 
 Tentative timeline:
 - **October 14, 2020**: The Federal PKI Management Authority (FPKIMA) established the new FCPCA G2.
@@ -24,11 +38,11 @@ Tentative timeline:
 - **December 2020 to May 2021**: All agencies transition from using the existing FCPCA as a trust anchor to the FCPCA G2.
 - **May 2021**: The FPKIMA decommissions the existing FCPCA.
 
-### Which operating systems will this change affect?
+## Which operating systems will this change affect?
 
 All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be affected.
 
-### What happens if I don’t distribute the FCPCA G2?
+## What happens if I don’t distribute the FCPCA G2?
 
 1. **(*High Impact*) Authentication failures**
 	- Workstations 
@@ -43,7 +57,7 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
 	- Email
 	- Documents and files (for example, Microsoft Word)
 
-### What errors can occur in Windows if I don't distribute the FCPCA G2?
+## What errors can occur in Windows if I don't distribute the FCPCA G2?
 
 *Sample Chrome error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
@@ -58,7 +72,7 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
      <br>
      ![error_sig_val]({{site.baseurl}}/img/error_sig_val.png)
 	 
-### What errors can occur in macOS if I don't distribute the FCPCA G2?
+## What errors can occur in macOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
@@ -76,7 +90,7 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
      <br>
      ![chrome_untrusted_auth]({{site.baseurl}}/img/chrome_untrusted_auth.png){:style="width:85%;"}
 
-### What errors can occur in iOS if I don't distribute the FCPCA G2?
+## What errors can occur in iOS if I don't distribute the FCPCA G2?
 
 *Sample Safari error when a user navigates to an intranet site whose SSL/TLS certificate doesn't chain<br>to a trusted root CA:*
      <br>
@@ -86,17 +100,17 @@ All major operating systems (i.e., Microsoft Windows, macOS, iOS, *nix) will be 
      <br>
      ![ios_chrome_untrusted_ssl]({{site.baseurl}}/img/ios_chrome_untrusted_ssl.png){:style="width:30%;"}
 
-### How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?
+## How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?
 
 Please review the steps to [verify distribution of the FCPCA G2]({{site.baseurl}}/common/verify-os-distribution/).
 
-### My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?
+## My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?
 
 This change *does not* affect your PIV credential issuer, nor how agency credentials are generated or issued.
 
 This change *does* affect how federal enterprise workstations and devices validate PIV credential certificates.  
 
-### Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?
+## Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?
 
 As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
 - use your PIV credential to log into intranet sites or VPNs,
