@@ -121,7 +121,7 @@ To simplify certificate path building within your enterprise, you can *optionall
 | Serial Number | 215e78d99648b021c6394a6566d8e00f46a1e595 |
 | SHA-1 Thumbprint | 07f5dc58f83778d5b5738a988292c00a674a0f40 |
 | SHA-256 Thumbprint | e3d6b1b33d0a5df0630b32bf17f9fb632b0471a6cac561f164aa6429ef0699a1 |
-| Download Location | Click [here](../../certs/Entrust_Managed_Services_Root CA.cer)|
+| Download Location | Click [here](../../certs/Entrust_Managed_Services_Root CA.cer) |
 
 | **Issued to: Verizon SSP CA A2** | **Certificate Details**                             |
 | :--------  | :-------------------------------     |
