@@ -34,7 +34,7 @@ Between December 2020 and May 2021, CAs cross-certified by the existing FCPCA wi
 Tentative timeline:
 - **October 14, 2020**: The Federal PKI Management Authority (FPKIMA) established the new FCPCA G2.
 - **October 15, 2020**: The FPKIMA issued and distributed a cross certificate from the FCPCA G2 to the Federal Bridge CA G4.
-- **November 18, 2020**: The FPKIMA issues and distributes certificates to migrate agency and affiliate CAs cross-certified by the existing FCPCA to the FCPCA G2 .
+- **November 18, 2020**: The FPKIMA issued and distributed certificates to migrate agency and affiliate CAs cross-certified by the existing FCPCA to the FCPCA G2.
 - **December 2020 to May 2021**: All agencies transition from using the existing FCPCA as a trust anchor to the FCPCA G2.
 - **May 2021**: The FPKIMA decommissions the existing FCPCA.
 
