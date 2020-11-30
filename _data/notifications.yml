@@ -3079,7 +3079,7 @@
   start_datetime:
   end_datetime:
   system: Entrust Shared Service Provider CA
-  change_description: Certificate revocation list(s) were unavailable for PIV certificates that contain a CDP http URI pointing to an xpki.com domain. The revocation lists were unavailable for at least five (5) days. The primary authoritative source for the revocation lists served from entrust.com domains were available. Entrust managed services has updated configurations to include only the entrust.com URIs in the CDPs for all end entity certificates issued or renewed from 11/25/2020 forward.
+  change_description: Certificate Revocation List(s) were unavailable for PIV certificates that contain a Certificate Revocation List Distribution Point (CDP) Hypertext Transfer Protocol (HTTP) Uniform Resource Identifier (URI) pointing to an xpki.com domain. The revocation lists were unavailable for at least five (5) days. The primary authoritative source for the revocation lists served from entrust.com domains were available. Entrust Managed Services has updated configurations to include only the entrust.com URIs in the CDPs for all end entity certificates issued or renewed from 11/25/2020 forward.
   contact: fpki at gsa.gov
   ca_certificate_hash:
   ca_certificate_issuer:
