@@ -3089,6 +3089,48 @@
   sia_uri:
   ocsp_uri:
 
+- notice_date: November 30, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: October 27, 2020
+  system: SAFE Identity Bridge CA
+  change_description: The SAFE Identity Bridge CA issued a cross certificate to Carillon PKI Services G2 Root CA 3.
+  contact: kyle dot neuman at makeidentitysafe dot com
+  ca_certificate_hash: 2df9d20203cfb0ce1ef48cdc03a16fe7b46e0aca
+  ca_certificate_issuer: CN=SAFE Identity Bridge CA, OU=Certification Authorities, O=SAFE Identity, C=US
+  ca_certificate_subject: CN=Carillon PKI Services G2 Root CA 3, OU=Certification Authorities, O=Carillon Information Security Inc., C=CA
+  cdp_uri: http://crl.makeidentitysafe.com/sibca.crl
+  aia_uri: http://aia.makeidentitysafe.com/sibca.p7c
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: November 30, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: October 27, 2020
+  system: SAFE Identity Bridge CA
+  change_description: The SAFE Identity Bridge CA issued a cross certificate to IdenTrust SAFE-BioPharma CA 1.
+  contact: kyle dot neuman at makeidentitysafe dot com
+  ca_certificate_hash: cb023ddee100c9040c7a9ad60717ebf34ab2106b
+  ca_certificate_issuer: CN=SAFE Identity Bridge CA, OU=Certification Authorities, O=SAFE Identity, C=US
+  ca_certificate_subject: CN=IdenTrust SAFE-BioPharma CA 1, OU=IdenTrust Global Common, O=IdenTrust, C=US
+  cdp_uri: http://crl.makeidentitysafe.com/sibca.crl
+  aia_uri: http://aia.makeidentitysafe.com/sibca.p7c
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: November 30, 2020
+  change_type: CA Certificate Issuance
+  start_datetime: October 27, 2020
+  system: SAFE Identity Bridge CA
+  change_description: The SAFE Identity Bridge CA issued a cross certificate to Trans Sped Mobile eIDAS QCA G2.
+  contact: kyle dot neuman at makeidentitysafe dot com
+  ca_certificate_hash: 8a70668ca59a7da20681cf5ec4a6383c75ad8ade
+  ca_certificate_issuer: CN=SAFE Identity Bridge CA, OU=Certification Authorities, O=SAFE Identity, C=US
+  ca_certificate_subject: CN=Trans Sped Mobile eIDAS QCA G2, OU=Individual Subscriber CA, O=Trans Sped SRL, C=RO
+  cdp_uri: http://crl.makeidentitysafe.com/sibca.crl
+  aia_uri: http://aia.makeidentitysafe.com/sibca.p7c
+  sia_uri:
+  ocsp_uri:
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
