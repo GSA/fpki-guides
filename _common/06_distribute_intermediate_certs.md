@@ -69,6 +69,8 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 {% include alert-info.html content="Review the <a href=\"https://fpki.idmanagement.gov/notifications/#notifications\" target=\"_blank\">System Notifications</a> page or follow us on <a href=\"https://github.com/GSA/fpki-guides/issues/\" target=\"_blank\">GitHub</a> to learn when new certificates are issued.  If you're looking for certificates <i>issued to</i> the FCPCA G2, email us at fpki-help@gsa.gov." %} 
 
+The following certificates are published in the Federal Common Policy CA G2 certificate's Subject Information Access extension bundle located at http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c.
+
 - [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
 - [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca)
 - [Issued to: US Treasury Root CA](#issued-to-us-treasury-root-ca)
@@ -83,6 +85,8 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: Federal Bridge CA G4
 
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
 | Distinguished Name | CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US    |
 | Validity | October 15, 2020 to December 6, 2029 |
 | Serial Number | 234200beaa6dada658f53b403f418295290cae82  |
@@ -92,6 +96,8 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: U.S. Department of State AD Root CA
 
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
 | Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services,<br> CN=Services, CN=Configuration, DC=state, DC=sbu |
 | Validity | November 18, 2020 to November 18, 2023 |
 | Serial Number | 27634fd321cbfd8c7efc0aeb02876f63da4c0c09 |
@@ -101,6 +107,8 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: US Treasury Root CA
 
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
 | Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, <br>OU=Department of the Treasury, O=U.S. Government, C=US |
 | Validity | November 18, 2020 to August 14, 2022 |
 | Serial Number | 2013db2cd30dd29d17edc48535c5e00d8916cf02 |
@@ -110,6 +118,8 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: DigiCert Federal SSP Intermediate CA - G5
 
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
 | Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US |
 | Validity | November 18, 2020 to December 13, 2028 |
 | Serial Number | 24bc168f9ccb30cfcef8f0a58f26f10181869266 |
@@ -119,6 +129,8 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: Symantec SSP Intermediate CA - G4
 
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
 | Distinguished Name | CN=Symantec SSP Intermediate CA - G4, O=Symantec Corporation, C=US |
 | Validity | November 18, 2020 to November 12, 2024 |
 | Serial Number | 262bd1f025c8af37334545666ea6c9ea946c2c34 |
@@ -128,6 +140,8 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: Entrust Managed Services Root CA
 
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
 | Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities,<br> O=Entrust, C=US |
 | Validity | November 18, 2020 to August 14, 2029 |
 | Serial Number | 215e78d99648b021c6394a6566d8e00f46a1e595 |
@@ -137,6 +151,8 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: Verizon SSP CA A2
 
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
 | Distinguished Name | CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US |
 | Validity | November 18, 2020 to December 6, 2026 |
 | Serial Number | 25fca834ada24a4455a2db0ff4cef7c411198e3a |
@@ -146,6 +162,8 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: ORC SSP 4
 
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
 | Distinguished Name | CN=ORC SSP 4, O=ORC PKI, C=US |
 | Validity | November 18, 2020 to January 21, 2024 |
 | Serial Number | 20a0e513367881559a5e7d20d35fa7c6739a42ab |
@@ -155,6 +173,8 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: WidePoint SSP CA 5
 
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
 | Distinguished Name | CN=WidePoint ORC SSP 5, O=ORC PKI, C=US |
 | Validity | November 19, 2020 to November 5, 2030  |
 | Serial Number | 210b3f17db750e616eb25f3f0b4933e5a98c449b |
