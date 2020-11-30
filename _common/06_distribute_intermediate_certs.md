@@ -81,8 +81,6 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 - [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
 - [Issued to: WidePoint SSP CA 5](#issued-to-widepoint-ssp-ca-5)
 
-<br>
-
 #### Issued to: Federal Bridge CA G4
 
 | Certificate Attribute | Value                                              |
