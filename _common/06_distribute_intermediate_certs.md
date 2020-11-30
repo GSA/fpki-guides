@@ -72,8 +72,8 @@ To simplify certificate path building within your enterprise, you can *optionall
 - [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
 - [Issued to: U.S. Department of State AD Root CA](#issued-to-us-department-of-state-ad-root-ca)
 - [Issued to: US Treasury Root CA](#issued-to-us-treasury-root-ca)
-- [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca-g5)
-- [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca-g4)
+- [Issued to: DigiCert Federal SSP Intermediate CA - G5](#issued-to-digicert-federal-ssp-intermediate-ca---g5)
+- [Issued to: Symantec SSP Intermediate CA - G4](#issued-to-symantec-ssp-intermediate-ca---g4)
 - [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
 - [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
 - [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
@@ -83,7 +83,7 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: Federal Bridge CA G4
 
-| Distinguished Name | CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US |
+| Distinguished Name | CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US    |
 | Validity | October 15, 2020 to December 6, 2029 |
 | Serial Number | 234200beaa6dada658f53b403f418295290cae82  |
 | SHA-1 Thumbprint | 97db351e069964297a82040eb760c9cc1d74ba33 |
@@ -92,7 +92,7 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: U.S. Department of State AD Root CA
 
-| Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu |
+| Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services,<br> CN=Services, CN=Configuration, DC=state, DC=sbu |
 | Validity | November 18, 2020 to November 18, 2023 |
 | Serial Number | 27634fd321cbfd8c7efc0aeb02876f63da4c0c09 |
 | SHA-1 Thumbprint | 9b3849f7047964a6654988054956e478ccb75ded |
@@ -101,7 +101,7 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: US Treasury Root CA
 
-| Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US |
+| Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, <br>OU=Department of the Treasury, O=U.S. Government, C=US |
 | Validity | November 18, 2020 to August 14, 2022 |
 | Serial Number | 2013db2cd30dd29d17edc48535c5e00d8916cf02 |
 | SHA-1 Thumbprint | d7d298927d339efa414f2565923e28b98acd970a |
@@ -128,7 +128,7 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 #### Issued to: Entrust Managed Services Root CA
 
-| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US |
+| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities,<br> O=Entrust, C=US |
 | Validity | November 18, 2020 to August 14, 2029 |
 | Serial Number | 215e78d99648b021c6394a6566d8e00f46a1e595 |
 | SHA-1 Thumbprint | 07f5dc58f83778d5b5738a988292c00a674a0f40 |
