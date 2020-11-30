@@ -3047,6 +3047,21 @@
   sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
   ocsp_uri:
 
+- notice_date: November 25, 2020
+  change_type: URI Change, System Outage
+  start_datetime:
+  end_datetime:
+  system: Entrust Shared Service Provider CA
+  change_description: Certificate revocation list(s) were unavailable for PIV certificates that contain a CDP http URI pointing to an xpki.com domain. The revocation lists were unavailable for at least five (5) days. The primary authoritative source for the revocation lists served from entrust.com domains were available. Entrust managed services has updated configurations to include only the entrust.com URIs in the CDPs for all end entity certificates issued or renewed from 11/25/2020 forward.
+  contact: fpki at gsa.gov
+  ca_certificate_hash:
+  ca_certificate_issuer:
+  ca_certificate_subject:
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
