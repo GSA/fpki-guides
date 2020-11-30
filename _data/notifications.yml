@@ -3060,6 +3060,20 @@
   sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
   ocsp_uri:
 
+- notice_date: November 24, 2020
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: US Treasury Public CA
+  change_description: Treasury decommissioned the US Treasury Public CA and revoked its certificate issued by the US Treasury Root CA. 
+  contact: pki dot pmo at fiscal dot treasury dot gov
+  ca_certificate_hash: 14d4454152a6a1384052186adbb944fb2e1a768d
+  ca_certificate_issuer: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  ca_certificate_subject: OU=US Treasury Public CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US
+  cdp_uri: http://pki.treas.gov/US_Treasury_Root_CA.crl
+  aia_uri: http://pki.treas.gov/teca_aia.p7c
+  sia_uri:
+  ocsp_uri:
+
 - notice_date: November 25, 2020
   change_type: URI Change, System Outage
   start_datetime:
