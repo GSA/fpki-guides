@@ -64,6 +64,7 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 ---------------------------------------------------
 
+<br>
 
 ### Certificates issued by the Federal Common Policy CA G2
 
