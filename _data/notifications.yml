@@ -3131,6 +3131,111 @@
   sia_uri:
   ocsp_uri:
 
+- notice_date: November 30, 2020
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a cross certificate to WidePoint ORC SSP 5.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 80f4731a60fd5f2eb0468d0629310daa50ad210d   
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=WidePoint ORC SSP 5, O=ORC PKI, C=US  
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl 
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c  
+  sia_uri: http://crl-server.orc.com/caCerts/WidePointORCSSP5.p7c  
+  ocsp_uri:
+  
+- notice_date: November 30, 2020
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a cross certificate to ORC SSP 4 (operated by WidePoint).
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 3e6610b03daca9fa07e1093b60ccb8927c42d83b    
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=ORC SSP 4, O=ORC PKI, C=US 
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl 
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c  
+  sia_uri: http://crlserver.orc.com/caCerts/ORCSSP4.p7c 
+  ocsp_uri:
+  
+- notice_date: November 30, 2020
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a cross certificate to Verizon SSP CA A2.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: b2167fd38ff47bb910d8dcc32fcc3b7b63a09ff7   
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US  
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl 
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c  
+  sia_uri: http://sia1.ssp-strong-id.net/CA/VZ-SSP-CA-A2-SIA.p7c 
+  ocsp_uri:
+  
+- notice_date: November 30, 2020
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a cross certificate to the Entrust Managed Services Root CA.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 07f5dc58f83778d5b5738a988292c00a674a0f40    
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US  
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl 
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c  
+  sia_uri: http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c 
+  ocsp_uri:
+  
+- notice_date: November 30, 2020
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a cross certificate to Symantec SSP Intermediate CA - G4 (operated by DigiCert).
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 4c40f62b5c3f13533a8f8a1d44f8b027aaa0fd3d   
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Symantec SSP Intermediate CA - G4, O=Symantec Corporation, C=US 
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl 
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c  
+  sia_uri: http://ssp-sia.symauth.com/SSP/Certs_issued_by_SYMCSSPCAG4.p7c 
+  ocsp_uri:
+  
+- notice_date: November 30, 2020
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a cross certificate to DigiCert Federal SSP Intermediate CA - G5.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 9aecfbe2de8aea49d220bbf799172c00527fe756    
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US 
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl 
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c  
+  sia_uri: http://ssp-sia.digicert.com/SSP/Certs_issued_by_SSPCAG5.p7c 
+  ocsp_uri:
+  
+- notice_date: November 30, 2020
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a cross certificate to the US Treasury Root CA.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: d7d298927d339efa414f2565923e28b98acd970a    
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US 
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl 
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c  
+  sia_uri: http://pki.treasury.gov/root_sia.p7c 
+  ocsp_uri:
+  
+- notice_date: November 30, 2020
+  change_type: CA Certificate Issuance
+  system: FPKI Trust Infrastructure - Federal Common Policy CA G2
+  change_description: The Federal Common Policy CA G2 issued a cross certificate to the U.S. Department of State AD Root CA.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 9b3849f7047964a6654988054956e478ccb75ded   
+  ca_certificate_issuer: CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu 
+  cdp_uri: http://repo.fpki.gov/fcpca/fcpcag2.crl 
+  aia_uri: http://repo.fpki.gov/fcpca/caCertsIssuedTofcpcag2.p7c  
+  sia_uri: http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c  
+  ocsp_uri:
+  
+
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
