@@ -67,8 +67,6 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 ### Certificates issued by the Federal Common Policy CA G2
 
-{% include alert-info.html content="Review the <a href=\"https://fpki.idmanagement.gov/notifications/#notifications\" target=\"_blank\">System Notifications</a> page or follow us on <a href=\"https://github.com/GSA/fpki-guides/issues/\" target=\"_blank\">GitHub</a> to learn when new certificates are issued." %} 
-
 The following certificates are published in the Federal Common Policy CA G2 certificate's Subject Information Access extension bundle located at http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c.
 
 - [Issued to: Federal Bridge CA G4](#issued-to-federal-bridge-ca-g4)
