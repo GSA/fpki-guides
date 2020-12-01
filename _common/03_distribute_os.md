@@ -29,7 +29,7 @@ To distribute the Federal Common Policy CA G2 (FCPCA G2) certificate, use one of
 - [Use the command line](#use-the-command-line)
 
 
-{% include alert-warning.html content="<strong>Important!</strong> If your enterprise systems do not have <a href=\"https://fpki.idmanagement.gov/truststores/#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems\" target=\"_blank\">dynamic path validation</a> enabled, you may also need to distribute the <a href=\"../certificates\">intermediate CA certificates</a> issued by the FCPCA G2.  These certificates will be available after November 18, 2020." %}
+{% include alert-warning.html content="<strong>Important!</strong> If your enterprise systems do not have <a href=\"https://fpki.idmanagement.gov/truststores/#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems\" target=\"_blank\">dynamic path validation</a> enabled, you may also need to distribute the <a href=\"../certificates\#certificates-issued-by-the-federal-common-policy-ca-g2">intermediate CA certificates</a> issued by the FCPCA G2." %}
 
 <br>
 
