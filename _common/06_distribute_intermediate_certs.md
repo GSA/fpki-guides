@@ -67,7 +67,7 @@ To simplify certificate path building within your enterprise, you can *optionall
 
 ### Certificates issued by the Federal Common Policy CA G2
 
-{% include alert-info.html content="Review the <a href=\"https://fpki.idmanagement.gov/notifications/#notifications\" target=\"_blank\">System Notifications</a> page or follow us on <a href=\"https://github.com/GSA/fpki-guides/issues/\" target=\"_blank\">GitHub</a> to learn when new certificates are issued.  If you're looking for certificates <i>issued to</i> the FCPCA G2, email us at fpki-help@gsa.gov." %} 
+{% include alert-info.html content="Review the <a href=\"https://fpki.idmanagement.gov/notifications/#notifications\" target=\"_blank\">System Notifications</a> page or follow us on <a href=\"https://github.com/GSA/fpki-guides/issues/\" target=\"_blank\">GitHub</a> to learn when new certificates are issued." %} 
 
 The following certificates are published in the Federal Common Policy CA G2 certificate's Subject Information Access extension bundle located at http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c.
 
@@ -179,6 +179,23 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | SHA-1 Thumbprint | 80f4731a60fd5f2eb0468d0629310daa50ad210d |
 | SHA-256 Thumbprint | 70200179049bdc8cbe94b4880730609489f324f2a770477f7c1859401e644c72 |
 | Download Location | Click [here](../../certs/WidePoint_ORC_SSP_5.cer)|
+
+<br>
+
+### Certificates issued to the Federal Common Policy CA G2
+
+Distrusting the certificate below will prevent workstations from building a path from the Federal Common Policy CA G2, through the Federal Bridge CA G4, to the Federal Common Policy CA.  This certificate will not be posted to the FPKI repository until after the migration to the FCPCA G2 is complete.  For more on how to distrust a certificate, click [here]({{site.baseurl}}/common/migrate/#distrust-the-fcpca-g1).
+
+#### Issued by: Federal Bridge CA G4
+
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | CN=Federal Common Policy CA G2, OU=FPKI, O=U.S. Government, C=US |
+| Validity | October 15, 2020 to December 6, 2029  |
+| Serial Number | 129217e6c9126fd816babe02d9192ae2b519e231 |
+| SHA-1 Thumbprint | edf2d373f4c56b5186087300638e3c5660c9a090 |
+| SHA-256 Thumbprint | 0b658c27727dfd6cd47e378ae2390ea376d9708ecf4b06775f8ee7bc50119991 |
+| Download Location | Click [here](../../certs/Federal_Common_Policy_CA_G2_from_FBCAG4.cer)|
 
 <br>
 
