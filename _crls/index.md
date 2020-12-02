@@ -31,14 +31,6 @@ When downloading **any** certificate file from the list below, please verify the
 | P7C file - Issued To						| http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c	|
 
 
-### Federal Bridge CA 2016
-
-|**Federal Bridge CA 2016**|**Information**|
-|-----------|---------------|
-| Certificate Revocation List				| http://http.fpki.gov/bridge/fbca2016.crl					|
-| P7C file - Issued By						| http://http.fpki.gov/bridge/caCertsIssuedByfbca2016.p7c	|
-| P7C file - Issued To						| http://http.fpki.gov/bridge/caCertsIssuedTofbca2016.p7c	|
-
 ### Federal Bridge CA G4
 
 |**Federal Bridge CA G4**|**Information**|
