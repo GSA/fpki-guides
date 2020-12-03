@@ -38,7 +38,7 @@ A few commercial vendors include the FCPCA root certificate in the commercial-of
 
 ### Federal Bridge Certification Authority
 
-The FBCA is the _**Federal Bridge CA 2016**_ or the new _**Federal Bridge CA G4**_
+The FBCA is the _**Federal Bridge CA G4**_.
 
 ![FPKI Federal Bridge Logo]({{site.baseurl}}/img/fbca-logo.png){:style="float:left;width:15%;"}
 The FBCA is a PKI Bridge or link between the FCPCA and other CAs that comprise the FPKI network and that may operate under comparable but _different_ certificate policies.  
@@ -48,7 +48,7 @@ The FBCA provides a means to map these certificate policies and CAs and allow ce
 <!--- ![Example of the FBCA Certification Path]({{site.baseurl}}/img/fbca-chainV2.png){:style="width:40%;float:right;"}
 *Example of a FBCA Certification Path*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"} -->
 
-The CAs with certificates signed by the Federal Bridge CA 2016 or Federal Bridge CA G4 are _cross-certified_. These CAs have established a trust relationship with the FPKI and are audited annually for conformance to the certificate policies. This cross-certification process has extended the reach of the FPKI well beyond the boundaries of the Federal Government.
+The CAs with certificates signed by the Federal Bridge CA G4 are _cross-certified_. These CAs have established a trust relationship with the FPKI and are audited annually for conformance to the certificate policies. This cross-certification process has extended the reach of the FPKI well beyond the boundaries of the Federal Government.
 
 
 ### All Federal PKI Certification Authorities
