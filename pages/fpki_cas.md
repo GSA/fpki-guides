@@ -17,7 +17,7 @@ The FCPCA serves as the _root_ and _trust anchor_ for the _intermediate_ and _is
 
 - Federal Government Executive Branch Agencies  
 
-{% include alert-info.html content="<strong>Public trust for websites</strong><br>A new effort is in the planning stages to establish another Federal Government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies %}
+{% include alert-info.html content="<strong>Public trust for websites</strong><br>A new effort is in the planning stages to establish another Federal Government root and issuing CAs dedicated to Public Trust Transport Layer Security (TLS) device certificates. Follow or contribute to the development of the Federal Government's new certificate policy for this Public Trust effort at https://github.com/uspki/policies" %}
 
 ### Federal Common Policy Certification Authority
 
