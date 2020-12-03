@@ -111,7 +111,7 @@ CITE Participants shall provide the FPKI Technical Working Group with email and 
 
 | Test Partner |CRL | SIA | AIA |
 | ------------ | ----------- | ----------- | ----------- |
-| Treasury | http://devpki.treasury.gov/Dev_US_Treasury_Root_CA.crl | http://devpki.treas.gov/devroot_sia.p7c | http://devpki.treasury.gov/cacertsissuedtodevtrca.p7c |
+| Treasury | http://devpki.treasury.gov/Dev_US_Treasury_Root_CA1.crl | http://devpki.treas.gov/devroot_sia.p7c | http://devpki.treasury.gov/cacertsissuedtodevtrca.p7c |
 | DoD | http://crl.nit.disa.mil/crl/DODJITCINTEROPERABILITYROOTCA2.crl | http://crl.nit.disa.mil/issuedby/DODJITCINTEROPERABILITYROOTCA2_IB.p7c | http://crl.nit.disa.mil/issuedto/DODJITCINTEROPERABILITYROOTCA2_IT.p7c |
 
 ## Appendix A - Test Policy Object Identifiers
