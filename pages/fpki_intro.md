@@ -17,8 +17,6 @@ This page provides introductory information that answers the following questions
 
 
 ### What is the Federal PKI?
-![Image of the Federal PKI Certification Authorities](img/Intro-image3.png){:style="width:40%;float:right;"}
-*High-level Illustration of the Federal PKI Certification Authorities*{:style="float:right;clear:both;font-size:14px;text-align:center;margin:20px 0 0 0;width:40%;"}
 
 The Federal PKI is a network of Certification Authorities (CAs) that issue:
 
@@ -31,6 +29,7 @@ The participating Certification Authorities and the policies, processes, and aud
 
 The Federal PKI includes U.S. Federal, State, Local, Tribal, Territorial, and International Governments, as well as commercial organizations, that work together to provide services for the benefit of the Federal Government.
 
+Use the [FPKI Graph](https://fpki.idmanagement.gov/) to see the relationships between the Certification Authorities in the Federal PKI ecosystem. It graphically depicts how each Certification Authority links to another, through cross-certificates, subordinate certificates, or Bridge CAs.
 
 ### What is an example of an identity certificate?
 A PIV certificate is a simple example.  Although there are many types of identity certificates, it's easiest to explain **PIV** certificates since you might have one:
