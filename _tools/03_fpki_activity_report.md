@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: November 10, 2020
+Updated: December 2, 2020
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -28,36 +28,32 @@ The activity listed in this section is limited to the certificates issued BY or 
 
 The following certificates were issued or published to the FPKI Trust Infrastructure in the last 30 days.
 
-| Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Issued Date |
-| --------- | ---------- | ---------- | ------ | ------ |
-| Entrust | Entrust Managed Services NFI Root CA | Federal Bridge CA G4 | d45ccedd462a2e2718627eeb6e013fc0a0dc6940 | 10/29/2020 |
-| DigiCert | Symantec Class 3 SSP Intermediate CA – G3 | Federal Bridge CA G4 | 2e0140b2b72765ab0f266f57562c3cfd33fd5eb2 | 10/22/2020 |
-| FPKIMA | Federal Common Policy CA  | Federal Bridge CA G4 | fb3f5e09cac4fe4066f6c48cce31feca02fea677 | 10/13/2020 |
-| FPKIMA | Federal Bridge CA G4 | Federal Common Policy CA G2 | 97db351e069964297a82040eb760c9cc1d74ba33 | 10/15/2020 - Issued (not published) |
-| FPKIMA | Federal Common Policy CA G2 | Federal Bridge CA G4 | edf2d373f4c56b5186087300638e3c5660c9a090 | 10/15/2020 - Issued (not published) |
-| FPKIMA | Federal Common Policy CA G2 | Federal Common Policy CA G2 | 99b4251e2eee05d8292e8397a90165293d116028 | 10/14/2020 - Establish |
+| Affiliate | Subject CA | Issuing CA | Serial # | SHA-1 Hash | Issued Date |
+| --------- | ---------- | ---------- | ------ | ------ | ------ |
+| Widepoint | WidePoint ORC SSP 5 | Federal Common Policy CA G2 | 210b3f17db750e616eb25f3f0b4933e5a98c449b | 80f4731a60fd5f2eb0468d0629310daa50ad210d | 11/19/20 |
+| State | U.S. Department of State AD Root CA | Federal Common Policy CA G2 | 27634fd321cbfd8c7efc0aeb02876f63da4c0c09 | 9b3849f7047964a6654988054956e478ccb75ded | 11/18/20 |
+| WidePoint | ORC SSP 4 | Federal Common Policy CA G2 | 20a0e513367881559a5e7d20d35fa7c6739a42ab | 3e6610b03daca9fa07e1093b60ccb8927c42d83b | 11/18/20 |
+| DigiCert | DigiCert Federal SSP Intermediate CA - G5 | Federal Common Policy CA G2 | 24bc168f9ccb30cfcef8f0a58f26f10181869266 | 9aecfbe2de8aea49d220bbf799172c00527fe756 | 11/18/20 |
+| Treasury | US Treasury Root CA | Federal Common Policy CA G2 | 2013db2cd30dd29d17edc48535c5e00d8916cf02 | d7d298927d339efa414f2565923e28b98acd970a | 11/18/20 |
+| Verizon | Verizon SSP CA A2 | Federal Common Policy CA G2 | 25fca834ada24a4455a2db0ff4cef7c411198e3a | b2167fd38ff47bb910d8dcc32fcc3b7b63a09ff7 | 11/18/20 |
+| Entrust | Entrust Managed Services Root CA | Federal Common Policy CA G2 | 215e78d99648b021c6394a6566d8e00f46a1e595 | 07f5dc58f83778d5b5738a988292c00a674a0f40 | 11/18/20 |
+| DigiCert | Symantec SSP Intermediate CA - G4 | Federal Common Policy CA G2 | 262bd1f025c8af37334545666ea6c9ea946c2c34 | 4c40f62b5c3f13533a8f8a1d44f8b027aaa0fd3d | 11/18/20 |
+| USPTO | USPTO_INTR_CA1 | Federal Bridge CA G4 | 10f82e9132e31f62dba620ab66f6e7f836e663c7 | edd7e56da5147cf98ea580a176a27bc990b243ce | 11/12/20 |
+| SAFE | SAFE Identity Bridge CA | Federal Bridge CA G4 | 159e68a2b020e0c91a0425c28e79fcda961b6142 | cba35a94b7460a9e86ff7c95123a849ccd7be1ab | 11/12/20 |
+
 
 The following certificates were removed from the FPKI Trust Infrastructure in the last 30 days.
 
-| Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date |
-| --------- | ---------- | ---------- | ------ | ------ |
-| FPKIMA | Federal Bridge 2016 | Federal Common Policy CA | bd38b7e253cfc5dd278a927f88833fb44c6af03a | 10/13/20 - Revoked |
-| FPKIMA | Federal Common Policy CA | Federal Bridge 2016 | 38341412caa3d72ade61022240411444d21b1de9 | 10/13/20 - Revoked |
+| Affiliate | Subject CA | Issuing CA | Serial # | SHA-1 Hash | Expiration Date |
+| --------- | ---------- | ---------- | ------ | ------ | ------ |
+| - | - | - | - | - | - |
+
 
 The following certificates are planned for a certificate action in the near future, dates to be determined based on availability.
 
-| Affiliate | Subject CA | Issuing CA | SHA-1 Hash | Expiration Date | Action |
-| --------- | ---------- | ---------- | ---------- | ---------- | -------- |
-| SAFE | TBD | Federal Bridge CA G4 | TBD | TBD | Issue - 11/12/2020 |
-| USPTO | USPTO_INTR_CA1 | Federal Bridge CA G4 | 978ec2f323452f8f46932b8550663d68b6e96af7 | 12/12/2022 | Re-issue 11/12/2020 |
-| DigiCert | DigiCert Federal SSP Intermediate CA - G5 | Federal Common Policy CA G2 | TBD | 12/13/2028 | Issue – 11/18/2020 |
-| DigiCert | Symantec SSP Intermediate CA - G4 | Federal Common Policy CA G2 | TBD | 11/12/2024 | Issue – 11/18/2020 |
-| Entrust | Entrust Managed Services Root CA | Federal Common Policy CA G2 | TBD | 8/14/2029 | Issue – 11/18/2020 |
-| State | U.S. Department of State AD Root CA | Federal Common Policy CA G2 | TBD | 11/18/2023 | Issue – 11/18/2020 |
-| Treasury | US Treasury Root CA | Federal Common Policy CA G2 | TBD | 8/14/2022 | Issue – 11/18/20 |
-| WidePoint | ORC SSP 4 | Federal Common Policy CA G2 | TBD | 1/21/2024 | Issue – 11/18/20 |
-| WidePoint | WidePoint ORC SSP 5 | Federal Common Policy CA G2 | TBD | 11/18/2030 | Issue – 11/18/20 |
-| Verizon | Verizon SSP CA A2 | Federal Common Policy CA G2 | TBD | 12/6/2026 | Issue – 11/18/20 |
+| Affiliate | Subject CA | Issuing CA | Serial # | SHA-1 Hash | Expiration Date | Action |
+| --------- | ---------- | ---------- | ---------- | ---------- | -------- | -------- |
+| USPTO | USPTO_INTR_CA1 | Federal Bridge CA G4 | 189a971b30cc79b60b35e21789db1c479cd949f0 | 978ec2f323452f8f46932b8550663d68b6e96af7 | 12/12/2022 | Revoke 12/8/2020 |
 
  
 
