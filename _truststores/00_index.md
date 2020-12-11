@@ -48,7 +48,7 @@ Dynamic path validation is a registry setting:
 
 All registry settings for managed Federal Government computers should use group policy objects or the automated configuration management tools available in your agency. 
 
-### What Federal PKI certificate policies are trusted by Adobe and how do I them?
+### What Federal PKI certificate policies are trusted by Adobe and how do I see them?
 
 A common question is *which certificate policy object identifiers (OIDs) are trusted?* The Federal PKI certificate policy OIDs trusted by Adobe are:
 
