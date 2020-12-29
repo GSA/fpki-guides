@@ -3247,6 +3247,20 @@
   aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c
   sia_uri: http://ipki.uspto.gov/IPKI/Certs/IPKICACerts.p7c
   ocsp_uri:
+  
+- notice_date: December 22, 2020
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA intends to issue a cross certificate to Alexion Pharmaceuticals Issue 2 CA.
+  contact: steve.race at tscp dot org
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Alexion Pharmaceuticals Issue 2 CA, OU=CAs, O=Alexion Pharmaceuticals, C=US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri:
+  ocsp_uri:
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
