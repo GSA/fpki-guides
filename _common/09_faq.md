@@ -16,6 +16,7 @@ permalink: common/faq/
 - [What errors can occur in iOS if I don’t distribute the FCPCA G2?](#what-errors-can-occur-in-ios-if-i-dont-distribute-the-fcpca-g2)
 - [How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?](#how-can-i-verify-that-the-fcpca-g2-has-been-successfully-distributed-to-my-workstation-or-device)
 - [My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
+- [Why are my Entrust Federal Shared Service Provider issued PIV credential certificates not chaining to FCPCA G2?](#why-are-my-entrust-federal-shared-service-provider-issued-piv-credential-certificates-not-chaining-to-fcpca-g2)
 - [Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
  
  
@@ -111,6 +112,12 @@ Please review the steps to [verify distribution of the FCPCA G2]({{site.baseurl}
 This change *does not* affect your PIV credential issuer, nor how agency credentials are generated or issued.
 
 This change *does* affect how federal enterprise workstations and devices validate PIV credential certificates.  
+
+## Why are my Entrust Federal Shared Service Provider issued PIV credential certificates not chaining to FCPCA G2?
+
+Entrust Federal Shared Service Provider (SSP) PIV credential certificates issued before August 13, 2019, chain through an older version of the Entrust Managed Services Root CA than certificates issued since.  For these certificates to validate to the Federal Common Policy CA G2, you'll need to distribute [this]({{site.baseurl}}/certs/Entrust_Managed_Services_Root_CA_Link.cer) "link certificate" as an intermediate CA certificate.  Review how to distribute intermediate CA certificates [here]({{site.baseurl}}/common/certificates/).
+
+Entrust plans to publish the link certificate to the Entrust Managed Services Root CA certificate repository (http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c). Once complete, workstations capable of performing [dynamic path validation](https://fpki.idmanagement.gov/truststores/#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems\) will not require link certificate distribution.
 
 ## Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?
 
