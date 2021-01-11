@@ -16,7 +16,7 @@ permalink: common/faq/
 - [What errors can occur in iOS if I don’t distribute the FCPCA G2?](#what-errors-can-occur-in-ios-if-i-dont-distribute-the-fcpca-g2)
 - [How can I verify that the FCPCA G2 has been successfully distributed to my workstation or device?](#how-can-i-verify-that-the-fcpca-g2-has-been-successfully-distributed-to-my-workstation-or-device)
 - [My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
-- [Why aren't some of my Entrust Federal Shared Service Provider issued PIV credential certificates chaining to FCPCA G2?](#why-arent-some-of-my-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2)
+- [Why aren't some Entrust Federal Shared Service Provider issued PIV credential certificates chaining to FCPCA G2?](#why-arent-some-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2)
 - [Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
  
  
@@ -113,7 +113,7 @@ This change *does not* affect your PIV credential issuer, nor how agency credent
 
 This change *does* affect how federal enterprise workstations and devices validate PIV credential certificates.  
 
-## Why aren't some of my Entrust Federal Shared Service Provider issued PIV credential certificates chaining to FCPCA G2?
+## Why aren't some Entrust Federal Shared Service Provider issued PIV credential certificates chaining to FCPCA G2?
 
 Entrust Federal Shared Service Provider (SSP) PIV credential certificates issued before August 13, 2019, chain through an older version of the Entrust Managed Services Root CA on their way to the Federal Common Policy CA than certificates issued since.  This older version of the Entrust Managed Services Root CA will not receive a certificate from the Federal Common Policy CA G2.
 
