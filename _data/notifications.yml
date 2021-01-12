@@ -3261,6 +3261,34 @@
   aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
   sia_uri:
   ocsp_uri:
+  
+- notice_date: January 8, 2021
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: WidePoint Non-Federal Issuer
+  change_description: WidePoint NFI Root 2 intends to issue a cross certificate to WidePoint NFI CA 6.
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash:
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  ca_certificate_subject: CN=WidePoint NFI CA 6, O=ORC PKI, C=US
+  cdp_uri:
+  aia_uri:
+  sia_uri:
+  ocsp_uri:
+
+- notice_date: January 11, 2021
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: U.S. Department of State AD Root CA
+  change_description: The Department of State issued a new CA certificate.
+  contact: shanleyrj at state dot gov
+  ca_certificate_hash: a6e9c11ad29fc006ed65b06db32e36a927cb3a48
+  ca_certificate_issuer: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  ca_certificate_subject: CN=U.S.-Department-of-State-DPC-CA, DC=derived, DC=state, DC=sbu
+  cdp_uri: http://crls.pki.state.gov/crls/DoSADPKIRootCA1.crl
+  aia_uri: http://crls.pki.state.gov/AIA/CertsIssuedToDoSADRootCA.p7c
+  sia_uri:
+  ocsp_uri: http://ocsp.pki.state.gov/OCSP/DoSOCSPResponder
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance

@@ -106,7 +106,7 @@ Note: The following .gif shows you how to distrust the FCPCA G1 on Microsoft Ser
 
 ### Use macOS Terminal
 
-{% include alert-info.html content="Only system administrators should follow these steps to remove the FCPCA G1 certificate from the System and Login Keychains." %}
+{% include alert-info.html content="macOS handles certificate distrust differently than Windows does.  The steps below distrust the FCPCA G1 certificate by deleting it from the System and Login Keychains.  The absence of the FCPCA G1 certificate from the Keychains results in the certificate not being trusted by the workstation. Only system administrators should follow these steps." %}
 
 **Note:** Many Mobile Device Management (MDM) platforms allow administrators to push the command below across an enterprise, rather than running it on individual workstations. _Use automation wherever possible_.
 
