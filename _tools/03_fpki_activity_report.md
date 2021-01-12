@@ -36,7 +36,7 @@ The following certificates were removed from the FPKI Trust Infrastructure in th
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Action Date |
 | --------- | ---------- | ---------- | --------------------- | ----------- |
-| USPTO | USPTO_INTR_CA1 | Federal Bridge CA G4 | Serial: 189a971b30cc79b60b35e21789db1c479cd949f0 Hash: 978ec2f323452f8f46932b8550663d68b6e96af7 | 12/15/2022 |
+| USPTO | USPTO_INTR_CA1 | Federal Bridge CA G4 | Serial: 189a971b30cc79b60b35e21789db1c479cd949f0 Hash: 978ec2f323452f8f46932b8550663d68b6e96af7 | 12/15/2020 |
 
 
 The following certificates are planned for a certificate action in the near future, dates to be determined based on availability.
