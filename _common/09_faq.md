@@ -121,6 +121,10 @@ To ensure PIV credential certificates issued by the Entrust Federal SSP before A
 
 Entrust plans to publish the link certificate to the Entrust Managed Services Root CA certificate repository (http://rootweb.managed.entrust.com/AIA/CertsIssuedToEMSRootCA.p7c). Once complete, workstations capable of performing [dynamic path validation](https://fpki.idmanagement.gov/truststores/#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems\) will not require manual distribution of the link certificate.
 
+The graphic below shows a certificate chaining to the Federal Common Policy CA G2 through the Entrust Managed Services Root CA link certificate, denoted with a red asterisk ("*").
+
+![Link Certificate Path]({{site.baseurl}}/img/link-cert-path.png) 
+
 ## Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?
 
 As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
