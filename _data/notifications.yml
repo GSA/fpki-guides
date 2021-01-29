@@ -3289,6 +3289,34 @@
   aia_uri: http://crls.pki.state.gov/AIA/CertsIssuedToDoSADRootCA.p7c
   sia_uri:
   ocsp_uri: http://ocsp.pki.state.gov/OCSP/DoSOCSPResponder
+  
+- notice_date: January 21, 2021
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA revoked a cross certificate issued to Carillon Federal Services PIV-I CA2. TSCP previously issued a modified certificate with an updated CA subject name.
+  contact: steve.race at tscp dot org
+  ca_certificate_hash: 352f268667640942e57f834f3691372a24109e2e
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Carillon Federal Services PIV-I CA2, OU=Certificate Authorities, O=Carillon Federal Services Inc., C= US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri:
+  ocsp_uri:  
+
+- notice_date: January 21, 2021
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: TSCP SHA256 Bridge CA
+  change_description: The Transglobal Secure Collaboration Program (TSCP) SHA256 Bridge CA issued a cross certificate to Alexion Pharmaceuticals Issue 2 CA.
+  contact: steve.race at tscp dot org
+  ca_certificate_hash: e1cae944beea7470bf05f6da809a0ecf2a8a5c1b
+  ca_certificate_issuer: CN=TSCP SHA256 Bridge CA, OU=CAs, O=TSCP Inc., C=US
+  ca_certificate_subject: CN=Alexion Pharmaceuticals Issue 2 CA, OU=CAs, O=Alexion Pharmaceuticals, C=US
+  cdp_uri: http://tscp-crl.symauth.com/tscpbcasha256.crl
+  aia_uri: http://tscp-aia.symauth.com/IssuedTo-tscpbcasha256.p7c
+  sia_uri:
+  ocsp_uri:
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
