@@ -3318,6 +3318,33 @@
   sia_uri:
   ocsp_uri:
 
+- notice_date: February 1, 2021
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: WidePoint Non-Federal Issuer
+  change_description: WidePoint NFI Root 2 issued a certificate to WidePoint NFI CA 6.
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash: b2bfadc0603d42feb84d9b1cfd488227b16f21e3
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  ca_certificate_subject: CN=WidePoint NFI CA 6, O=ORC PKI, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri:
+  ocsp_uri: http://widepointnfiroot2.eva.orc.com
+  
+- notice_date: February 3, 2021
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: WidePoint Non-Federal Issuer
+  change_description: WidePoint NFI Root 2 revoked the certificate issued to WidePoint NFI CA 6.
+  contact: pkipolicy at orc dot com
+  ca_certificate_hash: b2bfadc0603d42feb84d9b1cfd488227b16f21e3
+  ca_certificate_issuer: CN=WidePoint NFI Root 2, OU=Certification Authorities, O=WidePoint, C=US
+  ca_certificate_subject: CN=WidePoint NFI CA 6, O=ORC PKI, C=US
+  cdp_uri: http://crl-server.orc.com/CRLs/WIDEPOINTNFIROOT2.crl
+  aia_uri: http://crl-server.orc.com/caCerts/WIDEPOINTNFIROOT2.p7c
+  sia_uri:
+  ocsp_uri: http://widepointnfiroot2.eva.orc.com
 #- notice_date:  
 #  change_type: CA Certificate Issuance
 #  start_datetime:
