@@ -8,7 +8,7 @@ layout: default
 The page lists the certification authorities *currently* used for Personal Identity Verification (PIV) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust. This list does *not* include Derived PIV authentication certificates. 
 
 
-{% include alert-info.html content="This table was last updated on <b>December 22, 2020</b>. Please email fpki@gsa.gov to suggest an update or correction." %} 
+{% include alert-info.html content="This table was last updated on <b>February 3, 2021</b>. Please email fpki@gsa.gov to suggest an update or correction." %} 
 
 <style>
 	.title {font-size: 16px; color: white; background-color: #112e51; font-weight: 900;text-align: center;}
@@ -226,19 +226,12 @@ These CA certificates have issued PIV authentication certificates previously and
 - Validity: August 28, 2012 to August 28, 2022 
 - SHA-1 Hash: 519d3222a15eee034980fc0da727314f70af78c0 
 
-#### DHS CA4 (1 of 2)
+#### DHS CA4
 - Subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US 
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
 - Serial #: 4e398128 
 - Validity: June 13, 2015 to June 13, 2025
 - SHA-1 Hash: a31a5df2f1c1019b9cf5b7ca4e3b26650b9ca93f 
-
-#### DHS CA4 (2 of 2)
-- Subject: OU = DHS CA4, OU = Certification Authorities, OU = Department of Homeland Security, O = U.S. Government, C = US 
-- Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
-- Serial #: 4a61d293 
-- Validity: January 21, 2011 to January 21, 2021
-- SHA-1 Hash: 49ae4f027419a3eb227e4cd4ccf4ff1bc75213b6
 
 #### DoD Issuing CAs (several CAs in maintenance mode)
 **DoD ID CA-44**
@@ -279,20 +272,13 @@ These CA certificates have issued PIV authentication certificates previously and
 - Validity: July 30, 2015 to July 23, 2025 
 - SHA-1 Hash: dec01bf40c153fbc38bf2ca766b04f9dfbda3064 
 
-#### NASA Operational CA (1 of 2)
+#### NASA Operational CA
 - Subject: OU = NASA Operational CA, OU = Certification Authorities, OU = NASA, O = U.S. Government, C = US  
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
 - Serial #: 4e398116   
 - Validity: June 13, 2015 to June 13, 2025 
 - SHA-1 Hash: fe7572bbde7b7f44152acc8e1715c18714dc9d63   
-
-#### NASA Operational CA (2 of 2)
-- Subject: OU = NASA Operational CA, OU = Certification Authorities, OU = NASA, O = U.S. Government, C = US  
-- Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US 
-- Serial #: 4a61d2a5
-- Validity: January 22, 2011 to January 22, 2021 
-- SHA-1 Hash: 76a6eaa852710e00b368c41080e6131140aaf189   
-
+   
 #### NRC SSP Agency CA G3
 - Subject: CN = NRC SSP Agency CA G3, OU = U.S. Nuclear Regulatory Commission, O = U.S. Government, C = US
 - Issuer: CN = Symantec SSP Intermediate CA - G4, O = Symantec Corporation, C = US  
