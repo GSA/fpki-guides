@@ -25,7 +25,7 @@ This change affects *all federal agencies* and the following services:
    <li><a href="https://fpki.idmanagement.gov/common/distribute-os/">Distribute the certificate to operating systems</a></li>
    <li><a href="https://fpki.idmanagement.gov/common/verify-os-distribution/">Verify operating system distribution</a></li>
    <li><a href="https://fpki.idmanagement.gov/common/distribute-apps/">Distribute the certificate to applications</a></li>
-   <li><a href="https://fpki.idmanagement.gov/common/certificates/">Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)</a></li>
+   <li><a href="https://fpki.idmanagement.gov/common/certificates/">Determine if you need to distribute the CA certificates issued by the Federal Common Policy CA G2</a></li>
 </ol>
     
 **Recommended steps to complete by April 20th, 2021:**
