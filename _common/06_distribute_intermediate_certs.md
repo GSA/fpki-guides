@@ -6,7 +6,7 @@ permalink: common/certificates/
 ---
 
 
-{% include alert-warning.html content="Important! If your enterprise systems do not have <a href="https://fpki.idmanagement.gov/truststores/#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems\" target="_blank">dynamic path validation enabled, you'll need to manually distribute the relevant <a href="../certificates">intermediate CA certificates issued by the FCPCA G2. Otherwise, systems will not have enough information to build a path to the new FCPCA G2.  If you have questions about which certificates you need to distribute, email us at fpkirootupdate@gsa.gov." %}
+{% include alert-warning.html content="Important! If your enterprise systems <b>do not</b> have <a href="https://fpki.idmanagement.gov/truststores/#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems\" target="_blank">dynamic path validation enabled, you'll need to manually distribute the relevant <a href="../certificates">intermediate CA certificates issued by the FCPCA G2. Otherwise, systems will not have enough information to build a path to the new FCPCA G2.  If you have questions about which certificates you need to distribute, email us at fpkirootupdate@gsa.gov." %}
 	
 For systems using dynamic path validation, you can *optionally* distribute the CA certificates [issued by the Federal Common Policy CA (FCPCA) G2](#certificates-issued-by-the-federal-common-policy-ca-g2) to simplify path building. Sample procedures for the distribution of intermediate CA certificates are below:
 
