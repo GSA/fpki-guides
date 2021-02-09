@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)
+title: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2
 collection: common
 permalink: common/certificates/
 ---
