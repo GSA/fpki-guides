@@ -35,7 +35,7 @@ This change affects *all federal agencies* and the following services:
    <li value="8"><a href="https://fpki.idmanagement.gov/common/verify-migration/">Verify migration to the Federal Common Policy CA G2</a></li>
 </ol>
 
-{% include alert-info.html content="We are collaborating with CISA on a series of webinars to communicate the upcoming changes and answer your questions.  Email fpkirootupdate@gsa.gov to be notified of our next webinar." %} 
+{% include alert-info.html content="We are collaborating with CISA on a series of webinars to communicate the upcoming changes and answer your questions.  The next webinar is scheduled for February 17, 2021, at 1PM ET.  Email fpkirootupdate@gsa.gov for more details, or to join our distribution so you're automatically notified of future sessions." %} 
 
 ## Need Help?
 
