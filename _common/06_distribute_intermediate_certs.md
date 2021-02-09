@@ -149,7 +149,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | SHA-256 Thumbprint | e3d6b1b33d0a5df0630b32bf17f9fb632b0471a6cac561f164aa6429ef0699a1 |
 | Download Location | Click [here](../../certs/Entrust_Managed_Services_Root_CA.cer) |
 
-{% include alert-warning.html content="Important! To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you'll need to distribute an additional intermediate CA certificate to systems that <b>do not</b> have <a href=\"https://fpki.idmanagement.gov/truststores/#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems\" target=\"_blank\">dynamic path validation</a> enabled.  Learn more in our <a href=\"https://fpki.idmanagement.gov/common/faq/#why-arent-some-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2\">FAQ</a>." %}
+{% include alert-warning.html content="Important! To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you'll need to distribute an additional intermediate CA certificate to systems that <b>do not</b> have <a href=\"https://fpki.idmanagement.gov/truststores/#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems\" target=\"_blank\">dynamic path validation</a> enabled.  Learn more in the <a href=\"../faq\">FAQ</a>." %}
 
 
 #### Issued to: Verizon SSP CA A2
