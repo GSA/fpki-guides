@@ -9,6 +9,7 @@ permalink: common/faq/
 - [Will my PIV credentials break or need to be updated or replaced when this change occurs](#will-my-piv-credentials-break-or-need-to-be-updated-or-replaced-when-this-change-occurs)
 - [Is the Federal Common Policy CA changing?](#is-the-federal-common-policy-ca-changing)
 - [When will this change happen?](#when-will-this-change-happen)
+- [Which types of systems will this change affect?](#which-type-of-systems-will-this-change-affect)
 - [Which operating systems will this change affect?](#which-operating-systems-will-this-change-affect)
 - [What happens if I don’t distribute the FCPCA G2?](#what-happens-if-i-dont-distribute-the-fcpca-g2)
 - [What errors can occur in Windows if I don’t distribute the FCPCA G2?](#what-errors-can-occur-in-windows-if-i-dont-distribute-the-fcpca-g2)
@@ -40,6 +41,12 @@ Tentative timeline:
 - **November 18, 2020**: The FPKIMA issued and distributed certificates to migrate agency and affiliate CAs cross-certified by the existing FCPCA to the FCPCA G2.
 - **December 2020 to May 2021**: All agencies transition from using the existing FCPCA as a trust anchor to the FCPCA G2.
 - **May 2021**: The FPKIMA decommissions the existing FCPCA.
+
+## Which types of systems will this change affect?
+
+This change will affect any system that requires the ability to validate certificates issued by the Federal PKI.  This includes systems configured for Personal Identity Verification (PIV) credential authentication to government networks or web applications, systems that require the ability to verify digital signatures that leverage PIV or similar credentials, and systems that host applications or services that leverage the Federal Common Policy CA as a root CA.
+
+Classified systems are not affected by this change.
 
 ## Which operating systems will this change affect?
 
@@ -119,7 +126,7 @@ Entrust Federal Shared Service Provider (SSP) PIV credential certificates issued
 
 To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you'll need to distribute [this](../../certs/Entrust_Managed_Services_Root_CA_Link.cer) "link certificate" as an intermediate CA certificate.  The link certificate allows workstations to build a path from the older Entrust Managed Services Root CA to the current version, which has been issued a certificate by the Federal Common Policy CA G2.  Review how to distribute intermediate CA certificates [here]({{site.baseurl}}/common/certificates/).
 
-Workstations capable of performing [dynamic path validation](https://fpki.idmanagement.gov/truststores/#how-do-i-set-dynamic-path-validation-for-the-microsoft-trust-store-in-windows-operating-systems\) do not require manual distribution of the link certificate.
+Workstations capable of performing dynamic path validation do not require manual distribution of the link certificate.
 
 The graphic below shows a certificate chaining to the Federal Common Policy CA G2 through the Entrust Managed Services Root CA link certificate, denoted with a red asterisk ("*").
 

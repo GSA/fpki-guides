@@ -1,14 +1,55 @@
 ---
 layout: default 
-title: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)
+title: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2
 collection: common
 permalink: common/certificates/
 ---
 
-To simplify certificate path building within your enterprise, you can *optionally* distribute the CA certificates [issued by the Federal Common Policy CA (FCPCA) G2](#certificates-issued-by-the-federal-common-policy-ca-g2). Sample procedures for the distribution of intermediate CA certificates are below:
 
 
-### Use Microsoft Group Policy Object (GPO)
+{% include alert-success.html content="The intermediate certification authorities (CAs) with certificates issued by the Federal Common Policy CA (FCPCA) were issued new certificates by the Federal Common Policy CA G2 (FCPCA G2) to support the migration to the new Federal PKI trust anchor.  <b>Depending on agency configurations, you might need to distribute these certificates to systems and applications</b>.  <br><br>This page will help you understand <a href=\"#do-i-need-to-distribute-the-intermediate-ca-certificates\">when to distribute the intermediate CA certificates</a>, <a href=\"#which-certificates-do-i-need-to-distribute\">which certificates to distribute</a>, and <a href=\"#how-do-i-distribute-the-intermediate-ca-certificates\">recommended solutions</a>.  This page also lists <a href=\"#certificates-issued-by-the-federal-common-policy-ca-g2
+\">intermediate CA certificate details</a>, including download locations." %}
+
+
+## Do I need to distribute the intermediate CA certificates?
+
+### Operating Systems
+
+You might need to distribute the [intermediate CA certificates issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2), depending upon your enterprise operating systems' type and configuration.
+
+- **Microsoft Windows**: Intermediate CA certificate distribution is **optional**.
+     - Typically, Windows clients are able to dynamically build paths to a trusted root CA certificate through Microsoft's Certificate Chaining Engine (CCE).  
+     - Distributing the intermediate CA certificates can improve system performance.
+     - There are instances where dynamic validation can fail, for example, when firewall rules prevent Microsoft from navigating to a certificate's Authority Information Access extension Uniform Resource Locator.  Email us at fpkirootupdate@gsa.gov with any questions or issues.
+
+- **macOS or iOS**: Intermediate CA certificate distribution is **required**.
+
+- **Linux or Unix**: Intermediate CA certificate distribution is **required**.
+
+### Applications
+
+Many, but not all, software applications leverage the underlying operating system trust store to verify whether a certificate should be trusted.
+
+Collaborate across agency teams to identify applications that rely on custom trust stores to ensure distribution of the intermediate CA certificates issued by the FCPCA G2.
+
+Example applications with custom trust stores that may require intermediate CA certificate installation:
+- Java and all Java-based applications (for example, Apache Tomcat)
+- Mozilla products (for example, Firefox or Thunderbird)
+- OpenSSL-based applications (for example, Apache HTTP Server or Nginx)
+
+## Which certificates do I need to distribute?
+
+Identify which, if any, of the intermediate CA certificates issued by the Federal Common Policy CA are currently being distributed across your agency. 
+
+A recommended starting point would be to replicate the existing configuration for CA certificates issued by the Federal Common Policy CA, instead distributing the new certificates issued by the Federal Common Policy G2. 
+
+If you're not sure which [intermediate CA certificates issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2) you need to distribute, consider distributing all of them or email us for help at fpkirootupdate@gsa.gov.
+
+## How do I distribute the intermediate CA certificates?
+
+Recommended solutions for distributing intermediate CA certificates are listed below.
+
+### Microsoft Windows - Use Group Policy Object (GPO)
 
 {% include alert-warning.html content="You must have enterprise administrator privileges for the domain to use these procedures. You must run the commands from an agency domain controller." %}
 
@@ -38,7 +79,7 @@ To simplify certificate path building within your enterprise, you can *optionall
 	
 <br>
 	
-### Use macOS/iOS Configuration Profile
+### macOS and iOS - Use Apple Configuration Profile
 
 {% include alert-warning.html content="Only System or Mobile Device Management (MDM) Administrators should create, distribute, and install Apple configuration profiles." %} 
 
@@ -62,6 +103,13 @@ To simplify certificate path building within your enterprise, you can *optionall
 </video>
 <br>
 
+
+### Linux - Use command line
+
+The steps to distribute an intermediate CA certificate are the same as the steps to distribute a [root CA certificate]({{site.baseurl}}/common/distribute-os/#linux-and-unix-solutions).
+
+<br>
+
 ---------------------------------------------------
 
 <br>
@@ -78,7 +126,10 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 - [Issued to: Entrust Managed Services Root CA](#issued-to-entrust-managed-services-root-ca)
 - [Issued to: Verizon SSP CA A2](#issued-to-verizon-ssp-ca-a2)
 - [Issued to: ORC SSP 4](#issued-to-orc-ssp-4)
-- [Issued to: WidePoint SSP CA 5](#issued-to-widepoint-ssp-ca-5)
+- [Issued to: WidePoint ORC SSP CA 5](#issued-to-widepoint-orc-ssp-ca-5)
+
+{% include alert-warning.html content="Important! To ensure PIV credential certificates issued by the Entrust Federal SSP before August 13, 2019 validate to the Federal Common Policy CA G2, you'll need to distribute an additional intermediate CA certificate to systems that are <b>unable</b> to perform dynamic path validation.  Learn more in the <a href=\"../faq/#why-arent-some-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2\" target=\"_blank\">FAQ</a>." %}
+
 
 #### Issued to: Federal Bridge CA G4
 
@@ -168,7 +219,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 | SHA-256 Thumbprint | 7cd7f21d04beb99d9f833be8697138e3ad4e11313897ee573c066132d21ab5f8 |
 | Download Location | Click [here](../../certs/ORC_SSP_4.cer)|
 
-#### Issued to: WidePoint SSP CA 5
+#### Issued to: WidePoint ORC SSP CA 5
 
 | Certificate Attribute | Value                                              |
 | :--------  | :--------------------------------------------------------     |
@@ -183,7 +234,7 @@ The following certificates are published in the Federal Common Policy CA G2 cert
 
 ### Certificates issued to the Federal Common Policy CA G2
 
-Distrusting the certificate below will prevent workstations from building a path from the Federal Common Policy CA G2, through the Federal Bridge CA G4, to the Federal Common Policy CA or any other root. This certificate will not be posted in the FCPCA G2's Authority Information Access extension bundle until the certificate issued by the Federal Bridge CA G4 to the Federal Common Policy CA is revoked.  For more on how to distrust a certificate, click [here]({{site.baseurl}}/common/migrate/#distrust-the-fcpca-g1).
+Distrusting the certificate below will prevent workstations from building a path from the Federal Common Policy CA G2, through the Federal Bridge CA G4, to the Federal Common Policy CA or any other root.  For more on how to distrust a certificate, click [here]({{site.baseurl}}/common/migrate/#distrust-the-fcpca-g1).
 
 #### Issued by: Federal Bridge CA G4
 
@@ -197,6 +248,7 @@ Distrusting the certificate below will prevent workstations from building a path
 | Download Location | Click [here](../../certs/Federal_Common_Policy_CA_G2_from_FBCAG4.cer)|
 
 <br>
+
 
 Next, [migrate to the FCPCA G2]({{site.baseurl}}/common/migrate/).
 

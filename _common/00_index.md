@@ -25,7 +25,7 @@ This change affects *all federal agencies* and the following services:
    <li><a href="https://fpki.idmanagement.gov/common/distribute-os/">Distribute the certificate to operating systems</a></li>
    <li><a href="https://fpki.idmanagement.gov/common/verify-os-distribution/">Verify operating system distribution</a></li>
    <li><a href="https://fpki.idmanagement.gov/common/distribute-apps/">Distribute the certificate to applications</a></li>
-   <li><a href="https://fpki.idmanagement.gov/common/certificates/">Distribute the CA certificates issued by the Federal Common Policy CA G2 (optional)</a></li>
+   <li><a href="https://fpki.idmanagement.gov/common/certificates/">Distribute the CA certificates issued by the Federal Common Policy CA G2</a></li>
 </ol>
     
 **Recommended steps to complete by April 20th, 2021:**
@@ -35,7 +35,7 @@ This change affects *all federal agencies* and the following services:
    <li value="8"><a href="https://fpki.idmanagement.gov/common/verify-migration/">Verify migration to the Federal Common Policy CA G2</a></li>
 </ol>
 
-{% include alert-info.html content="We are collaborating with CISA on a series of webinars to communicate the upcoming changes and answer your questions.  Email fpkirootupdate@gsa.gov to be notified of our next webinar." %} 
+{% include alert-info.html content="We are collaborating with CISA on a series of webinars to communicate the upcoming changes and answer your questions.  <b>The next webinar is scheduled for February 17, 2021, at 1PM ET</b>.  Email fpkirootupdate@gsa.gov for more details, or to join our distribution so you're automatically notified of future sessions." %} 
 
 ## Need Help?
 
