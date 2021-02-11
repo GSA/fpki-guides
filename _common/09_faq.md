@@ -9,7 +9,7 @@ permalink: common/faq/
 - [Will my PIV credentials break or need to be updated or replaced when this change occurs](#will-my-piv-credentials-break-or-need-to-be-updated-or-replaced-when-this-change-occurs)
 - [Is the Federal Common Policy CA changing?](#is-the-federal-common-policy-ca-changing)
 - [When will this change happen?](#when-will-this-change-happen)
-- [Which types of systems will this change affect?](#which-type-of-systems-will-this-change-affect)
+- [Which types of systems will this change affect?](#which-types-of-systems-will-this-change-affect)
 - [Which operating systems will this change affect?](#which-operating-systems-will-this-change-affect)
 - [What happens if I don’t distribute the FCPCA G2?](#what-happens-if-i-dont-distribute-the-fcpca-g2)
 - [What errors can occur in Windows if I don’t distribute the FCPCA G2?](#what-errors-can-occur-in-windows-if-i-dont-distribute-the-fcpca-g2)
