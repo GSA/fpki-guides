@@ -128,7 +128,7 @@ To ensure PIV credential certificates issued by the Entrust Federal SSP before A
 
 Workstations capable of performing dynamic path validation **do not** require manual distribution of the link certificate.
 
-The graphic below shows a certificate chaining to the Federal Common Policy CA G2 through the Entrust Managed Services Root CA link certificate, denoted with a red asterisk ("*").
+The graphic below shows a certificate chaining to the Federal Common Policy CA G2 through the Entrust Managed Services Root CA link certificate, denoted with a red asterisk (" <span style="color:red">*</span>.")
 
 ![Link Certificate Path]({{site.baseurl}}/img/link-cert-path.png) 
 
