@@ -3391,7 +3391,7 @@
 - notice_date: February 12, 2021
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:
-  system: Certipath Bridge CA
+  system: CertiPath Bridge CA
   change_description: CertiPath Bridge CA - G3 intends to issue a cross certificate to the Netherlands Ministry of Defence.
   contact: support at certipath dot com
   ca_certificate_hash:
@@ -3405,7 +3405,7 @@
 - notice_date: February 12, 2021
   change_type: Intent to Perform CA Certificate Issuance
   start_datetime:
-  system: Certipath Bridge CA
+  system: CertiPath Bridge CA
   change_description: CertiPath Bridge CA - G3 intends to issue a cross certificate to Northrop Grumman Corporate Root CA-G2.
   contact: support at certipath dot com
   ca_certificate_hash:
