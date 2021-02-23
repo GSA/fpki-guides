@@ -46,7 +46,7 @@ We encourage agency staff to participate in steps where their roles appear in bl
   <td colspan="7" class="desc">
   <ul>
 	<li>We are collaborating with CISA on a series of webinars to communicate upcoming changes and answer your questions. </li>
-	<li><strong>The next webinar is scheduled for February 17, 2021, at 1PM ET.</strong>  Email fpkirootupdate@gsa.gov for more details, or to join our distribution so you're automatically notified of future sessions.</li>
+	<li><strong>We're planning our next webinar!</strong> E-mail fpkirootupdate@gsa.gov to join our e-mail distribution, and we'll follow-up once more information is available.</li>
 	<li>We encourage any relevant stakeholders in your organization to participate in the webinar.</li>
   </ul>
   </td>
