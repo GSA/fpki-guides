@@ -286,19 +286,12 @@ These CA certificates have issued PIV authentication certificates previously and
 - Validity: November 24, 2014 to November 11, 2024 
 - SHA-1 Hash: e40bee41cf7afa2ddba4eb10ff3a39f81ec48d20 
 
-#### Social Security Administration Certification Authority (1 of 2)
+#### Social Security Administration Certification Authority
 - Subject: OU = Social Security Administration Certification Authority, OU = SSA, O = U.S. Government, C = US
 - Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
 - Serial #: 4e3980ef  
 - Validity: April 19, 2015 to April 19, 2025 
 - SHA-1 Hash: bb6c62e648d503f1beab75ef5f69b17256175993 
-
-#### Social Security Administration Certification Authority (2 of 2)
-- Subject: OU = Social Security Administration Certification Authority, OU = SSA, O = U.S. Government, C = US
-- Issuer: OU = US Treasury Root CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
-- Serial #: 4a61d2ba  
-- Validity: February 16, 2011 to February 16, 2021 
-- SHA-1 Hash: b4b209aade830834c9b5c2f815021d28dc381fe1 
 
 #### Treasury OCIO CA 
 - Subject: OU = OCIO CA, OU = Certification Authorities, OU = Department of the Treasury, O = U.S. Government, C = US
