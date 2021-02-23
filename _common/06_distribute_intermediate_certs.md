@@ -17,9 +17,9 @@ permalink: common/certificates/
 
 You might need to distribute the [intermediate CA certificates issued by the FCPCA G2](#certificates-issued-by-the-federal-common-policy-ca-g2), depending upon your enterprise operating systems' type and configuration.
 
-- **Microsoft Windows**: Intermediate CA certificate distribution is **optional**.
+- **Microsoft Windows**: Intermediate CA certificate distribution is **recommended**.
      - Typically, Windows clients are able to dynamically build paths to a trusted root CA certificate through Microsoft's Certificate Chaining Engine (CCE).  
-     - Distributing the intermediate CA certificates can improve system performance.
+     - Distributing the intermediate CA certificates improves system performance and prioritizes use of the FCPCA G2 over the FCPCA.
      - There are instances where dynamic validation can fail, for example, when firewall rules prevent Microsoft from navigating to a certificate's Authority Information Access extension Uniform Resource Locator.  Email us at fpkirootupdate@gsa.gov with any questions or issues.
 
 - **macOS or iOS**: Intermediate CA certificate distribution is **required**.
