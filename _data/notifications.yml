@@ -3457,6 +3457,20 @@
   aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c  
   sia_uri:
   ocsp_uri: http://ocsp.disa.mil
+  
+- notice_date: February 25, 2021
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: IdenTrust Global Common Root CA 1
+  change_description: IdenTrust intends to issue a new CA certificate from IdenTrust Global Common Root CA 1 to replace the IGC Server CA 1 certificate expiring 4/14/2024.
+  contact: support at identrust dot com
+  ca_certificate_hash:  
+  ca_certificate_issuer: CN=IdenTrust Global Common Root CA 1, O=IdenTrust, C=US
+  ca_certificate_subject: CN=IGC Device CA 1, OU=IdenTrust Global Common, O=IdenTrust, C=US
+  cdp_uri:  
+  aia_uri:  
+  sia_uri:
+  ocsp_uri:  
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
