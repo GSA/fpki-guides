@@ -3543,7 +3543,7 @@
   sia_uri:  
   ocsp_uri:   
   
- - notice_date: March 5, 2021
+- notice_date: March 5, 2021
   change_type: Intent to Decommission CA
   system: FPKI Trust Infrastructure - Federal Common Policy CA
   change_description: The Federal PKI Management Authority is preparing to decommission the Federal Common Policy CA (planned for May 2021).  Valid CA certificates issued by the Federal Common Policy CA will be revoked prior to decommissioning.  This notice was first posted on September 25, 2020.
