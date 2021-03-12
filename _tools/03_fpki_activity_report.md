@@ -5,7 +5,7 @@ collection: tools
 permalink: tools/fpkiactivityreport/
 ---
 
-Updated: February 1, 2021
+Updated: March 1, 2021
 
 This report provides a technical and policy compliance status for each Federal Public Key Infrastructure (FPKI) Affiliate.
 
@@ -26,11 +26,12 @@ The operational status for each Federal Agency or affiliate connected to the Fed
 ## FPKIMA Certificate Activity
 The activity listed in this section is limited to the certificates issued BY or TO the Federal Bridge or Federal Common Policy CA.
 
-There were no certificates issued or published to the FPKI Trust Infrastructure in the last 30 days.
+The following certificates were issued or published to the FPKI Trust Infrastructure in the last 30 days.
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Issued Date |
 | --------- | ---------- | ---------- | --------------------- | ----------- |
-| N/A | - | - | - | - |
+| FPKIMA | Federal Bridge CA G4	| Federal Common Policy CA G2 | Serial: 234200beaa6dada658f53b403f418295290cae82 Hash: 97db351e069964297a82040eb760c9cc1d74ba33 | Issued on 10/15/20, Published 2/2/21 |
+| FPKIMA | Federal Common Policy CA G2 | Federal Bridge CA G4 | Serial: 129217e6c9126fd816babe02d9192ae2b519e231 Hash: edf2d373f4c56b5186087300638e3c5660c9a090 | Issued on 10/15/20, Published 2/2/21 |
 
 The following certificates were removed from the FPKI Trust Infrastructure in the last 30 days.
 
@@ -43,10 +44,8 @@ The following certificates are planned for a certificate action in the near futu
 
 | Affiliate | Subject CA | Issuing CA | Serial # & SHA-1 Hash | Expiration Date | Action |
 | --------- | ---------- | ---------- | --------------------- | --------------- | ------ |
-| FPKIMA | Federal Bridge CA G4	| Federal Common Policy CA G2 | Serial: 234200beaa6dada658f53b403f418295290cae82 Hash: 97db351e069964297a82040eb760c9cc1d74ba33 | 12/6/29 | 2/3/21 - Publication |
-FPKIMA | Federal Common Policy CA G2 | Federal Bridge CA G4 | Serial: 129217e6c9126fd816babe02d9192ae2b519e231 Hash: edf2d373f4c56b5186087300638e3c5660c9a090 | 12/6/29 | 2/3/21 - Publication |
-FPKIMA | Federal Bridge CA G4 | Federal Common Policy CA | Serial: 7994 Hash: e836f3016bfb6e8df274f27fd8a4a5054517b0f1 |	12/12/21 | Revocation |
-FPKIMA | Federal Common Policy CA | Federal Bridge CA G4 | Serial: 198ef944a16068e7c0b85cd2f5b2cfb5de8b2174 Hash: fb3f5e09cac4fe4066f6c48cce31feca02fea677 | 6/30/21 | Revocation |
+| FPKIMA | Federal Bridge CA G4 | Federal Common Policy CA | Serial: 7994 Hash: e836f3016bfb6e8df274f27fd8a4a5054517b0f1 |	12/12/21 | Revocation |
+| FPKIMA | Federal Common Policy CA | Federal Bridge CA G4 | Serial: 198ef944a16068e7c0b85cd2f5b2cfb5de8b2174 Hash: fb3f5e09cac4fe4066f6c48cce31feca02fea677 | 6/30/21 | Revocation |
 
  
 

@@ -3457,6 +3457,48 @@
   aia_uri: http://crl.disa.mil/issuedto/DODROOTCA3_IT.p7c  
   sia_uri:
   ocsp_uri: http://ocsp.disa.mil
+  
+- notice_date: February 24, 2021
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: CertiPath Bridge CA
+  change_description: CertiPath Bridge CA - G3 issued a cross certificate to the Netherlands Ministry of Defence.
+  contact: support at certipath dot com
+  ca_certificate_hash: 64b24bf2fdfd1a8aabe432ac332fdbbc4a76ff30  
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Ministerie van Defensie PKIoverheid Organisatie Persoon CA - G3, 2.5.4.97=NTRNL-27370985, O=Ministerie van Defensie, C=NL  
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri:
+  ocsp_uri:
+  
+- notice_date: February 24, 2021
+  change_type: CA Certificate Issuance
+  start_datetime:
+  system: CertiPath Bridge CA
+  change_description: CertiPath Bridge CA - G3 issued a cross certificate to Northrop Grumman.
+  contact: support at certipath dot com
+  ca_certificate_hash: 9ac306e3369858456ec83128dd1daef5cb4a0061  
+  ca_certificate_issuer: CN=CertiPath Bridge CA - G3, OU=Certification Authorities, O=CertiPath, C=US
+  ca_certificate_subject: CN=Northrop Grumman Corporate Root CA-G2, OU=Northrop Grumman Information Technology, O=Northrop Grumman Corporation, C=US 
+  cdp_uri: http://crl.certipath.com/CertiPathBridgeCA-G3.crl
+  aia_uri: http://aia.certipath.com/CertiPathBridgeCA-G3.p7c
+  sia_uri:
+  ocsp_uri:
+  
+- notice_date: February 25, 2021
+  change_type: Intent to Perform CA Certificate Issuance
+  start_datetime:
+  system: IdenTrust Global Common Root CA 1
+  change_description: IdenTrust intends to issue a new CA certificate from IdenTrust Global Common Root CA 1 to replace the IGC Server CA 1 certificate expiring 4/14/2024.
+  contact: support at identrust dot com
+  ca_certificate_hash:  
+  ca_certificate_issuer: CN=IdenTrust Global Common Root CA 1, O=IdenTrust, C=US
+  ca_certificate_subject: CN=IGC Device CA 1, OU=IdenTrust Global Common, O=IdenTrust, C=US
+  cdp_uri:  
+  aia_uri:  
+  sia_uri:
+  ocsp_uri:  
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
