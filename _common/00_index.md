@@ -35,7 +35,7 @@ This change affects *all federal agencies* and the following services:
    <li value="8"><a href="https://fpki.idmanagement.gov/common/verify-migration/">Verify migration to the Federal Common Policy CA G2</a></li>
 </ol>
 
-{% include alert-warning.html content="Heads-up! The Federal PKI Manamagent Authority is working with CA operators to plan the revocation of the certifciates issued by the Federal Common Policy CA.  Follow our <a href=\"https://github.com/GSA/fpki-guides/issues/841\" target=\"_blank\">GitHub</a>issue page or the FPKI Guide <a href=\"https://fpki.idmanagement.gov/notifications/#notifications\" target=\"_blank\">System Notifications</a> for more information related to the timing of the certificate revocations." %} 
+{% include alert-warning.html content="Heads-up! The Federal PKI Management Authority is working with CA operators to plan the revocation of the certificates issued by the Federal Common Policy CA.  Follow our <a href=\"https://github.com/GSA/fpki-guides/issues/841\" target=\"_blank\">GitHub</a> issue page or the FPKI Guide <a href=\"https://fpki.idmanagement.gov/notifications/#notifications\" target=\"_blank\">System Notifications</a> for more information related to the planned revocation schedule." %} 
 
 {% include alert-info.html content="We are collaborating with CISA on a series of webinars to communicate the upcoming changes and answer your questions.  Email fpkirootupdate@gsa.gov to be notified of our next webinar." %} 
 
