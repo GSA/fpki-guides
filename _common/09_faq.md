@@ -46,7 +46,7 @@ Timeline:
 - **May 2021**: The FPKIMA decommissions the existing FCPCA.
 
 ## When will the certificates issued by the Federal Common Policy CA get revoked?
-In preparation for decomissioning, the Federal Common Policy CA must revoke all active CA certificates it has issued. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
+The Federal Common Policy CA must revoke all active CA certificates it has issued in preparation for decommissioning. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
 
 **Note:** Follow our [GitHub Issue](https://github.com/GSA/fpki-guides/issues/841){:target="_blank"} for the latest information possible.
 
