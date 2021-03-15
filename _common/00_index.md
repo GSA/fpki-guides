@@ -42,4 +42,4 @@ This change affects *all federal agencies* and the following services:
 
 View the [Frequently Asked Questions]({{site.baseurl}}/common/faq/) page for more information, or email us at fpkirootupdate@gsa.gov.
 
-{% include alert-info.html content="We're collaborating with CISA on a series of virtual "office hours" sessions to answer your questions in real-time.  Email fpkirootupdate@gsa.gov to be notified once the sessions are scheduled." %} 
+{% include alert-info.html content="We're collaborating with CISA on a series of virtual \"office hours\" sessions to answer your questions in real-time.  Email fpkirootupdate@gsa.gov to be notified once the sessions are scheduled." %} 
