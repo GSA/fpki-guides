@@ -46,9 +46,9 @@ Timeline:
 - **May 2021**: The FPKIMA decommissions the existing FCPCA.
 
 ## When will the certificates issued by the Federal Common Policy CA get revoked?
-In preparation for decomissioning, the Federal Common Policy CA must revoke all active CA certificates it has issued.  
+In preparation for decomissioning, the Federal Common Policy CA must revoke all active CA certificates it has issued. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
 
-Follow our [GitHub Issue](https://github.com/GSA/fpki-guides/issues/841){:target="_blank"} for the latest information possible.
+**Note:** Follow our [GitHub Issue](https://github.com/GSA/fpki-guides/issues/841){:target="_blank"} for the latest information possible.
 
 #### Issued to: Federal Bridge CA G4
 
@@ -256,7 +256,7 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
      - When prompted, verify the certificate thumbprint matches *99B4251E2EEE05D8292E8397A90165293D116028* (additional spaces may appear depending on your Windows Version).
      - Click **Next**.
      - Right-click **Intermediate Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
-     - Browse to and select your copy of caCertsIssuedByfcpcag2.p7b.  You will need to make sure "All Files" are presented to view the .p7b file (this appears in a drop-down box next to the "File Name" input box).  Click **Next** several times until the certificate import process is complete.
+     - Browse to and select your copy of caCertsIssuedByfcpcag2.p7b, making sure "All Files" are presented to view the .p7b file (this appears in a drop-down box next to the "File Name" input box).  Click **Next** several times until the certificate import process is complete.
 
 **Note:** The following .gif demonstrates the steps outlined above.
 
