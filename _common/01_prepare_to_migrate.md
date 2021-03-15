@@ -47,7 +47,7 @@ We encourage agency staff to participate in steps where their roles appear in bl
   <ul>
 	<li>We are collaborating with CISA on a series of webinars and virtual office hours sessions to communicate upcoming changes and answer your questions.</li>
 	<li>E-mail fpkirootupdate@gsa.gov to join our e-mail distribution, and we'll follow-up once more information is available.</li>
-  <ul>
+  </ul>
   </td>
 </tr>
 
