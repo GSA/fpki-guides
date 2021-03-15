@@ -20,7 +20,7 @@ permalink: common/faq/
 - [My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
 - [Why aren't some Entrust Federal Shared Service Provider issued PIV credential certificates chaining to FCPCA G2?](#why-arent-some-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2)
 - [Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
-- [I am an unmanaged user. How do I configure my system to trust the new Federal Common Policy CA G2?](#i-am-an-unmaged-user-how-do-i-configure-my-system-to-trust-the-new-federal-common-policy-ca-g2) 
+- [How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-windows-system-to-trust-the-new-federal-common-policy-ca-g2) 
 
  
  
@@ -245,18 +245,21 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
 - validate PIV digital signatures in emails or documents, or
 - navigate to intranet pages whose SSL/TLS certificates chain to the FCPCA G2.
 
-## I am an unmanaged user. How do I configure my system to trust the new Federal Common Policy CA G2?
+## How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?
 1. Download the new Federal Common Policy CA G2 certificate from http://repo.fpki.gov/fcpca/fcpcag2.crt
-2. Verify the certificate:
-     - Navigate to the download location and double-click on the certificate file.
-     - Click on the **Details** tab and scroll to the bottom.  
-     - Verify the **Thubmprint** matches the following: 99B4251E2EEE05D8292E8397A90165293D116028
-4. Download the intermediate CA certificates issued by the Federal Common Policy CA G2 from http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c
-5. Rename the extension of the recently downloaded caCertsIssuedByfcpcag2.p7**c** to caCertsIssuedByfcpcag2.p7**b**
-6. Update your Trust Store:
+2. Download the intermediate CA certificates issued by the Federal Common Policy CA G2 from http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c
+3. Rename the extension of the recently downloaded caCertsIssuedByfcpcag2.p7**c** to caCertsIssuedByfcpcag2.p7**b**
+4. Update your Trust Store:
      - Click **Start**, type **certmgr.msc**, and press **Enter**.
      - Right-click **Trusted Root Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
      - Browse to and select your copy of the FCPCA G2. Click **Next** several times until the certificate import process is complete.
+     - When prompted, verify the certificate thumbprint matches *99B4251E2EEE05D8292E8397A90165293D116028* (additional spaces may appear depending on your Windows Version).
+     - Click **Next**.
      - Right-click **Intermediate Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
      - Browse to and select your copy of caCertsIssuedByfcpcag2.p7b.  You will need to make sure "All Files" are presented to view the .p7b file (this appears in a drop-down box next to the "File Name" input box).  Click **Next** several times until the certificate import process is complete.
+
+**Note:** The following .gif demonstrates the steps outlined above.
+
+![configure unmanaged device]({{site.baseurl}}/img/unmanaged-device.gif){:style="width:85%;"}
+
 
