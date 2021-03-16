@@ -9,6 +9,7 @@ permalink: common/faq/
 - [Will my PIV credentials break or need to be updated or replaced when this change occurs](#will-my-piv-credentials-break-or-need-to-be-updated-or-replaced-when-this-change-occurs)
 - [Is the Federal Common Policy CA changing?](#is-the-federal-common-policy-ca-changing)
 - [When will this change happen?](#when-will-this-change-happen)
+- [When will the certificates issued by the Federal Common Policy CA get revoked?](#when-will-the-certificates-issued-by-the-federal-common-policy-ca-get-revoked)
 - [Which types of systems will this change affect?](#which-types-of-systems-will-this-change-affect)
 - [Which operating systems will this change affect?](#which-operating-systems-will-this-change-affect)
 - [What happens if I don’t distribute the FCPCA G2?](#what-happens-if-i-dont-distribute-the-fcpca-g2)
@@ -19,6 +20,8 @@ permalink: common/faq/
 - [My agency gets PIV cards from [Issuer Name]. I won’t be affected by this change, right?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
 - [Why aren't some Entrust Federal Shared Service Provider issued PIV credential certificates chaining to FCPCA G2?](#why-arent-some-entrust-federal-shared-service-provider-issued-piv-credential-certificates-chaining-to-fcpca-g2)
 - [Do I need to distribute the FCPCA G2 to my Bring Your Own Device (BYOD) program device?](#do-i-need-to-distribute-the-fcpca-g2-to-my-bring-your-own-device-byod-program-device)
+- [How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?](#how-do-i-configure-my-unmanaged-windows-system-to-trust-the-new-federal-common-policy-ca-g2) 
+
  
  
 ## Will my PIV credentials break or need to be updated or replaced when this change occurs?
@@ -41,6 +44,109 @@ Timeline:
 - **November 18, 2020**: The FPKIMA issued and distributed certificates to migrate agency and affiliate CAs cross-certified by the existing FCPCA to the FCPCA G2.
 - **December 2020 to May 2021**: All agencies transition from using the existing FCPCA as a trust anchor to the FCPCA G2.
 - **May 2021**: The FPKIMA decommissions the existing FCPCA.
+
+## When will the certificates issued by the Federal Common Policy CA get revoked?
+The Federal Common Policy CA must revoke all active CA certificates it has issued in preparation for decommissioning. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
+
+**Note:** Follow our [GitHub Issue](https://github.com/GSA/fpki-guides/issues/841){:target="_blank"} for the latest information possible.
+
+#### Issued to: Federal Bridge CA G4
+
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US    |
+| Validity | December 12, 2019 to December 12, 2021  |
+| Serial Number | 7994    |
+| SHA-1 Thumbprint | e836f3016bfb6e8df274f27fd8a4a5054517b0f1  |
+| Planned Revocation Date | **To Be Determined** |
+
+#### Issued to: U.S. Department of State AD Root CA
+
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services,<br> CN=Services, CN=Configuration, DC=state, DC=sbu |
+| Validity | December 18, 2019 to December 18, 2022   |
+| Serial Number | 79f9    |
+| SHA-1 Thumbprint | ce11590010562a39ad8b1455acf76c03737aebf6  |
+| Planned Revocation Date | **April 22, 2021** |
+
+#### Issued to: US Treasury Root CA
+
+| Certificate Attribute (1 of 2) | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, <br>OU=Department of the Treasury, O=U.S. Government, C=US |
+| Validity | August 14, 2019 to August 14, 2022  |
+| Serial Number | 734b   |
+| SHA-1 Thumbprint | 48ce02a99ae2cc4f790f2989aa153ed565b7e4d2   |
+| Planned Revocation Date | **To Be Determined** |
+
+| Certificate Attribute (2 of 2) | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | OU=US Treasury Root CA, OU=Certification Authorities, <br>OU=Department of the Treasury, O=U.S. Government, C=US |
+| Validity | August 29, 2018 to August 29, 2021   |
+| Serial Number | 6405    |
+| SHA-1 Thumbprint | 5a87922b5eaf1d63198a951b2ab6f59b2f16c131  |
+| Planned Revocation Date | **To Be Determined** |
+
+#### Issued to: DigiCert Federal SSP Intermediate CA - G5
+
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | CN=DigiCert Federal SSP Intermediate CA - G5, O=DigiCert, Inc., C=US |
+| Validity | December 13, 2018 to December 13, 2028  |
+| Serial Number | 66c0    |
+| SHA-1 Thumbprint | 98b58247ac8a2bc6f348f03e8d22884d8345fc0f  |
+| Planned Revocation Date | **To Be Determined** |
+
+#### Issued to: Symantec SSP Intermediate CA - G4
+
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | CN=Symantec SSP Intermediate CA - G4, O=Symantec Corporation, C=US |
+| Validity | November 12, 2014 to November 12, 2024   |
+| Serial Number | 258e   |
+| SHA-1 Thumbprint | 6a382438fd21037018daf3f422a2132bea2be817  |
+| Planned Revocation Date | **To Be Determined** |
+
+#### Issued to: Entrust Managed Services Root CA
+
+| Certificate Attribute (1 of 2) | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities,<br> O=Entrust, C=US |
+| Validity | August 14, 2019 to August 14, 2029  |
+| Serial Number | 734a   |
+| SHA-1 Thumbprint | a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9  |
+| Planned Revocation Date | **April 22, 2021** |
+
+| Certificate Attribute (2 of 2) | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | OU=Entrust Managed Services Root CA, OU=Certification Authorities,<br> O=Entrust, C=US |
+| Validity | July 30, 2015 to July 30, 2025  |
+| Serial Number | 2e26   |
+| SHA-1 Thumbprint | 39c1d3b64e756a3267bfe5fecb103da892ca0611  |
+| Planned Revocation Date | **April 22, 2021** |
+
+#### Issued to: Verizon SSP CA A2
+
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US |
+| Validity | December 5, 2018 to December 6, 2026  |
+| Serial Number | 65f8   |
+| SHA-1 Thumbprint | 477bf4017d25cde276cdddf756d40ca591d76f6d  |
+| Planned Revocation Date | **April 22, 2021** |
+
+#### Issued to: ORC SSP 4
+
+| Certificate Attribute | Value                                              |
+| :--------  | :--------------------------------------------------------     |
+| Distinguished Name | CN=ORC SSP 4, O=ORC PKI, C=US |
+| Validity | August 31, 2015 to January 21, 2024  |
+| Serial Number | 2ef9    |
+| SHA-1 Thumbprint | 3a70323069a4c41bc95663152e9ccc7111bb0623  |
+| Planned Revocation Date | **April 22, 2021** |
+
+
 
 ## Which types of systems will this change affect?
 
@@ -138,3 +244,22 @@ As a BYOD program device user, you'll need to distribute the FCPCA G2 if you:
 - use your PIV credential to log into intranet sites or VPNs,
 - validate PIV digital signatures in emails or documents, or
 - navigate to intranet pages whose SSL/TLS certificates chain to the FCPCA G2.
+
+## How do I configure my unmanaged Windows system to trust the new Federal Common Policy CA G2?
+1. Download the new Federal Common Policy CA G2 certificate from http://repo.fpki.gov/fcpca/fcpcag2.crt
+2. Download the intermediate CA certificates issued by the Federal Common Policy CA G2 from http://repo.fpki.gov/fcpca/caCertsIssuedByfcpcag2.p7c
+3. Rename the extension of the recently downloaded caCertsIssuedByfcpcag2.p7**c** to caCertsIssuedByfcpcag2.p7**b**
+4. Update your Trust Store:
+     - Click **Start**, type **certmgr.msc**, and press **Enter**.
+     - Right-click **Trusted Root Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
+     - Browse to and select your copy of the FCPCA G2. Click **Next** several times until the certificate import process is complete.
+     - When prompted, verify the certificate thumbprint matches *99B4251E2EEE05D8292E8397A90165293D116028* (additional spaces may appear depending on your Windows Version).
+     - Click **Yes**.
+     - Right-click **Intermediate Certification Authorities** (on the left-hand navigation), and select **All Tasks** > **Import**. Click **Next** once the Certificate Import Wizard opens.
+     - Browse to and select your copy of caCertsIssuedByfcpcag2.p7b, making sure "All Files" are presented to view the .p7b file (this appears in a drop-down box next to the "File Name" input box).  Click **Next** several times until the certificate import process is complete.
+
+**Note:** The following .gif demonstrates the steps outlined above.
+
+![configure unmanaged device]({{site.baseurl}}/img/unmanaged-device.gif){:style="width:85%;"}
+
+

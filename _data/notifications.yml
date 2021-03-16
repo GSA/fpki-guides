@@ -3499,6 +3499,132 @@
   aia_uri:  
   sia_uri:
   ocsp_uri:  
+  
+- notice_date: March 2, 2021
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to the CertiPath Bridge CA - G2 from the Federal Bridge CA G4. The revocation is planned to take place on or around March 18, 2021.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 3bfc4df881682f8846bff486d422025aee7494d8  
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US 
+  ca_certificate_subject: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US     
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl  
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c 
+  sia_uri: http://certipath-sia.symauth.com/IssuedBy-CertiPathBridgeCA-G2.p7c  
+  ocsp_uri:   
+  
+- notice_date: March 2, 2021
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to the SAFE Bridge CA 02 from the Federal Bridge CA G4.  The revocation is planned to take place on or around March 18, 2021.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 600319e6c322229f88e0f434ba96fb0dfd00252e   
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US   
+  ca_certificate_subject: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US    
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl   
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c  
+  sia_uri: http://sbca2.safe-biopharma.org/sbca/issuedbySBCA02.p7c 
+  ocsp_uri:   
+  
+  
+- notice_date: March 2, 2021
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to the Federal Common Policy CA from the Federal Bridge CA G4.  The revocation is planned for mid-May. 
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: fb3f5e09cac4fe4066f6c48cce31feca02fea677  
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US    
+  ca_certificate_subject: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US    
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl  
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c 
+  sia_uri: http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c  
+  ocsp_uri:   
+  
+- notice_date: March 5, 2021
+  change_type: Intent to Decommission CA
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority is preparing to decommission the Federal Common Policy CA (planned for May 2021).  Valid CA certificates issued by the Federal Common Policy CA will be revoked prior to decommissioning.  This notice was first posted on September 25, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 905f942fd9f28f679b378180fd4f846347f645c1 
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  cdp_uri: 
+  aia_uri: 
+  sia_uri: http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c 
+  ocsp_uri:
+ 
+- notice_date: March 5, 2021
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to the Entrust Managed Services Root CA from the Federal Common Policy CA on April 22, 2021.  An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 39c1d3b64e756a3267bfe5fecb103da892ca0611 
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US  
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl  
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
+  sia_uri: http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c
+  ocsp_uri:    
+
+- notice_date: March 5, 2021
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to the Entrust Managed Services Root CA from the Federal Common Policy CA on April 22, 2021.  An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9  
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US  
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
+  sia_uri: http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c
+  ocsp_uri:  
+
+- notice_date: March 9, 2021
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to ORC SSP 4 from the Federal Common Policy CA on April 22, 2021.  An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 3a70323069a4c41bc95663152e9ccc7111bb0623 
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=ORC SSP 4, O=ORC PKI, C=US 
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
+  sia_uri: http://crlserver.orc.com/caCerts/ORCSSP4.p7c
+  ocsp_uri:    
+
+- notice_date: March 9, 2021
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to Verizon SSP CA A2 from the Federal Common Policy CA on April 22, 2021.  An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 477bf4017d25cde276cdddf756d40ca591d76f6d  
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=Verizon SSP CA A2, OU=SSP, O=Verizon, C=US 
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
+  sia_uri: http://sia1.ssp-strong-id.net/CA/VZ-SSP-CA-A2-SIA.p7c
+  ocsp_uri:    
+
+- notice_date: March 10, 2021
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to the U.S. Department of State AD Root CA from the Federal Common Policy CA on April 22, 2021.  An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: ce11590010562a39ad8b1455acf76c03737aebf6 
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: CN=U.S. Department of State AD Root CA, CN=AIA, CN=Public Key Services, CN=Services, CN=Configuration, DC=state, DC=sbu
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl  
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c 
+  sia_uri: http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c
+  ocsp_uri:    
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
