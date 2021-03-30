@@ -42,13 +42,13 @@ Timeline:
 - **October 14, 2020**: The Federal PKI Management Authority (FPKIMA) established the new FCPCA G2.
 - **October 15, 2020**: The FPKIMA issued and distributed a cross certificate from the FCPCA G2 to the Federal Bridge CA G4.
 - **November 18, 2020**: The FPKIMA issued and distributed certificates to migrate agency and affiliate CAs cross-certified by the existing FCPCA to the FCPCA G2.
-- **December 2020 to June 2021**: All agencies transition from using the existing FCPCA as a trust anchor to the FCPCA G2.  Certificates issued by the Federal Common Policy CA will be revoked (revocation timeline below).
+- **December 2020 to June 2021**: All agencies transition from using the existing FCPCA as a trust anchor to the FCPCA G2.  Certificates issued by the Federal Common Policy CA will be revoked between the end of April and June in coordination with CA operators (revocation schedule below).
 - **June 2021**: The FPKIMA decommissions the existing FCPCA.
 
 ## When will the certificates issued by the Federal Common Policy CA get revoked?
 The Federal Common Policy CA must revoke all active CA certificates it has issued in preparation for decommissioning. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
 
-**Note:** Follow our [GitHub Issue](https://github.com/GSA/fpki-guides/issues/841){:target="_blank"} for the latest information possible.
+**Note:** This table was last updated on **March 30, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/fpki-guides/issues/841){:target="_blank"} for the latest information possible.
 
 #### Issued to: Federal Bridge CA G4
 
@@ -145,7 +145,6 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Serial Number | 2ef9    |
 | SHA-1 Thumbprint | 3a70323069a4c41bc95663152e9ccc7111bb0623  |
 | Planned Revocation Date | **April 22, 2021** |
-
 
 
 ## Which types of systems will this change affect?
