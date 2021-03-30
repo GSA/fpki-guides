@@ -30,8 +30,8 @@ Tentative time-line:
 - **October 14, 2020**: The Federal PKI Management Authority (FPKIMA) created the new Federal Common Policy CA G2 root 
 - **October 15, 2020**: The FPKIMA team issued a cross certificate from the Federal Common Policy CA G2 to the Federal Bridge CA G4
 - **November 18, 2020**: The FPKIMA team issued CA certificates to migrate agency and shared service providers CAs to the new root: Federal Common Policy CA G2 
-- **December 2020 to June 2021**: All agencies will need to transition from using the old Federal Common Policy CA as the root to the new Federal Common Policy CA G2 *(approximately six months)*
-- **June 2021**: The FPKIMA team will decommission the old Federal Common Policy CA 
+- **December 2020 to June 2021**: All agencies will need to transition from using the old Federal Common Policy CA as the root to the new Federal Common Policy CA G2 *(approximately six months.)* Certificates issued by the Federal Common Policy CA will be revoked between the end of April and June in coordination with CA operators.
+- **June 2021**: The FPKIMA team will decommission the old Federal Common Policy CA after revoking all CA certificates it has issued.
 
 ## What should I do?
 
