@@ -26,7 +26,7 @@ Between December 2020 and June 2021, the CAs signed by the old root will be migr
 
 
 ## When will this change take place?
-Tentative time-line:
+Timeline:
 - **October 14, 2020**: The Federal PKI Management Authority (FPKIMA) created the new Federal Common Policy CA G2 root 
 - **October 15, 2020**: The FPKIMA team issued a cross certificate from the Federal Common Policy CA G2 to the Federal Bridge CA G4
 - **November 18, 2020**: The FPKIMA team issued CA certificates to migrate agency and shared service providers CAs to the new root: Federal Common Policy CA G2 
