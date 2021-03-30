@@ -3556,34 +3556,6 @@
   sia_uri: http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c 
   ocsp_uri:
  
-- notice_date: March 5, 2021
-  change_type: Intent to Perform CA Certificate Revocation
-  start_datetime:
-  system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to the Entrust Managed Services Root CA from the Federal Common Policy CA on April 22, 2021.  An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
-  contact: fpki dash help at gsa dot gov
-  ca_certificate_hash: 39c1d3b64e756a3267bfe5fecb103da892ca0611 
-  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
-  ca_certificate_subject: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US  
-  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl  
-  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
-  sia_uri: http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c
-  ocsp_uri:    
-
-- notice_date: March 5, 2021
-  change_type: Intent to Perform CA Certificate Revocation
-  start_datetime:
-  system: FPKI Trust Infrastructure - Federal Common Policy CA
-  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to the Entrust Managed Services Root CA from the Federal Common Policy CA on April 22, 2021.  An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
-  contact: fpki dash help at gsa dot gov
-  ca_certificate_hash: a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9  
-  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
-  ca_certificate_subject: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US  
-  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
-  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
-  sia_uri: http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c
-  ocsp_uri:  
-
 - notice_date: March 9, 2021
   change_type: Intent to Perform CA Certificate Revocation
   start_datetime:
@@ -3624,7 +3596,71 @@
   cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl  
   aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c 
   sia_uri: http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c
+  ocsp_uri:
+  
+- notice_date: March 29, 2021  
+  change_type: OCSP Outage
+  system: Entrust Federal OCSP Service
+  change_description: Between approximately 5 A.M and 9:30 A.M on March 29, 2021, users reported errors with the Entrust Federal OCSP Service (OCSP response Next Update time was in the past.) 
+  contact: support at entrustdatacard dot com   
+  ocsp_uri: ocsp.managed.entrust.com, ocspproofs.managed.entrust.com, nfiocsp.managed.entrust.com, doesspocsp.managed.entrust.com, hhspkiocsp.managed.entrust.com, feddcsocsp.managed.entrust.com
+
+- notice_date: March 29, 2021
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to the Entrust Managed Services Root CA from the Federal Common Policy CA on June 17, 2021.  This revocation was originally planned for April 22, 2021.  An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 39c1d3b64e756a3267bfe5fecb103da892ca0611 
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US  
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl  
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
+  sia_uri: http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c
   ocsp_uri:    
+
+- notice_date: March 29, 2021
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to the Entrust Managed Services Root CA from the Federal Common Policy CA on June 17, 2021.  This revocation was originally planned for April 22, 2021.  An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9  
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=Entrust Managed Services Root CA, OU=Certification Authorities, O=Entrust, C=US  
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl 
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
+  sia_uri: http://rootweb.managed.entrust.com/SIA/CertsIssuedByEMSRootCA.p7c
+  ocsp_uri:  
+  
+- notice_date: March 29, 2021
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to the US Treasury Root CA from the Federal Common Policy CA on June 10, 2021.  An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 48ce02a99ae2cc4f790f2989aa153ed565b7e4d2  
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US    
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl  
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
+  sia_uri: http://pki.treasury.gov/root_sia.p7c 
+  ocsp_uri:    
+
+- notice_date: March 29, 2021
+  change_type: Intent to Perform CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Common Policy CA
+  change_description: The Federal PKI Management Authority intends to revoke the certificate issued to the US Treasury Root CA from the Federal Common Policy CA on June 10, 2021.  An updated certificate was issued by the Federal Common Policy CA G2 on November 18, 2020.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 5a87922b5eaf1d63198a951b2ab6f59b2f16c131  
+  ca_certificate_issuer: CN=Federal Common Policy CA, OU=FPKI, O=U.S. Government, C=US
+  ca_certificate_subject: OU=US Treasury Root CA, OU=Certification Authorities, OU=Department of the Treasury, O=U.S. Government, C=US    
+  cdp_uri: http://http.fpki.gov/fcpca/fcpca.crl  
+  aia_uri: http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c  
+  sia_uri: http://pki.treasury.gov/root_sia.p7c 
+  ocsp_uri:      
+
 
 #- notice_date:  
 #  change_type: CA Certificate Issuance
