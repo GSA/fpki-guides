@@ -34,7 +34,7 @@ No. PIV credentials will *not* be affected by this change.  For example, the gra
 
 Yes. In **October 2020**, the Federal Government established a new Federal Public Key Infrastructure (FPKI) Root Certification Authority (CA) known as the **Federal Common Policy CA (FCPCA) G2**. 
 
-Between December 2020 and May 2021, CAs cross-certified by the existing FCPCA will be migrated to the FCPCA G2. Once the migration is complete, the existing FCPCA will be decommissioned (planned for May 2021). 
+Between December 2020 and June 2021, CAs cross-certified by the existing FCPCA will be migrated to the FCPCA G2. Once the migration is complete, the existing FCPCA will be decommissioned (planned for June 2021). 
 
 ## When will this change happen?
 
@@ -42,8 +42,8 @@ Timeline:
 - **October 14, 2020**: The Federal PKI Management Authority (FPKIMA) established the new FCPCA G2.
 - **October 15, 2020**: The FPKIMA issued and distributed a cross certificate from the FCPCA G2 to the Federal Bridge CA G4.
 - **November 18, 2020**: The FPKIMA issued and distributed certificates to migrate agency and affiliate CAs cross-certified by the existing FCPCA to the FCPCA G2.
-- **December 2020 to May 2021**: All agencies transition from using the existing FCPCA as a trust anchor to the FCPCA G2.
-- **May 2021**: The FPKIMA decommissions the existing FCPCA.
+- **December 2020 to June 2021**: All agencies transition from using the existing FCPCA as a trust anchor to the FCPCA G2.  Certificates issued by the Federal Common Policy CA will be revoked (revocation timeline below).
+- **June 2021**: The FPKIMA decommissions the existing FCPCA.
 
 ## When will the certificates issued by the Federal Common Policy CA get revoked?
 The Federal Common Policy CA must revoke all active CA certificates it has issued in preparation for decommissioning. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
@@ -78,7 +78,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | August 14, 2019 to August 14, 2022  |
 | Serial Number | 734b   |
 | SHA-1 Thumbprint | 48ce02a99ae2cc4f790f2989aa153ed565b7e4d2   |
-| Planned Revocation Date | **To Be Determined** |
+| Planned Revocation Date | **June 10, 2021** |
 
 | Certificate Attribute (2 of 2) | Value                                              |
 | :--------  | :--------------------------------------------------------     |
@@ -86,7 +86,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | August 29, 2018 to August 29, 2021   |
 | Serial Number | 6405    |
 | SHA-1 Thumbprint | 5a87922b5eaf1d63198a951b2ab6f59b2f16c131  |
-| Planned Revocation Date | **To Be Determined** |
+| Planned Revocation Date | **June 10, 2021** |
 
 #### Issued to: DigiCert Federal SSP Intermediate CA - G5
 
@@ -116,7 +116,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | August 14, 2019 to August 14, 2029  |
 | Serial Number | 734a   |
 | SHA-1 Thumbprint | a09655170c87d0fbfe0328b99a7baf4a1cf0b5d9  |
-| Planned Revocation Date | **April 22, 2021** |
+| Planned Revocation Date | **June 17, 2021** (previously April 22, 2021) |
 
 | Certificate Attribute (2 of 2) | Value                                              |
 | :--------  | :--------------------------------------------------------     |
@@ -124,7 +124,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | July 30, 2015 to July 30, 2025  |
 | Serial Number | 2e26   |
 | SHA-1 Thumbprint | 39c1d3b64e756a3267bfe5fecb103da892ca0611  |
-| Planned Revocation Date | **April 22, 2021** |
+| Planned Revocation Date | **June 17, 2021** (previously April 22, 2021) |
 
 #### Issued to: Verizon SSP CA A2
 
