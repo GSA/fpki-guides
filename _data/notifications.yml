@@ -3598,6 +3598,48 @@
   sia_uri: http://crls.pki.state.gov/SIA/CertsIssuedByADRootCA.p7c
   ocsp_uri:
   
+- notice_date: March 18, 2021
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: FPKI Trust Infrastructure - Federal Bridge CA G4
+  change_description: The Federal PKI Management Authority revoked the certificate issued to the CertiPath Bridge CA - G2 from the Federal Bridge CA G4.
+  contact: fpki dash help at gsa dot gov
+  ca_certificate_hash: 3bfc4df881682f8846bff486d422025aee7494d8  
+  ca_certificate_issuer: CN=Federal Bridge CA G4, OU=FPKI, O=U.S. Government, C=US 
+  ca_certificate_subject: CN=CertiPath Bridge CA - G2, OU=Certification Authorities, O=CertiPath LLC, C=US     
+  cdp_uri: http://repo.fpki.gov/bridge/fbcag4.crl  
+  aia_uri: http://repo.fpki.gov/bridge/caCertsIssuedTofbcag4.p7c 
+  sia_uri: http://certipath-sia.symauth.com/IssuedBy-CertiPathBridgeCA-G2.p7c  
+  ocsp_uri:   
+  
+- notice_date: March 26, 2021
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: SAFE Bridge CA 02
+  change_description: The SAFE Bridge CA 02 revoked the cross certificate issued to Trans Sped Mobile eIDAS QCA G2. 
+  contact: kyle dot neuman at makeidentitysafe dot com  
+  ca_certificate_hash: c1a2b6bb919d104065a2c0c550b27dcdfe12ce96   
+  ca_certificate_issuer: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US 
+  ca_certificate_subject: CN=Trans Sped Mobile eIDAS QCA G2, OU=Individual Subscriber CA, O=Trans Sped SRL, C=RO      
+  cdp_uri: http://sbca2.safe-biopharma.org/sbca/SBCA02.crl  
+  aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c 
+  sia_uri:  
+  ocsp_uri:   
+  
+- notice_date: March 26, 2021
+  change_type: CA Certificate Revocation
+  start_datetime:
+  system: SAFE Bridge CA 02
+  change_description: The SAFE Bridge CA 02 revoked the cross certificate issued to IdenTrust SAFE-BioPharma CA 1. 
+  contact: kyle dot neuman at makeidentitysafe dot com 
+  ca_certificate_hash: 245f753f8a315a83bd0be8cf70833503f99fd2d2   
+  ca_certificate_issuer: CN=SAFE Bridge CA 02, OU=Certification Authorities, O=SAFE-Biopharma, C=US  
+  ca_certificate_subject: CN=IdenTrust SAFE-BioPharma CA 1, OU=IdenTrust Global Common, O=IdenTrust, C=US     
+  cdp_uri: http://sbca2.safe-biopharma.org/sbca/SBCA02.crl 
+  aia_uri: http://sbca2.safe-biopharma.org/sbca/issuedtoSBCA02.p7c  
+  sia_uri:  
+  ocsp_uri:   
+      
 - notice_date: March 29, 2021  
   change_type: OCSP Outage
   system: Entrust Federal OCSP Service
