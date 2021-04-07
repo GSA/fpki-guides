@@ -48,7 +48,7 @@ Timeline:
 ## When will the certificates issued by the Federal Common Policy CA get revoked?
 The Federal Common Policy CA must revoke all active CA certificates it has issued in preparation for decommissioning. Details related to the CA certificates issued by the Federal Common Policy CA, to include planned revocation date, are listed below:
 
-**Note:** This table was last updated on **March 30, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/fpki-guides/issues/841){:target="_blank"} for the latest information possible.
+**Note:** This table was last updated on **April 7, 2021**.  Follow our [GitHub Issue](https://github.com/GSA/fpki-guides/issues/841){:target="_blank"} for the latest information possible.
 
 #### Issued to: Federal Bridge CA G4
 
@@ -58,7 +58,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | December 12, 2019 to December 12, 2021  |
 | Serial Number | 7994    |
 | SHA-1 Thumbprint | e836f3016bfb6e8df274f27fd8a4a5054517b0f1  |
-| Planned Revocation Date | **To Be Determined** |
+| Planned Revocation Date | **April 22, 2021** |
 
 #### Issued to: U.S. Department of State AD Root CA
 
@@ -96,7 +96,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | December 13, 2018 to December 13, 2028  |
 | Serial Number | 66c0    |
 | SHA-1 Thumbprint | 98b58247ac8a2bc6f348f03e8d22884d8345fc0f  |
-| Planned Revocation Date | **To Be Determined** |
+| Planned Revocation Date | **April 22, 2021** |
 
 #### Issued to: Symantec SSP Intermediate CA - G4
 
@@ -106,7 +106,7 @@ The Federal Common Policy CA must revoke all active CA certificates it has issue
 | Validity | November 12, 2014 to November 12, 2024   |
 | Serial Number | 258e   |
 | SHA-1 Thumbprint | 6a382438fd21037018daf3f422a2132bea2be817  |
-| Planned Revocation Date | **To Be Determined** |
+| Planned Revocation Date | **April 22, 2021** |
 
 #### Issued to: Entrust Managed Services Root CA
 
