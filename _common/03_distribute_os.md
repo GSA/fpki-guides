@@ -413,7 +413,7 @@ This option works for **iOS** devices only.
 1. Change directory with the following command:
 
     ```
-        cd /etc/pki/ca-trust/anchors
+        cd /etc/pki/ca-trust/source/anchors/
     ```
 
 1. Copy your verified copy of FCPCA G2 into the folder and set permissions with the following commands:
