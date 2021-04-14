@@ -2,6 +2,7 @@
 layout: default
 title: Certification Authorities
 permalink: /ca/
+redirect_to: https://playbooks.idmanagement.gov/fpki/ca/
 ---
 
 A **_certification authority_** is a system that issues digital certificates. These digital certificates are based on _cryptography_ and follow the X.509 standards defined for information security.
