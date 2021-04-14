@@ -3,6 +3,7 @@ title: PIV CAs and Agencies
 collection: crls
 permalink: crls/pivcas/
 layout: default
+redirect_to: https://playbooks.idmanagement.gov/fpki/pivcas-and-agencies/
 ---
 
 The page lists the certification authorities *currently* used for Personal Identity Verification (PIV) authentication certificates for federal government departments and agencies.  Agency system administrators can leverage this list to configure systems and services for cross-government trust. This list does *not* include Derived PIV authentication certificates. 
