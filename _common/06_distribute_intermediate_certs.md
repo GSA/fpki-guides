@@ -3,6 +3,7 @@ layout: default
 title: 6. Distribute the CA certificates issued by the Federal Common Policy CA G2
 collection: common
 permalink: common/certificates/
+redirect_to: https://playbooks.idmanagement.gov/fpki/common/certificates/
 ---
 
 
