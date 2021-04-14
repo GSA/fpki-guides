@@ -3,6 +3,7 @@ layout: default
 title: Frequently Asked Questions
 collection: common
 permalink: common/faq/
+redirect_to: https://playbooks.idmanagement.gov/fpki/common/faq/
 ---
  
  
