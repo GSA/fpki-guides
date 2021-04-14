@@ -3,6 +3,7 @@ layout: default
 title: 3. Distribute the certificate to operating systems
 collection: common
 permalink: common/distribute-os/
+redirect_to: https://playbooks.idmanagement.gov/fpki/common/distribute-os/
 ---
 
 {% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distribute a trusted root CA certificate to an operating system trust store, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
