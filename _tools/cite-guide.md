@@ -3,6 +3,7 @@ layout: default
 title: CITE Participation Guide
 collection: tools
 permalink: /tools/citeguide/
+redirect_to: https://playbooks.idmanagement.gov/fpki/tools/citeguide/
 ---
 
 Prepared By: The FPKI Technical Working Group (TWG)  <br>
