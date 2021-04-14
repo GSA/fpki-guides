@@ -3,6 +3,7 @@ layout: default
 title: Useful Tools
 collection: tools
 permalink: /tools/
+redirect_to: https://playbooks.idmanagement.gov/fpki/tools/
 ---
 
 We are always collecting useful tools and links that will help you understand and use the Federal Public Key Infrastructure. The table below provides a list of useful tools.
