@@ -3,6 +3,7 @@ layout: default
 title: Federal PKI Graph
 collection: tools
 permalink: tools/fpkigraph/
+redirect_to: https://playbooks.idmanagement.gov/tools/fpkigraph/
 ---
 **Last Update**: March 15, 2021
 {% include graph.html %}
