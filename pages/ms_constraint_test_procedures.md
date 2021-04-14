@@ -3,6 +3,7 @@
 layout: default
 title:  CTL Test Procedures
 permalink: /ctltestprocedures/
+redirect_to: https://playbooks.idmanagement.gov/ctltestprocedures/
 ---
 -->
 
