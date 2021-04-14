@@ -3,6 +3,7 @@ layout: default
 title: Certificates and CRLs
 collection: crls
 permalink: /crls/
+redirect_to: https://playbooks.idmanagement.gov/fpki/certsandcrls/
 ---
 This page lists the endpoints to retrieve the certificates and certificate revocation lists (CRLs) for the infrastructure CAs.  We are working on compiling and adding information for ALL CAs currently in the Federal PKI. 
 
