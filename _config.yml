@@ -18,6 +18,8 @@ editbranch: staging
 plugins:
   - jekyll-redirect-from
 
+#ficam_playbooks_url: /fpki/
+
 # theme: uswds-jekyll
 search_site_handle: idmprod
 
