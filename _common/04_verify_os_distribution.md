@@ -3,6 +3,7 @@ layout: default
 title: 4. Verify operating system distribution
 collection: common
 permalink: common/verify-os-distribution/
+redirect_to: https://playbooks.idmanagement.gov/fpki/common/verify-os-distribution/
 ---
 
 {% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to verify the distribution of a trusted root CA certificate to an operating system trust store, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpkirootupdate@gsa.gov." %}
