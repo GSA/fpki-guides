@@ -15,11 +15,6 @@ branch: federalist-pages
 # we want the dynamic links to send users to the staging branch.  Adding new site variable to ensure federalist doesn't overwrite.
 editbranch: staging
 
-plugins:
-  - jekyll-redirect-from
-
-#ficam_playbooks_url: /fpki/
-
 # theme: uswds-jekyll
 search_site_handle: idmprod
 
@@ -45,6 +40,9 @@ navbar:
 - title: Program Management Guide
   description: Program Management Guide
   url: https://pm.idmanagement.gov
+  
+plugins:
+  - jekyll-redirect-from
 
 # Build settings
 markdown: kramdown
