@@ -3,6 +3,7 @@ layout: default
 title: Federal PKI Activity Report
 collection: tools
 permalink: tools/fpkiactivityreport/
+redirect_to: https://playbooks.idmanagement.gov/fpki/tools/fpkiar/
 ---
 
 Updated: March 1, 2021
