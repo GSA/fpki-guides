@@ -2,6 +2,7 @@
 title: System Changes and Notifications
 permalink: /notifications/
 layout: default
+redirect_to: https://playbooks.idmanagement.gov/fpki/notifications/
 ---
 This page lists the changes to certification authorities and supporting systems operating within the Federal PKI community.  
 
