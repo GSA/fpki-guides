@@ -40,9 +40,6 @@ navbar:
 - title: Program Management Guide
   description: Program Management Guide
   url: https://pm.idmanagement.gov
-  
-plugins:
-  - jekyll-redirect-from
 
 # Build settings
 markdown: kramdown
@@ -167,7 +164,8 @@ include:
 - _stylesheets
 - _javascript
 
-
+plugins:
+  - jekyll-redirect-from
 
 # Custom site configuration
 lang: en
