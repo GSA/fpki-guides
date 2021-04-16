@@ -164,8 +164,8 @@ include:
 - _stylesheets
 - _javascript
 
-#plugins:
-#  - jekyll-redirect-from
+plugins:
+  - jekyll-redirect-from
 
 # Custom site configuration
 lang: en
