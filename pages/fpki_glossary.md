@@ -2,6 +2,7 @@
 layout: default
 title: Glossary
 permalink: /glossary/
+redirect_to: https://playbooks.idmanagement.gov/glossary/
 ---
 
 ## Glossary ##

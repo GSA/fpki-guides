@@ -2,6 +2,7 @@
 layout: default
 title: Certificate Policies
 permalink: /policyobjects/
+redirect_to: https://playbooks.idmanagement.gov/fpki/policyobjects/
 ---
 
 1. [What is a Certificate Policy?](#what-is-a-certificate-policy)

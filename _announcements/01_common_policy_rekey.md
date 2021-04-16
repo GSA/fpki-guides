@@ -7,6 +7,7 @@ collection: announcements
 permalink: announcements/common-policy-update/
 description: In October 2020, the Federal Government will establish a new Federal Public Key Infrastructure (FPKI) Root Certification Authority (CA).  This new root is named the Federal Common Policy CA G2.  This announcement details the CA update timeline and actions agencies need to perform.
 status: active
+redirect_to: https://playbooks.idmanagement.gov/fpki/announcements/common-g2-update/
 ---
 
 {% include alert-info.html content="Upcoming changes to the Federal Common Policy Certification Authority (CA) will impact your agency.  This announcement will be updated as more information is available." %}

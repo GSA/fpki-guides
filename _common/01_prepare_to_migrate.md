@@ -3,6 +3,7 @@ layout: default
 title: 1. Prepare to migrate to the Federal Common Policy CA G2
 collection: common
 permalink: common/prepare-to-migrate/
+redirect_to: https://playbooks.idmanagement.gov/fpki/common/prepare-to-migrate/
 ---
  
 
