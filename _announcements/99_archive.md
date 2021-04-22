@@ -3,6 +3,7 @@ layout: default
 title: Archived Announcements
 collection: announcements
 permalink: /announcements/archive/
+redirect_to: https://playbooks.idmanagement.gov/fpki/announcements/
 ---
 
 {% include alert-warning.html content="Archived announcements are listed below for historical reference only. These announcements are no longer being updated or maintained." %}

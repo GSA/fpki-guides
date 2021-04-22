@@ -2,6 +2,7 @@
 layout: default
 title: Federal PKI Overview
 permalink: /overview/
+redirect_to: https://playbooks.idmanagement.gov/fpki/intro-fpki/
 ---
 
 The Federal Public Key Infrastructure encompasses the Certification Authorities which issue:

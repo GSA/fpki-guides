@@ -3,6 +3,7 @@ layout: default
 title: 8. Verify migration to the Federal Common Policy CA G2
 collection: common
 permalink: common/verify-migration/
+redirect_to: https://playbooks.idmanagement.gov/fpki/common/verify-migration/
 ---
 
 The easiest way to verify your migration to the Federal Common Policy CA (FCPCA) G2 is to validate one of your PIV credential certificates.

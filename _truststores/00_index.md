@@ -3,6 +3,7 @@ layout: default
 title: Trust Stores
 collection: truststores
 permalink: /truststores/
+redirect_to: https://playbooks.idmanagement.gov/fpki/trust-stores/
 ---
 
 This is a high-level overview of trust stores (also called *certificate stores*) and a list of commonly used trust stores and settings. 

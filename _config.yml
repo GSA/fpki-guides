@@ -167,6 +167,5 @@ include:
 plugins:
   - jekyll-redirect-from
 
-
 # Custom site configuration
 lang: en

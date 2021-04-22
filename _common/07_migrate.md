@@ -3,6 +3,7 @@ layout: default
 title: 7. Migrate to the Federal Common Policy CA G2
 collection: common
 permalink: common/migrate/
+redirect_to: https://playbooks.idmanagement.gov/fpki/common/migrate/
 ---
 
 {% include alert-info.html content="<strong>We're calling for all solutions!</strong> If you'd like to share your agency's playbook on how to distrust a CA certificate, create an <a href=\"https://github.com/GSA/fpki-guides/issues/new\" target=\"_blank\">issue on GitHub</a> or email us at fpki@gsa.gov." %}

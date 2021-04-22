@@ -3,6 +3,7 @@ layout: default
 title: Announcements
 collection: announcements
 permalink: /announcements/
+redirect_to: https://playbooks.idmanagement.gov/fpki/announcements/
 ---
 
 These announcements and hot topics concern Federal Public Key Infrastructure changes that may affect your agency's operations.

@@ -3,6 +3,7 @@
 layout: default
 title: About Public Key Infrastructure
 permalink: /pki/
+redirect_to: https://playbooks.idmanagement.gov/pki/
 ---
 --->
 
