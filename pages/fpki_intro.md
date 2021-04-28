@@ -2,7 +2,7 @@
 layout: default
 title: Introduction
 permalink: /
-redirect_to: https://playbooks.idmanagement.gov/fpki/intro-fpki/
+redirect_to: https://playbooks.idmanagement.gov/fpki/
 ---
 Welcome to the **Federal Public Key Infrastructure (FPKI) Guides**! In these guides, you will find commonly used links, tools, tips, and information for the FPKI (_Federal PKI_).  
 
